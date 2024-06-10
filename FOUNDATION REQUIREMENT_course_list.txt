@@ -1,0 +1,5 @@
+Here is the list of required course numbers for the FOUNDATION REQUIREMENT:
+
+```python
+["CS103", "CS109", "Stat116", "CME106", "MS&E220", "EE178", "CS161", "CS107", "CS107E", "CS110", "CS111"]
+```

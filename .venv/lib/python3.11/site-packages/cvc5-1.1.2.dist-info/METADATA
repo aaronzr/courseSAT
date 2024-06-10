@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: cvc5
+Version: 1.1.2
+Home-page: https://github.com/cvc5/cvc5
+License: BSD-3-Clause AND LGPL-3.0-or-later AND MIT
+License-File: COPYING
+License-File: licenses/gpl-3.0.txt
+License-File: licenses/lgpl-3.0.txt
+License-File: licenses/minisat-LICENSE
+License-File: licenses/pythonic-LICENSE
+
+Python bindings for cvc5
