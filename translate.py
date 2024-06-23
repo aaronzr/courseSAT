@@ -66,7 +66,8 @@ def translate_to_formal_statements(doc, requirement):
 
 	grouped_courses = gpt_infer(group_prompt)
 	print(grouped_courses)
-	grouped_file = open(f"{requirement}_grouped_list.py", "w+")
+	filename = requirement + "_grouped_list.py"
+	grouped_file = open(filename, 'w+')
 	grouped_file.write("course_requirements = " + grouped_courses)
 
 	course_file.close()
@@ -74,6 +75,6 @@ def translate_to_formal_statements(doc, requirement):
 	grouped_file.close()
 
 if __name__ == "__main__":
-	translate_to_formal_statements(doc="Stanford_AI.pdf", requirement="SIGNIFICANT IMPLEMENTATION REQUIREMENT")
+	translate_to_formal_statements(doc="Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
 
 	
