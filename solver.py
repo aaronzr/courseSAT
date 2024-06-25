@@ -115,7 +115,7 @@ def check_stanford_master_foundamental_requirements(course_choices):
                 solver.mkTerm(
                     Kind.EQUAL,
                     locals()[f"{course.lower()}_units"],
-                    solver.mkInteger(3),
+                    solver.mkInteger(0),
                 )
             )
 
@@ -445,13 +445,13 @@ def check_stanford_master_breadth_requirements(course_choices):
     publpol353b = solver.mkConst(solver.getBooleanSort(), "PUBLPOL353B")
     publpol353b_units = solver.mkConst(solver.getIntegerSort(), "PUBLPOL353B_units")
     
-    #manully fixed the list from LLM raw output by change them from string to variable and
+    #manully fixed the list from LLM raw output by changing them from string to variable and
     #converting all uper case to lower case
     course_requirements = [
         (cs154, cs157, cs168,  cs254, cs261, cs265, ee364a, ee364b,  phil251),
         (cs140, cs140e, cs143, cs144, cs149, cs212, cs242, cs243, cs244, cs244b,  cs295, cs316, cs358, ee180, ee282, ee382e),
-        (cs145, cs147, cs148, cs155, cs173, cs221, cs223a, cs224n, cs224u, cs224w, cs227b, cs22b, cs229, cs229m, cs231a, cs231n, cs234, cs236, cs237a, cs245, cs246, cs247, cs248, cs248a, cs251,  cs255, cs273a, cs273b, cs279, cs345, cs347, cs348a, cs348b, cs348c, cs348e, cs348i, cs348k, cs355, cs356, cs373),
-        (cs152, cs181,  cs182, cs256, cs281, cs329t, cs384, amstud133, amstud145, anthro132D, comm118S, comm120w, comm124, comm130d, comm145, comm154, comm166, comm186w, comm230a, comm230b, comm230c, desinst215, desinst240, earthsys213, english184d, engr248, history244f, intlpol268, law4039, me177,  mse193,  mse231,  mse234, mse254, polisci150a, psych215, publpol103f, publpol353b)
+        (cs145, cs147, cs148, cs155, cs173, cs221, cs223a, cs224n, cs224u, cs224w, cs227b, cs228, cs229, cs229m, cs231a, cs231n, cs234, cs236, cs237a, cs245, cs246, cs247, cs248, cs248a, cs251,  cs255, cs273a, cs273b, cs279, cs345, cs347, cs348a, cs348b, cs348c, cs348e, cs348i, cs348k, cs355, cs356, cs373),
+        (cs152, cs181,  cs182, cs256, cs281, cs329t, cs384, amstud133, amstud145, anthro132d, comm118s, comm120w, comm124, comm130d, comm145, comm154, comm166, comm186w, comm230a, comm230b, comm230c, desinst215, desinst240, earthsys213, english184d, engr248, history244f, intlpol268, law4039, me177,  mse193,  mse231,  mse234, mse254, polisci150a, psych215, publpol103f, publpol353b)
         ]
     
     #Since the solver checking code is formulaic (same as the function above),
@@ -464,12 +464,13 @@ def check_stanford_master_breadth_requirements(course_choices):
                 solver.mkTerm(Kind.EQUAL, requirement, solver.mkTrue())
             )
 
+    #manually constructed 
     course_units = [
         #fix with items 
-        cs154, cs157, cs168,  cs254, cs261, cs265, ee364a, ee364b,  phil251,\
-        cs140, cs140e, cs143, cs144, cs149, cs212, cs242, cs243, cs244, cs244b,  cs295, cs316, cs358, ee180, ee282, ee382e,\
-        cs145, cs147, cs148, cs155, cs173, cs221, cs223a, cs224n, cs224u, cs224w, cs227b, cs22b, cs229, cs229m, cs231a, cs231n, cs234, cs236, cs237a, cs245, cs246, cs247, cs248, cs248a, cs251,  cs255, cs273a, cs273b, cs279, cs345, cs347, cs348a, cs348b, cs348c, cs348e, cs348i, cs348k, cs355, cs356, cs373,\
-        cs152, cs181,  cs182, cs256, cs281, cs329t, cs384, amstud133, amstud145, anthro132D, comm118S, comm120w, comm124, comm130d, comm145, comm154, comm166, comm186w, comm230a, comm230b, comm230c, desinst215, desinst240, earthsys213, english184d, engr248, history244f, intlpol268, law4039, me177,  mse193,  mse231,  mse234, mse254, polisci150a, psych215, publpol103f, publpol353b]
+        cs154_units, cs157_units, cs168_units,  cs254_units, cs261_units, cs265_units, ee364a_units, ee364b_units,  phil251_units,\
+        cs140_units, cs140e_units, cs143_units, cs144_units, cs149_units, cs212_units, cs242_units, cs243_units, cs244_units, cs244b_units,  cs295_units, cs316_units, cs358_units, ee180_units, ee282_units, ee382e_units,\
+        cs145_units, cs147_units, cs148_units, cs155_units, cs173_units, cs221_units, cs223a_units, cs224n_units, cs224u_units, cs224w_units, cs227b_units, cs228_units, cs229_units, cs229m_units, cs231a_units, cs231n_units, cs234_units, cs236_units, cs237a_units, cs245_units, cs246_units, cs247_units, cs248_units, cs248a_units, cs251_units,  cs255_units, cs273a_units, cs273b_units, cs279_units, cs345_units, cs347_units, cs348a_units, cs348b_units, cs348c_units, cs348e_units, cs348i_units, cs348k_units, cs355_units, cs356_units, cs373_units,\
+        cs152_units, cs181_units,  cs182_units, cs256_units, cs281_units, cs329t_units, cs384_units, amstud133_units, amstud145_units, anthro132d_units, comm118s_units, comm120w_units, comm124_units, comm130d_units, comm145_units, comm154_units, comm166_units, comm186w_units, comm230a_units, comm230b_units, comm230c_units, desinst215_units, desinst240_units, earthsys213_units, english184d_units, engr248_units, history244f_units, intlpol268_units, law4039_units, me177_units,  mse193_units,  mse231_units,  mse234_units, mse254_units, polisci150a_units, psych215_units, publpol103f_units, publpol353b_units]
     for unit in course_units:
         solver.assertFormula(
             solver.mkTerm(
@@ -477,7 +478,7 @@ def check_stanford_master_breadth_requirements(course_choices):
                 unit,
                 solver.mkInteger(3),
             )
-        )           
+        )       
     # Check satisfiability
     result = solver.checkSat()
     if result.isSat():
@@ -507,7 +508,7 @@ def check_stanford_master_breadth_requirements(course_choices):
                 solver.mkTerm(
                     Kind.EQUAL,
                     locals()[f"{course.lower()}_units"],
-                    solver.mkInteger(3),
+                    solver.mkInteger(0),
                 )
             )
 
@@ -520,36 +521,3 @@ def check_stanford_master_breadth_requirements(course_choices):
         return False
 
 
-def test_foundamental_requrements():
-    course_choices = {
-        "cs109": [False, 0],
-        "ee178": [False, 0],
-        "stat116": [False, 4],
-        "cme106": [False, 0],
-        "cs103": [True, 4],
-        "cs161": [True, 4],
-        "cs107": [True, 4],
-        "cs107e": [False, 0],
-        "cs110": [False, 0],
-        "cs111": [True, 3],
-        "msande220": [False, 0],
-    }
-
-    sat_course_choices = {
-        "cs109": [True, 0],
-        "ee178": [True, 3],
-        "stat116": [True, 3],
-        "cme106": [True, 3],
-        "cs103": [True, 3],
-        "cs161": [True, 3],
-        "cs107": [True, 3],
-        "cs107e": [True, 3],
-        "cs110": [True, 3],
-        "cs111": [True, 3],
-        "msande220": [True, 4],
-    }
-    print(check_stanford_master_foundamental_requirements(course_choices))
-    print(check_stanford_master_foundamental_requirements(sat_course_choices))
-
-if __name__ == "__main__":
-    test_foundamental_requrements()
