@@ -1,0 +1,219 @@
+Sure, here is a synthetic transcript based on the provided template and the course requirements:
+
+---
+
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA  
+    
+Undergraduate Unofficial Transcript  
+    
+Name : Fisher, Samantha Mae  
+Student ID : 07362854  
+    
+**Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.**
+    
+Print Date: 10/05/2023  
+   
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+
+Academic Advisor: Hodges, Angela K.   
+    
+--------- Stanford Degrees Awarded ---------   
+    
+Degree : Bachelor of Science   
+Confer Date : 06/15/2023  
+Plan : Computer Science  
+    
+--------- Academic Program ---------  
+
+Program :   Computer Science    
+09/12/2019 : Computer Science (BS)   
+Completed Program   
+   
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2019-2020 Autumn  
+Advanced Placement      Biology 10.00  
+Advanced Placement      Mathematics: Calculus AB 5.00  
+Total Quarter Units Posted: 15.00  
+Allowable Test Credit subject to restrictions.  
+
+--------- Beginning of Academic  Record ---------  
+2019-2020 Autumn   
+
+Course Title Attempted Earned Grade   
+MATH  19 CALCULUS 5.00 5.00 A  
+    Karen Smith  
+CS  106A PROGRAMMING METHODOLOGY 5.00 5.00 A-  
+    Mehran Sahami  
+HISTORY  12N THE AMERICAN WEST 4.00 4.00 B+  
+    David Kennedy  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.710 Term Totals 15.00 15.00  
+UG Cum GPA 3.710 Cum  Totals 15.00 15.00  
+
+2020-2020 Winter   
+
+Course Title Attempted Earned Grade   
+MATH  20 CALCULUS 5.00 5.00 A-  
+    Shari Yarkin  
+PHYSICS  41 MECHANICS 4.00 4.00 A  
+    Patricia Burchat  
+ENGLISH  11A INTRO TO POETRY 4.00 4.00 B+  
+    Elizabeth Tallent  
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W  
+    Krista Tomlinson  
+    
+UG Term GPA 3.746 Term Totals 14.00 13.00  
+UG Cum GPA 3.728 Cum  Totals 29.00 28.00  
+
+2020-2020 Spring   
+
+Course Title Attempted Earned Grade   
+MATH  21 CALCULUS 5.00 5.00 B+  
+    Ralph Cohen  
+PHYSICS  43 ELECTRICITY AND MAGNETISM 4.00 4.00 B  
+    Robert Morris  
+PWR  1 WRITING AS ARGUMENT 4.00 4.00 A-  
+    Shari Melani Cantor  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Krista Tomlinson  
+    
+UG Term GPA 3.583 Term Totals 14.00 14.00  
+UG Cum GPA 3.696 Cum  Totals 43.00 42.00  
+
+2020-2021 Autumn   
+
+Course Title Attempted Earned Grade   
+CS  106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B+  
+    Jerry Cain  
+PHILOSOPHY  2G WAR, PEACE & CONFLICT 3.00 3.00 A-  
+    Ken Binmore  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse 
+CS  103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B  
+    Rajeev Motwani  
+    
+UG Term GPA 3.467 Term Totals 14.00 14.00  
+UG Cum GPA 3.632 Cum  Totals 57.00 56.00  
+
+2020-2021 Winter   
+
+Course Title Attempted Earned Grade   
+CS  107 COMPUTER ORG & SYSTEMS 5.00 5.00 A-  
+    Andrew Ng  
+ENGR  40M AN INTRO TO MAKING 4.00 4.00 B+  
+    Mark Cutkosky  
+PSYCH  30 INTRODUCTION TO PERCEPTION 4.00 4.00 B+  
+    Tony Norcia  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.733 Term Totals 14.00 14.00  
+UG Cum GPA 3.665 Cum  Totals 71.00 70.00  
+
+2020-2021 Spring   
+
+Course Title Attempted Earned Grade   
+PHYSICS  21 PHYSICS LAB 3.00 3.00 S  
+    David Kleinfeld  
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS 5.00 5.00 B+  
+    John Mitchell  
+CS  109 INTRO TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A+  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.827 Term Totals 14.00 14.00  
+UG Cum GPA 3.694 Cum  Totals 85.00 84.00  
+
+2021-2022 Autumn   
+
+Course Title Attempted Earned Grade   
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+  
+    Tim Roughgarden  
+CS  221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 A-  
+    Percy Liang  
+ENGR  70C INTRO TO COMPUTER-AIDED DESIGN 4.00 4.00 B  
+    Sheri Sheppard  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.678 Term Totals 13.00 13.00  
+UG Cum GPA 3.690 Cum  Totals 98.00 97.00  
+
+2021-2022 Winter   
+
+Course Title Attempted Earned Grade   
+CS  124 FROM LANGUAGE TO INFORMATION 3.00 3.00 A-  
+    Dan Jurafsky  
+CS  229 MACHINE LEARNING 3.00 3.00 B+  
+    Andrew Ng  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+PSYCH  101 INTRODUCTION TO PSYCHOLOGY 4.00 4.00 B+  
+    Brian Wandell  
+    
+UG Term GPA 3.536 Term Totals 11.00 11.00  
+UG Cum GPA 3.672 Cum  Totals 109.00 108.00  
+
+2021-2022 Spring   
+
+Course Title Attempted Earned Grade   
+CS  224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A  
+    Chris Manning  
+CS  224U LEARN-REPRESENT NATURAL LANGUAGE 3.00 3.00 A  
+    Chris Potts  
+CS  231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 3.00 3.00 B+  
+    Silvio Savarese  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 10.00 10.00  
+UG Cum GPA 3.689 Cum  Totals 119.00 118.00  
+
+2022-2023 Winter   
+
+Course Title Attempted Earned Grade   
+CS  238 DECENTRALIZED SYSTEMS 3.00 3.00 A-  
+    Monica Lam  
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A  
+    Emma Brunskill  
+WELLNESS  101 FLOURISHING: HAPPINESS AND WELL-BEING 2.00 2.00 S  
+    James Gross  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.833 Term Totals 9.00 9.00  
+UG Cum GPA 3.703 Cum  Totals 128.00 127.00  
+
+2022-2023 Spring   
+
+Course Title Attempted Earned Grade   
+CS  194 SOFTWARE PROJECT EXPERIENCE 3.00 3.00 A-  
+    Mehran Sahami  
+CS  270 MODELING BIOLOGICAL SYSTEMS 3.00 3.00 B+  
+    Daphne Koller  
+CS  109H HONORS PROBABILITY AND STATISTICS FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 12.00 12.00  
+UG Cum GPA 3.710 Cum  Totals 140.00 139.00  
+
+--------- Academic Performance Summary ---------
+ 
+UG CUM GPA: 3.710 
+Total UG Earned Units: 139.00  
+
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+
+**END OF TRANSCRIPT.**  

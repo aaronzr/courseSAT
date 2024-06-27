@@ -1,0 +1,242 @@
+
+```
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 08/29/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Brown,Emma C
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2024
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+06/15/2024 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/23/2020 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/15/2024 - 
+Coterminal Undergraduate, 06/15/2023 - 06/14/2024
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2020-2021 Autumn
+Advanced Placement      Chemistry 10.00
+Advanced Placement      Mathematics: Calculus AB 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH  51 LINEAR ALGEBRA AND 
+MULTIVARIABLE CALCULUS5.00 5.00 B
+   Gennady Ravich
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 B+
+   Mehran Sahami
+IHUM   57 INNOVATING FOR IMPACT4.00 4.00 A-
+   Thomas Sheehan
+PHYSICS   41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+   
+UG Term GPA 3.507 Term Totals 18.00 18.00
+UG Cum GPA 3.507 Cum  Totals 18.00 18.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS OF 
+SEVERAL VARIABLES5.00 5.00 A-
+   Frank Sawyer
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+PWR   1D WRITING & RHETORIC: 
+EXPLORING KNOWLEDGE4.00 4.00 B+
+   Emily Polk
+PHYSICS   43 ELECTRICITY AND 
+MAGNETISM 4.00 4.00 A-
+   Ian Fisher
+   
+UG Term GPA 3.669 Term Totals 18.00 18.00
+UG Cum GPA 3.588 Cum  Totals 36.00 36.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+MATH  53 ORDINARY DIFFERENTIAL 
+EQUATIONS5.00 5.00 A-
+   Stanley Osher
+CS  109 INTRODUCTION TO 
+PROBABILITY FOR 
+COMPUTER SCIENTISTS5.00 5.00 B+
+   Mehran Sahami
+PHYSICS  44 CLASSICAL MECHANICS 
+LAB1.00 1.00 S
+   Patricia Burchat
+ENGR  70A PROGRAMMING 
+METHODOLOGY (JAVA)4.00 4.00 B+
+   Cynthia Lee
+   
+UG Term GPA 3.538 Term Totals 15.00 15.00
+UG Cum GPA 3.563 Cum  Totals 51.00 51.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  103 MATHEMATICAL 
+FOUNDATIONS OF COMPUTING5.00 5.00 B
+   Keith Schwarz
+CS  107 COMPUTER ORGANIZATION 
+AND SYSTEMS5.00 5.00 B+
+   Nick Troccoli
+PHYSICS  45 LIGHT AND HEAT4.00 4.00 B-
+   Giorgio Gratta
+ENGR  40M AN INTRO TO MAKING: 
+WHAT IS EE? 3.00 3.00 A
+   David Allstot
+   
+UG Term GPA 3.278 Term Totals 17.00 17.00
+UG Cum GPA 3.493 Cum  Totals 68.00 68.00 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS 
+PRINCIPLES5.00 5.00 B+
+   Ryan Stutsman
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 B+
+   Chris Piech
+HISTORY  150C THE UNITED STATES IN 
+THE TWENTIETH CENTURY4.00 4.00 A
+   Gordon Chang
+   
+UG Term GPA 3.543 Term Totals 14.00 14.00
+UG Cum GPA 3.505 Cum  Totals 85.00 82.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+CS  221 ARTIFICIAL INTELLIGENCE: 
+PRINCIPLES AND 
+TECHNIQUES 3.00 3.00 A-
+   Percy Liang
+CS  224N NATURAL LANGUAGE 
+PROCESSING 3.00 3.00 A+
+   Chris Manning
+EE  126 SIMULATION OF DYNAMIC 
+SYSTEMS3.00 3.00 A
+   Sanjay Lall
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.917 Term Totals 10.00 10.00
+UG Cum GPA 3.576 Cum  Totals 95.00 92.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  123 ROBOTICS 3.00 3.00 B+
+   Oussama Khatib
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A-
+   Emma Brunskill
+CS  246 MINING MASSIVE DATASETS 3.00 3.00 A-
+   Jure Leskovec
+EE  180 DIGITAL SIGNAL 
+PROCESSING 3.00 3.00 A
+   Brad Osgood
+   
+UG Term GPA 3.750 Term Totals 12.00 12.00
+UG Cum GPA 3.592 Cum  Totals 107.00 104.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  195S INTRODUCTION TO 
+DISCRETE MATHEMATICS 5.00 5.00 B
+   Daniel Bextra
+CS  224S SPEECH RECOGNITION 3.00 3.00 B+
+   Andrew Maas
+PSYCH  204B COGNITIVE NEUROSCIENCE 4.00 4.00 A
+   John Gabrieli
+   
+UG Term GPA 3.323 Term Totals 12.00 12.00
+UG Cum GPA 3.55 Cum  Totals 119.00 116.00 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 191 INDEPENDENT PROJECT 3.00 3.00 A
+   Fei-Fei Li
+CS  225A ROBOTICS AND CONTROL 3.00 3.00 A
+   Oussama Khatib
+CS  228 MACHINE LEARNING 3.00 3.00 A+
+   Andrew Ng
+CS  237A ROBOTICS MECHANICS 3.00 3.00 A
+   Angela Schoellig
+   
+UG Term GPA 4.000 Term Totals 15.00 15.00
+UG Cum GPA 3.632 Cum  Totals 134.00 131.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+PE  138 TABLE TENNIS: 
+INTERMEDIATE/ADVANCED1.00 1.00 S
+   Shashin Shodhan
+WELLNESS  202 MINDFULNESS 2.00 2.00 S
+   Frederick Luskin
+CS  230 DEEP LEARNING 3.00 3.00 A
+   Serena Yeung
+CS  231N NEURAL NETWORKS FOR 
+COMPUTER VISION3.00 3.00 A
+   Fei-Fei Li
+CS  194 SOFTWARE PROJECT 
+EXPERIENCE3.00 3.00 A
+   Mehran Sahami
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 4.000 Term Totals 12.00 12.00
+UG Cum GPA 3.676 Cum  Totals 146.00 143.00
+GR Term GPA 4.000 Term Totals 12.00 12.00
+GR Cum GPA 4.000 Cum  Totals 12.00 12.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS 328 NLP FOR SOCIAL GOOD 3.00 3.00 A
+   Dan Jurafsky
+CS  231A COMPUTER VISION: FOUNDATIONS AND APPLICATIONS3.00 3.00 A
+   Silvio Savarese
+EE  264 DIGITAL COMMUNICATIONS 3.00 3.00 A
+   Tsachy Weissman
+   
+GR Term GPA 4.000 Term Totals 9.00 9.00
+GR Cum GPA 4.000 Cum  Totals 21.00 21.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  294 DIRECTED RESEARCH 3.00 3.00 A
+   Fei-Fei Li
+EE  367A CRYPTOGRAPHY 3.00 3.00 A-
+   Dan Boneh
+CS  399 INDEPENDENT STUDY3.00 3.00 A
+   Daphne Koller
+   
+GR Term GPA 3.959 Term Totals 9.00 9.00
+GR Cum GPA 3.986 Cum Totals 30.00 30.00
+ 
+Graduate Career Totals
+Cum GPA 3.986 Cum Totals 30.00 30.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.676 Cum Totals 146.00 143.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 161.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 143.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+```

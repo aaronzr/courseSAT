@@ -1,0 +1,185 @@
+Sure, here is a synthetic transcript based on the provided template:
+
+---
+
+Leland Stanford Jr. University  
+Stanford, CA 94305   
+USA  
+Undergraduate Unofficial Transcript  
+Name: Johnson,Amanda Marie  
+Student ID: 89127301  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 10/05/2023  
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+Academic Advisor: Smith,Angela C  
+  
+--------- Stanford Degrees Awarded ---------  
+  
+Degree: Bachelor of Science  
+Confer Date: 06/15/2022  
+Plan: Software Engineering  
+--------- Academic Program ---------  
+Program:   Software Engineer  
+09/15/2020: Software Engineering (MSE)  
+Active in Program  
+Program:   Undergraduate Matriculated  
+09/15/2018: Software Engineering (BS)  
+Completed Program  
+Coterminal Graduate, 09/15/2022 -  
+Coterminal Undergraduate, 09/15/2020 - 09/15/2022  
+  
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2018-2019 Autumn  
+Advanced Placement      German 10.00  
+Advanced Placement      Physics: Mechanics 10.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.  
+--------- Beginning of Academic  Record --------- 2018-2019 Autumn  
+Course      Title                                                Attempted Earned Grade  
+MATH 19   CALCULUS                                           5.00    5.00  B  
+CS 106A   PROGRAMMING METHODOLOGY                         5.00    5.00  A-  
+HISTORY 101  WORLD HISTORY                                        4.00    4.00  B  
+MUSIC 171 CHAMBER MUSIC                                     1.00    1.00  CR  
+  
+UG Term GPA 3.450 Term Totals 15.00 15.00  
+UG Cum GPA 3.450 Cum  Totals 15.00 15.00  
+2018-2019 Winter  
+Course      Title                                                Attempted Earned Grade  
+MATH 20   CALCULUS                                            5.00    5.00  C  
+PHIL 1     INTRO TO PHILOSOPHY                                  4.00    4.00  B+  
+MUSIC 171 CHAMBER MUSIC                                     1.00    0.00  W  
+CHEM 31A  INTRO TO CHEMISTRY                               4.00    4.00  A-  
+  
+UG Term GPA 3.333  Term Totals 14.00 13.00  
+UG Cum GPA 3.394  Cum  Totals 29.00 28.00  
+ ********************  
+Name: Johnson,Amanda Marie  
+Student ID: 89127301  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+2018-2019 Spring  
+Course      Title                                                Attempted Earned Grade  
+MATH 21   CALCULUS                                            5.00    5.00  B  
+PHYSICS 41  MECHANICS                                           4.00    4.00  A-  
+MUSIC 171 CHAMBER MUSIC                                     1.00    1.00  A  
+ENGL 90   SHAKESPEARE                                         4.00    4.00  B-  
+CS 103 INTRO TO LOGIC                                       4.00    4.00  B+  
+  
+UG Term GPA 3.450 Term Totals 18.00 18.00  
+UG Cum GPA 3.407 Cum  Totals 47.00 46.00  
+2019-2020 Autumn  
+Course      Title                                                Attempted Earned Grade  
+CS 106B   PROGRAMMING ABSTRACTIONS              5.00    5.00  C  
+EE 100     THE ELECTRICAL ENGINEERING  
+                 PROFESSION                                      1.00    1.00  S  
+ENGR 40   INTRO TO ELECTRONICS                            5.00    5.00  B+  
+MUSIC 171  CHAMBER MUSIC                                    1.00    1.00  A  
+ASTRN 120 INTRO TO ASTRONOMY                             4.00    4.00  B-  
+HIST 120   U.S. HISTORY                                         3.00    3.00  A  
+  
+UG Term GPA 3.111  Term Totals 19.00 19.00  
+UG Cum GPA 3.359  Cum Totals 66.00 65.00  
+2019-2020 Winter  
+Course      Title                                                Attempted Earned Grade  
+ANTHRO 101 THE MAYANS AND THEIR  
+                   ANCESTORS                                       3.00    3.00  A-  
+STAT 110   PROBABILITY THEORY                            4.00    4.00  B  
+EE 101A    CIRCUITS I                                                4.00    4.00  B+  
+MUSIC 171  CHAMBER MUSIC                                     1.00    1.00  A  
+CS 109     PROBABILITY FOR CS                                4.00    4.00  B+  
+  
+UG Term GPA 3.374 Term Totals 16.00 16.00  
+UG Cum GPA 3.366 Cum  Totals 82.00 81.00  
+2019-2020 Spring  
+Course      Title                                                Attempted Earned Grade  
+EE 43       INTRODUCTORY ELECTRONICS                    2.00    2.00  A-  
+EE 101B    CIRCUITS II                                              4.00    4.00  A  
+EE 116      SEMICONDUCTOR DEVICE PHYSICS               3.00    3.00  A  
+ENGR 50    INTRO TO MATERIALS SCIENCE                    4.00    4.00  A-  
+MUSIC 171  CHAMBER MUSIC                                     1.00    1.00  A+  
+PHYSICS 44 ELECTRICITY AND MAGN. LAB                       1.00    1.00  S  
+PWR 2       WRITING & RHETORIC 2                          4.00    4.00  B  
+  
+UG Term GPA 3.670 Term Totals 19.00 19.00  
+UG Cum GPA 3.404 Cum  Totals 101.00 100.00  
+2020-2021 Autumn  
+Course      Title                                                Attempted Earned Grade  
+CS 161     DATA STRUCTURES & ALGORITHMS             5.00    5.00  D  
+CS 107      COMPUTER NETWORKS                             3.00    3.00  C  
+EE 212      INTEGRATED CIRCUIT FABRICATION            3.00    3.00  B+  
+MATSCI 164 ELECTRONIC MATERIALS LAB                    4.00    4.00  A-  
+MUSIC 171   CHAMBER MUSIC                                      1.00    1.00  A  
+PHYSICS 60  INTRO TO QUANTUM MECHANICS               4.00    4.00  A  
+  
+UG Term GPA 3.137  Term Totals 20.00 20.00  
+UG Cum GPA 3.359  Cum Totals 121.00 120.00  
+2020-2021 Winter  
+Course      Title                                                Attempted Earned Grade  
+EE  41       PHYSICS OF ELECTRICAL ENGINEERING       5.00    5.00  A  
+EE  108A    DIGITAL SYSTEMS I                                        4.00    4.00  A  
+EE  141     ENGINEERING ELECTROMAGNETICS               3.00    3.00  A  
+EE  191     SPECIAL STUDIES AND REPORTS                  6.00    6.00  A  
+MUSIC 171  CHAMBER MUSIC                                        1.00    1.00  A  
+  
+UG Term GPA 4.000 Term Totals 19.00 19.00  
+UG Cum GPA 3.450 Cum  Totals 140.00 139.00  
+2020-2021 Spring  
+Course      Title                                                Attempted Earned Grade  
+ATHLETIC 139 TABLE TENNIS: INTERMEDIATE            1.00    1.00  S  
+EE  134     INTRO TO PHOTONICS                                 4.00    4.00  A  
+EE  136     INTRO TO NANOPHOTONICS                        3.00    3.00  A  
+MATSCI 160  NANOMATERIALS LAB                               4.00    4.00  A-  
+ME  191     ENGINEERING PROBLEMS                             2.00    2.00  S  
+MUSIC 171  CHAMBER MUSIC                                         1.00    1.00  A  
+URBANST 110 UTOPIA AND REALITY                              4.00    4.00  A  
+  
+UG Term GPA 3.981  Term Totals 19.00 19.00  
+UG Cum GPA 3.490  Cum  Totals 159.00 158.00  
+GR Term GPA 0.000 Term Totals 1.00 1.00  
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00  
+2021-2022 Autumn  
+Course      Title                                                Attempted Earned Grade  
+PE  138     TABLE TENNIS: ADVANCED                       1.00    1.00  S  
+WELLNESS 210  MINDFUL LIVING                               2.00    2.00  S  
+CS 248     GAME DESIGN                                                3.00    3.00  A  
+CS 270     COMPUTATIONAL BIOLOGY                            3.00    3.00  A  
+CS 223A  ROBOTICS                                                    4.00    4.00  B  
+CS 222       NATURAL LANGUAGE PROCESSING           3.00    3.00  B  
+  
+UG Term GPA 2.667  Term Totals 16.00 16.00  
+UG Cum GPA 3.299  Cum Totals 175.00 174.00  
+GR Term GPA 3.666 Term Totals 12.00 12.00  
+GR Cum GPA 3.666 Cum  Totals 13.00 13.00  
+2021-2022 Winter  
+Course      Title                                                Attempted Earned Grade  
+CS 316    ETHICAL HACKING                                          3.00    3.00  B+  
+CS 331    ADVANCED MACHINE LEARNING                  3.00    3.00  A-  
+MUSIC 200  MUSIC THEORY                                              3.00    3.00  CR  
+  
+GR Term GPA 3.850 Term Totals 9.00 9.00  
+GR Cum GPA 3.740 Cum  Totals 22.00 22.00  
+2021-2022 Spring  
+Course      Title                                                Attempted Earned Grade  
+APPPHYS 232  BIOPHYSICS IMAGING LAB                     4.00    0.00  
+EE  236C  LASERS                                                        3.00    0.00  
+EE  340   OPTICAL MICRO- AND NANO-CAVITIES        3.00    0.00  
+  
+GR Term GPA 0.000 Term Totals 10.00 0.00  
+GR Cum GPA 3.740 Cum  Totals 32.00 22.00  
+
+Graduate Career Totals  
+Cum GPA 3.740 Cum Totals 32.00 22.00  
+Undergraduate Career Totals  
+Cum GPA 3.299 Cum Totals 175.00 174.00  
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 193.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 174.00  
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+END OF TRANSCRIPT  
+
+---  
+
+This synthetic transcript deliberately includes courses and grades designed to not comply with the actual course requirements for a BS in CS or AI specialization at Stanford. For instance, the course grades include a mix of lower grades and unrelated electives, and certain required CS courses have been assigned non-passing grades or not included.

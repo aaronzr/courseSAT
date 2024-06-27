@@ -1,0 +1,204 @@
+```
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 05/12/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Nguyen,Alan T
+
+--------- Stanford Degrees Awarded ---------
+
+Degree :Bachelor of Science 
+Confer Date :06/11/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+09/21/2020 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/23/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 09/01/2023 - 
+Coterminal Undergraduate, 09/23/2019 - 06/11/2023
+
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Mathematics: Calculus BC 10.00
+Advanced Placement      English Language 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  51 LINEAR ALGEBRA AND DIFFERENTIAL CALCULUS5.00 5.00 B+
+   Thomas Church
+CS  106A PROGRAMMING METHODOLOGY5.00 5.00 A-
+   Julie Zelenski
+ENGR   1 INTRODUCTION TO ENGINEERING4.00 4.00 B
+   Chris Gerdes
+HISTORY  52S THE SCIENTIFIC REVOLUTION4.00 4.00 B+
+   Paula Findlen
+MUSIC  133 MUSIC THEORY 2.00 2.00 CR
+   Mark Applebaum
+   
+UG Term GPA 3.450 Term Totals 20.00 20.00
+UG Cum GPA 3.450 Cum  Totals 20.00 20.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS OF SEVERAL VARIABLES5.00 5.00 A
+   Daniel Bump
+CS  106B PROGRAMMING ABSTRACTIONS5.00 5.00 A-
+   Jerry Cain
+PHYSICS   41 MECHANICS 4.00 4.00 B+
+   Robert Byer
+PHIL  1C KNOWLEDGE AND REALITY4.00 4.00 B
+   R. Lanier Anderson
+   
+UG Term GPA 3.757 Term Totals 18.00 18.00
+UG Cum GPA 3.593 Cum  Totals 38.00 38.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+MATH  53 ORDINARY DIFFERENTIAL EQUATIONS WITH LINEAR ALGEBRA5.00 5.00 A-
+   Maryam Mirzakhani
+CS  103 MATHEMATICAL FOUNDATIONS OF COMPUTING5.00 5.00 B+
+   Ryan Williams
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+
+   Marina Radulovic
+PWR    1AR WRITING & RHETORIC 1:  THE RHETORIC OF FAILURE4.00 4.00 B+
+   Paula Moya
+   
+UG Term GPA 3.630 Term Totals 18.00 18.00
+UG Cum GPA 3.579 Cum  Totals 56.00 56.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION AND SYSTEMS5.00 5.00 B+
+   Chris Gregg
+EE  102A SIGNAL PROCESSING AND LINEAR SYSTEMS I4.00 4.00 A
+   Krishna Shenoy
+HUMBIO  2A HUMAN BIOLOGY 4.00 4.00 B
+   Meredith Keys
+   
+UG Term GPA 3.580 Term Totals 13.00 13.00
+UG Cum GPA 3.578 Cum  Totals 69.00 69.00 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS5.00 5.00 A-
+   Mehran Sahami
+EE  101A CIRCUITS I 4.00 4.00 B+
+   Boris Murmann
+ENGR   40M AN INTRODUCTION TO MAKING 3.00 3.00 B
+   Mark Cutkosky
+   
+UG Term GPA 3.633 Term Totals 12.00 12.00
+UG Cum GPA 3.600 Cum  Totals 81.00 81.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS5.00 5.00 B
+   David Mazières
+EE  102B SIGNAL PROCESSING AND LINEAR SYSTEMS II4.00 4.00 B+
+   Stephen Boyd
+HISTORY  92S SCIENCE AND THE MODERN WORLD4.00 4.00 A-
+   John Heilbron
+CS  122 INTRODUCTION TO NATURAL LANGUAGE PROCESSING3.00 3.00 B+
+   Christopher Manning
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.469 Term Totals 16.00 16.00
+UG Cum GPA 3.582 Cum  Totals 97.00 97.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS5.00 5.00 A-
+   Tim Roughgarden
+EE  108 DIGITAL SYSTEMS I 4.00 4.00 A
+   Subhasish Mitra
+PHYSICS   60 MODERN PHYSICS 4.00 4.00 B
+   Andrei Linde
+MUSIC  8 MUSIC APPRECIATION2.00 2.00 A-
+   Stephen Sano
+   
+UG Term GPA 3.757 Term Totals 15.00 15.00
+UG Cum GPA 3.607 Cum  Totals 112.00 112.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES4.00 4.00 A-
+   Dan Jurafsky
+CS  223A INTRODUCTION TO ROBOTICS4.00 4.00 B+
+   Oussama Khatib
+CS  234 REINFORCEMENT LEARNING4.00 4.00 B+
+   Emma Brunskill
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Jonathan Berger
+   
+UG Term GPA 3.677 Term Totals 17.00 17.00
+UG Cum GPA 3.622 Cum  Totals 129.00 129.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING3.00 3.00 A
+   Christopher Manning
+CS  239 ADVANCED TOPICS IN AI ETHICS3.00 3.00 B+
+   Michael Bernstein
+ANTHRO  132D TECHNOLOGY AND SOCIETY4.00 4.00 A-
+   Melissa Brown
+CS  191W INDEPENDENT PROJECT WRITING INTENSIVE3.00 3.00 B+
+   Justin Bois
+   
+UG Term GPA 3.667 Term Totals 13.00 13.00
+UG Cum GPA 3.628 Cum  Totals 142.00 142.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  230 DEEP LEARNING FOR COMPUTER VISION4.00 4.00 A-
+   Fei-Fei Li
+PSYCH  209 COGNITIVE SCIENCE4.00 4.00 A
+   Anthony Wagner
+EE  180 DIGITAL SIGNAL PROCESSING4.00 4.00 B
+   Sanjay Lall
+   
+UG Term GPA 3.667 Term Totals 12.00 12.00
+UG Cum GPA 3.639 Cum  Totals 154.00 154.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  276 INFORMATION RETRIEVAL AND WEB SEARCH4.00 4.00 B+
+   Jure Leskovec
+CS  242 PROGRAMMING LANGUAGES4.00 4.00 A-
+   Alex Aiken
+PHIL  151 PHILOSOPHY OF SCIENCE3.00 3.00 A
+   Helen Longino
+   
+UG Term GPA 3.767 Term Totals 11.00 11.00
+UG Cum GPA 3.650 Cum  Totals 165.00 165.00
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS  243 SYSTEMS AND NETWORKS SECURITY4.00 4.00 A
+   Zhiqiang Lin
+CS  327A ADVANCED ROBOTICS4.00 4.00 A-
+   Marco Pavone
+ENGR  248 HACKING FOR DEFENSE4.00 4.00 A
+   Steve Blank
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Jonathan Berger
+   
+UG Term GPA 3.906 Term Totals 13.00 13.00
+UG Cum GPA 3.678 Cum  Totals 178.00 178.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+END OF TRANSCRIPT.
+```
