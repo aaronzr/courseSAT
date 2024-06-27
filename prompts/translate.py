@@ -1,9 +1,12 @@
 import os
 import openai
+import requests
+from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 from openai import OpenAI
 
 RESULTS_DIR = "../raw_output"
+STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 
 def gpt_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -26,7 +29,14 @@ def pdf_to_text(doc):
 		page = reader.pages[i]
 		text += page.extract_text()
 	return text
-        
+
+def weblink_to_text(link):
+	response = requests.get(link)
+	soup = BeautifulSoup(response.text, 'html.parser')
+	# Print the body content in list form
+	print(soup.text)
+	return soup.text
+		
 #granular translation: requirement by requirement precise solver statement translation
 def translate_to_formal_statements(doc, requirement):
 	text = pdf_to_text(doc)
@@ -112,10 +122,12 @@ def translate_to_formal_statements(doc, requirement):
 	grouped_file.close()
 	units_file.close()
 
-def end_to_end_evaluation(doc, link, transcript): 
-        
+def end_to_end_evaluation(doc, link, transcript):
+	pass
+	
 
 if __name__ == "__main__":
-	translate_to_formal_statements(doc="../Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
+	#translate_to_formal_statements(doc="../Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
+	weblink_to_text(STANFORD_CS_CORE_WEBLINK)
 
 	
