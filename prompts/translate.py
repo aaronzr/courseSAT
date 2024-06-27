@@ -6,7 +6,9 @@ from PyPDF2 import PdfReader
 from openai import OpenAI
 
 RESULTS_DIR = "../raw_output"
+BASELINE_DIR = "../one_shot_baseline"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
+STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 
 def gpt_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -33,8 +35,6 @@ def pdf_to_text(doc):
 def weblink_to_text(link):
 	response = requests.get(link)
 	soup = BeautifulSoup(response.text, 'html.parser')
-	# Print the body content in list form
-	print(soup.text)
 	return soup.text
 		
 #granular translation: requirement by requirement precise solver statement translation
@@ -122,12 +122,35 @@ def translate_to_formal_statements(doc, requirement):
 	grouped_file.close()
 	units_file.close()
 
-def end_to_end_evaluation(doc, link, transcript):
-	pass
+def end_to_end_evaluation(transcript_path):
+	transcript_name = os.path.basename(transcript_path)
+	AI_elective_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/CS_AI_2324PS.pdf"
+	AI_MS_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/Stanford_AI_MS.pdf"
+	BS_core_requiements = weblink_to_text(STANFORD_CS_CORE_WEBLINK)
+	BS_senior_project_requiements = weblink_to_text(STANFORD_SENIOR_PROJECT_WEBLINK)
+	BS_AI_elective = pdf_to_text(AI_elective_requirement_path)
+	MS_AI = pdf_to_text(AI_MS_requirement_path)
+	transcript = pdf_to_text(transcript_path)
+
+	prompt =  f"""
+	Your task is to dentify whether a student's transcript, which will be given to you, satisfies specific degree requirements, which will also be given to you. 
+ 	Please analyze and understand the student transcript: {transcript}, as well as the following BS core requirements: {BS_core_requiements}, 
+ 	BS senior project requirements: {BS_senior_project_requiements}, BS AI elective requirements: {BS_AI_elective}. If all BS requirements are satisfied,
+	please output "BS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript. If  all BS requirements are satisfied, 
+	please further analyze and understand the student transcript: {transcript} as well as the MS specialization requirements: {MS_AI}. If all MS requirements are satisfied,
+	please output "MS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript.
+	"""
+	one_shot_answer = gpt_infer(prompt)
+	print(one_shot_answer)
+	oneshot_file = open(f"{BASELINE_DIR}/{os.path.splitext(transcript_name)[0]}_one_shot.txt", 'w+')
+	oneshot_file.write(one_shot_answer)
+	oneshot_file.close()
+
 	
 
 if __name__ == "__main__":
 	#translate_to_formal_statements(doc="../Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
-	weblink_to_text(STANFORD_CS_CORE_WEBLINK)
+	transcript = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
+	end_to_end_evaluation(transcript)
 
 	

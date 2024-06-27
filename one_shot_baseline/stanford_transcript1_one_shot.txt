@@ -1,0 +1,104 @@
+**BS Requirements Analysis:**
+
+**Computer Science Core Requirements:**
+
+1. **Programming Abstractions (CS106B)** - Completed with B in Autumn 2012-2013.
+   
+2. **Computer Organization and Systems (CS107)** - Missing.
+
+3. **Operating Systems Principles (CS111 or CS110)** - Missing.
+
+4. **Design and Analysis of Algorithms (CS161)** - Missing.
+
+**Senior Project Requirement:**
+
+1. **CS194, CS194W, CS210B, CS191, or CS191W** - Missing.
+
+**AI Track Core, Depth, and Elective Requirements:**
+
+1. **Core (CS107, CS111, CS161)** - Missing CS107, CS111, CS161.
+
+2. **Track Requirement A (CS221)** - Missing.
+
+3. **Track Requirement B Courses:**
+   - Missing two required courses.
+
+4. **Track Requirement C:** 
+   - Missing.
+
+5. **Electives:**
+   - Missing three additional electives.
+
+**Mathematics and Science Requirements:**
+
+1. **Mathematics Requirements** - Completed with MATH19, MATH20, MATH21 (substituted by AP credits), CS103 (Mathematical Foundations of Computing), CME100, and CME104.
+
+2. **Science Requirements:**
+   - PHYSICS41 (Mechanics) - Completed with A in 2011-2012 Winter.
+   - PHYSICS43 (Electricity and Magnetism) - Completed with B+ in 2011-2012 Spring.
+   - Elective (Completed with additional unspecified courses).
+
+**Engineering Fundamentals:**
+
+1. **ENGR40** - Completed with B+ in Autumn 2012-2013.
+2. **CS106B** - Completed in Core Requirements.
+
+**BS Degree Status:**
+- Missing key Computer Science Core courses.
+- Missing Senior Project.
+- Missing AI Track courses and electives.
+- However, meets Mathematics and Science requirements and Engineering Fundamentals requirements.
+
+**Result: “BS NOT SAT”**
+
+**MS Requirements Analysis:** (assuming continuance in CS from Electrical Engineering background)
+
+**Foundations Requirement:**
+1. **CS103** - Substituted with undergrad equivalent.
+2. **CS109** - Substituted with undergrad equivalent CME106.
+3. **CS161** - Missing.
+4. **CS107** - Missing.
+5. **CS111** - Missing.
+
+**Significant Implementation Requirement:**
+- Missing.
+
+**Breadth Requirement:**
+- Missing three courses from different areas.
+
+**Artificial Intelligence Depth Requirements:**
+1. **CS221** - Missing.
+2. **Four courses from specified groups** - Missing.
+
+**Electives:**
+- No electives identified from transcript fitting the MS track requirements explicitly for AI.
+
+**MS Degree Status:**
+- Missing foundational courses (CS161, CS107, CS111).
+- Missing breadth courses.
+- Missing significant implementation course.
+- Missing AI depth and elective requirements.
+
+**Result: "MS NOT SAT”**
+
+**Summary Output:**
+
+**BS REQUIREMENTS:**
+
+**BS NOT SAT**: 
+
+- Missing CS Core Courses: CS107, CS111, and CS161.
+- Missing Senior Project Requirement.
+- Missing AI Track courses and electives.
+
+**MS REQUIREMENTS:**
+
+**MS NOT SAT**: 
+
+- Missing foundational courses: CS161, CS107, CS111.
+- Missing three Breadth requirement courses.
+- Missing Significant Implementation Requirement.
+- Missing AI depth courses.
+- Missing electives towards 45-unit completion.
+
+The student needs to address these missing requirements to satisfy both BS in Computer Science and MS in Computer Science with an Artificial Intelligence specialization.
