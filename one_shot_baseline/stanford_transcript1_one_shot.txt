@@ -99,6 +99,8 @@
 - Missing three Breadth requirement courses.
 - Missing Significant Implementation Requirement.
 - Missing AI depth courses.
-- Missing electives towards 45-unit completion.
+- Missing electives towards 45-unit completion. //discussion with Monica and Harshit: this is ambiguous. Can we even do SMT check on this kind of ambiguity?? 
+//unknown: can we SMT check everything? What if SMT translated incorrectly? 
+//in the worst case where GPT does a perferct job: we can argue that we can verify that the system is indeed correct. 
 
 The student needs to address these missing requirements to satisfy both BS in Computer Science and MS in Computer Science with an Artificial Intelligence specialization.
