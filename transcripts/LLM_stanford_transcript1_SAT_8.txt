@@ -1,5 +1,4 @@
 
-```
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USAUndergraduate Unofficial Transcript
@@ -239,4 +238,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 143.00
 *********************************************************************************************
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************END OF TRANSCRIPT. 
-```
