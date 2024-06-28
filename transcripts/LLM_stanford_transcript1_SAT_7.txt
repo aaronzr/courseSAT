@@ -1,6 +1,4 @@
-Sure! Below is a synthetic transcript mutated from the provided template, ensuring compliance with the Stanford University's CS Department course requirements for both the BS and MS programs:
 
-```
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USAUndergraduate Unofficial Transcript
@@ -301,6 +299,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 189.00
 *********************************************************************************************
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************END OF TRANSCRIPT. 
-```
-
-This synthetic transcript includes a mutated name, student ID, course titles attempted, grade changes, and all other necessary modifications while ensuring compliance with Stanford University's CS Department requirements.
