@@ -1,6 +1,3 @@
-Certainly! Below is a new synthetic transcript generated based on the template and it complies with the provided course requirements for a Bachelor of Science in Computer Science with an Artificial Intelligence specialization.
-
----
 
 Leland Stanford Jr. University
 Stanford, CA 94305 
@@ -210,7 +207,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 146.00
 *  Worksheet - For office use by authorized Stanford personnel * 
 ********************************************************************************************* 
 END OF TRANSCRIPT.
-
---- 
-
-This synthetic transcript includes updated details for the student's name, student ID, course titles, earned grades, term GPAs, term totals, cumulative GPAs, and cumulative totals for each quarter in the transcript to ensure it complies fully with Stanford University's Computer Science BS requirements and includes the AI track as specified.
