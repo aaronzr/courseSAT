@@ -1,3 +1,4 @@
+
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USA
@@ -265,5 +266,4 @@ UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 190.00
 STANFORD TOTAL UNDERGRADUATE UNITS: 190.00
 *********************************************************************************************
 *  Worksheet - For office use by authorized Stanford personnel *
-*********************************************************************************************
-END OF TRANSCRIPT.
+*********************************************************************************************END OF TRANSCRIPT.
