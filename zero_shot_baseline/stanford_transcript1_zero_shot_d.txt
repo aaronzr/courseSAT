@@ -1,0 +1,125 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the provided information and the student transcript of Jeremy Lee Bregman, the following analysis determines if the requirements for a BS degree in Computer Science with a focus on Artificial Intelligence have been satisfied.
+
+### BS Core Requirements:
+- **CS 106B - Programming Abstractions:** Completed with a grade of B.
+- **CS 107 - Computer Organization and Systems:** Not listed.
+- **CS 111 - Operating Systems Principles:** Not listed.
+- **CS 103 - Mathematical Foundations of Computing:** Completed with AP credits for Calculus BC, but a specific course for CS103 isn't listed.
+- **CS 109 - Introduction to Probability for Computer Scientists:** CME 106 Introduction to Probability and Statistics for Engineers is equivalent.
+- **CS 161 - Design and Analysis of Algorithms:** Not listed.
+
+### Senior Project Requirements:
+- **Senior Project Course (CS 194, 194W, 210B, 191, 191W):** Not listed.
+- **Minimum GPA Requirement:** His overall undergrad GPA is 3.649 which meets the minimum 2.0 GPA requirement.
+
+### Mathematics and Science Requirements:
+- **Mathematics (26 units minimum):** 
+  - MATH19, 20, 21 or equivalent: AP Calculus BC (10 units) fulfills this.
+  - CME 100 (5 units), CME 102 (5 units), CME 104 (5 units): Total 15 units.
+  - Additional Electives: Not explicitly listed in the transcript but sufficient Math credits are present.
+
+- **Science (11 units minimum):**
+  - PHYS 41 Mechanics: Completed with a grade of A.
+  - PHYS 43 Electricity and Magnetism: Completed with a grade of B+.
+  - Elective: PHYS 45 Light and Heat (4 units) with a grade of B-.
+
+### Technology in Society Requirement:
+- **Approved TiS course:** MS&E 193 Technology and National Security could potentially fulfill this requirement (should be verified).
+
+### Engineering Fundamentals (10 units minimum):
+- **CS 106B Programming Abstractions:** Completed.
+- **ENGR 40 Introductory Electronics (5 units):** Completed with a grade of B+.
+
+### Depth Requirements and AI Track Courses:
+- **CS 221 AI Principles and Techniques:** Not listed.
+- **Track Requirement B:**
+  - May include courses such as CS 229 (not listed).
+- **Track Requirement C and Electives:** Not listed explicitly.
+
+### Summary of Unfulfilled Requirements:
+1. **CS 107 - Computer Organization and Systems:**
+2. **CS 111 - Operating Systems Principles:**
+3. **CS 161 - Design and Analysis of Algorithms:**
+4. **Senior Project (CS 194, 194W, 210B, 191, 191W):**
+5. **AI Track specific courses:** CS 221, possible B and C requirement courses.
+
+### Output:
+```plaintext
+CS 107
+CS 111
+CS 161
+CS 221
+Senior Project (CS 194, 194W, 210B, 191, 191W)
+```
+
+Jeremy Lee Bregman has not satisfied all the requirements for the BS degree in Computer Science. The listed courses need to be completed according to the program sheet. Thus, the output should be a list of the unmet course requirements as noted above.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Jeremy Lee Bregman satisfies all requirements for the Master in Science (MS) degree with a specialization in Artificial Intelligence, we will need to check the student’s transcript against the MS requirements.
+
+### FOUNDATIONS REQUIREMENT:
+
+1. **Logic, Automata & Complexity (CS103)** - Not listed
+2. **Probability (CS109, Stat116, CME106, MS&E220, or EE178)** - **Completed CME 106 (B+)**
+3. **Algorithmic Analysis (CS161)** - Not listed
+4. **Computer Organ & Sys (CS107 or 107E)** - Not listed
+5. **Principles of Computer Systems (CS110 or CS111)** - Not listed
+
+Total units from foundations: 4 (CME 106)
+
+### SIGNIFICANT IMPLEMENTATION REQUIREMENT:
+
+- Must be one of specified courses: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, 341.
+- Not listed in transcript
+
+### BREADTH REQUIREMENT: (3 courses from different areas A, B, C, D)
+
+1. **Area A (Mathematical and Theoretical Foundations)** - Not listed in transcript
+2. **Area B (Computer Systems)** - Not listed in transcript
+3. **Area C (Applications)** - Not listed in transcript
+4. **Area D (Computing and Society)** - **MS&E 193 (A-)**
+
+### ARTIFICIAL INTELLIGENCE DEPTH:
+
+- Courses must meet 21 units total from specified lists
+  - **a) CS 221**: Not listed
+  - **b) Four courses from*: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238** - Not listed
+  - **c) Additional Depth Courses** - Not listed in transcript
+
+### ELECTIVES:
+
+- Various non-specific courses listed in the undergraduate and graduate career. 
+- However, none clearly listed as contributing to the AI specialization specifically.
+
+### ADDITIONAL REQUIREMENTS:
+
+1. **All courses 100 or greater** - Fulfilled
+2. **At most 10 units of Foundations** - Fulfilled if realized.
+3. **At most 3 units of 1-2 unit seminars** - **Music 171 (total of 7 units, but not all relevant for MS)**
+4. **At least 36 units of letter grade** - Needs confirmation.
+5. **Average grade B (3.0)** - Fulfilled, graduate GPA of 3.740
+6. **At least 45 graduate units at Stanford** - 32 units completed according to Graduate Career.
+
+### Synthesis:
+
+Jeremy Lee Bregman has not satisfied the MSCS requirements for Artificial Intelligence Specialization due to the following missing courses or requirements:
+
+1. Undergraduate foundations: CS103, CS161, CS107/107E, CS110/111 missing.
+2. Significant Implementation Requirement: Not listed.
+3. Breadth Requirement: Courses from Area A and Area B, and confirmation that D might not count.
+4. AI Depth Requirement: Specific courses required for AI depth are missing, totaling 21 units.
+
+**Not Satisfied Requirements:**
+
+1. CS103 - Logic, Automata & Complexity
+2. CS161 - Algorithmic Analysis
+3. CS107/107E - Computer Organisation & System
+4. CS110/111 - Principles of Computer Systems
+5. Breadth Requirement - Courses from different areas A, B, C needed.
+6. AI Depth Requirement - Specific courses including CS 221 and four other depth courses.
+7. Significant Implementation Course
+
+Thus, the final output is a list of courses not satisfied:
+
+```
+CS103, CS161, CS107/107E, CS110/111, Breadth Courses from Area A, B, C, AI Depth Courses including CS221, Significant Implementation Course.
+```

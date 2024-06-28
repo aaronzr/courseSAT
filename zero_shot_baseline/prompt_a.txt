@@ -1,0 +1,11 @@
+#all in one prompt: transcript first, requirements later;
+#transcript first -> BS requirement
+#transcrript again -> MS requiement
+
+Your task is to identify whether a given student's transcript satisfies specific degree requirements, which will also be given to you. 
+Please analyze and understand the student transcript: {transcript}, as well as the following BS core requirements: {BS_core_requiements}, 
+BS senior project requirements: {BS_senior_project_requiements}, BS AI elective requirements: {BS_AI_elective}. If all BS requirements are satisfied,
+please output "BS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript. If  all BS requirements are satisfied, 
+please further analyze and understand the student transcript: {transcript} as well as the MS specialization requirements: {MS_AI}. If all MS requirements are satisfied,
+please output "MS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript.
+	

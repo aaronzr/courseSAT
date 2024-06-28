@@ -1,0 +1,98 @@
+**BS Degree Requirements Analysis - AI Track**
+
+### Core Requirements Review
+- **CS106B**: Programming Abstractions - **Completed**
+- **CS107**: Computer Organization and Systems - **Completed**
+- **CS111**: Operating Systems Principles - **Not listed in the Transcript**
+- **CS103**: Mathematical Foundations of Computing - **Not listed in the Transcript**
+- **CS109**: Introduction to Probability for Computer Scientists - **Not listed in the Transcript**
+- **CS161**: Design and Analysis of Algorithms - **Not listed in the Transcript**
+
+### Senior Project Requirements Review
+- [ ] **CS194 or CS194W, CS210B, CS191 or CS191W, CS294, CS194H**: At least 3 units of one of these courses required for the Senior Project - **Not listed in the Transcript**
+
+### AI Track Requirements Review
+#### Depth Requirement A
+- **CS221**: AI: Principles and Techniques - **Not listed in the Transcript**
+
+#### Depth Requirement B (Two courses, each from a different area):
+1. **Area I (AI Methods)** - **Not listed in the Transcript**
+2. **Area II (NLP Methods)** - **Not listed in the Transcript**
+3. **Area III (Vision)** - **Not listed in the Transcript**
+4. **Area IV (Robotics)** - **Not listed in the Transcript**
+
+#### Track Requirement C
+- **One additional course from any Track Requirement B list, or other approved list** - **Not listed in the Transcript**
+
+#### Track Electives (at least three additional courses from Track B or C lists, or General CS Electives list):
+- Additional electives required - **Not listed in the Transcript**
+
+### Minimum GPA Requirement
+- 2.0 for all courses in ENGR Fundamentals, CS Core, Depth, and Senior Project combined - **Not fully verifiable without completion of all required courses**
+
+**Summary for BS:**
+- Required courses: CS103, CS109, CS111, CS161, Senior Project course, CS221, two Track Requirement B courses, one Track Requirement C course, and additional Track Electives - not fully satisfied.
+
+### List of Courses Not Satisfied for BS Degree:
+1. CS103
+2. CS109
+3. CS111
+4. CS161
+5. CS194 or CS194W, CS210B, CS191 or CS191W, CS294, CS194H (Senior Project)
+6. CS221
+7. Two Track Requirement B courses (each from a different area)
+8. One Track Requirement C course
+9. Additional Track Electives
+
+---
+
+**MS Degree Requirements Analysis - AI Specialization**
+
+### Foundations Requirement
+- **CS103**: Logic, Automata & Complexity - **Not listed in the Transcript**
+- **CS109**: Probability/Stat116/CME106/MS&E220/EE178 - **Not listed in the Transcript**
+- **CS161**: Algorithmic Analysis - **Not listed in the Transcript**
+- **CS107**: Computer Org & Sys - **Completed**
+- **CS110/CS111**: Principles of Computer Systems - **Not listed in the Transcript**
+
+### Significant Implementation Requirement
+- **At least one course from the specified list** - **Not listed**
+
+### Breadth Requirement (One course from areas A, B, C, D)
+- [ ] **Area A - Mathematical and Theoretical Foundations** - **Specific course not listed**
+- [ ] **Area B - Computer Systems** - **Specific course not listed**
+- [ ] **Area C - Applications** - **Specific course not listed**
+- [ ] **Area D - Computing and Society** - **Specific course not listed**
+
+### Artificial Intelligence Depth Requirement
+- **CS221**: Required - **Not listed in the Transcript**
+- **Four additional courses from specified list** - **Not listed**
+
+### Electives
+- **Additional courses to meet 45-unit requirement** - **Overall units not fully tallied, specific elective courses not listed**
+
+**Summary for MS:**
+- Required courses: CS103, CS109, CS161, CS110/CS111, a course for Significant Implementation, Breadth Requirement courses (A, B, C, D), CS221, four additional depth courses from specified list, and additional elective courses to meet 45-unit requirement - not fully satisfied.
+
+### List of Courses Not Satisfied for MS Degree:
+1. CS103
+2. CS109
+3. CS161
+4. CS110 or CS111
+5. Course for Significant Implementation
+6. Breadth Requirement courses from areas A, B, C, D
+7. CS221
+8. Four additional AI depth courses
+9. Elective courses to meet 45 units requirement
+
+---
+
+**Results:**
+- **BS Requirements**: **Not SAT**
+- **MS Requirements**: **Not SAT**
+
+**Courses Not Satisfied for BS:**
+- CS103, CS109, CS111, CS161, Senior Project (CS194/194W/210B/191/191W/294/194H), CS221, Two Track B courses, One Track C course, Additional Track electives
+
+**Courses Not Satisfied for MS:**
+- CS103, CS109, CS161, CS110/CS111, Significant Implementation Requirement, three Breadth Requirement courses (A, B, C, D), CS221, four additional AI depth courses, Additional electives

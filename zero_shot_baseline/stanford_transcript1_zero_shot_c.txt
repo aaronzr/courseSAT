@@ -1,0 +1,91 @@
+### BS Degree Requirements Analysis
+
+#### Core Requirements: 
+- **CS103**: Not taken by the student.
+- **CS106B**: Taken and passed with a grade of B.
+- **CS107**: Not taken by the student.
+- **CS109**: Not taken by the student.
+- **CS111**: Not taken by the student.
+- **CS161**: Not taken by the student.
+
+#### Senior Project Requirements:
+- Only EE 191 is noted in the transcript, but it is not equivalent to the CS senior project requirement courses like CS194, 194W, 191, 191W, 210B.
+
+#### Elective Requirements for AI Track:
+- Math and Science Requirements:
+  - **Mathematics (26 units minimum)**: 
+    - MATH19-21 (AP Credit, 10 units), CME 100 (5 units), CME 102 (5 units), CME 104 (5 units), CS103 (Not taken), CS109 (Not taken), Mathematics electives (None mentioned).
+    - Total units so far: 25/26
+  
+  - **Science (11 units minimum)**:
+    - PHYSICS 41 (4 units), PHYSICS 43 (4 units), PHYSICS 45 (4 units)
+    - Total units: 12/11
+
+#### Technology in Society:
+- Taken MS&E 193, which counts towards this requirement.
+
+#### Engineering Fundamentals (10 units minimum):
+- ENGR 40 taken and passed with B+, CS106B taken and passed with B.
+- Total: 10 units satisfied.
+
+### Key Points of Incomplete Requirements:
+1. **Core Courses**:
+   - CS103
+   - CS107
+   - CS109
+   - CS111
+   - CS161
+
+2. **Senior Project**:
+   - No senior project equivalent is found on the transcript.
+
+**Conclusion**: Given that the core computer science courses (CS103, CS107, CS109, CS111, CS161) and the senior project course have not been completed, the BS degree requirements are **not satisfied**.
+
+**Output**: 
+
+```
+- CS103: Missing
+- CS107: Missing
+- CS109: Missing
+- CS111: Missing
+- CS161: Missing
+- CS Senior Project: Missing
+```
+
+### MS Specialization Requirements Analysis
+
+Let's analyze the transcript against MS AI specialization:
+
+#### Foundations Requirement:
+- Logic, Automata & Complexity (CS103): Missing
+- Probability (CS109, Stat116, CME106, MS&E220, or EE178): CME 106 (B+), satisfied.
+- Algorithmic Analysis (CS161): Missing.
+- Computer Organ & Systems (CS107 or 107E): Missing.
+- Principles of Computer Systems (CS110 or CS111): Missing.
+
+#### Significant Implementation Requirement:
+- No implementation-designated course such as CS140, CS143, etc., was noted on the transcript.
+
+#### Breadth Requirement:
+- No courses recorded to satisfy the breadth requirement from areas A, B, C, or D.
+
+#### AI Depth:
+- Required courses such as CS221, CS223A, CS224N, etc., are not found on the transcript.
+
+**Conclusion**: The transcript does not fulfill the MS specialization requirements since pivotal courses in foundations, significant implementation, breadth, and depth are not reflected.
+
+**Output**: 
+
+```
+- CS103: Missing
+- CS161: Missing
+- CS107 or CS107E: Missing
+- CS110 or CS111: Missing
+- Significant Implementation Course: Missing
+- Breadth Requirement Courses: None satisfied
+- Depth Requirement Courses: None satisfied
+```
+
+**Overall Results**:
+- BS Requirements: Not satisfied.
+- MS Requirements: Not satisfied.

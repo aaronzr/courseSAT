@@ -1,0 +1,16 @@
+#two separate prompts to break down if else stataement 
+#first_prompt: BS requirements->transcript
+#second_prompt: MS requirements->transcript
+
+#First
+Your task is to identify whether a given student's transcript satisfies bachelor in science (BS) degree requirements, which will also be given to you.
+BS core requirements: {BS_core_requiements}, BS senior project requirements: {BS_senior_project_requiements}, BS AI elective requirements: {BS_AI_elective}. 
+Please analyze and understand the student transcript: {transcript}. If all BS requirements are satisfied,
+please output "BS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript.
+
+#Second
+Your task is to identify whether a given student's transcript satisfies master in science (MS) degree requirements, which will be given to you.
+Here are MS specialization requirements: {MS_AI}. 
+Please analyze and understand the student transcript: {transcript}. If all MS requirements are satisfied,
+please output "MS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript.
+	
