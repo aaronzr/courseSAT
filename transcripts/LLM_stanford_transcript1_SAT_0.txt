@@ -1,4 +1,4 @@
-```
+
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USA
@@ -201,4 +201,3 @@ UG Cum GPA 3.678 Cum  Totals 178.00 178.00
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************
 END OF TRANSCRIPT.
-```
