@@ -1,6 +1,4 @@
-Sure, I will generate a new synthetic transcript following the format of the given template and ensuring it complies with the BS in CS and AI specialization requirements from Stanford University. 
 
----
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USA
@@ -287,7 +285,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 151.00
 *********************************************************************************************
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************END OF TRANSCRIPT. 
-
----
-
-This synthetic transcript complies with the provided BS in CS and AI specialization requirements.
