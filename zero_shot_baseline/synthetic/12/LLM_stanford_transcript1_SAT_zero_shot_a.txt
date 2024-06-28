@@ -1,0 +1,88 @@
+**Analysis of Alex Michael Johnson's BS Degree Requirements:**
+
+### BS Core Requirements (Computer Science):
+1. **CS 103**: Mathematical Foundations of Computing - **Completed** (Grade: B+)
+2. **CS 106B**: Programming Abstractions - **Completed** (Grade: A)
+3. **CS 107**: Computer Organization and Systems - **Completed** (Grade: B+)
+4. **CS 111**: Operating Systems Principles - **Completed** (Grade: A)
+5. **CS 161**: Design and Analysis of Algorithms - **Completed** (Grade: A-)
+
+### Senior Project Requirements:
+1. **Senior Project**: One of CS 191, 191W, 194, 194H, 194W, 210B, 294 - **Completed** (CS 194: Software Project Experience - Grade: A)
+   - Note: **Project Experience with Corporate Partners (210B) - Completed** (Grade: A)
+
+### AI Track Requirements:
+1. **CS 221**: AI: Principles and Techniques - **Completed** (Grade: B+)
+2. **Track Requirement B**:
+   - **CS 224N**: Natural Language Processing with Deep Learning - **Completed** (Grade: A-)
+   - **CS 237A**: Introduction to Robotics - **Completed** (Grade: B+)
+3. **Track Requirement C**:
+   - **CS 228**: Statistical Learning Theory - **Completed** (Grade: A-)
+4. **Track Electives**: 
+   - **CS 223A**: Robotics - **Completed** (Grade: B+)
+   - **CS 234**: Reinforcement Learning - **Completed** (Grade: B+)
+   - **CS 238**: Decision Making Under Uncertainty - **Completed** (Grade: A)
+
+### Additional Course Requirements:
+1. **Mathematics**:
+   - **MATH 19, 20, 21**: Calculus Sequence - **Completed** (Grades: A-)
+   - **CS 109**: Introduction to Probability for Computer Scientists - **Completed** (Grade: B+)
+2. **Science**:
+   - **PHYSICS 41**: Mechanics - **Completed** (Grade: B+)
+   - **PHYSICS 43**: Electricity and Magnetism - **Completed** (Grade: B+)
+   - **PHYSICS 45**: Light and Heat - **Completed** (Grade: B)
+
+### Engineering Fundamentals:
+1. **CS 106B**: Programming Abstractions - **Completed** (Grade: A)
+2. **ENGR 40**: An Introduction to Making, or equivalent - **Completed** (Grade: B+)
+
+### Additional University and Major Requirements:
+1. **Technology in Society Requirement**: Needs verification apart from transcript.
+2. **Writing in the Major Requirement**: Likely fulfilled by senior project courses like CS 194W.
+
+**BS Degree Conclusion**:
+- **BS SAT**: All required courses are satisfied, total undergraduate units completed: 190.0 with a cumulative GPA of 3.698.
+
+---
+
+**Analysis of MS Degree Requirements:**
+
+### Foundations Requirement:
+1. **CS 103**: Mathematical Foundations of Computing - **Waived (taken during BS)**
+2. **CS 109**: Introduction to Probability for Computer Scientists - **Waived (taken during BS)**
+3. **CS 107**: Computer Organization and Systems - **Waived (taken during BS)**
+4. **CS 111**: Operating Systems Principles - **Waived (taken during BS)**
+5. **CS 161**: Design and Analysis of Algorithms - **Waived (taken during BS)**
+
+### Significant Implementation Requirement:
+1. **CS 210B**: Project Experience with Corporate Partners - **Completed** (Grade: A)
+
+### Breadth Requirement:
+1. **Area A (Mathematical and Theoretical Foundations)**:
+   - Needs course specifics from transcript (potential courses: CS 240)
+2. **Area B (Computer Systems)**:
+   - CS 245: Database Management Systems - **Completed** (Grade: B+)
+3. **Area C (Applications)**:
+   - Potentially courses like: CS 221, 224N
+
+### AI Depth Requirement:
+1. **Depth**:
+   - **CS 221**: AI: Principles and Techniques - **Completed** (Grade: B+)
+   - Four courses from:
+     - **CS 224N**: Natural Language Processing with Deep Learning - **Completed** (Grade: A-)
+     - **CS 223A**: Robotics - **Completed** (Grade: B+)
+     - **CS 237A**: Introduction to Robotics - **Completed** (Grade: B+)
+     - **CS 234**: Reinforcement Learning - **Completed** (Grade: B+)
+     - **CS 238**: Decision Making Under Uncertainty - **Completed** (Grade: A)
+   - Total units from depth: **21 units** must be checked but it’s likely fulfilled with above courses.
+
+### Electives:
+1. **Electives**:
+   - CS 240, CS 245, etc.
+
+### Additional MS Requirements:
+1. **Minimum 45 Units**: 15 Quarter units completed in MS program indicated.
+2. **Average GPA at least B**: Cumulative GPA 3.833 in MS program.
+
+**MS Degree Conclusion**:
+- **MS SAT**: All required courses are satisfied, cumulative GPA in MS program 3.833.

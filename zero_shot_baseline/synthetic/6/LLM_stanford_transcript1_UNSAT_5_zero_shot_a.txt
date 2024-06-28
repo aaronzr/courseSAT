@@ -1,0 +1,85 @@
+### Analysis of Transcript and Degree Requirements
+
+#### For BS in Biology
+
+1. **Core Requirements**:
+   - **Programming Abstractions (CS106B)**: Completed with C+ in Autumn 2020-2021 term.
+   - **Computer Organization and Systems (CS107)**: Not completed.
+   - **Principles of Computer Systems (CS111)**: Not completed.
+   - **Mathematical Foundations of Computing (CS103)**: Not completed.
+   - **Introduction to Probability for Computer Scientists (CS109)**: Not completed.
+   - **Design and Analysis of Algorithms (CS161)**: Not completed.
+
+2. **Senior Project Requirement**:
+   - No evidence of completing required courses like CS191, CS194, CS210B for the senior project in the transcript.
+
+3. **AI Elective Requirements**:
+   - **Mathematics Requirement**: Only MATH 51 and MATH 53 are identifiable; CS103 and CS109 not completed.
+   - **Science Requirement**: Met with courses like PHYSICS 41 and various biology-related courses.
+   - **Technology in Society Requirement**: No course identified.
+   - **Engineering Fundamentals**: Completed CS106B, but ENGR requisite not seen.
+   - **Track Requirements (Depth and Electives)**: Only CS106B completed; remaining requirements and electives including CS221, required Track B, Track C, and electives not evident in the transcript.
+
+Based on the above analysis, the requirements for the BS degree are not satisfied.
+
+#### Output: List of BS Courses Not Satisfied
+- **Computer Organization and Systems (CS107)**
+- **Principles of Computer Systems (CS111)**
+- **Mathematical Foundations of Computing (CS103)**
+- **Introduction to Probability for Computer Scientists (CS109)**
+- **Design and Analysis of Algorithms (CS161)**
+- **Senior Project (CS191, CS194, or CS210B)**
+- **Track Requirements B & C**
+- **Technology in Society Requirement**
+- **Further elective and depth courses needed for AI Track**
+
+### For MS in Biological Sciences
+
+#### Advanced MS Course Requirements
+
+1. **Foundations Requirement**:
+   - Courses like CS103, CS109, CS161, CS107, CS111 will likely need advisor written waivers if not explicitly taken as listed.
+
+2. **Significant Implementation Requirement**:
+   - Not identifiable in transcript without further specific grad-level CS courses.
+
+3. **Breadth Requirement**:
+   - Needs course selection from different areas not seen in transcript provided.
+
+4. **Depth Requirement for AI Specialization**:
+   - **CS221**: Not evident.
+   - Four out of numerous CS courses related to AI: Not evident.
+   - At least 21 units in combined categories not met with purely Biochemistry and Biology courses provided in transcript.
+
+5. **Electives**:
+   - No clear Computational electives exceeding 100 levels evident in transcript.
+
+#### Output: List of MS Courses Not Satisfied
+- **Foundations Requirement Courses**: CS103, CS109, CS161, CS107, CS111.
+- **Significant Implementation Course**: Any pertaining advanced comp science course.
+- **Breadth Requirements**: Courses from Area A, B, C, and D.
+- **Depth Requirements**: CS221 and at least four AI-related courses.
+- **Electives**: Advanced technical courses beyond 100 level associated with Computer Science.
+
+Thus, the final output will be:
+
+### Final Outputs:
+**BS Courses Not Satisfied**:
+- Computer Organization and Systems (CS107)
+- Principles of Computer Systems (CS111)
+- Mathematical Foundations of Computing (CS103)
+- Introduction to Probability for Computer Scientists (CS109)
+- Design and Analysis of Algorithms (CS161)
+- Senior Project course (CS191, CS194, or CS210B)
+- Track Requirements B & C
+- Technology in Society Requirement
+- Additional elective and specialized depth courses needed for AI Track
+
+**MS Courses Not Satisfied**:
+- Foundations courses as outlined.
+- Significant Implementation Course needed.
+- Breadth courses from distinct areas.
+- Depth area courses & 21 units from advanced AI-related course selection.
+- Elective related to advanced course programs, possibly beyond 100 level.
+
+Given the provided information in the student's records and relevant degree requirements from Stanford guidelines, the student does not meet the complete coursework for either the BS or the MS degree yet.

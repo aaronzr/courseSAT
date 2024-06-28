@@ -1,0 +1,60 @@
+It appears that John Alex Smith has **NOT satisfied the BS Computer Science requirements** because:
+
+1. **Calculus Requirements Missing**:
+   - Only **MATH 19, 20**, and **21** appear to be in the transcript, but CS103 (Mathematical Foundations of Computing) and CS109 (Introduction to Probability) are required for core mathematics.
+   - No indication of additionally required Math electives being fulfilled.
+   
+2. **Science Requirements Partially Met**:
+   - **PHYS 41 (Mechanics)** and **PHYS 43 (Electricity and Magnetism)** are required and are present.
+   - One elective science course from the SoE Science List or AP Chemistry is missing.
+
+3. **Technology in Society Requirement**:
+   - Technology in Society course is missing from the transcript.
+
+4. **Engineering Fundamentals**:
+   - CS106B (Programming Abstractions) is completed.
+   - An additional course such as ENGR40M or 76 is needed but no evidence it has been fulfilled.
+
+5. **Core Requirements (Systems, Theory, Data Structures, Algorithms)**:
+   - CS107 (Computer Organization and Systems), CS111(Operating Systems Principles), and CS161 (Design and Analysis of Algorithms) need to be completed.
+   - The transcript shows the equivalent of CS107 being taken, but other vital courses like CS111 and CS161 are missing.
+
+6. **Senior Project Requirements**:
+   - One senior project course should be taken: CS191, CS191W, CS194, CS194W, CS210B, or CS294.
+   - The transcript does not show evidence of completion of any Senior Project.
+
+7. **Depth Requirement**:
+   - Completion of required advanced courses (CS221 and several optional advanced courses from designated areas) is missing.
+
+8. **Elective Requirements**:
+   - At least three electives selected from the specified lists are missing.
+   - None of the attended courses match the specified electives adequately.
+
+Overall, the courses taken by John Alex Smith better align with a Mechanical Engineering track, as indicated by his awarded degree and the coursework shown. Therefore:
+
+**BS NOT SAT**: John Alex Smith does **NOT** satisfy the requirements for the BS in Computer Science.
+
+---
+
+For the MS in Computer Science with Artificial Intelligence Specialization:
+
+By evaluating the given coursework and alignment with MS requirements:
+
+1. **Foundations Requirement**:
+   - CS103, CS109, CS161, CS107, and CS111 equivalents are needed.
+   
+2. **Significant Implementation Requirement**:
+   - One course such as CS140, CS143, CS144, etc., required.
+   
+3. **Breadth Requirement**:
+   - Three courses from different areas A, B, C, and D needed.
+   
+4. **Artificial Intelligence Depth**:
+   - CS221 and at least four other AI-specific courses from the set list are needed.
+   
+5. **Electives**:
+   - Additional courses to make up the 45-unit requirement.
+
+The transcript provided does not reflect any completion of graduate-level requirements in Computer Science. Thus:
+
+**MS NOT SAT**: John Alex Smith does **NOT** satisfy the requirements for the MS in Computer Science with Artificial Intelligence specialization.

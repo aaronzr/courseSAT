@@ -1,0 +1,152 @@
+To determine whether Alexandra Marie Smith has satisfied the BS and MS requirements for her Computer Science degrees, we'll analyze her transcript against the given requirements for both degrees.
+
+### BS Degree Requirements
+1. **Core Requirements (15 units minimum)**
+   - CS107: Computer Organization and Systems
+   - CS111: Operating Systems Principles
+   - CS161: Design and Analysis of Algorithms
+
+2. **Math Requirements (26 units minimum)**
+   - MATH19: Calculus
+   - MATH20: Calculus
+   - MATH21: Calculus
+   - CS103: Mathematical Foundations of Computing
+   - CS109: Introduction to Probability for Computer Scientists
+   - Two electives
+
+3. **Science Requirements (11 units minimum)**
+   - PHYS41: Mechanics
+   - PHYS43: Electricity and Magnetism
+   - Elective
+
+4. **Engineering Fundamentals (10 units minimum)**
+   - CS106B
+   - ENGR40M or 76
+
+5. **Technology in Society (1 course)**
+
+6. **Senior Project (1 course)**
+   - Options include CS191, CS194, etc.
+
+### Transcript Analysis for BS Degree
+We will check if Alexandra has completed the above courses and sufficient units as required.
+
+#### Core Requirements
+- CS106B: Programming Abstractions (5 units, B+)
+- CS107: Computer Organization and Systems (5 units, B)
+- CS111: Operating Systems Principles (5 units, B+)
+- CS161: Design and Analysis of Algorithms (5 units, A-)
+
+**Status:** Core Requirements SAT (20 units)
+
+#### Math Requirements
+- MATH19: Calculus (5 units, B+)
+- MATH20: Calculus (5 units, A)
+- MATH21: Calculus (5 units, A-)
+- CS103: Mathematical Foundations of Computing (5 units, B)
+- CS109: Introduction to Probability for Computer Scientists (5 units, B+)
+- Math Elective: PHIL151: Metalogic (3 units, A-)
+
+**Status:** Math Requirements SAT (28 units)
+
+#### Science Requirements
+- Advanced Placement: Physics (10 units)
+- PHYS41: Mechanics (4 units, B+)
+- PHYS43: Electricity and Magnetism (4 units, B+)
+
+**Status:** Science Requirements SAT (18 units)
+
+#### Engineering Fundamentals
+- CS106B: Programming Abstractions (5 units, B+)
+- ENGR40M: An Intro to Making: What is EE? (5 units, A-)
+
+**Status:** Engineering Fundamentals SAT (10 units)
+
+#### Technology in Society
+- Not explicitly mentioned in the transcript.
+
+**Status:** Technology in Society NOT SAT
+
+#### Senior Project
+- CS191: Independent Study (3 units, A)
+
+**Status:** Senior Project SAT
+
+### Summary for BS Requirements
+**Courses not satisfied/checked:**
+- Technology in Society course not explicitly identified in the transcript.
+
+**Output:** Technology in Society requirement not satisfied.
+
+#### Conclusion:
+**Output**: List of courses not satisfied:
+1. Technology in Society
+
+For the MS specialization requirements, Alexandra must pursue the following:
+
+### MS Degree Requirements
+1. **Foundations Requirement**
+   - Equivalent courses for Logic, Automata & Complexity, Probability, Algorithmic Analysis, Computer Organization & Systems, Principles of Computer Systems.
+
+2. **Significant Implementation Requirement**
+   - At least one course from a specified list.
+
+3. **Breadth Requirement**
+   - Three courses from different Breadth areas.
+
+4. **Artificial Intelligence Depth**
+   - Specific courses with at least 21 units.
+
+5. **Electives**
+   - Additional courses to complete 45-unit requirement.
+
+### Transcript Analysis for MS Degree
+We'll check if Alexandra has completed these requirements.
+
+#### Foundations Requirement
+- **Logic, Automata & Complexity**: CS103 (completed during BS)
+- **Probability**: CS109 (completed during BS)
+- **Algorithmic Analysis**: CS161 (completed during BS)
+- **Computer Organization & Systems**: CS107 (completed during BS)
+- **Principles of Computer Systems**: CS111 (completed during BS)
+
+**Status:** All satisfied during BS.
+
+#### Significant Implementation Requirement
+- **CS191**: Independent Study (completed during BS, A)
+
+**Status:** Significant Implementation Requirement SAT
+
+#### Breadth Requirement
+- **Area A**: CS257 (completed, A)
+- **Area B**: CS270 (completed, A-)
+- **Area C**: CS223A (completed, A)
+
+**Status:** Breadth Requirement SAT
+
+#### Artificial Intelligence Depth
+- **CS221**: A (completed during BS, A-)
+- **Electives**:
+  - CS224N: Natural Language Processing (completed during BS, B+)
+  - CS229: Machine Learning (completed during BS, B)
+  - CS234: Reinforcement Learning (completed during BS, A)
+  - CS223A: Introduction to Robotics (completed during BS, A)
+  - CS231A: Computer Vision (completed during BS, A)
+  - CS294: Research Projects in AI (completed during BS, A-)
+  - PHIL151: Metalogic (completed during BS, A-)
+
+**Status:** AI Depth SAT
+
+#### Electives
+- PHIL152 (completed during BS, B+)
+- CS257 (completed during BS)
+- CS270 (completed during BS)
+- CS371 (completed during BS)
+- CS245, CS246 (Total units including these: >45 units)
+
+**Status:** Electives SAT
+
+### Summary for MS Requirements
+- All courses and unit requirements are satisfied as per the transcript.
+
+**Output:** MS SAT

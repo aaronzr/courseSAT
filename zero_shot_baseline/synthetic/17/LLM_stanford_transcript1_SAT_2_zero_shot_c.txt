@@ -1,0 +1,118 @@
+### BS Requirements Analysis
+
+Let's cross-check Alexandra Marie Smith's transcript against the BS requirements.
+
+#### Core Courses:
+1. **CS 106B - Programming Abstractions**: Completed (B+)
+2. **CS 107 - Computer Organization and Systems**: Completed (B)
+3. **CS 111 - Operating Systems Principles**: Completed (B+)
+4. **CS 103 - Mathematical Foundations of Computing**: Completed (B+)
+5. **CS 109 - Introduction to Probability for Computer Scientists**: Completed (A-)
+6. **CS 161 - Design and Analysis of Algorithms**: Completed (B+)
+
+#### Senior Project Requirement:
+1. **CS 210B - Project Experience with Corporate Partners**: Completed (8 units, B+ for each quarter)
+
+#### Math Requirements (26 units minimum):
+1. **MATH 19 - Calculus**: Completed (B, 5 units)
+2. **MATH 20 - Calculus**: Completed (B+, 5 units)
+3. **MATH 21 - Calculus**: Completed (A-, 5 units)
+4. **CS 103**: Already counted as a core requirement.
+5. **CS 109**: Already counted as a core requirement.
+6. **Elective: MATH 53 - Ordinary Differential Equations for Engineers**: Completed (A-, 5 units)
+
+Total Math Units: 26 (includes transfer credits for Calculus BC: 10 units AP credit)
+
+#### Science Requirements (11 units minimum):
+1. **PHYSICS 41 - Mechanics**: Completed (A-, 4 units)
+2. **PHYSICS 43 - Electricity and Magnetism**: Completed (B, 4 units)
+3. **PHYSICS 70 - Foundations of Modern Physics**: Completed (B, 4 units)
+   
+Total Science Units: 12
+
+#### Engineering Fundamentals (10 units minimum):
+1. **CS 106B**: Already counted as a core requirement.
+2. **ENGR 40M - An Intro to Making: What is EE?**: Completed (B, 5 units)
+3. **ENGR 50 - Introduction to Materials Science**: Completed (B+, 4 units)
+
+Total Engineering Fundamentals Units: 9 (Note: This appears to fall short. Additional 1 unit needed)
+
+#### Technology in Society Requirement (1 course required):
+1. **STS 1 - Introduction to Science, Technology, and Society**: Completed (A, 4 units)
+
+#### Track and Electives (43 units minimum):
+Track Core:
+1. **CS 107**: Already counted as core.
+2. **CS 111**: Already counted as core.
+3. **CS 161**: Already counted as core.
+
+Track Requirements:
+1. **CS 221 - AI Principles**: Completed (A-)
+2. **CS 224N - Natural Language Processing**: Completed (B+)
+3. **CS 229 - Machine Learning**: Completed (B)
+4. **CS 234 - Reinforcement Learning**: Completed (A-)
+5. **CS 237A - Principles of Robotics**: Completed (A)
+6. **CS 257 - Logic and Automated Reasoning**: Completed (A-)
+7. **CS 228 - Decision Making Under Uncertainty**: Completed (A)
+8. **CS 239 - Advanced Topics in Artificial Intelligence**: Completed (A-)
+9. **CS 279 - Bioinformatics**: Completed (B+)
+
+Track Electives:
+1. **CS 224S - Spoken Language Processing**: Completed (A)
+2. **CS 229M - Machine Learning in Medicine**: Completed (B+)
+3. **CS 324 - Advanced Robotics**: Completed (A-)
+4. **CS 448B - Data Science for Large-Scale Biomedical Data**: Completed (B+)
+5. **CS 379 - Deep Learning for Computer Vision**: Completed (B+)
+
+Senior Project: Already counted.
+
+### Conclusion:
+The student has fulfilled all the BS requirements.
+
+**Output**: BS SAT
+
+### MS Requirements Analysis
+
+Let's analyze requirements for the MS specialization in Artificial Intelligence based on the provided transcript and MS specialization requirements.
+
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103)**: Completed during undergraduate.
+2. **Probability (CS109)**: Completed during undergraduate.
+3. **Algorithmic Analysis (CS161)**: Completed during undergraduate.
+4. **Computer Org & Sys (CS107)**: Completed during undergraduate.
+5. **Principles of Computer Systems (CS111)**: Completed during undergraduate.
+
+#### Significant Implementation Requirement:
+1. **CS 210B - Project Experience with Corporate Partners**: Completed during undergraduate.
+
+#### Breadth Requirement (Three courses from different areas):
+1. **Area A - Mathematical and Theoretical Foundations: CS 257 - Logic and Automated Reasoning**: Completed (A-)
+2. **Area B - Computer Systems: CS 243 - Programming Languages**: Completed (B+)
+3. **Area C - Applications: CS 229 - Machine Learning**: Completed (B)
+
+#### AI Depth Requirement:
+1. **CS 221 - AI Principles**: Completed during undergraduate.
+2. **Four additional AI courses:**
+   - **CS 224N**: Completed (B+)
+   - **CS 229**: Completed (B)
+   - **CS 234**: Completed (A-)
+   - **CS 237A**: Completed (A)
+3. **Total AI units from categories (a), (b), and more:**
+   - **CS 239**: Completed (A-)
+   - **CS 228**: Completed (A)
+   - **CS 324**: Completed (A-)
+   - **CS 229M**: Completed (B+)
+   - **CS 448B**: Completed (B+)
+   - **CS 379**: Completed (B+)
+
+(Note: Total AI units exceeds 21)
+
+#### Electives:
+1. **PHIL 152 - Computational Ethics**: Completed (B+)
+2. **CS 333 - Secure Computation**: Completed (A-)
+3. **CS 341 - Project Work in Artificial Intelligence**: Completed (A)
+
+### Conclusion:
+The student has fulfilled all the MS requirements.
+
+**Output**: MS SAT

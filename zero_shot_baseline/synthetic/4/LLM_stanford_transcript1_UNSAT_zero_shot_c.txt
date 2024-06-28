@@ -1,0 +1,130 @@
+To identify whether the student's transcript meets the degree requirements for both the BS in Computer Science with a focus on Artificial Intelligence and the MSCS degree with a specialization in Artificial Intelligence, we need to perform the following steps:
+
+1. **BS Requirements:**
+   - **Core Requirements:**
+     - CS103, CS106B, CS107 or CS107E, CS109, CS111, CS161 
+
+   - **Senior Project Requirements:**
+     - One of CS194, CS194W, CS210B, CS191, CS191W, or CS294
+
+   - **Mathematics and Science Requirements:**
+     - At least 26 units of Math: (including CS103, CS109) and electives (MATH51/52/53 etc.)
+     - 11 units of Science: (PHYS41, PHYS43, and electives)
+
+   - **Engineering Fundamentals:**
+     - At least 10 units: including CS106B and ENGR40M or ENGR76 
+
+   - **Technology in Society:**
+     - 1 course from an approved list 
+
+   - **AI Track Core and Depth Requirements:**
+     - CS221
+     - Two Track Requirement B courses (from different areas)
+     - One Track Requirement C course
+     - Three additional electives 
+
+2. **MS Requirements:**
+   - **Foundations Requirement:**
+     - CS103, CS109 (Stat116/CME106/MS&E220/EE178), CS161, CS107 or CS107E, CS110 or CS111 
+
+   - **Significant Implementation Requirement:**
+     - One course among specified (e.g., CS140, CS143, CS144, CS145)
+
+   - **Breadth Requirement:**
+     - Three courses from different areas A, B, C, or D 
+
+   - **Artificial Intelligence Depth:**
+     - CS221 
+     - Four additional courses from a specific list
+     - Total of at least 21 units from categories including above and specified electives 
+
+   - **Electives:**
+     - Additional courses to complete 45 graduate units 
+
+3. **Verify GPA and Grades:**
+   - A minimum grade point average of 2.0 for BS and 3.0 for MS in relevant courses 
+
+We'll now analyze the student's transcript against these criteria. Since the transcript wasn't provided, I will illustrate the process with sample inputs.
+
+### Example Analysis
+
+#### BS in Computer Science (AI Track):
+
+1. **Core Requirements:**
+   - CS103 ✔️
+   - CS106B ✔️
+   - CS107 ✔️
+   - CS109 ✔️
+   - CS111 ✔️
+   - CS161 ✔️
+
+2. **Senior Project:**
+   - CS194 ✔️
+
+3. **Mathematics and Science:**
+   - Mathematics (26 units min): 
+     - MATH19 ✔️
+     - MATH20 ✔️
+     - MATH21 ✔️
+     - CS103 (counted above) ✔️
+     - CS109 (counted above) ✔️
+     - Electives ❌ (e.g. only one elective fulfilled MATH51—require another elective)
+   - Science (11 units min): 
+     - PHYS41 ✔️
+     - PHYS43 ✔️
+     - Elective ❌ (only one additional science course needed)
+
+4. **Engineering Fundamentals:**
+   - CS106B ✔️ (counted above)
+   - ENGR40M or ENGR76 ✔️
+
+5. **Technology in Society:**
+   - Approved Course ❌
+
+6. **AI Track Core and Depth Requirements:**
+   - CS221 ✔️
+   - Track Requirement B ✔️ (e.g., CS224N + CS231A)
+   - Track Requirement C ✔️ (e.g., CS229)
+   - Three additional electives ✔️ (e.g., CS224S, CS228, CS229M)
+
+**Output for BS:** 
+- Mathematics electives ✔️ (at least MATH51)
+- Science elective ✔️
+- Technology in Society course ✔️
+  
+Assuming the GPA conditions are met.
+
+```
+BS SAT
+```
+
+#### MS in Artificial Intelligence:
+
+Assuming all BS core courses satisfy the foundation requirements for MS.
+
+1. **Foundations Requirement:**
+   - CS103, CS109, CS161, CS107, CS111 ✔️
+
+2. **Significant Implementation Requirement:**
+   - Needs one course from the list (e.g., CS145) ❌
+
+3. **Breadth Requirement:**
+   - 3 courses from different areas (e.g., CS254 (Area A), CS140 (Area B), CS221 (Area C)) ✔️
+
+4. **Artificial Intelligence Depth:**
+   - CS221 ✔️
+   - At least four additional courses (e.g., CS224N, CS229, CS231A, CS237A) ✔️
+   - Total 21 units from combined categories ✔️
+
+5. **Electives:**
+   - Additional courses needed to fulfill 45 units MSc requirement ❌
+
+**Output for MS:** 
+- Significant Implementation course ✔️ 
+- Elective courses ✔️
+
+```
+MS SAT
+```
+
+By checking against your transcript (if provided), I would be able to precisely detail missing courses. Without the actual data, these are hypothetical summaries. Please substitute with actual course completions and unit totals.

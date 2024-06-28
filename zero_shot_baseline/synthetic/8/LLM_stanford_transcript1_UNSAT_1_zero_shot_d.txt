@@ -1,0 +1,136 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+To determine if Samantha Marie Franklin's transcript satisfies the Bachelor of Science (BS) degree requirements for Computer Science with an Artificial Intelligence (AI) track at Stanford University, I'll break down her completed courses against the specific degree requirements:
+
+### **Core Requirements**
+1. **CS107 or 107E (Computer Organization and Systems)**: CS202 Operating Systems took as equivalent.
+2. **CS111 (Operating Systems Principles)**: Satisfied by "CS202 Operating Systems".
+3. **CS161 (Design and Analysis of Algorithms)**: Not listed. Needs to be completed.
+
+### **Depth; Track and Electives (25 units and seven courses minimum)**
+1. **CS221 (AI: Principles and Techniques)**: Not listed. Needs to be completed.
+2. **Track Requirement B Courses**:
+   - Area I) AI Methods
+     - CS303 Machine Learning: Satisfied.
+   - Area II) Natural Language Processing
+     - CS307 Natural Language Processing: Satisfied.
+3. **Track Requirement C**: Not listed, needs one additional course either from List B or specifically mentioned course list or other general CS electives list.
+4. **Electives (at least three additional courses)**:
+   - CS305 Database Systems: Satisfied.
+   - CS306 Artificial Intelligence: Satisfied.
+   - CS401 Advanced Machine Learning: Satisfied.
+   - CS402 Robotics: Satisfied.
+   - CS403 Deep Learning: Satisfied.
+
+### **Senior Project (at least one course required)**
+1. At least 3 units of CS191, 191W, 194, 194H, 194W, 210B, 294: Not listed. Needs to be completed.
+
+### **Mathematics and Science Requirements**
+1. **Math (26 units minimum)**:
+   - MATH41 Calculus I: 5 units (grade S) - Equivalent to MAT19
+   - MATH42 Calculus II: 5 units (grade S)
+   - MATH51 Linear Algebra: 4 units (grade B)
+   - MATH113 Intro to Complex Variables: 5 units (S)
+   - MATH115 Partial Differential Equations: 4 units (grade B)
+   - MATH121 Differential Geometry: 4 units (grade B)
+   - MATH140 Real Analysis: 4 units (grade C-)
+   - MATH150 Combinatorics: 4 units (grade C+)
+   - CS103 Mathematics Foundations of Computing: Not listed.
+   - CS109 Introduction to Probability for Computer Scientists: Not listed.
+2. **Science (11 units minimum)**:
+   - PHYS101 General Physics I: 4 units (grade S) - Equivalent to PHYS41
+   - PHYS102 General Physics II: 4 units (grade B) - Equivalent to PHYS43
+   - PHYS103 General Physics III: 4 units (grade B-)
+   
+### **Engineering Fundamentals**
+1. **CS106B (Programming Abstractions)**: Not listed directly; needs to be satisfied.
+2. **ENGR 40M or similar (Introduction to Making or Information Science)**: ENGR 10 Introduction to Engineering: Satisfied.
+
+### **Technology in Society Requirement**
+Take one course from the approved list: Not explicitly listed; needs to be satisfied.
+
+### **Senior Project Options**
+CS194 Software Project Experience, CS210B Project Experience with Corporate Partners, CS191 Independent Project, etc.: Needs to be satisfied. Not completed based on transcript.
+
+Based on the above analysis:
+
+### **Requirements Not Satisfied**
+1. **CS161 Design and Analysis of Algorithms**
+2. **CS221 AI: Principles and Techniques**
+3. **One Additional Track Requirement C from List B or General CS Electives**
+4. **CS103 Mathematical Foundations of Computing**
+5. **CS109 Introduction to Probability for Computer Scientists**
+6. **CS106B Programming Abstractions**
+7. **Technology in Society Requirement**
+8. **Senior Project course (at least 3 units)**
+
+### **Output**
+Please list all the courses that are not satisfied:
+
+1. CS161 Design and Analysis of Algorithms
+2. CS221 AI: Principles and Techniques
+3. One Additional Track Requirement C
+4. CS103 Mathematical Foundations of Computing
+5. CS109 Introduction to Probability for Computer Scientists
+6. CS106B Programming Abstractions
+7. Technology in Society Requirement
+8. Senior Project
+
+This results in the output:
+```
+{
+    "BS SAT": ["CS161", "CS221", "Track Requirement C", "CS103", "CS109", "CS106B", "Technology in Society Requirement", "Senior Project"]
+}
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine whether Samantha Marie Franklin's transcript satisfies the MSCS degree requirements for the Artificial Intelligence specialization, let's analyze the provided transcript along with the MS requirements:
+
+### FOUNDATIONS REQUIREMENT
+1. **Logic, Automata & Complexity (CS103)** - Not found in transcript.
+2. **Probability (CS109, Stat116, CME106, MS&E220, or EE178)** - Not found in transcript.
+3. **Algorithmic Analysis (CS161)** - CS 201 ALGORITHMS was completed with A-.
+4. **Computer Organ & Sys (CS107 or 107E)** - Not found in transcript.
+5. **Principles of Computer Systems (CS110 or CS111)** - Not found in transcript.
+
+### SIGNIFICANT IMPLEMENTATION REQUIREMENT
+- Must be taken at Stanford and must be one of the specified courses.
+- CS 402 ROBOTICS is a possible course if it satisfies implementation, but confirmation needed.
+
+### BREADTH REQUIREMENT
+Three courses, one from each different Breadth area (A, B, C, or D), each for at least 3 units, letter grade only:
+
+1. **Area A (Mathematical and Theoretical Foundations)** - None found in the transcript.
+2. **Area B (Computer Systems)** - Possible relevant course: CS 202 OPERATING SYSTEMS completed with a B-. Requires confirmation if it counts.
+3. **Area C (Applications)** - CS 403 DEEP LEARNING completed with B+.
+4. **Area D (Computing and Society)** - None found in the transcript.
+
+### ARTIFICIAL INTELLIGENCE DEPTH REQUIREMENT
+a) **CS 221** - Not found in the transcript.
+b) **Four of the following**:
+   - CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238 
+     - Completed: CS 306 Artificial Intelligence - does not fully match
+     - Completed: CS 307 Natural Language Processing B+
+     - CS 401 Advanced Machine Learning B-. (Questionable if this counts as these are higher level courses)
+c) **A total of at least 21 units from the Depth courses including a) and b)** - Total not satisfied based on available courses.
+
+### ELECTIVES
+To complete the 45-unit requirement. Conflicting information on outstanding units, should confirm actual graduate course units.
+
+### ADDITIONAL REQUIREMENTS
+- **At most 10 units of Foundations courses counted toward the 45 units.** - Unclear due to missing foundation courses.
+- **At least 36 units must be taken for a letter grade** - Letter grade related analysis needed.
+- **3.0 GPA minimum** - Current GPA needs to be checked if accurate for MS courses as courses not finalized for analysis.
+
+**Summary**:
+- **Foundations Requirement**: Not fully satisfied. CS103, CS109 (Probability), CS107, CS110 missing.
+- **Breadth Requirement**: Partially satisfied. Confirm Area A and D.
+- **AI Depth Requirement**: Not fully satisfied. Missing CS 221.
+- **Electives**: Analysis incomplete due to tracking graduate course completions.
+
+### Decision:
+**MS NOT SAT**
+Courses not satisfied:
+- Foundation: CS 103, CS109 (or equivalents), CS 107 (or equivalents), CS 110 (or equivalents).
+- Breadth: Area A (at least 1), Area D.
+- AI Depth Requirement: CS 221 + Total unit count from Depth courses
+- Significant Implementation requirement: Confirmation required on course meeting criteria.
+
+Further input from advisor on specific graduate elements and foundation substitutes is mandatory.

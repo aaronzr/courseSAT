@@ -1,0 +1,82 @@
+**Undergraduate (BS) Requirements Verification**
+
+To determine if Alexandra Marie Smith satisfies all the BS requirements in Computer Science with an AI Track, let's review each component:
+
+### Core Requirements
+1. **CS 106B - Programming Abstractions**: Completed with B+.
+2. **CS 107 - Computer Organization and Systems**: Completed with B.
+3. **CS 111 - Operating Systems Principles**: Completed with B+.
+4. **CS 161 - Design and Analysis of Algorithms**: Completed with A-.
+5. **CS 103 - Mathematical Foundations of Computing**: Completed with B.
+6. **CS 109 - Introduction to Probability for Computer Scientists**: Completed with B+.
+
+### Senior Project Requirement
+1. **Senior Project Course**: CS 191 - Independent Study in Computer Science: Completed with A.
+
+### AI Track Requirements
+#### Core (15 units minimum)
+1. CS 107 or 107E - Computer Organization and Systems: Completed with B.
+2. CS 111 - Operating Systems Principles: Completed with B+.
+3. CS 161 - Design and Analysis of Algorithms: Completed with A-.
+
+#### Depth; Track and Electives (25 units and seven courses minimum)
+1. **CS 221 - AI Principles and Techniques**: Completed with A-.
+2. **Track Requirement B - Two Courses from Different Areas**:
+   - CS 224N - Natural Language Processing: Completed with B+
+   - CS 223A - Introduction to Robotics: Completed with A
+3. **Track Requirement C - One Additional Course from Track Requirement B list**:
+   - CS 234 - Reinforcement Learning: Completed with A.
+
+#### Electives (At least three additional courses):
+1. **CS 229 - Machine Learning**: Completed with B.
+2. **CS 228 - Machine Learning Theory**: Completed with B+.
+3. **CS 231A - Computer Vision: From 3D Reconstruction to Recognition**: Completed with A.
+
+### Other Requirements
+- **Math Requirements**: MATH 19, 20, 21 (Calculus series) completed, CS 103, CS 109 completed.
+- **Science Requirements**: PHYSICS 41, 43, 81, 45 - Completed.
+- **Engineering Fundamentals**: ENGR 40M completed.
+- **WiM Requirement**: Fulfilled through CS 191 (which also counts as Senior Project).
+
+Given the aforementioned information, Alexandra Marie Smith **has satisfied all the requirements for the BS in Computer Science with AI Track**.
+
+**Output**: "BS SAT"
+
+**Graduate (MS) Requirements Verification**
+
+### Foundations Requirement
+1. **CS103 - Logic, Automata & Complexity**: Completed as an undergraduate.
+2. **CS109 - Probability**: Completed as an undergraduate.
+3. **CS161 - Algorithmic Analysis**: Completed as an undergraduate.
+4. **CS107 - Computer Organization & Systems**: Completed as an undergraduate.
+5. **CS111 - Principles of Computer Systems**: Completed as an undergraduate.
+
+### Significant Implementation Requirement
+- Project completed: CS 191 (listed in the document, shown to meet implementation requirements).
+
+### Breadth Requirement
+- **Area A**: Not mentioned if taken. Need an additional course from the specified list in the category.
+- **Area B**: Not mentioned if taken. Need an additional course from the specified list in the category.
+- **Area C**: CS 246 - Mining Massive Datasets (taken, verified).
+- **Area D**: ANTHRO 132D taken as part of undergraduate but documented requirement for MS needs specifying.
+
+### AI Depth Courses
+1. **CS 221**: Completed with A-.
+2. **CS 224N**: Completed with B+.
+3. **CS 228**: Completed with B+.
+4. **CS 234**: Completed with A.
+5. **CS 231A**: Completed with A.
+
+### Electives
+1. **CS 245 - Database Systems**: Completed with B+.
+2. **CS 270 - Computational Genomics**: Completed with A-.
+3. **CS 257 - Logic and Automated Reasoning**: Completed with A.
+4. **CS 294 - Research Projects in AI**: Completed with A-.
+5. **GR Units**: At least 45 graduate units required.
+
+Since the specific details about Breadth courses Area A and Area B are missing, **the transcript does not yet meet the requirements for the MS**. 
+
+**Output**: List unsatisfied courses:
+1. Breadth Requirement:
+   - Area A
+   - Area B

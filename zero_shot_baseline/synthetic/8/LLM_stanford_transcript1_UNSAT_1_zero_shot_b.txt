@@ -1,0 +1,88 @@
+**BS Degree Requirements Analysis**
+
+**1. Core Requirements (30 units minimum)**
+- **Systems**
+  - CS 106B: Programming Abstractions (Completed in Winter 2019 - CS 102 Data Structures, assuming it's equivalent)
+  - CS 107: Computer Organization and Systems (Completed in Autumn 2020)
+  - CS 111: Operating Systems Principles (Completed in Autumn 2021 - CS 202 Operating Systems)
+
+- **Theory**
+  - CS 103: Mathematical Foundations of Computing (Did not complete)
+  - CS 109: Introduction to Probability for Computer Scientists (Did not complete)
+  - CS 161: Design and Analysis of Algorithms (Completed in Spring 2020 - CS 201 Algorithms, assuming it's equivalent)
+
+**2. Senior Project Requirements**
+- Courses such as CS 194, 194W, 210B, 191, 191W, 294 (Completed CS 403 Deep Learning in Spring 2023. However, it needs to be verified if it qualifies as a senior project; assuming it does for now.)
+
+**3. AI Elective Requirements Analysis**
+- Mathematics (26 units minimum)
+  - MATH 19/20/21 (Equivalent completed via AP credit)
+  - CS 103 (Did not complete)
+  - CS 109 (Did not complete)
+  - Two electives (CS-related)
+    - MATH 41: Calculus I (Satisfactory)
+    - MATH 51: Linear Algebra (Completed Winter 2021)
+    - MATH 113: Introduction to Complex Variables (Completed Autumn 2021)
+
+- **Science (11 units minimum)**
+  - PHYS 41: Mechanics, or PHYS 21 or 61 (Completed PHYS 101/102/103 series)
+  - PHYS 43: Electricity and Magnetism (Did not complete)
+  - One elective from the SoE approved science list (Completed PHY 105 Quantum Mechanics)
+
+- **Technology in Society Requirement (1 course required)**
+  - No record in transcript; presumably missing.
+
+- **Engineering Fundamentals (10 units minimum)**
+  - CS 106B: Programming Abstractions (Equivalent in CS 102 Data Structures, assuming it's equivalent)
+  - ENGR 40M or 76 (Did not complete, no relevant courses)
+
+**Summary for BS Requirements:**
+Mirror the specific courses from the breadth area and senior projects.
+
+**BS SAT**: Not currently satisfied due to missing:
+- CS 103: Mathematical Foundations of Computing
+- CS 109: Introduction to Probability for Computer Scientists
+- PHYS 43: Electricity and Magnetism or equivalent 
+- Technology in Society Requirement
+- Engineering Fundamentals (ENGR 40M or relevant course)
+
+**MS Degree Requirements Analysis**
+
+**1. Foundations Requirement**
+Courses completed:
+- Logic, Automata & Complexity (CS103) – Not completed
+- Probability (CS109, Stat116, CME106, MS&E220, or EE178) – Not completed
+- Algorithmic Analysis (CS161) – Assumed completed via CS 201 Algorithms
+- Computer Organization & Systems (CS107 or 107E) – Completed in Autumn 2020
+- Principles of Computer Systems (CS110 or CS111) – Assumed completed via CS 202 Operating Systems in Autumn 2020
+
+**2. Significant Implementation Requirement**
+- No specific course record provided.
+
+**3. Breadth Requirement**
+- Area A:  Not completed
+- Area B:  Not completed
+- Area C:  Not completed
+- Area D:  Not completed
+
+**4. Artificial Intelligence Depth**
+Depth course completion (21 units total from categories a, b, c):
+- At least four specific elective courses: Details not clear to determine if met
+
+**5. Electives**
+- No specified elective data given
+
+**Summary for MS Requirements:**
+Consider the broader undergraduate completion as pre-requisite. Specific course record assessments.
+
+**MS SAT**: Not satisfied due to:
+- Missing CS103: Mathematical Foundations of Computing
+- Missing CS 109: Introduction to Probability for Computer Scientists
+- Significant Implementation, Breadth Area, AI Depth require clarity.
+- Insufficient Electives units to complete 45 total.
+
+**Final Summary**
+- **BS SAT**: Not satisfied. Missing specific courses and parts of requirements check.
+- **MS SAT**: Not satisfied. Incomplete courses from breadth to electives.
+
+Courses missing for completion are marked clearly, pointing to critical gaps in required course units completion.

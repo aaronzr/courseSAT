@@ -1,0 +1,99 @@
+### BS Degree Requirement Analysis
+
+#### Core Requirements:
+- **CS 103: Mathematical Foundations of Computing**
+  - Not taken (missing)
+- **CS 106B: Programming Abstractions**
+  - Taken: Spring 2021, Grade: B-
+- **CS 107/107E: Computer Organization and Systems**
+  - Taken: Spring 2022, Grade: B
+- **CS 109: Introduction to Probability for Computer Scientists**
+  - Not taken (missing)
+- **CS 111: Operating Systems Principles**
+  - Not taken (missing)
+- **CS 161: Design and Analysis of Algorithms**
+  - Not taken (missing)
+
+#### Senior Project:
+- **One course required from: CS 191, 191W, 194, 194W, 210B, or 294**
+  - Not taken (missing)
+
+#### Math Requirements:
+- **MATH 19/20/21**
+  - MATH 19: Winter 2020, Grade: B
+  - MATH 20: Spring 2020, Grade: B-
+  - MATH 21: Autumn 2020, Grade: B
+- **Two additional math electives**
+  - MATH 53: Winter 2021, Grade: B-
+  - MATH 104: Autumn 2021, Grade: A-
+
+#### Science Requirements:
+- **PHYS 41: Mechanics**
+  - Taken: Autumn 2020, Grade: A-
+- **PHYS 43: Electricity and Magnetism**
+  - Taken: Winter 2021, Grade: B
+- **One science elective**
+  - Several biology courses can fulfill this, but only one is needed.
+    - BIO 81 (Spring 2020, Grade: A-)
+    - BIO 83 (Spring 2021, Grade: A-)
+
+#### Engineering Fundamentals:
+- **CS 106B: Programming Abstractions**
+  - Taken: Spring 2021, Grade: B-
+- **ENGR 40M or 76: Another introductory course**
+  - Not taken or specified (missing)
+
+### Missing BS Requirements:
+1. CS 103
+2. CS 109
+3. CS 111
+4. CS 161
+5. Senior Project (CS 191, 191W, 194, 194W, 210B, or 294)
+6. ENGR 40M or 76 (another introductory course)
+
+### Analysis for MS Specialization Requirements:
+
+#### Foundations Requirements:
+- **CS 103: Logic, Automata & Complexity**
+  - Not taken (missing)
+- **CS 109: Probability**
+  - Not taken (missing)
+- **CS 161: Algorithmic Analysis**
+  - Not taken (missing for MS)
+- **CS 107 or 107E: Computer Org & Sys**
+  - Taken: Spring 2022, Grade: B
+- **CS 110 or CS 111: Principles of Computer Systems**
+  - Not taken (missing)
+
+#### Significant Implementation Requirement:
+- Not explicitly identified as met (missing).
+
+#### Breadth Requirements:
+- Missing entries, cannot fully analyze due to lack of breadth courses in the transcript.
+
+#### Depth (Artificial Intelligence Specialization):
+- **CS 221: AI Principles and Techniques**
+  - Not taken (missing even prerequisites for BS)
+
+Additional depth and elective courses should be identified, but basic foundational courses are missing.
+
+### Missing MS Requirements:
+1. CS 103
+2. CS 109
+3. CS 161
+4. CS 111 (or CS 110)
+5. Significant Implementation Requirement
+6. Breadth requirement courses
+7. CS 221
+8. At least four specified AI courses from the list (CS 223A, 224N, etc.)
+
+### Final Output:
+1. Analysis for BS Degree:
+   - Courses not satisfied: CS 103, CS 109, CS 111, CS 161, Senior Project, ENGR 40M or 76
+
+2. Analysis for MS Degree:
+   - Courses not satisfied: CS 103, CS 109, CS 161, CS 111 (or CS 110), Significant Implementation Requirement, Breadth requirement courses, CS 221, At least four specified AI courses
+
+**Output:**
+- "BS NOT SATISFIED, missing: CS 103, CS 109, CS 111, CS 161, Senior Project, ENGR 40M or 76"
+- "MS NOT SATISFIED, missing: CS 103, CS 109, CS 161, CS 111 (or CS 110), Significant Implementation Requirement, Breadth requirement courses, CS 221, At least four specified AI courses"

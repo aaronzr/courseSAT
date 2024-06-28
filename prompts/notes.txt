@@ -1,0 +1,20 @@
+//from June 27: 
+	#more baseline prompting experiments! 
+	#put requirements first, transcripts last - do we want to make LLM memorize the transcript? 
+	#hopefully the list of missing courses will improve; 
+	#order is important: from front to the end. 
+	#see which works better? 
+	#bachelor first, and then MS last (maybe doesn't matter)
+	#do we need to show transcripts twice? 
+ 
+	#frustrating point: not certain enough (the last 10%). Bug finding in GPT output (unbelievable errors)???
+	#also considering splitting the prompts into two: BS first, and then prompt again with M.S. Avoiding if else
+	#statements. Reduce them to two prompts - breaking them up. In the end, we do optimizations. 
+ 
+	#Comparing reports:
+	#-how LLM generated zero-shot report stacks against SMT-assessed report. Comparing the reports; 
+	#first thing - making sure SMT solver is correct. 
+	#unknown: i) which one is easier for GPT to get right? ii) which one is easier for SMT report? iii) can we get GPT to generate full strength of SMT stmts? 
+	#paper to read: integer programming v. rules based performance?? similar problem? it's unclear if we can represent everything
+	
+	#interpertability: evaluate how good it is

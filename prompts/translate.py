@@ -6,7 +6,6 @@ from PyPDF2 import PdfReader
 from openai import OpenAI
 
 RESULTS_DIR = "../raw_output"
-BASELINE_DIR = "../one_shot_baseline"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 
@@ -32,6 +31,60 @@ def pdf_to_text(doc):
 		text += page.extract_text()
 	return text
 
+def get_AI_requirements():
+	AI_elective_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/CS_AI_2324PS.pdf"
+	AI_MS_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/Stanford_AI_MS.pdf"
+	BS_core_requiements = weblink_to_text(STANFORD_CS_CORE_WEBLINK)
+	BS_senior_project_requiements = weblink_to_text(STANFORD_SENIOR_PROJECT_WEBLINK)
+	BS_AI_elective = pdf_to_text(AI_elective_requirement_path)
+	MS_AI = pdf_to_text(AI_MS_requirement_path)
+	return BS_core_requiements, BS_AI_elective, BS_senior_project_requiements, MS_AI  
+
+#generate a duo of synthetic transcrpts that satisfy and unsatisfy the BS/MS in CS program 
+#count: the desired count of such duo synthetc transcrpts
+def llm_synthetic_transcript(transcript_path, count):
+	transcript_name = os.path.basename(transcript_path)
+	name, _ = transcript_name.split(".")
+	transcript = pdf_to_text(transcript_path)
+	BS_core_requiements, BS_AI_elective, BS_senior_project_requiements, MS_AI = get_AI_requirements()
+	for i in range(count): 
+		sat_prompt = f"""
+		You will be given a template transcript and course requirements from Stanford University's CS Department. Your job is to generate a new synthetic transcript by
+		mutating Name, Student ID, Course Title Attempted, Earned Grade, UG Term GPA, Term Totals, UG Cum GPA, Cum  Totals of each quarter in the transcript and the new synthetic transcript should comply with the given course requirements.
+		This is the BS in CS core requirements: {BS_core_requiements}. This is the BS AI elective requirements: {BS_AI_elective}. This is the BS senior project requirements: {BS_senior_project_requiements}.
+		This is the MS with AI specializatoin requirements: {MS_AI}. This is the transcript template: {transcript}. 
+		The new synthetic transcript MUST comply with provided course requirements. 	You MUST generate a new synthetic transcript only strictly in the same format as the template, nothing else.	
+		"""
+		sat_transcript = gpt_infer(sat_prompt)
+		print(sat_transcript)
+		sat_textfile = open(f"../transcripts/LLM_{name}_SAT_{i}.txt", 'w+')
+		sat_textfile.write(sat_transcript)
+		sat_textfile.close()
+		unsat_prompt = f"""
+		You will be given a template transcript and course requirements from Stanford University's CS Department. Your job is to generate a new synthetic transcript by
+		mutating Name, Student ID, Course Title Attempted, Earned Grade, UG Term GPA, Term Totals, UG Cum GPA, Cum  Totals of each quarter in the transcript and the new synthetic transcript should NOT comply with the given course requirements.
+		This is the BS in CS core requirements: {BS_core_requiements}. This is the BS AI elective requirements: {BS_AI_elective}. This is the BS senior project requirements: {BS_senior_project_requiements}.
+		This is the MS with AI specializatoin requirements: {MS_AI}. This is the transcript template: {transcript}. 
+		The new synthetic transcript MUST NOT comply with provided course requirements. You MUST generate a new synthetic transcript only strictly in the same format as the template, nothing else.	
+		"""
+		unsat_transcript = gpt_infer(unsat_prompt)
+		print(unsat_transcript)
+		unsat_textfile = open(f"../transcripts/LLM_{name}_UNSAT_{i}.txt", 'w+')
+		unsat_textfile.write(unsat_transcript)
+		unsat_textfile.close()
+
+def static_synthetic_transcript(transcript_path):
+	transcript_name = os.path.basename(transcript_path)
+	BS_core_requiements, BS_AI_elective, BS_senior_project_requiements, MS_AI = get_AI_requirements()
+	name, _ = transcript_name.split(".")
+	transcript = pdf_to_text(transcript_path)
+	print(transcript)
+	for line in transcript.split("\n"):
+		print(line)
+		print("=================================")
+ 
+ 
+ 
 def weblink_to_text(link):
 	response = requests.get(link)
 	soup = BeautifulSoup(response.text, 'html.parser')
@@ -122,35 +175,13 @@ def translate_to_formal_statements(doc, requirement):
 	grouped_file.close()
 	units_file.close()
 
-def end_to_end_evaluation(transcript_path):
-	transcript_name = os.path.basename(transcript_path)
-	AI_elective_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/CS_AI_2324PS.pdf"
-	AI_MS_requirement_path = "/home/sallyjunsongwang/courseSAT/program_sheets/Stanford_AI_MS.pdf"
-	BS_core_requiements = weblink_to_text(STANFORD_CS_CORE_WEBLINK)
-	BS_senior_project_requiements = weblink_to_text(STANFORD_SENIOR_PROJECT_WEBLINK)
-	BS_AI_elective = pdf_to_text(AI_elective_requirement_path)
-	MS_AI = pdf_to_text(AI_MS_requirement_path)
-	transcript = pdf_to_text(transcript_path)
 
-	prompt =  f"""
-	Your task is to dentify whether a student's transcript, which will be given to you, satisfies specific degree requirements, which will also be given to you. 
- 	Please analyze and understand the student transcript: {transcript}, as well as the following BS core requirements: {BS_core_requiements}, 
- 	BS senior project requirements: {BS_senior_project_requiements}, BS AI elective requirements: {BS_AI_elective}. If all BS requirements are satisfied,
-	please output "BS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript. If  all BS requirements are satisfied, 
-	please further analyze and understand the student transcript: {transcript} as well as the MS specialization requirements: {MS_AI}. If all MS requirements are satisfied,
-	please output "MS SAT". Otherwise, please output a list of courses not satisfied based on the student's transcript.
-	"""
-	one_shot_answer = gpt_infer(prompt)
-	print(one_shot_answer)
-	oneshot_file = open(f"{BASELINE_DIR}/{os.path.splitext(transcript_name)[0]}_one_shot.txt", 'w+')
-	oneshot_file.write(one_shot_answer)
-	oneshot_file.close()
-
-	
 
 if __name__ == "__main__":
 	#translate_to_formal_statements(doc="../Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
 	transcript = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
-	end_to_end_evaluation(transcript)
+	#end_to_end_evaluation(transcript)
+	#llm_synthetic_transcript(transcript, 10)
+	static_synthetic_transcript(transcript)
 
 	

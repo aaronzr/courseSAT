@@ -1,0 +1,168 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+To evaluate whether Alex Michael Johnson's transcript meets all the Bachelor of Science (BS) requirements in Computer Science, including the AI elective track, we need to verify completion across several categories: Core Requirements, Senior Project, Math/Science/Engineering Fundamentals, and AI-specific Track Requirements. 
+
+Here's the analysis:
+
+### BS Core Requirements:
+
+1. **Programming Abstractions (CS106B)**
+   - Course: **CS 106B** - Grade: **A**
+
+2. **Computer Organization and Systems (CS107)**
+   - Course: **CS 107** - Grade: **B+**
+
+3. **Operating Systems Principles (CS111)**
+   - Course: **CS 111** - Grade: **A**
+
+4. **Mathematical Foundations of Computing (CS103)**
+   - Course: **CS 103** - Grade: **B+**
+
+5. **Introduction to Probability for Computer Scientists (CS109)**
+   - Course: **CS 109** - Grade: **B+**
+
+6. **Design and Analysis of Algorithms (CS161)**
+   - Course: **CS 161** - Grade: **A-**
+
+### Senior Project Requirements:
+
+- Project: **CS 191** – Grade: **A**
+- Project: **CS 210B** – Grade: **A**
+
+### Math Requirements (26 units minimum):
+
+- Courses:
+  - MATH 19 (A-)
+  - MATH 20 (A-)
+  - MATH 21 (A-)
+  - MATH 51 (A-)
+  - CS 103 (B+)
+  - CS 109 (B+)
+- Total Units: 26 (Verified)
+
+### Science Requirements (11 units minimum):
+
+- Courses:
+  - PHYS 41 (B+)
+  - PHYS 43 (B+)
+  - PHYS 45 (B)
+- Total Units: 12 (Verified)
+
+### Engineering Fundamentals (10 units minimum):
+
+- Courses:
+  - ENGR 40 (B+)
+  - ENGR 102A (B+)
+  - ENGR 108 (B+)
+- Total Units: 13 (Verified)
+
+### Technology in Society Requirement:
+
+- Course: **HISTORY 150A (A)**
+- Verified (chosen from ughb.stanford.edu)
+
+### AI Track Requirements:
+
+#### Core Courses (minimum 15 units):
+
+1. **CS 107 (B+)**
+2. **CS 111 (A)**
+3. **CS 161 (A-)**
+- Total Units: 15 (Verified)
+
+#### Track Requirements (25 units minimum):
+
+1. **CS 221 (B+)**
+2. **CS 224N (A-)** (NLP)
+3. **CS 237A (B+)** (Robotics)
+4. **CS 229 (A)** (AI Methods)
+5. **CS 223A (B+)** (Robotics)
+6. **CS 228 (A-)** (AI Methods)
+7. **CS 234 (B+)** (AI Methods)
+8. **CS 238 (A)** (AI Methods)
+9. **CS 231N (A)** (Vision)
+
+#### Track Electives:
+
+1. **CS 298 (A-)** (Elective)
+2. **CS 240 (B+)** (Elective)
+3. **CS 276 (A)** (Elective)
+4. **CS 272 (B+)** (Elective)
+
+- Total Units (Track + Electives): 39 (Verified)
+
+### GPA Requirement:
+- Minimum GPA: 2.0 for all ENGR Fundamentals, CS Core, Depth, and Senior Project courses (combined)
+- Alex's overall undergraduate GPA: 3.698
+
+### Requirements Verification Summary:
+
+All requirements — including core courses, senior project, mathematics, science, engineering fundamentals, technology in society, AI track, and electives — have been satisfied with appropriate grades and unit totals.
+
+**Conclusion:**
+- "BS SAT"========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the analysis of Alex Michael Johnson's transcript and the provided MS in Computer Science requirements, we can evaluate whether all MS requirements are met.
+
+### MSCS Requirements Assessment
+
+1. **Foundations Requirement:**
+   - CS 103: Mathematical Foundations of Computing (taken, grade B+)
+   - CS 109: Introduction to Probability for Computer Scientists (taken, B+)
+   - CS 161: Design and Analysis of Algorithms (taken, A-)
+   - CS 107: Computer Organization and Systems (taken, B+)
+   - CS 111: Operating Systems Principles (taken, A)
+   - **Total Units Used to Satisfy Foundations Requirement: 10 units**
+
+2. **Significant Implementation Requirement:**
+   - **Example courses taken that satisfy this requirement:**
+     - CS 210A: Advanced Software Development (taken, A)
+     - CS 140: Operating Systems (taken, A-)
+     - CS 210B: Project Experience with Corporate Partners (taken, A)
+   - **Assumed CS 210A as the primary for this requirement to meet the letter grade condition.**
+
+3. **Breadth Requirement:**
+   - **Area A. Mathematical and Theoretical Foundations:**
+     - CS 240: Algorithm Design Techniques (taken, B+)
+     
+   - **Area B. Computer Systems:**
+     - CS 210A: Advanced Software Development (taken, A)
+     
+   - **Area C. Applications:**
+     - CS 245: Database Management Systems (taken, B+)
+     
+   - **Area D. Computing and Society:**
+     - No courses taken listed explicitly under Area D. Requires attention.
+
+4. **Artificial Intelligence Depth:**
+   - **Core Course:**
+     - CS 221: AI: Principles and Techniques (taken, B+)
+   
+   - **At least four of:**
+     - CS 223A: Robotics (taken, B+)
+     - CS 224N: Natural Language Processing (taken, A-)
+     - CS 237A: Introduction to Robotics (taken, B+)
+     - CS 228: Statistical Learning Theory (taken, A-)
+
+   - **Total Units from Depth categories a, b, c:**
+     - CS 221: 5 units
+     - CS 228: 3 units
+     - CS 224N: 3 units
+     - CS 223A: 3 units
+     - CS 237A: 3 units
+     - CS 234: 3 units (taken, B+)
+     - CS 238: 3 units (taken, A)
+     - Total: 23 units (exceeds 21 units requirement)
+
+5. **Electives:**
+   - **Example courses meeting the elective requirements:**
+     - CS 356: Cryptography (3 units)
+     - CS 348: Graphics Programming (3 units)
+     - Other additional courses to fulfill 45-unit total excluding foundation units.
+   - **Elective units totaled and additional constraints appear satisfied based on common practices.**
+
+### Based on the above analysis:
+The main missing element appears to be the **Breadth requirement for Area D: Computing and Society**. The student's transcript does not show any courses from Area D explicitly to satisfy this requirement.
+
+**Output**:
+```
+Area D Computing and Society requirement not satisfied
+```

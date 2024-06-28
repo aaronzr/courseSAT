@@ -1,0 +1,78 @@
+First, let's analyze if John Alex Smith's transcript satisfies the BS in Computer Science degree requirements. 
+
+### BS in Computer Science Requirements
+#### Core Requirements:
+1. **CS 106B: Programming Abstractions** - Taken and passed (B-).
+2. **CS 107: Computer Organization and Systems** - Taken (CS 107E) and passed (B).
+3. **CS 111: Operating Systems Principles** - Not taken.
+4. **CS 103: Mathematical Foundations of Computing** - Not taken.
+5. **CS 109: Introduction to Probability for Computer Scientists** - Not taken.
+6. **CS 161: Design and Analysis of Algorithms** - Not taken.
+
+#### Senior Project Requirements:
+1. **CS 194 or CS 194W: Software Project Experience**, **CS 210B**, **CS 191 or CS 191W**, **CS 194H**, **CS294** - Not taken any senior project option from CS.
+
+#### Required GPA:
+Minimum 2.0 GPA for Engineering Fundamentals, CS Core, Depth, and Senior Project combined.
+
+#### Additional Notes:
+- The student has taken **CS 106A (Intro to Programming)**
+- The student needs **specific CS courses** not taken.
+
+Conclusion for BS requirements: **Not satisfied** due to missing specific core courses and the senior project requirement.
+
+### Courses Not Satisfied For BS:
+1. CS 111: Operating Systems Principles
+2. CS 103: Mathematical Foundations of Computing
+3. CS 109: Introduction to Probability for Computer Scientists
+4. CS 161: Design and Analysis of Algorithms
+5. Any CS Senior Project course (e.g., CS 194, CS 194W, CS 210B, CS 191, CS 191W, CS 194H, CS294)
+
+---
+
+Next, let's analyze if the transcript satisfies the MS Artificial Intelligence Specialization requirements.
+
+### MS Artificial Intelligence Specialization Requirements
+
+#### Foundations Requirement:
+1. **CS 103** (Logic, Automata & Complexity) - Not taken.
+2. **CS 109** (Probability) - Not taken.
+3. **CS 161** (Algorithmic Analysis) - Not taken.
+4. **CS 107** (Computer Organ & Sys) - Taken (CS 107E) and passed (B).
+5. **CS 110 or CS 111** (Principles of Computer Systems) - Not taken.
+
+#### Significant Implementation Requirement:
+- The requirement should be addressed within any MS course but needs to be identified from taken courses.
+
+#### Breadth Requirement:
+- Minimum of three courses, each from a different area (A, B, C, D).
+    - The transcript doesn't have any of the specified CS graduate-level Breadth Area courses.
+
+#### Artificial Intelligence Depth:
+- **a) CS 221** - Not taken.
+- **b) At least four of specified AI courses** - None identified in the transcript.
+- **c) A total of 21 units from categories (a) and (b), and additional specified courses** - None identified in the transcript.
+
+#### Elective Requirements:
+- Additional courses for the 45-unit requirement need to be specified from graduate-level coursework.
+
+#### Additional Requirements:
+- At most 10 units from Foundations requirement count towards 45 units.
+- Minimum of 36 units must be taken for a letter grade.
+
+Conclusion for MS requirements: **Not satisfied** as none of the specified AI depth courses, breadth requirement courses, or electives are identifiable from the transcript.
+
+### Courses Not Satisfied For MS:
+1. CS 103: Logic, Automata & Complexity
+2. CS 109: Probability
+3. CS 161: Algorithmic Analysis
+4. CS 110 or CS 111: Principles of Computer Systems
+5. Breadth Requirement courses from Area A, B, C, D.
+6. CS 221 (AI: Principles and Techniques) and at least four additional AI Depth electives.
+7. Significant implementation and elective courses to fulfill 45 total graduate units.
+
+### Final Output:
+Since both the BS and MS requirements are not satisfied, the respective outputs are:
+
+- **BS** requirements analysis: Not satisfied with courses listed above.
+- **MS** requirements analysis: Not satisfied with courses listed above.

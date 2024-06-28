@@ -1,0 +1,93 @@
+Based on the provided degree requirements for both the BS in Computer Science (with AI specialization) and the MS in Computer Science (with AI specialization), let's analyze Monica Rae Cameron's transcript.
+
+### BS Requirements Analysis
+
+#### Core Requirements:
+- **CS106B**: Programming Abstractions - Completed with B+
+- **CS107**: Computer Organization and Systems - Completed with A
+- **CS111**: Principles of Computer Systems - Completed with B+
+- **CS103**: Mathematical Foundations of Computing - Not found on the transcript
+- **CS109**: Introduction to Probability for Computer Scientists - Completed with A-
+- **CS161**: Design and Analysis of Algorithms - Completed with A
+
+#### Senior Project Requirements:
+- **Senior Project**: One of CS 191, 191W, 194, 194H, 194W, 210B, or 294
+  - **CS 191W**: Completed with A
+  - **CS 210B**: Completed with A- (been taken Winter and Spring Quarters, only Winter is showing here)
+
+#### Math Requirements (26 units minimum):
+- **MATH19**: Advanced Placement
+- **MATH20**: Advanced Placement
+- **MATH21**: Advanced Placement
+- **CS103**: Missing
+- **CS109**: Completed
+
+#### Science Requirements (11 units minimum):
+- **PHYS41**: Mechanics - Completed
+- **PHYS43**: Electricity and Magnetism - Completed
+- **Elective**: Physics 42 - Classical Mechanics Laboratory - Completed
+
+#### Technology in Society:
+- **HISTORY 153**: Technological and National Security - Completed with A
+
+#### Engineering Fundamentals (10 units minimum):
+- **CS106B**: Completed with B+
+- **ENGR40M**: Completed with A-
+- **Or alternative to ENGR40M**: No alternative required
+
+#### Depth and Electives (25 units and seven courses minimum):
+- **CS 221**: AI: Principles and Techniques - Completed with A
+- **CS 223A**: Introduction to Robotics - Completed with A-
+- **CS 231N**: Convolutional Neural Networks - Completed with A-
+- **CS 238**: Decision Making Under Uncertainty - Completed with A
+- **CS 246**: Mining Massive Datasets - Completed with A
+- **CS 274**: Frontiers in Machine Learning - Completed with A-
+- **Additional Electives**: CS 147, CS 109A - Completed
+
+### MS Requirements Analysis (2022-23 Program Sheet)
+
+#### Foundations Requirement:
+- **Logic, Automata & Complexity (CS103)**: Not found on the transcript
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: Applies CS109 (A-)
+- **Algorithmic Analysis (CS161)**: Completed with A
+- **Computer Organization & Systems (CS107)**: Completed with A
+- **Principles of Computer Systems (CS110 or CS111)**: CS111 completed with B+
+
+#### Significant Implementation Requirement:
+- **Courses such as 140, 140E, 143, 144, etc.**: Options like CS 191W completed, CS 210B completed
+
+#### Breadth Requirement:
+- **Area A (Mathematical and Theoretical)**: CS 261 Algorithms: Design & Analysis - Completed with A
+- **Area B (Computer Systems)**: Missing
+- **Area C (Applications)**: Missing
+- **Area D (Computing and Society)**: PHIL 256 - Completed with A
+
+#### AI Depth (21 units total):
+- **CS 221**: Completed with A
+- **Four courses from the list**: 
+  - **CS 223A**: Completed with A-
+  - **CS 224N**: Completed with A
+  - **CS 231N**: Completed with A-
+  - **CS 238**: Completed with A
+  - **Additional courses**: CS 274
+
+#### Electives:
+- **Maximum 3 units of 1-2 unit seminars**: Music courses and PWR courses do not count towards technical electives.
+- **Total 45 units for MSCS**:
+  - **Electives on top**: Additional graduate-level courses
+
+### Summary:
+#### BS:
+- **Missing CS103**: Mathematical Foundations of Computing
+
+BS Requirements are not fully satisfied due to the missing CS103 course.
+
+#### MS:
+- **Missing Breadth Areas B and C**
+- **Need Additional Technical Electives**
+
+MS Requirements are not fully satisfied due to missing Breadth areas and additional electives required.
+
+### Outputs:
+- **BS Not SAT**: Missing CS103 course.
+- **MS Not SAT**: Missing Breadth Area B and C courses and need additional electives.

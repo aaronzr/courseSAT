@@ -1,0 +1,40 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Sure, in order to provide the correct analysis, I'll need to review the contents of the student's transcript file.
+
+Please copy and paste the relevant details of the student's transcript here. This will include the courses they have taken, their grades, and any other coursework information that would be important to determine if the BS requirements are satisfied.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if the given student's transcript satisfies the MSCS degree requirements for the Artificial Intelligence Specialization, I need the contents of the student's transcript. However, it appears that I only have the path to the file and not the actual contents. 
+
+To proceed, I typically need to read the contents of the file specified, but I don't have access to your filesystem. If you can provide the contents of the student's transcript either by copying it here or describing the course details (course numbers, titles, grades, and units), I can analyze it against the MSCS requirements.
+
+Here’s a summary of what to check within the transcript:
+
+1. **Foundations Requirement**:
+   - Logic, Automata & Complexity (CS103)
+   - Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+   - Algorithmic Analysis (CS161)
+   - Computer Organization & Systems (CS107 or 107E)
+   - Principles of Computer Systems (CS110 or CS111)
+   - Total units from foundations should not exceed 10.
+
+2. **Significant Implementation Requirement**:
+   - One course that is designated as fulfilling the Significant Implementation Requirement (listed courses: CS 140, 140E, 143, 144, 145, 148, etc.).
+
+3. **Breadth Requirement**:
+   - Three courses, one from each Breadth area (A, B, C, or D), each for at least 3 units and for a letter grade.
+
+4. **Artificial Intelligence Depth Requirement**:
+   - CS 221 must be taken, or an equivalent waiver approved by adviser.
+   - At least four of specified AI-related courses.
+   - A total of at least 21 units in designated depth courses, taken for letter grades.
+
+5. **Electives**:
+   - Any additional courses to meet the total 45-unit requirement for the MSCS degree.
+
+6. **Additional Requirements**:
+   - All courses must be numbered 100 or greater.
+   - At most 10 units of Foundations requirements count toward the 45 units.
+   - At least 36 units must be for a letter grade.
+   - At least 45 graduate units at Stanford must be completed.
+   - The average GPA of submitted courses must be at least 3.0 (B).
+
+Please provide the transcript details so I can help determine whether the requirements are satisfied.

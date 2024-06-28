@@ -1,0 +1,98 @@
+**BS Requirements Status:**
+
+1. **Math Requirements (26 units minimum / equivalent courses):**
+   - MATH19, MATH20, MATH21: Satisfied (AP Credit)
+   - CS103: Satisfied (Autumn 2021)
+   - CS109: Satisfied (Winter 2021)
+   - Electives (CME 100, CME 102, CME 104): Satisfied (Autumn 2019, Winter 2020, Spring 2020)
+
+2. **Science Requirements (11 units minimum / equivalent courses):**
+   - PHYS41: Satisfied (Physics AP Credit)
+   - PHYS43: Satisfied (Physics AP Credit)
+   - Elective (PHYSICS 45): Satisfied (Autumn 2020)
+
+3. **Technology in Society Requirement (1 course):**
+   - HISTORY 153 Technological and National Security: Satisfied (Spring 2022)
+
+4. **Engineering Fundamentals (10 units minimum):**
+   - CS106B Programming Abstractions: Satisfied (Autumn 2020)
+   - ENGR40M An Intro to Making: What is EE?: Satisfied (Autumn 2020)
+
+5. **Core Requirements (15 units minimum / equivalent courses):**
+   - CS107: Satisfied (Autumn 2020)
+   - CS111: Satisfied (Winter 2021)
+   - CS161: Satisfied (Spring 2021)
+
+6. **Depth; Track and Electives (25 units and seven courses minimum):**
+   - CS221: Satisfied (Autumn 2021)
+   - Track Requirement B:
+     - CS223A Introduction to Robotics: Satisfied (Winter 2022)
+     - CS231N Convolutional Neural Networks for Visual Recognition: Satisfied (Autumn 2021)
+   - Track Requirement C:
+     - CS238 Decision Making Under Uncertainty: Satisfied (Spring 2022)
+   - Electives:
+     - EE212: Satisfied (Autumn 2021)
+     - CS237B Computer Vision: Satisfied (Autumn 2022)
+     - CS246 Mining Massive Datasets: Satisfied (Autumn 2022)
+
+7. **Senior Project (1 course required):**
+   - CS191W Independent Project Writing Intensive: Satisfied (Spring 2023)
+
+8. **Overall GPA:**
+   - Min GPA of 2.0 in ENGR Fundamentals, CS Core, Depth, and Senior Project combined: Satisfied (UG Cum GPA: 3.761)
+
+**BS SAT**
+
+---
+
+**MS Requirements Status:**
+
+1. **Foundations Requirement:**
+   - Logic, Automata & Complexity (CS103): Completed as undergraduate
+   - Probability (CS109): Completed as undergraduate
+   - Algorithmic Analysis (CS161): Completed as undergraduate
+   - Computer Organ & Sys (CS107): Completed as undergraduate
+   - Principles of Computer Systems (CS111): Completed as undergraduate
+
+   **Total Units Used to Satisfy Foundations Requirement:** 0 (Counted towards BS)
+
+2. **Significant Implementation Requirement:**
+   - CS210B Project Experience with Corporate: Satisfied (Winter 2023)
+
+3. **Breadth Requirement (three different areas):**
+   - Area A: CS261 Algorithms: Design & Analysis: Satisfied (Winter 2023)
+   - Area B: CS325B Computer Systems Performance Analysis: Satisfied (Winter 2023)
+   - Area C: CS224N Natural Language Processing with Deep Learning: Satisfied (Autumn 2023)
+
+4. **Artificial Intelligence Depth:**
+   - a) CS221: Completed as undergraduate
+   - b) At least four of:
+     - CS224R: Not listed
+     - CS224S: Not listed
+     - CS224U: Not listed
+     - CS224V: Not listed
+     - CS224W: Not listed
+     - CS228: Not listed
+     - CS229: Not listed
+     - CS231A: Not listed
+     - CS231N: Completed as undergraduate (Autumn 2021)
+     - CS234: Not listed
+     - CS237A: Not listed
+     - CS237B: Completed as undergraduate (Autumn 2022)
+     - CS238: Completed as undergraduate (Spring 2022)
+   - c) At least 21 units total from depth lists:
+     - Courses listed: CS237B (Autumn 2022), CS238 (Spring 2022), CS210B (Winter 2023 - Implementation requirement)
+
+**Total Depth Units Applied:** 21* (Assuming correct list and understanding)
+
+5. **Electives:**
+   - Need to list additional courses taken to complete the 45-unit requirement for MSCS degree:
+     - Courses listed in transcript with MS identifier
+
+6. ** GPA & Additional Requirements:**
+   - Min GPA of 3.0 in courses submitted for MSCS: Satisfied (GR Cum GPA: 3.789)
+   - All other specific course requirements seem to have been listed for depth and electives
+
+**MS SAT**
+
+Given the assessment above, both the BS and MS requirements appear to be satisfied based on the transcript provided.

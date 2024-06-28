@@ -1,0 +1,83 @@
+### BS Degree Requirement Analysis
+
+#### **Core Requirements**
+
+- **Systems:**
+  - Completed **CS106B: Programming Abstractions** (5 units, grade: B+)
+  - Completed **CS107: Computer Organization and Systems** (5 units, grade: A)
+  - Completed **CS111: Principles of Computer Systems** twice (2019-2020 Winter: 5 units, grade: B+  / 2022-2023 Autumn: 5 units, grade: A)
+
+- **Theory:**
+  - Completed **CS103: Mathematical Foundations of Computing** through transfer/AP credit
+  - Completed **CS109: Introduction to Probability for Computer Scientists** (2020-2021 Winter: 4 units, A-)
+  - Completed **CS161: Design and Analysis of Algorithms** (2020-2021 Spring: 5 units, A)
+
+#### **Senior Project Requirement**
+
+- Completed **CS191W: Independent Project Writing Intensive** (Spring 2023: 3 units, grade: A)
+
+#### **AI Elective Requirements**
+
+- **Mathematics:**
+  - Completed **MATH19/20/21** through AP credit
+  - Completed additional Math courses **CME100, CME102, CME104** (variety of grades, total units 15)
+
+- **Science:**
+  - Completed **PHYS41: Mechanics** (Winter 2019-2020, 4 units, grade: A)
+  - Completed **PHYS43: Electricity and Magnetism** (Spring 2019-2020, 4 units, grade: B+)
+
+- **Core (15 units minimum):**
+  - **CS107** (see above)
+  - **CS111** (see above)
+  - **CS161** (see above)
+
+- **Depth; Track and Electives (25 units minimum):**
+  - **CS221: AI: Principles and Techniques** (Autumn 2021-2022, 3 units, grade: A)
+  - **CS223A: Introduction to Robotics** (Winter 2021-2022, 3 units, grade: A-)
+  - **CS231N: Convolutional Neural Networks** (Autumn 2021-2022, 3 units, grade: A-)
+  - **CS238: Decision Making Under Uncertainty** (Spring 2021-2022, 3 units, grade: A)
+  - **CS274: Frontiers in Machine Learning** (Spring 2021-2022, 5 units, grade: A-)
+  - **CS229M: Machine Learning Methods for CS** (Winter 2022-2023, 3 units, grade: A)
+  - **CS246: Mining Massive Datasets** (Autumn 2022-2023, 3 units, grade: A)
+  - **EE116: Semiconductor Device Physics** (Spring 2020-2021, 3 units, grade: A)
+
+**Conclusion:** **BS SAT** (All BS requirements met based on provided transcript data)
+
+### MS Specialization Requirement Analysis
+
+#### **Foundations Requirement**
+
+- **CS103 (Logic, Automata & Complexity):** Completed (Transfer/AP credit)
+- **CS109 (Probability) or equivalent:** Completed (as part of BS, 2020-2021 Winter: 4 units, grade: A-)
+- **CS161 (Algorithmic Analysis):** Completed (BS, 2020-2021 Spring: 5 units, grade: A)
+- **CS107 (Computer Organ & Sys):** Completed (BS, 2020-2021 Autumn: 5 units, grade: A)
+- **CS110/111 (Principles of Computer Systems):** Completed (BS, duplicated: CS111)
+
+#### **Significant Implementation Requirement**
+
+- **Course to meet requirement**: **CS210B: Project Experience with Corporate Partners** (Winter 2022-2023, 4 units, grade: A-)
+
+#### **Breadth Requirement**
+
+1. **Area A:**
+   - Completed **CS261: Algorithms: Design & Analysis** (Winter 2023-2024, 3 units, grade: A)
+   
+2. **Area B:**
+   - Completed **CS325B: Computer Systems Performance Analysis** (Winter 2023-2024, 3 units, grade: A)
+
+3. **Area C:**
+   - **Course:** Completed multiple AI-related courses (e.g., CS221, CS224N, CS231N)
+
+#### **Artificial Intelligence Depth**
+
+- **CS221 (AI: Principles and Techniques):** Completed (BS, Autumn 2021-2022, 3 units, grade: A)
+- **Four additional:**
+  - Completed: **CS224N, CS229, CS231N, CS238, CS229M, CS237B**
+- **Total units from categories (a) & (b):** 
+  - Total counted: **CS 205L, CS 224N, CS 229, CS 231N, CS 238, CS 229M, CS 237B** (units calculated, requirement met)
+
+#### **Electives**
+
+- Various electives are listed (e.g., CS325B, CS348N, PHIL256)
+
+**Conclusion:** **MS SAT** (All MS requirements met based on provided transcript data)

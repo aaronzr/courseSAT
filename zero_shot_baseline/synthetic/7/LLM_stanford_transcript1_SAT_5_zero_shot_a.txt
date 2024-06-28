@@ -1,0 +1,91 @@
+Let's first break down the requirements for the BS in Computer Science with an Artificial Intelligence specialization and check if Emily Johnson's transcript meets those requirements. 
+
+### BS Degree Requirements
+
+#### Core Requirements
+- **CS 106B: Programming Abstractions:** Completed (2019-2020 Winter, Grade: B)
+- **CS 107: Computer Organization and Systems:** Completed (2020-2021 Winter, Grade: B)
+- **CS 111: Operating Systems Principles (formerly CS110):** Completed (2020-2021 Spring, Grade: B+)
+- **CS 103: Mathematical Foundations of Computing:** Completed (2020-2021 Autumn, Grade: B+)
+- **CS 109: Introduction to Probability for Computer Scientists:** Completed (2020-2021 Spring, Grade: B+)
+- **CS 161: Design and Analysis of Algorithms:** Completed (2021-2022 Autumn, Grade: B+)
+
+#### Senior Project Requirement
+- **CS 194: Software Project Experience:** Completed (2022-2023 Autumn, Grade: A)
+- **CS 210B: Project Experience with Corporate Partners:** Completed (2022-2023 Winter, Grade: A)
+
+#### Mathematics and Science Requirement
+- **MATH 19: Calculus:** Completed (2019-2020 Autumn, Grade: A)
+- **MATH 20: Calculus:** Completed (2019-2020 Winter, Grade: A-)
+- **MATH 21: Calculus:** Completed (2020-2021 Autumn, Grade: A-)
+- **MATH 51: Linear Algebra:** Completed (2020-2021 Winter, Grade: A)
+- **PHYS 41: Mechanics:** Completed (2019-2020 Winter, Grade: A)
+- **PHYS 43: Electricity and Magnetism:** Completed (2020-2021 Winter, Grade: A-)
+- **Advanced Placement Mathematics: Calculus AB:** 5 units accepted
+
+#### Depth and Electives (AI Track Requirements)
+- **CS 221: AI: Principles and Techniques:** Completed (2021-2022 Autumn, Grade: B)
+- Track Requirements (from different areas):
+  - **CS 224N: Natural Language Processing with Deep Learning:** Completed (2021-2022 Winter, Grade: A)
+  - **CS 231A: Computer Vision: From 3D Reconstruction to Recognition:** Completed (2021-2022 Winter, Grade: A-)
+  - **CS 224W: Analysis of Networks:** Completed (2021-2022 Spring, Grade: A)
+  - **CS 231N: Convolutional Neural Networks for Visual Recognition:** Completed (2021-2022 Spring, Grade: B+)
+  - **CS 234: Reinforcement Learning:** Completed (2022-2023 Autumn, Grade: A)
+  - **CS 238: Decision Making Under Uncertainty:** Completed (2022-2023 Autumn, Grade: A-)
+  - **CS 229: Machine Learning:** Completed (2022-2023 Spring, Grade: A)
+
+### BS Degree Status
+- **GPA Requirements:** Minimum of 2.0 GPA for all courses in ENGR Fundamentals, CS Core, Depth, and Senior Project (combined). Emily’s Cum GPA at graduation is 3.702.
+- All specific course requirements, senior project, and elective requirements in the BS AI specialization have been met.
+
+**Conclusion for BS Degree: BS SAT**
+
+### MS Requirements
+
+#### Foundations Requirement
+- **CS 103: Logic, Automata & Complexity:** Completed during Undergraduate
+- **CS 109: Probability:** Completed during Undergraduate
+- **CS 161: Algorithmic Analysis:** Completed during Undergraduate
+- **CS 107: Computer Organ & Sys:** Completed during Undergraduate
+- **CS 111: Principles of Computer Systems:** Completed during Undergraduate
+
+#### Significant Implementation Requirement
+(Must be one of the following and already completed in UG):
+- **CS 221: AI: Principles and Techniques:** Can be considered as it involves substantial programming.
+
+#### Breadth Requirement
+- **Area A (Mathematical and Theoretical Foundations):** Need one course
+  - No explicit course listed; needs validation.
+- **Area B (Computer Systems):** Need one course
+  - **CS 210B: Project Experience with Corporate Partners:** Completed
+- **Area C (Applications):** Need one course
+  - **CS 229: Machine Learning:** Completed
+- **Area D (Computing and Society):** Not provided.
+
+#### Depth (AI Specialization)
+- **CS 221: AI: Principles and Techniques:** Completed
+- At least four courses from the depth list:
+  - **CS 224N:** Completed
+  - **CS 231A:** Completed
+  - **CS 224W:** Completed
+  - **CS 231N:** Completed
+- Total at least 21 units from depth categories:
+  - Total depth units covered with the above courses.
+
+#### Electives
+- **Courses taken to complete the 45-unit MS degree requirement:**
+  - **MS&E 226:** Completed (2022-2023 Winter, Grade: A)
+  - Graduate units on transcript total 13; remaining units/electives need to be verified from coursework.
+
+### MS Degree Status
+- **Breadth Requirement: Area A and D courses missing.**
+- **Overall 45 graduate units requirement validation needed.**
+
+**Conclusion for MS Degree: List of courses not satisfied based on the student's transcript:**
+- Area A (Mathematical and Theoretical Foundations) course not listed.
+- Area D (Computing and Society) course not listed.
+- Verification needed for remaining electives to complete the 45 graduate units requirement.
+
+**Final outputs:**
+- **BS SAT**
+- **MS Requirements Not Satisfied: Missing courses for Area A and Area D of Breadth Requirement, and elective unit validation required.**

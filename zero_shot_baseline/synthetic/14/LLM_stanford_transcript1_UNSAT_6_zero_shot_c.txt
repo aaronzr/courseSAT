@@ -1,0 +1,94 @@
+To determine whether Alicia Marie Jackson satisfies both the Bachelor of Science (BS) and Master of Science (MS) degree requirements, we'll first go through the BS requirements and transcript to see if she met them, and move to the MS requirements if she meets all BS requirements.
+
+### Bachelor of Science (BS) Degree Requirements Analysis
+
+#### BS Core Requirements:
+1. **CS 106B: Programming Abstractions**
+   - **Taken:** Yes, Grade: B-, 5 units
+2. **CS 107: Computer Organization and Systems**
+   - **Taken:** Yes, Grade: D-, 5 units
+3. **CS 111: Operating Systems**
+   - **Taken:** Yes, Grade: C, 5 units
+4. **CS 103: Mathematical Foundations of Computing**
+   - **Taken:** No, **missing**
+
+5. **CS 109: Introduction to Probability for Computer Scientists**
+   - **Taken:** No, **missing**
+6. **CS 161: Data Structures and Algorithms**
+   - **Taken:** Yes, Grade: C+, 5 units
+
+#### BS Senior Project Requirements:
+- **CS 210B: Project Experience with Corporate Partners**
+  - **Taken:** Yes, Grade: C, 5 units
+
+#### BS AI Elective Requirements:
+**Mathematics and Science Requirements:**
+1. **Mathematics: 26 units minimum**
+   - **MATH 19/20/21 or equivalent + additional electives**: 8 AP Calculus + MATH 51 (5 units) + MATH 52 (5 units) + MATH 103 (3 units) + PHIL 151 (3 units) + STAT 50 (5 units)
+   - **Total:** 29 units 
+2. **Science: 11 units minimum**
+   - **PHYS 61 (5 units) + PHYS 63 (5 units) + PHYS 150 (4 units)**
+   - **Total:** 14 units 
+
+**Technology in Society Requirement:**
+- Not clearly taken based on provided transcript, **missing**
+
+**Engineering Fundamentals:**
+- **CS 106A: Programming Methodology**: 5 units, Grade: B
+- **EE 102: Introduction to Logic Design**: 3 units, Grade: B
+- **Total:** 8 units, **short of 10 units minimum**
+
+**Core, Depth, and Senior Project Combined:**
+- **Minimum GPA 2.0:** 
+  - CS Core GPA: Cannot be calculated exactly without knowing the weights, but considering the grades: (B- + D- + C + C+ ) /4 is close or slightly below 2.0.
+  - Depth: CS 195 (B-), CS 134 (B+), CS 238(B), CS 140 (F), CS 150 (B+), CS 240 (C+), CS 233 (B).
+  - Senior Project: CS 210B (C)
+
+### Conclusion for BS:
+Alicia Marie Jackson's BS degree is **NOT SATISFIED** because she is missing the following:
+1. **CS Core Courses**: CS 103 and CS 109
+2. **Technology in Society course**
+3. **Engineering Fundamentals requirements** (short by 2 units)
+
+### Master of Science (MS) Degree Requirements Analysis
+
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity**: (CS103 or equivalent)
+   - **CS103:** Not taken 
+2. **Probability (CS109, Stat116, CME106, MS&E220, or EE178)** 
+   - **Taken:** No equivalent, **missing**
+3. **Algorithmic Analysis (CS161)**
+   - **Taken:** Yes, Grade: C+
+4. **Computer Organization & Sys (CS107 or 107E)**
+   - **Taken:** Yes, Grade: D-
+5. **Principles of Computer Systems (CS110 or CS111)**
+   - **Taken:** CS111, Grade: C
+
+**Significant Implementation Requirement:**
+   - No clear completion based on transcript, **missing**
+
+**Breadth Requirement:**
+   - No clear completion based on transcript, **missing courses from all three breadth areas**
+
+**Artificial Intelligence Depth:**
+1. **CS 221: AI Principles & Techniques**
+   - **Taken:** No, **missing**
+2. **At least four from a list of specific AI courses**
+   - Clearly missing based on transcript
+3. **Total of at least 21 units from Depth categories: only few courses have been taken.**
+
+**Electives:**
+- Insufficient based on listed electives and requirements
+
+### Conclusion for MS:
+Alicia Marie Jackson's MS degree is **NOT SATISFIED** because she is missing the following:
+1. **Foundations Requirement**: Missing CS 103 or equivalent, and Probability Requirement
+2. **Significant Implementation Requirement**
+3. **Breadth Requirement** 
+4. **AI Depth courses and units from those courses**
+5. **Completed units and electives as per MSCS requirements**
+
+**Output:**
+**BS NOT SATISFIED: Missing CS 103, CS 109, Technology in Society course, and fulfilling Engineering Fundamentals**
+
+**MS NOT SATISFIED: Missing multiple foundation courses, breadth requirement, significant implementation, AI Depth courses, and elective units**

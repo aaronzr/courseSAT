@@ -1,0 +1,119 @@
+## BS Requirements Analysis
+
+### Core Requirements
+1. **CS 106B** - Programming Abstractions: Satisfied (Grade: B+)
+2. **CS 107** - Computer Organization and Systems: Satisfied (Grade: B)
+3. **CS 111** - Operating System Principles: Satisfied (Grade: B+)
+4. **CS 103** - Mathematical Foundations of Computing: Satisfied (Grade: B+)
+5. **CS 109** - Introduction to Probability for Computer Scientists: Satisfied (Grade: A-)
+6. **CS 161** - Design and Analysis of Algorithms: Satisfied (Grade: B+)
+
+### Senior Project Requirement
+1. **CS 210B** or equivalent: Satisfied (Courses: CS 210B - Grade: B+ and CS 191 - Grade: A)
+
+### Mathematics and Science Requirement
+1. **Mathematics (26 units minimum)**:
+   - MATH 19 - Calculus: Satisfied (Grade: B; 5 units)
+   - MATH 20 - Calculus: Satisfied (Grade: B+; 5 units)
+   - MATH 21 - Calculus: Satisfied (Grade: A-; 5 units)
+   - CS 103 - Mathematical Foundations of Computing: Satisfied (Grade: B+; 5 units)
+   - CS 109 - Introduction to Probability for Computer Scientists: Satisfied (Grade: A-; 5 units)
+   - MATH 53 - Ordinary Differential Equations for Engineers: Satisfied (Grade: A-; 5 units)
+   
+   Total: 30 units (Requirement met)
+
+2. **Science (11 units minimum)**:
+   - PHYS 41 - Mechanics: Satisfied (Grade: A-; 4 units)
+   - PHYS 43 - Electricity and Magnetism: Satisfied (Grade: B; 4 units)
+   - PHYS 45 - Light and Heat: Satisfied (Grade: B+; 4 units)
+   
+   Total: 12 units  (Requirement met)
+
+### Technology in Society Requirement
+- **STS 1 - Introduction to Science, Technology, and Society**: Satisfied (Grade: A; 4 units)
+
+### Engineering Fundamentals (10 units minimum)
+- **CS 106B - Programming Abstractions**: Satisfied (Grade: B+; 5 units)
+- **ENGR 40M - An Intro to Making: What is EE?**: Satisfied (Grade: B; 5 units)
+
+   Total: 10 units (Requirement met)
+
+### AI Electives (43 units minimum including Core, Depth, and Senior Project)
+1. **Core Courses**:
+   - **CS 107**: Satisfied (Grade: B; 5 units)
+   - **CS 111**: Satisfied (Grade: B+; 5 units)
+   - **CS 161**: Satisfied (Grade: B+; 5 units)
+
+   Core Total: 15 units
+
+2. **AI Depth**:
+   - **CS 221**: Satisfied (Grade: A-; 3 units)
+   - **CS 224N**: Satisfied (Grade: B+; 3 units)
+   - **CS 229**: Satisfied (Grade: B; 4 units)
+   - **CS 234**: Satisfied (Grade: A-; 3 units)
+   - **CS 237A**: Satisfied (Grade: A; 3 units)
+   - **CS 228**: Satisfied (Grade: A; 4 units)
+
+   Depth and Track Total: 20 units
+
+3. **Electives**:
+   - **PSYCH 209 - Psychological Research Methods: Satisfied (Grade: B+; 3 units)
+   - **CS 257 - Logic and Automated Reasoning: Satisfied (Grade: A-; 3 units)
+   - **MS&E 251 - Decision Analysis: Satisfied (Grade: A; 3 units)
+   - **CS 239 - Advanced Topics in AI: Satisfied (Grade: A-; 3 units)
+   - **CS 279 - Bioinformatics: Satisfied (Grade: B+; 3 units)**
+   - **CS 229M - Machine Learning in Medicine: Satisfied (Grade: B+; 3 units)
+
+   Electives Total: 18 units
+
+Overall Total: 53 units (Requirement met)
+
+### Conclusion for BS
+- Since all the requirements for courses are satisfied:
+  - **Output: BS SAT**
+
+## MS Requirements Analysis
+
+### Foundations
+1. **Logic, Automata & Complexity (CS 103)**: Satisfied (Undergrad Grade: B+)
+2. **Probability (CS 109)**: Satisfied (Undergrad Grade: A-)
+3. **Algorithmic Analysis (CS 161)**: Satisfied (Undergrad Grade: B+)
+4. **Computer Organization & Systems (CS 107)**: Satisfied (Undergrad Grade: B)
+5. **Principles of Computer Systems (CS 111)**: Satisfied (Undergrad Grade: B+)
+
+### Significant Implementation Requirement
+1. **CS 243 - Programming Languages**: Satisfied (Grade: B+)
+
+### Breadth Requirement
+1. **Area A - Mathematical and Theoretical Foundations**: 
+   - **CS 257 - Logic and Automated Reasoning**: Satisfied (Grade: A-)
+2. **Area B - Computer Systems**: 
+   - **CS 243 - Programming Languages**: Satisfied (Grade: B+)
+3. **Area C - Applications**:
+   - **CS 228 - Decision Making Under Uncertainty**: Satisfied (Grade: A)
+
+### AI Depth
+1. **CS 221**: Satisfied (Undergrad Grade: A-)
+2. **CS 224N**: Satisfied (Undergrad Grade: B+)
+3. **CS 229**: Satisfied (Undergrad Grade: B)
+4. **CS 234**: Satisfied (Undergrad Grade: A-)
+5. **CS 237A**: Satisfied (Undergrad Grade: A)
+6. **CS 228**: Satisfied (Grade: A)
+7. **CS 239**: Satisfied (Grade: A-)
+
+Total Depth Units: 25 units (Requirement met)
+
+### Electives
+Additional courses for reaching 45 units requirement for MS:
+1. **PSYCH 209 - Psychological Research Methods**: Satisfied (Grade: B+; 3 units)
+2. **CS 324 - Advanced Robotics**: Satisfied (Grade: A-; 3 units)
+3. **CS 379 - Deep Learning for Computer Vision**: Satisfied (Grade: B+; 3 units)
+4. **LAS 350 - Research Project in Latin American Studies**: Satisfied (Grade: A; 4 units)
+5. **CS 333 - Secure Computation**: Satisfied (Grade: A-; 3 units)
+6. **CS 341 - Project Work in Artificial Intelligence**: Satisfied (Grade: A; 4 units)
+
+Total Elective Units: 20 units (Requirement met)
+
+### Conclusion for MS
+- Since all the requirements for courses are satisfied:
+  - **Output: MS SAT**

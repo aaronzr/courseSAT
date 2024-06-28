@@ -1,0 +1,129 @@
+### Analysis of BS Requirements:
+
+#### Core Requirements:
+1. **CS103**: Taken and passed.
+2. **CS107**: Taken and passed.
+3. **CS109**: Taken and passed.
+4. **CS111**: Taken and passed.
+5. **CS161**: Taken and passed.
+
+*Status: All Core Requirements satisfied.*
+
+#### Senior Project:
+- **CS191**: Taken and passed (Grade: A).
+
+*Status: Senior Project Requirement satisfied.*
+
+#### Mathematics Requirements:
+1. **MATH 19**: Satisfied by AP Calculus BC.
+2. **MATH 20**: Satisfied by AP Calculus BC.
+3. **MATH 21**: Satisfied by AP Calculus BC.
+4. **CS103**: Already listed as a core, also fulfills this mathematics requirement.
+5. **CS109**: Already listed as a core, also fulfills this mathematics requirement.
+6. **Two electives**: 
+   - **CME 100**: Taken and passed.
+   - **CME 104**: Taken and passed.
+
+Total Units: 26 minimum required, all courses found (24 AP and others)
+
+*Status: Mathematics Requirements satisfied.*
+
+#### Science Requirements:
+1. **PHYS 41**: Taken and passed.
+2. **PHYS 43**: Taken and passed.
+3. **Elective**: 
+   - **PHYS 45**: Taken and passed.
+
+*Status: Science Requirements satisfied.*
+
+#### Technology in Society (TiS):
+- **MS&E 193**: Taken and passed.
+
+*Status: Requirements satisfied.*
+
+#### Engineering Fundamentals:
+1. **CS106B**: Taken and passed.
+2. **ENGR 40M/76**: 
+   - **ENGR 40**: Taken and passed.
+
+*Status: Engineering Fundamentals Requirements satisfied.*
+
+#### Depth Requirements (AI Track):
+1. **CS107/107E**: Already listed as a core, fulfills depth requirement.
+2. **CS111**: Already listed as a core, fulfills depth requirement.
+3. **CS161**: Already listed as a core, fulfills depth requirement.
+4. **CS221**: Taken and passed.
+5. **Track Requirement B**:
+   - **CS224R**: Taken and passed.
+   - **CS124**: Taken and passed.
+6. **Track Requirement C**:
+   - **CS140E**: Taken and passed.
+7. **Electives**:
+   - **CS223A**: Taken and passed.
+   - **CS325B**: Taken and passed.
+   - **CS326**: Taken and passed.
+   - **CS329D**: Taken and passed.
+
+*Status: All Depth Requirements satisfied.*
+
+#### Writing in Major (WiM):
+- Satisfied by taking **CS191**.
+
+*Status: Writing in the Major Requirement satisfied.*
+
+### BS Degree Status:
+**BS SAT**
+
+---
+
+### Analysis of MS Requirements:
+
+#### Foundations Requirement:
+
+- **Logic, Automata & Complexity (CS103)**: Already listed under BS degree.
+- **Probability (CS109)**: Already listed under BS degree.
+- **Algorithmic Analysis (CS161)**: Already listed under BS degree.
+- **Computer Org & Sys (CS107)**: Already listed under BS degree.
+- **Principles of Computer Systems (CS111)**: Already listed under BS degree.
+
+*Total Units: 10 units (maximum allowed), all satisfied.*
+
+#### Significant Implementation Requirement:
+- **CS 140E**: Taken and passed.
+
+#### Breadth Requirement:
+1. **Area A**: 
+   - **CS 154**: Taken and passed.
+2. **Area B**: 
+   - **CS 140E**: Taken and passed (also used for implementation requirement).
+3. **Area C**: 
+   - **CS 224N**: Taken and passed.
+
+*Status: Breadth Requirements satisfied.*
+
+#### Depth Requirement (AI Specialization):
+1. **CS 221**: Taken and passed.
+2. **Four Depth Courses**:
+   - **CS223A**: Taken and passed.
+   - **CS224N**: Taken and passed.
+   - **CS224R**: Taken and passed (also used under BS requirements).
+   - **CS229**: Taken and passed.
+3. **Additional Depth Courses to total 21 units**: 
+   - **CS231A**: Taken and passed (MS Degree phase).
+   - **CS238**: Taken and passed.
+
+*Total Depth Units: More than 21 units satisfied.*
+
+#### Electives:
+- Additional courses: 
+  - **CS 205L**: Taken and passed.
+  - **CS231N**: Taken and passed (MS Degree phase).
+
+#### Other Requirements:
+- **At least 45 graduate units at Stanford**: Satisfied by cumulative graduate units analyzed.
+- **Average grade at least 3.0**: Satisfied.
+
+### MS Degree Status:
+**MS SAT**
+
+Both BS and MS requirements are satisfied for Jeremy Lee Bregman.

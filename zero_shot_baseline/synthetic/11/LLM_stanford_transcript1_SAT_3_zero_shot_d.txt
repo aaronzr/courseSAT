@@ -1,0 +1,160 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Given the Bachelor of Science (BS) requirements from Stanford's Computer Science program and Alexandra Marie Smith's transcript, I'll analyze each requirement and check if Alexandra has satisfied all of them.
+
+### Core Requirements:
+1. **CS 103: Mathematical Foundations of Computing**
+   - Taken: Yes (Spring 2021, Grade: B)
+
+2. **CS 106B: Programming Abstractions**
+   - Taken: Yes (Winter 2021, Grade: B+)
+
+3. **CS 107: Computer Organization and Systems**
+   - Taken: Yes (Autumn 2021, Grade: B)
+
+4. **CS 109: Introduction to Probability for Computer Scientists**
+   - Taken: Yes (Autumn 2021, Grade: B+)
+
+5. **CS 111: Operating Systems Principles**
+   - Taken: Yes (Winter 2022, Grade: B+)
+
+6. **CS 161: Design and Analysis of Algorithms**
+   - Taken: Yes (Spring 2022, Grade: A-)
+
+### Senior Project:
+1. **CS 191: Independent Study in Computer Science**
+   - Taken: Yes (Autumn 2022, Grade: A)
+
+### Math Requirements (26 units minimum):
+- MATH 19: Calculus (5 units, Grade: B+)
+- MATH 20: Calculus (5 units, Grade: A)
+- MATH 21: Calculus (5 units, Grade: A-)
+- CS 103: Mathematical Foundations of Computing (5 units, Grade: B)
+- CS 109: Introduction to Probability for Computer Scientists (5 units, Grade: B+)
+- Total Math Units: 25 + AP Calculus (10 units)
+
+### Science Requirements (11 units minimum):
+- PHYSICS 41: Mechanics (4 units, Grade: B+)
+- PHYSICS 43: Electricity and Magnetism (4 units, Grade: B+)
+- PHYSICS 44: Classical Mechanics Lab (1 unit, Grade: S)
+- PHYSICS 81: Electricity and Magnetism Lab (1 unit, Grade: S)
+- PHYSICS 45: Light and Heat (4 units, Grade: A-)
+- Total Science Units: 14
+
+### Engineering Fundamentals (10 units minimum):
+- CS 106B: Programming Abstractions (5 units, Grade: B+)
+- ENGR 40M: An Intro to Making: What is EE? (5 units, Grade: A-)
+- Total Engineering Fundamentals Units: 10
+
+### Technology in Society Requirement:
+Taken:
+- ANTHRO 101: The Aztecs and Their Ancestors: Introduction to Mesoamerican Archaeology (3 units, Grade: A-)
+
+### AI Track Core and Elective Requirements:
+1. **CS 221: AI: Principles and Techniques**
+   - Taken: Yes (Autumn 2022, Grade: A-)
+
+2. **CS 224N: Natural Language Processing with Deep Learning**
+   - Taken: Yes (Autumn 2022, Grade: B+)
+
+3. **CS 229: Machine Learning**
+   - Taken: Yes (Autumn 2022, Grade: B)
+
+4. **CS 228: Machine Learning Theory**
+   - Taken: Yes (Winter 2023, Grade: B+)
+
+5. **CS 234: Reinforcement Learning**
+   - Taken: Yes (Spring 2023, Grade: A)
+
+6. **CS 246: Mining Massive Datasets**
+   - Taken: Yes (Spring 2023, Grade: A-)
+
+7. **CS 257: Logic and Automated Reasoning**
+   - Taken: Yes (Autumn 2023, Grade: A)
+
+8. **CS 123: Introduction to Robotics**
+   - Taken: Yes (Winter 2024, Grade: A)
+
+9. **CS 223A: Introduction to Robotics**
+   - Taken: Yes (Winter 2024, Grade: A)
+
+### Summary of Units:
+- **Core Requirements Units**: 30 Units (5 units each for CS 103, 106B, 107, 109, 111, 161)
+- **Senior Project Units**: 3 Units (CS 191)
+- **AI Track Core Units**: 3 Units Each for CS 221, 224N, 229, 228, 234, 246, 257, 123, 223A (Total 27 Units)
+- **Total Combined Required Units**: 43 Units
+
+## Conclusion:
+- Alexandra has taken all required courses for the BS degree in Computer Science and AI track, fulfilling all core, depth, senior project, math, science, and engineering fundamentals requirements.
+- **Output**: BS SAT
+
+Alexandra Marie Smith satisfies all the Bachelor of Science degree requirements.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+First, let's break down the Master's in Science (MS) degree requirements into categories and analyze whether Alexandra Marie Smith satisfied each requirement based on the provided transcript.
+
+### Foundations Requirement
+1. Logic, Automata & Complexity (CS103)
+   - Grade: B, Units: 5 (Taken during undergraduate)
+2. Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+   - CS 109 Intro to Probability for Computer Scientists
+   - Grade: B+, Units: 5 (Taken during undergraduate)
+3. Algorithmic Analysis (CS161)
+   - Grade: A-, Units: 5 (Taken during undergraduate)
+4. Computer Organ & Sys (CS107 or 107E)
+   - CS 107 Computer Organization and Systems
+   - Grade: B, Units: 5 (Taken during undergraduate)
+5. Principles of Computer Systems (CS110 or CS111)
+   - CS 111 Operating Systems Principles
+   - Grade: B+, Units: 5 (Taken during undergraduate)
+
+*Total Units for Foundations*: 
+- All requirements are satisfied, totaling 25 units (however, note only up to 10 units can count towards MS).
+
+### Significant Implementation Requirement
+- At least one course from the list taken for a letter grade that may be used to satisfy other requirements. The student has taken:
+  - CS 221 AI: Principles and Techniques, Grade: A-, 3.00 units.
+
+### Breadth Requirement
+Must take 3 courses, each from different Breadth Areas (A, B, C, or D), for a letter grade:
+1. **Area A (Mathematical and Theoretical Foundations)**:
+   - CS 257 Logic and Automated Reasoning, Grade: A, 3.00 units.
+2. **Area B (Computer Systems)**:
+   - No applicable taken courses found in transcript.
+3. **Area C (Applications)**:
+   - CS 246 Mining Massive Data Sets, Grade: A-, 3.00 units.
+4. **Area D (Computing and Society)**:
+   - No applicable taken courses found in transcript.
+
+*Breadth Requirement Analysis*: Not fully satisfied. Missing courses in Area B and D.
+
+### Artificial Intelligence Depth
+a) **CS 221 (required)**
+   - Taken: CS 221 AI: Principles and Techniques, Grade: A, 3.00 units.
+
+b) **At least four of:**
+   - CS 224N Natural Language Processing with Deep Learning, Grade: B+, 3.00 units.
+   - CS 223A Introduction to Robotics, Grade: A, 3.00 units.
+   - CS 228 Machine Learning Theory, Grade: B+, 3.00 units.
+   - CS 234 Reinforcement Learning, Grade: A, 3.00 units.
+
+c) **Total of at least 21 units from (a), (b), and the following:**
+   - CS 229 Machine Learning, Grade: B, 3.00 units.
+   - CS 245 Database Systems Principles, Grade: B+, 3.00 units.
+   - CS 231A Computer Vision: From 3D Reconstruction to Recognition, Grade: A, 3.00 units.
+   - CS 257 Logic and Automated Reasoning, Grade: A, 3.00 units.
+   - CS 270 Computational Genomics, Grade: A-, 3.00 units.
+   - CS 371 Computational Neural Models, Grade: A-, 3.00 units.
+
+*Total Units for Depth*: 30 units.
+
+### Electives
+- Already satisfied due to the total units beyond foundational and depth requirements summing up to at least 45 total units.
+
+### Summary
+The analysis reveals the following requirement gaps:
+1. Breadth Requirement: Missing courses in Area B (Computer Systems) and Area D (Computing and Society).
+
+### Output
+Since not all requirements are satisfied, the output would be:
+
+```
+Not satisfied Breadth Requirement: Area B (Computer Systems) and Area D (Computing and Society)
+```

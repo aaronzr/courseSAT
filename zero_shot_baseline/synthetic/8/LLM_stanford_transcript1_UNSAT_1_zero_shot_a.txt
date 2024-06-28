@@ -1,0 +1,120 @@
+### Bachelor's Degree (BS) Analysis
+
+#### Core Requirements (15 units minimum)
+
+1. **CS106B: Programming Abstractions**
+   - Course not listed on transcript.
+
+2. **CS107/107E: Computer Organization and Systems**
+   - CS107 was taken (Grade: Not explicitly mentioned).
+
+3. **CS111: Operating Systems Principles**
+   - CS202 Operating Systems (Taken in 2020-2021 Autumn, Grade: B-).
+
+4. **CS161: Design and Analysis of Algorithms**
+   - CS201 Algorithms (Taken in 2020-2021 Spring, Grade: A-).
+
+#### Math Requirements (26 units minimum)
+
+- MATH19/20/21 (10 units AP credit from Calculus AB).
+- CS103 Mathematical Foundations of Computing (Taken as indicated in the depth requirement).
+- CS109 Introduction to Probability for Computer Scientists (Taken as indicated in the core requirement).
+- Mathematics Unit Total: Need to verify additional electives to reach 26 units.
+
+#### Science Requirements (11 units minimum)
+
+- PHYS101/102/103 series taken.
+- Additional courses (e.g., BIO102, BIO201).
+
+#### Engineering Fundamentals (10 units minimum)
+
+- Courses such as ENGR 10 (Introduction to Engineering) taken (Grade: B).
+- CS106B not listed explicitly.
+
+#### Technology in Society Requirement
+
+- Not explicitly mentioned in the transcript, needs verification.
+
+#### Senior Project Requirement (1 course required)
+
+- Senior project courses are not identified in the transcript explicitly (e.g., CS191/W, CS194, CS210B).
+
+### AI Track Core, Depth, Electives Requirement (43 units minimum)
+
+1. **Core (15 units minimum)**
+   - CS107 or CS107E (Addressed earlier).
+   - CS111 (CS202 considered as equivalent; Grade: B-).
+
+2. **AI Track Depth (21 units minimum)**
+   - CS221 (AI: Principles and Techniques, not listed).
+
+   **Depth Courses (4 minimum)**
+   - Taken courses:
+     - CS306 (Artificial Intelligence, Grade: A+).
+     - CS307 (Natural Language Processing, Grade: B+).
+     - CS401 (Advanced Machine Learning, 2022-2023, Grade: B-).
+   - Needs additional depth courses.
+
+3. **Electives (3 additional courses)**
+   - Various electives in relevant areas (multiple BIO, MATH, PHYS, and other relevant courses).
+   - Senior Project not identified explicitly in transcript.
+
+### Results for BS 
+
+1. Core Requirements:
+   - CS106B: Not listed.
+   - CS107 equivalent: Addressed.
+   - CS111: Addressed.
+   - CS161: Addressed.
+
+   **BS Core Requirements: Partially satisfied, CS106B missing**
+
+2. Math Requirements:
+   - Verified partially but needs detailed review of total 26 units.
+
+3. Science Requirements:
+   - Satisfied.
+
+4. Engineering Fundamentals:
+   - CS106B missing.
+
+5. Technology in Society:
+   - Not verifiable from transcript.
+
+6. Senior Project:
+   - Not explicitly identified on transcript.
+
+7. AI Track Courses and Electives:
+   - Some courses satisfied, additional depth and elective courses need to be reviewed.
+
+### Status:
+- **BS NOT SAT** due to missing CS106B, Technology in Society, and Senior Project.
+
+### Master's Degree (MS) Analysis
+
+1. **Foundations Requirement**
+   - Logic, Automata & Complexity (CS103 not listed).
+   - Probability (CS109 equivalent).
+   - Algorithmic Analysis (CS161 equivalent).
+   - Computer Organization & Systems (CS107).
+   - Principles of Computer Systems (CS111).
+
+2. **Breadth Requirement:**
+   - Breadth course selection not explicitly detailed but AI-specific courses like CS306, CS307 taken.
+
+3. **AI Depth Requirement:**
+   - Verified some courses but need at least 21 units from specified list. Many components need verifications and total units calculation.
+
+4. **Electives to fulfill 45 units:**
+   - Need additional details; total credits, and confirmation for significant implementation course.
+
+5. **Other Requirements:**
+   - Confirmed units taken/total.
+   - Significant implementation specifics needed.
+
+### Status:
+- **MS NOT SAT** as several AI Depth and elective requirements need verification and specific courses documented.
+
+### Conclusion:
+
+Review needed for specific missing courses, total units calculation, and in-depth verification on senior project and depth electives for both BS and MS.

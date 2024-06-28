@@ -1,0 +1,82 @@
+Based on the provided unofficial transcript and the degree requirements for the Bachelor of Science (BS) in Computer Science and Master of Science (MSCS) with an Artificial Intelligence Specialization, let's systematically analyze if Samantha Marie Franklin's coursework satisfies the necessary requirements.
+
+### BS in Computer Science
+
+**BS Core Requirements:**
+1. **CS Core Courses:**
+    - CS103 Mathematical Foundations of Computing (not seen in the transcript)
+    - CS106B Programming Abstractions (not seen in the transcript)
+    - CS107 Computer Organization and Systems (covered by CS202 Operating Systems)
+    - CS111 Operating Systems Principles (covered by CS202 Operating Systems)
+    - CS109 Introduction to Probability for Computer Scientists (not seen in the transcript)
+    - CS161 Data Structures and Algorithms (covered by CS201 Algorithms)
+
+2. **Technology in Society Requirement:**
+    - Required one course (not clearly seen in the transcript)
+
+3. **Mathematics Requirements:**
+    - Math: Completed MATH41, MATH42, MATH51, MATH113, MATH115, MATH121, MATH130, MATH140, MATH150.
+    - CS103 Mathematical Foundations of Computing (missing from Math list)
+    - CS109 Introduction to Probability for Computer Scientists (missing from Math list)
+
+4. **Science Requirements:**
+    - PHYS101, PHYS102, PHYS103, PHYS104 (covered, and PHYS106 in addition)
+    - BIO101, BIO102, BIO201, BIO202, BIO203, BIO301, BIO302, BIO303 (additional sciences)
+
+5. **Engineering Fundamentals:**
+    - CS106B Programming Abstractions (missing)
+    - ENGR10 Introduction to Engineering (covered)
+    - Additional Courses in Fundamentals: EE101 Circuits I (covered)
+
+6. **Senior Project:**
+    - CS194, CS194W, CS210B, CS191 or CS191W, CS294 (not clearly seen in the transcript)
+
+**Conclusion for BS Program:**
+Courses required by the BS program that are missing based on the provided transcript are:
+  - CS103 (Mathematical Foundations of Computing)
+  - CS106B (Programming Abstractions)
+  - CS109 (Introduction to Probability for Computer Scientists)
+  - Senior Project (not clearly satisfied)
+
+Overall: **BS NOT SAT** due to the missing core courses and lack of clear Senior Project.
+
+### MS in Computer Science (Artificial Intelligence Specialization)
+
+**MS Core Requirements:**
+1. **Foundations Requirement:**
+    - Logic, Automata & Complexity (CS103 or equivalent, missing as it was missing in the BS)
+    - Probability (CS109, Stat116, CME106, MS&E220, or EE178, missing as it was missing in the BS)
+    - Algorithmic Analysis (CS161, covered by CS201 Algorithms)
+    - Computer Organization & Systems (CS107 or CS202, covered by CS202)
+    - Principles of Computer Systems (CS110 or CS111, covered by CS202)
+
+2. **Significant Implementation Requirement:**
+    - Could be satisfied by any of the listed AI courses, e.g., CS403 Deep Learning.
+
+3. **Breadth Requirement (three areas):**
+    - Course applicable to different areas:
+        - Area B: Systems (CS305 Database Systems maybe applicable)
+        - Area C: Applications (CS307 NLP, CS403 Deep Learning)
+        - Still missing a breadth course (Area A: Mathematical).
+
+4. **AI Depth Requirements:**
+    - CS221 (not seen in transcript)
+    - Four from list: CS307 NLP, CS306 AI, CS403 Deep Learning, possibly fulfilled with CS401 Advanced ML. If counted, partly satisfied but CS221 is mandatory.
+
+5. **21 total units from categories (a), (b), and additional electives:**
+    - Insufficient documentation on total units strictly for Depth but notably should be explored detailed against electives taken.
+
+**Conclusion for MS Program:**
+Courses or areas required by the MS program that are missing:
+  - Essentials of CS103 and CS109 (already identified in BS)
+  - Breadth course Area A (Mathematical)
+  - Mandatory CS221 for depth
+  - Verification of 21 units minimum for AI depth
+
+Overall: **MS NOT SAT** due to missing essential core classes (CS103, CS109), and specific AI-required (CS221), and breadth area.
+
+### Summary:
+- **BS NOT SAT**: Missing core requirements (CS103, CS106B, CS109) and lack of Senior Project.
+- **MS NOT SAT**: Missing foundational courses (CS103, CS109), breadth area, and depth requirement (CS221).
+
+Thus, Samantha Marie Franklin's transcripts indicate unmet requirements for both BS and MS degree tracks as per the analyzed details.

@@ -1,0 +1,145 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the given information, here is the analysis for Alicia Marie Jackson's Bachelor of Science (BS) degree requirements in Computer Science:
+
+### BS Requirements Checklist
+1. **Core Requirements (All for 5 units)**:
+   - CS 103 (Mathematical Foundations of Computing)
+   - CS 106B (Programming Abstractions) - **Completed with B-**
+   - CS 107 (Computer Organization and Systems) - **Completed with D-**
+   - CS 109 (Introduction to Probability for Computer Scientists)
+   - CS 111 (Operating Systems) - **Completed with C**
+   - CS 161 (Data Structures and Algorithms) - **Completed with C+**
+
+2. **Depth Requirements and Electives**:
+   - **CS 221 (AI: Principles and Techniques)** - Required
+   - **Two courses from different areas in Track Requirement B**:
+     - Natural Language Processing (e.g., CS 124) - **CS 124 taken but with D+**
+     - AI Methods, Vision, Robotics, etc.
+   - **One additional course from Track Requirement C**:
+     - List includes CS 157, CS 205L, CS 230 (taken but failed), etc.
+   - **Three additional courses from Track Requirement B list, C list, or General CS Electives list**:
+     - At least three courses not specifically identified in transcript.
+
+   - Other electives: **CS 138 taken**
+
+3. **Senior Project Requirement**:
+   - CS 210B (Project Experience with Corporate Partners) - **Completed with C**
+
+4. **Mathematics Requirement (26 units minimum)**:
+   - MATH 19, 20, 21 - **Covered by Calculus AB AP credit (8 units)**
+   - MATH 51 (5 units) - **Completed with C**
+   - Two electives: 
+     - MATH 52 (5 units) - **Completed with B-**
+     - MATH 103 (3 units) - **Completed with B+**
+     - MATH 171 (3 units) - **Completed with C**
+
+5. **Science Requirement (11 units minimum)**:
+   - PHYSICS 41/21/61 - **Taken PHYSICS 61 - Completed with A-**
+   - PHYSICS 43/23/81/63 - **Taken PHYSICS 63 - Completed with C+**
+   - One elective: Various courses (e.g., BIO 110)
+
+6. **Technology in Society Requirement**:
+   - At least one course required from the approved TiS list.
+
+7. **Engineering Fundamentals (10 units minimum)**:
+   - CS 106B (5 units) - **Completed with B-**
+   - ENGR 40M or EE 76; EE 102 - **Completed with B**
+   - EE 222 Quantum Mechanics - **Completed**
+
+### Unmet Requirements and Areas of Concern
+- **CS 103** and **CS 109** - Not found in transcript.
+- **Depth requirements for Track B and C**, **Electives** - Not all specified courses are found in the provided transcript.
+- **Minimum GPA of 2.0** in ENGR Fundamentals, CS Core, Depth, and Senior Project combined - Average GPA check needed.
+- **Technology in Society Requirement** - No record found in the transcript.
+
+### Conclusion
+Since several critical courses and units are unmet or missing, and specific GPA checks and depth requirements are not fully verifiable:
+
+- **CS 103 (5 units)**
+- **CS 109 (5 units)**
+- **CS 221 (AI: Principles and Techniques)**
+- **Track Requirement B and C**
+- **Minimum GPA of 2.0 check needed**
+- **Technology in Society Requirement**
+
+### Output
+```
+Courses not satisfied:
+- CS 103
+- CS 109
+- CS 221
+- Track Requirement B (at least two courses)
+- Track Requirement C (one course)
+- Technology in Society Requirement
+- Ensure minimum GPA of 2.0 in ENGR Fundamentals, CS Core, Depth, and Senior Project combined.
+```
+========================GPT Answer to Prompt Two Regarding MS Requirements====================
+The given transcript of Alicia Marie Jackson needs to be thoroughly examined against the "Artificial Intelligence Specialization" requirements for the MS in Computer Science (MSCS) at Stanford University. Below, I will identify each category of requirements and check whether the student has met them.
+
+## Foundation Requirements
+- Logic, Automata & Complexity: Not explicitly fulfilled in the UG transcript.
+- Probability (CS109, Stat116, CME106, MS&E220, or EE178):
+  - EE 203 (Probability and Random Processes): **Grade C+**
+- Algorithmic Analysis (CS161):
+  - CS 161 (Data Structures and Algorithms): **Grade C+**
+- Computer Organization & Systems (CS107 or 107E):
+  - CS 107 (Computer Organization and Systems): **Grade D-**
+- Principles of Computer Systems (CS110 or CS111):
+  - CS 111 (Operating Systems): **Grade C**
+
+*Summary:* The transcript shows poor grades in essential foundation courses: CS 107 (D-) and CS 161 (C+). 
+
+## Significant Implementation Requirement
+The significant implementation requirement mandates the completion of at least one course from the prescribed list, taken for a letter grade:
+- CS 140 (Operating Systems and Systems Programming): **Grade F** indicates failure.
+- CS 210B (Project Experience with Corporate Partners): **Grade C**
+
+*Summary:* CS 210B meets the significant implementation requirement but is on the borderline with a grade C.
+
+## Breadth Requirement
+Three courses, one from each different Breadth area A, B, C, or D:
+- **Area A**: Mathematical and Theoretical Foundations (Math 51, 52, CS 154, etc.):
+  - MATH 51 and MATH 52 are taken, grades **C** and **B-** respectively.
+- **Area B**: Computer Systems:
+  - ee 102 (Logic Design): **Grade B**
+- **Area C**: Applications:
+  - ee 222 (Quantum Mechanics): **Grade D**
+- **Area D**: Computing and Society:
+  - CS 134 (Ethics and Technology): **Grade B+**
+
+*Summary:* No distinct course identified firmly in Area A, B, and C. The grades and subject matches are suboptimal.
+
+## Artificial Intelligence Depth
+- **a)** CS 221 (waived by adviser): Not explicitly mentioned.
+- **b)** Four of the following:
+  - CS 156: **Grade D+** (Machine Learning)
+  - CS 238: **Grade B** (Machine Learning in Healthcare, partially applicable)
+
+*Summary:* The depth requirements are not sufficiently fulfilled. Only CS 238 meets the requirement with a decent grade.
+
+## Electives and Other Requirements
+Total Units: At least 45 units for MSCS are required.
+- There is a lack of clear elective units and exact application towards the MSCS in terms of matching the elective criteria.
+- Overall GPA requirement of B (3.0): Current GPA of around 2.594 does not satisfy this.
+
+**Conclusion**: Based on the provided transcript data:
+- **Poor Grades** in foundational requirement courses.
+- **Fail** in some significant AI Depth areas.
+- **Inadequate fulfillment** of elective units and insufficient adjustment for the Breadth requirement courses.
+- **Overall GPA below 3.0**.
+
+**MS SATISFACTION STATUS**: **NOT SAT** 
+
+**Courses or Areas Not Satisfied**:
+1. **Foundation Courses**:
+   - Logic, Automata & Complexity: Not clearly taken.
+   - CS 107 needs re-evaluation or improvement.
+   - CS 161 (C+ should be better evaluated).
+2. **Breadth Courses**:
+   - Suitable courses more distinctly.
+3. **Depth Requirements**:
+   - CS depth courses have insufficient performance and clarity in units.
+4. **Overall GPA**:
+   - Does not meet ≥3.0.
+
+Hence, Alicia Marie Jackson does not meet the MSCS degree specialization requirements.

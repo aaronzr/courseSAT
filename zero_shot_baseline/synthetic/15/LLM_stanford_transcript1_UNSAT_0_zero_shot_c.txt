@@ -1,0 +1,122 @@
+Based on the detailed degree requirements for both the BS and MS in Computer Science (AI Track) at Stanford University and the provided transcript for Julian Mark Bergson, here's the analysis for each level:
+
+### BS Core Requirements
+1. **Math Requirements (26 units minimum)**
+   - MATH 19/20/21 (or equivalent with AP credit)
+   - CS103, CS109 
+   - Two electives (e.g., MATH 51, 52, 53, CME 100, 102, etc.)
+   
+2. **Science Requirements (11 units minimum)**
+   - PHYS 41, PHYS 43, One elective
+   
+3. **Technology in Society**
+   - One course from an approved list
+   
+4. **Engineering Fundamentals (10 units minimum)**
+   - CS106B
+   - One of ENGR 40M or 76
+   
+5. **Core Requirements**
+   - CS107, CS111, CS161
+   
+6. **Depth Requirements (AI Track, 25 units minimum)**
+   - CS 221
+   - Two Track B courses (AI Methods, NLP, Vision, Robotics)
+   - Track C course
+   - Three electives
+   
+7. **Senior Project (at least 3 units)**
+   - CS 191, 194, 210B, or 294
+
+### Transcript Analysis for BS Core Requirements
+- **Math Requirements: Satisfied**
+  - AP Calculus AB (10 units)
+  - MATH 50 (Discrete Mathematics for Engineers), MATH 70 (Linear Algebra), MATH 112 (Advanced Calculus II), MATH 130 (Probability Theory)
+  
+- **Science Requirements: Partially Satisfied**
+  - PHYSICS 55 (Classical Mechanics)
+  - PHYSICS 145 (Quantum Mechanics)
+  - CHEM 40 (General Chemistry)
+  - Needs PHYS 43 or equivalent
+  
+- **Technology in Society: Not Satisfied**
+  - No course listed from Technology in Society
+   
+- **Engineering Fundamentals: Satisfied**
+  - CS 100A (Data Structures and Algorithms)
+  - EE 50 (Fundamentals of Electronics)
+   
+- **Core Requirements: Satisfied**
+  - CS 200 (Operating System Concepts → CS 107 equivalent)
+  - CS 210 (Introduction to AI → CS 221 equivalent)
+  - CS 106C (Data Structures and Algorithms)
+
+- **Depth Requirements: Partially Satisfied**
+  - CS 210 (AI Principles)
+  - CS 250 (Advanced Algorithms)
+  - CS 099 or equivalents (requires verification which areas they cover)
+  - CS 260 (Machine Learning)
+  
+- **Senior Project: Satisfied**
+  - CS 199 (AI Capstone Project)
+
+### BS Degree Summary
+- Overall GPA: Satisfied (3.115 on a 4.0 scale, requirement 2.0 minimum)
+- **Missing Requirements**:
+  - Technology in Society requirement (1 course)
+  - PHYS 43 or equivalent for Science Requirements
+  
+Given the above analysis, the student would require:
+- At least one course from the Technology in Society approved list.
+- PHYS 43 or a substitute acceptable under the science requirements.
+
+**Output for BS**:
+```
+Missing Requirements:
+- Technology in Society requirement
+- PHYS 43 or equivalent
+```
+
+### MS Specialization Requirements
+1. **Foundations Requirement: Essential Computer Science courses**
+   - CS103, CS109 (or equivalent)
+   - CS161, CS107 (or CS107E), CS110 (or CS111)
+
+2. **Significant Implementation Requirement**
+   - One course from an approved list with significant implementation: CS 140, 212, 221, etc.
+   
+3. **Breadth Requirement**
+   - Three courses from different areas (A, B, C, D)
+
+4. **Artificial Intelligence Depth Requirement**
+   - CS 221 required
+   - At least four from the lists provided
+   - Total of at least 21 units from depth courses
+
+5. **Electives**
+   - Additional courses to meet total 45 units needed
+
+### Transcript Analysis for MS Requirements
+- **Foundations Requirement: Partially Satisfied**
+  - CS103, CS109, CS107, CS111, CS161 (already verified through BS)
+  
+- **Significant Implementation Requirement: Not Verified**
+  - Specific course needs identification for implementation requirement
+  
+- **Breadth Requirement: Not Verified**
+  - Needs specific courses from three distinct areas
+
+- **Artificial Intelligence Depth Requirement: Partially Satisfied**
+  - CS 210 (AI Principles)
+  - CS 260 (Machine Learning)
+  
+- **Electives: Partially Satisfied**
+  - Current graduate courses in transcript need to be verified
+
+**Output for MS**:
+```
+Missing Requirements:
+- Significant Implementation requirement course
+- Three breadth area courses (from different areas)
+- Additional electives to meet total 45 units needed
+```

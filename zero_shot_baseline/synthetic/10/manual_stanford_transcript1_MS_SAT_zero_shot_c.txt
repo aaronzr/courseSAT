@@ -1,0 +1,95 @@
+### BS Degree Requirements Assessment
+
+Given the student's transcript and the requirements for a BS in Computer Science with an Artificial Intelligence track, let's analyze each category:
+
+#### Core Requirements
+- **CS 106B Programming Abstractions** - Completed (Grade B)
+- **CS 107 Computer Organization and Systems** - Completed (Grade B+)
+- **CS 111 Operating Systems Principles** - Completed (Grade A)
+- **CS 103 Mathematical Foundations of Computing** - Completed (Grade A-)
+- **CS 109 Introduction to Probability for Computer Scientists** - Completed (Grade B+)
+- **CS 161 Design and Analysis of Algorithms** - Completed (Grade A-)
+
+#### Math Requirements
+- **MATH 19/20/21** - AP Credit for Calculus BC (10 units)
+- **CS 103 Mathematical Foundations of Computing** - Completed (4 units)
+- **CS 109 Introduction to Probability for Computer Scientists** - Completed (4 units)
+- **CME 100 Vector Calculus for Engineers** - Completed (5 units)
+- **CME 104 Linear Algebra and Partial Differential Equations for Engineers** - Completed (5 units)
+- Total Math Units: 28 (26 minimum required) - Satisfied
+
+#### Science Requirements
+- **PHYS 41 Mechanics** - Completed (4 units, Grade A)
+- **PHYS 43 Electricity and Magnetism** - Completed (4 units, Grade B+)
+- **PHYS 45 Light and Heat** - Completed (4 units, Grade B-)
+- Total Science Units: 12 (11 minimum required) - Satisfied
+
+#### Technology in Society Requirement
+- **MS&E 193 Technology and National Security** - Completed (3 units, Grade A-)
+
+#### Engineering Fundamentals
+- **ENGR 40 Introductory Electronics** - Completed (5 units, Grade B+)
+- **CS 106B Programming Abstractions** - Completed (5 units, Grade B)
+- Total Engineering Fundamentals: 10 units - Satisfied
+
+#### Depth Requirements (AI Track)
+- **CS 221 AI: Principles and Techniques** - Completed (Grade B+)
+- **CS 224R Deep Reinforcement Learning** - Completed (Grade B)
+- **CS 124 From Languages to Information** - Completed (Grade A)
+- **CS 157 Computational Logic** - Completed (Grade A)
+- **CS 223A Introduction to Robotics** - Completed (Grade A)
+- **CS 224N Natural Language Processing with Deep Learning** - Completed (Grade A)
+- **CS 329D ML under Distribution Shifts** - Completed (Grade A)
+- Total AI Depth Units: 27 (25 minimum required) - Satisfied
+
+#### Senior Project
+- **CS 191 Senior Project** - Completed (Grade A)
+
+#### GPA Requirement
+- 2.0 minimum GPA for all courses in Engineering Fundamentals, CS Core, Depth, and Senior Project combined.
+- The student has significantly exceeded the minimum GPA in all categories.
+
+### BS Degree Status: **BS SAT**
+
+---
+
+### MS Degree Requirements Assessment
+
+Given the student's transcript and the requirements for the MS in Computer Science specialization in Artificial Intelligence, let's analyze each category:
+
+#### Foundations Requirement
+- **CS 103 Logic, Automata & Complexity** - Satisfied (from BS)
+- **CS 109, Stat116, CME106, MS&E220, or EE178 Probability** - Satisfied (CS 109 from BS)
+- **CS 161 Algorithmic Analysis** - Satisfied (from BS)
+- **CS 107 Computer Organization and Systems** - Satisfied (from BS)
+- **CS 110 or CS 111 Principles of Computer Systems** - Satisfied (CS 111 from BS)
+
+#### Significant Implementation Requirement
+- Courses like **CS 140E**, **CS 221**, and **CS 231A** are recognized for significant implementation. The student took **CS 140E** and **CS 231A**.
+
+#### Breadth Requirement
+- **Area A (Mathematical and Theoretical Foundations):**
+  - Completed **CS 154 Introduction to Automata and Complexity Theory** - Completed (Grade A)
+- **Area B (Computer Systems):** 
+  - Completed **CS 140E Embedded Operating System** - Completed (Grade A+)
+- **Area C (Applications):**
+  - Completed **CS 224N Natural Language Processing with Deep Learning** - Completed (Grade A)
+- **Area D (Computing and Society):** None mentioned in transcript.
+
+#### Artificial Intelligence Depth
+- **CS 221 AI: Principles and Techniques** - Satisfied (from BS)
+- At least four of the following:
+  - **CS 224R Deep Reinforcement Learning** - Satisfied (from BS)
+  - **CS 224N Natural Language Processing with Deep Learning** - Satisfied (from BS)
+  - **CS 223A Introduction to Robotics** - Satisfied (from BS)
+  - **CS 229 Machine Learning** - Satisfied (Grade A)
+  - Depth units requirement exceeded in BS and further MS studies (Totaling 41 units against the 21 minimum)
+
+#### Electives
+- Courses like **CS 205L**, **CS 345**, and other listed electives contribute towards fulfilling the 45 unit requirement.
+
+#### Additional Requirements
+- The student has completed more than 45 graduate units at Stanford.
+- Exceeds the unit, course letter grade, and depth requirements.
+
+### MS Degree Status: **MS SAT**

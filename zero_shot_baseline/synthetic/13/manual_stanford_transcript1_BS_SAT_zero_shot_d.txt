@@ -1,0 +1,138 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the requirements provided and the student's transcript, let's check off what fulfills the Bachelor's in Science (BS) Computer Science degree requirements at Stanford University.
+
+### Core Requirements:
+1. **CS106B: Programming Abstractions** - Taken in Autumn 2012-2013, Grade: B
+2. **CS107: Computer Organization and Systems** - Taken in Spring 2011-2012, Grade: B+
+3. **CS111: Operating Systems Principles** - Taken in Autumn 2012-2013, Grade: A
+4. **CS103: Mathematical Foundations of Computing** - Taken in Autumn 2011-2012, Grade: A-
+5. **CS109: Introduction to Probability for Computer Scientists** - Taken in Winter 2011-2012, Grade: B+
+6. **CS161: Design and Analysis of Algorithms** - Taken in Winter 2012-2013, Grade: A-
+
+### Senior Project Requirements:
+1. **CS191: Senior Project** - Taken in Spring 2012-2013, Grade: A
+
+### AI Track Core, Depth, and Electives Requirements:
+1. **Core Courses**:
+   - **CS107 or 107E: Computer Organization and Systems** - Taken, see above.
+   - **CS111: Operating Systems Principles** - Taken, see above.
+   - **CS161: Design and Analysis of Algorithms** - Taken, see above.
+   
+2. **Depth:**
+   - **CS221: AI: Principles and Techniques** - Taken in Winter 2012-2013, Grade: B+
+   - **Track Requirement B (Two areas)**
+     - **CS224R: Deep Reinforcement Learning** - Taken in Winter 2012-2013, Grade: B
+     - **CS124: From Languages to Information** - Taken in Winter 2012-2013, Grade: A
+   - **Track Requirement C (One course from B list or C list)**
+     - **CS157: Computational Logic** - Taken in Winter 2012-2013, Grade: A
+
+3. **Electives:**
+   - **CS325B: Data for Sustainable Development** - Taken in Spring 2012-2013, Grade: A-
+   - **CS326: Topics in Advanced Robotic Manipulation** - Taken in Spring 2012-2013, Grade: A-
+   - **CS329D: ML Under Distribution Shifts** - Taken in Spring 2012-2013, Grade: A
+   - **CS140E: Embedded Operating Systems** - Taken in Spring 2012-2013, Grade: A+
+
+### Mathematical and Science Requirements:
+1. **Mathematics (26 units minimum)**:
+   - **Advanced Placement Mathematics: Calculus BC** - 10.00 units
+   - **CS103: Mathematical Foundations of Computing** - Taken, see above (4.00 units)
+   - **CS109: Introduction to Probability for Computer Scientists** - Taken, see above (4.00 units)
+   - **CME100: Vector Calculus for Engineers** - Taken in Autumn 2011-2012, Grade: B (5.00 units)
+   - **CME102: Ordinary Differential Equations for Engineers** - Taken in Winter 2011-2012, Grade: A- (5.00 units)
+   - **CME104: Linear Algebra and PDEs for Engineers** - Taken in Spring 2011-2012, Grade: A- (5.00 units)
+   - **Total: 33.00 units**
+
+2. **Science (11 units minimum)**:
+   - **PHYS41: Mechanics** - Taken in Winter 2011-2012, Grade: A (4.00 units)
+   - **PHYS43: Electricity and Magnetism** - Taken in Spring 2011-2012, Grade: B+ (4.00 units)
+   - **Elective** - Can use from electives that meet science requirement,
+     - **PHYS45: Light and Heat** - Taken in Autumn 2012-2013, Grade: B- (4.00 units)
+   - **Total: 12 units**
+
+### Summary:
+The student meets all the Bachelor of Science (BS) in Computer Science requirements with the relevant courses successfully completed and with grades that satisfy the minimum GPA requirement. 
+
+**Output: BS SAT**========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Jeremy Lee Bregman satisfies the MS in Computer Science, Artificial Intelligence Specialization requirements, we need to evaluate his transcript against the following criteria:
+
+### Foundation Requirement:
+1. **Logic, Automata & Complexity:**
+   - CS 103 (Mathematical Foundations of Computing) 
+   - **Grade:** A-
+
+2. **Probability:**
+   - CS 109 (Introduction to Probability for Computer Scientists)
+   - **Grade:** B+
+   
+3. **Algorithmic Analysis:**
+   - CS 161 (Design and Analysis of Algorithms)
+   - **Grade:** A-
+   
+4. **Computer Organization & Systems:**
+   - CS 107 (Computer Organization and Systems)
+   - **Grade:** B+
+
+5. **Principles of Computer Systems:**
+   - CS 110 OR CS 111
+   - He completed CS 111 (Operating Systems Principles)
+   - **Grade:** A
+   
+   **Total Units for Foundations:** 21 units
+   
+### Significant Implementation Requirement:
+- Jeremy completed CS 140E (Embedded Operating Systems)
+- **Grade:** A+
+- **Course:** CS 140E is on the approved list.
+
+### Breadth Requirement:
+Jeremy needs three courses from different Breadth Areas (A, B, C, D):
+
+1. **Area A:** Mathematical and Theoretical Foundations
+   - CS 157 (Computational Logic)
+   - **Grade:** A
+
+2. **Area B:** Computer Systems
+   - CS 140E (Embedded Operating Systems)
+   - **Grade:** A+
+   
+3. **Area C:** Applications
+   - CS 224R (Deep Reinforcement Learning)
+   - **Grade:** B
+
+### AI Depth Requirement:
+Courses from categories (a), (b), and additional listed courses must total at least 21 units.
+   
+1. **CS 221 (AI: Principles and Techniques):**
+   - **Grade:** B+
+   - **Units:** 4
+
+2. **Additional Depth Courses:**
+   - CS 224R (Deep Reinforcement Learning)
+     - **Units:** 5
+     - **Grade:** B
+   - CS 226 (Topics in Advanced Robotic Manipulation)
+     - **Units:** 4
+     - **Grade:** A-
+   - CS 329D (ML Under Distribution Shifts)
+     - **Units:** 5
+     - **Grade:** A
+   - CS 325B (Data for Sustainable Development)
+     - **Units:** 5
+     - **Grade:** A-
+
+**Total Depth Units:** 23 units
+
+### Electives:
+- His coursework includes additional courses beyond the foundational and depth requirements.
+
+### Additional Requirements:
+- All courses for the MSCS degree must be numbered 100 or greater -> Jeremy's courses satisfy this.
+- At most 10 units of Foundations can count towards 45 units total -> Jeremy has 21 units of foundational courses listed but only needs to count 10 units.
+- GPA minimum is 3.0 -> Jeremy's GPA is well above this.
+- Total graduate units should be at least 45; prior to any "semester with 0.00 credits," ensure there are no inconsistencies; though that aspect isn't fully covered.
+   
+Jeremy has met all the requirements as outlined (with the one noted check on any disqualification that may arise from 0.00 credit with "Term Totals 10.00 0.00" occurring at Spring 2014-2015). Pending clarification or update from the last detailing progress, all specifics otherwise align correctly:
+
+Thus:
+
+**Output:** "MS SAT"

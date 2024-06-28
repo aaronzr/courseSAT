@@ -1,0 +1,74 @@
+Based on the provided transcript and the degree requirements for both the BS and MS in Computer Science at Stanford, let's analyze the academic progress of Alicia Marie Jackson to determine if she has satisfied the requirements.
+
+### Bachelor of Science in Computer Science Degree Requirements Analysis
+
+#### Core Requirements
+- **CS106B Programming Abstractions** - Completed: B-
+- **CS107 Computer Organization and Systems** - Completed: D-
+- **CS111 Operating Systems Principles** - Completed: C
+- **CS161 Data Structures and Algorithms** - Completed: C+
+- **CS103 Mathematical Foundations of Computing** - Not listed in transcript
+- **CS109 Introduction to Probability for Computer Scientists** - Not listed in transcript (completed STAT 50 instead with C+)
+
+#### Senior Project
+- **Senior Project course (one of CS191, CS191W, CS194, CS194W, CS210B)** - Completed: CS210B Project Experience with Corporate Partners (graded C)
+
+#### Mathematics and Science Requirements
+- **Mathematics:**
+  - MATH 19, 20, 21 (equivalent through AP Calculus) - Completed with 8.00 units in Calculus AB (AP)
+  - MATH 51 (Linear Algebra and Differential Equations) - Completed: C
+  - MATH 52 (Calculus) - Completed: B-
+  - CS103 and CS109 are not listed, hence no additional electives taken
+
+- **Science:**
+  - PHYSICS 61 (Mechanics or equivalent) - Completed: A-
+  - PHYSICS 63 (Electricity, magnetism, and optics) - Completed: C+
+  - Additional elective from the science list: BIOLOGY 82 (Genetics) - Completed: B
+
+#### Engineering Fundamentals
+- **Engineering Fundamentals (10 units minimum):**
+  - CS106B (Programming Abstractions) - Completed: B-
+  - EE 102 or EE 103 (Introduction to Logic Design) - Completed EE 102: B
+  - CS/ENGR 40 (Engineering fundamentals) - Not listed
+
+#### TiS (Technology in Society Requirement)
+- Not listed or unclear from the transcript
+
+### Graduate MS in Computer Science
+#### Foundations Requirement
+- **CS103 Logic, Automata & Complexity** - Not completed (missing)
+- **CS109 Probability** - Not completed as only STAT 50 present, not cross-listed approved courses (CME106, MS&E220, Stat116, EE178)
+- **CS161 Algorithmic Analysis** - Completed (undergraduate: C+)
+- **CS107/CS107E Computer Org & Sys** - Completed (undergraduate: D-)
+- **CS110/CS111 Principles of Computer Systems** - Completed: C
+
+#### Significant Implementation Requirement
+- **One course required** (must be taken for a letter grade):
+  - Potential matching course: CS210B - Completed: C
+
+#### Breadth Requirement
+- **Three courses, one from each different area A, B, C, or D:**
+  - Unclear if any completed as none explicitly listed for these areas
+
+#### AI Depth
+- **CS221 AI: Principles and Techniques** - Not completed (missing)
+- **Four additional depth courses**:
+  - CS156 Machine Learning - Completed: D+
+  - CS238 Machine Learning in Healthcare - Completed: B
+  - CS233 Computer Vision - Completed: B
+  - Potentially needs more courses from the list
+
+#### Electives
+- **Courses to complete 45-unit requirement**:
+  - Lacking clear elective summary, but overall MS degree seems to miss several significant depth and foundation courses.
+
+### Summary Analysis
+### BS Degree
+- **BS NOT SAT**: Several courses are not listed or not completed with prerequisites such as CS103, CS109; also CS107 was finished minimally (D-).
+- **Senior Project**: C in CS210B is a pass, satisfying the project course.
+
+### MS Degree
+- **MS NOT SAT**: Multiple required courses (CS103, CS109) and depths such as CS221 are missing, also lacks clear breadth and elective confirmation.
+
+### Conclusion
+**Alicia Marie Jackson** has not satisfied all BS and MS requirements according to the provided transcript and requirements.

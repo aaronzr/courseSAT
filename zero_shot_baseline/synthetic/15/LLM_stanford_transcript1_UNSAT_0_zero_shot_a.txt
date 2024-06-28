@@ -1,0 +1,92 @@
+**Bachelors of Science (BS) Requirements Analysis:**
+
+**Core Requirements Analysis:**
+
+1. **Systems (CS Core):**
+   - **CS 106B: Programming Abstractions**
+   - **CS 107: Computer Organization and Systems** - **Not completed**
+   - **CS 111: Operating Systems Principles** - **Completed (CS 200)**
+
+2. **Theory (CS Core):**
+   - **CS 103: Mathematical Foundations of Computing** - **Not completed**
+   - **CS 109: Introduction to Probability for Computer Scientists** - **Completed**
+   - **CS 161: Design and Analysis of Algorithms** - **Completed (CS 250)**
+
+3. **Senior Project:**
+   - One course required **(CS 199 AI Capstone Project)** - **Completed**
+
+**AI Track Requirements Analysis:**
+
+1. **Mathematics:**
+   - MATH 19, 20, 21 - **Not explicitly listed on the transcript**
+   - Additional electives are not verified from listed acceptable courses, **Math elective requirement is partially met**.
+
+2. **Science Requirements:**
+   - PHYS series (Mechanics, Electricity and Magnetism) - **Not explicitly listed on the transcript**
+   - One Science elective - **Partially completed**
+
+3. **Technology in Society Requirement:**
+   - One course from approved list - **Not explicitly listed on the transcript**
+
+4. **Engineering Fundamentals:**
+   - **CS 106B** - Completed
+   - **ENGR 40M or 76** - **Not explicitly listed**
+
+5. **Depth Requirements:**
+   - **CS 221: AI Principles and Techniques** - **Completed (CS 210)**
+   - Track Requirement B from 2 different areas - **CS 260**
+   - One additional course from Track Requirement C list (may substitute with approved track electives) - **CS 260, and BIO 110**, additional electives are also verified.
+   - Three additional courses from Depth Elective List - **Multiple courses completed**
+
+**Overall Analysis for BS Requirements:**
+- **Several core requirements and AI track specifics such as Math 19-21, Physics series (PHYS 41, PHYS 43), Technology in Society, and ENGR courses** are not explicitly listed on the transcript.
+- **Courses such as CS 107 (Computer Organization and Systems) and CS 103 (Mathematical Foundations of Computing)** have not been fulfilled.
+
+**Output: "BS Not Satisfied".**
+
+List of courses not satisfied:
+- **CS 107 (Computer Organization and Systems)**
+- **CS 103 (Mathematical Foundations of Computing)**
+- **Math 19-21 (or verified equivalents)**
+- **Physics series PHYS 41 & PHYS 43 (or verified equivalents)**
+- **Technology in Society Course**
+- **ENGR 40M or 76**
+
+---
+
+**Master of Science (MS) Requirements Analysis:**
+
+**Foundations Requirement:**
+- **CS103** or equivalent not explicitly listed.
+- **CS109** - Completed (under BS requirements).
+- **CS161** - Completed (under BS requirements).
+- **CS107 or 107E** - Not completed.
+- **CS111** - Completed (CS 200).
+
+**Significant Implementation Requirement:**
+- **Could be satisfied by CS 199 (AI Capstone Project)**.
+
+**Breadth Requirement:**
+- Chosen from different areas: 3 courses listed as fulfilled partially in transcript.
+  - **One from Area A:** **CS 250** (Advanced Algorithms).
+  - **One from Area B:** No courses directly listed.
+  - **One from Area C:** **CS 210 and CS 260**
+
+**Depth Requirements:**
+- **CS 221: AI Principles and Techniques** - Completed (CS 210).
+- At least 4 courses from specified list - **CS 223A, CS 224N, CS 224S, CS 224U, CS 224V,** not explicitly listed.
+- Total at least 21 units from categories a, b, or c: total units not explicitly calculated.
+
+**Electives:**
+- **Transcript lists a few electives related but not complete verification**.
+
+**Overall Analysis for MS Requirements:**
+- **Missing course listings for full breadth, foundations, and elective verification**.
+- **CS 107 and some required AI electives are not explicitly completed.**
+
+**Output: "MS Not Satisfied".**
+
+List of courses not satisfied:
+- **Foundations: CS103 (Mathematical Foundations of Computing), CS107 (Computer Organization and Systems)**
+- **Breadth: Need one more course for full breadth coverage**
+- **AI Depth: Additional at least 1 course from specified AI electives list.**

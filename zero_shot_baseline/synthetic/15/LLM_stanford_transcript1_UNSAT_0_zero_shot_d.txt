@@ -1,0 +1,130 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+To determine if Julian Bergson meets the Bachelor of Science (BS) requirements based on his transcript, we need to compare his completed courses against the BS core, senior project, and AI elective requirements provided. Let's go through each itemized requirement one by one:
+
+### BS Core Requirements
+
+#### Systems
+
+- **CS106B Programming Abstractions**: Not listed
+- **CS107 Computer Organization and Systems** / **CS107E**: Completed as "CS 200 Operating System Concepts", since it is similar to CS107.
+- **CS111 Principles of Computer Systems**: Not listed
+
+#### Theory
+
+- **CS103 Mathematical Foundations of Computing**: Not listed
+- **CS109 Introduction to Probability for Computer Scientists**: Not listed
+- **CS161 Data Structures and Algorithms**: Not listed
+
+### Senior Project Requirements
+
+#### Possible Options
+
+- **CS194 or CS194W: Software Project Experience**: Not listed
+- **CS210B: Project Experience with Corporate Partners**: Not listed
+- **CS191 or CS191W: Independent Project or Independent Project Writing Intensive**: Not listed
+- **CS294: Directed Research**: Not listed
+- **Any other senior project courses as listed in the requirements**: "CS 199 AI Capstone Project" listed, but it needs to be verified by the appropriate authority if it meets the Senior Project requirement.
+
+### AI Elective Requirements
+
+#### Mathematics and Science Requirement
+
+- **Advanced Placement in Mathematics (Calculus AB)**: 10 units, covers part of the Mathematics requirement
+- **Mathematics**: Minimum 26 units. Only **MATH 50**, **MATH 70**, **MATH 112**, **MATH 130**, **MATH 220** are completed, which may not total 26 units.
+- **Science**: Minimum 11 units. Covered by **PHYSICS 22, 55, BIO 101, 120, 140, 110, CHEM 40**.
+
+#### Core (15 units minimum)
+
+- **CS107 or 107E**: Covered as **CS 200 Operating System Concepts**.
+- **CS111**: Not covered.
+- **CS161**: Not covered.
+
+#### Depth; Track and Electives (25 units and seven courses minimum)
+
+- **CS221 AI: Principles and Techniques (Track Requirement A)** / **CS210 Introduction to AI**: Covered
+- **Track Requirement B (Two courses from different areas)**: Not listed.
+- **Track Requirement C (One additional course from Track Requirement B list or others)**: Not listed.
+- **Electives (At least three additional courses)**: Not enough details to confirm.
+
+### Summary of Missing Courses:
+
+1. **CS106B Programming Abstractions**
+2. **CS103 Mathematical Foundations of Computing**
+3. **CS109 Introduction to Probability for Computer Scientists**
+4. **CS111 Principles of Computer Systems**
+5. **CS161 Data Structures and Algorithms**
+6. **Track Requirement B and C courses in AI electives**
+7. **Senior Project (verify if CS 199 AI Capstone Project is acceptable)**
+
+Given all the information, Julian Bergson has not satisfied all the BS requirements. The missing requirements are primarily core Computer Science courses, specific AI track requirements, and possibly the senior project.
+
+### Output
+
+"BS NOT SAT" with the following unsatisfied courses:
+
+1. **CS106B Programming Abstractions**
+2. **CS103 Mathematical Foundations of Computing**
+3. **CS109 Introduction to Probability for Computer Scientists**
+4. **CS111 Principles of Computer Systems**
+5. **CS161 Data Structures and Algorithms**
+6. **Track Requirement B and C courses in AI electives**========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Julian Mark Bergson satisfies the MS in Computer Science (Artificial Intelligence Specialization) requirements, we need to cross-reference his transcript with the specified requirements.
+
+### Foundations Requirement:
+- **Logic, Automata & Complexity (CS103):** Not present in the transcript.
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178):** MATH 130 Probability Theory (B-) completed.
+- **Algorithmic Analysis (CS161):** CS 250 Advanced Algorithms (B-) completed.
+- **Computer Organ & Sys (CS107 or 107E):** Not present in the transcript.
+- **Principles of Computer Systems (CS110 or CS111):** CS 200 Operating System Concepts (B) completed.
+
+Only Probability, Algorithmic Analysis, and Principles of Computer Systems are satisfied. Logic, Automata & Complexity and Computer Organ & Systems are missing.
+
+### Significant Implementation Requirement:
+- Must complete one of CS 140, 140E, 143, 144, 145, 148, etc.
+- **CS 145 (Database Systems)** (B) is present in the transcript, which fulfills this requirement.
+
+### Breadth Requirement:
+Three courses from Areas A, B, C, or D, each from a different area:
+- **Area A (Mathematical & Theoretical Foundations):** No course found in the transcript.
+- **Area B (Computer Systems):** CS 200 (Operating System Concepts) (B) completed.
+- **Area C (Applications):** CS 145 (Database Systems) (B) completed.
+- **Area D (Computing and Society):** No course found in the transcript.
+
+Only Areas B and C are fulfilled. Areas A and D are missing.
+
+### Depth Courses in Artificial Intelligence:
+- **a) CS 221**: Not present.
+- **b) Four courses from specified list:**
+  - CS 260 (Machine Learning) (B+)
+- **c) Total of 21 units from categories (a), (b), and others:**
+
+Only CS 260 found. More depth courses are required to satisfy the 21 units criteria.
+
+### Electives:
+The requirement is that electives should complete the 45-unit requirement for the MS. Given the missing core courses, we'll address this once the core requirements are satisfied.
+
+### Additional Requirements:
+- **Average Grade:** The GPA of graduate career is 3.675 which satisfies the requirement.
+
+### Summary:
+The following requirements are not met:
+1. Foundations Requirement:
+   - Logic, Automata & Complexity (CS103)
+   - Computer Organ & Systems (CS107 or 107E)
+2. Breadth Requirement:
+   - Area A (Mathematical & Theoretical Foundations)
+   - Area D (Computing and Society)
+3. Depth Courses in Artificial Intelligence:
+   - CS 221 and additional courses to satisfy the 21 units requirement for depth courses.
+
+Hence, the output is:
+```
+Logic, Automata & Complexity (CS103)
+Computer Organ & Systems (CS107 or CS107E)
+Breadth Area A (Mathematical & Theoretical Foundations)
+Breadth Area D (Computing and Society)
+CS 221
+Additional Depth Courses to meet 21 units
+```
+
+These are the courses/requirements not satisfied based on the student's transcript.

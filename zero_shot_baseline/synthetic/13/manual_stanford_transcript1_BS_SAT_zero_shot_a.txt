@@ -1,0 +1,95 @@
+Based on the provided transcript for Jeremy Lee Bregman and the given BS core and senior project requirements for Computer Science, the following is the analysis of whether the requirements have been met.
+
+### Bachelor of Science (BS) Requirements Analysis:
+
+#### Core Requirements
+
+1. **Programming Abstractions (CS106B)**
+   - Completed: "CS106B PROGRAMMING ABSTRACTIONS" with grade B
+
+2. **Computer Organization and Systems (CS107)**
+   - Completed: "CS107 COMPUTER ORGANIZATION AND SYSTEMS" with grade B+
+
+3. **Principles of Computer Systems (CS111)**
+   - Completed: "CS111 OPERATING SYSTEMS PRINCIPLES" with grade A
+
+4. **Mathematical Foundations of Computing (CS103)**
+   - Completed: "CS103 MATHEMATICAL FOUNDATIONS OF COMPUTING" with grade A-
+
+5. **Introduction to Probability for Computer Scientists (CS109)**
+   - Completed: "CS109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS" with grade B+
+
+6. **Data Structures and Algorithms (CS161)**
+   - Completed: "CS161 DESIGN AND ANALYSIS OF ALGORITHMS" with grade A-
+
+#### Senior Project Requirement
+
+Completed "CS191 SENIOR PROJECT" with grade A
+
+#### Additional Requirements
+
+- **Minimum GPA Requirement:**
+  - The GPA for courses in ENGR Fundamentals, CS Core, Depth, and Senior Project combined must be 2.0 or above.
+  - Given the cumulative GPA of 3.649, this requirement is met.
+
+#### AI Track Core, Depth, Electives, and Senior Project
+
+1. **AI: Principles and Techniques (CS221)**
+   - Completed: "CS221 AI: PRINCIPLES AND TECHNIQUES" with grade B+
+
+2. **Track Requirement B (Two courses from different areas):**
+   - Track Requirement: "CS224R DEEP REINFORCEMENT LEARNING" with grade B
+   - Track Requirement: "CS124 FROM LANGUAGES TO INFORMATION" with grade A
+
+3. **Track Requirement C (One additional course from the Track Requirement B list)**
+   - Track Requirement: "CS157 COMPUTATIONAL LOGIC" with grade A
+
+4. **Electives:**
+   - Elective: "CS325B DATA FOR SUSTAINABLE DEVELOPMENT" with grade A-
+   - Elective: "CS326 TOPICS IN ADVANCED ROBOTIC MANIPULATION" with grade A-
+   - Elective: "CS329D MACHINE LEARNING UNDER DISTRIBUTION SHIFTS" with grade A
+
+5. **Senior Project:**
+   - Taken as "CS191 SENIOR PROJECT" with grade A
+
+Given the transcript analysis, Jeremy Lee Bregman has completed the CS major requirements, AI track-specific courses, and senior project.
+
+**Conclusion:**
+- **BS SAT**
+
+### Master of Science (MS) Requirements Analysis:
+
+From the transcript:
+- Jeremy has started his MS in Electrical Engineering, but no mention directly fulfills each specific requirement for CS MS specialization in AI due to missing specific MS level course detail in transcript.
+
+#### Foundations Requirement
+
+1. **Logic, Automata & Complexity (CS103)**
+   - Completed during undergraduate.
+
+2. **Probability (CS109)**
+   - Completed during undergraduate.
+
+3. **Algorithmic Analysis (CS161)**
+   - Completed during undergraduate.
+
+4. **Computer Organ & Sys (CS107)**
+   - Completed during undergraduate.
+
+5. **Principles of Computer Systems (CS111)**
+   - Completed during undergraduate.
+
+#### Significant Implementation Requirement
+
+- Considered fulfilled with "CS140E EMBEDDED OPERATING SYSTEM" (grade A+) during undergraduate.
+
+#### Breadth Requirement (Areas A, B, C, D):
+
+To be determined based on MS-level courses specified or added.
+
+#### AI Depth Courses (Academic Requirements):
+- AI depth and elective depth courses not entirely distinguishable from available transcript data alone.
+
+**Conclusion:**
+- **ISI MS Requirements Confirmation Pending**, not concretely identified MS courses completed based on non-detailed transcript.
+- Continued courses or maintained tracking for "MS SAT".

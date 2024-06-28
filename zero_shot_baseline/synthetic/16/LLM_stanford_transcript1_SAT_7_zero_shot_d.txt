@@ -1,0 +1,157 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+To determine whether Monica Rae Cameron's bachelor's degree requirements are satisfied, let's break down the requirements as listed and see if each one is met based on their transcript.
+
+### Core Requirements
+1. **CS106B: Programming Abstractions** - Taken Autumn 2020-2021, grade B+.
+2. **CS107: Computer Organization and Systems** - Taken Autumn 2020-2021, grade A.
+3. **CS111: Principles of Computer Systems** - Taken Winter 2020-2021, grade B+.
+4. **CS103: Mathematical Foundations of Computing** - Not explicitly listed, so this course needs verification.
+5. **CS109: Introduction to Probability for Computer Scientists** - Taken Winter 2020-2021, grade A-.
+6. **CS161: Design and Analysis of Algorithms** - Taken Spring 2020-2021, grade A.
+
+### Science and Math Requirements
+1. **MATH19, 20, 21: Calculus Sequence** - The equivalent AP credits for Mathematics: Calculus BC.
+2. **CS103** - As noted above, needs verification.
+3. **CS109** - Verified above.
+4. **Two Electives** - CME 100 (B+), CME 102 (A-).
+5. **PHYS41: Mechanics** - Taken Winter 2019-2020, grade A.
+6. **PHYS43: Electricity and Magnetism** - Taken Spring 2019-2020, grade B+.
+
+### Engineering Fundamentals
+1. **CS106B** - Verified above.
+2. **ENGR40M: An Intro to Making: What is EE?** - Taken Autumn 2020-2021, grade A-.
+
+### Technology in Society Requirement
+1. **HISTORY 153: Technological and National Security** - Taken Spring 2021-2022, grade A.
+
+### Depth Requirements (AI Track)
+1. **CS221: AI: Principles and Techniques** - Taken Autumn 2021-2022, grade A.
+2. **Track Requirement B (Two Areas)**
+   - **CS231N: Convolutional Neural Networks for Visual Recognition** - Taken Autumn 2021-2022, grade A- (Area III: Vision).
+   - **CS223A: Introduction to Robotics** - Taken Winter 2021-2022, grade A- (Area IV: Robotics).
+3. **Track Requirement C (One Additional Course)**
+   - **CS238: Decision Making Under Uncertainty** - Taken Spring 2021-2022, grade A.
+4. **Track Electives**
+   - **CS237B: Computer Vision** - Taken Autumn 2022-2023, grade A-.
+   - **CS274: Frontiers in Machine Learning** - Taken Spring 2021-2022, grade A-.
+   - **CS246: Mining Massive Datasets** - Taken Autumn 2022-2023, grade A.
+
+### Senior Project
+1. **CS210B: Project Experience with Corporate Partners** - Taken Winter 2022-2023, grade A-.
+2. **CS191W: Independent Project Writing Intensive** - Taken Spring 2022-2023, grade A.
+
+### Writing in the Major (WiM)
+This requirement is fulfilled because CS191W counts for writing in the major.
+
+### GPA Requirement
+- The combined GPA for ENGR Fundamentals, CS Core, Depth, and Senior Project exceeds the 2.0 minimum requirement, as Monica's cumulative GPA is 3.761 for her undergraduate career.
+
+### Verification Needed:
+- **CS103: Mathematical Foundations of Computing** needs explicit verification as being completed. However, it's clear from the other courses and track electives that Monica has strong mathematical foundations and may have taken it under a different course name or number.
+
+If CS103 is explicitly verified as completed, then all requirements are met.
+
+Otherwise, if CS103 is not satisfied, then the requirement is not fully met for the BS degree.
+
+**Conclusion:** All BS requirements except CS103 are satisfied.
+
+**Output:** 
+```
+CS103: Mathematical Foundations of Computing needs verification.
+```
+
+If verified, it would be:
+```
+BS SAT
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine whether Monica Cameron satisfies the MS in Computer Science (Artificial Intelligence Specialization) requirements, we'll need to methodically check each category outlined in the MSCS program sheet.
+
+### Requirements Check:
+
+1. **Foundations Requirement**:
+   - **Logic, Automata & Complexity**:
+     - No specific course listed. Check if covered elsewhere in degrees. If not, it's missing.
+   - **Probability**:
+     - CS 109: Introduction to Probability for Computer Scientists (Grade: A-)
+   - **Algorithmic Analysis**:
+     - CS 161: Design and Analysis of Algorithms (Grade: A)
+   - **Computer Organization & Systems**:
+     - CS 107: Computer Organization and Systems (Grade: A) or
+     - CS 111: Principles of Computer Systems (Grade: B+)
+   - **Principles of Computer Systems**:
+     - CS 110 or CS 111: Cameron completed CS 111 (Grade: B+)
+   
+  **Conclusion**: 
+  - **Missing course: Logic, Automata & Complexity** (CS 103 or equivalent).
+
+2. **Significant Implementation Requirement**:
+   - Completed:
+     - CS 210B (Grade: A-)
+   
+   **Conclusion**: Requirement satisfied.
+
+3. **Breadth Requirement**:
+   - Three courses chosen from different Breadth areas A, B, C or D:
+     - **Area A**:
+       - CS 261 (Grade: A)
+     - **Area B**:
+       - CS 111 (Grade: B+)
+     - **Area C**:
+       - CS 147 (Grade: A)
+     - **Area D**:
+       - PHIL 256 (Grade: A)
+   
+   **Conclusion**: Requirement satisfied.
+
+4. **Artificial Intelligence Depth**:
+   - **CS 221**: (Grade: A)
+   - **At least four courses from the list, with grades**:
+     - CS 223A (Grade: A-)
+     - CS 224N (Grade: A)
+     - CS 231N (Grade: A-)
+     - CS 237B (Grade: A-)
+   - **Additional courses to make up 21 units**:
+     - Completed:
+       - CS 205L (Not taken)
+       - CS 224R (Not taken)
+       - CS 225A (Not taken)
+       - CS 227B (Not taken)
+       - etc...
+     - Additional courses as electives/depth:
+       - CS 238 (Grade: A) - 5 units
+       - CS 246 (Grade: A) - 3 units
+       - CS 274 (Grade: A-) - 5 units
+       - CS 210B Project Experience (Grade: A-) - 4 units
+     - Electives in depth-approved courses:
+       - Current total for depth:
+         - 3 (CS 223A) + 3 (CS 224N) + 3 (CS 231N) + 3 (CS 237B) + 5 (CS 238) + 3 (CS 246) + 5 (CS 274) + 4 (CS 210B) = 29 units
+
+   **Conclusion**: Requirement satisfied.
+
+5. **Electives to complete 45 units total for MSCS**:
+   - **Total depth units**: 29
+   - **Electives**:
+     - CS 207A (If needed and counted appropriately, Not in provided info)
+     - CS 129M (A) - 3 units 
+     - Additional courses beyond the 10 units foundation limit:
+       - Not specified
+   
+   **Total Elective + Depth**: 45 units - Non-clarified within transcript details could be non-specific but satisfied through other verified accumulations.
+  
+### Additional Requirements:
+- **Minimum 45 graduate units at Stanford with required GPA**: 
+  - Completed: 56 units, GPA: 3.789 (Satisfied)
+
+### Conclusion:
+The only missing component is:
+
+- **Logic, Automata & Complexity** (CS103 or equivalent)
+
+Based on the provided transcript and detailed check:
+
+**Output: Missing course - Logic, Automata & Complexity (CS103 or equivalent)**.
+
+Hence, the requirements are not completely satisfied as per the provided details.
+
+**List of courses not satisfied:**
+- Logic, Automata & Complexity (CS103 or equivalent)

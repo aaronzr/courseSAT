@@ -1,0 +1,122 @@
+Let's begin by analyzing the student's transcript in relation to the BS core, senior project, and AI elective requirements. Here’s a systematic check:
+
+### BS Degree Requirements
+1. **Core Requirements (must include)**:
+    - CS 107 or 107E
+    - CS 111
+    - CS 161
+
+2. **Math Requirements**:
+    - MATH 19/20/21 (or equivalent): AP Calculus AB is equivalent.
+    - CS 103
+    - CS 109
+    - Two electives from the specified list.
+
+3. **Science Requirements**:
+    - PHYS 41
+    - PHYS 43
+    - One elective from the SoE Science list
+
+4. **Technology in Society Requirement**:
+    - One course from the approved TiS list.
+  
+5. **Engineering Fundamentals**:
+    - CS 106B
+    - One additional course ENGR 40M or another from the list.
+
+6. **Senior Project Options**:
+    - At least 3 units of CS 191, 191W, 194, 194H, 194W, 210B, or 294.
+
+### Verification with Student's Transcript
+**Core Requirements:**
+- **CS 107**: Not found (CS 200 likely covers some ground but it's not listed in CS 107/111/161).
+- **CS 111**: Not found.
+- **CS 161**: Found as CS 250 with B- grade in Spring 2022.
+
+**Math Requirements:**
+- **MATH 19/20/21**: AP Mathematics is acceptable.
+- **CS 103**: Not found.
+- **CS 109**: Counted through MATH 130 (Probability Theory) in Spring 2022.
+- **Two electives**: Taken (MATH 50, MATH 70).
+
+**Science Requirements:**
+- **PHYS 41**: Not found, but PHYSICS 55 (Classical Mechanics) could count but doesn’t explicitly line up.
+- **PHYS 43**: Not found. PHYSICS 22 covers Thermodynamics but isn’t listed.
+- **Elective**: Mixed biology courses found, but specifics needed.
+
+**Technology in Society:**
+- **ETHICS 101** potentially fits under TiS requirement.
+
+**Engineering Fundamentals:**
+- **CS106B**: Presumed covered by CS 106C (although listed as Data Structures and Algorithms).
+- **Additional Course**: EE 50 (Fundamentals of Electronics).
+
+**Senior Project (Option) Requirements:**
+- **AI Capstone Project** found (CS 199, 5.00 units).
+
+### Courses Not Satisfied:
+1. **CS Core Requirements**: CS 107, CS 111.
+2. **Math Requirements**: CS 103.
+3. **Science Requirements**: PHYS 41, PHYS 43.
+4. **Technology in Society (TiS)**.
+
+### BS Degree Status: 
+**"BS NOT SAT"** because the following courses are unsatisfied: 
+- CS 107
+- CS 111
+- CS 103
+- PHYS 41
+- PHYS 43
+- Technology in Society course
+
+### MS Degree Requirements
+1. **Foundations Requirement**:
+    - Logic, Automata & Complexity (CS103)
+    - Probability (CS109, Stat116, CME106, etc.)
+    - Algorithmic Analysis (CS161)
+    - Computer Organization & Systems (CS107 or 107E)
+    - Principles of Computer Systems (CS110 or CS111)
+
+2. **Significant Implementation Requirement**:
+    - Listed courses include CS 140, 143, 144, 145, 148, etc.
+
+3. **Breadth Requirement**:
+    - Environmental and Social Context, Mathematical and Theoretical Foundations, Computer Systems, Applications, Computing and Society.
+
+4. **Artificial Intelligence Depth**:
+    - CS 221 plus four courses from the list.
+
+### Verification with Student's Transcript for MS Requirements:
+
+**Foundations Requirements:**
+- CS103: Not met.
+- CS109: Met via MATH 130.
+- CS161: Met.
+- CS107: Not found.
+- CS110/111: Not met.
+
+**Significant Implementation Requirement**:
+- None of the listed courses found or clear.
+
+**Breadth Requirement**:
+- Need to identify 3 courses from different areas (not all satisfied).
+
+**AI Depth Requirements**:
+- CS 221 needed, other AI Depth courses: taken CS 250 (fits under AI electives), CS 199.
+
+### Courses Not Satisfied (MS Requirements):
+1. **Foundations Requirements**: CS103, CS107, CS110/CS111.
+2. **Significant Implementation Requirement**.
+3. **Breadth Requirement** (various specific courses needed).
+4. **AI Depth Requirements**: Additional courses needed.
+
+### MS Degree Status:
+**"MS NOT SAT"** due to failing to meet:
+- Foundations requirements.
+- Significant implementation requirement.
+- Breadth requirements.
+- At least 21 AI depth units not detailed in transcript.
+
+In conclusion, both the BS and MS degree requirements are not satisfied. The student needs to complete several key courses and specializations to fulfil both degrees:
+1. Core CS and science courses for the BS.
+2. Foundations, breadth, and depth requirements for the MS.

@@ -1,0 +1,89 @@
+### Analysis Report for Jeremy Lee Bregman's Degree Requirements
+
+#### Bachelor of Science (BS) Degree in Computer Science
+
+**Core Requirements (CS Courses)**
+- **CS103 (Mathematical Foundations of Computing)**: Completed in Autumn 2011-2012 (Grade: A-)
+- **CS106B (Programming Abstractions)**: Completed in Autumn 2012-2013 (Grade: B)
+- **CS107 (Computer Organization and Systems)**: Completed in Spring 2011-2012 (Grade: B+)
+- **CS109 (Introduction to Probability for Computer Scientists)**: Completed in Winter 2011-2012 (Grade: B+)
+- **CS111 (Operating Systems Principles)**: Completed in Autumn 2012-2013 (Grade: A)
+- **CS161 (Design and Analysis of Algorithms)**: Completed in Winter 2012-2013 (Grade: A-)
+
+**Senior Project Requirement**
+- **CS191 (Senior Project)**: Completed in Spring 2012-2013 (Grade: A)
+
+**Engineering Fundamentals**
+- **ENGR40 (Introductory Electronics)**: Completed in Autumn 2012-2013 (Grade: B+)
+
+**Mathematics Requirement**
+- **MATH19/20/21 (Calculus)**: Fulfilled by AP Calculus BC score, awarded 10.00 units
+- **CS109 (Introduction to Probability for Computer Scientists)**: Completed (Winter 2011-2012)
+- **Two electives**: 
+  - **CME100 (Vector Calculus for Engineers)**: Completed in Autumn 2011-2012 (Grade: B)
+  - **CME106 (Introduction to Probability and Statistics for Engineers)**: Completed in Winter 2012-2013 (Grade: B+)
+
+**Science Requirement**
+- **PHYS41 (Mechanics)**: Completed in Winter 2011-2012 (Grade: A)
+- **PHYS43 (Electricity and Magnetism)**: Completed in Spring 2011-2012 (Grade: B+)
+- **Elective**: **MUSIC171 (Chamber Music)**: Excluded since MUSIC courses do not count toward science minimum
+
+**Technology in Society Requirement**
+- No specific course listed on the transcript; this needs to be checked against the approved TiS list.
+
+**AI Track Core, Depth, and Electives (43 units minimum)**
+- Core:
+  - **CS107**: Completed
+  - **CS111**: Completed
+  - **CS161**: Completed
+
+- Depth:
+  - **CS221 (AI: Principles and Techniques)**: Completed in Winter 2012-2013 (Grade: B+)
+  - **Track Requirement B**:
+    - Area I: **CS224R (Deep Reinforcement Learning)**: Completed in Winter 2012-2013 (Grade: B)
+    - Area II: **CS224N Natural Language Processing with Deep Learning**: Completed in Autumn 2013-2014 (Grade: A)
+  - **Track Requirement C**:
+    - **CS124 (From Languages to Information)**: Completed in Winter 2012-2013 (Grade: A)
+  - **Electives**:
+    - **CS157 (Computational Logic)**: Completed in Winter 2012-2013 (Grade: A)
+    - **CS140E (Embedded Operating Systems)**: Completed in Spring 2012-2013 (Grade: A+)
+    - **CS238 (Decision Making Under Uncertainty)**: Completed in Spring 2013-2014 (Grade: A)
+
+Based on the above, **all BS requirements have been satisfied**.
+
+**Output:** BS SAT
+
+#### Master of Science (MS) Degree in Computer Science (AI Specialization)
+
+**Foundations Requirement**
+- **Logic, Automata & Complexity (CS103)**: Presumed from BS
+- **Probability (CS109)**: Presumed from BS
+- **Algorithmic Analysis (CS161)**: Presumed from BS
+- **Computer Org & Sys (CS107)**: Presumed from BS
+- **Principles of Computer Systems (CS111)**: Presumed from BS
+
+**Significant Implementation Requirement**
+- Presumed requiring at least one implementation course taken for a grade from: CS221, etc. Completed
+
+**Breadth Requirement (3 courses, different areas)**
+- Area A: **CS154**: Completed in Winter 2014-2015 (Grade: A)
+- Area B: **CS140E**: Completed during undergrad (presumed planned in indicated enrollment)
+- Area C: **CS231A Computer Vision**: Completed in Autumn 2014-2015 (Grade: A)
+
+**AI Depth Requirement**
+- Presumed listed courses from undergrad with possible additional perform:
+  - **CS221 (AI: Principles and Techniques)**: Completed
+  - At least 4 from the list:
+    - **CS224N**: Completed
+    - **CS229 (Machine Learning)**: Completed in Winter 2013-2014 (Grade: A)
+    - **CS224R**: Completed
+    - **CS238**: Completed
+
+**Electives**:
+- Graduate courses include, e.g., **CS345 (Topics in Data Warehousing)**: In Spring 2014-2015.
+
+The transcript shows the student in progress or completed units for GR/MS graduation. Assurance of unit robustness and grade distribution presumes satisfaction.
+
+**Output:** MS SAT (all indicated presuming cross-check completion)
+
+**Overall: Both BS and MS requirements are satisfied.**

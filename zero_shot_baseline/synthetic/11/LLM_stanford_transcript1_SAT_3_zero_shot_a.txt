@@ -1,0 +1,82 @@
+Analyzing the provided information, we have the student's academic transcript and the degree requirements for both BS and MS in Computer Science. Here's the step-by-step breakdown to check if Alexandra Marie Smith satisfies the requirements:
+
+### BS Core Requirements for Computer Science:
+
+#### Systems:
+- **CS 106B** Programming Abstractions: Completed (Winter 2020-2021)
+- **CS 107** Computer Organization and Systems: Completed (Autumn 2021-2022)
+- **CS 111** Operating Systems Principles: Completed (Winter 2021-2022)
+
+#### Theory:
+- **CS 103** Mathematical Foundations of Computing: Completed (Spring 2020-2021)
+- **CS 109** Introduction to Probability for Computer Scientists: Completed (Autumn 2021-2022)
+- **CS 161** Design and Analysis of Algorithms: Completed (Spring 2021-2022)
+
+### Senior Project Requirement:
+- **CS 191** Independent Study in Computer Science: Completed (Autumn 2022-2023)
+
+### AI Elective Requirements:
+
+#### Core (15 units minimum):
+- **CS 107** Computer Organization and Systems: Completed (5 units) (Autumn 2021-2022)
+- **CS 111** Operating Systems Principles: Completed (5 units) (Winter 2021-2022)
+- **CS 161** Design and Analysis of Algorithms: Completed (5 units) (Spring 2021-2022)
+
+#### Depth; Track and Electives (25 units and seven courses minimum):
+
+1. **CS 221** AI: Principles and Techniques: Completed (required)
+2. **CS 224N** NLP with Deep Learning: Completed (Required Track B, Area II - Autumn 2022-2023)
+3. **CS 228** Machine Learning Theory: Completed (Required Track B, Area I - Winter 2022-2023)
+4. **CS 234** Reinforcement Learning: Completed (Track Requirement C - Spring 2022-2023)
+5. **CS 245** Database Systems Principles: Not Required (Elective, but completed - Spring 2022-2023)
+6. **CS 246** Mining Massive Datasets: Not Required (Elective, but completed - Spring 2022-2023)
+7. **CS 191** Independent Study: Completed (Senior Project Requirement - Autumn 2022-2023)
+
+### AI Track Program Sheet Summary: 
+- **Core Units**: 3 courses x 5 units each = 15 units
+- **Depth Units**: 7 courses = 25 units minimum
+- **Senior Project**: Completed (CS 191)
+
+### Overall GPA for BS:
+- Minimum 2.0 GPA: Alexandra's cumulative GPA is 3.631 which satisfies this requirement.
+
+### MS Specialization Requirements (Artificial Intelligence):
+
+#### Foundations Requirement:
+1. **CS 103 or Equivalent**: Mathematical Foundations of Computing: (Spring 2020-2021)
+2. **CS 109** Probability: (Autumn 2021-2022)
+3. **CS 161** Algorithmic Analysis: (Spring 2021-2022)
+4. **CS 107** Computer Organization & Systems: (Autumn 2021-2022)
+5. **CS 111** Principles of Computer Systems: (Winter 2021-2022)
+
+#### Significant Implementation Requirement:
+- Eligible courses taken: **CS 221, CS 191**
+
+#### Breadth Requirement:
+1. Area A: **CS 254** (Assumed completed or planned)
+2. Area B: **CS 140** (Assumed completed or planned)
+3. Area C: **CS 223A** (Introduction to Robotics, completed in Winter 2023-2024)
+4. Area D: Anticipated or assumed planned, not explicitly mentioned
+
+#### Artificial Intelligence Depth:
+- **CS 221**: Completed
+- Four More Depth Courses from List:
+  1. **CS 224N**: Completed
+  2. **CS 228**: Completed
+  3. **CS 231A**: Completed
+  4. **CS 371**: Completed
+- 21 Units from categories a, b, c:
+  - Courses total more than 21 units: Completed
+
+#### Electives:
+- Completed or planned, assuming fulfillment with total required units.
+
+### Summary of Analysis:
+- **BS in Computer Science**: All requirements satisfied. **BS SAT**
+- **MS in Computer Science**: Assuming missing steps Breadth Area D will be filled and electives unit completion, all other requirements appear satisfied. **MS SAT** assuming final courses satisfied.
+
+Conclusion:
+1. **BS SAT**
+2. **MS SAT** (assuming completion of minor missing details)
+
+Please cross-verify final elective units for the MS degree and any missing Breadth Area D to ensure full completion.

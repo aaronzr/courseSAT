@@ -1,0 +1,158 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the provided information, I'll evaluate whether Smith, John Alex's transcript meets the Bachelor of Science (BS) degree requirements for Computer Science with a focus on Artificial Intelligence Track at Stanford University.
+
+### BS Requirements Breakdown
+
+#### 1. Core Requirements:
+   - CS 106B: Programming Abstractions
+   - CS 107: Computer Organization and Systems
+   - CS 111: Operating Systems Principles
+   - CS 161: Design and Analysis of Algorithms
+   - CS 103: Mathematical Foundations of Computing
+   - CS 109: Introduction to Probability for Computer Scientists
+
+#### 2. Senior Project Requirements:
+   - At least 3 units: CS 191, 191W, 194, 194H, 194W, 210B, or 294
+
+#### 3. Additional AI Track Requirements:
+   - CS 221: AI: Principles and Techniques
+   - Track Requirement B (Two courses from different areas in specified lists)
+   - Track Requirement C (One more course from Track B or additional specified courses)
+   - Three Track Electives
+
+#### 4. Mathematics and Science Requirement:
+   - Math: 26 units minimum
+    - MATH 19: Calculus
+    - MATH 20: Calculus
+    - MATH 21: Intermediate Calculus
+    - CS 103: Mathematical Foundations of Computing
+    - CS 109: Introduction to Probability for Computer Scientists
+    - Electives: Various options specified
+   - Science: 11 units minimum
+    - PHYS 41: Mechanics
+    - PHYS 43: Electricity and Magnetism
+    - Elective: Various options specified
+
+#### 5. Engineering Fundamentals:
+   - CS 106B: Programming Abstractions
+   - 10 units minimum from options including ENGR 40M or ENGR 76
+
+### Transcript Evaluation:
+
+1. **Core Requirements**:
+   - CS 106B: Completed in Spring 2021 (5 units, Grade B-)
+   - CS 107E (as an equivalent for CS 107): Completed in Spring 2022 (5 units, Grade B)
+   - CS 111: (Not completed)
+   - CS 161: (Not completed)
+   - CS 103: (Not completed)
+   - CS 109: (Not completed)
+
+2. **Senior Project Requirements**:
+   - Completed ME 191 Senior Project: Spring 2023 (4 units, Grade A)
+
+3. **AI Track Requirements**:
+   - CS 221: (Not completed)
+   - Track Requirement B: (Courses not matched with transcript)
+   - Track Requirement C: (Courses not matched with transcript)
+   - Three Track Electives: (Courses not matched with transcript)
+
+4. **Mathematics and Science Requirements**:
+   - MATH 19: Completed in Winter 2020 (5 units, Grade B)
+   - MATH 20: Completed in Spring 2020 (5 units, Grade B-)
+   - MATH 21: Completed in Autumn 2020 (5 units, Grade B)
+   - Math Electives: MATH 53, MATH 104, MATH 108, MATH 109, and MATH 110
+   - Science requirements:
+     - PHYS 41: Completed in Autumn 2020 (5 units, Grade A-)
+     - PHYS 43: Completed in Winter 2021 (5 units, Grade B)
+
+5. **Engineering Fundamentals**:
+   - CS 106B as a part of Core: Already accounted for.
+   - ENGR 10: Completed in Autumn 2019 (3 units, Grade B+)
+   - ENGR 20: Completed in Winter 2021 (4 units, Grade B+)
+
+#### Summary of Missing Requirements:
+- **Core Requirements**: CS 111, CS 161, CS 103, CS 109
+- **AI Track Requirements**: All AI-specific courses.
+- **Senior Project**: Should confirm that ME 191 can count towards this requirement within the CS department's guidelines. If it doesn't, then a CS Senior Project is required.
+
+**Therefore, the output is:**
+```
+List of courses not satisfied:
+- CS 111: Operating Systems Principles
+- CS 161: Design and Analysis of Algorithms
+- CS 103: Mathematical Foundations of Computing
+- CS 109: Introduction to Probability for Computer Scientists
+- CS 221: AI: Principles and Techniques
+- Two Track Requirement B courses
+- One Track Requirement C course
+- Three Track Electives
+- Senior Project confirmation (if ME 191 doesn't qualify)
+```
+
+The student does **not** satisfy the Bachelor of Science (BS) degree requirements based on their current transcript.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the details provided, here are the MS in Computer Science with a specialization in Artificial Intelligence requirements and an analysis of the student's transcript:
+
+### Foundations Requirement
+- **Logic, Automata & Complexity (CS103)**: Not taken
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: Not taken
+- **Algorithmic Analysis (CS161)**: Not taken
+- **Computer Organization & Systems (CS107 or 107E)**: CS 107E - B grade (satisfied)
+- **Principles of Computer Systems (CS110 or CS111)**: Not taken
+
+### Significant Implementation Requirement
+- Required to take at least one course from the list:
+    - **CS 107E**: taken for B grade, but as this satisfies the Foundations requirement, need another course from the list if possible.
+
+### Breadth Requirement
+- **Area A. Mathematical and Theoretical Foundations**: Not taken
+- **Area B. Computer Systems**: Not taken
+- **Area C. Applications**: Not taken
+- **Area D. Computing and Society**: Not taken
+
+### Artificial Intelligence Depth
+- **a) CS221**: Not taken
+- **b) At least four of CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**: Not taken
+- **c) A total of at least 21 units from categories (a), (b), and the following courses (the list is quite extensive)**: Not taken
+
+### Electives
+Not enough information since no graduate courses listed in the provided transcript.
+
+### Additional Requirements
+- At least 36 units submitted for the MSCS degree, taken for a letter grade.
+- The average grade must be at least a B (3.0 in Stanford’s GPA scale).
+- At least 45 graduate units at Stanford before receiving the MSCS degree.
+
+### Conclusion
+It seems that the student has completed some undergraduate coursework, but the majority of the specific requirements for the MSCS in Artificial Intelligence specialization have not been fulfilled based on the provided transcript. Here is a list of the specific unmet requirements:
+
+1. **Logic, Automata & Complexity (CS103)**
+2. **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**
+3. **Algorithmic Analysis (CS161)**
+4. **Principles of Computer Systems (CS110 or CS111)**
+5. **Area A. Mathematical and Theoretical Foundations** breadth course
+6. **Area B. Computer Systems** breadth course
+7. **Area C. Applications** breadth course
+8. **Area D. Computing and Society** breadth course
+9. **CS221 or equivalent advisor-approved course**
+10. **At least four courses from CS223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**
+11. **Completion of a total of 21 units from the AI specialization depth courses list**
+
+### Summary
+The student has major gaps in the Foundations, Breadth, Depth (AI), and Elective requirements necessary for completing the MSCS degree with an AI specialization.
+
+Therefore, output "MS NOT SAT" along with specific unmet course requirements, as listed above:
+
+```
+MS NOT SAT
+- Logic, Automata & Complexity (CS103)
+- Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+- Algorithmic Analysis (CS161)
+- Principles of Computer Systems (CS110 or CS111)
+- Area A. Mathematical and Theoretical Foundations breadth course
+- Area B. Computer Systems breadth course
+- Area C. Applications breadth course
+- Area D. Computing and Society breadth course
+- CS221 or equivalent advisor-approved course
+- At least four courses from CS223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238
+- Completion of a total of 21 units from the AI specialization depth courses list
+```

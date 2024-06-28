@@ -1,0 +1,87 @@
+**BS Requirements Analysis:**
+
+### Core Requirements:
+- **CS103: Mathematical Foundations of Computing (5 units)**: Satisfied, Grade: B+
+- **CS106B: Programming Abstractions (5 units)**: Satisfied, Grade: B+
+- **CS107: Computer Organization and Systems (5 units)**: Satisfied, Grade: B
+- **CS109: Introduction to Probability for Computer Scientists (5 units)**: Satisfied, Grade: A-
+- **CS111: Operating System Principles (5 units)**: Satisfied, Grade: B+
+- **CS161: Design and Analysis of Algorithms (5 units)**: Satisfied, Grade: B+
+
+### Science Requirements:
+- **PHYSICS 41: Mechanics (4 units)**: Satisfied, Grade: A-
+- **PHYSICS 43: Electricity and Magnetism (4 units)**: Satisfied, Grade: B
+- **PHYSICS 45: Light and Heat, Science Elective (4 units)**: Satisfied, Grade: B+
+
+### Mathematics Requirements:
+- **MATH 19: Calculus (5 units)**: Satisfied, Grade: B
+- **MATH 20: Calculus (5 units)**: Satisfied, Grade: B+
+- **MATH 21: Calculus (5 units)**: Satisfied, Grade: A-
+- **MATH 53: Ordinary Differential Equations for Engineers (5 units)**: Satisfied, Grade: A-
+- **PHIL 151: Mathematical Logic (4 units)**: Satisfied, Grade: B
+
+### Senior Project Requirement:
+- **CS191: Independent Project (3 units)**: Satisfied, Grade: A
+
+### Technology in Society Requirement:
+- **STS 1: Introduction to Science, Technology, and Society (4 units)**: Satisfied, Grade: A
+
+### Depth and Track Requirements (AI Track):
+- **CS221: AI: Principles and Techniques (3 units)**: Satisfied, Grade: A-
+- **CS224N: Natural Language Processing (3 units)**: Satisfied, Grade: B+
+- **CS237A: Principles of Robotics (3 units)**: Satisfied, Grade: A
+- **CS228: Decision Making Under Uncertainty (4 units)**: Satisfied, Grade: A
+- **CS234: Reinforcement Learning (3 units)**: Satisfied, Grade: A-
+- **CS239: Advanced Topics in AI (3 units)**: Satisfied, Grade: A-
+- **CS279: Bioinformatics (3 units)**: Satisfied, Grade: B+
+- **CS224S: Spoken Language Processing (3 units)**: Satisfied, Grade: A
+- **CS229M: Machine Learning in Medicine (3 units)**: Satisfied, Grade: B+
+- **CS257: Logic and Automated Reasoning (3 units)**: Satisfied, Grade: A-
+
+### Engineering Fundamentals (10 units minimum):
+- **ENGR 40M: An Introduction to Making: What is EE? (5 units)**: Satisfied, Grade: B
+- **ENGR 50: Introduction to Materials Science, Nanotechnology Emphasis (4 units)**: Satisfied, Grade: B+
+
+### Writing in the Major (WiM):
+- **CS191: Independent Project (3 units)**: Satisfied, Grade: A
+
+### Unit Summary:
+- Total Units Completed: 184, Satisfied
+- UG Cum GPA: 3.633, Satisfied
+
+Based on the transcript analysis, all required courses and units for Bachelor of Science in Computer Science have been satisfied.
+
+**Output: BS SAT**
+
+**MS Requirements Analysis:**
+
+### Foundations Requirement:
+- **CS103: Logic, Automata & Complexity**: Satisfied during BS.
+- **CS109: Probability**: Satisfied during BS.
+- **CS161: Algorithmic Analysis**: Satisfied during BS.
+- **CS107: Computer Organ & Sys**: Satisfied during BS.
+- **CS111: Principles of Computer Systems**: Satisfied during BS.
+
+### Significant Implementation Requirement:
+- **CS228: Decision Making Under Uncertainty (4 units)**: Satisfied during BS, Grade: A
+
+### Breadth Requirement:
+- **Area A: CS154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251** (In progress or pending selection)
+- **Area B: CS140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E** (In progress or pending selection)
+- **Area C: CS145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373** (In progress or pending selection)
+- **Area D: CS152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B** (In progress or pending selection)
+
+### Artificial Intelligence Depth Requirement:
+- **CS221**: Satisfied during BS
+- **CS224N, CS228, CS234**: Satisfied during BS
+- **CS257, CS239, CS237A, CS279**: Additional depth courses, satisfied during BS
+
+### Electives:
+- **Pending selection**
+
+### Summary:
+The student has satisfied several foundational and depth courses during their undergraduate studies. However, final electives and breadth courses need to be selected and completed.
+
+**Output: List of Courses Not Satisfied for MS**:
+- Selection and completion of remaining Breadth Requirement courses
+- Completion of electives to meet the total unit requirement for the MSCS degree.

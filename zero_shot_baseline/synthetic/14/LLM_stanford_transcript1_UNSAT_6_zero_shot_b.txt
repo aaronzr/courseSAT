@@ -1,0 +1,85 @@
+### BS Requirement Analysis
+
+Below are the requirements for a Bachelor of Science in Computer Science and an analysis of Alicia Marie Jackson's transcript against these requirements:
+
+#### Core Requirements:
+1. **CS 106B: Programming Abstractions** - Taken and passed with B-
+2. **CS 107: Computer Organization and Systems** - Taken and passed with D-
+3. **CS 103: Mathematical Foundations of Computing** - Not found on transcript
+4. **CS 109: Introduction to Probability for Computer Scientists** - Not found on transcript
+5. **CS 111: Operating Systems Principles** - Taken and passed with C
+6. **CS 161: Data Structures and Algorithms** - Taken and passed with C+
+
+#### Senior Project Requirement:
+1. **CS 210B: Project Experience with Corporate Partners** - Taken and passed with C
+2. All parts of the senior project requirement seem to be satisfied by Alicia.
+
+#### Mathematics Requirements:
+1. **MATH 19/20/21** - AP credits for Calculus AB satisfied this requirement
+2. **MATH 51: Linear Algebra and Differential Equations** - Taken and passed with C
+3. Additional Math Electives - MATH 52 and PHIL 151 are counted:
+   - MATH 52 - Passed with B-
+   - PHIL 151 - Passed with A-
+
+#### Science Requirements:
+1. **PHYSICS 61** - Taken and passed with A-
+2. **PHYSICS 63** - Taken and passed with C+
+3. Additional electives - Not specified in analysis.
+
+#### Technology in Society Requirement:
+- Not directly found on the transcript.
+
+#### Engineering Fundamentals:
+1. **CS 106A: Programming Methodology** - Taken and passed with B
+2. **PHYS 100: Modern Physics Laboratory** - Passed with CR (Credit)
+3. **EE 102: Introduction to Logic Design** - Taken and passed with B
+
+#### Depth Requirements:
+Confirmed courses are not directly listed, needed further confirmation from the advisor.
+
+### Unsatisfied BS Requirements:
+1. **CS 103: Mathematical Foundations of Computing** - Not completed.
+2. **CS 109: Introduction to Probability for Computer Scientists** - Not completed.
+3. **Technology in Society Requirement** - Not found on transcript.
+
+### BS Conclusion:
+Based on the analysis, the BS degree requirements have not been fully satisfied yet.
+
+### MS Requirement Analysis
+
+We proceed with the analysis of the MS requirements, but given the BS requirements are not fully satisfied, the MS assessment follows just for completion:
+
+#### Foundations Requirement:
+1. **CS 107 or CS 107E: Computer Organization and Systems** - Passed with D-
+2. **CS 161: Algorithmic Analysis** - Passed with C+
+3. **CS 103: Logic, Automata, and Complexity** - Not completed (Critical requirement missing)
+4. **CS 109: Probability** - Not completed (Critical requirement missing)
+5. **CS 110 or CS 111: Principles of Computer Systems** - CS 111 was passed with C
+
+#### Significant Implementation:
+To be completed during MS, we need to identify a course that counts against this, e.g., CS 210B.
+
+#### Breadth Requirement:
+Pending specific course completion, not mapped due to lack of definitive depth course completions and particular breadth area requirements.
+
+#### AI Depth:
+Depth courses such as CS 233 are taken but not declared if they match exactly; further acceptance needed from advisor.
+
+### Courses Not Satisfied for MS:
+1. **CS 103** - Not completed.
+2. **CS 109** - Not completed.
+3. **Breadth and Depth courses** – Need specific validation from advisor approval and further core requirements.
+
+### Conclusion:
+No need to delve deeper; crucial foundational courses missed like CS 103 and CS 109 make the assertion for MS incompletely qualified along with some unlisted breadth core requirements.
+
+### Final Answer
+
+- **For BS:** CS 103 and CS 109 missing, and Technology in Society requirement not satisfied.
+- **For MS:** Foundations requirements for CS 103 and CS 109 missing and some Breadth areas and approval specifics not confirmed due to incomplete BS.
+
+**Output:**
+
+```plaintext
+BS NOT SAT - Missing: CS 103, CS 109, Technology in Society
+```
