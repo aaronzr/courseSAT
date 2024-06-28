@@ -230,14 +230,14 @@ HOW DO THEY GET BUILT?1.00 1.00 S
    
 UG Term GPA 4.056 Term Totals 19.00 19.00
 UG Cum GPA 3.649 Cum  Totals 160.00 159.00
-GR Term GPA 0.000 Term Totals 1.00 1.00
-GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+GR Term GPA 3.000 Term Totals 20.00 20.00
+GR Cum GPA 3.000 Cum  Totals 20.00 20.00
  2014-2015 Autumn   
 Course Title Attempted Earned Grade 
-PE  138 TABLE TENNIS: 
-INTERMEDIATE/ADVANCED1.00 1.00 S
+CS  205L Continuous Mathematical Methods
+with an Emphasis on Machine Learning5.00 5.00 A
    Shashin Shodhan
-WELLNESS  201 FLOURISHING 2.00 2.00 S
+CS  231A COMPUTER VISION5.00 5.00 A
    Frederic Luskin
 EE  216 PRINCIPLES AND MODELS OF 
 SEMICONDUCTOR DEVICES3.00 3.00 CR
@@ -272,7 +272,7 @@ CS  154 INTRODUCTION TO AUTOMATA AND
 COMPLEXITY THEORY4.00 4.00 A
   Omer Reingold
    
-GR Term GPA 3.850 Term Totals 9.00 9.00
+GR Term GPA 3.850 Term Totals 22.00 22.00
 GR Cum GPA 3.740 Cum  Totals 22.00 22.00
  2014-2015 Spring   
 Course Title Attempted Earned Grade 
@@ -282,14 +282,13 @@ BIOPHYSICS4.00 0.00
  Steven Block; William Greenleaf
 EE  236C LASERS 3.00 0.00
    Martin Fejer
-EE  340 OPTICAL MICRO- AND NANO-
-CAVITIES3.00 0.00
+CS  345 TOPICS IN DATA WAREHOUSINIG5.00 5.00 a
    Jelena Vuckovic
-GR Term GPA 0.000 Term Totals 10.00 0.00
+GR Term GPA 0.000 Term Totals 20.00 0.00
 GR Cum GPA 3.740 Cum Totals 32.00 22.00
  
 Graduate Career Totals
-Cum GPA 3.740 Cum Totals 32.00 22.00
+Cum GPA 3.740 Cum Totals 45.00 42.00
 Undergraduate Career Totals
  
 Cum GPA 3.649 Cum Totals 163.00 162.00
