@@ -1,6 +1,3 @@
-Certainly! Here is the synthetic transcript, which doesn't comply with the provided course requirements from Stanford University's CS Department:
-
----
 
 Leland Stanford Jr. University  
 Stanford, CA 94305  
@@ -260,8 +257,4 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 153.00
 
 *********************************************************************************************  
 *  Worksheet - For office use by authorized Stanford personnel *  
-*********************************************************************************************  
-
-END OF TRANSCRIPT.  
-
----
+********************************************************************************************* END OF TRANSCRIPT.  
