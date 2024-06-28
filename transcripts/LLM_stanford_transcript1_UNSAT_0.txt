@@ -1,6 +1,4 @@
-Absolutely, let me generate a synthetic transcript that deliberately does not comply with the provided course requirements. Here is the revised transcript:
 
-```plaintext
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USAUndergraduate Unofficial Transcript
@@ -225,6 +223,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 143.00
 *********************************************************************************************
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************END OF TRANSCRIPT.
-```
-
-This synthetic transcript includes a mix of courses that deliberately do not comply with the specific course requirements of the Stanford University CS Department's undergraduate program.
