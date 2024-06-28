@@ -1,6 +1,4 @@
-Certainly! Below is the new synthetic transcript with mutated details for a student. This synthetic transcript does not comply with the provided course requirements.
 
-```
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USA
@@ -143,4 +141,3 @@ CHEM  31B CHEMICAL PRINCIPLES II 4.00 4.00 B
    
 UG Term GPA 2.933 Term Totals 14.00 14.00
 UG Cum GPA 3.091 Cum Totals 136.00 130.00
-```
