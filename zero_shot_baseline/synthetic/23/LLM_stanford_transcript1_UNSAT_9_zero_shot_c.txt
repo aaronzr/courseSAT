@@ -1,0 +1,111 @@
+**BS Degree Requirements Analysis**
+
+**Core Requirements:**
+- CS 106B - Not Taken
+- CS 107 - Taken (CS 107, Grade: B+)
+- CS 103 - W (Withdrawn)
+- CS 109 - Taken (Introduction to Probability & Statistics, Grade: A-)
+- CS 111 - Not Taken
+- CS 161 - Not Taken
+
+**Senior Project Requirements:**
+- Not enough information provided in the transcript to determine if a Senior Project (CS191, CS191W, CS194, CS194W, CS210B, or CS294) has been completed.
+
+**Mathematics and Science Requirement:**
+- Mathematics (26 units minimum):
+  - Must include MATH 19, 20, 21 (or equivalents up to 10 units AP/transfer)
+    - Completed: Advanced Placement Mathematics: Calculus AB (8.00 units)
+  - Plus:
+    - MATH51 (Linear Algebra with Applications, Grade B+)
+    - MATH52 (Multivariate Calculus, Grade A-)
+    - MATH53 (Ordinary Differential Equations, Grade C+)
+    - MATH104 (Complex Analysis, Grade C)
+    - MATH108 (Numerical Methods, Grade A)
+
+(26 units minimum completed in mathematics through a combination of AP and courses taken)
+
+- Science (11 units minimum):
+  - PHYS 41 Mechanics - Equivalent (CS 21 Classical Physics, 4.00 units, Grade B)
+  - PHYS 43 Electicity and Magnetism - Equivalent (PHYS 22, Grade C+)
+  - Elective - Numerous options for science electives
+    - BIO101 (Grade CR)
+    - BIO103 (Grade C)
+    - CHEM31A (Grade B-)
+    - CHEM31B (Grade B)
+    - STATS116 (Grade B+)
+
+(11 units minimum science requirement completed through courses taken)
+
+**Technology in Society Requirement:**
+- Not evident from transcript
+
+**Engineering Fundamentals:**
+- CS 106B - Not Taken
+- ENGR40M or ENGR76 - Not evident from transcript
+
+**Depth Requirements:**
+- Not detailed/specific in provided context
+
+**Eligible Humanities Electives:**
+- Some humanities/electives are evident but specific eligibility isn’t provided.
+
+**Senior Project:**
+- No evidence of Senior Project completion in the transcript.
+
+**Writing in the Major Requirement:**
+- Not evident from transcript
+
+**Petitions, Deviations, & Transfer Credits:**
+- Not enough information provided
+
+**Overall:**
+- **BS Core Requirements not completely satisfied**
+  - Missing CS 106B, CS 103, CS 111, and CS 161
+  - Uncertain about Technology in Society Course
+  - Uncertain about Engineering Fundamentals (ENGR40M or ENGR76)
+  - Uncertain if Senior Project requirement has been met
+
+**MS Requirements Analysis**
+
+**Foundations Requirement:**
+- Logic, Automata & Complexity (CS103) - Not Fulfilled
+- Probability (CS109, Stat116, CME106, MS&E220, or EE178) - Fulfilled (STAT116, Grade B+)
+- Algorithmic Analysis (CS161) - Not Fulfilled
+- Computer Organ & Sys (CS107 or 107E) - Fulfilled (CS107, Grade B+)
+- Principles of Computer Systems (CS110 or CS111) - Not Fulfilled
+
+**Significant Implementation Requirement:**
+- Not evident from transcript whether a course fulfilling implementation requirement has been completed.
+
+**Breadth Requirement:**
+- A - Not evident from transcript
+- B - Not evident from transcript
+- C - Not evident from transcript
+- D - Not evident from transcript
+
+**Artificial Intelligence Depth:**
+- CS221 - Not evident from transcript
+- Additional courses from CS223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238 as required for depth
+
+**Electives:**
+- Not detailed/specific in provided context
+
+**Overall:**
+- **MS Requirements not completely satisfied**
+  - Missing numerous foundational courses
+  - Significant implementation requirement not detected in transcript
+  - Breadth and AI Depth not met based on provided courses
+  - Electives and full unit requirements not evidenced
+
+**Conclusion:**
+BS Requirements are not satisfied, thus MS requirements are not analyzed further as BS requirements are a prerequisite. The following BS and MS requirements are not satisfied:
+
+**BS Requirements:**
+1. CS 103
+2. CS 106B
+3. CS 111
+4. CS 161
+5. Technology in Society Course
+6. ENGR40M or ENGR76
+7. Senior Project
+8. Writing in the Major Requirement

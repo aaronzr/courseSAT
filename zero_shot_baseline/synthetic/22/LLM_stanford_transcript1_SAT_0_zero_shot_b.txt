@@ -1,0 +1,97 @@
+To evaluate the student’s transcript against both the BS and MS degree requirements, we will examine each requirement diligently.
+
+### BS Core Requirements
+
+1. **Programming Abstractions (CS106B)**
+   - Completed: 2019-2020 Winter, Grade: A-
+
+2. **Computer Organization and Systems (CS107)**
+   - Completed: 2020-2021 Autumn, Grade: B+
+
+3. **Principles of Computer Systems (CS111)**
+   - Completed: 2020-2021 Spring, Grade: B
+
+4. **Mathematical Foundations of Computing (CS103)**
+   - Completed: 2019-2020 Spring, Grade: B+
+
+5. **Introduction to Probability for Computer Scientists (CS109)**
+   - Completed: 2020-2021 Winter, Grade: A-
+
+6. **Design and Analysis of Algorithms (CS161)**
+   - Completed: 2021-2022 Autumn, Grade: A-
+
+### BS Senior Project Requirements
+
+1. **CS191W: Independent Project Writing Intensive**
+   - Completed: 2021-2022 Spring, Grade: B+
+
+### BS AI Track Elective Requirements
+
+1. **CS221: Artificial Intelligence: Principles and Techniques**
+   - Completed: 2021-2022 Winter, Grade: A-
+
+2. **Track Requirement B (Two areas)**
+   - CS223A: Introduction to Robotics (2021-2022 Winter, B+)
+   - CS224N: Natural Language Processing with Deep Learning (2021-2022 Spring, A)
+
+3. **Track Requirement C**
+   - CS234: Reinforcement Learning (2021-2022 Winter, B+)
+
+4. **Three Additional Electives**
+   - CS239: Advanced Topics in AI Ethics (2021-2022 Spring, B+)
+   - CS230: Deep Learning for Computer Vision (2022-2023 Autumn, A-)
+   - CS276: Information Retrieval and Web Search (2022-2023 Winter, B+)
+
+### Depth Requirements
+
+- 25 units required; confirmed by the courses listed which are more than 25 units. 
+
+### Technology in Society Requirement
+
+1. **ANTHRO 132D: Technology and Society**
+   - Completed: 2021-2022 Spring, Grade: A-
+
+### Summary for BS Requirements
+“BS SAT” (All Bachelor of Science requirements are satisfied)
+
+### MS specialization in Artificial Intelligence
+
+1. **Foundations Requirement**
+   - CS103: Logic, Automata & Complexity (Completed as undergraduate)
+   - CS109: Probability (Completed as undergraduate)
+   - CS161: Algorithmic Analysis (Completed as undergraduate)
+   - CS107E: Computer Organ & Systems (Completed as undergraduate)
+   - CS111: Principles of Computer Systems (Completed as undergraduate)
+
+2. **Significant Implementation Requirement**
+   - CS243: Systems and Networks Security (2022-2023 Spring, A, counts as significant implementation)
+
+3. **Breadth Requirement**
+   - Area A: 
+     - PHIL 151: Philosophy of Science (Completed, Grade: A, 2022-2023 Winter)
+   - Area B:
+     - CS242: Programming Languages (Completed, Grade: A-, 2022-2023 Winter)
+   - Area C: 
+     - CS224N: Natural Language Processing with Deep Learning (Completed, Grade: A, 2021-2022 Spring)
+
+4. **AI Depth Requirement**
+   - CS221 (Completed, Grade: A-)
+   - CS223A (Completed, Grade: B+)
+   - CS224N (Completed, Grade: A)
+   - CS234 (Completed, Grade: B+)
+   - CS239 (Completed, Grade: B+)
+   - CS230 (Completed, Grade: A-)
+   - CS276 (Completed, Grade: B+)
+   - CS327A: Advanced Robotics (Completed, Grade: A-, 2022-2023 Spring)
+
+5. **Electives**
+   - Total elective units completed (including depth and significant implementation courses): exceeds the required 45 total units for the MSCS program
+
+### Summary for MS Requirements
+“MS SAT” (All Master of Science requirements are satisfied)
+
+Therefore:
+```
+BS SAT
+MS SAT
+```

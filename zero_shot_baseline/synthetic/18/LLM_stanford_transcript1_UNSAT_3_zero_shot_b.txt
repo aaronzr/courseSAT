@@ -1,0 +1,92 @@
+To determine whether Michael Alan Robson has satisfied both his BS and MS degree requirements, we will go through each set of requirements (BS Core, Senior Project, AI Elective requirements, and MS specialization) and compare them with his transcript to identify any unmet needs.
+
+### BS Core Requirements
+
+1. **Math Requirements (26 units minimum)**
+    - MATH 19/20/21 or equivalent
+    - CS 103: Completed (Spring 2020, PHIL 60)
+    - CS 109: Completed (Winter 2021, CS 109)
+    - Elective 1: MATH 51 (Autumn 2021)
+    - Elective 2: MATH 52 (Spring 2020)
+    - **Total Units: 10 (MATH 19/20/21 equivalent completed via AP), MATH 51+ MATH 52 (9 units) + CS 109 + CS 103 (10 units) = 29 units**
+
+2. **Science Requirements (11 units minimum)**
+    - PHYS 41: Not completed
+    - PHYS 43: Not completed
+    - Elective: Completed (CHEM 31A, Spring 2020, 5 units)
+    - **Total units: 5 units (CHEM 31A). Needs 6 more units and specific PHYS classes.**
+
+3. **Engineering Fundamentals (10 units minimum)**
+    - CS 106B: Completed (Autumn 2020, 5 units)
+    - ENGR 40M or ENGR 76: Not completed
+    - **Total units: 5 units (CS 106B). Needs 5 more units with specific ENGR course.**
+
+4. **Core (15 units minimum)**
+    - CS 106B: Completed (Autumn 2020, 5 units)
+    - CS 107 or 107E: Completed (Winter 2021, 5 units for CS 107E)
+    - CS 111: Not completed
+    - CS 161: Not completed
+    - **Total units: 10 units. Needs 5 more units (CS 111 and CS 161 specifically).**
+
+5. **Depth Required Track & Electives (25 units and seven courses minimum)**
+    - Specific courses required: CS221 (e.g., CS electives)
+    - Checked in MS requirements
+
+6. **Senior Project (CS191, CS194, etc.)**
+    - Not identified in the transcript
+
+### List of BS Requirements Not Satisfied
+- **PHYS 41: Mechanics**
+- **PHYS 43: Electricity and Magnetism**
+- **ENGR 40M or 76: ENGR Fundamentals**
+- **CS 111: Principles of Computer Systems**
+- **CS 161: Design Analysis of Algorithms**
+- **Senior Project**
+
+### MS Specialization Requirements
+
+1. **Foundations Requirement**
+    - CS103: Completed (via PHIL 60)
+    - CS109: Completed
+    - CS161: Not completed
+    - CS107 or 107E: Completed (CS 107E)
+    - CS110 or CS111: Not completed
+
+2. **Significant Implementation Requirement**
+    - Courses like CS 143, CS 144, CS 145, CS 148, etc. require checking based on depth electives
+
+3. **Breadth Requirement**
+    - 3 courses taken for letter grade in different areas: Not specifically identified in detail
+
+4. **AI Depth**
+    - CS 221: Likely needed, not detailed in transcript
+    - CS 229: Completed?
+
+### List of MS Requirements Not Satisfied
+- **CS 161**: Algorithmic Analysis (Foundations)
+- **CS 110 or CS111**: Principles Systems (Foundations)
+- **Breadth Requirement**: Completion evidence
+- **CS 221**: AI Principles and Techniques; not evident in transcript
+- **Possible Depth Courses**: Need verification
+
+### Conclusion
+Given the courses and details in the transcript:
+
+- **BS Requirements** are not fully satisfied.
+- **MS Requirements** are not fully satisfied.
+
+### Outputs
+- **BS Requirements not satisfied**:
+  - **PHYS 41: Mechanics**
+  - **PHYS 43: Electricity and Magnetism**
+  - **ENGR 40M or 76**
+  - **CS 111**
+  - **CS 161**
+  - **Senior Project**
+
+- **MS Requirements not satisfied**:
+  - **CS 161**
+  - **CS 110 or CS 111**
+  - **Breadth Courses** verification
+  - **CS 221**
+  - **Depth**: Need verification on other Depth requirements and courses.

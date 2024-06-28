@@ -1,0 +1,98 @@
+### BS Degree Requirements Analysis
+
+**Core Requirements:**
+1. **CS 106B (Programming Abstractions)** - Completed with **B+**
+2. **CS 107 (Computer Organization and Systems)** - Completed with **A-**
+3. **CS 111 (Principles of Computer Systems)** - Completed with **B+**
+4. **CS 103 (Mathematical Foundations of Computing)** - Completed with **B**
+5. **CS 109 (Introduction to Probability for Computer Scientists)** - Completed with **A**
+6. **CS 161 (Design and Analysis of Algorithms)** - Completed with **B+**
+
+**Senior Project:**
+1. **CS 194 (Software Project Experience)** - Completed with **A-**
+
+**Engineering Fundamentals:**
+1. **ENGR 40M (Intro to Making)** - Completed with **B+**
+2. **CS 106B (Programming Abstractions)** - Double-counted here for Engineering Fundamentals, already taken for core requirements.
+
+**Math Requirements:**
+1. **MATH 19 (Calculus)** - Completed with **A**
+2. **MATH 20 (Calculus)** - Completed with **A-**
+3. **MATH 21 (Calculus)** - Completed with **B+**
+4. **CS 103 (Mathematical Foundations of Computing)** - Counted here from core requirements.
+5. **CS 109/109H (Introduction to Probability for Computer Scientists / Honors Probability and Statistics for Computer Scientists)** - **CS 109** Completed with **A** and **CS 109H** with **A**
+
+**Science Requirements:**
+1. **PHYS 41 (Mechanics)** - Completed with **A**
+2. **PHYS 43 (Electricity and Magnetism)** - Completed with **B**
+3. **PHYS 21 (Physics Lab)** - Completed with **S**
+
+**Technology in Society:**
+- Missing. Need one course from the approved list.
+
+### AI Track Requirements Analysis
+
+**Core Courses:**
+1. **CS 107 or 107E (Computer Organization and Systems)** - Completed with **A-**
+2. **CS 111 (Operating Systems Principles)** - Completed with **B+**
+3. **CS 161 (Design and Analysis of Algorithms)** - Completed with **B+**
+
+**Depth:**
+1. **CS 221 (AI: Principles and Techniques)** - Completed with **A-**
+2. **CS 124 (From Language to Information)** - Completed with **A-**
+3. **CS 229 (Machine Learning)** - Completed with **B+**
+4. **CS 224N (Natural Language Processing with Deep Learning)** - Completed with **A**
+5. **CS 224U (Learn-Represent Natural Language)** - Completed with **A**
+6. **CS 231A (Computer Vision: From 3D Reconstruction to Recognition)** - Completed with **B+**
+7. **CS 234 (Reinforcement Learning)** - Completed with **A**
+8. **CS 238 (Decentralized Systems)** - Completed with **A-**
+
+**Senior Project:**
+1. **CS 194 (Software Project Experience)** - Completed with **A-**
+
+**Electives:**
+1. **CS 270 (Modeling Biological Systems)** - Completed with **B+**
+
+Summary: Samantha satisfies all BS core, depth, and senior project requirements except the Technology in Society course.
+
+### Conclusion
+For the Bachelor's degree:
+- **Missing Requirement:** Technology in Society course. Therefore, **BS NOT SAT**.
+
+### MS Specialization Requirements Analysis
+
+**Foundations Requirement:**
+1. **Logic, Automata & Complexity (CS103)** - Completed with **B**
+2. **Probability (CS109 or STAT116)** - Completed with **A (CS 109)**
+3. **Algorithmic Analysis (CS161)** - Completed with **B+**
+4. **Computer Organization & Systems (CS107 or 107E)** - Completed with **A-**
+5. **Principles of Computer Systems (CS111)** - Completed with **B+**
+
+**Significant Implementation Requirement:**
+1. **CS 194 (Software Project Experience)** can be counted toward this, completed with **A-.**
+
+**Breadth Requirement:**
+1. **Area A (Mathematical and Theoretical Foundations):** No course listed in transcript yet. **Missing course.**
+2. **Area B (Computer Systems):** No course listed in transcript yet. **Missing course.**
+3. **Area C (Applications):** Courses like **CS 229, 224N, 224U, 231A** can be counted - Completed.
+4. **Area D (Computing and Society):** No course listed in transcript yet. **Missing course.**
+
+**Artificial Intelligence Depth:**
+1. **CS 221 (AI: Principles & Techniques)** - Completed with **A-**
+2. **At least four courses from list:** CS 124, 229, 224N, 224U, 231A, 234, 238 cover this requirement.
+
+**Electives:**
+1. **CS 270 (Modeling Biological Systems)** - Completed with **B+**
+2. Need additional courses to complete the 45-unit requirement. **Missing additional elective courses.**
+
+### Conclusion
+For MS specialization:
+- **Missing Requirements:**
+   - Breadth Requirement: Areas A, B, D courses.
+   - Additional electives to meet the 45-unit requirement.
+   
+Therefore, **MS NOT SAT**.
+
+In conclusion:
+- **BS NOT SAT:** Missing Technology in Society course.
+- **MS NOT SAT:** Missing Breadth Requirement (Areas A, B, and D) and additional electives to reach the 45-unit threshold.

@@ -1,0 +1,109 @@
+To determine if David Smith satisfies the BS and MS degree requirements, we’ll break down our analysis into two parts:
+
+1. **BS Requirements Analysis**
+2. **MS Specialization Requirements Analysis**
+
+### BS Requirements Analysis
+
+#### BS Core Requirements
+- **Programming Abstractions (CS106B)**: Taken in Autumn 2016-2017
+- **Computer Organization and Systems (CS107)**: Taken in Winter 2016-2017
+- **Principles of Computer Systems (CS111)**: Taken in Spring 2016-2017
+- **Mathematical Foundations of Computing (CS103)**: Taken in Autumn 2016-2017
+- **Introduction to Probability for Computer Scientists (CS109)**: Taken in Winter 2016-2017
+- **Design and Analysis of Algorithms (CS161)**: Taken in Spring 2016-2017
+
+Required Courses (CS 103, 107, 109, 111, 161) were all taken for 5 units each.
+
+#### Senior Project Requirements
+- **Senior Project Course**: Not listed in the provided transcript. Options include:
+  - CS194 or CS194W
+  - CS210B
+  - CS191 or CS191W
+  - CS294
+  - Senior Honors Thesis
+  - There’s no evidence David completed any of these courses.
+
+#### AI Track Requirements
+- **Mathematics & Science**
+  - **MATH19, 20, 21**: Credited via AP (10 units total), and MATH51 (taken).
+  - Two math electives: MATH52 and MATH53 (both taken).
+  - **CS103**: Core requirement, already taken.
+  - **CS109**: Core requirement, already taken.
+  - **Science**: PHYSICS 41 (Mechanics) taken.
+  - **PHYSICS43 (Electricity and Magnetism)**: Taken.
+  - Science Elective: PHYSICS 45 (taken but may prefer a different elective, needs confirmation).
+
+- **Engineering Fundamentals**
+  - **CS106B**: Already counted as core requirement.
+  - **ENGR40M (Intro to Making: What is EE?)**: Taken.
+
+- **Core**
+  - **CS107, 111, 161**: Already counted as core requirements. 
+
+- **Depth**
+  - **CS221 (AI: Principles and Techniques)**: Taken in 2017-2018 Autumn.
+  - Track Requirement B1: **CS223A (Robotics)**: Taken in 2017-2018 Autumn.
+  - Track Requirement B2: **CS224N (NLP with Deep Learning)**: Taken in 2017-2018 Winter.
+  - Track Requirement C: **CS231A (Computer Vision)**: Taken in 2017-2018 Winter.
+  - Electives: **CS228 (Machine Learning for Sequential Data)**, CS229 (Machine Learning)**, CS324 (General Game Playing)**: All taken.
+  
+Each course is confirmed to cover the required categories without repeats.
+
+#### Writing in Major (WiM)
+- Not evidenced in transcript specifically.
+
+### BS Requirements Conclusion:
+David's transcript shows he satisfies all key subject requirements but lacks evidence of completing a senior project course and the Writing in Major (WiM) requirement. 
+
+**BS Requirements Not Satisfied**:
+1. Senior Project (One of CS194, CS194W, CS210B, CS191, CS191W, CS294, or equivalent)
+2. Writing in Major (WiM completion not evident)
+
+
+### MS Specialization Requirements Analysis
+
+#### Foundations Requirement:
+- **Logic, Automata & Complexity (CS103)**: Already taken, satisfies requirement.
+- **Probability (CS109)**: Already taken, satisfies requirement.
+- **Algorithmic Analysis (CS161)**: Already taken, satisfies requirement.
+- **Computer Org & Sys (CS107)**: Already taken, satisfies requirement.
+- **Principles of Computer Systems (CS110/111)**: CS111 taken, satisfies requirement.
+
+Up to 10 units from these courses can be counted towards MS (not included in the depth calculation).
+
+#### Significant Implementation Requirement:
+- Courses like **CS143, CS144, CS145, CS148, CS151, CS190, CS210B, etc.** can count. Since applicable courses from the list he took include **CS221** and **CS210B**. *On the transcript, he hasn't listed any of these as significant implementation counted specifically.*
+
+#### Breadth Requirement:
+- Three courses from different areas (A, B, C, D).
+  - CS221 and CS231A could be in area C and A/M1 respectively.
+  - Needs variation across all areas: another course would have to be chosen from different remaining areas.
+
+#### Artificial Intelligence Depth Requirement:
+- **CS221**: Taken (core requirement met).
+- Four additional courses from the list:
+  - **CS223A, CS224N, CS228, CS229**: Taken.
+  - The total units from depth courses: More than 21 units confirmed.
+
+#### Electives:
+- Up to 3 units counted of 1 or 2-unit seminars permissible.
+- Additional units taken (CS324, CS399, etc.) contribute towards the elective requirement.
+
+### MS Requirements Conclusion:
+David meets many requirements but needs a clarity on the Significant Implementation Requirement and a complete breadth requirement.
+
+**MS Requirements Partly Satisfied**:
+1. Confirm Significant Implementation Course or additional course fulfilling this.
+2. Complete a Breadth course across another non-overlapping area.
+
+### Final Outputs:
+**BS SAT**: No. Missing Senior Project and WiM.
+**MS SAT**: No. Missing documentation for Significant Implementation, still requires one more breadth course from a unique area not already covered.
+
+
+For completeness:
+1. **Documented Senior Project course and WiM** to fulfil BS.
+2. **Significant Implementation Requirement Course** and one unique **Area Breadth Course** to fulfil MS.
+
+These specifics are necessary to validate completion of requirements for both degrees.

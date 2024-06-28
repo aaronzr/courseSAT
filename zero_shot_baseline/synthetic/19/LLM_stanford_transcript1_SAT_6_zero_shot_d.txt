@@ -1,0 +1,137 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the information provided, I'll compare Emily Berkowitz's transcript with the BS degree requirements to determine if all necessary courses and conditions have been met.
+
+### Core Requirements
+- **CS 106B (Programming Abstractions):** Satisfied (Autumn 2012-13, grade B)
+- **CS 107/107E (Computer Organization and Systems)**: Satisfied (CS 107E, Winter 2013-14, grade A)
+- **CS 111 (Principles of Computer Systems):** Satisfied (Spring 2012-13, grade A, formerly CS 110)
+- **CS 103 (Mathematical Foundations of Computing):** Not explicitly listed in transcript
+- **CS 109 (Introduction to Probability for Computer Scientists):** Satisfied (Winter 2012-13, grade B+)
+- **CS 161 (Design and Analysis of Algorithms):** Satisfied (Autumn 2013-14, grade B+)
+
+### Senior Project Requirements
+- **Senior Project (CS 191W or CS 194W or CS 210B or CS 294):** Satisfied with CS 191W (Winter 2013-14, grade A)
+
+### AI Track
+#### Core (15 units minimum)
+- **CS 107/107E (Computer Organization and Systems):** Satisfied (5 units)
+- **CS 111 (Operating System Principles):** Satisfied (5 units)
+- **CS 161 (Design and Analysis of Algorithms):** Satisfied (5 units)
+
+#### Depth; Track and Electives (25 units and seven courses minimum)
+- **CS 221 (AI: Principles and Techniques, Track Requirement A):** Satisfied (Winter 2013-14, grade A)
+- **Track Requirement B (Two courses from different areas):**
+  - **CS 229 (Machine Learning, AI Methods):** Satisfied (Winter 2013-14, grade A-)
+  - **CS 224N (Natural Language Processing with Deep Learning, NLP):** Satisfied (Autumn 2014-15, grade A)
+- **Track Requirement C (One additional course from Track B list or from additional specified courses):**
+  - **CS 231N (Convolutional Neural Networks for Visual Recognition):** Satisfied (Winter 2014-15, grade A)
+
+- **Electives (At least three additional courses from Track Requirement B list, C list, or General CS Electives list):**
+  - **CS 131 (Computer Vision: Foundations and Applications):** Satisfied (Winter 2013-14, grade A)
+  - **CS 225A (Robotics Principles & Practice):** Satisfied (Spring 2013-14, grade A-)
+  - **CS 237A (Robotics: AI Techniques and Applications):** Satisfied (Autumn 2014-15, grade A)
+  - **CS 228 (Computer Vision):** Satisfied (Autumn 2014-15, grade B+)
+  - **Directed Research (CS 294):** Satisfied (Winter 2014-15, grade A-)
+
+#### Senior Project (1 course required)
+- **CS 191/W, CS 194/W, CS 210B, or CS 294 (At least 3 units):** Satisfied with CS 294 (Winter 2014-15, 3 units, grade A-)
+
+### Mathematics and Science Requirements
+- **Mathematics (26 units minimum):**
+  - **MATH 19/20/21 (10 units AP credit):** Satisfied via AP credits
+  - **CME 100 (Vector Calculus):** Satisfied (Autumn 2011-12, 5 units, grade B)
+  - **CME 102 (Ordinary Differential Equations):** Satisfied (Winter 2011-12, 5 units, grade A-)
+  - **CME 104 (Linear Algebra and PDEs):** Satisfied (Spring 2011-12, 5 units, grade A-)
+  - **CS 109 (Introduction to Probability for Computer Scientists):** Satisfied (Winter 2012-13, 5 units, grade B+)
+  - **CS 103:** Not explicitly listed in transcript
+
+- **Science (11 units minimum):**
+  - **PHYS 41 (Mechanics):** Satisfied (Winter 2011-12, 4 units, grade A)
+  - **PHYS 43 (Electricity and Magnetism):** Satisfied (Spring 2011-12, 4 units, grade B+)
+  - **Elective:** PHYS 45 (Light and Heat): Satisfied (Autumn 2012-13, 4 units, grade B-)
+
+### Engineering Fundamentals (10 units minimum)
+- **CS 106B (Programming Abstractions):** Satisfied (5 units)
+- **ENGR 40 (Introductory Electronics):** Satisfied (Autumn 2012-13, 5 units, grade B+)
+
+### Other Requirements
+- **Technology in Society (1 course required):** Satisfied with MS&E 193 (Technology and National Security, Autumn 2013-14, 3 units, grade A-)
+- **Writing in the Major (WIM):** Satisfied via CS 191W (Winter 2013-14)
+
+### Summary
+- **Math and Science Combined (37 units minimum):** Satisfied
+- **Core, Depth, and Senior Project (43 units minimum):** Satisfied (55 units total including senior project, depth courses, and core courses)
+
+### Missing Requirement
+- **CS 103 (Mathematical Foundations of Computing):** Not present in the transcript.
+
+Since the requirement for CS 103 (Mathematical Foundations of Computing) is not satisfied based on the transcript provided, the student has not met all the requirements for the BS degree.
+
+**Output:**
+- **CS 103: Mathematical Foundations of Computing**
+
+Emily Berkowitz has not satisfied all the BS requirements.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine whether Emily Ann Berkowitz has satisfied the Master of Science (MS) degree requirements in Computer Science with a specialization in Artificial Intelligence at Stanford University, we need to verify the following requirements based on her transcript:
+
+### Foundations Requirement
+1. **Logic, Automata & Complexity (CS103)**: Not mentioned in the transcript.
+2. **Probability (CS109, Stat116, CME106, MS&E220, EE178)**: Completed CME106 with a B+ and CS109 with a B+.
+3. **Algorithmic Analysis (CS161)**: Completed with a B+.
+4. **Computer Organization & Systems (CS107 or CS107E)**: Completed CS107E with an A.
+5. **Principles of Computer Systems (CS110 or CS111)**: Completed CS110 (formerly CS111) with an A.
+
+### Significant Implementation Requirement
+Must take one of the specified courses:
+- Courses include: CS140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+- Completed CS248 with a B+ and CS231N with an A.
+
+### Breadth Requirement
+Three courses, each from a different area (A, B, C, D):
+1. **Area A (Mathematical and Theoretical Foundations)**: Not found in the transcript.
+2. **Area B (Computer Systems)**: CS248 (Interactive Computer Graphics) with B+ (belongs to Area B).
+3. **Area C (Applications)**: Multiple courses (CS145, 148, 155, etc.) check.
+   - Completed CS231N with an A (also in Significant Implementation list).
+4. **Area D (Computing and Society)**: Not found in the transcript.
+
+### Artificial Intelligence Depth
+- Required CS221: Completed with an A.
+- At least four from a specified list: CS223A (A-), CS224N (A), CS237A (A), CS228 (B+).
+- Total of at least 21 units from specified courses. 
+
+**Depth Units Calculation**:
+CS221 (4 units),
+CS223A (3 units),
+CS224N (3 units),
+CS237A (3 units),
+CS228 (3 units),
+CS229 (4 units),
+CS233 (3 units).
+
+Total Depth Units: 23 units.
+
+### Electives
+To reach a total of 45 units required for the MSCS degree. 
+- Additional units include: CS229M (3 units), CS294 (3 units).
+- Courses like CME/CS taken during undergrad must be cross-verified for overlap.
+
+### Advisor Notes & Additional Requirements
+- Minimum GPA must be 3.0: Graduate GPA is 3.780.
+- Completed at least 45 graduate units: 39 units excluding undergraduate overlap.
+  
+### Completion Check
+1. **Courses Not Mentioned**:
+   - Logic, Automata & Complexity (CS103)
+   - Breadth Area A and D course not taken
+
+**MS Status**: 
+
+Emily has not completed:
+- Logic, Automata & Complexity (CS103)
+- Breadth requirement in Areas A and D.
+
+Thus, the output is:
+
+**Courses not satisfied**:
+1. CS103 (Logic, Automata & Complexity)
+2. A course from Breadth Area A
+3. A course from Breadth Area D

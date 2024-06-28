@@ -1,0 +1,92 @@
+### Analyzing BS Requirements
+
+#### Core Requirements:
+- **CS 103:** Completed with B+
+- **CS 106B:** Completed with C
+- **CS 107:** Completed with C
+- **CS 109:** Completed with B+
+- **CS 111:** Not identified, course for OS principles should be verified with "Principles of Computer Systems"
+- **CS 161:** Completed with D (requires a C or better for major requirements)
+
+#### Senior Project Requirements:
+Amanda has not completed a senior project course such as CS 191, CS 191W, CS 194, CS 194W, CS 210B, or CS 294. 
+
+#### Mathematics and Science Requirements:
+- **Mathematics (26 units minimum):**
+  - **MATH 19, 20, 21:** Completed (C in MATH 20; need a minimum grade C for full credit)
+  - **CS 103:** Completed (B+)
+  - **CS 109:** Completed (B+)
+  - **Total Units:**
+    - MATH 19, 20, 21: 15 Units
+    - CS 103, 109: 8 Units
+    - **Total: 23 Units (minimum 26 units required)**
+  - **Needs: Additional Math elective to satisfy the total 26-unit requirement**
+
+- **Science (11 units minimum):**
+  - **PHYSICS 41:** Completed (A-)
+  - **PHYS 43 or Equivalent:** Completed Advanced Placement
+  - **Science Elective:** Not identified. Verify science AP credits against SoE list.
+  - **Total Units:**
+    - Physics 41: 4 Units
+    - AP Physics: 10 Units (check restriction)
+  - **Needs: Additional science elective or verify if AP units fit within restrictions**
+
+- **Technology in Society:** Not identified (verify course and catalog requirements)
+
+#### Engineering Fundamentals (10 units minimum):
+- **CS 106B:** Completed (C, needs verification whether acceptable for Engineering Fundamentals)
+- **ENGR 40:** Completed (5 units, B+)
+
+#### Conclusion on BS Requirements:
+Amanda's transcript does have some deficiencies:
+1. **CS 161:** Requires retake or grade improvement to C or higher.
+2. **CS 111:** Verification required.
+3. **Senior Project Completion:** Must enroll in and complete one.
+4. **Math and Science Electives:** Need additional courses to fulfill the unit requirements.
+5. **Technology in Society Requirement:** Needs verification.
+6. **CS 106B:** Verification needed if C grade is acceptable under the major's guidelines for fundamental courses.
+
+**Output:** List of courses not satisfied.
+1. CS 161 requires a higher grade.
+2. Senior Project not completed.
+3. Additional elective to fulfill Math requirement (3 more units).
+4. Additional elective to fulfill Science requirement (if AP units are restricted).
+5. Technology in Society course verification.
+6. CS 111 requires verification.
+
+### Analyzing MS Requirements
+
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103):** Completed with B+
+2. **Probability (CS109):** Completed with B+
+3. **Algorithmic Analysis (CS161):** Completed with D, needs retake or equivalent.
+4. **Computer Organ & Sys (CS107):** Completed with C
+5. **Principles of Computer Systems (CS111):** Verification needed.
+
+#### Significant Implementation Requirement:
+- Selection of an appropriate course for significant implementation must be made, none identified as completed.
+
+#### Breadth Requirement:
+- Diverse coursework across three areas not fully identified from available information.
+
+#### Depth Requirement:
+- Needs confirmation of more depth courses fitting into criteria (e.g., at least four AI-related courses).
+- **CS 221:** No information on waiver, otherwise not identified in transcript.
+
+#### Electives:
+- Non-CS electives need verification against requirement fulfillment.
+
+#### Additional Requirements:
+- Verification that the Foundations Units don’t exceed 10 within 45-unit requirement.
+
+**Output:** List of courses not satisfied based on MS specialization requirements.
+1. Verify CS111 or equivalent as Principles of Computer Systems.
+2. Retake CS161 or equivalent for minimum grade.
+3. Completion of a depth course in AI.
+4. Significant Implementation Course selection.
+5. Three Breadth Courses from different areas.
+6. Ensure elective courses align with the balance of the 45-unit requirement.
+7. Instead of CS 221, alternative/waiver if possible.
+
+**Next Steps:**
+Amanda Johnson needs to consult an academic advisor to address these deficiencies, possibly enrolling in remaining requirements for both BS and MS fulfillments, ensuring compliance with all specified academic standards and guidelines.

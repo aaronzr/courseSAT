@@ -1,0 +1,98 @@
+### Analysis:
+
+#### Undergraduate Degree Requirements for B.S. in Physics:
+
+1. **Courses Taken**:
+    1. AP Credits (20 units): Spanish, Calculus AB
+    2. Autumn 2019-2020:
+        * CS 101: B
+        * PHYS 21: B
+        * ENGL 72A: A- 
+        * BIO 101: CR
+    3. Winter 2019-2020:
+        * HIST 23: A
+        * ANTH 101: A-
+        * MATH 51: B+
+        * PHYS 22: C+
+    4. Spring 2019-2020:
+        * PHIL 12: B+
+        * MATH 52: A-
+        * BIO 103: C
+    5. Autumn 2020-2021:
+        * MATH 53: C+
+        * PHIL 151: C-
+        * HUM 110: B
+        * PHYS 45: B+
+    6. Winter 2020-2021:
+        * EE 102: B+
+        * PHYS 160: B
+        * MATH 104: C
+    7. Spring 2020-2021:
+        * CS 101C: B
+        * PHYS 161: B+
+        * CHEM 31A: B-
+        * STATS 116: B+
+    8. Autumn 2021-2022:
+        * CS 107: B+
+        * PHYS 170: B+
+        * MATH 108: A
+        * HUM 22: S
+    9. Winter 2021-2022:
+        * CS 109: A-
+        * PHYS 180: B-
+        * CHEM 31B: B
+
+2. **Core Requirements:**
+    1. **Computer Science Core (15 units minimum):**
+        * CS 107: Completed with B+
+        * CS 109: Completed with A-
+
+    2. **Depth; Track and Electives (25 units and seven courses minimum):**
+        * Several Artificial Intelligence and other CS courses would specifically be needed, but there's no indication of Sandra taking advanced AI, NLP, Vision, or Robotics-related courses.
+
+    3. **Senior Project (1 course required):**
+        * Cannot be determined if Sandra completed senior project course such as 191, 194, etc.
+        
+3. **Summary for B.S Requirements Met:**
+    - General Science and Math courses cover: PHYS 21, 22, 45, 160, 161, 170, 180; CHEM 31A, 31B; STATS 116, varieties of Math up to MATH 108.
+    - Needs confirmation on meeting depth and senior project.
+
+4. **B.S. Conclusion:** "BS NOT SAT"
+    - Missing proof of satisfying senior project and some specific AI-related depth/elective courses from the CS curriculum.
+
+---
+
+#### Graduate Degree Requirements for MS in Computer Science (Artificial Intelligence Specialization):
+
+1. **Foundations Requirement:**
+    - Logic, Automata, Complexity (CS103) - **Not Completed due to withdrawal**
+    - Probability (CS109) - Completed with A-
+    - Algorithmic Analysis (CS161) - Not completed (Can't verify from transcript)
+    - Computer Org & Sys (CS107) - Completed with B+
+    - Principles of Computer Systems (CS110 or CS111) - Not completed (Can't verify from transcript)
+
+2. **Significant Implementation Requirement:**
+    - No confirmation of completion.
+
+3. **Breadth Requirement:** 
+    - Need completion proof of three courses from different areas A, B, C, or D.
+
+4. **Depth Requirement (AI Specialization):**
+    - Must refer to specific AI tracks; no sufficient details on advanced AI courses from transcript.
+
+5. **Electives:**
+    - Additional courses to complete 45 graduate units for MSCS. 
+
+6. **MS Degree Completion:** 
+    - Degrees, course numbers, and some specifics indicate gaps in fulfilling the MS Artificial Intelligence specialization criteria. No details confirming courses like CS 221, 229, etc.
+
+#### MS Conclusion:
+    - "MS NOT SAT" 
+
+### Output Summary:
+
+- **BS Conclusion:** BS NOT SAT
+    - Missing specific CS depth-related courses and senior project clarity.
+
+- **MS Conclusion:** MS NOT SAT
+    - Various foundational, significant implementation, and AI specialization courses unmet or unverified.

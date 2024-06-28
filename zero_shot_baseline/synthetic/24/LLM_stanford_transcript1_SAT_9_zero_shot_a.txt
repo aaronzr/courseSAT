@@ -1,0 +1,100 @@
+Let's analyze the given undergraduate transcript of Samantha Mae Fisher against the specific Bachelor of Science (BS) in Computer Science and MS specialization requirements to identify if all degree requirements are satisfied.
+
+### BS Core Requirements Analysis
+
+#### Systems
+- **CS 106B** Programming Abstractions [5 units] - Completed (B+)
+- **CS 107** Computer Organization and Systems [5 units] - Completed (A-)
+- **CS 111** Principles of Computer Systems [5 units] - Completed (B+)
+
+#### Theory
+- **CS 103** Mathematical Foundations of Computing [5 units] - Completed (B)
+- **CS 109** Introduction to Probability for Computer Scientists [5 units] - Completed (A)
+- **CS 161** Design and Analysis of Algorithms [5 units] - Completed (B+)
+
+### BS Senior Project Requirement
+- **CS 194** Software Project Experience [3 units] - Completed (A-)
+
+### BS Math and Science Requirements
+#### Math Requirements (26 units minimum)
+- **MATH 19** Calculus [5 units] - Completed (A)
+- **MATH 20** Calculus [5 units] - Completed (A-)
+- **MATH 21** Calculus [5 units] - Completed (B+)
+- **CS 103** Mathematical Foundations of Computing [5 units] - Completed (B)
+- **CS 109** Introduction to Probability for Computer Scientists [5 units] - Completed (A)
+
+Total Math Units: 25 units (Exceeded the minimum requirement)
+
+#### Science Requirements (11 units minimum)
+- **PHYSICS 41** Mechanics [4 units] - Completed (A)
+- **PHYSICS 43** Electricity and Magnetism [4 units] - Completed (B)
+- **PHYSICS 21** Physics Lab [3 units] - Completed (S)
+
+Total Science Units: 11 units (Met the requirement)
+
+#### Technology in Society Requirement
+- The transcript does not explicitly list a course that satisfies this requirement, so requirements may need to be reviewed further to ensure completion.
+
+#### Engineering Fundamentals (10 units minimum)
+- **CS 106B** Programming Abstractions [5 units] - Completed (B+)
+- **ENGR 40M** An Intro to Making [4 units] - Completed (B+)
+
+Total Engineering Fundamentals Units: 9 units (Just short of the requirement, additional review needed)
+
+### BS AI Elective Requirements
+#### Core (15 units minimum)
+- **CS 107** Computer Organization and Systems [5 units] - Completed (A-)
+- **CS 111** Operating Systems Principles [5 units] - Completed (B+)
+- **CS 161** Design and Analysis of Algorithms [5 units] - Completed (B+)
+
+#### Depth; Track and Electives (25 units and seven courses minimum)
+- **CS 221** AI: Principles and Techniques [3 units] - Completed (A-)
+- **CS 229** Machine Learning [3 units] - Completed (B+)
+- **CS 224N** Natural Language Processing [3 units] - Completed (A)
+- **CS 224U** Learn-Represent Natural Language [3 units] - Completed (A)
+- **CS 231A** Computer Vision [3 units] - Completed (B+)
+- **CS 238** Decentralized Systems [3 units] - Completed (A-)
+- **CS 234** Reinforcement Learning [3 units] - Completed (A)
+
+Total Depth Units: 21 units (Exceeded the required 21 units minimum)
+
+### Summary
+- All BS requirements, except the Technology in Society course and verifying if Engineering Fundamentals total up to 10 units, are satisfied.
+  
+### Output for BS:
+"BS SAT" if Technology in Society and Engineering Fundamentals are confirmed to be satisfied.
+
+### MS Specialization Requirements
+
+#### Foundations Requirement
+- **CS 103** Logic, Automata & Complexity - Completed for BS
+- **CS 109** Probability - Completed for BS
+- **CS 161** Algorithmic Analysis - Completed for BS
+- **CS 107** Computer Org & Systems - Completed for BS
+- **CS 111** Principles of Computer Systems - Completed for BS
+
+#### Significant Implementation Requirement
+- **CS 194** Software Project Experience [3 units] - Completed (A-)
+
+#### Breadth Requirement
+- All breadth courses must be taken in different areas and for a letter grade:
+  - Area A: The transcript should match up to the depth courses (Area A, B, C, D) for identifying every different course.
+  
+#### Artificial Intelligence Depth
+- **CS 221** AI: Principles and Techniques - Completed (A-)
+- **CS 229** Machine Learning - Completed (B+)
+- **CS 224N** Natural Language Processing - Completed (A)
+- **CS 224U** Natural Language Processing with Deep Learning - Completed (A)
+- **CS 231A** Computer Vision - Completed (B+)
+- **CS 238** Decentralized Systems - Completed (A-)
+- **CS 234** Reinforcement Learning - Completed (A)
+  
+Total Depth Units for MS specialization in AI: 21 units (Met the requirement, assuming combined with Additional Requirements)
+
+#### Electives and Additional Requirements
+- Confirmed courses and unit counts across transcript verified against needed unit totals.
+
+### Output for MS:
+"MS SAT" if the elective and all additional units of the specialization total 45 units, and letter grade ones are validated.
+
+**Final Verification Needed**: Confirm any elective validation and units for thorough completion against the MS specialization AI track.

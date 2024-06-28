@@ -1,0 +1,141 @@
+### BS Degree Requirements Assessment
+
+Based on Emily Ann Berkowitz's transcript and the given requirements, here is the assessment for the BS in Computer Science degree requirements:
+
+#### Core Requirements:
+1. **CS 106B Programming Abstractions**: Completed.
+   - Course: CS 106B, Grade: B, Units: 5
+
+2. **CS 107 Computer Organization and Systems**: Completed.
+   - Course: CS 107E, Grade: A, Units: 5
+
+3. **CS 110 Principles of Computer Systems (formerly CS 111)**: Completed.
+   - Course: CS 110, Grade: A, Units: 5 
+
+4. **CS 103 Mathematical Foundations of Computing**: No record found in transcript.
+
+5. **CS 109 Introduction to Probability for Computer Scientists**: Completed.
+   - Course: CS 109, Grade: B+, Units: 5
+
+6. **CS 161 Design and Analysis of Algorithms**: Completed.
+   - Course: CS 161, Grade: B+, Units: 5
+
+#### Senior Project:
+1. **CS191W Independent Project Writing Intensive**: Completed.
+   - Course: CS 191W, Grade: A, Units: 3 (satisfied the requirement for the senior project).
+
+### AI Track Requirements Assessment
+
+#### Core AI Track Requirements (15 units minimum):
+1. **CS 107 or 107E Computer Organization and Systems**: Completed.
+   - Course: CS 107E, Grade: A, Units: 5
+2. **CS 111 Operating Systems Principles**: Requirements satisfied with CS 110.
+   - Course: CS 110, Grade: A, Units: 5
+3. **CS 161 Design and Analysis of Algorithms**: Completed.
+   - Course: CS 161, Grade: B+, Units: 5
+
+#### Depth; Track and Electives (25 units and seven courses minimum):
+1. **CS 221 AI: Principles and Techniques**: Completed.
+   - Course: CS 221, Grade: A, Units: 4
+2. **Track Requirement B (two courses from different areas)**:
+   - **CS 131 Computer Vision: Foundations and Applications**: Completed.
+     - Course: CS 131, Grade: A, Units: 3 (Area III: Vision)
+   - **CS 224N Natural Language Processing with Deep Learning**: Completed.
+     - Course: CS 224N, Grade: A, Units: 3 (Area II: Natural Language Processing)
+3. **Track Requirement C (one additional course from the Track B list)**:
+   - **CS 229 Machine Learning**: Completed.
+     - Course: CS 229, Grade: A-, Units: 4 (AI Methods)
+4. **Three electives**:
+   - **CS 225A Robotics Principles & Practice**: Completed.
+     - Course: CS 225A, Grade: A-, Units: 3 (Elective)
+   - **CS 237A Robotics: AI Techniques and Applications**: Completed
+     - Course: CS 237A, Grade: A, Units: 3 (Robotics and Control)
+   - **CS 228 Computer Vision**: Completed
+     - Course: CS 228, Grade: B+, Units: 3 (Vision)
+
+### Math and Science Requirements:
+1. **Mathematics (26 units minimum)**:
+   - **Advanced Placement Mathematics: Calculus BC**: 10.00 units
+   - **CME 100 Vector Calculus for Engineers**: 5.00 units
+   - **CME 102 Ordinary Differential Equations for Engineers**: 5.00 units
+   - **CME 104 Linear Algebra and Partial Differential Equations**: 5.00 units
+   - **CME 106 Introduction to Probability and Statistics**: 4.00 units (additional)
+   - Total Units: 29 units
+  
+2. **Science (11 units minimum)**:
+   - **PHYS 41 Mechanics**: 4.00 units
+   - **PHYS 43 Electricity and Magnetism**: 4.00 units
+   - **PHYS 45 Light and Heat**: 4.00 units
+   - Total Units: 12 units
+  
+### Additional Requirements:
+- **Technology in Society**: No record found in transcript.
+- **Engineering Fundamentals**: Total 10+ units (fulfilled with **CS 106B** and **ENGR 40**)
+
+### Summary:
+
+Emily Ann Berkowitz has successfully fulfilled majorly all the BS requirements for her Computer Science degree based on her transcript. The only course missing as per the BS requirements is **CS 103 Mathematical Foundations of Computing** and **Technology in Society**.
+
+So, the status is:
+- Required: CS 103 Mathematical Foundations of Computing
+- Required: Technology in Society Course
+
+### MS Degree Requirements Assessment
+
+Based on Emily Ann Berkowitz's transcript and the given requirements, here is the assessment for the MS in Computer Science with an AI specialization degree requirements:
+
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103)**: No record found in transcript.
+2. **Probability (CS109)**: Completed.
+   - Course: CS109, Grade: B+
+3. **Algorithmic Analysis (CS161)**: Completed.
+   - Course: CS161, Grade: B+
+4. **Computer Organization and Systems (CS107/107E)**: Completed.
+   - Course: CS107E, Grade: A
+5. **Principles of Computer Systems (CS110/111)**: Completed.
+   - Course: CS 110, Grade: A
+
+#### Significant Implementation Requirement:
+1. **CS 231N Convolutional Neural Networks for Visual Recognition**: Completed.
+   - Course: CS 231N, Grade: A
+
+#### Breadth Requirement:
+1. **Area A (Mathematical and Theoretical Foundations)**:
+   - Not specified in transcript.
+2. **Area B (Computer Systems)**:
+   - **EE 282**: Not specified in transcript.
+3. **Area C (Applications)**:
+   - **CS 229**: Completed.
+     - Course: CS 229, Grade: A−
+4. **Area D (Computing and Society)**:
+   - Not specified in transcript.
+
+#### Artificial Intelligence Depth Requirement:
+1. **CS 221 (Principles)**
+   - Completed.
+   - Course: CS 221, Grade: A
+
+2. **Courses from the Depth List**:
+   - **CS 224N Natural Language Processing**: Completed.
+     - Course: CS 224N, Grade: A
+   - **CS 237A Robotics: AI Techniques**: Completed.
+     - Course: CS 237A, Grade: A
+   - **CS 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237B, 238** (Minimum 4 courses required):
+     - **CS 228 Computer Vision**: Completed.
+       - Course: CS 228, Grade: B+
+     - **CS 231N Convolutional Neural Networks**: Completed.
+       - Course: CS 231N, Grade: A
+
+3. **Additional Courses from categories a, b, and additional list for total of at least 21 units**:
+   - Total Depth units: 21 units
+
+### Summary:
+
+Emily Ann Berkowitz has satisfied most MS requirements except for some Breadth courses necessary.
+
+#### MS Remaining Requirements:
+- **Breadth Requirement Areas A and D courses**
+
+The status for MS is:
+- Required: Breadth Area A Course
+- Required: Breadth Area D Course

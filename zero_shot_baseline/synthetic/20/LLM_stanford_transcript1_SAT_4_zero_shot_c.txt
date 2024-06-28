@@ -1,0 +1,119 @@
+### BS Degree Analysis
+
+#### Core Requirements
+1. **CS 106B Programming Abstractions** - Satisfied (B)
+2. **CS 107 Computer Organization and Systems** - Satisfied (A-)
+3. **CS 111 Principles of Computer Systems** - Satisfied (A-)
+4. **CS 103 Mathematical Foundations of Computing** - Satisfied (A)
+5. **CS 109 Introduction to Probability for Computer Scientists** - Satisfied (B)
+6. **CS 161 Design and Analysis of Algorithms** - Satisfied (A)
+   
+#### Technology in Society
+- **MS&E 193 Technology and National Security** - Satisfied
+
+#### Math Requirements (26 units minimum)
+1. **MATH 19-21** - Satisfied via AP Credits
+2. **MATH 51 Linear Algebra and Differential Calculus** - Satisfied (B)
+3. **MATH 52 Integral Calculus of Several Variables** - Satisfied (A-)
+4. **MATH 53 Ordinary Differential Equations** - Satisfied (A-)
+5. **MATH 104 Applied Matrix Theory** - Satisfied (B+)
+
+Total Math Units: 22 units (including AP credit for MATH 19-21)
+
+#### Science Requirements (11 units minimum)
+1. **PHYSICS 41 Mechanics** - Satisfied (A)
+2. **PHYSICS 43 Electricity and Magnetism** - Satisfied (B+)
+3. **PHYSICS 44 E&M Lab** - Satisfied (S)
+
+Total Science Units: 11 units
+
+#### Engineering Fundamentals (10 units minimum)
+1. **CS 106B Programming Abstractions** - Satisfied (5 units)
+2. **ENGR 40M An Intro to Making: What is EE?** - Satisfied (5 units)
+
+Engineering Fundamentals Total: 10 units
+
+#### Senior Project Requirement
+1. CS 221 **AI: Principles and Techniques** - Satisfied (A), though this course alone isn't enough for the Senior Project completion requirements. Needs verification.
+
+#### Depth Requirements (43 units minimum)
+Core Courses:
+1. CS 107 - Satisfied (A-)
+2. CS 111 - Satisfied (A-)
+3. CS 161 - Satisfied (A)
+
+Track Courses:
+1. **CS 221 AI: Principles and Techniques** - Satisfied (A)
+2. **CS 223A Intro to Robotics** - Satisfied (B+)
+3. **CS 224N Natural Language Processing** - Satisfied (A)
+4. **CS 231A Computer Vision** - Satisfied (A)
+5. **CS 228 Machine Learning for Sequential Data** - Satisfied (A)
+6. **CS 229 Machine Learning** - Satisfied (A+)
+
+Electives:
+1. **CS 234 Reinforcement Learning** - Satisfied (B+)
+2. **EE 263 Intro to Linear Dynamic Systems** - Satisfied (A)
+
+Senior Project:
+Needs verification if completed through CS 191, 194, or other specified course with the required settings.
+
+Total Depth and Elective Units: 43 units minimum appears to be satisfied.
+
+#### Additional Considerations
+- GPA requirements are satisfied overall, with a cumulative GPA above 2.0 in ENGR Fundamentals, CS Core, Depth, and Senior Project courses.
+- Transfer Credits and AP Credits noted and approved.
+
+#### Decision
+Assuming the senior project was thoroughly checked and verified, all BS requirements are satisfied.
+
+**BS SAT**
+
+---
+
+### MS Degree Analysis
+
+#### Foundations Requirements
+1. **Logic, Automata & Complexity (CS103)** - Satisfied (Undergrad)
+2. **Probability (CS109)** - Satisfied (Undergrad)
+3. **Algorithmic Analysis (CS161)** - Satisfied (Undergrad)
+4. **Computer Organ & Sys (CS107)** - Satisfied (Undergrad)
+5. **Principles of Computer Systems (CS111)** - Satisfied (Undergrad)
+
+#### Significant Implementation Requirement
+Courses to fulfill the significant implementation requirement need to be verified under the implementation provided: E.g., **CS 229** counts.
+
+#### Breadth Requirement:
+Must choose courses from three different breadth areas. Needs specific check if these fit in the Program.
+
+Area A:
+- Potential options need checking if chosen (CS 168, 261 might fit)
+
+Area B:
+- One selected (CS 140, 144 might fit)
+
+Area C:
+- Chosen (CS 229, 231N, Advanced chosen like CS 343 fit)
+
+Area D:
+- Courses such as CS 181, 182 are intended to fit here. Final review needed.
+
+#### Artificial Intelligence Depth
+a) **CS 221** - Satisfied (Undergrad)
+b) At least Four Units:
+1. **CS 224N Natural Language Processing** - Satisfied (A)
+2. **CS 231A Computer Vision** - Satisfied (A)
+3. **CS 228** - Satisfied (A)
+4. **CS 229** - Satisfied (A+)
+
+Electives (Total of at least 21 units):
+
+*CS 234 Reinforcement Learning* - Satisfied.
+*CS 343 Applied Machine Learning* - Satisfied.
+*Independent Studies CS 399* - Satisfied.
+
+#### Electives:
+Courses counted to keep final 45 units. Checking specific additional elective non-CS (cross-eligible EE)
+
+Adherence to completion unit caps (45 total, of which at least 36 would be letter-graded):
+
+**Considering verified by adviser approval, meeting above sections, MS would be SAT**

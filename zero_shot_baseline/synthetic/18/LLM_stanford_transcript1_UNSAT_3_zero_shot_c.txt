@@ -1,0 +1,100 @@
+### Analysis of BS Requirements
+
+#### Core Requirements
+- **CS 106B**: Taken and completed with a grade of B.
+- **CS 107**: Taken as CS 107E and completed with a grade of B+.
+- **CS 111**: Not reflected on the transcript.
+- **CS 103**: Not reflected on the transcript.
+- **CS 109**: Taken and completed with a grade of B.
+- **CS 161**: Not reflected on the transcript.
+
+#### Math & Science Requirements
+- **Math**: At least 26 units required
+  - **MATH 52**: Taken and completed with a grade of C+.
+  - **MATH 51**: Taken and completed with a grade of B+.
+  - **CS 109**: Counted towards Math.
+  - **CS 103 and math electives**: Not reflected on the transcript.
+  
+- **Science**: At least 11 units required
+  - **CHEM 31A**: Taken and completed with a grade of B.
+  - **PHYSICS 41 or equivalents**: Not reflected on the transcript.
+  
+#### Technology in Society Requirement
+- Not reflected on the transcript.
+
+#### Engineering Fundamentals
+- **CS 106B**: Taken and completed with a grade of B.
+- **ENGR 40M/76**: Not reflected on the transcript.
+
+#### Senior Project Requirement
+- **CS 170**: Taken and completed with a grade of A.
+- **CS 149**: Taken and completed with a grade of C-.
+- Senior Project such as CS 194 or CS 210B: Not clearly indicated.
+
+#### Depth Requirements & AI Track
+- **CS 221**: Not reflected on the transcript.
+- **Track Requirement B courses**: Not clearly indicated.
+- **Track Requirement C courses**: Not clearly indicated.
+- **Electives for AI Track and general electives**: Partially completed based on some advanced courses like CS 220, CS 311, and CS 341 but need to meet the specific AI elective requirements.
+  
+### BS Degree Status
+Given the analysis, the following courses are not satisfied based on the student's transcript:
+1. **CS 111** (Operating Systems Principles)
+2. **CS 103** (Mathematical Foundations of Computing)
+3. **CS 161** (Design and Analysis of Algorithms)
+4. **Completion of relevant senior project course**
+5. **ENGR 40M or ENGR 76**
+6. **Technology in Society requirement from approved TiS list**
+7. **Additional AI track required courses**
+
+### Conclusion for BS:
+**List of Courses Not Satisfied:**
+- CS 111 Operating Systems Principles
+- CS 103 Mathematical Foundations of Computing
+- CS 161 Design and Analysis of Algorithms
+- Engineering Fundamentals (ENGR 40M or 76)
+- Science (additional courses to total 11 units)
+- Additional AI Track and Electives (specific courses in Track B and C)
+- Completion of relevant Senior Project 
+
+### Analysis of MS Requirements
+
+#### Foundations Requirement
+- **CS 103**: Not satisfied.
+- **CS 109**: Taken and completed with a grade of B.
+- **CS 161**: Not satisfied.
+- **CS 107/107E**: Taken and completed with a grade of B+.
+- **CS 110/111**: Not satisfied.
+  
+#### Significant Implementation Requirement
+- Eligible courses: CS217, CS341.
+- **CS 341**: Taken and completed with a grade of A, can be used to satisfy significant implementation requirement.
+
+#### Breadth Requirement
+- Need three courses, one from Areas A, B, C, D:
+  - **CS 220**: Can fulfill Area A.
+  - **CS 326**: Not counted towards Breadth requirements.
+  - Another course required from each Area B, C, and D.
+
+#### Depth Requirement for AI Specialization
+- **CS 221**: Not reflected on the transcript.
+- Four of: **CS 223A, 224N**, etc.: Not reflected on the transcript.
+- A total of at least 21 units from a minimum of four courses:
+  - **CS 311**: Taken and completed with a grade of B.
+  - **CS 341**: Taken and completed with a grade of A.
+  - Other depth courses not reflected.
+
+#### Electives
+- Additional electives to meet 45-unit requirement.
+  - **CS 170, CS 220, CS 311, CS 341**: Contribute to total unit count but should also be validated against Breadth and Depth criteria.
+  
+### Conclusion for MS
+Courses not satisfied:
+1. **CS 103** Logic, Automata & Complexity.
+2. **CS 161** Algorithmic Analysis.
+3. **CS 111** Principles of Computer Systems.
+4. Three breadth courses from different areas not fully met (need one from each Area B, C, D).
+5. Depth courses for AI not fully met (CS 221 and at least four other specified AI related courses).
+
+### Given MS specialization requirements, please further analyze the transcript:
+**MS Not Satisfied** and the specifics noted above need to be addressed.

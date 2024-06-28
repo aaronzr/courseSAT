@@ -1,0 +1,104 @@
+### Bachelor's Degree (BS) Requirements:
+
+#### Core Requirements:
+1. **Programming Abstractions (CS106B)** — **Completed (Grade: C)**
+2. **Computer Organization and Systems (CS107)** — **Completed (Grade: C)**
+3. **Principles of Computer Systems (CS111)** — **Not Taken**
+4. **Mathematical Foundations of Computing (CS103)** — **Completed (Grade: B+)**
+5. **Data Structures and Algorithms (CS161)** — **Completed (Grade: D)**
+6. **Introduction to Probability for Computer Scientists (CS109)** — **Completed (Grade: B+)**
+
+#### Senior Project Requirement:
+1. **Senior Project Course** (CS 191, 191W, 194, 194H, 194W, 210B, or 294)— **Not completed**
+
+#### Electives for AI Track:
+1. **CS221 AI: Principles and Techniques** (Track Requirement A) — **Not Taken**
+2. **Track Requirement B (2 courses from different areas)**:
+   - **Not Taken**
+   - **Not Taken**
+3. **Track Requirement C (1 additional course from areas for Track Requirement B)**:
+   - **Not Taken**
+4. **Three additional electives**:
+   - **Not Taken**
+   - **Not Taken**
+   - **Not Taken**
+
+#### Mathematics Requirements:
+1. **MATH 19 Calculus** — **Completed (Grade: B)**
+2. **MATH 20 Calculus** — **Completed (Grade: C)**
+3. **MATH 21 Calculus** — **Completed (Grade: B)**
+4. **One elective** — **Not Listed in Transcript**
+5. **One elective** — **Not Listed in Transcript**
+
+#### Science Requirements:
+1. **PHYSICS 41 Mechanics** — **Completed (Grade: A-)**
+2. **PHYSICS 43 Electricity and Magnetism** — **Not Taken**
+3. **One elective** — **Not Listed in Transcript**
+
+#### Engineering Fundamentals:
+1. **CS106B Programming Abstractions** — **Completed (Grade: C)**
+2. **ENGR 40 An Intro to Electronics** — **Completed (Grade: B+)**
+
+#### Technology in Society Requirement:
+1. **One course from the Approved TiS list** — **Not Taken**
+
+### Conclusion:
+Based on the provided transcript and degree requirements:
+
+#### Courses Not Satisfied for the BS Degree:
+1. **CS 111 Principles of Computer Systems**
+2. **Senior Project Course (CS 191, 191W, 194, 194H, 194W, 210B, or 294)**
+3. **CS 221 AI: Principles and Techniques**
+4. **Two courses from Track Requirement B list**
+5. **One additional course from Track Requirement C**
+6. **Three additional electives from the AI track**
+7. **One Math elective**
+8. **One more Math elective**
+9. **PHYSICS 43 Electricity and Magnetism**
+10. **One Science elective**
+11. **One Technology in Society course**
+
+#### Conclusion for BS:
+"BS NOT SAT"
+List of missing courses: CS 111, Senior Project, CS 221, Two Track B courses, One Track C course, Three AI Electives, Two Math electives, PHYSICS 43, One Science elective, One TiS course.
+
+### Master's Degree (MS) Requirements:
+
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103)** — **Waived**
+2. **Probability (CS109)** — **Completed (Grade: B+)**
+3. **Algorithmic Analysis (CS161)** — **Completed (Grade: D)**
+4. **Computer Organization & Systems (CS107)** — **Completed (Grade: C)**
+5. **Principles of Computer Systems (CS110 or CS111)** — **Not Taken**
+
+#### Significant Implementation Requirement:
+1. **One designated course** — **Not Completed**
+
+#### Breadth Requirement:
+1. **One Course from Area A, B, C, D (Combinations not listed)**:
+   - **Not Listed**
+
+#### Artificial Intelligence Depth:
+1. **CS 221 AI: Principles and Techniques (a)** — **Not Taken**
+2. **Four courses from listed (b) (Not Listed on Transcript)** — **Not Taken**
+3. **At least 21 units from the depth list (Not Listed on Transcript)** — **Not Taken**
+
+#### Electives:
+1. **Courses to complete 45-unit requirement** — **Not Listed**
+
+### Conclusion:
+Based on the transcript and degree requirements:
+
+#### Courses Not Satisfied for the MS Degree:
+1. **CS 110/CS 111**
+2. **One designated course for Significant Implementation Requirement**
+3. **Courses from Breadth Requirement (A, B, C, D)**
+4. **CS 221**
+5. **Four Depth Courses**
+6. **Electives to complete 45-unit requirement**
+
+#### Conclusion for MS:
+"MS NOT SAT"
+List of missing courses: CS 110/CS 111, Designated Implementation course, Breadth Courses, CS 221, Four Depth Courses, Additional Electives.
+
+Amanda Marie Johnson's transcript does not satisfy the requirements for the BS degree in Software Engineering or the MS degree in Artificial Intelligence specialization.

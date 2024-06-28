@@ -1,0 +1,65 @@
+### BS Core Requirements Analysis
+
+David Jonathan Smith has fulfilled the following BS Core requirements:
+
+- **Mathematics and Science Requirements**:
+  - Calculus (successful completion of MATH 51, 52, 53)
+  - Probability (successful completion of CS109 with B grade)
+  - Mechanic Physics (successful completion of PHYS 41)
+  - Electricity and Magnetism (successful completion of PHYS 43)
+
+- **Engineering Fundamentals**:
+  - Programming Abstractions (CS106B completed with B)
+  - An Intro to Making: What is EE? (ENGR 40M completed with B+)
+
+- **CS Core**:
+  - Mathematical Foundations of Computing (CS103 completed with A)
+  - Computer Organization and Systems (CS107 completed with A-)
+  - Introduction to Probability for Computer Scientists (CS109 completed with B)
+  - Principles of Computer Systems (CS111 completed with A-)
+  - Data Structures and Algorithms (CS161 completed with A)
+
+- **Senior Project**:
+  - Completion indicated in the transcript, noting multiple advanced project courses (e.g., CS228, CS221 with A grades)
+
+Overall, the combined GPA for Engineering Fundamentals, CS Core, Depth, and Senior Project exceeds the 2.0 minimum required, with a cum GPA of 3.649 for undergraduate courses.
+
+#### Analysis Conclusion:
+**BS SAT**
+
+### MS Specialization Requirements Analysis
+
+David Jonathan Smith is actively pursuing the MS Degree in Computer Science with a specialization in Artificial Intelligence. The analysis of the transcript with respect to key MS requirements:
+
+- **Foundations Requirement**:
+  - Logic, Automata & Complexity (CS103 is satisfied during undergraduate)
+  - Probability (CS109 is satisfied during undergraduate)
+  - Algorithmic Analysis (CS161 is satisfied during undergraduate)
+  - Computer Organization and Systems (CS107 is satisfied during undergraduate)
+  - Principles of Computer Systems (CS111 is satisfied during undergraduate)
+
+- **Depth Courses**:
+  - CS221 AI: Principles and Techniques (CS221 completed with A)
+  - CS224N Natural Language Processing with Deep Learning (CS224N completed with A)
+  - CS231A Computer Vision (CS231A completed with A)
+  - CS228 Machine Learning for Sequential Data (CS228 completed with A)
+  - CS229 Machine Learning (CS229 completed with A+)
+
+- **Additional Depth/Electives**:
+  - CS234 Reinforcement Learning (completed with B+)
+  - CS324 General Game Playing (completed with A-)
+  - CS343 Applied Machine Learning (completed with B)
+  - CS375 Bioinformatics Structures (completed with B+)
+  - CS399 Independent Study in Artificial Intelligence (completed with A)
+
+- **Significant Implementation Requirement**:
+  - CS228 Machine Learning for Sequential Data (A grade satisfies significant implementation requirement)
+
+- **Electives**:
+  - MUSIC 154B (taken as CR, irrelevant for MS)
+  - APPPHYS 232 (taken as CR, potentially used as elective)
+  
+The total graduate units are 32, and the graduate GPA is 3.740, exceeding the minimum 3.0 GPA requirement. 
+
+#### Analysis Conclusion:
+**MS SAT**

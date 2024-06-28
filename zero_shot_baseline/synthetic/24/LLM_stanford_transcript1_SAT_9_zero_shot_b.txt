@@ -1,0 +1,85 @@
+Let's analyze Samantha Mae Fisher's transcript to check if it meets the BS and MS requirements respectively:
+
+### BS Core Requirements:
+#### Core Courses:
+1. **CS106B:** Programming Abstractions - Completed in Autumn 2020-2021, Grade: B+
+2. **CS107:** Computer Organization and Systems - Completed in Winter 2020-2021, Grade: A-
+3. **CS111:** Principles of Computer Systems - Completed in Spring 2020-2021, Grade: B+
+4. **CS103:** Mathematical Foundations of Computing - Completed in Autumn 2020-2021, Grade: B
+5. **CS109:** Intro to Probability for Computer Scientists - Completed in Spring 2020-2021, Grade: A
+6. **CS161:** Design and Analysis of Algorithms - Completed in Autumn 2021-2022, Grade: B+
+
+#### Additional Requirements:
+- **Senior Project:** CS194 Software Project Experience - Completed in Spring 2022-2023, Grade: A-
+- **Minimum 2.0 GPA:** Total GPA for ENGR Fundamentals, CS Core, Depth, and Senior Project is met with a 3.710 cumulative GPA.
+
+### BS Senior Project Requirement:
+- Samantha completed **CS194 Software Project Experience**, which is listed as one of the options for the Senior Project requirement.
+
+### AI Elective Requirements:
+#### Core:
+1. **CS107/107E:** Computer Organization and Systems - Completed
+2. **CS111:** Operating Systems Principles - Completed
+3. **CS161:** Design and Analysis of Algorithms - Completed
+
+#### AI Depth and Track:
+1. **CS221:** AI: Principles and Techniques - Completed
+2. **Track B** (From different areas)
+   - **CS124:** From Language to Information - Completed
+   - **CS229:** Machine Learning - Completed
+3. **Track C:**
+   - **CS224N:** Completed
+4. **Electives:**
+   - **CS224U:** Completed
+   - **CS231A:** Completed
+   - **CS238:** Completed
+
+Based on all the data points, all BS requirements appear to be satisfied.
+
+**BS SAT**
+
+### MS Specialization Requirements:
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103):** Completed in UG
+2. **Probability (CS109):** Completed in UG
+3. **Algorithmic Analysis (CS161):** Completed in UG
+4. **Computer Org & Sys (CS107/107E):** Completed in UG
+5. **Principles of Computer Systems (CS110/111):** Completed in UG
+- **Total units for foundations requirement**: 10 units
+
+#### Significant Implementation Requirement:
+1. **CS194 Software Project Experience:** Completed in UG
+- This fulfills the significant implementation requirement as well.
+
+#### Breadth Requirement:
+Three courses from different Areas:
+1. **CS221 - Area C (Applications):** Completed
+2. **CS107/CS111 - Area B (Computer Systems):** Completed
+3. **CS103/CS109 - Area A (Mathematical and Theoretical Foundations):** Completed
+
+#### Depth Requirement for AI:
+a) **CS221:** Completed
+b) Four AI Courses:
+   1. **CS224N:** Completed
+   2. **CS224U:** Completed
+   3. **CS231A:** Completed
+   4. **CS234:** Completed
+c) Total of at least 21 units from above categories:
+   - CS 221 (3 units)
+   - CS224N (3 units)
+   - CS224U (3 units)
+   - CS231A (3 units)
+   - CS234 (3 units)
+   - Total: 15 units (additional AI elective may be needed)
+
+#### Electives:
+CS270 (Modeling Biological Systems): 3 units (note that the paper indicates 45 units total, but doesn't clearly list electives beyond the required above)
+
+Upon reviewing, it seems Samantha may need an additional 3 units to fulfill the total required depth count for MS.
+
+**Courses not satisfied for MS:**
+    1. Additional AI Elective to satisfy 21-unit depth requirement.
+
+Therefore:
+- **BS SAT**
+- **MS NOT SATISFIED: Need an additional AI elective to fulfill the 21-unit depth requirement.**

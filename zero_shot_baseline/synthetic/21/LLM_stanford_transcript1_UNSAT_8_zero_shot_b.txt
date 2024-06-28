@@ -1,0 +1,81 @@
+Let's analyze Amanda Marie Johnson's transcript against the requirements provided for the BS in Computer Science and the MS in Computer Science with a specialization in Artificial Intelligence. 
+
+### BS Requirements Analysis
+#### Core Requirements:
+1. **CS103**: Completed (Spring 2019, Grade: B+)
+2. **CS106B**: Completed (Autumn 2019, Grade: C)
+3. **CS107**: Completed (Autumn 2020, Grade: C)
+4. **CS109**: Completed (Winter 2020, Grade: B+)
+5. **CS111**: Not listed, but EE course substitutions may be considered based on deeper review.
+6. **CS161**: Completed (Autumn 2020, Grade: D)
+
+#### Grade Point Average:
+- Amanda needs a minimum 2.0 GPA for all Engineering Fundamentals, Core, Depth, and Senior Project courses combined. There may be a GPA concern for some courses like CS106B (Grade: C) and CS161 (Grade: D). We'd need to calculate the specific GPA for these BS requirements to confirm this.
+
+#### Senior Project:
+- No specific course listed for CS194, CS210B, CS191/W, or CS294 from the transcript. We need a Senior Project course to be completed.
+
+#### Mathematics:
+1. **MATH 19**: Completed (Autumn 2018, Grade: B)
+2. **MATH 20**: Completed (Winter 2019, Grade: C)
+3. **MATH 21**: Completed (Spring 2019, Grade: B)
+4. **CS103**: Completed (Spring 2019, Grade: B+)
+5. **CS109**: Completed (Winter 2020, Grade: B+)
+6. **STAT 110**: Completed (Winter 2020, Grade: B) (as one elective)
+
+#### Science:
+1. **PHYSICS 41**: Completed (Spring 2019, Grade: A-)
+2. **PHYSICS 44**: Completed (Spring 2020, Grade: S)
+3. **EE 43**: Completed (Spring 2020, Grade: A-)
+
+#### Engineering Fundamentals:
+- **CS106B**: Completed (Autumn 2019, Grade: C)
+- **ENGR 40**: Completed (Autumn 2019, Grade: B+)
+
+### Observation:
+Amanda needs to improve her CS161 course grade and needs to complete a Senior Project to satisfy BS requirements.
+
+**BS NOT SATISFIED:**
+1. CS111
+2. CS161 (Grade D, needs improvement)
+3. Senior Project
+
+---
+
+### MS Requirements Analysis
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103)**: Completed (BS)
+2. **Probability (CS109)**: Completed (BS)
+3. **Algorithmic Analysis (CS161)**: Completed (Grade: D, needs improvement)
+4. **Computer Organ & Sys (CS107)**: Completed (BS)
+5. **Principles of Computer Systems (CS111)**: Not completed by transcript data.
+
+#### Significant Implementation Requirement:
+- **CS 221**: Not listed, needs to be completed.
+
+#### Breadth Requirement:
+1. **Area A**: Not satisfied.
+2. **Area B**: Not satisfied.
+3. **Area C**: Satisfied with CS248.
+4. **Area D**: Not satisfied.
+
+#### Artificial Intelligence Depth:
+- Needs specific courses focused on AI depth requirements which were not listed.
+
+#### Electives:
+- No electives listed under MS requirements (must review based on elective criteria).
+
+### Observation:
+Several AI specialization tasks and breadth requirements are left incomplete or missing grades.
+
+**MS NOT SATISFIED:** 
+1. CS111
+2. CS161 (Grade D, needs retaking/improvement)
+3. Significant Implementation Requirement (e.g., CS 221)
+4. Breadth Requirement (Missing 2 Areas)
+5. AI Depth Courses
+
+Amanda has some BS and MS requirements still unsatisfied based on the provided transcript data. Adjustments in her course selections and improvements in specific grades are necessary.
+
+**Action Required:**
+Retake CS161 to achieve a better grade, take CS111, complete a Senior Project, and satisfy specific requirements for MS AI specialization including significant implementation and breadth areas.

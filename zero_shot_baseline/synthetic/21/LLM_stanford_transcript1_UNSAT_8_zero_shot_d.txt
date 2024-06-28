@@ -1,0 +1,128 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on Amanda Johnson's transcript and the requirements provided for the Bachelor in Science degree with a major in Computer Science and a specialization in Artificial Intelligence, we will evaluate if she met all the program components correctly.
+
+### Summary of Requirements:
+
+#### Core Requirements:
+- CS103: Mathematical Foundations of Computing
+- CS106B: Programming Abstractions
+- CS107: Computer Organization and Systems (or 107E)
+- CS111: Operating Systems Principles
+- CS161: Data Structures and Algorithms
+- CS109: Introduction to Probability for Computer Scientists
+
+#### Math and Science Requirements:
+- MATH 19, 20, 21 or equivalent
+- Two Math Electives: MATH 51, 52, 53, 104, 107, 108, 109, 110, 113; CS 157, 205L; PHIL 151; CME 100, 102, 104; ENGR 108
+- PHY 41 and PHY 43 or equivalent
+- One Science Elective
+
+#### Engineering Fundamentals:
+- CS106B (covered under Core Requirements)
+- ENGR 40M or EE 101 (partially covered under transcript)
+
+#### Senior Project:
+- One of CS194, CS194W, CS210B, CS191, CS191W, CS294
+
+### Transcript Evaluation:
+
+#### Core Courses:
+- CS103: Taken, Grade B+ ✔️
+- CS106B: Taken, Grade C ✔️
+- CS107: Taken, Grade C ✔️
+- CS111: Not listed – ❌
+- CS161: Taken, Grade D (should be retaken for a better grade if it does not meet minimum GPA of 2.0) ✔️
+- CS109: Taken, Grade B+ ✔️
+
+**Note:** Amanda must retake CS161 or ensure it fulfills the minimum GPA requirement, which might be problematic with the D grade.
+
+#### Math and Science:
+- MATH 19: Taken, Grade B ✔️
+- MATH 20: Taken, Grade C ✔️
+- MATH 21: Taken, Grade B ✔️
+- Math Elective 1: STAT 110 ❌ (although this isn't directly one of the electives, the probability/statistics requirement means it remains part of core, not math electives)
+- Math Elective 2: Not listed ❌
+- PHY 41: Taken Physics Mechanics (AP), Grade A- or Physics 41 ✔️
+- PHY 43 equivalent: Not listed ❌
+- Science Elective: Possible fulfilment by PHYSICS 44 or CHEM 31A may satisfy this requirement ✔️
+
+#### Engineering Fundamentals:
+- CS106B: (covered under Core)
+- ENGR 40 or EE 101: Partially covered by ENGR 40 ✔️
+- Other ENGR requirement here: EE 100, EE 101A, and EE 101B ✔️
+
+#### Senior Project:
+- Senior Project Course not seen listed – CS191/194/210B/294 present as required extracurricular elective. CS194, CS210B, or CS191 required ❌
+
+#### Technology in Society Requirement:
+- Not specified or listed directly in the transcript – check for courses that could potentially fill this requirement via standalone confirmation (will need external confirmation) ❌
+
+### Conclusion and Courses Not Satisfied:
+
+1. **CS111: Operating Systems Principles** 
+2. **MATH electives (2 required)** – STAT 110 does not count from the selected list.
+3. **PHY 43 equivalent: Electricity and Magnetism**
+4. **Senior Project (CS194, CS194W, CS210B, CS191, or CS294)** 
+5. **Technology in Society Requirement** - Verify or revalidate 
+
+Amanda Johnson's transcript meets the majority of the requirements but has critical gaps. Her completion of the BS degree requirements cannot be confirmed until the deficiencies are rectified or verified by external competent authorities.
+
+Thus, the output is:
+
+**List of Courses Not Satisfied:**
+- **CS111: Operating Systems Principles**
+- **MATH electives (2 required, instead of STAT 110)**
+- **PHY 43 equivalent: Electricity and Magnetism**
+- **Senior Project (CS194/CS194W/CS210B/CS191)**
+- **Technology in Society Requirement**========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To evaluate whether Amanda Marie Johnson's MS in Computer Science with a specialization in Artificial Intelligence is satisfied, we need to go through each requirement and check her transcript. 
+
+### 1. Foundations Requirement:
+- **Logic, Automata & Complexity (CS103):** Completed in Spring 2018-2019 with a grade of B+.
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178):** Completed CS 109 in Winter 2019-2020 with a grade of B+.
+- **Algorithmic Analysis (CS161):** Completed in Autumn 2020-2021 with a grade of D. This grade may not be sufficient to satisfy the requirement.
+- **Computer Organ & Sys (CS107 or 107E):** Completed CS 107 in Autumn 2020-2021 with a grade of C. This grade may not be sufficient to satisfy the requirement.
+- **Principles of Computer Systems (CS110 or CS111):** Not listed in the transcript.
+
+*Summary:* 
+- Algorithmic Analysis (CS161): Grade is not sufficient.
+- Computer Organ & Sys (CS107 or 107E): Grade may not be sufficient.
+- Principles of Computer Systems (CS110 or CS111): Not completed.
+
+### 2. Significant Implementation Requirement:
+The courses acceptable to satisfy this requirement must be satisfied by at least one of the listed options with a letter grade. Let's evaluate:
+
+- **CS 248 (Game Design):** Completed in Autumn 2021-2022 with a grade of A. This does satisfy the significant implementation requirement.
+
+### 3. Breadth Requirement:
+- **Area A (Mathematical and Theoretical Foundations):** Need to complete one course. No instance on transcript.
+- **Area B (Computer Systems):** Need to complete one course. CS 316 completed in Winter 2021-2022 with a grade of B+.
+- **Area C (Applications):** CS 248 (Game Design) could be used here, completed with a grade of A.
+- **Area D (Computing and Society):** No instance on transcript.
+
+*Summary:* 
+- Area A: Not completed.
+- Area D: Not completed.
+
+### 4. Artificial Intelligence Depth:
+a) **CS 221 (students with equivalent course work may waive with adviser approval):** Not completed or waived.
+b) **At least four of:** (CS 223A, CS 224N, CS 224S, CS 224U, CS 224V, CS 224W, CS 228, CS 229, CS 231A, CS 231N, CS 234, CS 237A, CS 237B, CS 238): Completed CS 223A in Autumn 2021 with a grade of B.
+c) **21 units from listed Depth courses:** Not enough information nor sufficient courses listed for prerequisite prerequisites.
+
+### 5. Electives:
+No specific elective courses are mentioned or deducible to make up 45-unit requirement.
+
+### Summary:
+Based on the transcript provided, Amanda Marie Johnson has NOT met all the requirements. Here is the list of unmet requirements:
+
+- Algorithmic Analysis (CS161): Grade is D.
+- Computer Organ & Sys (CS107 or 107E): Grade is C.
+- Principles of Computer Systems (CS110 or CS111): Not completed.
+- Breadth Area A: Not completed.
+- Breadth Area D: Not completed.
+- CS 221 or waiver: Not completed.
+- 21 units from Depth courses: Not fully verified.
+
+**Output:**
+
+Algorithmic Analysis (CS161), Computer Organ & Sys (CS107 or 107E), Principles of Computer Systems (CS110 or CS111), Breadth Area A, Breadth Area D, CS 221 or waiver, 21 units from Depth courses.

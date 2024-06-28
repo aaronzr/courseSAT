@@ -1,0 +1,170 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+To determine whether the student, Michael Alan Robson, has satisfied the requirements for a Bachelor of Science (BS) degree in Computer Science (CS) with an AI Track at Stanford, we need to analyze various components of the transcript against the degree requirements, especially focusing on:
+
+1. Core Requirements
+2. Senior Project Requirements
+3. AI Elective Requirements
+4. Mathematics and Science Requirements
+5. General GPA requirements
+6. Track and Depth Requirements
+
+### Core Requirements:
+- **CS 106B Programming Abstractions**: Completed (Grade B)
+- **CS 107 or 107E Computer Organization and Systems**: Completed (CS 107E, Grade B+)
+- **CS 109 Introduction to Probability for Computer Scientists**: Completed (Grade B)
+- **CS 103 Mathematical Foundations of Computing**: Not taken
+- **CS 111 Operating Systems Principles**: Not taken
+- **CS 161 Design and Analysis of Algorithms**: Not taken
+
+### Senior Project Requirements (One required):
+- **CS 194**, **CS 194W**, **CS 210B**, **CS 191**, **CS 191W**, **CS 294**, **CS 194H**: Not taken
+
+### AI Elective Requirements:
+- **CS 221 AI: Principles and Techniques**: Not taken
+- **Track Requirement B** (Two courses from different areas):
+  - One course from AI Methods, NLP, Vision, or Robotics: **CS 149 Intro to AI** (Completed, Grade C-)
+  - Another course from a different area of B: Not taken
+- **Track Requirement C** (One additional course from Track Requirement B list, C list, etc.):
+  - **CS 170 Software Design**: Completed, Grade A (but not necessarily part of Track Requirement B or C list approved)
+
+### Mathematics and Science Requirements:
+- **MATH 19/20/21**: Not taken (No indication based on transcript)
+- **MATH 51 / CME 100**: Completed (MATH 51, Grade B+)
+- **MATH 103 or equivalent**: Not taken
+- **PHYS 41 Mechanics**: Not taken
+- **PHYS 43 Electricity and Magnetism**: Not taken
+- One elective (Science units): Chemistry courses taken but no specifics mentioned regarding fulfilling this requirement.
+
+### Additional Requirements:
+- Technology in Society Requirement: No specific course mentioned on the transcript.
+- Engineering Fundamentals: **ENGR 40M or ENGR 76** or equivalent: Not fulfilled.
+- Minimum GPA of 2.0 in ENGR Fundamentals and CS Core, Depth, and Senior Project combined: Need specific courses to calculate.
+
+### GPA:
+- **Overall Undergraduate GPA**: 3.200
+- **Completed Units toward Undergraduate Degree**: 247.00
+- **Stanford Total Undergraduate Units**: 202.50
+
+### Summary:
+Based on the information given in the transcript, here are the requirements that have not been satisfied:
+
+1. **CS 103 Mathematical Foundations of Computing**: Not taken.
+2. **CS 111 Operating Systems Principles**: Not taken.
+3. **CS 161 Design and Analysis of Algorithms**: Not taken.
+4. **Senior Project Course**: Not taken.
+5. **CS 221 AI: Principles and Techniques**: Not taken.
+6. **Additional Track Requirement B Course**: Not taken.
+7. **Physics Requirements** (PHYS 41 & PHYS 43): Not taken.
+8. **Engineering Fundamentals** (e.g., ENGR 40M): Not fulfilled.
+9. **Technology in Society Requirement**: Not fulfilled.
+10. **Math and Science Electives**: Insufficient evidence of completion.
+
+### Conclusion:
+The student has not satisfied the BS requirements. Hence, the output will list the courses not satisfied:
+
+```plaintext
+Courses not satisfied:
+1. CS 103 Mathematical Foundations of Computing
+2. CS 111 Operating Systems Principles
+3. CS 161 Design and Analysis of Algorithms
+4. Senior Project Course (e.g., CS 194, CS 194W, CS 210B, CS 191, CS 191W, CS 294, CS 194H)
+5. CS 221 AI: Principles and Techniques
+6. Additional Track Requirement B Course
+7. PHYS 41 Mechanics
+8. PHYS 43 Electricity and Magnetism
+9. Engineering Fundamentals (e.g., ENGR 40M or equivalent)
+10. Technology in Society Requirement
+11. Math and Science Electives (Check if corresponding electives fully satisfy requirements)
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the given transcript and the MS requirements, let's evaluate each specific requirement:
+
+### Foundations Requirement:
+- **CS 103 (Logic, Automata & Complexity)**: No equivalent found in the transcript.
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: **CS 109 INTRO TO PROBABILITY (B)**
+- **Algorithmic Analysis (CS161)**: No equivalent found in the transcript.
+- **Computer Organ & Sys (CS107 or 107E)**: **CS 107E COMPUTER SYSTEMS (B+)**
+- **Principles of Computer Systems (CS110 or CS111)**: No equivalent found in the transcript.
+
+*Total Units used to satisfy the Foundations Requirement*: Only CS 109 and CS 107E are satisfied.
+
+### Significant Implementation Requirement:
+Courses that may satisfy this requirement include:
+- CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+
+Relevant courses found:
+- **CS 341 MACHINE LEARNING (A)**
+
+### Breadth Requirement:
+Three courses, each from a different area (A, B, C, or D), with each taken for at least 3 units and for a letter grade:
+
+- **Area A**: No courses found.
+- **Area B**: **CS 107E COMPUTER SYSTEMS (B+)**
+- **Area C**: **CS 149 INTRO TO AI (C-)** (This grade is below B, not satisfying the requirement)
+- **Area D**: **CS 181 AI: ETHICS AND RISKS** (Withdrawn, not satisfying the requirement)
+
+### Artificial Intelligence Depth:
+- **CS 221**: Not found.
+- At least four from: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238:
+    - **CS 311 DEEP LEARNING (B)**
+    - **CS 341 MACHINE LEARNING (A)**
+- Total of at least 21 units from categories (a), (b), and following other courses:
+    - **CS 220 ALGORITHM DESIGN (A)**
+    - **CS 326 COMPUTATIONAL LINGUISTICS (B+)**
+
+*Total Depth Units*: 4 (CS 220) + 4 (CS 311) + 4 (CS 326) + 4 (CS 341) = 16 units.
+
+### Additional Unit Requirements:
+- **Total Graduate Units**: Needs at least 45 units (graduate level). Currently:
+    - Graduate Cum Totals: 31.00 units
+
+### Satisfied and Not Satisfied Requirements Summary:
+
+**Satisfied**:
+- Significant Implementation Requirement: **CS 341 MACHINE LEARNING (A)**
+- Depth courses: **CS 220 (A), CS 311 (B), CS 326 (B+), CS 341 (A)** (16 units)
+
+**Not Satisfied**:
+1. **Foundations Requirement**:
+   - **Logic, Automata & Complexity (CS 103)**
+   - **Algorithmic Analysis (CS 161)**
+   - **Principles of Computer Systems (CS110 or CS111)**
+
+2. **Breadth Requirement**:
+   - Area A (No course found)
+   - Area C (CS 149 grade too low)
+   - Area D (CS 181 withdrawn)
+
+3. **AI Depth**:
+   - Total of at least 21 units; currently only 16 satisfied.
+   - **CS 221 (required)**
+
+4. **Total Graduate Units**:
+   - Only 31 units out of required 45.
+
+Therefore, Robson, Michael Alan does **not** satisfy the MSCS requirements. 
+
+### Missing Courses:
+- **CS 103 (Logic, Automata & Complexity)**
+- **CS 161 (Algorithmic Analysis)**
+- **CS 110 or CS 111 (Principles of Computer Systems)**
+- **One more course for Area A Breadth**
+- **Higher grade course for Area C Breadth**
+- **One more course for Area D Breadth**
+- **CS 221** (depth requirement)
+- **Extra units to meet the 21 units requirement for Depth**
+- **Extra units to meet the 45 total graduate units requirement**
+
+### Output:
+```
+MS NOT SAT
+Missing courses/requirements:
+- CS 103 (Logic, Automata & Complexity)
+- CS 161 (Algorithmic Analysis)
+- CS 110 or CS 111 (Principles of Computer Systems)
+- One more course for Area A Breadth
+- Higher grade course for Area C Breadth
+- One more course for Area D Breadth
+- CS 221
+- Extra units to meet the 21 units requirement for Depth
+- Extra units to meet the 45 total graduate units requirement
+```

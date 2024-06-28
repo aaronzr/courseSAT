@@ -1,0 +1,143 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Below is the analysis of the student's transcript against the BS in Computer Science degree requirements, broken down by each category:
+
+### **Core Requirements**
+1. **CS 106B (Programming Abstractions)** - Completed
+2. **CS 107 (Computer Organization and Systems)** - Completed
+3. **CS 111 (Principles of Computer Systems)** - Completed
+4. **CS 103 (Mathematical Foundations of Computing)** - Completed
+5. **CS 109 (Introduction to Probability for Computer Scientists)** - Completed
+6. **CS 161 (Design and Analysis of Algorithms)** - Completed
+
+### **Senior Project Requirement**
+The acceptable courses for senior projects are CS 194, among others.
+- **CS 194 (Software Project Experience)** - Completed
+
+### **BS AI Elective Requirements**
+#### Mathematics (26 units minimum)
+1. **MATH 19 (Calculus)** - 5 units - Completed
+2. **MATH 20 (Calculus)** - 5 units - Completed
+3. **MATH 21 (Calculus)** - 5 units - Completed
+4. **CS 103 (Mathematical Foundations of Computing)** – Already counted in the core** 
+5. **CS 109 (Introduction to Probability for Computer Scientists)** - Completed
+
+Additional electives:
+- Student has 5 units from AP Calculus AB - can be used towards the additional electives.
+- Student has CS 109H (Honors Probability and Statistics for Computer Scientists) - 5 units 
+
+Total: 25 units (AP + CS 109H) + CS 103 which is 5 units count towards requirements but already counted in the core.
+
+Required minimum is 26 units.
+**Short by 1 unit in Math electives**
+
+#### Science (11 units minimum)
+1. **PHYSICS 41 (Mechanics)** - 4 units - Completed
+2. **PHYSICS 43 (Electricity and Magnetism)** - 4 units - Completed
+3. **PHYSICS 21 (Physics Lab)** - 3 units - Completed
+
+Total: 11 units - Completed
+
+#### Engineering Fundamentals (10 units minimum)
+1. **CS 106B (Programming Abstractions)** - 5 units - Completed
+2. **ENGR 40M (An Introduction to Making)** - 4 units - Completed
+
+Total: 9 units (Minimum required 10 units)
+**Short by 1 unit in Engineering Fundamentals**
+
+#### Core, Depth, and Senior Project (43 units minimum)
+**Core** - Already analyzed above.
+
+**Depth & Tracks**
+1. **CS 221 (AI: Principles and Techniques)** - Completed
+2. **Track Requirements - Methods and Language Processing courses**:
+   - **CS 124 (From Language to Information)** - Completed
+   - **CS 229 (Machine Learning)** - Completed
+   - **CS 224N (Natural Language Processing with Deep Learning)** - Completed
+   - **CS 224U (Learning representations of Natural Language)** - Completed
+   - **CS 231A (Computer Vision)** - Completed
+3. **Electives**:
+   - **CS 234 (Reinforcement Learning)** - Completed
+   - **CS 238 (Decentralized Systems)** - Completed
+
+Total: Exceeds 25 units and includes 7 courses
+
+**Senior Project**
+- **CS 194 - Completed**
+
+Summarizing the Shortages:
+- 1 unit short in Math electives
+- 1 unit short in Engineering Fundamentals
+
+**Output**: "BS requirements not satisfied: 1 unit in Math electives, 1 unit in Engineering Fundamentals."========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine whether Samantha Fisher satisfies the MSCS degree requirements, we need to go through each of the specified requirements and compare them with the transcript provided.
+
+### Foundations Requirement
+You must satisfy the following areas:
+1. Logic, Automata & Complexity (CS103) - Taken: CS 103 (B)
+2. Probability (CS109, Stat116, CME106, MS&E220, or EE178) - Taken: CS 109 (A)
+3. Algorithmic Analysis (CS161) - Taken: CS 161 (B+)
+4. Computer Organ & Sys (CS107 or 107E) - Taken: CS 107 (A-)
+5. Principles of Computer Systems (CS110 or CS111) - Taken: CS 111 (B+)
+  
+All required foundation courses are satisfied and in total they do not exceed 10 units.
+
+### Significant Implementation Requirement
+At least one course from a specific list needs to be taken. Courses include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248A, and 341.
+- Taken: CS 221 (A-)
+
+This requirement is satisfied by CS 221.
+
+### Breadth Requirement
+Three courses from different areas (A, B, C or D):
+1. Area A: CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251
+2. Area B: CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E
+3. Area C: CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224S, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373
+4. Area D: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B
+
+From the transcript:
+1. Area A: CS 154: Not taken, need a course from Area A.
+2. Area B: CS 140, 140E, 143, 144, 149: Not taken, need a course from Area B.
+3. Area C: CS 224N (A), CS 224U (A), CS 231A (B+): Taken from Area C.
+4. Area D: Not taken, need a course from Area D.
+
+### Artificial Intelligence Depth
+1. CS 221: Taken (A-)
+2. At least four of: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238:
+   - Taken: CS 224N (A), CS 224U (A), CS 231A (B+), CS 234 (A), and CS 238 (A-)
+3. At least 21 units from categories (a), (b) and any listed courses:
+   - Taken: 
+     - CS 205L: Not stated in transcript
+     - CS 224N: 3 Units (A)
+     - CS 224U: 3 Units (A)
+     - CS 231A: 3 Units (B+)
+     - CS 234: 3 Units (A)
+     - CS 238: 3 Units (A-)
+     - CS 270: 3 Units (B+)
+     - CS 109H: 5 Units (A)
+
+Total: 3 + 3 + 3 + 3 + 3 + 3 + 3 + 5 = 26 Units
+
+Depth units are satisfied.
+
+### Electives
+Other electives to complete the 45-unit requirement for the MSCS degree. 
+- CS 229 (B+)
+- CS 124 (A-)
+- CS 194 (A-)
+
+Based on the provided transcript, Samantha Fisher does not satisfy the Breadth requirement as she has not taken courses from Area A, Area B, and Area D.
+
+### Conclusion
+The specific deficiencies in meeting the MSCS requirements are:
+1. A course from Area A.
+2. A course from Area B.
+3. A course from Area D.
+
+Therefore, the output should be the list of these courses.
+
+---
+
+**Output:**
+- A course from Area A
+- A course from Area B
+- A course from Area D

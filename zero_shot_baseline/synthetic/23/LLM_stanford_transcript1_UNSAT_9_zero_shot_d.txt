@@ -1,0 +1,163 @@
+========================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the provided data, we need to evaluate Sandra Marie Lewinsky's academic record against the Bachelor of Science (BS) degree requirements in Computer Science, specifically the Artificial Intelligence Track. 
+
+### Requirements and Evaluation:
+
+#### Core Requirements: 
+1. **CS 106B**: Programming Abstractions  
+   - No record of completing CS 106B
+2. **CS 107**: Computer Organization and Systems  
+   - Completed: CS 107 with a B+ 
+3. **CS 111**: Operating Systems Principles  
+   - No record of completing CS 111
+4. **CS 103**: Mathematical Foundations of Computing  
+   - Attempted but Withdrawn
+5. **CS 109**: Introduction to Probability for Computer Scientists  
+   - Completed: CS 109 with an A-
+6. **CS 161**: Design and Analysis of Algorithms  
+   - No record of completing CS 161
+
+#### Senior Project Requirements:
+1. **CS 194 or CS 194W**: Software Project Experience  
+   - No record of completing CS 194 or CS 194W
+2. **CS 210B**: Project Experience with Corporate Partners  
+   - No record of completing CS 210B
+3. **CS 191 or CS 191W**: Independent Project  
+   - No record of completing CS 191 or CS 191W
+
+#### AI Elective Requirements (43 units minimum combined):
+1. **MATH 19/20/21 or equivalent (Calculus)** (10 units AP or equivalent)  
+   - Completed via AP Calculus credit (8 units) + Math 51 (5 units) = 13 units
+2. **CS 221**: AI: Principles and Techniques  
+   - No record of completing CS 221
+3. **Track Requirement B**: Two courses, each from a different area:  
+    - No record of completing courses from areas I, II, III, or IV
+4. **Track Requirement C**: One additional course from Track Requirement B list  
+    - No record of completing any course from Track Requirement C list
+5. **Track Electives**: At least three additional courses from Track Requirement B list, C list, or General CS Electives List  
+    - No record of additional courses from the specified lists
+
+#### Other Requirements:
+1. **Mathematics and Science Requirement (37 units minimum combined)**  
+   - Mathematics (26 units minimum): 
+     - AP Calculus (8), MATH 51 (5), MATH 52 (5), MATH 53 (5), MATH 104 (4), MATH 108 (4) = 31 units (Satisfied)
+   - Science (11 units minimum):
+     - PHYS 21 (4), PHYS 22 (4), PHYS 45 (4) = 12 units (Satisfied)
+
+2. **Technology in Society Requirement**:  
+   - No record of completion
+
+### Summary of Unmet Requirements:
+**Core Requirements:**
+- CS 106B: Programming Abstractions
+- CS 111: Operating Systems Principles
+- CS 103: Mathematical Foundations of Computing
+- CS 161: Design and Analysis of Algorithms
+
+**Senior Project Requirements:**
+- CS 191/W, CS 194/W, or CS 210B
+
+**AI Track Core, Depth, and Electives:**
+- CS 221: AI: Principles and Techniques
+- Track Requirement B (2 courses from different areas)
+- Track Requirement C (1 course)
+- Track Electives (3 courses)
+
+**Other Requirements:**
+- Technology in Society course
+
+Given these analysis, Sandra Marie Lewinsky's transcript does **not** completely satisfy all the BS degree requirements in Computer Science with an AI track.
+
+### Output:
+```
+- CS 106B: Programming Abstractions
+- CS 111: Operating Systems Principles
+- CS 103: Mathematical Foundations of Computing
+- CS 161: Design and Analysis of Algorithms
+- Senior Project Course (CS 191/W, CS 194/W, or CS 210B)
+- CS 221: AI: Principles and Techniques
+- Track Requirement B (2 courses each from different areas)
+- Track Requirement C (1 course)
+- Track Electives (3 courses)
+- Technology in Society course
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Sandra Marie Lewinsky satisfies the requirements for the MS in Computer Science with a specialization in Artificial Intelligence (AI) at Stanford, we'll go through each of the specified requirements and compare them to her transcript:
+
+### Foundations Requirement
+1. **Logic, Automata & Complexity** 
+   - Course: CS 103 COMPUTER THEORY (Withdrawn as an undergraduate)
+   
+2. **Probability**
+   - Course: CS 109 INTRO TO PROBABILITY & STATISTICS (A- as an undergraduate)
+   
+3. **Algorithmic Analysis**
+   - Not Found on Transcript (CS 161 required)
+
+4. **Computer Organization & Systems**
+   - Course: CS 107 COMPUTER ORGANIZATION (B+ as an undergraduate)
+   
+5. **Principles of Computer Systems**
+   - Not Found on Transcript (CS 110/CS 111 required)
+
+**Total Units for Foundations (May not exceed 10 units):**
+This would be recalculated for MS if needed.
+
+### Significant Implementation Requirement
+The course must be one of the listed courses and taken at Stanford for a letter grade.
+
+- Not Found on Transcript (Courses like CS 140/CS 140E/CS 143, etc.)
+
+### Breadth Requirement
+Courses to be chosen from three different areas A, B, C, or D and must be taken for at least 3 units each:
+
+1. **Area A**: 
+   - Not Taken
+   
+2. **Area B**: 
+   - Not Taken
+   
+3. **Area C**: 
+   - Not Taken
+   
+4. **Area D**: 
+   - Not Taken
+   
+### Artificial Intelligence Depth
+- **Required CS 221**: 
+  - Not Found on Transcript
+
+Other Depth Courses Listed:
+- None found from her transcript from list of AI Depth courses (specified courses)
+
+**Total Depth Units Applied to MSCS**: Must total at least 21 units.
+- Not met
+
+### Electives
+- Not enough details in the transcript about electives at the graduate level to verify completion.
+
+
+### Additional Requirements
+1. **At most 10 units of Foundations requirement courses may be counted toward your 45 units.**
+2. **At most 3 units of 1-2 unit seminars may be counted toward your 45 units.**
+3. **At least 36 units submitted for the MSCS degree including all courses taken for breadth and depth must be taken for a letter grade.**
+4. **The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).**
+   - BS GPA is 3.091; assuming similar performance, this is likely met but needs confirmation.
+5. **Units previously applied toward BS requirements may not also be counted toward the MSCS.**
+6. **You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.**
+   - Exact graduate units not confirmable without full MS transcript.
+
+
+Given the analysis of the given transcript and the requirements not yet met, the output should be:
+
+### Missing Course Requirements
+1. Algorithmic Analysis (CS 161)
+2. Principles of Computer Systems (CS 110/CS 111)
+3. Significant Implementation course (any one from the list)
+4. Depth Course Requirements (CS 221 and 21 units of specific AI courses)
+5. Breadth Requirement courses (from areas A, B, C, D)
+
+### Conclusion
+Sandra Marie Lewinsky has several MSCS requirements outstanding. Therefore, the output is:
+```
+Courses not satisfied: CS 161, CS 110/111, CS 221, Significant Implementation course, Breadth Requirement courses in areas A, B, C, and D
+```

@@ -1,0 +1,103 @@
+### BS Requirements Analysis:
+
+#### Core Requirements:
+- **CS 106B Programming Abstractions - Satisfied**
+  - Taken CS 106B for 5 units, grade: B.
+- **CS 107 Computer Organization and Systems - Satisfied**
+  - Taken CS 107E for 5 units, grade: B+.
+- **CS 111 Operating Systems Principles - Not Satisfied**
+  - Not found in transcript.
+- **CS 161 Design and Analysis of Algorithms - Not Satisfied**
+  - Not found in transcript.
+- **CS 103 Mathematical Foundations of Computing - Not Satisfied**
+  - Not found in transcript.
+- **CS 109 Introduction to Probability - Satisfied**
+  - Taken CS 109 for 4 units, grade: B.
+
+#### BS Senior Project Requirement:
+- **One course required - Not Satisfied**
+  - The required senior project (CS191, 194, 210B, etc.) is not found in the transcript.
+
+#### AI Elective Requirements:
+- **CS 221 AI: Principles and Techniques - Not Satisfied**
+  - Not found in transcript.
+- **Track Requirement B (Two courses from different areas) - Not Satisfied**
+  - None found in the transcript.
+- **Track Requirement C (One additional course from Track Requirement B list or other specified courses) - Not Satisfied**
+  - None found in the transcript.
+- **3 additional elective courses - Satisfied**
+  - CS 326 Computational Linguistics (4 units, B+), CS 220 Algorithm Design (4 units, A), and CS 311 Deep Learning (4 units, B).
+
+#### Mathematics and Science Requirements:
+- **Mathematics (26 units minimum)** 
+  - MATH 19-21 (10 units, grades not listed)
+  - **CS 103** - Not found in the transcript.
+  - **CS 109** - Satisfied.
+  - Additional Electives - Not found in the transcript.
+- **Science (11 units minimum)**
+  - PHYS 41 Mechanics - Not found in the transcript.
+  - PHYS 43 Electricity and Magnetism - Not found in the transcript.
+  - **CHEM 31A Chemistry** - Satisfied (5 units, B).
+
+#### Other Requirements:
+- **Technology in Society - Not Satisfied**
+  - Not found in the transcript.
+
+Based on the transcript provided, the following BS requirements are not satisfied:
+
+1. CS 111 Operating Systems Principles
+2. CS 161 Design and Analysis of Algorithms
+3. CS 103 Mathematical Foundations of Computing
+4. Senior Project Course
+5. CS 221 AI: Principles and Techniques
+6. Two Track Requirement B courses from different areas
+7. One Track Requirement C course
+8. Additional Math and Science electives (for reaching the required 26 Math and 11 Science units).
+9. Technology in Society course
+
+**Output:** "BS NOT SAT" 
+
+### MS Requirements Analysis:
+
+#### Foundations Requirement:
+- **CS 103 Logic, Automata & Complexity - Not Satisfied**
+  - Not found in transcript.
+- **CS 109 Probability - Satisfied**
+  - Taken CS 109 for 4 units, grade: B.
+- **CS 161 Algorithmic Analysis - Not Satisfied**
+  - Not found in transcript.
+- **CS 107 Computer Organ & Sys - Satisfied**
+  - Taken CS 107E for 5 units, grade: B+.
+- **CS 110/111 Principles of Computer Systems - Not Satisfied**
+  - CS 111 not found in the transcript.
+
+#### Significant Implementation Requirement:
+- **At least one course - Satisfied**
+  - CS 341 Machine Learning: Satisfied (4 units, A).
+
+#### Breadth Requirement:
+- **Three courses from different areas - Satisfied**
+  - **Area A:** CS 220 Algorithm Design (4 units, A).
+  - **Area B:** CS 326 Computational Linguistics (4 units, B+).
+  - **Area C:** CS 341 Machine Learning (4 units, A).
+
+#### AI Depth Requirement:
+- **CS 221 AI: Principles & Techniques - Not Satisfied**
+  - Not found in transcript.
+- **At least four of specific courses - Satisfied**
+  - CS 326 Computational Linguistics (4 units, B+), CS 311 Deep Learning (4 units, B), CS 341 Machine Learning (4 units, A), CS 220 Algorithm Design (4 units, A).
+- **Total of 21 units from categories (a), (b), and other specified courses - Satisfied**
+  - 326 (4 units), 311 (4 units), 341 (4 units), 220 (4 units) = 16 units.
+
+#### Electives:
+- **45-unit requirement for MSCS degree - Satisfied**
+  - Details of additional elective courses were not analyzed due to lack of explicit marking in the transcript.
+
+Based on the transcript provided, the following MS requirements are not yet satisfied:
+
+1. CS 103 Logic, Automata & Complexity
+2. CS 161 Algorithmic Analysis
+3. CS 110/111 Principles of Computer Systems
+4. CS 221 AI: Principles and Techniques
+
+**Output:** "MS NOT SAT"

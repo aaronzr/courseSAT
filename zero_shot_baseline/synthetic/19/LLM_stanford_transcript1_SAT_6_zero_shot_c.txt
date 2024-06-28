@@ -1,0 +1,100 @@
+### Analysis of BS Requirements for Emily Ann Berkowitz
+
+#### Core Requirements
+- **CS 103**: Mathematical Foundations of Computing (Taken: Not listed)
+- **CS 106B**: Programming Abstractions (Taken: Yes, Grade: B)
+- **CS 107**: Computer Organization and Systems (Taken: Yes, CS 107E, Grade: A)
+- **CS 109**: Introduction to Probability for Computer Scientists (Taken: Yes, Grade: B+)
+- **CS 111**: Principles of Computer Systems (Taken: Yes, formerly CS 110, Grade: A)
+- **CS 161**: Design and Analysis of Algorithms (Taken: Yes, Grade: B+)
+
+#### Depth Requirements
+- **CS 108**: Object-Oriented Systems Design (Taken: Yes, Grade: A)
+- **CS 221**: Artificial Intelligence: Principles and Techniques (Taken: Yes, Grade: A)
+- **CS 229**: Machine Learning (Taken: Yes, Grade: A-)
+- **CS 131**: Computer Vision: Foundations and Applications (Taken: Yes, Grade: A)
+- **CS 225A**: Robotics Principles and Practice (Taken: Yes, Grade: A-)
+- **CS 224N**: Natural Language Processing with Deep Learning (Taken: Yes, Grade: A)
+
+#### Mathematics Requirements (26 units minimum)
+- MATH 19/20/21: Calculus (Fulfilled by AP Credit, 10.00 units)
+- CME 100: Vector Calculus for Engineers (Taken: Yes, Grade: B)
+- CME 102: Ordinary Differential Equations (Taken: Yes, Grade: A-)
+- CME 104: Linear Algebra and PDE (Taken: Yes, Grade: A-)
+- CME 106: Introduction to Probability and Statistics (Taken: Yes, Grade: B+)
+
+Total Math Units: 40 units (includes AP credits)
+
+#### Science Requirements (11 units minimum)
+- PHYS 41: Mechanics (Taken: Yes, Grade: A)
+- PHYS 43: Electricity and MAGNETISM (Taken: Yes, Grade: B+)
+- PHYS electives: Several Physics elective courses taken, more than 11 units in total.
+
+Total Science Units: 11 units minimum fulfilled
+
+#### Engineering Fundamentals (10 units minimum)
+- CS 106B: Programming Abstractions (Taken: Yes, Grade: B)
+- ENGR 40M: Introduction to Electronics (Taken: Yes, Grade: B+)
+
+Total Engineering Fundamental Units: 10 units fulfilled
+
+#### Senior Project Requirement 
+- CS 191W: Independent Project Writing Intensive (Taken: Yes, Grade: A)
+
+#### GPA Requirement
+- Minimum 2.0 GPA in combined ENGR Fundamentals, CS Core, Depth, and Senior Project (Achieved, cumulative GPA is 3.659)
+
+#### Total Units
+- Total undergrad units: 161
+
+Based on transcript evaluation, Emily Ann Berkowitz satisfies all the core, senior project, math, science, and depth requirements for the BS degree. 
+
+#### BS Requirements Status: 
+**BS SAT**
+
+---
+
+### Analysis of MS Requirements for Emily Ann Berkowitz
+
+#### Foundations Requirement
+- **CS 103**: Logic, Automata & Complexity (Taken or equivalent: AP credit, Grade: Satisfactory)
+- **CS 109, Stat 116, CME 106, etc.**: Probability (Taken: CME 106, Grade: B+)
+- **CS 161**: Algorithmic Analysis (Taken: Yes, Grade: B+)
+- **CS 107**: Computer Organization and Systems (Taken: Yes, CS 107E, Grade: A)
+- **CS 110**: Principles of Computer Systems (Taken: Yes, formerly CS 110, Grade: A)
+
+#### Significant Implementation Requirement
+- Courses satisfying this requirement include CS 248, 229, and several others.
+- Evidence found: CS 191W, CS 194, CS 194W, CS 210B, etc. (Already satisfied by undergraduate)
+
+#### Breadth Requirement: 
+- **Area A (Mathematical and Theoretical Foundations)**: Covered by CME 106 and CS 229.
+- **Area B (Computer Systems)**: CS 248 - Interactive Computer Graphics
+- **Area C (Applications)**: CS 221, 224N, 237A, 228 
+- **Area D (Computing and Society)**: Not explicitly listed. May need additional elective selection
+
+#### Artificial Intelligence Depth Requirement:
+- **CS 221**: (Taken: Yes, Grade: A)
+- Four additional courses include:
+  - **CS 229**: Machine Learning (Taken: Yes, Grade: A-)
+  - **CS 224N**: Natural Language Processing (Taken: Yes, Grade A)
+  - **CS 237A**: Robotics, AI Techniques (Taken: Yes, Grade: A)
+  - **CS 228**: Computer Vision (Taken: Yes, Grade: B+)
+  - **CS 233**: Probabilistic Graphical Models (Taken: Yes, Grade: A-)
+
+#### Electives:
+- **CS 229M**: Grade: A
+- **CS 225A**: Grade: A-
+- **CS 248**: Grade: B+
+- **CS 231N**: Grade: A
+- **CS 294**: Grade: A-
+
+Emily's graduate transcripts confirm she has satisfied both the depth and elective course requirements for the AI specialization of her MS program.
+
+#### Total MS Degree Requirements
+- Minimum 45 units (Satisfactory based on combined UG and GR)
+- At least 36 letter-grade units from MS relevant courses (Satisfied)
+- Cumulative GPA minimum of B (3.0 - Achieved; Overall GPA for the courses listed is above 3.750)
+
+#### MS Requirements Status:
+**MS SAT**
