@@ -1,6 +1,4 @@
-Sure, here is the synthetic transcript that does not comply with the provided course requirements:
 
-```
 Leland Stanford Jr. University
 Stanford, CA 94305 
 USA
@@ -217,6 +215,3 @@ STANFORD TOTAL UNDERGRADUATE UNITS: 179.00
 *  Worksheet - For office use by authorized Stanford personnel *
 *********************************************************************************************
 END OF TRANSCRIPT.
-```
-
-Notice how this synthetic transcript does not meet the course requirements for the BS and MS programs in the relevant disciplines as provided.
