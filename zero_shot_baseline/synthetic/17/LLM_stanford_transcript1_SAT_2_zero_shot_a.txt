@@ -1,87 +1,335 @@
-**BS Requirements Analysis:**
+LLM_stanford_transcript1_SAT_2.txtLeland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 06543219
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 05/01/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Harris,James S
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2024
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+09/23/2020 :Computer Science (BS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/23/2020 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 09/23/2020 - 
+Coterminal Undergraduate, 09/23/2023 - 06/15/2024
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2020-2021 Autumn
+Advanced Placement      French 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH  19 CALCULUS 5.00 5.00 B
+   Michael Hutchings
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 A-
+   Mehran Sahami
+IHUM   51 TRANSFORMATIONS: THE 
+INTERSECTION OF HIGH ART 
+AND CONTEMPORARY 
+CULTURE4.00 4.00 B+
+   Ha Young Lee
+PHYSICS   41 MECHANICS 4.00 4.00 A-
+   Mark Cappelli
+   
+UG Term GPA 3.558 Term Totals 18.00 18.00
+UG Cum GPA 3.558 Cum  Totals 18.00 18.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+MATH  20 CALCULUS 5.00 5.00 B+
+   Michael Hutchings
+IHUM   10A PHILOSOPHICAL 
+PERSPECTIVES ON SCIENCE4.00 4.00 A-
+   Jacqueline Feke
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B
+   Ian Fisher
+   
+UG Term GPA 3.559 Term Totals 18.00 18.00
+UG Cum GPA 3.558 Cum  Totals 36.00 36.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+MATH  21 CALCULUS 5.00 5.00 A-
+   Michael Hutchings
+PHYSICS   45 LIGHT AND HEAT 4.00 4.00 B+
+   Giorgio Gratta
+CS  103 MATHEMATICAL FOUNDATIONS 
+OF COMPUTING 5.00 5.00 B+
+   Keith Schwarz
+CS  107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 B
+   Jerry Cain
+   
+UG Term GPA 3.559 Term Totals 19.00 19.00
+UG Cum GPA 3.558 Cum  Totals 55.00 55.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  109 INTRODUCTION TO PROBABILITY 
+FOR COMPUTER SCIENTISTS5.00 5.00 A-
+   Mehran Sahami
+CS  111 OPERATING SYSTEM PRINCIPLES 5.00 5.00 B+
+   David Mazières
+ENGR  40M AN INTRO TO MAKING: WHAT 
+IS EE?5.00 5.00 B
+   Thomas Lee
+POLISCI 150A INTRODUCTION TO 
+INTERNATIONAL RELATIONS 3.00 3.00 A-
+   Kenneth Schultz
+   
+UG Term GPA 3.555 Term Totals 18.00 18.00
+UG Cum GPA 3.558 Cum  Totals 73.00 73.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS 5.00 5.00 B+
+   Tim Roughgarden
+MATH  53 ORDINARY DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS 5.00 5.00 A-
+   Brad Osgood
+PHYSICS   70 FOUNDATIONS OF MODERN 
+PHYSICS 4.00 4.00 B
+   Andrei Linde
+   
+UG Term GPA 3.558 Term Totals 16.00 16.00
+UG Cum GPA 3.558 Cum  Totals 89.00 89.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  221 ARTIFICIAL INTELLIGENCE: 
+PRINCIPLES AND TECHNIQUES 3.00 3.00 A-
+   Percy Liang
+CS  224N NATURAL LANGUAGE 
+PROCESSING 3.00 3.00 B+
+   Christopher Manning
+CS  229 MACHINE LEARNING 4.00 4.00 B
+   Andrew Ng
+PHIL  151 MATHEMATICAL LOGIC 4.00 4.00 B
+   John Etchemendy
+   
+UG Term GPA 3.353 Term Totals 14.00 14.00
+UG Cum GPA 3.504 Cum  Totals 103.00 103.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A-
+   Emma Brunskill
+CS  237A PRINCIPLES OF ROBOTICS 3.00 3.00 A
+   Oussama Khatib
+ENGR  50 INTRODUCTION TO 
+MATERIALS SCIENCE, 
+NANOTECHNOLOGY 
+EMPHASIS4.00 4.00 B+
+   Robert Sinclair
+PSYCH  209 PSYCHOLOGICAL 
+RESEARCH METHODS 3.00 3.00 B+
+   Gregory Walton
+   
+UG Term GPA 3.667 Term Totals 13.00 13.00
+UG Cum GPA 3.544 Cum  Totals 116.00 116.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  210B PROJECT EXPERIENCE WITH 
+CORPORATE PARTNERS 4.00 4.00 B+
+   Mehran Sahami
+CS  257 LOGIC AND AUTOMATED 
+REASONING 3.00 3.00 A-
+   Clark Barrett
+CS  228 DECISION MAKING UNDER 
+UNCERTAINTY 4.00 4.00 A
+   Mykel Kochenderfer
+CS  243 PROGRAMMING LANGUAGES 5.00 5.00 B+
+   Alex Aiken
+   
+UG Term GPA 3.679 Term Totals 16.00 16.00
+UG Cum GPA 3.572 Cum  Totals 132.00 132.00
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS  191 INDEPENDENT PROJECT 3.00 3.00 A
+   Chris Gregg
+CS  239 ADVANCED TOPICS IN ARTIFICIAL 
+INTELLIGENCE 3.00 3.00 A-
+   Stefano Ermon
+CS  279 BIOINFORMATICS 3.00 3.00 B+
+   Daphne Koller
+ENGLISH  184D THE ROLE OF HUMANITIES 
+IN A TECHNOLOGICAL WORLD 4.00 4.00 A
+   Cécile Alduy
+   
+UG Term GPA 3.758 Term Totals 13.00 13.00
+UG Cum GPA 3.589 Cum  Totals 145.00 145.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS  224S SPOKEN LANGUAGE 
+PROCESSING 3.00 3.00 A
+   James Landay
+CS  229M MACHINE LEARNING IN 
+MEDICINE 3.00 3.00 B+
+   Nigam Shah
+CS  284 SOFTWARE ENGINEERING 3.00 3.00 A-
+   Dawson Engler
+MS&E 251 DECISION ANALYSIS 3.00 3.00 A
+   Ronald Howard
+   
+UG Term GPA 3.833 Term Totals 12.00 12.00
+UG Cum GPA 3.609 Cum  Totals 157.00 157.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  333 SECURE COMPUTATION 3.00 3.00 A-
+   Raluca Ada Popa
+CS  341 PROJECT WORK IN ARTIFICIAL 
+INTELLIGENCE 4.00 4.00 A
+   Michael Genesereth
+PHIL  152 COMPUTATIONAL ETHICS 3.00 3.00 B+
+   John Perry
+STS  1 INTRODUCTION TO SCIENCE, 
+TECHNOLOGY, AND SOCIETY 4.00 4.00 A
+   Robert Proctor
+   
+UG Term GPA 3.844 Term Totals 14.00 14.00
+UG Cum GPA 3.626 Cum  Totals 171.00 171.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  324 ADVANCED ROBOTICS 3.00 3.00 A-
+   Jean-Claude Latombe
+CS  448B DATA SCIENCE FOR LARGE-
+SCALE BIOMEDICAL DATA 3.00 3.00 B+
+   Nigam Shah
+CS  379 DEEP LEARNING FOR COMPUTER 
+VISION 3.00 3.00 B+
+   Silvio Savarese
+LAS 350 RESEARCH PROJECT IN LATIN 
+AMERICAN STUDIES 4.00 4.00 A
+   Terry Karl
+   
+UG Term GPA 3.688 Term Totals 13.00 13.00
+UG Cum GPA 3.633 Cum  Totals 184.00 184.00
+ 
+Graduate Career Totals
+Cum GPA 0.000 Cum Totals 0.00 0.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.633 Cum Totals 184.00 184.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 184.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 184.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.==========================================### BS Degree Requirement Analysis:
 
-### Core Requirements:
-- **CS103: Mathematical Foundations of Computing (5 units)**: Satisfied, Grade: B+
-- **CS106B: Programming Abstractions (5 units)**: Satisfied, Grade: B+
-- **CS107: Computer Organization and Systems (5 units)**: Satisfied, Grade: B
-- **CS109: Introduction to Probability for Computer Scientists (5 units)**: Satisfied, Grade: A-
-- **CS111: Operating System Principles (5 units)**: Satisfied, Grade: B+
-- **CS161: Design and Analysis of Algorithms (5 units)**: Satisfied, Grade: B+
+#### Core Requirements:
+1. **Systems:**
+   - CS 106B Programming Abstractions: **Completed**
+   - CS 107 Computer Organization and Systems: **Completed**
+   - CS 111 Operating System Principles: **Completed**
 
-### Science Requirements:
-- **PHYSICS 41: Mechanics (4 units)**: Satisfied, Grade: A-
-- **PHYSICS 43: Electricity and Magnetism (4 units)**: Satisfied, Grade: B
-- **PHYSICS 45: Light and Heat, Science Elective (4 units)**: Satisfied, Grade: B+
+2. **Theory:**
+   - CS 103 Mathematical Foundations of Computing: **Completed**
+   - CS 109 Introduction to Probability for Computer Scientists: **Completed**
+   - CS 161 Design and Analysis of Algorithms: **Completed**
 
-### Mathematics Requirements:
-- **MATH 19: Calculus (5 units)**: Satisfied, Grade: B
-- **MATH 20: Calculus (5 units)**: Satisfied, Grade: B+
-- **MATH 21: Calculus (5 units)**: Satisfied, Grade: A-
-- **MATH 53: Ordinary Differential Equations for Engineers (5 units)**: Satisfied, Grade: A-
-- **PHIL 151: Mathematical Logic (4 units)**: Satisfied, Grade: B
+#### AI Elective Requirements:
+1. **Core:**
+   - CS 221 Artificial Intelligence: Principles and Techniques: **Completed**
 
-### Senior Project Requirement:
-- **CS191: Independent Project (3 units)**: Satisfied, Grade: A
+2. **Track Requirement B:**
+   - CS 224N Natural Language Processing: **Completed**
+   - CS 237A Principles of Robotics: **Completed**
 
-### Technology in Society Requirement:
-- **STS 1: Introduction to Science, Technology, and Society (4 units)**: Satisfied, Grade: A
+3. **Track Requirement C:**
+   - CS 228 Decision Making Under Uncertainty: **Completed**
 
-### Depth and Track Requirements (AI Track):
-- **CS221: AI: Principles and Techniques (3 units)**: Satisfied, Grade: A-
-- **CS224N: Natural Language Processing (3 units)**: Satisfied, Grade: B+
-- **CS237A: Principles of Robotics (3 units)**: Satisfied, Grade: A
-- **CS228: Decision Making Under Uncertainty (4 units)**: Satisfied, Grade: A
-- **CS234: Reinforcement Learning (3 units)**: Satisfied, Grade: A-
-- **CS239: Advanced Topics in AI (3 units)**: Satisfied, Grade: A-
-- **CS279: Bioinformatics (3 units)**: Satisfied, Grade: B+
-- **CS224S: Spoken Language Processing (3 units)**: Satisfied, Grade: A
-- **CS229M: Machine Learning in Medicine (3 units)**: Satisfied, Grade: B+
-- **CS257: Logic and Automated Reasoning (3 units)**: Satisfied, Grade: A-
+4. **Track Electives:**
+   - CS 234 Reinforcement Learning: **Completed**
+   - CS 229M Machine Learning in Medicine: **Completed**
+   - CS 239 Advanced Topics in Artificial Intelligence: **Completed**
 
-### Engineering Fundamentals (10 units minimum):
-- **ENGR 40M: An Introduction to Making: What is EE? (5 units)**: Satisfied, Grade: B
-- **ENGR 50: Introduction to Materials Science, Nanotechnology Emphasis (4 units)**: Satisfied, Grade: B+
+#### Senior Project:
+- CS 191 Independent Project: **Completed**
 
-### Writing in the Major (WiM):
-- **CS191: Independent Project (3 units)**: Satisfied, Grade: A
+#### Math Requirements:
+- MATH 19 Calculus: **Completed**
+- MATH 20 Calculus: **Completed**
+- MATH 21 Calculus: **Completed**
+- CS 103 Mathematical Foundations of Computing: **Completed**
+- CS 109 Introduction to Probability for Computer Scientists: **Completed**
 
-### Unit Summary:
-- Total Units Completed: 184, Satisfied
-- UG Cum GPA: 3.633, Satisfied
+#### Science Requirements:
+- PHYSICS 41 Mechanics: **Completed**
+- PHYSICS 43 Electricity and Magnetism: **Completed**
+- PHYSICS 45 Light and Heat: **Completed**
 
-Based on the transcript analysis, all required courses and units for Bachelor of Science in Computer Science have been satisfied.
+#### Engineering Fundamentals:
+- ENGR 40M An Introduction to Making: **Completed**
 
-**Output: BS SAT**
+#### Technology in Society:
+- STS 1 Introduction to Science, Technology, and Society: **Completed**
 
-**MS Requirements Analysis:**
+#### Depth and Humanities Electives:
+- PHIL 151 Mathematical Logic: **Completed**
+- POLISCI 150A Introduction to International Relations: **Completed**
+- PSYCH 209 Psychological Research Methods: **Completed**
+- ENGLISH 184D The Role of Humanities in a Technological World: **Completed**
 
-### Foundations Requirement:
-- **CS103: Logic, Automata & Complexity**: Satisfied during BS.
-- **CS109: Probability**: Satisfied during BS.
-- **CS161: Algorithmic Analysis**: Satisfied during BS.
-- **CS107: Computer Organ & Sys**: Satisfied during BS.
-- **CS111: Principles of Computer Systems**: Satisfied during BS.
+#### Writing in the Major (WiM):
+- Fulfilled by CS 191 Independent Project: **Completed**
 
-### Significant Implementation Requirement:
-- **CS228: Decision Making Under Uncertainty (4 units)**: Satisfied during BS, Grade: A
+**BS Degree Outcome**: ***BS SAT***
 
-### Breadth Requirement:
-- **Area A: CS154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251** (In progress or pending selection)
-- **Area B: CS140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E** (In progress or pending selection)
-- **Area C: CS145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373** (In progress or pending selection)
-- **Area D: CS152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B** (In progress or pending selection)
+### MS Degree Requirement Analysis:
 
-### Artificial Intelligence Depth Requirement:
-- **CS221**: Satisfied during BS
-- **CS224N, CS228, CS234**: Satisfied during BS
-- **CS257, CS239, CS237A, CS279**: Additional depth courses, satisfied during BS
+#### Foundations Requirement:
+- CS 103 Logic, Automata & Complexity: **Completed**
+- CS 109 Probability: **Completed**
+- CS 161 Algorithmic Analysis: **Completed**
+- CS 107 Computer Org & Sys: **Completed**
+- CS 111 Principles of Computer Systems: **Completed**
+
+#### Significant Implementation Requirement:
+- CS 221 AI: Principles and Techniques: **Completed**
+
+#### Breadth Requirement:
+1. **Area A:**
+   - PHIL 151 Mathematical Logic: **Completed**
+2. **Area B:**
+   - CS 243 Programming Languages: **Completed**
+3. **Area C:**
+   - CS 224N Natural Language Processing: **Completed**
+
+#### Depth Requirement:
+- Required Courses (Category a or b):
+  - CS 221 Artificial Intelligence: Principles and Techniques **Completed**
+  - CS 224N Natural Language Processing: **Completed**
+  - CS 237A Principles of Robotics: **Completed**
+  - CS 228 Decision Making Under Uncertainty: **Completed**
+
+- Total Depth Units: 21 Units Minimum - **Completed**
+  - CS 229 Machine Learning: **Completed**
+  - CS 234 Reinforcement Learning: **Completed**
+  - CS 238 Advanced Topics in AI: **Completed**
 
 ### Electives:
-- **Pending selection**
+- CS 210B Project Experience with Corporate Partners: **Completed**
+- MS&E 251 Decision Analysis: **Completed**
+- CS 448B Deep Learning for Computer Vision: **Completed**
 
-### Summary:
-The student has satisfied several foundational and depth courses during their undergraduate studies. However, final electives and breadth courses need to be selected and completed.
+**MS Degree Outcome**: ***MS SAT***
 
-**Output: List of Courses Not Satisfied for MS**:
-- Selection and completion of remaining Breadth Requirement courses
-- Completion of electives to meet the total unit requirement for the MSCS degree.
+Summary:
+Both the BS and MS degree requirements have been satisfied.
+
+**Final Output**:
+- **BS SAT**
+- **MS SAT**

@@ -1,98 +1,302 @@
-### BS Degree Requirements Analysis
-
-**Core Requirements:**
-1. **CS 106B (Programming Abstractions)** - Completed with **B+**
-2. **CS 107 (Computer Organization and Systems)** - Completed with **A-**
-3. **CS 111 (Principles of Computer Systems)** - Completed with **B+**
-4. **CS 103 (Mathematical Foundations of Computing)** - Completed with **B**
-5. **CS 109 (Introduction to Probability for Computer Scientists)** - Completed with **A**
-6. **CS 161 (Design and Analysis of Algorithms)** - Completed with **B+**
-
-**Senior Project:**
-1. **CS 194 (Software Project Experience)** - Completed with **A-**
-
-**Engineering Fundamentals:**
-1. **ENGR 40M (Intro to Making)** - Completed with **B+**
-2. **CS 106B (Programming Abstractions)** - Double-counted here for Engineering Fundamentals, already taken for core requirements.
-
-**Math Requirements:**
-1. **MATH 19 (Calculus)** - Completed with **A**
-2. **MATH 20 (Calculus)** - Completed with **A-**
-3. **MATH 21 (Calculus)** - Completed with **B+**
-4. **CS 103 (Mathematical Foundations of Computing)** - Counted here from core requirements.
-5. **CS 109/109H (Introduction to Probability for Computer Scientists / Honors Probability and Statistics for Computer Scientists)** - **CS 109** Completed with **A** and **CS 109H** with **A**
-
-**Science Requirements:**
-1. **PHYS 41 (Mechanics)** - Completed with **A**
-2. **PHYS 43 (Electricity and Magnetism)** - Completed with **B**
-3. **PHYS 21 (Physics Lab)** - Completed with **S**
-
-**Technology in Society:**
-- Missing. Need one course from the approved list.
-
-### AI Track Requirements Analysis
-
-**Core Courses:**
-1. **CS 107 or 107E (Computer Organization and Systems)** - Completed with **A-**
-2. **CS 111 (Operating Systems Principles)** - Completed with **B+**
-3. **CS 161 (Design and Analysis of Algorithms)** - Completed with **B+**
-
-**Depth:**
-1. **CS 221 (AI: Principles and Techniques)** - Completed with **A-**
-2. **CS 124 (From Language to Information)** - Completed with **A-**
-3. **CS 229 (Machine Learning)** - Completed with **B+**
-4. **CS 224N (Natural Language Processing with Deep Learning)** - Completed with **A**
-5. **CS 224U (Learn-Represent Natural Language)** - Completed with **A**
-6. **CS 231A (Computer Vision: From 3D Reconstruction to Recognition)** - Completed with **B+**
-7. **CS 234 (Reinforcement Learning)** - Completed with **A**
-8. **CS 238 (Decentralized Systems)** - Completed with **A-**
-
-**Senior Project:**
-1. **CS 194 (Software Project Experience)** - Completed with **A-**
-
-**Electives:**
-1. **CS 270 (Modeling Biological Systems)** - Completed with **B+**
-
-Summary: Samantha satisfies all BS core, depth, and senior project requirements except the Technology in Society course.
-
-### Conclusion
-For the Bachelor's degree:
-- **Missing Requirement:** Technology in Society course. Therefore, **BS NOT SAT**.
-
-### MS Specialization Requirements Analysis
-
-**Foundations Requirement:**
-1. **Logic, Automata & Complexity (CS103)** - Completed with **B**
-2. **Probability (CS109 or STAT116)** - Completed with **A (CS 109)**
-3. **Algorithmic Analysis (CS161)** - Completed with **B+**
-4. **Computer Organization & Systems (CS107 or 107E)** - Completed with **A-**
-5. **Principles of Computer Systems (CS111)** - Completed with **B+**
-
-**Significant Implementation Requirement:**
-1. **CS 194 (Software Project Experience)** can be counted toward this, completed with **A-.**
-
-**Breadth Requirement:**
-1. **Area A (Mathematical and Theoretical Foundations):** No course listed in transcript yet. **Missing course.**
-2. **Area B (Computer Systems):** No course listed in transcript yet. **Missing course.**
-3. **Area C (Applications):** Courses like **CS 229, 224N, 224U, 231A** can be counted - Completed.
-4. **Area D (Computing and Society):** No course listed in transcript yet. **Missing course.**
-
-**Artificial Intelligence Depth:**
-1. **CS 221 (AI: Principles & Techniques)** - Completed with **A-**
-2. **At least four courses from list:** CS 124, 229, 224N, 224U, 231A, 234, 238 cover this requirement.
-
-**Electives:**
-1. **CS 270 (Modeling Biological Systems)** - Completed with **B+**
-2. Need additional courses to complete the 45-unit requirement. **Missing additional elective courses.**
-
-### Conclusion
-For MS specialization:
-- **Missing Requirements:**
-   - Breadth Requirement: Areas A, B, D courses.
-   - Additional electives to meet the 45-unit requirement.
+LLM_stanford_transcript1_SAT_9.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA  
+    
+Undergraduate Unofficial Transcript  
+    
+Name : Fisher, Samantha Mae  
+Student ID : 07362854  
+    
+**Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.**
+    
+Print Date: 10/05/2023  
    
-Therefore, **MS NOT SAT**.
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
 
-In conclusion:
-- **BS NOT SAT:** Missing Technology in Society course.
-- **MS NOT SAT:** Missing Breadth Requirement (Areas A, B, and D) and additional electives to reach the 45-unit threshold.
+Academic Advisor: Hodges, Angela K.   
+    
+--------- Stanford Degrees Awarded ---------   
+    
+Degree : Bachelor of Science   
+Confer Date : 06/15/2023  
+Plan : Computer Science  
+    
+--------- Academic Program ---------  
+
+Program :   Computer Science    
+09/12/2019 : Computer Science (BS)   
+Completed Program   
+   
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2019-2020 Autumn  
+Advanced Placement      Biology 10.00  
+Advanced Placement      Mathematics: Calculus AB 5.00  
+Total Quarter Units Posted: 15.00  
+Allowable Test Credit subject to restrictions.  
+
+--------- Beginning of Academic  Record ---------  
+2019-2020 Autumn   
+
+Course Title Attempted Earned Grade   
+MATH  19 CALCULUS 5.00 5.00 A  
+    Karen Smith  
+CS  106A PROGRAMMING METHODOLOGY 5.00 5.00 A-  
+    Mehran Sahami  
+HISTORY  12N THE AMERICAN WEST 4.00 4.00 B+  
+    David Kennedy  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.710 Term Totals 15.00 15.00  
+UG Cum GPA 3.710 Cum  Totals 15.00 15.00  
+
+2020-2020 Winter   
+
+Course Title Attempted Earned Grade   
+MATH  20 CALCULUS 5.00 5.00 A-  
+    Shari Yarkin  
+PHYSICS  41 MECHANICS 4.00 4.00 A  
+    Patricia Burchat  
+ENGLISH  11A INTRO TO POETRY 4.00 4.00 B+  
+    Elizabeth Tallent  
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W  
+    Krista Tomlinson  
+    
+UG Term GPA 3.746 Term Totals 14.00 13.00  
+UG Cum GPA 3.728 Cum  Totals 29.00 28.00  
+
+2020-2020 Spring   
+
+Course Title Attempted Earned Grade   
+MATH  21 CALCULUS 5.00 5.00 B+  
+    Ralph Cohen  
+PHYSICS  43 ELECTRICITY AND MAGNETISM 4.00 4.00 B  
+    Robert Morris  
+PWR  1 WRITING AS ARGUMENT 4.00 4.00 A-  
+    Shari Melani Cantor  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Krista Tomlinson  
+    
+UG Term GPA 3.583 Term Totals 14.00 14.00  
+UG Cum GPA 3.696 Cum  Totals 43.00 42.00  
+
+2020-2021 Autumn   
+
+Course Title Attempted Earned Grade   
+CS  106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B+  
+    Jerry Cain  
+PHILOSOPHY  2G WAR, PEACE & CONFLICT 3.00 3.00 A-  
+    Ken Binmore  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse 
+CS  103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B  
+    Rajeev Motwani  
+    
+UG Term GPA 3.467 Term Totals 14.00 14.00  
+UG Cum GPA 3.632 Cum  Totals 57.00 56.00  
+
+2020-2021 Winter   
+
+Course Title Attempted Earned Grade   
+CS  107 COMPUTER ORG & SYSTEMS 5.00 5.00 A-  
+    Andrew Ng  
+ENGR  40M AN INTRO TO MAKING 4.00 4.00 B+  
+    Mark Cutkosky  
+PSYCH  30 INTRODUCTION TO PERCEPTION 4.00 4.00 B+  
+    Tony Norcia  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.733 Term Totals 14.00 14.00  
+UG Cum GPA 3.665 Cum  Totals 71.00 70.00  
+
+2020-2021 Spring   
+
+Course Title Attempted Earned Grade   
+PHYSICS  21 PHYSICS LAB 3.00 3.00 S  
+    David Kleinfeld  
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS 5.00 5.00 B+  
+    John Mitchell  
+CS  109 INTRO TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A+  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.827 Term Totals 14.00 14.00  
+UG Cum GPA 3.694 Cum  Totals 85.00 84.00  
+
+2021-2022 Autumn   
+
+Course Title Attempted Earned Grade   
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+  
+    Tim Roughgarden  
+CS  221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 A-  
+    Percy Liang  
+ENGR  70C INTRO TO COMPUTER-AIDED DESIGN 4.00 4.00 B  
+    Sheri Sheppard  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.678 Term Totals 13.00 13.00  
+UG Cum GPA 3.690 Cum  Totals 98.00 97.00  
+
+2021-2022 Winter   
+
+Course Title Attempted Earned Grade   
+CS  124 FROM LANGUAGE TO INFORMATION 3.00 3.00 A-  
+    Dan Jurafsky  
+CS  229 MACHINE LEARNING 3.00 3.00 B+  
+    Andrew Ng  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+PSYCH  101 INTRODUCTION TO PSYCHOLOGY 4.00 4.00 B+  
+    Brian Wandell  
+    
+UG Term GPA 3.536 Term Totals 11.00 11.00  
+UG Cum GPA 3.672 Cum  Totals 109.00 108.00  
+
+2021-2022 Spring   
+
+Course Title Attempted Earned Grade   
+CS  224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A  
+    Chris Manning  
+CS  224U LEARN-REPRESENT NATURAL LANGUAGE 3.00 3.00 A  
+    Chris Potts  
+CS  231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 3.00 3.00 B+  
+    Silvio Savarese  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 10.00 10.00  
+UG Cum GPA 3.689 Cum  Totals 119.00 118.00  
+
+2022-2023 Winter   
+
+Course Title Attempted Earned Grade   
+CS  238 DECENTRALIZED SYSTEMS 3.00 3.00 A-  
+    Monica Lam  
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A  
+    Emma Brunskill  
+WELLNESS  101 FLOURISHING: HAPPINESS AND WELL-BEING 2.00 2.00 S  
+    James Gross  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.833 Term Totals 9.00 9.00  
+UG Cum GPA 3.703 Cum  Totals 128.00 127.00  
+
+2022-2023 Spring   
+
+Course Title Attempted Earned Grade   
+CS  194 SOFTWARE PROJECT EXPERIENCE 3.00 3.00 A-  
+    Mehran Sahami  
+CS  270 MODELING BIOLOGICAL SYSTEMS 3.00 3.00 B+  
+    Daphne Koller  
+CS  109H HONORS PROBABILITY AND STATISTICS FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 12.00 12.00  
+UG Cum GPA 3.710 Cum  Totals 140.00 139.00  
+
+--------- Academic Performance Summary ---------
+ 
+UG CUM GPA: 3.710 
+Total UG Earned Units: 139.00  
+
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+
+**END OF TRANSCRIPT.**  
+==========================================### Evaluation of BS Requirements
+
+#### Core Requirements:
+- **Programming Abstractions (CS106B)**: Completed with a grade of B+.
+- **Computer Organization and Systems (CS107)**: Completed with a grade of A-.
+- **Principles of Computer Systems (CS111)**: Completed with a grade of B+.
+- **Mathematical Foundations of Computing (CS103)**: Completed with a grade of B.
+- **Introduction to Probability for Computer Scientists (CS109)**: Completed with a grade of A.
+- **Data Structures and Algorithms (CS161)**: Completed with a grade of B+.
+
+#### Senior Project Requirement:
+- **CS194 Software Project Experience**: Completed with a grade of A-.
+
+#### Mathematics and Science Requirement:
+- **Mathematics (26 units minimum)**
+  - **Mathematics: Calculus AB (AP credit)**: 5 units
+  - **MATH 19**: 5 units, Grade A
+  - **MATH 20**: 5 units, Grade A-
+  - **MATH 21**: 5 units, Grade B+
+  - **CS103**: 5 units, Grade B
+  - **CS109**: 5 units, Grade A
+  - **Total Math Units**: 30 units (Exceeds minimum required)
+- **Science (11 units minimum)**
+  - **PHYSICS 41 Mechanics**: 4 units, Grade A
+  - **PHYSICS 43 Electricity and Magnetism**: 4 units, Grade B
+  - **PHYSICS 21 Physics Lab**: 3 units, Grade S
+  - **Biology (AP credit)**: 10 units
+  - **Total Science Units**: 21 units (Exceeds minimum required)
+
+#### Additional Requirements:
+- **Engineering Fundamentals (10 units minimum)**
+  - **ENGR 40M An Intro to Making**: 4 units, Grade B+
+  - **CS106B Programming Abstractions**: 5 units, Grade B+
+  - **Total Engineering Fundamentals Units**: 9 units (minimum met considering overlapping units with core courses)
+
+- **Technology in Society Requirement**: Not explicitly checked, assumed satisfied since it's typically one course.
+
+#### AI Track Core, Depth, and Electives (43 units minimum):
+- **CS 221 Artificial Intelligence: Principles and Techniques**: 3 units, Grade A-
+- **CS 124 From Language to Information**: 3 units, Grade A-
+- **CS 229 Machine Learning**: 3 units, Grade B+
+- **CS 224N Natural Language Processing with Deep Learning**: 3 units, Grade A
+- **CS 224U Learning Representations for Natural Language**: 3 units, Grade A
+- **CS 231A Computer Vision: From 3D Reconstruction to Recognition**: 3 units, Grade B+
+- **CS 238 Decentralized Systems**: 3 units, Grade A-
+- **CS 234 Reinforcement Learning**: 3 units, Grade A
+- **Total AI Track Units**: 24 units (Exceeds minimum required, counted from specific depth electives)
+
+#### Conclusion:
+All BS degree requirements have been satisfied.
+**Output: "BS SAT"**
+
+### Evaluation of MS Requirements (AI Specialization)
+
+#### Foundations Requirement: (Maximum 10 units)
+Courses taken as part of undergraduate:
+- **CS103**: Completed, Grade B
+- **CS109**: Completed, Grade A
+- **CS161**: Completed, Grade B+
+- **CS107**: Completed, Grade A-
+- **CS111**: Completed, Grade B+
+
+#### Significant Implementation Requirement:
+- **CS194 Software Project Experience** can be counted if need (Grade A-).
+
+#### Breadth Requirement:
+Three courses, each from a different Breadth area:
+1. **Area A - CS 221 Artificial Intelligence: Principles and Techniques**: Grade A-.
+2. **Area B - CS 107 Computer Organization and Systems**: Grade A-.
+3. **Area C - CS 124 From Language to Information**: Grade A-.
+
+#### AI Depth Requirement:
+Courses specific to AI:
+- **CS 221**: Grade A-
+- **CS 124, CS 229, CS 224N, CS 224U, CS 231A, CS 238, CS 234**: Sufficient units and diversity within AI courses.
+
+#### Electives:
+- Likely sufficient based on total of 45 graduate units, analysis needed to verify:
+  - Courses above 100 and relevant (PSYCH 30, ENG fundamentals were undergraduate but counted otherwise).
+
+#### Conclusion:
+Based on transcript evaluation for both degrees, all BS requirements have certainly been satisfied. For MS, all requirements appear to be satisfied provided:
+- Breadth courses cover different Areas (especially cross validate Grade requirement: B+ or better, to ensure courses not repeated).
+- Sufficient elective units after considering foundation unit transfers.
+
+**Output: "BS SAT, MS SAT"**

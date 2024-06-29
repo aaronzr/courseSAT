@@ -1,0 +1,13 @@
+Based on the provided text, the required courses from the Engineering Fundamentals section are explicitly mentioned:
+
+1. CS106B (Programming Abstractions)
+2. ENGR40M or ENGR76 (An Intro to Making: What is EE? -OR- Information Science)
+
+Additionally, considering the notes on relevant electives:
+- There are no explicit elective courses listed under Engineering Fundamentals in the given document as it primarily lists core and elective courses for Mathematics, Science, AI Track, and general CS requirements.
+
+Therefore, the required courses from Engineering Fundamentals are:
+
+```python
+courses = ["CS106B", "ENGR40M", "ENGR76"]
+```

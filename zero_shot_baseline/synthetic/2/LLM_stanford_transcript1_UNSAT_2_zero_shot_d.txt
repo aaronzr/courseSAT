@@ -1,0 +1,365 @@
+LLM_stanford_transcript1_UNSAT_2.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA
+
+Undergraduate Unofficial Transcript  
+Name: Perez, Sophia Marie  
+Student ID: 06874592  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 08/15/2023  
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+Academic Advisor: Brown, Alice C  
+
+--------- Stanford Degrees Awarded ---------  
+Degree: Bachelor of Science  
+Confer Date: 06/08/2024  
+Plan: Computer Science  
+
+--------- Academic Program ---------  
+Program: Computer Science  
+06/21/2020 : Computer Science (BS)  
+Completed Program   
+Coterminal Graduate, 09/01/2023 -   
+Coterminal Undergraduate, 06/21/2020 - 06/08/2024  
+
+--------- Advanced Placement Test Credit ---------  
+Applied Toward Undergraduate Matriculated Program  
+2019-2020 Autumn  
+Advanced Placement Spanish 10.00  
+Advanced Placement History: World 10.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.
+
+--------- Beginning of Academic Record ---------
+  
+2019-2020 Autumn  
+Course Title Attempted Earned Grade   
+MATH 51 LINEAR ALGEBRA AND DIFFERENTIAL CALCULUS 5.00 5.00 C  
+   Steven Thomas  
+CS 106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B-  
+   John Cain  
+ENGLISH 101 INTRODUCTION TO LITERATURE 4.00 4.00 A  
+   Laura Michaels  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 CR  
+   Jessica Fong  
+
+UG Term GPA 2.917 Term Totals 15.00 15.00  
+UG Cum GPA 2.917 Cum Totals 15.00 15.00  
+
+2019-2020 Winter  
+Course Title Attempted Earned Grade  
+CS 103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 D+  
+   Martin Rand  
+PHIL 101 ANCIENT PHILOSOPHY 4.00 4.00 B  
+   Charles Smith  
+MUSIC 171 CHAMBER MUSIC 1.00 0.00 W  
+   Michael Lee  
+PHYSICS 41 MECHANICS 4.00 4.00 B-  
+   Richard Anderson  
+
+UG Term GPA 2.536 Term Totals 14.00 13.00  
+UG Cum GPA 2.727 Cum Totals 29.00 28.00  
+
+2020-2021 Spring  
+Course Title Attempted Earned Grade  
+CS 107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 C+  
+   Kevin White  
+HISTORY 115 MODERN WORLD HISTORY 4.00 4.00 A  
+   Margaret Brown  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A-  
+   Marie Clark  
+PWR 1 WRITING & RHETORIC 4.00 4.00 A-  
+   Nancy Ross  
+
+UG Term GPA 2.929 Term Totals 14.00 14.00  
+UG Cum GPA 2.727 Cum Totals 43.00 42.00  
+
+2020-2021 Autumn  
+Course Title Attempted Earned Grade  
+EE 101A CIRCUITS I 4.00 4.00 B-  
+   John Williams  
+ENGR 40M AN INTRO TO MAKING: WHAT IS EE? 4.00 4.00 B+  
+   Mark Schuster  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   Debra Ng  
+PHYSICS 45 LIGHT AND HEAT 4.00 4.00 B-  
+   Rachel Greene  
+
+UG Term GPA 2.923 Term Totals 13.00 13.00  
+UG Cum GPA 2.725 Cum Totals 56.00 55.00  
+
+2020-2021 Winter  
+Course Title Attempted Earned Grade  
+CS 109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 D  
+   Ellen Cox  
+ART 122 INTRODUCTION TO PAINTING 4.00 4.00 B+  
+   Daniel Nguyen  
+EE 102A SIGNAL PROCESSING AND LINEAR SYSTEMS I 4.00 4.00 A-  
+   Linda White  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   John Park  
+
+UG Term GPA 2.950 Term Totals 14.00 14.00  
+UG Cum GPA 2.747 Cum Totals 70.00 69.00  
+
+2020-2021 Spring  
+Course Title Attempted Earned Grade  
+CS 161 DATA STRUCTURES AND ALGORITHMS 5.00 0.00 F  
+   Sarah Lee  
+ENGLISH 102 SHAKESPEARE 4.00 4.00 A  
+   Thomas Shelby  
+HISTORY 150 U.S. COLONIAL HISTORY 4.00 4.00 B+  
+   Steve Horowitz  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   Christina Lin  
+PHYSICS 46 CLASSICAL MECHANICS LAB 1.00 1.00 S  
+
+UG Term GPA 2.911 Term Totals 14.00 10.00  
+UG Cum GPA 2.723 Cum Totals 84.00 79.00  
+
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA
+
+Undergraduate Unofficial Transcript  
+Name: Perez, Sophia Marie  
+Student ID: 06874592  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+
+2021-2022 Autumn  
+Course Title Attempted Earned Grade  
+CS 110 PRINCIPLES OF COMPUTER SYSTEMS 5.00 5.00 C-  
+   Melinda Woods  
+ANTHRO 101 CULTURAL ANTHROPOLOGY 4.00 4.00 B+  
+   Janet Reed  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   Kelly Zhang  
+PHYSICS 70 FOUNDATIONS OF MODERN PHYSICS 4.00 4.00 A-  
+   Mark Watson  
+
+UG Term GPA 3.067 Term Totals 14.00 14.00  
+UG Cum GPA 2.761 Cum Totals 98.00 93.00  
+
+2021-2022 Winter  
+Course Title Attempted Earned Grade  
+CS 221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 4.00 0.00 F  
+   Allison Campbell  
+BIO 44 Genetics and Society 4.00 4.00 B  
+   Francis Morgan  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   Sarah Kim  
+ENGR 50 INTRO TO MATERIALS SCIENCE 4.00 4.00 A-  
+   Donald Wong  
+
+UG Term GPA 2.688 Term Totals 13.00 9.00  
+UG Cum GPA 2.737 Cum Totals 111.00 102.00  
+
+2021-2022 Spring  
+Course Title Attempted Earned Grade  
+ANTHRO 101 THE AZTECS AND THEIR ANCESTORS 3.00 3.00 B  
+   Roy Olson  
+CS 123 ROBOTICS 4.00 4.00 C  
+   Peter Harris  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A-  
+   Sarah Lee  
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+  
+   Scott Freeman  
+
+UG Term GPA 3.182 Term Totals 13.00 13.00  
+UG Cum GPA 2.780 Cum Totals 124.00 115.00  
+
+2022-2023 Autumn  
+Course Title Attempted Earned Grade  
+CS 111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 C+  
+   Helen Thompson  
+ART 105 MODERN ART HISTORY 4.00 4.00 A  
+   Alice Webber  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A  
+   Charles Liu  
+PHYSICS 45 LIGHT AND HEAT 4.00 4.00 C+  
+   Richard Harris  
+
+UG Term GPA 2.979 Term Totals 14.00 14.00  
+UG Cum GPA 2.795 Cum Totals 138.00 129.00  
+
+2022-2023 Winter  
+Course Title Attempted Earned Grade  
+CS 124 NATURAL LANGUAGE PROCESSING 4.00 4.00 D+  
+   David Goldman  
+HISTORY 200 WORLD WARS 4.00 4.00 B  
+   Michael King  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A-  
+   Monica Li  
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+  
+   William White  
+
+UG Term GPA 2.893 Term Totals 13.00 13.00  
+UG Cum GPA 2.800 Cum Totals 151.00 142.00  
+
+2022-2023 Spring  
+Course Title Attempted Earned Grade  
+CS 224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 4.00 0.00 F  
+   Linda March  
+URBANST 110 INTRO TO URBAN STUDIES 4.00 4.00 A  
+   Daniel Keller  
+HISTORY 151 U.S. CIVIL WAR HISTORY 4.00 4.00 B+  
+   Allison Green  
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 B+  
+   Jason Roberts  
+
+UG Term GPA 2.400 Term Totals 13.00 9.00  
+UG Cum GPA 2.774 Cum Totals 164.00 151.00
+
+Graduate Career Totals  
+Cum GPA 2.774 Cum Totals 164.00 151.00  
+
+Undergraduate Career Totals  
+
+Cum GPA 2.774 Cum Totals 164.00 151.00  
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 151.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 151.00  
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  END OF TRANSCRIPT.
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the requirements for the Bachelor of Science in Computer Science at Stanford University and Sophia Marie Perez's transcript, here's the analysis:
+
+### Core Requirements
+1. **CS 106B Programming Abstractions** - Completed. Grade: B-
+2. **CS 107 Computer Organization and Systems** - Completed. Grade: C+
+3. **CS 111 Operating Systems Principles** - Completed. Grade: C+
+4. **CS 103 Mathematical Foundations of Computing** - Completed. Grade: D+
+5. **CS 109 Introduction to Probability for Computer Scientists** - Completed. Grade: D
+6. **CS 161 Data Structures and Algorithms** - Not completed (F)
+
+### Senior Project Requirement
+- Must complete one of the senior project courses: CS 191, 191W, 194, 194H, 194W, 210B, or 294 - Not attempted
+
+### Mathematics and Science Requirements
+**Mathematics (26 units minimum)**
+1. **MATH 19** - N/A
+2. **MATH 20** - N/A
+3. **MATH 21** - N/A
+4. **CS 103** - Completed. Grade: D+
+5. **CS 109** - Completed. Grade: D
+6. **MATH 51 Linear Algebra and Differential Calculus** - Completed. Grade: C
+7. Elective (see note 2) - Not attempted
+
+**Science (11 units minimum)**
+1. **PHYS 41 Mechanics** - Completed. Grade: B-
+2. **PHYS 43 Electricity and Magnetism** - Completed. Grade: B+
+3. Elective (see note 3) - Need one more elective in science.
+
+### Engineering Fundamentals (10 units minimum)
+1. **CS 106B Programming Abstractions** - Completed. Grade: B-
+2. **ENGR 40M An Intro to Making: What is EE?** - Completed. Grade: B+
+3. **EE 101A Circuits I** - Completed. Grade: B-
+4. **EE 102A Signal Processing and Linear Systems I:** Completed. Grade: A-
+
+### Depth Requirements - Artificial Intelligence Track
+1. **CS 221 Artificial Intelligence: Principles and Techniques** - Not completed (F)
+2. Track Requirement B (2 courses) - Needs completion. **CS 124 (NLP)** was attempted but received D+.
+3. Track Requirement C - Needs completion
+4. Elective (3 courses) - Needs completion
+
+### Technology in Society Requirement
+- Needs completion (Not specified on transcript)
+
+### WiM Requirement
+- Needs fulfillment (referred via Senior Project course or CS 181W/182W)
+
+### Analysis Summary
+Courses not satisfied based on the transcript:
+1. **CS 161** - Data Structures and Algorithms: Not passed
+2. **Senior Project** - Not attempted
+3. **Math Electives** - Two electives needed
+4. **Science Elective** - One more elective needed
+5. **AI Track Requirement** - 
+   - CS 221 (failed)
+   - Track Requirement B: Needs another valid course (two different areas should be covered)
+   - Track Requirement C: Needs one additional course.
+6. **Track Electives** - Three more electives needed.
+7. **Technology in Society Requirement** - Not completed
+8. **WiM Requirement** - Needs fulfillment (via Senior Project or other specified courses).
+
+Given these analyses, the output is:
+```
+CS 161
+Senior Project
+Math Electives
+Science Elective
+CS 221
+Track Requirement B
+Track Requirement C
+Track Electives
+Technology in Society Requirement
+WiM Requirement
+```
+
+If any inaccuracies are found in the detailed checks or specific standards are clarified later, please adjust accordingly.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the transcript provided for Sophia Marie Perez and the MS requirements for the Artificial Intelligence Specialization in the MSCS program at Stanford University, I will evaluate whether all MS requirements are satisfied.
+
+### Breakdown of Requirements:
+
+#### FOUNDATIONS REQUIREMENT
+- **Logic, Automata & Complexity (CS103 or equivalent)**: CS 103 (D+) -  *Not satisfied*
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: CS 109 (D) -  *Not satisfied*
+- **Algorithmic Analysis (CS161)**: CS 161 (F) - *Not satisfied*
+- **Computer Organization and Systems (CS107 or 107E)**: CS 107 (C+) -  *Satisfied*
+- **Principles of Computer Systems (CS110 or CS111)**: CS 110 (C-) and CS 111 (C+) -  *Satisfied*
+
+**Total Units Applied**: Only CS107 and CS110/CS111 courses are used (below the maximum of 10 units). However, several courses have not been passed with satisfactory grades.
+
+#### SIGNIFICANT IMPLEMENTATION REQUIREMENT
+- A course must be taken from the specified list and passed for a letter grade at Stanford. Possible courses are CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, etc.
+- **CS 221 (Artificial Intelligence: Principles and Techniques)**: F - *Not satisfied*
+
+#### BREADTH REQUIREMENT
+- **Area A: Mathematical and Theoretical Foundations**: No course listed. -  *Not satisfied*
+- **Area B: Computer Systems**: No course listed. -  *Not satisfied*
+- **Area C: Applications**: No course listed (CS124 and CS224N attempted but not passed). -  *Not satisfied*
+- **Area D: Computing and Society**: No course listed. -  *Not satisfied*
+
+#### DEPTH REQUIREMENT (Artificial Intelligence Specialization)
+- **CS 221 (or waived)**: CS 221 (F) - *Not satisfied*
+- **At least four from CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**: Courses CS 224N attempted but failed.
+- **Total of at least 21 units from specific categories**: Insufficient courses listed or passed.
+
+#### ADDITIONAL REQUIREMENTS
+- **Electives and additional units to complete 45 units requirement**: Unclear from the transcript whether additional eligible courses have been taken.
+- **At least 36 units must be taken for a letter grade**: It is uncertain due to incomplete graduate entries in the transcript.
+- **Average grade must be at least a B (3.0 GPA)**: Current cumulative GPA is 2.774 - *Not satisfied (assuming the graduate GPA remains consistent).*
+
+### Courses and Requirements Not Satisfied:
+1. **Foundations Requirement**: 
+    - Logic, Automata & Complexity: CS103 - Not satisfied (D+)
+    - Probability: CS109 - Not satisfied (D)
+    - Algorithmic Analysis: CS161 - Not satisfied (F)
+2. **Significant Implementation Requirement**: 
+    - CS 221 (F)
+3. **Breadth Requirement**:
+    - Area A, B, C, D: At least one course per area not satisfied.
+4. **Artificial Intelligence Depth Requirement**:
+    - CS 221 - Not satisfied (F)
+    - Four Depth Courses - Not satisfied (no passing depth courses)
+5. **Grade Point Average (GPA)**:
+    - Minimum GPA of 3.0 not achieved.
+
+### Conclusion:
+Sophia Marie Perez does not satisfy the MS requirements. These are the areas that need to be addressed:
+
+1. Retake and pass courses or their equivalents for:
+    - Logic, Automata & Complexity
+    - Probability
+    - Algorithmic Analysis
+    - CS 221 or advisor approval for equivalent work
+
+2. Fulfill Significant Implementation through eligible courses.
+3. Complete at least one course for each area of Breadth (A, B, C, D).
+4. Fulfill total 21 units in depth and other courses, ensuring they are passed.
+5. Maintain a GPA of at least 3.0.
+
+**MS NOT SAT**

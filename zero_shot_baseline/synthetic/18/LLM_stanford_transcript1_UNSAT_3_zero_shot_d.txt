@@ -1,170 +1,451 @@
-========================GPT Answer to Prompt One Regarding BS Requirements====================
-To determine whether the student, Michael Alan Robson, has satisfied the requirements for a Bachelor of Science (BS) degree in Computer Science (CS) with an AI Track at Stanford, we need to analyze various components of the transcript against the degree requirements, especially focusing on:
+LLM_stanford_transcript1_UNSAT_3.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Robson,Michael Alan
+Student ID : 10725463
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Carter,Elizabeth K
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Arts 
+Confer Date :01/08/2023
+Plan :English  
+--------- Academic Program ---------
+Program :   English
+01/06/2023 :English (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2020 :English (BA)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2021 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      History 10.00
+Advanced Placement      Biology 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 
+2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+ENGLISH  80N INTRODUCTION TO LITERARY 
+STUDIES5.00 5.00 B+
+   Adam Johnson
+POLISCI  101 INTRODUCTION TO POLITICAL 
+SCIENCE5.00 5.00 B
+   Larry Diamond
+HISTORY  53 MODERN EUROPE6.00 6.00 A-
+   James Sheehan
+MUSIC  101 MUSIC HISTORY 1.00 1.00 CR
+   Laura Dahl
+   
+UG Term GPA 3.411 Term Totals 17.00 17.00
+UG Cum GPA 3.411 Cum  Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+PHIL  101 GREEK PHILOSOPHY5.00 5.00 A-
+   Christopher Bobonich
+ECON  1 PRINCIPLES OF ECONOMICS5.00 5.00 B-
+   Roger Noll
+ARTSTUD  130 DRAWING 4.00 4.00 A
+   Enrique Chagoya
+PHYSICS  30 UNDERSTANDING THE UNIVERSE3.00 0.00 W
+   Persis Drell
+   
+UG Term GPA 3.317 Term Totals 17.00 14.00
+UG Cum GPA 3.365 Cum  Totals 34.00 31.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Robson,Michael Alan
+Student ID : 10725463
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS5.00 5.00 C+
+   Ravi Vakil
+CHEM  31A CHEMISTRY FOR 
+ENGINEERS5.00 5.00 B
+   Chaitan Khosla
+CS  106A INTRO TO COMPUTER 
+PROGRAMMING5.00 5.00 B
+   Mehran Sahami
+PHIL  60 SYMBOLIC LOGIC 4.00 4.00 A-
+   Todd Karhu
+   
+UG Term GPA 3.175 Term Totals 19.00 19.00
+UG Cum GPA 3.299 Cum  Totals 53.00 50.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B
+   Keith Schwarz
+ENGLISH  124 SHAKESPEARE: THE EARLY 
+PLAYS4.00 4.00 A-
+   David Riggs
+PSYC 135 ABNORMAL PSYCHOLOGY5.00 5.00 B+
+   Ian Gotlib
+MUSIC  101 MUSIC HISTORY 1.00 1.00 A
+   Laura Dahl
+LINGUIST 105 INTRO TO LINEAR B 
+EQUATIONS 4.00 4.00 A
+   Daniel Jurafsky
+   
+UG Term GPA 3.500 Term Totals 19.00 19.00
+UG Cum GPA 3.337 Cum  Totals 72.00 69.00 
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+ANTHRO  102 ARCHAEOLOGY OF THE 
+AMERICAS3.00 3.00 B+
+   Lisa Maher
+PSYCH  110 ABNORMAL PSYCHOLOGY5.00 5.00 B+
+   James Gross
+ENGLISH  49 HISTORY OF 
+WESTERN LIT4.00 4.00 B
+   Gavin Jones
+CS  107E COMPUTER SYSTEMS5.00 5.00 B+
+   Jerry Cain
+   
+UG Term GPA 3.417 Term Totals 17.00 17.00
+UG Cum GPA 3.321 Cum  Totals 89.00 86.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+ARTSTUD  212 DRAWING II 3.00 3.00 A
+   Enrique Chagoya
+CS   149 INTRO TO AI5.00 5.00 C-
+   Percy Liang
+ENGLISH  180H LITERARY THEORY4.00 4.00 A
+  Jeffrey Knapp
+PHYSICS  43E SOCIAL PSYCH AND RELATIONS4.00 4.00 B+
+   Jennifer Gorham
+   
+UG Term GPA 3.175 Term Totals 16.00 16.00
+UG Cum GPA 3.290 Cum  Totals 105.00 102.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+HISTORY  72 SOVIET AND POST-SOVI10.00 4.00 A-
+   Steven Zipperstein
+EE  102B SIGNAL PROCESSING 
+AND LINEAR SYSTEMS II5.00 4.50 B
+   Jun Ye
+MATH  51 LINEAR ALGEBRA AND 
+PARTIAL DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS 5.00 4.00 B+
+   Ramesh Johari
+   
+UG Term GPA 3.375 Term Totals 19.00 14.50
+UG Cum GPA 3.309 Cum  Totals 124.00 116.50
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+ENGLISH  151 THE LYRIC ESSAY: 
+CREATORS AND CRIT 4.00 4.00 A
+  Sarah Chrisman
+CS  109 INTRO TO 
+PROBABILITY5.00 4.00 B
+  Jerry Cain
+CHEM  31X CHEMISTRY5.00 5.00 C
+  Carolyn Bertozzi
+HUMBIO 167 THE SEXUAL SELF1.00 1.00 S
+  William Anderegg
+   
+UG Term GPA 3.278 Term Totals 15.00 14.00
+UG Cum GPA 3.310 Cum  Totals 139.00 130.50
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+ENGLISH  127 AMERICAN FICTION 
+AND FILMS5.00 5.00 B
+  Marjorie Perloff
+POLISCI  236A THE ETHICS OF 
+WHISTLEBLOWING3.00 3.00 A
+  Debra Satz
+PHYSICS  45G QUIESCED-MATTER 
+SYSTEMS3.00 3.00 CR
+  Mao Wang
+TAPS 135 INTRO TO DIRECTING3.00 3.00 B
+  Michael Rau
+HISTORY OF 102A MODERN 
+RUSSIAN HISTORY4.00 3.00 B+
+  Jack Rakove
+   
+UG Term GPA 3.192 Term Totals 19.00 17.00
+UG Cum GPA 3.285 Cum  Totals 158.00 147.50
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+ENGLISH  185 TRADITION AND 
+INNOVATION IN 
+AMERICAN POETRY4.00 4.00 A
+  Elizabeth Tallent
+PHIL  4A LOGIC AND 
+PHILOSOPHICAL ISSUES3.00 3.00 B
+  Richard Rorty
+MUSIC  131X ORCHESTRAS4.00 4.00 A-
+  Geoffrey Jones
+PSYCH 141 PSYCHOLOGICAL 
+SCIENCES5.00 2.00 S
+  Patricia Burchat
+   
+UG Term GPA 3.427 Term Totals 16.00 13.00
+UG Cum GPA 3.296 Cum  Totals 174.00 160.50
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  181 AI: ETHICS AND RISKS3.00 0.00 W
+  David Magnus
+CHEM  33 INORGANIC 
+CHEMISTRY 5.00 0.00 W
+  Christopher Chidsey
+ENGLISH  133C AMERICAN 
+LITERATURE AND 
+SOCIETY5.00 5.00 A
+  Stephen Orgel
+PHIL  5C ETHICAL THEORY 5.00 5.00 C-
+  Robert Audi
+MUSIC  102M AMERICAN MUSIC 
+HISTORY2.00 1.00 F
+  John Chowning
+   
+UG Term GPA 1.500 Term Totals 20.00 11.00
+UG Cum GPA 3.190 Cum  Totals 194.00 171.50
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+UAR  56C INTRODUCTION TO 
+GENETICS2.00 0.00 NP
+  Mary Yelick
+EE  292J IMMERSIVE AUDIO 
+TECHNOLOGIES4.00 4.00 C
+  Karl Brant
+LINGUISTIC 99 LANGUAGE 
+AND LOGIC3.00 3.00 B
+  Beth Levin
+HISTORY 101B THE WESTERN 
+TRADITION5.00 5.00 B
+  Paul Robinson
+CS  170 SOFTWARE DESIGN5.00 5.00 A
+  Christos Papadimitriou
+   
+UG Term GPA 3.033 Term Totals 19.00 17.00
+UG Cum GPA 3.186 Cum  Totals 213.00 188.50
+GR Term GPA 0.000 Term Totals 1.00 1.00
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+PE  140 RACQUETBALL 1.00 1.00 S
+  James Blake
+WELLNESS  205 MENTAL WELL-
+BEING2.00 2.00 S
+  Flora May Annahl
+CS  220 ALGORITHM DESIGN4.00 4.00 A
+  Alok Aggarwal
+CS  311 DEEP LEARNING4.00 4.00 B
+  Fei-Fei Li
+ENGLISH  195 STUDIES IN 
+CONTEMPORARY LIT3.00 3.00 A-
+  Mark McGurl
+   
+UG Term GPA 3.250 Term Totals 14.00 14.00
+UG Cum GPA 3.200 Cum  Totals 227.00 202.50
+GR Term GPA 3.333 Term Totals 9.00 9.00
+GR Cum GPA 3.333 Cum  Totals 10.00 10.00  
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  326 COMPUTATIONAL 
+LINGUISTICS4.00 4.00 B+
+  Sebastian Thrun
+ENGLISH  299D DISSERTATION RE-
+SEARCH1.00 1.00 B
+  Deidre Lynch
+MUSIC  177 ADVANCED MUSIC 
+COMPOSITION3.00 3.00 A
+  John Adams
+   
+GR Term GPA 3.333 Term Totals 8.00 8.00
+GR Cum GPA 3.333 Cum  Totals 18.00 18.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  341 MACHINE LEARNING4.00 4.00 A
+  Andrew Ng
+ART  112 MODERN ART AND 
+TECHNOLOGY5.00 5.00 B+
+  Pamela Lee
+PHIL  112 NEURAL SYSTEMS4.00 4.00 C-
+  Joshua Greene
+   
+GR Term GPA 3.500 Term Totals 13.00 13.00
+GR Cum GPA 3.389 Cum  Totals 31.00 31.00
 
-1. Core Requirements
-2. Senior Project Requirements
-3. AI Elective Requirements
-4. Mathematics and Science Requirements
-5. General GPA requirements
-6. Track and Depth Requirements
+Graduate Career Totals
+Cum GPA 3.389 Cum Totals 31.00 31.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.200 Cum Totals 227.00 202.50
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 247.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 202.50
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the provided Stanford University Bachelor's of Science in Computer Science degree requirements and Michael Alan Robson's transcript, a detailed analysis is as follows:
 
-### Core Requirements:
-- **CS 106B Programming Abstractions**: Completed (Grade B)
-- **CS 107 or 107E Computer Organization and Systems**: Completed (CS 107E, Grade B+)
-- **CS 109 Introduction to Probability for Computer Scientists**: Completed (Grade B)
-- **CS 103 Mathematical Foundations of Computing**: Not taken
-- **CS 111 Operating Systems Principles**: Not taken
-- **CS 161 Design and Analysis of Algorithms**: Not taken
+### Core Requirements
+1. **CS106B – Programming Abstractions**
+   - Completed: Yes (Grade B)
 
-### Senior Project Requirements (One required):
-- **CS 194**, **CS 194W**, **CS 210B**, **CS 191**, **CS 191W**, **CS 294**, **CS 194H**: Not taken
+2. **CS107 – Computer Organization and Systems**
+   - Completed: Yes (Grade B+ in CS107E)
 
-### AI Elective Requirements:
-- **CS 221 AI: Principles and Techniques**: Not taken
-- **Track Requirement B** (Two courses from different areas):
-  - One course from AI Methods, NLP, Vision, or Robotics: **CS 149 Intro to AI** (Completed, Grade C-)
-  - Another course from a different area of B: Not taken
-- **Track Requirement C** (One additional course from Track Requirement B list, C list, etc.):
-  - **CS 170 Software Design**: Completed, Grade A (but not necessarily part of Track Requirement B or C list approved)
+3. **CS111 – Operating Systems Principles**
+   - Not seen on the transcript.
 
-### Mathematics and Science Requirements:
-- **MATH 19/20/21**: Not taken (No indication based on transcript)
-- **MATH 51 / CME 100**: Completed (MATH 51, Grade B+)
-- **MATH 103 or equivalent**: Not taken
-- **PHYS 41 Mechanics**: Not taken
-- **PHYS 43 Electricity and Magnetism**: Not taken
-- One elective (Science units): Chemistry courses taken but no specifics mentioned regarding fulfilling this requirement.
+4. **CS161 – Design and Analysis of Algorithms**
+   - Not seen on the transcript.
 
-### Additional Requirements:
-- Technology in Society Requirement: No specific course mentioned on the transcript.
-- Engineering Fundamentals: **ENGR 40M or ENGR 76** or equivalent: Not fulfilled.
-- Minimum GPA of 2.0 in ENGR Fundamentals and CS Core, Depth, and Senior Project combined: Need specific courses to calculate.
+5. **CS103 – Mathematical Foundations of Computing**
+   - Not seen on the transcript.
 
-### GPA:
-- **Overall Undergraduate GPA**: 3.200
-- **Completed Units toward Undergraduate Degree**: 247.00
-- **Stanford Total Undergraduate Units**: 202.50
+6. **CS109 – Introduction to Probability for Computer Scientists**
+   - Completed: Yes (Grade B)
 
-### Summary:
-Based on the information given in the transcript, here are the requirements that have not been satisfied:
+### Senior Project Requirements
+1. **CS 191, 191W, 194, 194H, 194W, 210B, or 294**
+   - Not seen on transcript.
 
-1. **CS 103 Mathematical Foundations of Computing**: Not taken.
-2. **CS 111 Operating Systems Principles**: Not taken.
-3. **CS 161 Design and Analysis of Algorithms**: Not taken.
-4. **Senior Project Course**: Not taken.
-5. **CS 221 AI: Principles and Techniques**: Not taken.
-6. **Additional Track Requirement B Course**: Not taken.
-7. **Physics Requirements** (PHYS 41 & PHYS 43): Not taken.
-8. **Engineering Fundamentals** (e.g., ENGR 40M): Not fulfilled.
-9. **Technology in Society Requirement**: Not fulfilled.
-10. **Math and Science Electives**: Insufficient evidence of completion.
+### Additional AI Track Core, Depth, and Electives 
+1. **CS221 – AI: Principles and Techniques (Track Requirement A)**
+   - Not seen on the transcript.
 
-### Conclusion:
-The student has not satisfied the BS requirements. Hence, the output will list the courses not satisfied:
+2. **One Course from Track Requirement B (AI Methods, NLP, Vision, Robotics)**
+   - Various options not seen in the transcript.
 
-```plaintext
-Courses not satisfied:
-1. CS 103 Mathematical Foundations of Computing
-2. CS 111 Operating Systems Principles
-3. CS 161 Design and Analysis of Algorithms
-4. Senior Project Course (e.g., CS 194, CS 194W, CS 210B, CS 191, CS 191W, CS 294, CS 194H)
-5. CS 221 AI: Principles and Techniques
-6. Additional Track Requirement B Course
-7. PHYS 41 Mechanics
-8. PHYS 43 Electricity and Magnetism
-9. Engineering Fundamentals (e.g., ENGR 40M or equivalent)
-10. Technology in Society Requirement
-11. Math and Science Electives (Check if corresponding electives fully satisfy requirements)
+3. **One Additional Course from Track Requirement B or Other Options (Track Requirement C)**
+   - Various options not seen in the transcript.
+
+4. **Three Additional Track Electives**
+   - CS326 – Computational Linguistics completed (Grade B+)
+   - CS341 – Machine Learning completed (Grade A)
+   - Needs one more elective from the provided lists.
+
+### Math and Science Requirements
+1. **Mathematics (26 units minimum)**
+   - MATH52 (5 units, Grade C+)
+   - MATH51 (4 units, Grade B+)
+   - CS109 (as Math elective completed)
+   - Needs more math units to satisfy the 26 units requirement
+
+2. **Science (11 units minimum)**
+   - PHYS43 (4 units)
+   - Needs more science units to satisfy the 11 unit requirement.
+
+### Engineering Fundamentals Requirements
+1. **ENGR Fundamentals (10 units minimum)**
+   - CS106B probably already counted (5 units)
+   - EE102B (4.5 units)
+   - ENGR requirements are met.
+
+### Areas Not Satisfied
+1. **CS111 – Operating Systems Principles**
+2. **CS161 – Design and Analysis of Algorithms**
+3. **CS103 – Mathematical Foundations of Computing**
+4. **Senior Project with CS191, 194, or 210B**
+5. **CS221 – AI: Principles and Techniques**
+6. **Track Requirement B and C courses**
+7. **Additional Math Courses to meet 26 units requirement**
+8. **Additional Science Courses to meet 11 units requirement**
+
+Given the information, the output should be:
+
+```
+The following courses are not satisfied:
+- CS111: Operating Systems Principles
+- CS161: Design and Analysis of Algorithms
+- CS103: Mathematical Foundations of Computing
+- CS221: AI: Principles and Techniques
+- A few Track Requirement B and C courses
+- Additional Math units to meet 26 units minimum
+- Additional Science units to meet 11 units minimum
+- Senior Project with CS191, 194, or 210B
 ```========================GPT Answer to Prompt Two Regarding MS Requirements====================
-Based on the given transcript and the MS requirements, let's evaluate each specific requirement:
+To determine whether the student Michael Alan Robson meets the MS in Computer Science (Artificial Intelligence Specialization) degree requirements, we'll analyze each aspect of his transcript against the stated MS requirements.
 
-### Foundations Requirement:
-- **CS 103 (Logic, Automata & Complexity)**: No equivalent found in the transcript.
-- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: **CS 109 INTRO TO PROBABILITY (B)**
-- **Algorithmic Analysis (CS161)**: No equivalent found in the transcript.
-- **Computer Organ & Sys (CS107 or 107E)**: **CS 107E COMPUTER SYSTEMS (B+)**
-- **Principles of Computer Systems (CS110 or CS111)**: No equivalent found in the transcript.
+### FOUNDATIONS REQUIREMENT:
+1. **Logic, Automata & Complexity (CS103)**
+   - No course equivalent is mentioned in the transcript.
+2. **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**
+   - CS 109 Intro to Probability: Grade B (satisfied).
+3. **Algorithmic Analysis (CS161)**
+   - No course equivalent is mentioned in the transcript.
+4. **Computer Organization & Systems (CS107 or 107E)**
+   - CS 107E Computer Systems: Grade B+ (satisfied).
+5. **Principles of Computer Systems (CS110 or CS111)**
+   - No course equivalent is mentioned in the transcript.
 
-*Total Units used to satisfy the Foundations Requirement*: Only CS 109 and CS 107E are satisfied.
+**Total Units Used to Satisfy Foundations Requirement:** At most 10 units.
 
-### Significant Implementation Requirement:
-Courses that may satisfy this requirement include:
-- CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+**Conclusion:** The student has satisfied only 2 out of 5 foundation courses. Hence, courses CS103, CS161, and CS110/CS111 are missing.
 
-Relevant courses found:
-- **CS 341 MACHINE LEARNING (A)**
+### SIGNIFICANT IMPLEMENTATION REQUIREMENT:
+- Courses that may be used to satisfy this requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+- **CS 341 Machine Learning**: Grade A (satisfied).
 
-### Breadth Requirement:
-Three courses, each from a different area (A, B, C, or D), with each taken for at least 3 units and for a letter grade:
+### BREADTH REQUIREMENT:
+- **Area A: Mathematical and Theoretical Foundations**
+  - No course from this category is mentioned in the transcript.
+- **Area B: Computer Systems**
+  - No course from this category is mentioned in the transcript.
+- **Area C: Applications**
+  - No course from this category is mentioned in the transcript.
+- **Area D: Computing and Society**
+  - CS 181 AI: Ethics and Risks: Grade 'W' (Withdrawn, not satisfied).
 
-- **Area A**: No courses found.
-- **Area B**: **CS 107E COMPUTER SYSTEMS (B+)**
-- **Area C**: **CS 149 INTRO TO AI (C-)** (This grade is below B, not satisfying the requirement)
-- **Area D**: **CS 181 AI: ETHICS AND RISKS** (Withdrawn, not satisfying the requirement)
+**Conclusion:** The student has not satisfied the breadth requirements as there are no completed courses from Areas A, B, and C.
 
-### Artificial Intelligence Depth:
-- **CS 221**: Not found.
-- At least four from: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238:
-    - **CS 311 DEEP LEARNING (B)**
-    - **CS 341 MACHINE LEARNING (A)**
-- Total of at least 21 units from categories (a), (b), and following other courses:
-    - **CS 220 ALGORITHM DESIGN (A)**
-    - **CS 326 COMPUTATIONAL LINGUISTICS (B+)**
+### ARTIFICIAL INTELLIGENCE DEPTH:
+- **a) CS 221**: Not mentioned in the transcript.
+- **b) Need at least four courses from the stipulated list**:
+  - Courses offered are CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238. 
+  - CS 231N: Not mentioned in the transcript.
+  - Only `CS 341 Machine Learning` from the list is satisfied.
 
-*Total Depth Units*: 4 (CS 220) + 4 (CS 311) + 4 (CS 326) + 4 (CS 341) = 16 units.
+### ELECTIVES:
+Additional courses are required to reach the 45-unit requirement, considering units taken for breadth and depth.
 
-### Additional Unit Requirements:
-- **Total Graduate Units**: Needs at least 45 units (graduate level). Currently:
-    - Graduate Cum Totals: 31.00 units
+### GPA REQUIREMENT:
+- **Minimum GPA of 3.0 is required for the MS program:**
+  - Graduate Career GPA: 3.389 (satisfied).
 
-### Satisfied and Not Satisfied Requirements Summary:
+### SUMMARY OF REQUIREMENTS NOT SATISFIED:
+1. **Foundations Requirement:**
+   - CS103 (Logic, Automata & Complexity).
+   - CS161 (Algorithmic Analysis).
+   - CS110/CS111 (Principles of Computer Systems).
 
-**Satisfied**:
-- Significant Implementation Requirement: **CS 341 MACHINE LEARNING (A)**
-- Depth courses: **CS 220 (A), CS 311 (B), CS 326 (B+), CS 341 (A)** (16 units)
+2. **Breadth Requirement:**
+   - Area A course.
+   - Area B course.
+   - Area C course.
+   - Completion of any Area D course (CS 181 was withdrawn).
 
-**Not Satisfied**:
-1. **Foundations Requirement**:
-   - **Logic, Automata & Complexity (CS 103)**
-   - **Algorithmic Analysis (CS 161)**
-   - **Principles of Computer Systems (CS110 or CS111)**
+3. **Artificial Intelligence Depth:**
+   - CS 221 course.
+   - At least three additional courses from the stipulated AI depth list apart from CS 341.
 
-2. **Breadth Requirement**:
-   - Area A (No course found)
-   - Area C (CS 149 grade too low)
-   - Area D (CS 181 withdrawn)
+### FINAL OUTPUT:
+The courses not satisfied based on the student's transcript are:
+- Foundations: CS103, CS161, CS110/CS111.
+- Breadth: Area A, Area B, Area C, completion of Area D.
+- AI Depth: CS 221, at least three more courses from the required depth list.
 
-3. **AI Depth**:
-   - Total of at least 21 units; currently only 16 satisfied.
-   - **CS 221 (required)**
-
-4. **Total Graduate Units**:
-   - Only 31 units out of required 45.
-
-Therefore, Robson, Michael Alan does **not** satisfy the MSCS requirements. 
-
-### Missing Courses:
-- **CS 103 (Logic, Automata & Complexity)**
-- **CS 161 (Algorithmic Analysis)**
-- **CS 110 or CS 111 (Principles of Computer Systems)**
-- **One more course for Area A Breadth**
-- **Higher grade course for Area C Breadth**
-- **One more course for Area D Breadth**
-- **CS 221** (depth requirement)
-- **Extra units to meet the 21 units requirement for Depth**
-- **Extra units to meet the 45 total graduate units requirement**
-
-### Output:
+Therefore:
 ```
-MS NOT SAT
-Missing courses/requirements:
-- CS 103 (Logic, Automata & Complexity)
-- CS 161 (Algorithmic Analysis)
-- CS 110 or CS 111 (Principles of Computer Systems)
-- One more course for Area A Breadth
-- Higher grade course for Area C Breadth
-- One more course for Area D Breadth
-- CS 221
-- Extra units to meet the 21 units requirement for Depth
-- Extra units to meet the 45 total graduate units requirement
+Foundations: CS103, CS161, CS110/CS111
+Breadth: Area A, Area B, Area C, Area D
+AI Depth: CS 221, three more courses from the provided list
 ```
+
+**Conclusion:** MS requirements are **not satisfied**.

@@ -1,40 +1,331 @@
-========================GPT Answer to Prompt One Regarding BS Requirements====================
-Sure, in order to provide the correct analysis, I'll need to review the contents of the student's transcript file.
+LLM_stanford_transcript1_UNSAT.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Jane, Doe 
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/02/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Clark, Michael 
 
-Please copy and paste the relevant details of the student's transcript here. This will include the courses they have taken, their grades, and any other coursework information that would be important to determine if the BS requirements are satisfied.========================GPT Answer to Prompt Two Regarding MS Requirements====================
-To determine if the given student's transcript satisfies the MSCS degree requirements for the Artificial Intelligence Specialization, I need the contents of the student's transcript. However, it appears that I only have the path to the file and not the actual contents. 
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2021 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/15/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/05/2023 -
+Coterminal Undergraduate, 01/06/2021 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Spanish 8.00
+Advanced Placement      Mathematics: Calculus AB 8.00
+Total Quarter Units Posted: 16.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  19 CALCULUS 3.00 3.00 B+
+   Robert Sinclair
+ENGLISH   101 INTRO TO LITERATURE 4.00 4.00 A
+BIO   42 GENETIC BIOLOGY 4.00 4.00 A-
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Felix Rey 
+   
+UG Term GPA 3.571 Term Totals 12.00 12.00
+UG Cum GPA 3.571 Cum  Totals 12.00 12.00
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+MATH  20 CALCULUS 3 3.00 3.00 B
+   Jason Taylor
+CS  106B PROGRAMMING 
+ABSTRACTIONS6.00 6.00 C+
+   Mehran Sahami
+PHYSICS  22 THERMODYNAMICS 4.00 4.00 B+
+   
+UG Term GPA 2.917 Term Totals 13.00 13.00
+UG Cum GPA 3.238 Cum  Totals 25.00 25.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Jane, Doe
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+STAT	116 PROBABILITY AND STATISTICS 4.00 4.00 B
+	Paul Allison
+CS	107 COMPUTER ORGANIZATION AND SYSTEMS 4.00 4.00 B
+	Eric Sorooshian
+CS	124 NATURAL LANGUAGE PROCESSING 5.00 5.00 C+
+	Chris Manning
+   
+UG Term GPA 2.917 Term Totals 13.00 13.00
+UG Cum GPA 3.169 Cum  Totals 38.00 38.00
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+HISTORY  101 EUROPEAN HISTORY 4.00 4.00 A-
+   James Casey
+CS	161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 C
+   Tim Roughgarden
+CS	224N NATURAL LANGUAGE PROCESSING 4.00 4.00 C
+   Dan Jurafsky
+   
+UG Term GPA 2.917 Term Totals 12.00 12.00
+UG Cum GPA 3.065 Cum  Totals 50.00 50.00
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRO TO PROBABILITY FOR CS 5.00 5.00 C
+   John Duchi
+PHIL	151 METAPHYSICS 4.00 4.00 B+
+   Lanier Anderson
+CS	144 INTRO TO COMPUTER NETWORKING 4.00 4.00 B+
+   
+UG Term GPA 2.963 Term Totals 13.00 13.00
+UG Cum GPA 3.055 Cum  Totals 63.00 63.00
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS	111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 C
+   David Cheriton
+BIO	82 MOLECULAR BIOLOGY 4.00 4.00 B+
+ENGR 50 INTRO TO MATERIALS SCIENCE 5.00 5.00 B+
+   
+UG Term GPA 2.906 Term Totals 14.00 14.00
+UG Cum GPA 3.032 Cum  Totals 77.00 77.00
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS	225A ROBOTICS 4.00 4.00 B+
+Dan Koditschek
 
-To proceed, I typically need to read the contents of the file specified, but I don't have access to your filesystem. If you can provide the contents of the student's transcript either by copying it here or describing the course details (course numbers, titles, grades, and units), I can analyze it against the MSCS requirements.
+EE	261 IMAGE PROCESSING 4.00 4.00 C
+Trevor Darrell
 
-Here’s a summary of what to check within the transcript:
+BIO	130 CELL BIOLOGY 4.00 4.00 B+ 
+Amy Berg
 
-1. **Foundations Requirement**:
-   - Logic, Automata & Complexity (CS103)
-   - Probability (CS109, Stat116, CME106, MS&E220, or EE178)
-   - Algorithmic Analysis (CS161)
-   - Computer Organization & Systems (CS107 or 107E)
-   - Principles of Computer Systems (CS110 or CS111)
-   - Total units from foundations should not exceed 10.
+MUSIC   12 BEGINNING PIANO 1.00 1.00 CR
+   John Roland
+   
+UG Term GPA 2.823 Term Totals 13.00 13.00
+UG Cum GPA 2.927 Cum  Totals 90.00 90.00
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CHEM   31A CHEMICAL PRINCIPLES 4.00 4.00 B-
+BIO	151 OCEANOGRAPHY 3.00 3.00 B
+CS	231A COMPUTER VISION 4.00 4.00 C+
+Andrew Ng
+   
+UG Term GPA 2.869 Term Totals 11.00 11.00
+UG Cum GPA 2.902 Cum  Totals 101.00 101.00
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS	131 INTRO TO RISK ANALYSIS 4.00 4.00 C+
+CS	271 ARTIFICIAL INTELLIGENCE 4.00 4.00 C 
+CS	234 REINFORCEMENT LEARNING 4.00 4.00 C-
+Andrew Ng
+   
+UG Term GPA 2.438 Term Totals 12.00 12.00
+UG Cum GPA 2.843 Cum  Totals 113.00 113.00
+2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS	210B SOFTWARE ENGINEERING 4.00 4.00 B+
+CS	348 LARGE-SCALE LEARNING 4.00 4.00 B
+LING	280 COMPUTATIONAL LINGUISTICS 4.00 4.00 B+
+   
+UG Term GPA 3.167 Term Totals 12.00 12.00
+UG Cum GPA 2.901 Cum  Totals 125.00 125.00
+GR Term GPA 3.167 Term Totals 12.00 12.00
+GR Cum GPA 3.167 Cum  Totals 12.00 12.00
+2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS 140 OPERATING SYSTEMS 4.00 4.00 B+
+MATH	220 CONTINUOUS DISCRETE MATH 4.00 4.00 B
+PHYS 150 ATOMIC STRUCTURE 4.00 4.00 B+
+   
+GR Term GPA 3.500 Term Totals 12.00 12.00
+GR Cum GPA 3.333 Cum Totals 24.00 24.00
+2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS	348K DEEP LEARNING THEORY 4.00 4.00 B
+STATS 240 STATISTICAL INFERENCE 4.00 4.00 C+
+EE	275 MACHINE LEARNING 4.00 4.00 B-
+   
+GR Term GPA 2.833 Term Totals 12.00 12.00
+GR Cum GPA 3.197 Cum Totals 36.00 36.00
+ 
+Graduate Career Totals
+Cum GPA 3.197 Cum Totals 36.00 36.00
+Undergraduate Career Totals
+ 
+Cum GPA 2.901 Cum Totals 125.00 125.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 125.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 125.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the student's transcript and the provided Bachelor in Science (BS) degree requirements from Stanford University, we need to assess the fulfillment of the core requirements, the senior project requirements, and the Artificial Intelligence (AI) track requirements. Let's evaluate each category step by step.
 
-2. **Significant Implementation Requirement**:
-   - One course that is designated as fulfilling the Significant Implementation Requirement (listed courses: CS 140, 140E, 143, 144, 145, 148, etc.).
+### 1. Core Requirements:
+- **CS103: Mathematical Foundations of Computing** - Not listed on the transcript.
+- **CS106B: Programming Abstractions** - Taken in Winter 2020-2021, Grade: C+
+- **CS107: Computer Organization and Systems** - Taken in Spring 2020-2021, Grade: B
+- **CS109: Introduction to Probability for CS** - Taken in Winter 2021-2022, Grade: C
+- **CS111: Operating Systems Principles** - Taken in Spring 2021-2022, Grade: C
+- **CS161: Design and Analysis of Algorithms** - Taken in Autumn 2021-2022, Grade: C
 
-3. **Breadth Requirement**:
-   - Three courses, one from each Breadth area (A, B, C, or D), each for at least 3 units and for a letter grade.
+### 2. Senior Project Requirements:
+- **CS210B: Software Engineering** - Taken in Autumn 2023-2024, Grade: B+
 
-4. **Artificial Intelligence Depth Requirement**:
-   - CS 221 must be taken, or an equivalent waiver approved by adviser.
-   - At least four of specified AI-related courses.
-   - A total of at least 21 units in designated depth courses, taken for letter grades.
+### 3. AI Elective Requirements:
+- **Mathematics Requirement (26 units minimum):**
+  - **MATH 19, 20, 21 (Calculus Series)** - Taken, 3 units each with grades: B+, B from the transcript.
+  - **CS103 Mathematical Foundations of Computing** - Missing, not on the transcript.
+  - **CS109 Introduction to Probability for CS** - Taken, Grade: C
 
-5. **Electives**:
-   - Any additional courses to meet the total 45-unit requirement for the MSCS degree.
+  **Additional Math Electives (Two required):**
+  - **STAT116 Probability and Statistics** - Taken, Grade: B
+  - **MATH220 Continuous Discrete Math** - Taken, Grade: B
 
-6. **Additional Requirements**:
-   - All courses must be numbered 100 or greater.
-   - At most 10 units of Foundations requirements count toward the 45 units.
-   - At least 36 units must be for a letter grade.
-   - At least 45 graduate units at Stanford must be completed.
-   - The average GPA of submitted courses must be at least 3.0 (B).
+- **Science Requirement (11 units minimum):**
+  - **PHYS41 Mechanics** - Not listed on the transcript (Substitute courses or approval needed if taken otherwise)
+  - **PHYS43 Electricity and Magnetism** - Not listed on the transcript (Substitute courses or approval needed if taken otherwise)
 
-Please provide the transcript details so I can help determine whether the requirements are satisfied.
+  **Additional Science Electives (One required):**
+  - **BIO42 Genetic Biology** - Taken, Grade: A-
+  - **BIO82 Molecular Biology** - Taken, Grade: B+
+  - **BIO151 Oceanography** - Taken, Grade: B
+  - **PHYS150 Atomic Structure** - Taken, Grade: B+
+
+- **Technology in Society Requirement:** (1 course required from the approved list, not specifically listed in the transcript)
+
+- **Engineering Fundamentals (10 units minimum):**
+  - **CS106B: Programming Abstractions** - Taken, Grade: C+
+  - **ENGR50 Introduction to Materials Science** - Taken, Grade: B+
+
+- **AI Track Core and Depth Requirements (43 units minimum):**
+  - **CS107: Computer Organization and Systems** - Taken, Grade: B
+  - **CS111: Operating Systems Principles** - Taken, Grade: C
+  - **CS161: Design and Analysis of Algorithms** - Taken, Grade: C
+
+  **AI Track Courses:**
+  - **CS224N: Natural Language Processing** - Taken, Grade: C
+  - **CS225A: Robotics** - Taken, Grade: B+
+  - **CS231A: Computer Vision** - Taken, Grade: C+
+  - **CS234: Reinforcement Learning** - Taken, Grade: C-
+  - **CS271: Artificial Intelligence** - Taken, Grade: C
+
+  **Additional Track Electives:**
+  - **CS124: Natural Language Processing** - Taken, Grade: C+
+  - **CS144: Intro to Computer Networking** - Taken, Grade: B+
+  - **CS348: Large-Scale Learning** - Taken, Grade: B
+  - **EE261: Image Processing** - Taken, Grade: C
+  - **LING280: Computational Linguistics** - Taken, Grade: B+
+  - **CS131: Intro to Risk Analysis** - Taken, Grade: C+
+  - **STAT240: Statistical Inference** - Taken, Grade: C+
+  - **EE275: Machine Learning** - Taken, Grade: B-
+
+### Summary of Findings:
+1. **Core Requirements**:
+   - Missing CS103: Mathematical Foundations of Computing.
+
+2. **Senior Project Requirement**: 
+   - Fulfilled with CS210B.
+
+3. **Mathematics Requirement** (26 units):
+   - Fulfilled.
+
+4. **Science Requirement** (11 units):
+   - Specific required PHYS courses not listed.
+   - Several science electives listed which may require review if they satisfy the substitution requirement.
+
+5. **Tech in Society Requirement**: 
+   - Missing or not clearly listed in the transcript.
+
+6. **Engineering Fundamentals** (10 units):
+   - Fulfilled.
+
+7. **AI Track Core, Depth, and Electives** (43 units):
+   - Fulfilled, assuming the combined units and no identified missing requisites ($43^{\mu}$).
+
+Given the provided transcript and the described requirements, the student Jane Doe has yet to satisfy the following components:
+
+**Conclusion:**  
+- **Missing Requirements:**
+  - CS103: Mathematical Foundations of Computing.
+  - Technology in Society course.
+  - Possibly specific PHYS courses (41 and 43) unless substitutes were accepted (would need further verification).
+
+Thus, the transcript does not fully meet all the requirements for the BS in Computer Science as per the provided details.
+
+**Output:**
+```
+Missing courses: CS103, Technology in Society course, PHYS41, PHYS43
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the provided transcript and the requirements for the Master in Science (MS) degree in Computer Science with a specialization in Artificial Intelligence, let's analyze each requirement to check if the student meets them.
+
+### Foundations Requirement 
+- **Logic, Automata & Complexity (CS103)**: Not listed in the transcript. 
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: STAT 116 taken with grade B.
+- **Algorithmic Analysis (CS161)**: Taken with grade C.
+- **Computer Organ & Sys (CS107 or 107E)**: CS107 taken with grade B.
+- **Principles of Computer Systems (CS110 or CS111)**: CS111 taken with grade C.
+
+### Significant Implementation Requirement
+- At least one course among the specified courses that is taken for a letter grade. 
+  - **CS210B** Software Engineering taken with grade B+ (acceptable).
+
+### Breadth Requirement
+Breadth courses in three different areas (A, B, C, or D), with each course for at least 3 units and a letter grade:
+- **Area A. Mathematical and Theoretical Foundations**: EE 261 Image Processing taken with grade C (acceptable but could have been better).
+- **Area B. Computer Systems**: CS140 Operating Systems taken with grade B+ (acceptable).
+- **Area C. Applications**: CS231A Computer Vision taken with grade C+ (acceptable).
+
+### Artificial Intelligence Depth Requirement
+A minimum of 21 units from specified courses:
+- **a) CS 221**: Not listed. 
+- **b) Four of CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**: 
+  - CS224N with grade C
+  - CS231A with grade C+
+  - CS234 with grade C-
+  
+- **c) At least 21 units from (a), (b) and the following, taken for at least 3 units**: 
+  - CS210B: 4 units with grade B+
+  - CS225A: 4 units with grade B+
+  - CS348: 4 units with grade B
+  - CS348K: 4 units with grade B
+
+Total units from (a), (b), and (c): 4 (CS224N) + 4 (CS231A) + 4 (CS234) + 4 (CS210B) + 4 (CS225A) + 4 (CS348) + 4 (CS348K) = 28 units
+
+### Electives
+To complete the 45-unit requirement for the MSCS degree, additional electives may be needed, but the transcript does not specify additional CS courses taken at the graduate level beyond the specific courses mentioned.
+
+### Additional Requirements
+- **All courses must be numbered 100 or greater**: Satisfied.
+- **At most 10 units from the Foundations requirement**: Satisfied as foundation courses’ units do not exceed 10.
+- **At least 36 units should be taken for a letter grade**: Satisfied.
+- **Average grade of B (3.0 GPA)**: The graduate GPA is 3.197.
+- **Must complete at least 45 graduate units at Stanford**: The transcript shows 36 graduate units, additional 9 units required.
+
+### Conclusion
+The following requirements are not satisfied:
+1. **Logic, Automata & Complexity (CS103)** from Foundations Requirement.
+2. **CS221** required for AI depth.
+3. **Additional 9 graduate units** to reach 45-unit total requirement for the MSCS.
+
+**Output:**
+```
+Logic, Automata & Complexity (CS103)
+CS221
+Additional 9 graduate units
+```

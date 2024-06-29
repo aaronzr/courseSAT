@@ -1,97 +1,308 @@
-To evaluate the student’s transcript against both the BS and MS degree requirements, we will examine each requirement diligently.
+LLM_stanford_transcript1_SAT_0.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 05/12/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Nguyen,Alan T
 
-### BS Core Requirements
+--------- Stanford Degrees Awarded ---------
 
-1. **Programming Abstractions (CS106B)**
-   - Completed: 2019-2020 Winter, Grade: A-
+Degree :Bachelor of Science 
+Confer Date :06/11/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+09/21/2020 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/23/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 09/01/2023 - 
+Coterminal Undergraduate, 09/23/2019 - 06/11/2023
 
-2. **Computer Organization and Systems (CS107)**
-   - Completed: 2020-2021 Autumn, Grade: B+
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Mathematics: Calculus BC 10.00
+Advanced Placement      English Language 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  51 LINEAR ALGEBRA AND DIFFERENTIAL CALCULUS5.00 5.00 B+
+   Thomas Church
+CS  106A PROGRAMMING METHODOLOGY5.00 5.00 A-
+   Julie Zelenski
+ENGR   1 INTRODUCTION TO ENGINEERING4.00 4.00 B
+   Chris Gerdes
+HISTORY  52S THE SCIENTIFIC REVOLUTION4.00 4.00 B+
+   Paula Findlen
+MUSIC  133 MUSIC THEORY 2.00 2.00 CR
+   Mark Applebaum
+   
+UG Term GPA 3.450 Term Totals 20.00 20.00
+UG Cum GPA 3.450 Cum  Totals 20.00 20.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS OF SEVERAL VARIABLES5.00 5.00 A
+   Daniel Bump
+CS  106B PROGRAMMING ABSTRACTIONS5.00 5.00 A-
+   Jerry Cain
+PHYSICS   41 MECHANICS 4.00 4.00 B+
+   Robert Byer
+PHIL  1C KNOWLEDGE AND REALITY4.00 4.00 B
+   R. Lanier Anderson
+   
+UG Term GPA 3.757 Term Totals 18.00 18.00
+UG Cum GPA 3.593 Cum  Totals 38.00 38.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+MATH  53 ORDINARY DIFFERENTIAL EQUATIONS WITH LINEAR ALGEBRA5.00 5.00 A-
+   Maryam Mirzakhani
+CS  103 MATHEMATICAL FOUNDATIONS OF COMPUTING5.00 5.00 B+
+   Ryan Williams
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+
+   Marina Radulovic
+PWR    1AR WRITING & RHETORIC 1:  THE RHETORIC OF FAILURE4.00 4.00 B+
+   Paula Moya
+   
+UG Term GPA 3.630 Term Totals 18.00 18.00
+UG Cum GPA 3.579 Cum  Totals 56.00 56.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION AND SYSTEMS5.00 5.00 B+
+   Chris Gregg
+EE  102A SIGNAL PROCESSING AND LINEAR SYSTEMS I4.00 4.00 A
+   Krishna Shenoy
+HUMBIO  2A HUMAN BIOLOGY 4.00 4.00 B
+   Meredith Keys
+   
+UG Term GPA 3.580 Term Totals 13.00 13.00
+UG Cum GPA 3.578 Cum  Totals 69.00 69.00 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS5.00 5.00 A-
+   Mehran Sahami
+EE  101A CIRCUITS I 4.00 4.00 B+
+   Boris Murmann
+ENGR   40M AN INTRODUCTION TO MAKING 3.00 3.00 B
+   Mark Cutkosky
+   
+UG Term GPA 3.633 Term Totals 12.00 12.00
+UG Cum GPA 3.600 Cum  Totals 81.00 81.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS5.00 5.00 B
+   David Mazières
+EE  102B SIGNAL PROCESSING AND LINEAR SYSTEMS II4.00 4.00 B+
+   Stephen Boyd
+HISTORY  92S SCIENCE AND THE MODERN WORLD4.00 4.00 A-
+   John Heilbron
+CS  122 INTRODUCTION TO NATURAL LANGUAGE PROCESSING3.00 3.00 B+
+   Christopher Manning
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Donovan,Emily Rose
+Student ID : 07392456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.469 Term Totals 16.00 16.00
+UG Cum GPA 3.582 Cum  Totals 97.00 97.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS5.00 5.00 A-
+   Tim Roughgarden
+EE  108 DIGITAL SYSTEMS I 4.00 4.00 A
+   Subhasish Mitra
+PHYSICS   60 MODERN PHYSICS 4.00 4.00 B
+   Andrei Linde
+MUSIC  8 MUSIC APPRECIATION2.00 2.00 A-
+   Stephen Sano
+   
+UG Term GPA 3.757 Term Totals 15.00 15.00
+UG Cum GPA 3.607 Cum  Totals 112.00 112.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES4.00 4.00 A-
+   Dan Jurafsky
+CS  223A INTRODUCTION TO ROBOTICS4.00 4.00 B+
+   Oussama Khatib
+CS  234 REINFORCEMENT LEARNING4.00 4.00 B+
+   Emma Brunskill
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Jonathan Berger
+   
+UG Term GPA 3.677 Term Totals 17.00 17.00
+UG Cum GPA 3.622 Cum  Totals 129.00 129.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING3.00 3.00 A
+   Christopher Manning
+CS  239 ADVANCED TOPICS IN AI ETHICS3.00 3.00 B+
+   Michael Bernstein
+ANTHRO  132D TECHNOLOGY AND SOCIETY4.00 4.00 A-
+   Melissa Brown
+CS  191W INDEPENDENT PROJECT WRITING INTENSIVE3.00 3.00 B+
+   Justin Bois
+   
+UG Term GPA 3.667 Term Totals 13.00 13.00
+UG Cum GPA 3.628 Cum  Totals 142.00 142.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  230 DEEP LEARNING FOR COMPUTER VISION4.00 4.00 A-
+   Fei-Fei Li
+PSYCH  209 COGNITIVE SCIENCE4.00 4.00 A
+   Anthony Wagner
+EE  180 DIGITAL SIGNAL PROCESSING4.00 4.00 B
+   Sanjay Lall
+   
+UG Term GPA 3.667 Term Totals 12.00 12.00
+UG Cum GPA 3.639 Cum  Totals 154.00 154.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  276 INFORMATION RETRIEVAL AND WEB SEARCH4.00 4.00 B+
+   Jure Leskovec
+CS  242 PROGRAMMING LANGUAGES4.00 4.00 A-
+   Alex Aiken
+PHIL  151 PHILOSOPHY OF SCIENCE3.00 3.00 A
+   Helen Longino
+   
+UG Term GPA 3.767 Term Totals 11.00 11.00
+UG Cum GPA 3.650 Cum  Totals 165.00 165.00
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS  243 SYSTEMS AND NETWORKS SECURITY4.00 4.00 A
+   Zhiqiang Lin
+CS  327A ADVANCED ROBOTICS4.00 4.00 A-
+   Marco Pavone
+ENGR  248 HACKING FOR DEFENSE4.00 4.00 A
+   Steve Blank
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Jonathan Berger
+   
+UG Term GPA 3.906 Term Totals 13.00 13.00
+UG Cum GPA 3.678 Cum  Totals 178.00 178.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+END OF TRANSCRIPT.
+==========================================**Analysis of Emily Rose Donovan's Transcript**
 
-3. **Principles of Computer Systems (CS111)**
-   - Completed: 2020-2021 Spring, Grade: B
+### BS Degree Requirements
 
-4. **Mathematical Foundations of Computing (CS103)**
-   - Completed: 2019-2020 Spring, Grade: B+
+#### **1. Core Requirements:**
+- CS 103: **Mathematical Foundations of Computing (B+)**
+- CS 106B: **Programming Abstractions (A-)**
+- CS 107: **Computer Organization and Systems (B+)**
+- CS 109: **Introduction to Probability for Computer Scientists (A-)**
+- CS 111: **Principles of Computer Systems (B)**
+- CS 161: **Design and Analysis of Algorithms (A-)**
+  
+These courses are all taken and passed with a sufficient grade.
 
-5. **Introduction to Probability for Computer Scientists (CS109)**
-   - Completed: 2020-2021 Winter, Grade: A-
+#### **2. Senior Project Requirements:**
+- **CS 191W:** Independent Project Writing Intensive (B+)
 
-6. **Design and Analysis of Algorithms (CS161)**
-   - Completed: 2021-2022 Autumn, Grade: A-
+This course satisfies the senior project requirement.
 
-### BS Senior Project Requirements
+#### **3. Mathematics and Science Requirements:**
+- **Mathematics:**
+  - MATH 19/20/21 or equivalent:
+    - MATH 51: (B+)
+    - MATH 52: (A)
+    - MATH 53: (A-)
+  - CS 103: Mathematical Foundations of Computing (already counted above)
+  - CS 109: Introduction to Probability for Computer Scientists (already counted above)
 
-1. **CS191W: Independent Project Writing Intensive**
-   - Completed: 2021-2022 Spring, Grade: B+
+- **Science:**
+  - PHYS 41: **Mechanics (B+)**
+  - PHYS 43: **Electricity and Magnetism (B+)**
+  - Elective: Completed more than the 11 units required. 
 
-### BS AI Track Elective Requirements
+#### **4. Engineering Fundamentals:**
+- **CS 106B**: **Programming Abstractions (A-)** (Already counted above)
+- **ENGR 40M**: **An Introduction to Making (B)**
 
-1. **CS221: Artificial Intelligence: Principles and Techniques**
-   - Completed: 2021-2022 Winter, Grade: A-
+#### **5. Technology in Society Requirement:**
+- **ANTHRO 132D (A-)** satisfies this.
 
-2. **Track Requirement B (Two areas)**
-   - CS223A: Introduction to Robotics (2021-2022 Winter, B+)
-   - CS224N: Natural Language Processing with Deep Learning (2021-2022 Spring, A)
+#### **6. AI Track Core, Depth, and Senior Project Requirements:**
+- Core:
+  - CS 107: **Computer Organization and Systems (B+)** (Already counted above)
+  - CS 111: **Operating Systems Principles (B)** (Already counted above)
+  - CS 161: **Design and Analysis of Algorithms (A-)** (Already counted above)
 
-3. **Track Requirement C**
-   - CS234: Reinforcement Learning (2021-2022 Winter, B+)
+- Depth (43 units min):
+  - CS 221: **AI: Principles and Techniques (A-)**
+  - Track Requirement B:
+    - CS 223A: **Introduction to Robotics (B+)**
+    - CS 234: **Reinforcement Learning (B+)**
+  - Track Requirement C:
+    - CS 224N: **Natural Language Processing with Deep Learning (A)**
+  - Electives:
+    - CS 230: **Deep Learning for Computer Vision (A-)**
+    - CS 239: **Advanced Topics in AI Ethics (B+)**
+    - CS 327A: **Advanced Robotics (A-)**
 
-4. **Three Additional Electives**
-   - CS239: Advanced Topics in AI Ethics (2021-2022 Spring, B+)
-   - CS230: Deep Learning for Computer Vision (2022-2023 Autumn, A-)
-   - CS276: Information Retrieval and Web Search (2022-2023 Winter, B+)
+Senior Project:
+- **CS 191W**: **Independent Project Writing Intensive (B+)** (Already mentioned above)
 
-### Depth Requirements
+All BS requirements have been satisfied.
 
-- 25 units required; confirmed by the courses listed which are more than 25 units. 
+**Output**: **"BS SAT"**
 
-### Technology in Society Requirement
+### MS Degree Requirements
 
-1. **ANTHRO 132D: Technology and Society**
-   - Completed: 2021-2022 Spring, Grade: A-
+#### **1. Foundations Requirement:**
+Courses listed in foundations are already covered during the undergraduate degree.
+- CS 103: Mathematical Foundations of Computing
+- CS 109: Introduction to Probability for Computer Scientists
+- CS 161: Design and Analysis of Algorithms
+- CS 107: Computer Organization and Systems
+- CS 111: Principles of Computer Systems
 
-### Summary for BS Requirements
-“BS SAT” (All Bachelor of Science requirements are satisfied)
+#### **2. Significant Implementation Requirement:**
+- Should have a significant implementation course.
+  - **CS 241:** Programming Languages (A-) satisfies this requirement.
 
-### MS specialization in Artificial Intelligence
+#### **3. Breadth Requirement:**
+Three courses, each from a different area A, B, C, or D:
+- **Area A:** Phil 151 (Philosophy of Science) (A)
+- **Area B:** CS 242 (Programming Languages) (A-)
+- **Area C:** CS 276 (Information Retrieval and Web Search) (B+)
 
-1. **Foundations Requirement**
-   - CS103: Logic, Automata & Complexity (Completed as undergraduate)
-   - CS109: Probability (Completed as undergraduate)
-   - CS161: Algorithmic Analysis (Completed as undergraduate)
-   - CS107E: Computer Organ & Systems (Completed as undergraduate)
-   - CS111: Principles of Computer Systems (Completed as undergraduate)
+#### **4. Artificial Intelligence Depth Requirements:**
+- CS 221 (Already completed during BS)
+- At least four of the following (completed):
+  - CS 223A: **Introduction to Robotics (B+)**
+  - CS 234: **Reinforcement Learning (B+)**
+  - CS 224N: **Natural Language Processing with Deep Learning (A)**
+  - CS 239: **Advanced Topics in AI Ethics (B+)**
+  
+Additional courses for a total of at least 21 units:
+- CS 230: **Deep Learning for Computer Vision (A-)**
+- CS 327A: **Advanced Robotics (A-)**
 
-2. **Significant Implementation Requirement**
-   - CS243: Systems and Networks Security (2022-2023 Spring, A, counts as significant implementation)
+#### **5. Electives:**
+Any additional courses used to complete the 45-unit requirement:
+- **PSYCH 209:** Cognitive Science (A)
+- **EE 180:** Digital Signal Processing (B)
+- **ENGR 248:** Hacking for Defense (A)
+- Total required units are satisfied.
 
-3. **Breadth Requirement**
-   - Area A: 
-     - PHIL 151: Philosophy of Science (Completed, Grade: A, 2022-2023 Winter)
-   - Area B:
-     - CS242: Programming Languages (Completed, Grade: A-, 2022-2023 Winter)
-   - Area C: 
-     - CS224N: Natural Language Processing with Deep Learning (Completed, Grade: A, 2021-2022 Spring)
-
-4. **AI Depth Requirement**
-   - CS221 (Completed, Grade: A-)
-   - CS223A (Completed, Grade: B+)
-   - CS224N (Completed, Grade: A)
-   - CS234 (Completed, Grade: B+)
-   - CS239 (Completed, Grade: B+)
-   - CS230 (Completed, Grade: A-)
-   - CS276 (Completed, Grade: B+)
-   - CS327A: Advanced Robotics (Completed, Grade: A-, 2022-2023 Spring)
-
-5. **Electives**
-   - Total elective units completed (including depth and significant implementation courses): exceeds the required 45 total units for the MSCS program
-
-### Summary for MS Requirements
-“MS SAT” (All Master of Science requirements are satisfied)
-
-Therefore:
-```
-BS SAT
-MS SAT
-```
+**Output**: **"MS SAT"**

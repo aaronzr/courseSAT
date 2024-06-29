@@ -1,100 +1,327 @@
-Let's analyze the given undergraduate transcript of Samantha Mae Fisher against the specific Bachelor of Science (BS) in Computer Science and MS specialization requirements to identify if all degree requirements are satisfied.
+LLM_stanford_transcript1_SAT_9.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA  
+    
+Undergraduate Unofficial Transcript  
+    
+Name : Fisher, Samantha Mae  
+Student ID : 07362854  
+    
+**Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.**
+    
+Print Date: 10/05/2023  
+   
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
 
-### BS Core Requirements Analysis
+Academic Advisor: Hodges, Angela K.   
+    
+--------- Stanford Degrees Awarded ---------   
+    
+Degree : Bachelor of Science   
+Confer Date : 06/15/2023  
+Plan : Computer Science  
+    
+--------- Academic Program ---------  
 
-#### Systems
-- **CS 106B** Programming Abstractions [5 units] - Completed (B+)
-- **CS 107** Computer Organization and Systems [5 units] - Completed (A-)
-- **CS 111** Principles of Computer Systems [5 units] - Completed (B+)
+Program :   Computer Science    
+09/12/2019 : Computer Science (BS)   
+Completed Program   
+   
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2019-2020 Autumn  
+Advanced Placement      Biology 10.00  
+Advanced Placement      Mathematics: Calculus AB 5.00  
+Total Quarter Units Posted: 15.00  
+Allowable Test Credit subject to restrictions.  
 
-#### Theory
-- **CS 103** Mathematical Foundations of Computing [5 units] - Completed (B)
-- **CS 109** Introduction to Probability for Computer Scientists [5 units] - Completed (A)
-- **CS 161** Design and Analysis of Algorithms [5 units] - Completed (B+)
+--------- Beginning of Academic  Record ---------  
+2019-2020 Autumn   
 
-### BS Senior Project Requirement
-- **CS 194** Software Project Experience [3 units] - Completed (A-)
+Course Title Attempted Earned Grade   
+MATH  19 CALCULUS 5.00 5.00 A  
+    Karen Smith  
+CS  106A PROGRAMMING METHODOLOGY 5.00 5.00 A-  
+    Mehran Sahami  
+HISTORY  12N THE AMERICAN WEST 4.00 4.00 B+  
+    David Kennedy  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.710 Term Totals 15.00 15.00  
+UG Cum GPA 3.710 Cum  Totals 15.00 15.00  
 
-### BS Math and Science Requirements
-#### Math Requirements (26 units minimum)
-- **MATH 19** Calculus [5 units] - Completed (A)
-- **MATH 20** Calculus [5 units] - Completed (A-)
-- **MATH 21** Calculus [5 units] - Completed (B+)
-- **CS 103** Mathematical Foundations of Computing [5 units] - Completed (B)
-- **CS 109** Introduction to Probability for Computer Scientists [5 units] - Completed (A)
+2020-2020 Winter   
 
-Total Math Units: 25 units (Exceeded the minimum requirement)
+Course Title Attempted Earned Grade   
+MATH  20 CALCULUS 5.00 5.00 A-  
+    Shari Yarkin  
+PHYSICS  41 MECHANICS 4.00 4.00 A  
+    Patricia Burchat  
+ENGLISH  11A INTRO TO POETRY 4.00 4.00 B+  
+    Elizabeth Tallent  
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W  
+    Krista Tomlinson  
+    
+UG Term GPA 3.746 Term Totals 14.00 13.00  
+UG Cum GPA 3.728 Cum  Totals 29.00 28.00  
 
-#### Science Requirements (11 units minimum)
-- **PHYSICS 41** Mechanics [4 units] - Completed (A)
-- **PHYSICS 43** Electricity and Magnetism [4 units] - Completed (B)
-- **PHYSICS 21** Physics Lab [3 units] - Completed (S)
+2020-2020 Spring   
 
-Total Science Units: 11 units (Met the requirement)
+Course Title Attempted Earned Grade   
+MATH  21 CALCULUS 5.00 5.00 B+  
+    Ralph Cohen  
+PHYSICS  43 ELECTRICITY AND MAGNETISM 4.00 4.00 B  
+    Robert Morris  
+PWR  1 WRITING AS ARGUMENT 4.00 4.00 A-  
+    Shari Melani Cantor  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Krista Tomlinson  
+    
+UG Term GPA 3.583 Term Totals 14.00 14.00  
+UG Cum GPA 3.696 Cum  Totals 43.00 42.00  
 
-#### Technology in Society Requirement
-- The transcript does not explicitly list a course that satisfies this requirement, so requirements may need to be reviewed further to ensure completion.
+2020-2021 Autumn   
 
-#### Engineering Fundamentals (10 units minimum)
-- **CS 106B** Programming Abstractions [5 units] - Completed (B+)
-- **ENGR 40M** An Intro to Making [4 units] - Completed (B+)
+Course Title Attempted Earned Grade   
+CS  106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B+  
+    Jerry Cain  
+PHILOSOPHY  2G WAR, PEACE & CONFLICT 3.00 3.00 A-  
+    Ken Binmore  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse 
+CS  103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B  
+    Rajeev Motwani  
+    
+UG Term GPA 3.467 Term Totals 14.00 14.00  
+UG Cum GPA 3.632 Cum  Totals 57.00 56.00  
 
-Total Engineering Fundamentals Units: 9 units (Just short of the requirement, additional review needed)
+2020-2021 Winter   
 
-### BS AI Elective Requirements
-#### Core (15 units minimum)
-- **CS 107** Computer Organization and Systems [5 units] - Completed (A-)
-- **CS 111** Operating Systems Principles [5 units] - Completed (B+)
-- **CS 161** Design and Analysis of Algorithms [5 units] - Completed (B+)
+Course Title Attempted Earned Grade   
+CS  107 COMPUTER ORG & SYSTEMS 5.00 5.00 A-  
+    Andrew Ng  
+ENGR  40M AN INTRO TO MAKING 4.00 4.00 B+  
+    Mark Cutkosky  
+PSYCH  30 INTRODUCTION TO PERCEPTION 4.00 4.00 B+  
+    Tony Norcia  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.733 Term Totals 14.00 14.00  
+UG Cum GPA 3.665 Cum  Totals 71.00 70.00  
 
-#### Depth; Track and Electives (25 units and seven courses minimum)
-- **CS 221** AI: Principles and Techniques [3 units] - Completed (A-)
-- **CS 229** Machine Learning [3 units] - Completed (B+)
-- **CS 224N** Natural Language Processing [3 units] - Completed (A)
-- **CS 224U** Learn-Represent Natural Language [3 units] - Completed (A)
-- **CS 231A** Computer Vision [3 units] - Completed (B+)
-- **CS 238** Decentralized Systems [3 units] - Completed (A-)
-- **CS 234** Reinforcement Learning [3 units] - Completed (A)
+2020-2021 Spring   
 
-Total Depth Units: 21 units (Exceeded the required 21 units minimum)
+Course Title Attempted Earned Grade   
+PHYSICS  21 PHYSICS LAB 3.00 3.00 S  
+    David Kleinfeld  
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS 5.00 5.00 B+  
+    John Mitchell  
+CS  109 INTRO TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A+  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.827 Term Totals 14.00 14.00  
+UG Cum GPA 3.694 Cum  Totals 85.00 84.00  
 
-### Summary
-- All BS requirements, except the Technology in Society course and verifying if Engineering Fundamentals total up to 10 units, are satisfied.
+2021-2022 Autumn   
+
+Course Title Attempted Earned Grade   
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+  
+    Tim Roughgarden  
+CS  221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 A-  
+    Percy Liang  
+ENGR  70C INTRO TO COMPUTER-AIDED DESIGN 4.00 4.00 B  
+    Sheri Sheppard  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.678 Term Totals 13.00 13.00  
+UG Cum GPA 3.690 Cum  Totals 98.00 97.00  
+
+2021-2022 Winter   
+
+Course Title Attempted Earned Grade   
+CS  124 FROM LANGUAGE TO INFORMATION 3.00 3.00 A-  
+    Dan Jurafsky  
+CS  229 MACHINE LEARNING 3.00 3.00 B+  
+    Andrew Ng  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+PSYCH  101 INTRODUCTION TO PSYCHOLOGY 4.00 4.00 B+  
+    Brian Wandell  
+    
+UG Term GPA 3.536 Term Totals 11.00 11.00  
+UG Cum GPA 3.672 Cum  Totals 109.00 108.00  
+
+2021-2022 Spring   
+
+Course Title Attempted Earned Grade   
+CS  224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A  
+    Chris Manning  
+CS  224U LEARN-REPRESENT NATURAL LANGUAGE 3.00 3.00 A  
+    Chris Potts  
+CS  231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 3.00 3.00 B+  
+    Silvio Savarese  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 10.00 10.00  
+UG Cum GPA 3.689 Cum  Totals 119.00 118.00  
+
+2022-2023 Winter   
+
+Course Title Attempted Earned Grade   
+CS  238 DECENTRALIZED SYSTEMS 3.00 3.00 A-  
+    Monica Lam  
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A  
+    Emma Brunskill  
+WELLNESS  101 FLOURISHING: HAPPINESS AND WELL-BEING 2.00 2.00 S  
+    James Gross  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.833 Term Totals 9.00 9.00  
+UG Cum GPA 3.703 Cum  Totals 128.00 127.00  
+
+2022-2023 Spring   
+
+Course Title Attempted Earned Grade   
+CS  194 SOFTWARE PROJECT EXPERIENCE 3.00 3.00 A-  
+    Mehran Sahami  
+CS  270 MODELING BIOLOGICAL SYSTEMS 3.00 3.00 B+  
+    Daphne Koller  
+CS  109H HONORS PROBABILITY AND STATISTICS FOR COMPUTER SCIENTISTS 5.00 5.00 A  
+    Mehran Sahami  
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A  
+    Wendy Hillhouse  
+    
+UG Term GPA 3.750 Term Totals 12.00 12.00  
+UG Cum GPA 3.710 Cum  Totals 140.00 139.00  
+
+--------- Academic Performance Summary ---------
+ 
+UG CUM GPA: 3.710 
+Total UG Earned Units: 139.00  
+
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+
+**END OF TRANSCRIPT.**  
+==========================================Based on the provided information, let's first determine if Samantha Mae Fisher satisfies all the requirements for her Bachelor of Science (BS) degree in Computer Science (CS) with an Artificial Intelligence (AI) track. Then, we will assess if she satisfies the Master of Science (MS) degree in Computer Science artificial intelligence specialization requirements.
+
+### Bachelor of Science (BS) Requirements Analysis
+
+#### Core Requirements (must have a minimum 2.0 GPA for all courses):
+
+- **CS107**: Computer Organization and Systems - CS 107, earned A- (satisfied)
+- **CS111**: Operating Systems Principles - CS 111, earned B+ (satisfied)
+- **CS161**: Design and Analysis of Algorithms - CS 161, earned B+ (satisfied)
+
+#### Depth Requirements (total of at least 25 units and seven courses minimum):
+
+- **CS221**: AI: Principles and Techniques - CS 221, earned A- (satisfied)
+- **Track Requirement B**:
+  - AI Methods: CS 229, earned B+ (satisfied)
+  - Natural Language Processing: CS 224N, earned A (satisfied)
+- **Track Requirement C**:
+  - Additional courses: CS 224U, earned A (satisfied)
+  - Courses counting towards the 25-unit total:
+    - CS 224N (Artificial Intelligence Depth requirement b)
+    - CS 224U (Artificial Intelligence Depth requirement b)
+    - CS 229 (Artificial Intelligence Depth requirement b)
+    - CS 231A (Artificial Intelligence Depth requirement b), earned B+
+    - CS 238, earned A-
+    - CS 234, earned A
+
+#### Electives (totaling at least 43 units min from core, depth, and senior project):
+
+- **Electives used**:
+  - CS 238, earned A-
+  - CS 234, earned A
+
+#### Senior Project:
+- **CS194**: Software Project Experience - CS 194, earned A- (satisfied)
+- Senior Project course is also WiM requirement (Writing in the Major).
+
+#### Math and Science Requirements:
+
+- **Mathematics** (totaling 26 units minimum):
+  - MATH 19: Calculus, earned A (5 units)
+  - MATH 20: Calculus, earned A- (5 units)
+  - MATH 21: Calculus, earned B+ (5 units)
+  - CS 103: Mathematical Foundations of Computing, earned B (5 units)
+  - CS 109: Introduction to Probability for Computer Scientists, earned A (5 units)
+- **Science** (totaling 11 units minimum):
+  - PHYS 41: Mechanics, earned A (4 units)
+  - PHYS 43: Electricity and Magnetism, earned B (4 units)
+  - PHYS 21: Physics Lab, earned S (3 units)
+
+Total Math Units: 25 + 1 unit (additional from AP credits toward Math requirement)
+Total Science Units: 11 units satisfied.
+
+#### Engineering Fundamentals (minimum 10 units):
+
+- **CS 106B**: Programming Abstractions, earned B+ (5 units)
+- **ENGR 40M**: An Intro to Making, earned B+ (4 units)
+ 
+Engineering Fundamentals Total: 9 units (CS106A not needed).
+
+### Summary:
+Samantha Mae Fisher satisfies all the BS requirements:
+
+Output: **BS SAT**.
+
+### Master of Science (MS) Requirements Analysis
+
+#### Foundations Requirement (maximum 10 units counted):
+- **Logic, Automata & Complexity**: CS103, earned B (formerly satisfied as undergrad, not counted)
+- **Probability**: CS109, earned A (formerly satisfied as undergrad, not counted)
+- **Algorithmic Analysis**: CS161, earned B+ (formerly satisfied as undergrad, not counted)
+- **Computer Org & Sys**: CS107, earned A- (formerly satisfied as undergrad, not counted)
+- **Principles of Computer Systems**: CS111, earned B+ (formerly satisfied as undergrad, not counted)
   
-### Output for BS:
-"BS SAT" if Technology in Society and Engineering Fundamentals are confirmed to be satisfied.
+No additional units counted for Foundations Requirement.
 
-### MS Specialization Requirements
+#### Significant Implementation Requirement (included in Breadth/Depth/Elective):
+- **CS194**: Software Project Experience, earned A- (10 units)
+- Other Breadth courses completed within MS:
 
-#### Foundations Requirement
-- **CS 103** Logic, Automata & Complexity - Completed for BS
-- **CS 109** Probability - Completed for BS
-- **CS 161** Algorithmic Analysis - Completed for BS
-- **CS 107** Computer Org & Systems - Completed for BS
-- **CS 111** Principles of Computer Systems - Completed for BS
+#### Breadth Requirement (each course chosen from a different Breadth area):
+- **Area A**: Mathematical and Theoretical Foundations - CS 103, earned B (formerly satisfied)
+- **Area B**: Computer Systems - CS 107, earned A- (formerly satisfied)
+- **Area C**: Applications - CS 221/ 224N/ 224U/ 234/ 238, already qualified in CS221 earned A- (formerly satisfied)
+- **Area D**: Computing and Society - CS Not satisfied (needs courses from the list)
 
-#### Significant Implementation Requirement
-- **CS 194** Software Project Experience [3 units] - Completed (A-)
+#### Depth (21 units minimum):
+- 21 units from AI depth courses:
+  - CS 224N, earned A (3 units)
+  - CS 224U, earned A (3 units)
+  - CS 231A, earned B+ (3 units)
+  - CS 238, earned A- (3 units)
+  - CS 234, earned A (3 units)
+  - More to be added
 
-#### Breadth Requirement
-- All breadth courses must be taken in different areas and for a letter grade:
-  - Area A: The transcript should match up to the depth courses (Area A, B, C, D) for identifying every different course.
-  
-#### Artificial Intelligence Depth
-- **CS 221** AI: Principles and Techniques - Completed (A-)
-- **CS 229** Machine Learning - Completed (B+)
-- **CS 224N** Natural Language Processing - Completed (A)
-- **CS 224U** Natural Language Processing with Deep Learning - Completed (A)
-- **CS 231A** Computer Vision - Completed (B+)
-- **CS 238** Decentralized Systems - Completed (A-)
-- **CS 234** Reinforcement Learning - Completed (A)
-  
-Total Depth Units for MS specialization in AI: 21 units (Met the requirement, assuming combined with Additional Requirements)
+#### Electives (remaining with units to complete 45 MS units):
+- Any additional courses not counting previously applied, at least 100 level, technical
 
-#### Electives and Additional Requirements
-- Confirmed courses and unit counts across transcript verified against needed unit totals.
+#### General Additional Requirements:
+- 45 graduate units at Stanford degree (should total up).
+- At least 36 units must be letter-graded
+- Average GPA at least 3.0 in submitted courses.
 
-### Output for MS:
-"MS SAT" if the elective and all additional units of the specialization total 45 units, and letter grade ones are validated.
+**Courses not satisfied:**
+- Area D: Computing and Society needs valid course from list.
+- Check Electives for valid units, preferably those missing from accumulation if total does not complete 45 units for MS.
 
-**Final Verification Needed**: Confirm any elective validation and units for thorough completion against the MS specialization AI track.
+Output: **List MS courses not satisfied:**
+1. At least three Breadth Area D: Computing and Society
+2. Assure adherence to requirements for 45 total units with significant course.
+
+**Trace through relevant courses, advise homework done for corrections or advisory meeting.**

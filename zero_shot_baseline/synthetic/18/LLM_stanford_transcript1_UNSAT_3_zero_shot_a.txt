@@ -1,103 +1,386 @@
-### BS Requirements Analysis:
+LLM_stanford_transcript1_UNSAT_3.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Robson,Michael Alan
+Student ID : 10725463
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Carter,Elizabeth K
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Arts 
+Confer Date :01/08/2023
+Plan :English  
+--------- Academic Program ---------
+Program :   English
+01/06/2023 :English (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2020 :English (BA)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2021 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      History 10.00
+Advanced Placement      Biology 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 
+2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+ENGLISH  80N INTRODUCTION TO LITERARY 
+STUDIES5.00 5.00 B+
+   Adam Johnson
+POLISCI  101 INTRODUCTION TO POLITICAL 
+SCIENCE5.00 5.00 B
+   Larry Diamond
+HISTORY  53 MODERN EUROPE6.00 6.00 A-
+   James Sheehan
+MUSIC  101 MUSIC HISTORY 1.00 1.00 CR
+   Laura Dahl
+   
+UG Term GPA 3.411 Term Totals 17.00 17.00
+UG Cum GPA 3.411 Cum  Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+PHIL  101 GREEK PHILOSOPHY5.00 5.00 A-
+   Christopher Bobonich
+ECON  1 PRINCIPLES OF ECONOMICS5.00 5.00 B-
+   Roger Noll
+ARTSTUD  130 DRAWING 4.00 4.00 A
+   Enrique Chagoya
+PHYSICS  30 UNDERSTANDING THE UNIVERSE3.00 0.00 W
+   Persis Drell
+   
+UG Term GPA 3.317 Term Totals 17.00 14.00
+UG Cum GPA 3.365 Cum  Totals 34.00 31.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Robson,Michael Alan
+Student ID : 10725463
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS5.00 5.00 C+
+   Ravi Vakil
+CHEM  31A CHEMISTRY FOR 
+ENGINEERS5.00 5.00 B
+   Chaitan Khosla
+CS  106A INTRO TO COMPUTER 
+PROGRAMMING5.00 5.00 B
+   Mehran Sahami
+PHIL  60 SYMBOLIC LOGIC 4.00 4.00 A-
+   Todd Karhu
+   
+UG Term GPA 3.175 Term Totals 19.00 19.00
+UG Cum GPA 3.299 Cum  Totals 53.00 50.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B
+   Keith Schwarz
+ENGLISH  124 SHAKESPEARE: THE EARLY 
+PLAYS4.00 4.00 A-
+   David Riggs
+PSYC 135 ABNORMAL PSYCHOLOGY5.00 5.00 B+
+   Ian Gotlib
+MUSIC  101 MUSIC HISTORY 1.00 1.00 A
+   Laura Dahl
+LINGUIST 105 INTRO TO LINEAR B 
+EQUATIONS 4.00 4.00 A
+   Daniel Jurafsky
+   
+UG Term GPA 3.500 Term Totals 19.00 19.00
+UG Cum GPA 3.337 Cum  Totals 72.00 69.00 
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+ANTHRO  102 ARCHAEOLOGY OF THE 
+AMERICAS3.00 3.00 B+
+   Lisa Maher
+PSYCH  110 ABNORMAL PSYCHOLOGY5.00 5.00 B+
+   James Gross
+ENGLISH  49 HISTORY OF 
+WESTERN LIT4.00 4.00 B
+   Gavin Jones
+CS  107E COMPUTER SYSTEMS5.00 5.00 B+
+   Jerry Cain
+   
+UG Term GPA 3.417 Term Totals 17.00 17.00
+UG Cum GPA 3.321 Cum  Totals 89.00 86.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+ARTSTUD  212 DRAWING II 3.00 3.00 A
+   Enrique Chagoya
+CS   149 INTRO TO AI5.00 5.00 C-
+   Percy Liang
+ENGLISH  180H LITERARY THEORY4.00 4.00 A
+  Jeffrey Knapp
+PHYSICS  43E SOCIAL PSYCH AND RELATIONS4.00 4.00 B+
+   Jennifer Gorham
+   
+UG Term GPA 3.175 Term Totals 16.00 16.00
+UG Cum GPA 3.290 Cum  Totals 105.00 102.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+HISTORY  72 SOVIET AND POST-SOVI10.00 4.00 A-
+   Steven Zipperstein
+EE  102B SIGNAL PROCESSING 
+AND LINEAR SYSTEMS II5.00 4.50 B
+   Jun Ye
+MATH  51 LINEAR ALGEBRA AND 
+PARTIAL DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS 5.00 4.00 B+
+   Ramesh Johari
+   
+UG Term GPA 3.375 Term Totals 19.00 14.50
+UG Cum GPA 3.309 Cum  Totals 124.00 116.50
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+ENGLISH  151 THE LYRIC ESSAY: 
+CREATORS AND CRIT 4.00 4.00 A
+  Sarah Chrisman
+CS  109 INTRO TO 
+PROBABILITY5.00 4.00 B
+  Jerry Cain
+CHEM  31X CHEMISTRY5.00 5.00 C
+  Carolyn Bertozzi
+HUMBIO 167 THE SEXUAL SELF1.00 1.00 S
+  William Anderegg
+   
+UG Term GPA 3.278 Term Totals 15.00 14.00
+UG Cum GPA 3.310 Cum  Totals 139.00 130.50
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+ENGLISH  127 AMERICAN FICTION 
+AND FILMS5.00 5.00 B
+  Marjorie Perloff
+POLISCI  236A THE ETHICS OF 
+WHISTLEBLOWING3.00 3.00 A
+  Debra Satz
+PHYSICS  45G QUIESCED-MATTER 
+SYSTEMS3.00 3.00 CR
+  Mao Wang
+TAPS 135 INTRO TO DIRECTING3.00 3.00 B
+  Michael Rau
+HISTORY OF 102A MODERN 
+RUSSIAN HISTORY4.00 3.00 B+
+  Jack Rakove
+   
+UG Term GPA 3.192 Term Totals 19.00 17.00
+UG Cum GPA 3.285 Cum  Totals 158.00 147.50
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+ENGLISH  185 TRADITION AND 
+INNOVATION IN 
+AMERICAN POETRY4.00 4.00 A
+  Elizabeth Tallent
+PHIL  4A LOGIC AND 
+PHILOSOPHICAL ISSUES3.00 3.00 B
+  Richard Rorty
+MUSIC  131X ORCHESTRAS4.00 4.00 A-
+  Geoffrey Jones
+PSYCH 141 PSYCHOLOGICAL 
+SCIENCES5.00 2.00 S
+  Patricia Burchat
+   
+UG Term GPA 3.427 Term Totals 16.00 13.00
+UG Cum GPA 3.296 Cum  Totals 174.00 160.50
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  181 AI: ETHICS AND RISKS3.00 0.00 W
+  David Magnus
+CHEM  33 INORGANIC 
+CHEMISTRY 5.00 0.00 W
+  Christopher Chidsey
+ENGLISH  133C AMERICAN 
+LITERATURE AND 
+SOCIETY5.00 5.00 A
+  Stephen Orgel
+PHIL  5C ETHICAL THEORY 5.00 5.00 C-
+  Robert Audi
+MUSIC  102M AMERICAN MUSIC 
+HISTORY2.00 1.00 F
+  John Chowning
+   
+UG Term GPA 1.500 Term Totals 20.00 11.00
+UG Cum GPA 3.190 Cum  Totals 194.00 171.50
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+UAR  56C INTRODUCTION TO 
+GENETICS2.00 0.00 NP
+  Mary Yelick
+EE  292J IMMERSIVE AUDIO 
+TECHNOLOGIES4.00 4.00 C
+  Karl Brant
+LINGUISTIC 99 LANGUAGE 
+AND LOGIC3.00 3.00 B
+  Beth Levin
+HISTORY 101B THE WESTERN 
+TRADITION5.00 5.00 B
+  Paul Robinson
+CS  170 SOFTWARE DESIGN5.00 5.00 A
+  Christos Papadimitriou
+   
+UG Term GPA 3.033 Term Totals 19.00 17.00
+UG Cum GPA 3.186 Cum  Totals 213.00 188.50
+GR Term GPA 0.000 Term Totals 1.00 1.00
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+PE  140 RACQUETBALL 1.00 1.00 S
+  James Blake
+WELLNESS  205 MENTAL WELL-
+BEING2.00 2.00 S
+  Flora May Annahl
+CS  220 ALGORITHM DESIGN4.00 4.00 A
+  Alok Aggarwal
+CS  311 DEEP LEARNING4.00 4.00 B
+  Fei-Fei Li
+ENGLISH  195 STUDIES IN 
+CONTEMPORARY LIT3.00 3.00 A-
+  Mark McGurl
+   
+UG Term GPA 3.250 Term Totals 14.00 14.00
+UG Cum GPA 3.200 Cum  Totals 227.00 202.50
+GR Term GPA 3.333 Term Totals 9.00 9.00
+GR Cum GPA 3.333 Cum  Totals 10.00 10.00  
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  326 COMPUTATIONAL 
+LINGUISTICS4.00 4.00 B+
+  Sebastian Thrun
+ENGLISH  299D DISSERTATION RE-
+SEARCH1.00 1.00 B
+  Deidre Lynch
+MUSIC  177 ADVANCED MUSIC 
+COMPOSITION3.00 3.00 A
+  John Adams
+   
+GR Term GPA 3.333 Term Totals 8.00 8.00
+GR Cum GPA 3.333 Cum  Totals 18.00 18.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  341 MACHINE LEARNING4.00 4.00 A
+  Andrew Ng
+ART  112 MODERN ART AND 
+TECHNOLOGY5.00 5.00 B+
+  Pamela Lee
+PHIL  112 NEURAL SYSTEMS4.00 4.00 C-
+  Joshua Greene
+   
+GR Term GPA 3.500 Term Totals 13.00 13.00
+GR Cum GPA 3.389 Cum  Totals 31.00 31.00
+
+Graduate Career Totals
+Cum GPA 3.389 Cum Totals 31.00 31.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.200 Cum Totals 227.00 202.50
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 247.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 202.50
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+==========================================### Analysis for BS Degree Requirements in Computer Science with an AI Specialization:
 
 #### Core Requirements:
-- **CS 106B Programming Abstractions - Satisfied**
-  - Taken CS 106B for 5 units, grade: B.
-- **CS 107 Computer Organization and Systems - Satisfied**
-  - Taken CS 107E for 5 units, grade: B+.
-- **CS 111 Operating Systems Principles - Not Satisfied**
-  - Not found in transcript.
-- **CS 161 Design and Analysis of Algorithms - Not Satisfied**
-  - Not found in transcript.
-- **CS 103 Mathematical Foundations of Computing - Not Satisfied**
-  - Not found in transcript.
-- **CS 109 Introduction to Probability - Satisfied**
-  - Taken CS 109 for 4 units, grade: B.
+1. **CS106B - Programming Abstractions:** 
+   - Completed with a grade of B.
 
-#### BS Senior Project Requirement:
-- **One course required - Not Satisfied**
-  - The required senior project (CS191, 194, 210B, etc.) is not found in the transcript.
+2. **CS107/107E - Computer Organization and Systems:** 
+   - **CS107E** completed with a grade of B+.
 
-#### AI Elective Requirements:
-- **CS 221 AI: Principles and Techniques - Not Satisfied**
-  - Not found in transcript.
-- **Track Requirement B (Two courses from different areas) - Not Satisfied**
-  - None found in the transcript.
-- **Track Requirement C (One additional course from Track Requirement B list or other specified courses) - Not Satisfied**
-  - None found in the transcript.
-- **3 additional elective courses - Satisfied**
-  - CS 326 Computational Linguistics (4 units, B+), CS 220 Algorithm Design (4 units, A), and CS 311 Deep Learning (4 units, B).
+3. **CS111 - Operating Systems Principles:** 
+   - Not found in the transcript.
 
-#### Mathematics and Science Requirements:
-- **Mathematics (26 units minimum)** 
-  - MATH 19-21 (10 units, grades not listed)
-  - **CS 103** - Not found in the transcript.
-  - **CS 109** - Satisfied.
-  - Additional Electives - Not found in the transcript.
-- **Science (11 units minimum)**
-  - PHYS 41 Mechanics - Not found in the transcript.
-  - PHYS 43 Electricity and Magnetism - Not found in the transcript.
-  - **CHEM 31A Chemistry** - Satisfied (5 units, B).
+4. **CS103 - Mathematical Foundations of Computing:** 
+   - Not found in the transcript.
 
-#### Other Requirements:
-- **Technology in Society - Not Satisfied**
-  - Not found in the transcript.
+5. **CS109 - Introduction to Probability for Computer Scientists:** 
+   - Completed with a grade of B.
 
-Based on the transcript provided, the following BS requirements are not satisfied:
+6. **CS161 - Design and Analysis of Algorithms:** 
+   - Not found in the transcript.
 
-1. CS 111 Operating Systems Principles
-2. CS 161 Design and Analysis of Algorithms
-3. CS 103 Mathematical Foundations of Computing
-4. Senior Project Course
-5. CS 221 AI: Principles and Techniques
-6. Two Track Requirement B courses from different areas
-7. One Track Requirement C course
-8. Additional Math and Science electives (for reaching the required 26 Math and 11 Science units).
-9. Technology in Society course
+#### Engineering Fundamentals:
+1. **ENGR 40M or ENGR 76:**
+   - Not found in the transcript.
 
-**Output:** "BS NOT SAT" 
+#### Depth Requirements:
+1. **CS 221 - AI: Principles and Techniques:** 
+   - Not found in the transcript.
 
-### MS Requirements Analysis:
+2. **Two courses from Track Requirement B (different areas):**
+   - **CS 149 - Intro to AI** completed with a grade of C-.
+
+#### Senior Project:
+1. **CS194, CS191, CS191W, 194W, 210B, or 294:**
+   - **CS 194 or CS 294** was not found in the transcript.
+
+#### Electives and Other Requirements:
+- The transcript does not show additional specific electives required for the AI track.
+
+### Summary:
+Missing Courses and Requirements for BS:
+1. **CS111 - Operating Systems Principles**
+2. **CS103 - Mathematical Foundations of Computing**
+3. **CS161 - Design and Analysis of Algorithms**
+4. **ENGR 40M or ENGR 76**
+5. **CS221 - AI: Principles and Techniques**
+6. **Any two courses from Track Requirement B except CS149**
+7. **Senior Project: CS194, CS191, CS191W, 194W, 210B, or 294**
+
+**BS Requirements Not Satisfied.**
+
+### Analysis for MS Degree Requirements in Artificial Intelligence:
 
 #### Foundations Requirement:
-- **CS 103 Logic, Automata & Complexity - Not Satisfied**
-  - Not found in transcript.
-- **CS 109 Probability - Satisfied**
-  - Taken CS 109 for 4 units, grade: B.
-- **CS 161 Algorithmic Analysis - Not Satisfied**
-  - Not found in transcript.
-- **CS 107 Computer Organ & Sys - Satisfied**
-  - Taken CS 107E for 5 units, grade: B+.
-- **CS 110/111 Principles of Computer Systems - Not Satisfied**
-  - CS 111 not found in the transcript.
+1. **CS103 - Logic, Automata & Complexity:** 
+   - Not found in the transcript.
+   
+2. **CS109 - Probability:** 
+   - Completed with a grade of B.
+   
+3. **CS161 - Algorithmic Analysis:** 
+   - Not found in the transcript.
+   
+4. **CS107/107E - Computer Organization and Systems:** 
+   - Completed with a grade of B+.
+   
+5. **CS110/CS111 - Principles of Computer Systems:** 
+   - Not found in the transcript.
 
 #### Significant Implementation Requirement:
-- **At least one course - Satisfied**
-  - CS 341 Machine Learning: Satisfied (4 units, A).
+- Several courses listed in the transcript, such as **CS 341 - Machine Learning** with a grade of A, can fulfill this requirement.
 
 #### Breadth Requirement:
-- **Three courses from different areas - Satisfied**
-  - **Area A:** CS 220 Algorithm Design (4 units, A).
-  - **Area B:** CS 326 Computational Linguistics (4 units, B+).
-  - **Area C:** CS 341 Machine Learning (4 units, A).
+- Required three courses from different areas (A, B, C, or D). None explicitly covered in transcript.
 
-#### AI Depth Requirement:
-- **CS 221 AI: Principles & Techniques - Not Satisfied**
-  - Not found in transcript.
-- **At least four of specific courses - Satisfied**
-  - CS 326 Computational Linguistics (4 units, B+), CS 311 Deep Learning (4 units, B), CS 341 Machine Learning (4 units, A), CS 220 Algorithm Design (4 units, A).
-- **Total of 21 units from categories (a), (b), and other specified courses - Satisfied**
-  - 326 (4 units), 311 (4 units), 341 (4 units), 220 (4 units) = 16 units.
+#### Depth Requirement:
+1. **CS221:** 
+   - Not found in the transcript.
+   
+2. **Four courses from the provided list:**
+   - Few depth or track courses found in the transcript.
 
 #### Electives:
-- **45-unit requirement for MSCS degree - Satisfied**
-  - Details of additional elective courses were not analyzed due to lack of explicit marking in the transcript.
+- Various elective courses completed but unclear if they match specific AI depth or elective requirements.
 
-Based on the transcript provided, the following MS requirements are not yet satisfied:
+### Summary:
+Missing Courses and Requirements for MS:
+1. **CS103 - Logic, Automata & Complexity**
+2. **CS161 - Algorithmic Analysis**
+3. **CS110/CS111 - Principles of Computer Systems**
+4. **CS221 - AI: Principles and Techniques**
+5. **Four courses from the AI depth requirement list.**
 
-1. CS 103 Logic, Automata & Complexity
-2. CS 161 Algorithmic Analysis
-3. CS 110/111 Principles of Computer Systems
-4. CS 221 AI: Principles and Techniques
-
-**Output:** "MS NOT SAT"
+**MS Requirements Not Satisfied.**

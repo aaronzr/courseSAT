@@ -1,0 +1,27 @@
+To extract the required courses and relevant electives related to the Senior Project, we will focus on the information in the sections "Senior Project (1 course required)" and the relevant electives from the notes.
+
+Based on the provided information, the Senior Project requires at least 3 units of one of the following courses:
+
+- CS 191
+- CS 191W
+- CS 194
+- CS 194H
+- CS 194W
+- CS 210B
+- CS 294
+
+Here is the Python list containing the required course numbers and relevant electives related to the Senior Project:
+
+```python
+senior_project_courses = [
+    "CS 191",
+    "CS 191W",
+    "CS 194",
+    "CS 194H",
+    "CS 194W",
+    "CS 210B",
+    "CS 294"
+]
+```
+
+This list includes all the relevant courses listed for the Senior Project.

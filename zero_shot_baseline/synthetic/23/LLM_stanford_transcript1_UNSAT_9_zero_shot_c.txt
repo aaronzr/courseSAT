@@ -1,111 +1,229 @@
-**BS Degree Requirements Analysis**
+LLM_stanford_transcript1_UNSAT_9.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Lewinsky, Sandra Marie
+Student ID : 08795421
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 11/05/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Thompson, Gary K
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/14/2023
+Plan :Physics  
+--------- Academic Program ---------
+Program :   Physics
+09/15/2022 :Physics (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/16/2019 :Physics (BS)
+Completed Program 
+Coterminal Graduate, 06/14/2023 - 
+Coterminal Undergraduate, 06/15/2022 - 06/14/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Spanish 12.00
+Advanced Placement      Mathematics: Calculus AB 8.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS  101 INTRODUCTION TO 
+COMPUTING5.00 5.00 B
+   Emily Fox
+PHYS  21 CLASSICAL PHYSICS 4.00 4.00 B
+   John Doe
+ENGL  72A CONTEMPORARY AUSTEN 4.00 4.00 A-
+   Jane Austen
+BIO  101 INTRODUCTION TO BIOLOGY 4.00 4.00 CR
+   Richard Dawkins
+   
+UG Term GPA 3.250 Term Totals 17.00 17.00
+UG Cum GPA 3.250 Cum Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+HIST  23 HISTORY OF SCIENCE 4.00 4.00 A
+   Charles Darwin
+ANTH  101 CULTURAL ANTHROPOLOGY 3.00 3.00 A-
+   Margaret Mead
+MATH 51 LINEAR ALGEBRA WITH 
+APPLICATIONS5.00 5.00 B+
+   Albert Einstein
+PHYS  22 ELECTRICITY AND MAGNETISM 4.00 4.00 C+
+   Neils Bohr
+   
+UG Term GPA 3.200 Term Totals 16.00 16.00
+UG Cum GPA 3.225 Cum Totals 33.00 33.00
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+CS  102 DATA STRUCTURES 5.00 5.00 W
+   Carl Gauss
+PHIL  12 ETHICS IN SCIENCE 4.00 4.00 B+
+   Immanuel Kant
+MATH 52 MULTIVARIATE CALCULUS 5.00 5.00 A-
+   Benjamin Franklin
+BIO  103 GENETICS 4.00 4.00 C
+   James Watson
+   
+UG Term GPA 2.925 Term Totals 18.00 13.00
+UG Cum GPA 3.125 Cum Totals 51.00 46.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 53 ORDINARY 
+DIFFERENTIAL EQUATIONS5.00 5.00 C+
+   Paul Dirac
+PHIL  151 LOGIC 4.00 4.00 C-
+   Bertrand Russell
+HUM   110 INTRO TO PHILOSOPHY 4.00 4.00 B
+   Socrates
+PHYS  45 LIGHT AND THERMODYNAMICS 4.00 4.00 B+
+   Max Planck
+   
+UG Term GPA 2.770 Term Totals 17.00 17.00
+UG Cum GPA 3.025 Cum Totals 68.00 63.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+EE  102 LINEAR SYSTEMS 4.00 4.00 B+
+   Nikola Tesla
+PHYS  160 QUANTUM MECHANICS 5.00 5.00 B
+   Murray Gell-Mann
+MATH 104 COMPLEX ANALYSIS 4.00 4.00 C
+   Pierre-Simon Laplace
+CS  103 COMPUTER THEORY 5.00 5.00 W
+   Clifford Algebra
+   
+UG Term GPA 2.900 Term Totals 18.00 17.00
+UG Cum GPA 2.984 Cum Totals 86.00 80.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  101C ADVANCED PROGRAMMING 5.00 5.00 B
+   Ada Lovelace
+PHYS  161 INTRODUCTION TO 
+PARTICLE PHYSICS4.00 4.00 B+
+   Steven Weinberg
+CHEM  31A CHEMICAL PRINCIPLES I 4.00 4.00 B-
+   Linus Pauling
+STATS 116 STATISTICAL INFERENCE 5.00 5.00 B+
+   Ronald Fisher
+   
+UG Term GPA 3.100 Term Totals 18.00 18.00
+UG Cum GPA 3.030 Cum Totals 104.00 98.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 5.00 5.00 B+
+   Steve Wozniak
+PHYS  170 THERMODYNAMICS 5.00 5.00 B+
+   Ludwig Boltzmann
+MATH 108 NUMERICAL METHODS 4.00 4.00 A
+   Leonhard Euler
+HUM   22 MEDIEVAL HISTORY 4.00 4.00 S
+   Thomas Aquinas
+   
+UG Term GPA 3.450 Term Totals 18.00 18.00
+UG Cum GPA 3.125 Cum Totals 122.00 116.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRO TO PROBABILITY & 
+STATISTICS5.00 5.00 A-
+   Andrey Kolmogorov
+PHYS  180 ELECTRODYNAMICS 5.00 5.00 B-
+   Carl Friedrich Gauss
+CHEM  31B CHEMICAL PRINCIPLES II 4.00 4.00 B
+   Marie Curie
+   
+UG Term GPA 2.933 Term Totals 14.00 14.00
+UG Cum GPA 3.091 Cum Totals 136.00 130.00
+==========================================### BS Degree Requirements Analysis
 
-**Core Requirements:**
-- CS 106B - Not Taken
-- CS 107 - Taken (CS 107, Grade: B+)
-- CS 103 - W (Withdrawn)
-- CS 109 - Taken (Introduction to Probability & Statistics, Grade: A-)
-- CS 111 - Not Taken
-- CS 161 - Not Taken
+#### Core Requirements:
+1. **CS 103 (Mathematical Foundations of Computing)**: Not completed.
+2. **CS 106B (Programming Abstractions)**: Not completed.
+3. **CS 107 (Computer Organization and Systems)**: Completed with B+.
+4. **CS 109 (Introduction to Probability)**: Completed with A-.
+5. **CS 111 (Principles of Computer Systems)**: Not completed.
+6. **CS 161 (Design and Analysis of Algorithms)**: Not completed.
+7. **GPA Requirement**: Current GPA in the Computer Science-related courses is 3.179 (based on CS 101, CS 101C, CS 107, CS 109) which satisfies the 2.0 minimum GPA requirement.
 
-**Senior Project Requirements:**
-- Not enough information provided in the transcript to determine if a Senior Project (CS191, CS191W, CS194, CS194W, CS210B, or CS294) has been completed.
+#### Senior Project:
+1. **Requirement**: Not completed.
 
-**Mathematics and Science Requirement:**
-- Mathematics (26 units minimum):
-  - Must include MATH 19, 20, 21 (or equivalents up to 10 units AP/transfer)
-    - Completed: Advanced Placement Mathematics: Calculus AB (8.00 units)
-  - Plus:
-    - MATH51 (Linear Algebra with Applications, Grade B+)
-    - MATH52 (Multivariate Calculus, Grade A-)
-    - MATH53 (Ordinary Differential Equations, Grade C+)
-    - MATH104 (Complex Analysis, Grade C)
-    - MATH108 (Numerical Methods, Grade A)
+#### Mathematics Requirements:
+1. **MATH 19, 20, 21 (Calculus Series)**: Completed via AP credit for 8 units.
+2. **MATH 51 (Linear Algebra)**: Completed with B+.
+3. **MATH 52 (Multivariable Calculus)**: Completed with A-.
+4. **MATH 53 (Ordinary Differential Equations)**: Completed with C+.
+5. **PHIL 151 (Logic)**: Completed with C-.
+   - Another math elective might be needed due to poor performance.
+6. **MATH 104 (Complex Analysis)**: Completed with C.
+7. **STATS 116 (Statistical Inference)**: Completed with B+.
 
-(26 units minimum completed in mathematics through a combination of AP and courses taken)
+#### Science Requirements:
+1. **PHYS 41 (Mechanics)**: Completed (PHYS 21 equivalent with B).
+2. **PHYS 43 (E/M)**: Completed (PHYS 22 with C+).
+3. **Elective**: Completed (BIO 103 with C).
 
-- Science (11 units minimum):
-  - PHYS 41 Mechanics - Equivalent (CS 21 Classical Physics, 4.00 units, Grade B)
-  - PHYS 43 Electicity and Magnetism - Equivalent (PHYS 22, Grade C+)
-  - Elective - Numerous options for science electives
-    - BIO101 (Grade CR)
-    - BIO103 (Grade C)
-    - CHEM31A (Grade B-)
-    - CHEM31B (Grade B)
-    - STATS116 (Grade B+)
+#### Engineering Fundamentals:
+1. **CS 106B**: Not completed.
+2. **ENGR 40M or 76**: Not completed.
+3. **Total Required Units**: Not satisfied.
 
-(11 units minimum science requirement completed through courses taken)
+#### Technology in Society Requirement:
+1. **Course**: Must be from the approved list (not identified in transcript).
 
-**Technology in Society Requirement:**
-- Not evident from transcript
+### Summary of BS Completion:
+Based on the data, the student has not met all the BS requirements. They are missing courses in the core requirements, senior project, specific electives, and engineering fundamentals. Therefore:
 
-**Engineering Fundamentals:**
-- CS 106B - Not Taken
-- ENGR40M or ENGR76 - Not evident from transcript
+**Output**: 
 
-**Depth Requirements:**
-- Not detailed/specific in provided context
-
-**Eligible Humanities Electives:**
-- Some humanities/electives are evident but specific eligibility isn’t provided.
-
-**Senior Project:**
-- No evidence of Senior Project completion in the transcript.
-
-**Writing in the Major Requirement:**
-- Not evident from transcript
-
-**Petitions, Deviations, & Transfer Credits:**
-- Not enough information provided
-
-**Overall:**
-- **BS Core Requirements not completely satisfied**
-  - Missing CS 106B, CS 103, CS 111, and CS 161
-  - Uncertain about Technology in Society Course
-  - Uncertain about Engineering Fundamentals (ENGR40M or ENGR76)
-  - Uncertain if Senior Project requirement has been met
-
-**MS Requirements Analysis**
-
-**Foundations Requirement:**
-- Logic, Automata & Complexity (CS103) - Not Fulfilled
-- Probability (CS109, Stat116, CME106, MS&E220, or EE178) - Fulfilled (STAT116, Grade B+)
-- Algorithmic Analysis (CS161) - Not Fulfilled
-- Computer Organ & Sys (CS107 or 107E) - Fulfilled (CS107, Grade B+)
-- Principles of Computer Systems (CS110 or CS111) - Not Fulfilled
-
-**Significant Implementation Requirement:**
-- Not evident from transcript whether a course fulfilling implementation requirement has been completed.
-
-**Breadth Requirement:**
-- A - Not evident from transcript
-- B - Not evident from transcript
-- C - Not evident from transcript
-- D - Not evident from transcript
-
-**Artificial Intelligence Depth:**
-- CS221 - Not evident from transcript
-- Additional courses from CS223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238 as required for depth
-
-**Electives:**
-- Not detailed/specific in provided context
-
-**Overall:**
-- **MS Requirements not completely satisfied**
-  - Missing numerous foundational courses
-  - Significant implementation requirement not detected in transcript
-  - Breadth and AI Depth not met based on provided courses
-  - Electives and full unit requirements not evidenced
-
-**Conclusion:**
-BS Requirements are not satisfied, thus MS requirements are not analyzed further as BS requirements are a prerequisite. The following BS and MS requirements are not satisfied:
-
-**BS Requirements:**
 1. CS 103
 2. CS 106B
 3. CS 111
 4. CS 161
-5. Technology in Society Course
-6. ENGR40M or ENGR76
-7. Senior Project
-8. Writing in the Major Requirement
+5. Senior Project (CS 191/191W/194/194W/210B/294)
+6. Technology in Society course
+7. Engineering Fundamentals (CS 106B, ENGR 40M or 76)
+
+
+### MS Degree Requirements Analysis
+
+#### Foundation Requirements:
+1. **Logic, Automata & Complexity (CS103)**: Not completed during undergraduate.
+2. **Probability (CS109)**: Completed with A-.
+3. **Algorithmic Analysis (CS161)**: Not completed.
+4. **Computer Org & Sys (CS107)**: Completed with B+.
+5. **Principles of Computer Systems (CS110 or CS111)**: Not completed.
+
+#### Significant Implementation Requirement:
+- Must take one of the required courses. Not available in the transcript.
+
+#### Breadth Requirements:
+- Not determined as no information provided on Breadth areas taken.
+
+#### Depth Requirements (AI Specialization):
+- **CS 221**: Not completed.
+- Four courses from: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238: Not specified in transcript.
+- Total of 21 units from depth categories: Unable to determine total units from depth categories.
+
+#### Electives:
+- No elective courses identified.
+
+### Summary of MS Completion:
+The transcript does not provide sufficient evidence to determine whether all MS requirements are met. The student lacks foundational courses, significant implementation courses, depth requirements, and electives.
+
+**Output**:
+1. CS 103
+2. CS 161
+3. CS 110/CS 111
+4. Significant Implementation course.
+5. Breadth courses from different areas.
+6. Depth courses for AI specialization.
+7. Electives to meet total unit requirement of 45 units.
+

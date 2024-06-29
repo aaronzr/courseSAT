@@ -1,74 +1,333 @@
-Based on the provided transcript and the degree requirements for both the BS and MS in Computer Science at Stanford, let's analyze the academic progress of Alicia Marie Jackson to determine if she has satisfied the requirements.
+LLM_stanford_transcript1_UNSAT_6.txt
+Leland Stanford Jr. University Stanford, CA 94305 USA  
+Undergraduate Unofficial Transcript  
+Name : Jackson, Alicia Marie  
+Student ID : 09277633  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 10/05/2023  
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  
+\*  Worksheet - For office use by authorized Stanford personnel \*  
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  
 
-### Bachelor of Science in Computer Science Degree Requirements Analysis
+Academic Advisor: Romero, Laura T  
+  
+--------- Stanford Degrees Awarded ---------  
+  
+Degree :Bachelor of Science  
+Confer Date :12/15/2023  
+Plan :Computer Science  
 
-#### Core Requirements
-- **CS106B Programming Abstractions** - Completed: B-
-- **CS107 Computer Organization and Systems** - Completed: D-
-- **CS111 Operating Systems Principles** - Completed: C
-- **CS161 Data Structures and Algorithms** - Completed: C+
-- **CS103 Mathematical Foundations of Computing** - Not listed in transcript
-- **CS109 Introduction to Probability for Computer Scientists** - Not listed in transcript (completed STAT 50 instead with C+)
+--------- Academic Program ---------  
 
-#### Senior Project
-- **Senior Project course (one of CS191, CS191W, CS194, CS194W, CS210B)** - Completed: CS210B Project Experience with Corporate Partners (graded C)
+Program :   Computer Science  
+09/01/2021 :Computer Science (MS)  
+Active in Program  
+Program :   Undergraduate Matriculated  
+09/21/2019 :Computer Science (BS)  
+Completed Program  
+Coterminal Graduate, 12/01/2022 -  
+Coterminal Undergraduate, 09/21/2019 - 12/01/2022  
 
-#### Mathematics and Science Requirements
-- **Mathematics:**
-  - MATH 19, 20, 21 (equivalent through AP Calculus) - Completed with 8.00 units in Calculus AB (AP)
-  - MATH 51 (Linear Algebra and Differential Equations) - Completed: C
-  - MATH 52 (Calculus) - Completed: B-
-  - CS103 and CS109 are not listed, hence no additional electives taken
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2018-2019 Autumn  
+Advanced Placement      Biology 12.00  
+Advanced Placement      Mathematics: Calculus AB 8.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.  
 
-- **Science:**
-  - PHYSICS 61 (Mechanics or equivalent) - Completed: A-
-  - PHYSICS 63 (Electricity, magnetism, and optics) - Completed: C+
-  - Additional elective from the science list: BIOLOGY 82 (Genetics) - Completed: B
+--------- Beginning of Academic  Record ---------  2019-2020 Autumn
 
-#### Engineering Fundamentals
-- **Engineering Fundamentals (10 units minimum):**
-  - CS106B (Programming Abstractions) - Completed: B-
-  - EE 102 or EE 103 (Introduction to Logic Design) - Completed EE 102: B
-  - CS/ENGR 40 (Engineering fundamentals) - Not listed
+Course Title Attempted Earned Grade   
+MATH 51  Linear Algebra and Differential Equations  5.00  5.00 C  
+   Eleanor Nurt  
+PHYSICS 61 Mechanics and Special Relativity 5.00 5.00 A-
+   Luca Raya  
+CS 106A Programming Methodology 5.00 5.00 B
+   Mehran Sahami  
+ENGLISH 101 Introduction to Literature 4.00 4.00 A-
+   Joy Jenkins  
+MUSIC 101 Music Appreciation 2.00 2.00 CR
+   David Malo  
+   
+UG Term GPA 2.980 Term Totals 21.00 21.00  
+UG Cum GPA 2.980 Cum  Totals 21.00 21.00  
 
-#### TiS (Technology in Society Requirement)
-- Not listed or unclear from the transcript
+2019-2020 Winter  
 
-### Graduate MS in Computer Science
-#### Foundations Requirement
-- **CS103 Logic, Automata & Complexity** - Not completed (missing)
-- **CS109 Probability** - Not completed as only STAT 50 present, not cross-listed approved courses (CME106, MS&E220, Stat116, EE178)
-- **CS161 Algorithmic Analysis** - Completed (undergraduate: C+)
-- **CS107/CS107E Computer Org & Sys** - Completed (undergraduate: D-)
-- **CS110/CS111 Principles of Computer Systems** - Completed: C
+Course Title Attempted Earned Grade    
+STAT 50 Introduction to Probability and Statistics 5.00 5.00 C+  
+   Oliver J. Munoz  
+ECON 101 Principles of Economics 3.00 0.00 W  
+   Rachel Kim  
+PHYSICS 70 Foundations of Modern Physics 4.00 4.00 B+
+   Ian Fisher  
+BIOLOGY 82 Genetics 5.00 5.00 B
+   Thomas Quinn   
+   
+UG Term GPA 2.800 Term Totals 17.00 13.00  
+UG Cum GPA 2.892 Cum  Totals 38.00 34.00  
 
-#### Significant Implementation Requirement
-- **One course required** (must be taken for a letter grade):
-  - Potential matching course: CS210B - Completed: C
+2019-2020 Spring    
 
-#### Breadth Requirement
-- **Three courses, one from each different area A, B, C, or D:**
-  - Unclear if any completed as none explicitly listed for these areas
+Course Title Attempted Earned Grade  
+ENGLISH 102 Shakespeare 4.00 4.00 A
+   Simon White  
+HISTORY 101 American History since 1865 5.00 5.00 B+  
+   Melissa Wong  
+MATH 52 Integral Calculus of Several Variables 5.00 5.00 B-  
+   Zhang Li  
+PHYSICS 63 Electricity, magnetism, and optics 5.00 5.00 C+  
+   James K. Paxton  
+MUSIC 201 Ensemble Performance 1.00 1.00 A-
+   Chandra Smith  
+   
+UG Term GPA 2.920 Term Totals 20.00 20.00  
+UG Cum GPA 2.897 Cum  Totals 58.00 54.00  
 
-#### AI Depth
-- **CS221 AI: Principles and Techniques** - Not completed (missing)
-- **Four additional depth courses**:
-  - CS156 Machine Learning - Completed: D+
-  - CS238 Machine Learning in Healthcare - Completed: B
-  - CS233 Computer Vision - Completed: B
-  - Potentially needs more courses from the list
+2020-2021 Autumn    
 
-#### Electives
-- **Courses to complete 45-unit requirement**:
-  - Lacking clear elective summary, but overall MS degree seems to miss several significant depth and foundation courses.
+Course Title Attempted Earned Grade   
+CS 106B Programming Abstractions 5.00 5.00 B-
+   Tom Goldstein  
+CS 111 Operating Systems 5.00 5.00 C  
+   Jane Lee  
+MATH 103 Introduction to Complex Variables 3.00 3.00 B+   
+   Xavier Prescott  
+HUM 202 Cultural Heritage 3.00 3.00 A
+   Sofia Ramirez  
+PHYSICS 100 Modern Physics Laboratory 2.00 2.00 CR  
+   Nora Hamilton  
 
-### Summary Analysis
-### BS Degree
-- **BS NOT SAT**: Several courses are not listed or not completed with prerequisites such as CS103, CS109; also CS107 was finished minimally (D-).
-- **Senior Project**: C in CS210B is a pass, satisfying the project course.
+UG Term GPA 2.750 Term Totals 18.00 18.00  
+UG Cum GPA 2.838 Cum  Totals 76.00 72.00  
 
-### MS Degree
-- **MS NOT SAT**: Multiple required courses (CS103, CS109) and depths such as CS221 are missing, also lacks clear breadth and elective confirmation.
+2020-2021 Winter    
+
+Course Title Attempted Earned Grade     
+EE 102 Introduction to Logic Design 3.00 3.00 B  
+   Samuel Harris  
+EE 203 Probability and Random Processes 3.00 3.00 C+  
+   Tim Fry  
+CS 124 From Languages to Information 5.00 5.00 D+  
+   Michael Zhang  
+HUM 204 Arts and Ideas of the Renaissance 3.00 3.00 A-
+   Elliot Howard  
+MUSIC 173 Advanced Ensemble Performance 1.00 0.00 W  
+   Chandra Smith  
+  
+UG Term GPA 2.380 Term Totals 15.00 14.00  
+UG Cum GPA 2.787 Cum  Totals 91.00 86.00  
+
+2020-2021 Spring    
+
+Course Title Attempted Earned Grade    
+CS 161 Data Structures and Algorithms 5.00 5.00 C+  
+   Nina Rao  
+EE 222 Quantum Mechanics 3.00 3.00 D  
+   William Lloyd  
+CS 107 Computer Organization and Systems 5.00 5.00 D-
+   Robert Chen  
+BIO 110 Ecology 4.00 4.00 B  
+   Heather Allen  
+ART 101 Introduction to Visual Arts 3.00 3.00 A
+   Pierre Aziz  
+
+UG Term GPA 2.300 Term Totals 20.00 20.00  
+UG Cum GPA 2.714 Cum  Totals 111.00 106.00  
+
+2021-2022 Autumn   
+
+Course Title Attempted Earned Grade   
+PHYSICS 150 Advanced Physics 4.00 4.00 C
+   Dana Williams  
+CS 196 Independent Study 4.00 4.00 S  
+   Jonathan Lowe  
+PHIL 151 Philosophy of Mathematics 3.00 3.00 A-
+   Sarah King  
+ART 202 Masterpieces of Gothic Art 3.00 3.00 B+
+   Nathan Hall  
+HUM 208 Contemporary Asian Literature 3.00 3.00 A-  
+   Ying Li   
+   
+UG Term GPA 3.178 Term Totals 17.00 17.00  
+UG Cum GPA 2.772 Cum  Totals 128.00 123.00  
+
+2021-2022 Winter     
+  
+Course Title Attempted Earned Grade     
+CS 207 Software Project Experience 5.00 5.00 B-  
+   Megan Cole  
+CS 232 Advanced Computer Networks 3.00 3.00 A  
+   Vijay Alok  
+PSYCH 110 Introduction to Cognitive Sciences 4.00 4.00 B
+   Deanna Foster  
+MATH 171 Measure Theory 3.00 3.00 C
+   Ingrid Miller  
+PHIL 201 Logic and Computation 4.00 4.00 B+  
+   Stephen Jackson  
+  
+UG Term GPA 2.980 Term Totals 19.00 19.00  
+UG Cum GPA 2.784 Cum  Totals 147.00 142.00
+
+2021-2022 Spring  
+
+Course Title Attempted Earned Grade       
+CS 195 Software Engineering Methods 5.00 5.00 B-  
+   Ashley Williams  
+CS 134 Ethics and Technology 3.00 3.00 B+  
+   James Tyrone  
+STATS 202 Introduction to Statistical Inference 4.00 4.00 A
+   Karen Ulrich  
+LING 101 Introduction to Linguistics 5.00 5.00 B+   
+   Laura Gibson  
+
+UG Term GPA 3.062 Term Totals 17.00 17.00  
+UG Cum GPA 2.805 Cum  Totals 164.00 159.00
+
+2022-2023 Autumn   
+
+Course Title Attempted Earned Grade       
+BIO 220 Molecular Biology 3.00 3.00 C-
+   Susan Ray  
+CS 156 Machine Learning 5.00 5.00 D+  
+   Alex Morgan  
+HUM 301 Ethics in Modern Society 4.00 4.00 B
+   Olivia Taiwan  
+PSYC 202 Social Psychology 3.00 3.00 A-   
+   Francis Gordon  
+  
+UG Term GPA 2.410 Term Totals 15.00 15.00  
+UG Cum GPA 2.752 Cum  Totals 179.00 174.00  
+  
+2022-2023 Winter  
+
+Course Title Attempted Earned Grade        
+EE 300 Principles of Electric Circuits 3.00 3.00 B-  
+   George Reed  
+CS 140 Operating Systems and Systems Programming 5.00 5.00 F  
+   Mathew Chen  
+CS 245 Big Data Systems 3.00 3.00 B  
+   Michael Keller  
+PHYSICS 301 General Relativity 4.00 4.00 C
+   Ingo Petersen  
+
+UG Term GPA 1.750 Term Totals 15.00 15.00  
+UG Cum GPA 2.662 Cum  Totals 194.00 189.00  
+  
+2022-2023 Spring  
+
+Course Title Attempted Earned Grade  
+CS 210B Project Experience with Corporate Partners 5.00 5.00 C
+   Diane Watson   
+CS 238 Machine Learning in Healthcare 3.00 3.00 B
+   Diego Martinez  
+CS 150 Complex Networks 4.00 4.00 B+
+   Adam Shelby  
+MUSIC 301 Advanced Music Theory 2.00 2.00 A  
+   Marie Song  
+
+UG Term GPA 2.620 Term Totals 14.00 14.00  
+UG Cum GPA 2.664 Cum  Totals 208.00 203.00  
+GR Term GPA 0.000 Term Totals 0.00 0.00  
+GR Cum GPA 0.000 Cum  Totals 0.00 0.00  
+  
+2023-2024 Autumn  
+
+Course Title Attempted Earned Grade  
+CS 240 Efficient Algorithms 3.00 3.00 C+   
+   Robert Green  
+CS 230 Deep Learning 4.00 4.00 F  
+   Andrea Brown  
+CS 233 Computer Vision 3.00 3.00 B  
+   Eva Trent  
+EE 301 Solid State Physics 3.00 3.00 B-  
+   Jeremy Black  
+
+UG Term GPA 1.940 Term Totals 13.00 13.00  
+UG Cum GPA 2.594 Cum  Totals 221.00 216.00
+GR Term GPA 0.000 Term Totals 1.00 0.00  
+GR Cum GPA 0.000 Cum  Totals 1.00 0.00   
+
+Graduate Career Totals  
+Cum GPA 0.000 Cum Totals 1.00 0.00  
+Undergraduate Career Totals  
+
+Cum GPA 2.594 Cum Totals 221.00 216.00  
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 241.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 216.00  
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*      
+\* Worksheet - For office use by authorized Stanford personnel \*     
+\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*\*  
+END OF TRANSCRIPT.
+==========================================### Analysis of Student Transcript for B.S. Requirements
+
+1. **Core Requirements:**
+   - **Programming Abstractions (CS106B)**: Completed with B-.
+   - **Computer Organization and Systems (CS107)**: Completed with D-.
+   - **Operating Systems (CS111)**: Completed with C.
+   - **Mathematical Foundations of Computing (CS103)**: Not completed (grade not listed in the transcript, possibly exempt with AP credit?).
+   - **Introduction to Probability for Computer Scientists (CS109)**: Not completed (grade not listed in the transcript, possibly exempt with AP credit?).
+   - **Data Structures and Algorithms (CS161)**: Completed with C+.
+
+   **Status**: Partially incomplete. CS103 and CS109 need verification or completion.
+
+2. **Senior Project Requirement:**
+   - **CS 210B Project Experience with Corporate Partners**: Completed with C.
+
+   **Status**: Satisfied.
+
+3. **AI Elective Requirements:**
+   - **AI Track Specific**:
+     - **CS 221**: Not completed.
+     - **CS 156 Machine Learning**: Completed with D+.
+     - **CS 238 Machine Learning in Healthcare**: Completed with B.
+     - **Track B Requirements**: Needs verification of other areas such as Vision, NLP, etc. Courses like CS 233 and others listed but not recognized in the transcript specifically under AI categories.
+
+   **Math and Science Requirements**:
+   - **Mathematics**:
+     - **MATH 51, 52**: Completed.
+     - **MATH 103**: Completed.
+   - **Science**:
+     - **PHYS 61, 63, 100**: Completed.
+
+   **Status**: Partially incomplete. CS 221 not completed and other AI track-specific elective areas need verification.
+
+4. **GPA Requirement for BS**:
+   - Active Cum GPA: 2.594 (need 2.0 minimum, satisfied).
+   - **GPA for Engineering Fundamentals, CS Core, Depth, and Senior Project combined**: Needs calculation but problematic grades (e.g. D, F, D-) suggest difficulty in meeting the requirement.
+
+### Analysis of Student Transcript for M.S. Requirements
+
+1. **Foundations Requirement:**
+   - Leveraged previously taken undergraduate courses:
+     - Logic, Automata & Complexity (CS103), Probability (CS109), and Algorithmic Analysis (CS161) need explicit confirmation.
+     - Computer Organ & Sys (CS107 or 107E): Completed.
+     - Principles of Computer Systems (CS110 or CS111): Completed.
+
+   **Status**: Verification required for other foundational courses taken elsewhere or at Stanford.
+
+2. **Breadth Requirement:**
+   - Needs verification of three courses taken in different areas, letter graded.
+
+3. **Depth Requirement:**
+   - CS 221, CS 223A, one more course from specified categories, and a total of at least 21 units from these, verified on the transcript.
+
+4. **Electives:**
+   - Needs verification in completed courses.
+
+5. **Significant Implementation Requirement:**
+   - CS 210B can be counted if taken at Stanford as part of the MS program.
+
+6. **GPA Requirement for MS**:
+   - Must have an average grade in MS courses of at least B (3.0).
+   - Transcript shows varied grades, so an exact MS GPA calculation must be done.
 
 ### Conclusion
-**Alicia Marie Jackson** has not satisfied all BS and MS requirements according to the provided transcript and requirements.
+
+1. **BS Requirements Status**: **Not satisfied** due to missing AI track courses and verification needed for some core courses.
+2. **MS Requirements Status**: **Not satisfied** due to missing foundational, breadth, depth, and some courses/elective verification.
+
+### Output:
+- **BS Requirements**: Not satisfied: CS103/CS109 grades, CS221 missing, other AI track courses not verified.
+- **MS Requirements**: Not satisfied: foundational courses (CS103/CS109/Algorithmic Analysis if not exempt), breadth, depth, overall GPA verification required.

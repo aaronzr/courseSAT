@@ -1,128 +1,345 @@
-========================GPT Answer to Prompt One Regarding BS Requirements====================
-Based on Amanda Johnson's transcript and the requirements provided for the Bachelor in Science degree with a major in Computer Science and a specialization in Artificial Intelligence, we will evaluate if she met all the program components correctly.
+LLM_stanford_transcript1_UNSAT_8.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305   
+USA  
+Undergraduate Unofficial Transcript  
+Name: Johnson,Amanda Marie  
+Student ID: 89127301  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 10/05/2023  
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+Academic Advisor: Smith,Angela C  
+  
+--------- Stanford Degrees Awarded ---------  
+  
+Degree: Bachelor of Science  
+Confer Date: 06/15/2022  
+Plan: Software Engineering  
+--------- Academic Program ---------  
+Program:   Software Engineer  
+09/15/2020: Software Engineering (MSE)  
+Active in Program  
+Program:   Undergraduate Matriculated  
+09/15/2018: Software Engineering (BS)  
+Completed Program  
+Coterminal Graduate, 09/15/2022 -  
+Coterminal Undergraduate, 09/15/2020 - 09/15/2022  
+  
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2018-2019 Autumn  
+Advanced Placement      German 10.00  
+Advanced Placement      Physics: Mechanics 10.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.  
+--------- Beginning of Academic  Record --------- 2018-2019 Autumn  
+Course      Title                                                Attempted Earned Grade  
+MATH 19   CALCULUS                                           5.00    5.00  B  
+CS 106A   PROGRAMMING METHODOLOGY                         5.00    5.00  A-  
+HISTORY 101  WORLD HISTORY                                        4.00    4.00  B  
+MUSIC 171 CHAMBER MUSIC                                     1.00    1.00  CR  
+  
+UG Term GPA 3.450 Term Totals 15.00 15.00  
+UG Cum GPA 3.450 Cum  Totals 15.00 15.00  
+2018-2019 Winter  
+Course      Title                                                Attempted Earned Grade  
+MATH 20   CALCULUS                                            5.00    5.00  C  
+PHIL 1     INTRO TO PHILOSOPHY                                  4.00    4.00  B+  
+MUSIC 171 CHAMBER MUSIC                                     1.00    0.00  W  
+CHEM 31A  INTRO TO CHEMISTRY                               4.00    4.00  A-  
+  
+UG Term GPA 3.333  Term Totals 14.00 13.00  
+UG Cum GPA 3.394  Cum  Totals 29.00 28.00  
+ ********************  
+Name: Johnson,Amanda Marie  
+Student ID: 89127301  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+2018-2019 Spring  
+Course      Title                                                Attempted Earned Grade  
+MATH 21   CALCULUS                                            5.00    5.00  B  
+PHYSICS 41  MECHANICS                                           4.00    4.00  A-  
+MUSIC 171 CHAMBER MUSIC                                     1.00    1.00  A  
+ENGL 90   SHAKESPEARE                                         4.00    4.00  B-  
+CS 103 INTRO TO LOGIC                                       4.00    4.00  B+  
+  
+UG Term GPA 3.450 Term Totals 18.00 18.00  
+UG Cum GPA 3.407 Cum  Totals 47.00 46.00  
+2019-2020 Autumn  
+Course      Title                                                Attempted Earned Grade  
+CS 106B   PROGRAMMING ABSTRACTIONS              5.00    5.00  C  
+EE 100     THE ELECTRICAL ENGINEERING  
+                 PROFESSION                                      1.00    1.00  S  
+ENGR 40   INTRO TO ELECTRONICS                            5.00    5.00  B+  
+MUSIC 171  CHAMBER MUSIC                                    1.00    1.00  A  
+ASTRN 120 INTRO TO ASTRONOMY                             4.00    4.00  B-  
+HIST 120   U.S. HISTORY                                         3.00    3.00  A  
+  
+UG Term GPA 3.111  Term Totals 19.00 19.00  
+UG Cum GPA 3.359  Cum Totals 66.00 65.00  
+2019-2020 Winter  
+Course      Title                                                Attempted Earned Grade  
+ANTHRO 101 THE MAYANS AND THEIR  
+                   ANCESTORS                                       3.00    3.00  A-  
+STAT 110   PROBABILITY THEORY                            4.00    4.00  B  
+EE 101A    CIRCUITS I                                                4.00    4.00  B+  
+MUSIC 171  CHAMBER MUSIC                                     1.00    1.00  A  
+CS 109     PROBABILITY FOR CS                                4.00    4.00  B+  
+  
+UG Term GPA 3.374 Term Totals 16.00 16.00  
+UG Cum GPA 3.366 Cum  Totals 82.00 81.00  
+2019-2020 Spring  
+Course      Title                                                Attempted Earned Grade  
+EE 43       INTRODUCTORY ELECTRONICS                    2.00    2.00  A-  
+EE 101B    CIRCUITS II                                              4.00    4.00  A  
+EE 116      SEMICONDUCTOR DEVICE PHYSICS               3.00    3.00  A  
+ENGR 50    INTRO TO MATERIALS SCIENCE                    4.00    4.00  A-  
+MUSIC 171  CHAMBER MUSIC                                     1.00    1.00  A+  
+PHYSICS 44 ELECTRICITY AND MAGN. LAB                       1.00    1.00  S  
+PWR 2       WRITING & RHETORIC 2                          4.00    4.00  B  
+  
+UG Term GPA 3.670 Term Totals 19.00 19.00  
+UG Cum GPA 3.404 Cum  Totals 101.00 100.00  
+2020-2021 Autumn  
+Course      Title                                                Attempted Earned Grade  
+CS 161     DATA STRUCTURES & ALGORITHMS             5.00    5.00  D  
+CS 107      COMPUTER NETWORKS                             3.00    3.00  C  
+EE 212      INTEGRATED CIRCUIT FABRICATION            3.00    3.00  B+  
+MATSCI 164 ELECTRONIC MATERIALS LAB                    4.00    4.00  A-  
+MUSIC 171   CHAMBER MUSIC                                      1.00    1.00  A  
+PHYSICS 60  INTRO TO QUANTUM MECHANICS               4.00    4.00  A  
+  
+UG Term GPA 3.137  Term Totals 20.00 20.00  
+UG Cum GPA 3.359  Cum Totals 121.00 120.00  
+2020-2021 Winter  
+Course      Title                                                Attempted Earned Grade  
+EE  41       PHYSICS OF ELECTRICAL ENGINEERING       5.00    5.00  A  
+EE  108A    DIGITAL SYSTEMS I                                        4.00    4.00  A  
+EE  141     ENGINEERING ELECTROMAGNETICS               3.00    3.00  A  
+EE  191     SPECIAL STUDIES AND REPORTS                  6.00    6.00  A  
+MUSIC 171  CHAMBER MUSIC                                        1.00    1.00  A  
+  
+UG Term GPA 4.000 Term Totals 19.00 19.00  
+UG Cum GPA 3.450 Cum  Totals 140.00 139.00  
+2020-2021 Spring  
+Course      Title                                                Attempted Earned Grade  
+ATHLETIC 139 TABLE TENNIS: INTERMEDIATE            1.00    1.00  S  
+EE  134     INTRO TO PHOTONICS                                 4.00    4.00  A  
+EE  136     INTRO TO NANOPHOTONICS                        3.00    3.00  A  
+MATSCI 160  NANOMATERIALS LAB                               4.00    4.00  A-  
+ME  191     ENGINEERING PROBLEMS                             2.00    2.00  S  
+MUSIC 171  CHAMBER MUSIC                                         1.00    1.00  A  
+URBANST 110 UTOPIA AND REALITY                              4.00    4.00  A  
+  
+UG Term GPA 3.981  Term Totals 19.00 19.00  
+UG Cum GPA 3.490  Cum  Totals 159.00 158.00  
+GR Term GPA 0.000 Term Totals 1.00 1.00  
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00  
+2021-2022 Autumn  
+Course      Title                                                Attempted Earned Grade  
+PE  138     TABLE TENNIS: ADVANCED                       1.00    1.00  S  
+WELLNESS 210  MINDFUL LIVING                               2.00    2.00  S  
+CS 248     GAME DESIGN                                                3.00    3.00  A  
+CS 270     COMPUTATIONAL BIOLOGY                            3.00    3.00  A  
+CS 223A  ROBOTICS                                                    4.00    4.00  B  
+CS 222       NATURAL LANGUAGE PROCESSING           3.00    3.00  B  
+  
+UG Term GPA 2.667  Term Totals 16.00 16.00  
+UG Cum GPA 3.299  Cum Totals 175.00 174.00  
+GR Term GPA 3.666 Term Totals 12.00 12.00  
+GR Cum GPA 3.666 Cum  Totals 13.00 13.00  
+2021-2022 Winter  
+Course      Title                                                Attempted Earned Grade  
+CS 316    ETHICAL HACKING                                          3.00    3.00  B+  
+CS 331    ADVANCED MACHINE LEARNING                  3.00    3.00  A-  
+MUSIC 200  MUSIC THEORY                                              3.00    3.00  CR  
+  
+GR Term GPA 3.850 Term Totals 9.00 9.00  
+GR Cum GPA 3.740 Cum  Totals 22.00 22.00  
+2021-2022 Spring  
+Course      Title                                                Attempted Earned Grade  
+APPPHYS 232  BIOPHYSICS IMAGING LAB                     4.00    0.00  
+EE  236C  LASERS                                                        3.00    0.00  
+EE  340   OPTICAL MICRO- AND NANO-CAVITIES        3.00    0.00  
+  
+GR Term GPA 0.000 Term Totals 10.00 0.00  
+GR Cum GPA 3.740 Cum  Totals 32.00 22.00  
 
-### Summary of Requirements:
+Graduate Career Totals  
+Cum GPA 3.740 Cum Totals 32.00 22.00  
+Undergraduate Career Totals  
+Cum GPA 3.299 Cum Totals 175.00 174.00  
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 193.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 174.00  
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+********************************************************************************************* END OF TRANSCRIPT  
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the Bachelor in Science (BS) degree requirements for the Computer Science program at Stanford as provided, I'll analyze Amanda Marie Johnson's transcript to determine whether all the requirements are satisfied.
 
-#### Core Requirements:
-- CS103: Mathematical Foundations of Computing
-- CS106B: Programming Abstractions
-- CS107: Computer Organization and Systems (or 107E)
-- CS111: Operating Systems Principles
-- CS161: Data Structures and Algorithms
-- CS109: Introduction to Probability for Computer Scientists
+### BS Core Requirements
+1. **ENGR Fundamentals and CS Core**
+    - A minimum GPA of 2.0 for all courses in ENGR Fundamentals and CS Core, Depth, and Senior Project combined.
+    - Required courses:
+        - **CS106B: Programming Abstractions** - Taken, Grade: C
+        - **CS107: Computer Organization and Systems** - Taken, Grade: C
+        - **CS111: Principles of Computer Systems** - Not found
+        - **CS103: Mathematical Foundations of Computing** - Taken, Grade: B+
+        - **CS109: Introduction to Probability for Computer Scientists** - Taken, Grade: B+
+        - **CS161: Data Structures and Algorithms** - Taken, Grade: D (Note: Needs to be retaken as the requirement is often a minimum grade of C or higher)
 
-#### Math and Science Requirements:
-- MATH 19, 20, 21 or equivalent
-- Two Math Electives: MATH 51, 52, 53, 104, 107, 108, 109, 110, 113; CS 157, 205L; PHIL 151; CME 100, 102, 104; ENGR 108
-- PHY 41 and PHY 43 or equivalent
-- One Science Elective
+2. **Mathematical Requirements (26 units minimum)**
+    - Courses taken:
+        - MATH 19: Calculus - Taken, Grade: B (5 units)
+        - MATH 20: Calculus - Taken, Grade: C (5 units)
+        - MATH 21: Calculus - Taken, Grade: B (5 units)
+        - CS103: Mathematical Foundations of Computing - Taken, Grade: B+ (5 units)
+        - CS109: Introduction to Probability for Computer Scientists - Taken, Grade: B+ (5 units)
+    - Electives needed - 2 additional math electives from the provided list - Not found
 
-#### Engineering Fundamentals:
-- CS106B (covered under Core Requirements)
-- ENGR 40M or EE 101 (partially covered under transcript)
+3. **Science Requirements (11 units minimum)**
+    - Courses taken:
+        - PHYS 41: Mechanics - Taken, Grade: A- (4 units)
+        - PHYS 44: Electricity and Magnetism Lab - Taken, Grade: S (1 unit)
+        - Elective needed - Additional elective from the provided list - Not found
 
-#### Senior Project:
-- One of CS194, CS194W, CS210B, CS191, CS191W, CS294
+4. **Technology in Society (1 course)**
+    - Not found
 
-### Transcript Evaluation:
+5. **Senior Project (minimum one course)**
+    - Options include courses like CS191, CS194, CS194W, CS210B, or CS294 - Not found
 
-#### Core Courses:
-- CS103: Taken, Grade B+ ✔️
-- CS106B: Taken, Grade C ✔️
-- CS107: Taken, Grade C ✔️
-- CS111: Not listed – ❌
-- CS161: Taken, Grade D (should be retaken for a better grade if it does not meet minimum GPA of 2.0) ✔️
-- CS109: Taken, Grade B+ ✔️
+6. **CS Depth Requirements for AI Track (43 units minimum)**
+    - Core courses:
+        - **CS107: Computer Organization and Systems** - Taken, Grade: C
+        - **CS111: Principles of Computer Systems** - Not found
+        - **CS161: Design and Analysis of Algorithms** - Taken, Grade: D (Needs to be retaken)
+    - AI Track Requirement A:
+        - **CS221: AI: Principles and Techniques** - Not found
+    - AI Track Requirement B (2 courses, different areas):
+        - **CS223A: Robotics** - Taken, Grade: B
+        - **CS222: Natural Language Processing** - Taken, Grade: B
+    - AI Track Requirement C (additional course from Track B or C list):
+        - No additional course from Track B or C list found
+    - Electives (3 additional courses from Track B, C, General CS Electives):
+        - **CS248: Game Design** - Taken, Grade: A
+        - **CS270: Computational Biology** - Taken, Grade: A
+        - **CS331: Advanced Machine Learning** - Taken, Grade: A-
 
-**Note:** Amanda must retake CS161 or ensure it fulfills the minimum GPA requirement, which might be problematic with the D grade.
+### Summary of Missing Requirements:
+1. **CS111: Principles of Computer Systems**
+2. **CS161: Data Structures and Algorithms** (Retake needed)
+3. **Two Math Electives from approved list**
+4. **One Science Elective from approved list**
+5. **Technology in Society Course**
+6. **Senior Project Course**
+7. **CS221: AI: Principles and Techniques**
+8. **One Additional Course from AI Track Requirement C list**
+9. **Minimum GPA Verification for combined courses**
 
-#### Math and Science:
-- MATH 19: Taken, Grade B ✔️
-- MATH 20: Taken, Grade C ✔️
-- MATH 21: Taken, Grade B ✔️
-- Math Elective 1: STAT 110 ❌ (although this isn't directly one of the electives, the probability/statistics requirement means it remains part of core, not math electives)
-- Math Elective 2: Not listed ❌
-- PHY 41: Taken Physics Mechanics (AP), Grade A- or Physics 41 ✔️
-- PHY 43 equivalent: Not listed ❌
-- Science Elective: Possible fulfilment by PHYSICS 44 or CHEM 31A may satisfy this requirement ✔️
+**Conclusion:**
+Based on the above analysis, Amanda Marie Johnson's transcript does **not** satisfy all the BS requirements for the Computer Science program.
+Therefore, the output is a list of courses not satisfied:
+- CS111: Principles of Computer Systems
+- CS161: Data Structures and Algorithms (Retake needed for higher grade)
+- Two Math Electives from approved list
+- One Science Elective from approved list
+- Technology in Society Course
+- Senior Project Course
+- CS221: AI: Principles and Techniques
+- One Additional Course from AI Track Requirement C list
 
-#### Engineering Fundamentals:
-- CS106B: (covered under Core)
-- ENGR 40 or EE 101: Partially covered by ENGR 40 ✔️
-- Other ENGR requirement here: EE 100, EE 101A, and EE 101B ✔️
+```plaintext
+CS111, CS161 (retake), two math electives, one science elective, Technology in Society Course, Senior Project Course, CS221, one additional course from AI Track Requirement C list
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Amanda Marie Johnson satisfies the MSCS degree requirements with an Artificial Intelligence Specialization, we need to cross-check her courses and grades against the detailed requirements.
 
-#### Senior Project:
-- Senior Project Course not seen listed – CS191/194/210B/294 present as required extracurricular elective. CS194, CS210B, or CS191 required ❌
+### Breakdown of Requirements and Completed Courses
 
-#### Technology in Society Requirement:
-- Not specified or listed directly in the transcript – check for courses that could potentially fill this requirement via standalone confirmation (will need external confirmation) ❌
+#### Foundations Requirement:
+1. **Logic, Automata & Complexity (CS103)**
+   - Completed (UG), Grade: B+
+2. **Probability (CS109 or equivalents)**
+   - Completed (UG), CS109, Grade: B+
+3. **Algorithmic Analysis (CS161)**
+   - Completed (UG), Grade: D
+   - Red flag due to low grade
+4. **Computer Organ & Sys (CS107 or 107E)**
+   - Completed (UG), Grade: C
+5. **Principles of Computer Systems (CS110 or CS111)**
+   - Not Completed (requirement unmet)
 
-### Conclusion and Courses Not Satisfied:
+#### Significant Implementation Requirement:
+- **Significant Implementation Courses:**
+  - CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+  - **Completed courses that qualify for this requirement:**
+    - CS 248 (Grade: A)
 
-1. **CS111: Operating Systems Principles** 
-2. **MATH electives (2 required)** – STAT 110 does not count from the selected list.
-3. **PHY 43 equivalent: Electricity and Magnetism**
-4. **Senior Project (CS194, CS194W, CS210B, CS191, or CS294)** 
-5. **Technology in Society Requirement** - Verify or revalidate 
+#### Breadth Requirement:
+- **Three courses, one from each different Area:**
+  - **Area A: Mathematical and Theoretical Foundations**:
+    - No suitable courses identified
+  - **Area B: Computer Systems**:
+    - No suitable courses identified
+  - **Area C: Applications**:
+    - Completed (UG), CS 223A (Grade: B)
+  - **Area D: Computing and Society**:
+    - No suitable courses identified
 
-Amanda Johnson's transcript meets the majority of the requirements but has critical gaps. Her completion of the BS degree requirements cannot be confirmed until the deficiencies are rectified or verified by external competent authorities.
+#### Artificial Intelligence Depth:
+a) **CS 221**
+   - Not completed
 
-Thus, the output is:
+b) **At least four of the specific AI courses:**
+   - Completed:
+     - CS 223A (Grade: B)
+     - Only one identified. Need at least three more from specified courses.
 
-**List of Courses Not Satisfied:**
-- **CS111: Operating Systems Principles**
-- **MATH electives (2 required, instead of STAT 110)**
-- **PHY 43 equivalent: Electricity and Magnetism**
-- **Senior Project (CS194/CS194W/CS210B/CS191)**
-- **Technology in Society Requirement**========================GPT Answer to Prompt Two Regarding MS Requirements====================
-To evaluate whether Amanda Marie Johnson's MS in Computer Science with a specialization in Artificial Intelligence is satisfied, we need to go through each requirement and check her transcript. 
+c) **A total of at least 21 units from categories (a), (b), and additional depth courses:**
+   - CS 316 (Grade: B+)
+   - CS 331 (Grade: A-)
+   - Total units = 10 units only (does not meet the 21 units required)
 
-### 1. Foundations Requirement:
-- **Logic, Automata & Complexity (CS103):** Completed in Spring 2018-2019 with a grade of B+.
-- **Probability (CS109, Stat116, CME106, MS&E220, or EE178):** Completed CS 109 in Winter 2019-2020 with a grade of B+.
-- **Algorithmic Analysis (CS161):** Completed in Autumn 2020-2021 with a grade of D. This grade may not be sufficient to satisfy the requirement.
-- **Computer Organ & Sys (CS107 or 107E):** Completed CS 107 in Autumn 2020-2021 with a grade of C. This grade may not be sufficient to satisfy the requirement.
-- **Principles of Computer Systems (CS110 or CS111):** Not listed in the transcript.
+#### Electives:
+- Electives to complete 45-unit requirement:
+  - Must check total units later after matching other requirements.
 
-*Summary:* 
-- Algorithmic Analysis (CS161): Grade is not sufficient.
-- Computer Organ & Sys (CS107 or 107E): Grade may not be sufficient.
-- Principles of Computer Systems (CS110 or CS111): Not completed.
+### Additional Requirements Check:
+- All courses numbered 100 or greater: Yes
+- Maximum 10 units for Foundations towards 45 units: Yes
+- Maximum 3 units of 1-2 unit seminars: Yes
+- At least 36 units for letter grade (except specific CR requirements due to COVID): Yes
+- Average grade at least B (3.0): Graduate GPA: 3.740
+- Units previously applied towards BS not counted: Review confirms no such overlap for key required courses
+- At least 45 graduate units at Stanford: Not met yet, only 32 units accrued
 
-### 2. Significant Implementation Requirement:
-The courses acceptable to satisfy this requirement must be satisfied by at least one of the listed options with a letter grade. Let's evaluate:
+### Courses Not Satisfied:
+1. **Algorithmic Analysis (CS161)**
+   - Grade D, not sufficient
+2. **Principles of Computer Systems (CS110 or CS111)** not completed
+3. **Breadth Requirement:**
+   - Area A, B, D **not satisfied**.
+4. **Artificial Intelligence Depth:**
+   - CS 221 not completed
+   - At least three more Depth courses from specified list not completed
+   - Total Depth units relevaltly accrued = 10 units
+5. **Total graduate units:** Only 32 out of 45 required.
 
-- **CS 248 (Game Design):** Completed in Autumn 2021-2022 with a grade of A. This does satisfy the significant implementation requirement.
+### Summary
+#### Amanda Johnson does not satisfy the MSCS degree requirements. Unmet requirements include:
+1. Sufficient grade in Algorithmic Analysis (CS161).
+2. Completion of Principles of Computer Systems (CS110 or CS111).
+3. Breadth Area Courses for Areas A, B, D.
+4. Artificial Intelligence Depth courses, including CS 221 and total 21 units.
+5. Accumulation of a minimum of 45 graduate units.
 
-### 3. Breadth Requirement:
-- **Area A (Mathematical and Theoretical Foundations):** Need to complete one course. No instance on transcript.
-- **Area B (Computer Systems):** Need to complete one course. CS 316 completed in Winter 2021-2022 with a grade of B+.
-- **Area C (Applications):** CS 248 (Game Design) could be used here, completed with a grade of A.
-- **Area D (Computing and Society):** No instance on transcript.
-
-*Summary:* 
-- Area A: Not completed.
-- Area D: Not completed.
-
-### 4. Artificial Intelligence Depth:
-a) **CS 221 (students with equivalent course work may waive with adviser approval):** Not completed or waived.
-b) **At least four of:** (CS 223A, CS 224N, CS 224S, CS 224U, CS 224V, CS 224W, CS 228, CS 229, CS 231A, CS 231N, CS 234, CS 237A, CS 237B, CS 238): Completed CS 223A in Autumn 2021 with a grade of B.
-c) **21 units from listed Depth courses:** Not enough information nor sufficient courses listed for prerequisite prerequisites.
-
-### 5. Electives:
-No specific elective courses are mentioned or deducible to make up 45-unit requirement.
-
-### Summary:
-Based on the transcript provided, Amanda Marie Johnson has NOT met all the requirements. Here is the list of unmet requirements:
-
-- Algorithmic Analysis (CS161): Grade is D.
-- Computer Organ & Sys (CS107 or 107E): Grade is C.
-- Principles of Computer Systems (CS110 or CS111): Not completed.
-- Breadth Area A: Not completed.
-- Breadth Area D: Not completed.
-- CS 221 or waiver: Not completed.
-- 21 units from Depth courses: Not fully verified.
-
-**Output:**
-
-Algorithmic Analysis (CS161), Computer Organ & Sys (CS107 or 107E), Principles of Computer Systems (CS110 or CS111), Breadth Area A, Breadth Area D, CS 221 or waiver, 21 units from Depth courses.
+Output:
+```
+Algorithmic Analysis (CS161) insufficient grade
+Principles of Computer Systems (CS110 or CS111) not completed
+Breadth Requirement Areas A, B, D not satisfied
+CS 221 not completed for AI Depth
+Minimum required AI Depth courses and 21 units not met
+Insufficient total graduate units (32 out of 45)
+```

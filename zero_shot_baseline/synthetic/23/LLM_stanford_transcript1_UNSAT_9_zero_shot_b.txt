@@ -1,100 +1,207 @@
-To ascertain if Sandra Marie Lewinsky satisfies the BS and MS degree requirements, we will evaluate her transcript against the given degree requirements for the BS in Computer Science with an AI specialization and the MS in Computer Science with an Artificial Intelligence Specialization.
-
-Let's start with the BS requirements.
-
-### BS Degree Evaluation
-
-#### Core Requirements
-1. **CS 106B** Programming Abstractions: Not listed.
-2. **CS 103** Mathematical Foundations of Computing: Attempted but withdrew.
-3. **CS 107** Computer Organization and Systems: Taken and passed with B+.
-4. **CS 111** Principles of Computer Systems: Not listed.
-5. **CS 109** Introduction to Probability for Computer Scientists: Taken and passed with A-.
-6. **CS 161** Data Structures and Algorithms: Not listed.
-
-#### Senior Project
-- **CS 191 or equivalent senior project course**: Not listed.
-
-#### Mathematics Requirements
-1. **MATH 19/20/21, or equivalent courses**: Calculus AB AP credit,
-    MATH 51 (B+),
-    MATH 52 (A-).
-2. **CS 103**: Attempted but withdrew.
-3. **CS 109**: Taken and passed with A-.
-4. **Two electives**:
-   - MATH 53 (C+),
-   - MATH 104 (C),
-   - MATH 108 (A).
-
-#### Science Requirements
-1. **PHYS 41/21/61, or equivalent courses**: Taken and passed with B and C+.
-2. **PHYS 43/23/81/63, or equivalent courses**: Not specifically listed.
-3. **One elective**:
-    - PHYS 45 (B+).
-
-#### Technology in Society Requirement: Not explicitly evaluated based on provided transcript.
-
-#### Engineering Fundamentals
-1. **CS 106B**: Not listed.
-2. **ENGR 40M or 76**: Not listed.
-
-#### Depth and AI Electives
-1. **CS 221**: Not listed.
-2. Two courses from different areas (AI Methods, NLP, Vision, Robotics):
-   - Not listed.
-3. One additional course:
-   - Not listed.
-4. Three additional electives:
-   - Not listed.
-
-#### Minimum GPA
-- Must have 2.0 GPA for ENGR Fundamentals, CS Core/Depth/Senior Project: GPA checking must address specific requirement areas.
-
-Overall, Sandra appears to be lacking several core requirements, senior project, and depth electives for her BS in AI Track. Here are the missing BS requirements:
-1. CS 106B
-2. CS 103
-3. CS 111
-4. CS 161
-5. Senior Project (CS 191 or equivalent)
-6. PHYS 43/23/81/63
-7. ENGR Fundamental (CS 106B again)
-8. Technology in Society course
-9. Depth and AI Electives courses
-
-As Sandra's transcript currently stands, she does **not** satisfy all BS requirements.
-Output: **BS NOT SAT** with the missing courses listed above.
-
----
-
-### MS Degree Evaluation
-
-Given that Sandra has not satisfied her BS degree requirements, the evaluation for the MS degree would typically defer. However, for thoroughness, let's hypothetically evaluate her MS requirements:
-
-#### Foundations Requirement
-1. **Logic, Automata, Complexity (CS 103)**: Attempted but withdrew.
-2. **Probability (CS 109)**: Passed with A-.
-3. **Algorithmic Analysis (CS 161)**: Not listed.
-4. **Computer Organization and Systems (CS 107)**: Passed with B+.
-5. **Principles of Computer Systems (CS 111)**: Not listed.
-
-#### Significant Implementation Requirement
-- Requires to be noted in later evaluation (CS 140, 143, 144, 145, 148, 151, etc.): Not mentioned in transcript explicitly.
-
-#### Breadth Requirement
-- Three regional areas not overlapping and must list specific courses: None identified yet.
-
-#### AI Depth
-1. **CS 221**: Not listed.
-2. Four of other core AI electives: None listed.
+LLM_stanford_transcript1_UNSAT_9.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Lewinsky, Sandra Marie
+Student ID : 08795421
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 11/05/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Thompson, Gary K
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/14/2023
+Plan :Physics  
+--------- Academic Program ---------
+Program :   Physics
+09/15/2022 :Physics (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/16/2019 :Physics (BS)
+Completed Program 
+Coterminal Graduate, 06/14/2023 - 
+Coterminal Undergraduate, 06/15/2022 - 06/14/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Spanish 12.00
+Advanced Placement      Mathematics: Calculus AB 8.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS  101 INTRODUCTION TO 
+COMPUTING5.00 5.00 B
+   Emily Fox
+PHYS  21 CLASSICAL PHYSICS 4.00 4.00 B
+   John Doe
+ENGL  72A CONTEMPORARY AUSTEN 4.00 4.00 A-
+   Jane Austen
+BIO  101 INTRODUCTION TO BIOLOGY 4.00 4.00 CR
+   Richard Dawkins
    
-Total depth & electives courses broader in AI specialization not satisfied.
+UG Term GPA 3.250 Term Totals 17.00 17.00
+UG Cum GPA 3.250 Cum Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+HIST  23 HISTORY OF SCIENCE 4.00 4.00 A
+   Charles Darwin
+ANTH  101 CULTURAL ANTHROPOLOGY 3.00 3.00 A-
+   Margaret Mead
+MATH 51 LINEAR ALGEBRA WITH 
+APPLICATIONS5.00 5.00 B+
+   Albert Einstein
+PHYS  22 ELECTRICITY AND MAGNETISM 4.00 4.00 C+
+   Neils Bohr
+   
+UG Term GPA 3.200 Term Totals 16.00 16.00
+UG Cum GPA 3.225 Cum Totals 33.00 33.00
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+CS  102 DATA STRUCTURES 5.00 5.00 W
+   Carl Gauss
+PHIL  12 ETHICS IN SCIENCE 4.00 4.00 B+
+   Immanuel Kant
+MATH 52 MULTIVARIATE CALCULUS 5.00 5.00 A-
+   Benjamin Franklin
+BIO  103 GENETICS 4.00 4.00 C
+   James Watson
+   
+UG Term GPA 2.925 Term Totals 18.00 13.00
+UG Cum GPA 3.125 Cum Totals 51.00 46.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 53 ORDINARY 
+DIFFERENTIAL EQUATIONS5.00 5.00 C+
+   Paul Dirac
+PHIL  151 LOGIC 4.00 4.00 C-
+   Bertrand Russell
+HUM   110 INTRO TO PHILOSOPHY 4.00 4.00 B
+   Socrates
+PHYS  45 LIGHT AND THERMODYNAMICS 4.00 4.00 B+
+   Max Planck
+   
+UG Term GPA 2.770 Term Totals 17.00 17.00
+UG Cum GPA 3.025 Cum Totals 68.00 63.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+EE  102 LINEAR SYSTEMS 4.00 4.00 B+
+   Nikola Tesla
+PHYS  160 QUANTUM MECHANICS 5.00 5.00 B
+   Murray Gell-Mann
+MATH 104 COMPLEX ANALYSIS 4.00 4.00 C
+   Pierre-Simon Laplace
+CS  103 COMPUTER THEORY 5.00 5.00 W
+   Clifford Algebra
+   
+UG Term GPA 2.900 Term Totals 18.00 17.00
+UG Cum GPA 2.984 Cum Totals 86.00 80.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  101C ADVANCED PROGRAMMING 5.00 5.00 B
+   Ada Lovelace
+PHYS  161 INTRODUCTION TO 
+PARTICLE PHYSICS4.00 4.00 B+
+   Steven Weinberg
+CHEM  31A CHEMICAL PRINCIPLES I 4.00 4.00 B-
+   Linus Pauling
+STATS 116 STATISTICAL INFERENCE 5.00 5.00 B+
+   Ronald Fisher
+   
+UG Term GPA 3.100 Term Totals 18.00 18.00
+UG Cum GPA 3.030 Cum Totals 104.00 98.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 5.00 5.00 B+
+   Steve Wozniak
+PHYS  170 THERMODYNAMICS 5.00 5.00 B+
+   Ludwig Boltzmann
+MATH 108 NUMERICAL METHODS 4.00 4.00 A
+   Leonhard Euler
+HUM   22 MEDIEVAL HISTORY 4.00 4.00 S
+   Thomas Aquinas
+   
+UG Term GPA 3.450 Term Totals 18.00 18.00
+UG Cum GPA 3.125 Cum Totals 122.00 116.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRO TO PROBABILITY & 
+STATISTICS5.00 5.00 A-
+   Andrey Kolmogorov
+PHYS  180 ELECTRODYNAMICS 5.00 5.00 B-
+   Carl Friedrich Gauss
+CHEM  31B CHEMICAL PRINCIPLES II 4.00 4.00 B
+   Marie Curie
+   
+UG Term GPA 2.933 Term Totals 14.00 14.00
+UG Cum GPA 3.091 Cum Totals 136.00 130.00
+==========================================### BS Core Requirements Analysis:
 
-#### Electives
-- No specific extra elective courses identified in current transcript that meet MS criteria (excludes CS 196, 198, 390A/B/C).
+1. **Overview & GPA Requirement:**
+   - Minimum GPA: 2.0 for ENGR Fundamentals, CS Core, Depth, and Senior Project.
+   - Transfer credits: Must be approved.
+   - Required courses: CS 103, 107, 109, 111, 161 (must be taken for 5 units each).
 
-#### Minimum GPA
-- Average grade must be at least a B (3.0). Current cumulative GPA is 3.091, which meets overall GPA criteria but specific required courses remain incomplete.
+2. **Core Courses:**
+   - **CS 103:** Not taken (Withdrawn).
+   - **CS 107:** Taken and Passed (B+).
+   - **CS 109:** Taken and Passed (A-).
+   - **CS 111:** Not found in the transcript.
+   - **CS 161:** Not found in the transcript.
 
-Since the BS is not satisfied, **MS** requirements are inherently **not satisfied**. Output: **MS NOT SAT** with similar lists needed to be identified within more specific advanced coursework indications.
+3. **Senior Project:**
+   - None found (CS194, CS194W, CS210B, CS191, CS191W, or CS294).
 
-Sandra Marie Lewinsky will need to complete the missing BS core, elective, and significant project criteria to possibly proceed into satisfying details within the MS AI Specialization.
+### Summary of BS Requirement Deficiencies:
+- **CS 103:** Mathematical Foundations of Computing not taken.
+- **CS 111:** Operating Systems Principles not taken.
+- **CS 161:** Design and Analysis of Algorithms not taken.
+- **Senior Project:** Not found in transcript.
+
+Since the following courses are missing: **CS 103, CS 111, CS 161,** and the **Senior Project** has not been completed, the BS requirements are **not satisfied**.
+
+### MS Specialization Requirements Analysis:
+
+1. **Foundations Requirement:**
+   - **Logic, Automata & Complexity (CS 103):** Not taken.
+   - **Probability (CS 109 or equivalent):** CS 109 (Taken and Passed with A-).
+   - **Algorithmic Analysis (CS 161):** Not taken.
+   - **Computer Organ & Sys (CS 107 or 107E):** Taken and Passed (B+).
+   - **Principles of Computer Systems (CS 110 or CS 111):** Not taken.
+
+   Since CS 103, CS 161, and CS 110 or CS 111 are missing, the Foundations requirement is **not satisfied**.
+
+2. **Significant Implementation Requirement:**
+   - No course found satisfying this requirement.
+
+3. **Breadth Requirement:**
+   - The transcript does not show evidence of courses fulfilling all the Breadth requirements.
+
+4. **Artificial Intelligence Depth:**
+   - **CS 221:** Not found in the transcript.
+   - **Four additional AI courses:** Not found in the transcript.
+   - **21 units of specified depth courses:** Not found in the transcript.
+
+5. **Electives:**
+   - Not completed as specified due to absence of AI specialization core courses.
+
+### MS Requirement Deficiencies:
+- **Foundations Requirement:** Missing CS 103, CS 161, CS 110 or CS 111.
+- **Significant Implementation Requirement:** Not fulfilled.
+- **Breadth Requirement:** Not clearly fulfilled.
+- **AI Depth Courses:** Missing CS 221 and other specified AI courses.
+- **Electives:** Not completed.
+
+### Conclusion:
+Since the student's transcript does not satisfy several critical requirements for both the BS and MS degrees:
+
+- **BS SAT**: **No**
+- **MS SAT**: **No** 
+
+Detailed deficiencies are listed above for BS and MS specialization requirements.

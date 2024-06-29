@@ -1,0 +1,15 @@
+Sure, here are the course numbers for the Mathematics and Science Requirement, including the relevant electives:
+
+```python
+[
+    "MATH19", "MATH20", "MATH21", 
+    "CS103", "CS109", 
+    "PHYS41", "PHYS43", 
+    "MATH51", "MATH52", "MATH53", "MATH104", "MATH107", "MATH108", "MATH109", "MATH110", "MATH113", 
+    "CS157", "CS205L", 
+    "PHIL151", 
+    "CME100", "CME102", "CME104", 
+    "ENGR108", 
+    "PSYCH30"
+]
+```

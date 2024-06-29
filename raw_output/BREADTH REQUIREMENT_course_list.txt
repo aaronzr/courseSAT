@@ -1,25 +1,122 @@
-Based on the provided BREADTH REQUIREMENT for the DEPARTMENT OF COMPUTER SCIENCE MSCS Program with Artificial Intelligence Specialization, here are the courses required grouped into a single Python list.
+Sure, here are the extracted course numbers for the BREADTH REQUIREMENT as requested:
+
+Area A. Mathematical and Theoretical Foundations:
+- CS 154
+- CS 157
+- CS 168
+- CS 254
+- CS 261
+- CS 265
+- EE 364A
+- EE 364B
+- Phil 251
+
+Area B. Computer Systems:
+- CS 140
+- CS 140E
+- CS 143
+- CS 144
+- CS 149
+- CS 212
+- CS 242
+- CS 243
+- CS 244
+- CS 244B
+- CS 295
+- CS 316
+- CS 358
+- EE 180
+- EE 282
+- EE 382E
+
+Area C. Applications:
+- CS 145
+- CS 147
+- CS 148
+- CS 155
+- CS 173
+- CS 221
+- CS 223A
+- CS 224N
+- CS 224U
+- CS 224W
+- CS 227B
+- CS 228
+- CS 229
+- CS 229M
+- CS 231A
+- CS 231N
+- CS 234
+- CS 236
+- CS 237A
+- CS 245
+- CS 246
+- CS 247 (any suffix)
+- CS 248/248A
+- CS 251
+- CS 255
+- CS 273A
+- CS 273B
+- CS 279
+- CS 345
+- CS 347
+- CS 348A
+- CS 348B
+- CS 348C
+- CS 348E
+- CS 348I
+- CS 348K
+- CS 355
+- CS 356
+- CS 373 
+
+Area D. Computing and Society:
+- CS 152
+- CS 181
+- CS 182
+- CS 256
+- CS 281
+- CS 329T
+- CS 384
+- AMSTUD 133
+- AMSTUD 145
+- ANTHRO 132D
+- COMM 118S
+- COMM 120W
+- COMM 124
+- COMM 130D
+- COMM 145
+- COMM 154
+- COMM 166
+- COMM 186W
+- COMM 230A
+- COMM 230B
+- COMM 230C
+- DESINST 215
+- DESINST 240
+- EARTHSYS 213
+- ENGLISH 184D
+- ENGR 248
+- HISTORY 244F
+- INTLPOL 268
+- LAW 4039
+- ME 177
+- MS&E 193
+- MS&E 231
+- MS&E 234
+- MS&E 254
+- POLISCI 150A
+- PSYCH 215
+- PUBLPOL 103F
+- PUBLPOL 353B
+
+Here is the consolidated Python list containing all the course numbers from the BREADTH REQUIREMENT:
 
 ```python
-course_numbers = [
-    'CS 154', 'CS 157', 'CS 168', 'CS 254', 'CS 261', 'CS 265', 
-    'EE 364A', 'EE 364B', 'Phil 251', 
-    'CS 140', 'CS 140E', 'CS 143', 'CS 144', 'CS 149', 'CS 212', 
-    'CS 242', 'CS 243', 'CS 244', 'CS 244B', 'CS 295', 'CS 316', 
-    'CS 358', 'EE 180', 'EE 282', 'EE 382E', 
-    'CS 145', 'CS 147', 'CS 148', 'CS 155', 'CS 173', 'CS 221', 
-    'CS 223A', 'CS 224N', 'CS 224U', 'CS 224W', 'CS 227B', 'CS 228', 
-    'CS 229', 'CS 229M', 'CS 231A', 'CS 231N', 'CS 234', 
-    'CS 236', 'CS 237A', 'CS 245', 'CS 246', 'CS 247', 'CS 248', 
-    'CS 248A', 'CS 251', 'CS 255', 'CS 273A', 'CS 273B', 'CS 279', 
-    'CS 345', 'CS 347', 'CS 348A', 'CS 348B', 'CS 348C', 'CS 348E', 
-    'CS 348I', 'CS 348K', 'CS 355', 'CS 356', 'CS 373', 
-    'CS 152', 'CS 181', 'CS 182', 'CS 256', 'CS 281', 'CS 329T', 
-    'CS 384', 'AMSTUD 133', 'AMSTUD 145', 'ANTHRO 132D', 
-    'COMM 118S', 'COMM 120W', 'COMM 124', 'COMM 130D', 'COMM 145', 'COMM 154', 'COMM 166', 'COMM 186W', 'COMM 230A', 'COMM 230B', 'COMM 230C', 
-    'DESINST 215', 'DESINST 240', 'EARTHSYS 213', 'ENGLISH 184D', 
-    'ENGR 248', 'HISTORY 244F', 'INTLPOL 268', 'LAW 4039', 
-    'ME 177', 'MS&E 193', 'MS&E 231', 'MS&E 234', 'MS&E 254', 
-    'POLISCI 150A', 'PSYCH 215', 'PUBLPOL 103F', 'PUBLPOL 353B'
+courses = [
+    'CS 154', 'CS 157', 'CS 168', 'CS 254', 'CS 261', 'CS 265', 'EE 364A', 'EE 364B', 'Phil 251',
+    'CS 140', 'CS 140E', 'CS 143', 'CS 144', 'CS 149', 'CS 212', 'CS 242', 'CS 243', 'CS 244', 'CS 244B', 'CS 295', 'CS 316', 'CS 358', 'EE 180', 'EE 282', 'EE 382E',
+    'CS 145', 'CS 147', 'CS 148', 'CS 155', 'CS 173', 'CS 221', 'CS 223A', 'CS 224N', 'CS 224U', 'CS 224W', 'CS 227B', 'CS 228', 'CS 229', 'CS 229M', 'CS 231A', 'CS 231N', 'CS 234', 'CS 236', 'CS 237A', 'CS 245', 'CS 246', 'CS 247', 'CS 248', 'CS 248A', 'CS 251', 'CS 255', 'CS 273A', 'CS 273B', 'CS 279', 'CS 345', 'CS 347', 'CS 348A', 'CS 348B', 'CS 348C', 'CS 348E', 'CS 348I', 'CS 348K', 'CS 355', 'CS 356', 'CS 373',
+    'CS 152', 'CS 181', 'CS 182', 'CS 256', 'CS 281', 'CS 329T', 'CS 384', 'AMSTUD 133', 'AMSTUD 145', 'ANTHRO 132D', 'COMM 118S', 'COMM 120W', 'COMM 124', 'COMM 130D', 'COMM 145', 'COMM 154', 'COMM 166', 'COMM 186W', 'COMM 230A', 'COMM 230B', 'COMM 230C', 'DESINST 215', 'DESINST 240', 'EARTHSYS 213', 'ENGLISH 184D', 'ENGR 248', 'HISTORY 244F', 'INTLPOL 268', 'LAW 4039', 'ME 177', 'MS&E 193', 'MS&E 231', 'MS&E 234', 'MS&E 254', 'POLISCI 150A', 'PSYCH 215', 'PUBLPOL 103F', 'PUBLPOL 353B'
 ]
 ```

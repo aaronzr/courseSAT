@@ -1,0 +1,57 @@
+Sure! Here's the extraction of the core and relevant elective courses for the AI Track Core, considering the notes provided:
+
+**Core Courses (15 units minimum):**
+- CS107 (or 107E)
+- CS111
+- CS161
+
+**Track Requirement B (Two courses from different areas):**
+- AI Methods: CS 224R, 228, 229, 229M, 229T, 234, 238
+- Natural Language Processing: CS 124, 224N, 224S, 224U, 224V
+- Vision: CS 131, 231A, 231N
+- Robotics: CS 123, 223A, 237A
+
+**Track Requirement C (One additional course from the Track Requirement B list, or from the following):**
+- AI Methods: CS 157, 205L, 230, 236, 257, Stats 315A, Stats 315B
+- Comp Bio: CS 235, 279, 371
+- Information and the Web: CS 224W, 276
+- Ethics: CS 256
+- Other: CS 151, 227B
+- Robotics and Control: CS 225A, 327A, 329 (with advisor approval), ENGR 205, MS&E 251, 351
+
+**Track Electives (At least three additional courses selected from the Track Requirement B list, C list, the General CS Electives list, or the following):**
+- CS 325B, 326, 329D, 330, 338, 428
+- EE 263, 278, 364A, 364B
+- MS&E 252, 352, 355
+- PHIL 152
+- PSYCH 204A, 204B, 209
+- STATS 200, 202, 203, 205, 271 
+
+**General CS Electives corresponding to AI:**
+- CS 108, 112, 123, 124, 131, 140E, 142, 143, 144, 145, 147, 147L, 148, 149, 151, 154, 155, 157 (or PHIL 151), 163, 166, 168, 173A, 177, 190, 195 (max 4 units), 197, 197C, 205L, 206, 210A, 212, 217, 221, 223A, 224N, 224R, 224S, 224U, 224V, 224W, 225A, 227B, 228, 229, 229M, 230, 231A, 231N, 232, 233, 234, 235, 237A, 237B, 238, 240, 240LX, 242, 243, 244, 244B, 245, 246, 247 (any suffix), 248 (any suffix), 249I, 250, 251, 252, 253, 254, 254B, 255, 256, 257, 259Q, 261, 263, 265, 269I, 269O, 269Q, 270, 271, 272, 273B, 273C, 274, 275, 276, 278, 279, 281, 330, 333, 336, 342, 348 (any suffix), 351, 368, 398, 448B
+- CME 108
+- EE 180, 267, 282, 364A, 374
+- MS&E 234
+
+Combining all relevant course numbers into a single Python list:
+
+```python
+courses = [
+    "CS107", "CS107E", "CS111", "CS161", "CS224R", "CS228", "CS229", "CS229M", "CS229T", "CS234", "CS238",
+    "CS124", "CS224N", "CS224S", "CS224U", "CS224V", "CS131", "CS231A", "CS231N", "CS123", "CS223A",
+    "CS237A", "CS157", "CS205L", "CS230", "CS236", "CS257", "Stats315A", "Stats315B", "CS235", "CS279",
+    "CS371", "CS224W", "CS276", "CS256", "CS151", "CS227B", "CS225A", "CS327A", "CS329", "ENGR205",
+    "MS&E251", "MS&E351", "CS325B", "CS326", "CS329D", "CS330", "CS338", "CS428", "EE263", "EE278",
+    "EE364A", "EE364B", "MS&E252", "MS&E352", "MS&E355", "PHIL152", "PSYCH204A", "PSYCH204B", "PSYCH209",
+    "STATS200", "STATS202", "STATS203", "STATS205", "STATS271", "CS108", "CS112", "CS140E", "CS142",
+    "CS143", "CS144", "CS145", "CS147", "CS147L", "CS148", "CS149", "CS154", "CS155", "CS163", "CS166",
+    "CS168", "CS173A", "CS177", "CS190", "CS195", "CS197", "CS197C", "CS206", "CS210A", "CS212",
+    "CS217", "CS240", "CS240LX", "CS242", "CS243", "CS244", "CS244B", "CS245", "CS246", "CS247",
+    "CS248", "CS249I", "CS250", "CS251", "CS252", "CS253", "CS254", "CS254B", "CS255", "CS259Q",
+    "CS261", "CS263", "CS265", "CS269I", "CS269O", "CS269Q", "CS270", "CS272", "CS273B", "CS273C", 
+    "CS274", "CS275", "CS281", "CS333", "CS336", "CS342", "CS351", "CS368", "CS398", "CS448B",
+    "CME108", "EE180", "EE267", "EE282", "EE374", "MS&E234"
+]
+```
+
+This list includes all core, track requirements, and relevant elective courses stated in the AI Track Core requirements and notes.

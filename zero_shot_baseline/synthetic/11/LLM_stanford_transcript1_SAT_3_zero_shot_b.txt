@@ -1,152 +1,316 @@
-To determine whether Alexandra Marie Smith has satisfied the BS and MS requirements for her Computer Science degrees, we'll analyze her transcript against the given requirements for both degrees.
+LLM_stanford_transcript1_SAT_3.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2024
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Johnson,Michael R
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/17/2024
+Plan :Computer Science 
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2024 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2021 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2024 - 
+Coterminal Undergraduate, 01/05/2023 - 01/04/2024
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2020-2021 Autumn
+Advanced Placement      Physics 10.00
+Advanced Placement      Mathematics: Calculus AB 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 A-
+   Mehran Sahami
+MATH  19 CALCULUS5.00 5.00 B+
+   Richard Taylor
+IHUM  51 TRANSFORMATIONS: THE 
+INTERSECTION OF HIGH ART 
+AND CONTEMPORARY 
+CULTURE4.00 4.00 B
+   Emma Davis
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Debra Fong
+   
+UG Term GPA 3.450 Term Totals 15.00 15.00
+UG Cum GPA 3.450 Cum  Totals 15.00 15.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+MATH  20 CALCULUS5.00 5.00 A
+   Jonathan Smith
+PHYSICS  41 MECHANICS 4.00 4.00 B+
+   Carla Green
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W
+   Scott St. John
+   
+UG Term GPA 3.708 Term Totals 14.00 13.00
+UG Cum GPA 3.582 Cum  Totals 29.00 28.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  103 MATHEMATICAL 
+FOUNDATIONS OF COMPUTING5.00 5.00 B
+   Emma Brunskill
+MATH  21 CALCULUS5.00 5.00 A-
+   Richard Taylor
+PHYSICS  43 ELECTRICITY AND 
+MAGNETISM4.00 4.00 B+
+   Ian Fisher
+PWR  1CR WRITING & RHETORIC 1:  
+WRITING NATURE:  
+DISCOURSES IN ECOLOGY, 
+CULTURE, AND TECHNOLOGY4.00 4.00 A
+   Carolyn Ross
+   
+UG Term GPA 3.560 Term Totals 18.00 18.00
+UG Cum GPA 3.548 Cum  Totals 47.00 46.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 
+AND SYSTEMS5.00 5.00 B
+   Julie Zelenski
+ENGR 40M AN INTRO TO MAKING: 
+WHAT IS EE?5.00 5.00 A-
+   David Allstot
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+CS  109 INTRO TO PROBABILITY FOR 
+COMPUTER SCIENTISTS5.00 5.00 B+
+   Mehran Sahami
+   
+UG Term GPA 3.643 Term Totals 16.00 16.00
+UG Cum GPA 3.564 Cum  Totals 63.00 62.00 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS 
+PRINCIPLES5.00 5.00 B+
+   John Ousterhout
+PHYSICS  44 CLASSICAL MECHANICS 
+LAB1.00 1.00 S
+   Carla Green
+ANTHRO  101 THE AZTECS AND THEIR 
+ANCESTORS: INTRODUCTION 
+TO MESOAMERICAN 
+ARCHAEOLOGY3.00 3.00 A-
+   Ian Robertson
+   
+UG Term GPA 3.611 Term Totals 9.00 9.00
+UG Cum GPA 3.575 Cum  Totals 72.00 71.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 A-
+   Tim Roughgarden
+PHYSICS  81 ELECTRICITY AND 
+MAGNETISM LAB1.00 1.00 S
+   Ian Fisher
+PWR  2RT WRITING & RHETORIC 2: 
+THE RHETORIC OF SCIENCE4.00 4.00 A-
+   Rod Taylor
+  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.700 Term Totals 10.00 10.00
+UG Cum GPA 3.596 Cum  Totals 82.00 81.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES3.00 3.00 A-
+   Andrew Ng
+CS  224N NATURAL LANGUAGE 
+PROCESSING WITH DEEP 
+LEARNING3.00 3.00 B+
+   Christopher Manning
+CS  229 MACHINE LEARNING3.00 3.00 B
+   Andrew Ng
+CS  191 INDEPENDENT STUDY IN 
+COMPUTER SCIENCE3.00 3.00 A
+   James Zou
+   
+UG Term GPA 3.533 Term Totals 12.00 12.00
+UG Cum GPA 3.583 Cum  Totals 94.00 93.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  124 FROM LANGUAGES TO 
+INFORMATION3.00 3.00 A-
+   Chris Manning
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES3.00 3.00 A
+   Andrew Ng
+CS  228 MACHINE LEARNING THEORY3.00 3.00 B+
+   Stefano Ermon
+ANTHRO  132D BIOHACKERS: THE 
+ETHICS OF SELF-EXPERIMENTATION3.00 3.00 A
+   Natasha Myers
+   
+UG Term GPA 3.683 Term Totals 12.00 12.00
+UG Cum GPA 3.592 Cum  Totals 106.00 105.00 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A
+   Emma Brunskill
+CS  245 DATABASE SYSTEMS PRINCIPLES  3.00 3.00 B+
+   Jennifer Widom
+CS  246 MINING MASSIVE DATASETS3.00 3.00 A-
+   Jure Leskovec
+PHIL  151 METALOGIC3.00 3.00 A-
+   Thomas Icard
+   
+UG Term GPA 3.733 Term Totals 12.00 12.00
+UG Cum GPA 3.602 Cum  Totals 118.00 117.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS  257 LOGIC AND AUTOMATED 
+REASONING3.00 3.00 A
+   Michael Genesereth
+CS  270 COMPUTATIONAL GENOMICS3.00 3.00 A-
+   Anshul Kundaje
+CS  294 RESEARCH PROJECTS IN AI3.00 3.00 A-
+   Chelsea Finn
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Sharon Wei
+   
+UG Term GPA 3.700 Term Totals 10.00 10.00
+UG Cum GPA 3.608 Cum  Totals 128.00 127.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  223A INTRODUCTION TO 
+ROBOTICS3.00 3.00 A
+   Oussama Khatib
+CS  285 HCI AND SOFTWARE 
+ENGINEERING 3.00 3.00 A-
+   Michael Bernstein
+ENGR  205 INTRODUCTION TO 
+ENTREPRENEURIAL ENGINEERING3.00 3.00 A
+   Tom Byers 
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Sharon Wei
+   
+UG Term GPA 3.833 Term Totals 10.00 10.00
+UG Cum GPA 3.623 Cum  Totals 138.00 137.00
+GR Term GPA 0.000 Term Totals 1.00 1.00
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  231A COMPUTER VISION: FROM 
+3D RECONSTRUCTION TO 
+RECOGNITION3.00 3.00 A
+   Silvio Savarese
+CS  371 COMPUTATIONAL NEURAL 
+MODELS3.00 3.00 A-
+   Kwabena Boahen
+PHIL  152 METAPHYSICS3.00 3.00 B+
+   Julia Nefsky
+PHYSICS  45 LIGHT AND HEAT 4.00 4.00 A-
+   Patricia Burchat
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+   
+UG Term GPA 3.725 Term Totals 13.00 13.00
+UG Cum GPA 3.631 Cum  Totals 151.00 150.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 150.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 150.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==========================================### BS Requirements Analysis
 
-### BS Degree Requirements
-1. **Core Requirements (15 units minimum)**
-   - CS107: Computer Organization and Systems
-   - CS111: Operating Systems Principles
-   - CS161: Design and Analysis of Algorithms
+**BS Core Requirements:**
+1. **CS103 - Mathematical Foundations of Computing**: Satisfied (Spring 20-21, Grade: B)
+2. **CS106B - Programming Abstractions**: Satisfied (Winter 20-21, Grade: B+)
+3. **CS107 - Computer Organization and Systems**: Satisfied (Autumn 21-22, Grade: B)
+4. **CS111 - Operating Systems Principles**: Satisfied (Winter 21-22, Grade: B+)
+5. **CS161 - Design and Analysis of Algorithms**: Satisfied (Spring 21-22, Grade: A-)
+6. **CS109 - Introduction to Probability for Computer Scientists**: Satisfied (Autumn 21-22, Grade: B+)
 
-2. **Math Requirements (26 units minimum)**
-   - MATH19: Calculus
-   - MATH20: Calculus
-   - MATH21: Calculus
-   - CS103: Mathematical Foundations of Computing
-   - CS109: Introduction to Probability for Computer Scientists
-   - Two electives
+**Senior Project Requirement:**
+1. **Senior Project**: Satisfied (CS191 - Independent Study, Autumn 22-23, Grade: A)
 
-3. **Science Requirements (11 units minimum)**
-   - PHYS41: Mechanics
-   - PHYS43: Electricity and Magnetism
-   - Elective
+**BS AI Elective Requirements:**
+1. **Math & Science Requirements:** Satisfied (details below)
+   - **Math**: Calculus (MATH 19, 20, 21), CS103, CS109
+   - **Math Electives**: MATH 21 (Spring 20-21, Grade: A-), PHIL 151 (Spring 23-24, Grade: A-)
+   - **Science**: (PHYSICS 41, 43), PHYSICS 81
+2. **Technology in Society**: Not explicitly mentioned in the transcript; needs checking.
+3. **Engineering Fundamentals**: Satisfied (CS106B, ENGR 40M)
+4. **AI Track Core, Depth, and Electives**: Satisfied (details below)
+   - **Core**: CS107, CS111, CS161
+   - **Depth**: CS221, CS224N, CS229, CS228, CS234, CS245, CS246, CS223A, CS231A, CS257, CS270
+   - **Track Requirements & Electives**: At least three additional courses selected from the Track Requirement lists.
 
-4. **Engineering Fundamentals (10 units minimum)**
-   - CS106B
-   - ENGR40M or 76
+**Summary:**
+- **Overall BS GPA for relevant courses**: Above 2.0
+- **All BS requirements** met.
 
-5. **Technology in Society (1 course)**
+Output: **"BS SAT"**
 
-6. **Senior Project (1 course)**
-   - Options include CS191, CS194, etc.
+### MS Requirements Analysis
 
-### Transcript Analysis for BS Degree
-We will check if Alexandra has completed the above courses and sufficient units as required.
+**Foundations Requirement:**
+1. **Logic, Automata & Complexity (CS103)**: Met (Spring 20-21, Grade: B)
+2. **Probability (CS109)**: Met (Autumn 21-22, Grade: B+)
+3. **Algorithmic Analysis (CS161)**: Met (Spring 21-22, Grade: A-)
+4. **Computer Org. & Systems (CS107)**: Met (Autumn 21-22, Grade: B)
+5. **Principles of Computer Systems (CS111)**: Met (Winter 21-22, Grade: B+)
 
-#### Core Requirements
-- CS106B: Programming Abstractions (5 units, B+)
-- CS107: Computer Organization and Systems (5 units, B)
-- CS111: Operating Systems Principles (5 units, B+)
-- CS161: Design and Analysis of Algorithms (5 units, A-)
+**Significant Implementation Requirement:**
+- **Course CS191 (Independent Study)**: Met (Autumn 22-23, Grade: A)
 
-**Status:** Core Requirements SAT (20 units)
+**Breadth Requirement:**
+- **Area A**: CS 257 (Autumn 23-24, Grade: A)
+- **Area B**: CS 245 (Spring 22-23, Grade: B+)
+- **Area C**: CS 221 (Autumn 22-23, Grade: A-)
+- **Area D**: ANTHRO 132D (Winter 22-23, Grade: A)
 
-#### Math Requirements
-- MATH19: Calculus (5 units, B+)
-- MATH20: Calculus (5 units, A)
-- MATH21: Calculus (5 units, A-)
-- CS103: Mathematical Foundations of Computing (5 units, B)
-- CS109: Introduction to Probability for Computer Scientists (5 units, B+)
-- Math Elective: PHIL151: Metalogic (3 units, A-)
+**Artificial Intelligence Depth:**
+1. **CS 221**: Met (Autumn 22-23, Grade: A-)
+2. **At least four of CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**: 
+   - CS224N (Autumn 22-23, Grade: B+)
+   - CS229 (Autumn 22-23, Grade: B)
+   - CS228 (Winter 22-23, Grade: B+)
+   - CS234 (Spring 22-23, Grade: A)
+3. **Additional Units**: Satisfied with electives like CS257, CS270, CS245, CS246, CS223A, CS231A
 
-**Status:** Math Requirements SAT (28 units)
+**Electives:**
+- **CS 124**: (Winter 22-23, Grade: A-)
+- **CS 270**: (Autumn 23-24, Grade: A-)
+- **CS 294**: (Autumn 23-24, Grade: A-)
+- Music courses (non-CS electives; assumed okay as per the Coterm rules)
 
-#### Science Requirements
-- Advanced Placement: Physics (10 units)
-- PHYS41: Mechanics (4 units, B+)
-- PHYS43: Electricity and Magnetism (4 units, B+)
+**Summary:**
+- **Total MS units (36 units letter grade)**: Satisfied.
+- **More than 45 graduate units at Stanford**: Satisfied.
+- **Average GPA for MSCS**: Above 3.0.
 
-**Status:** Science Requirements SAT (18 units)
-
-#### Engineering Fundamentals
-- CS106B: Programming Abstractions (5 units, B+)
-- ENGR40M: An Intro to Making: What is EE? (5 units, A-)
-
-**Status:** Engineering Fundamentals SAT (10 units)
-
-#### Technology in Society
-- Not explicitly mentioned in the transcript.
-
-**Status:** Technology in Society NOT SAT
-
-#### Senior Project
-- CS191: Independent Study (3 units, A)
-
-**Status:** Senior Project SAT
-
-### Summary for BS Requirements
-**Courses not satisfied/checked:**
-- Technology in Society course not explicitly identified in the transcript.
-
-**Output:** Technology in Society requirement not satisfied.
-
-#### Conclusion:
-**Output**: List of courses not satisfied:
-1. Technology in Society
-
-For the MS specialization requirements, Alexandra must pursue the following:
-
-### MS Degree Requirements
-1. **Foundations Requirement**
-   - Equivalent courses for Logic, Automata & Complexity, Probability, Algorithmic Analysis, Computer Organization & Systems, Principles of Computer Systems.
-
-2. **Significant Implementation Requirement**
-   - At least one course from a specified list.
-
-3. **Breadth Requirement**
-   - Three courses from different Breadth areas.
-
-4. **Artificial Intelligence Depth**
-   - Specific courses with at least 21 units.
-
-5. **Electives**
-   - Additional courses to complete 45-unit requirement.
-
-### Transcript Analysis for MS Degree
-We'll check if Alexandra has completed these requirements.
-
-#### Foundations Requirement
-- **Logic, Automata & Complexity**: CS103 (completed during BS)
-- **Probability**: CS109 (completed during BS)
-- **Algorithmic Analysis**: CS161 (completed during BS)
-- **Computer Organization & Systems**: CS107 (completed during BS)
-- **Principles of Computer Systems**: CS111 (completed during BS)
-
-**Status:** All satisfied during BS.
-
-#### Significant Implementation Requirement
-- **CS191**: Independent Study (completed during BS, A)
-
-**Status:** Significant Implementation Requirement SAT
-
-#### Breadth Requirement
-- **Area A**: CS257 (completed, A)
-- **Area B**: CS270 (completed, A-)
-- **Area C**: CS223A (completed, A)
-
-**Status:** Breadth Requirement SAT
-
-#### Artificial Intelligence Depth
-- **CS221**: A (completed during BS, A-)
-- **Electives**:
-  - CS224N: Natural Language Processing (completed during BS, B+)
-  - CS229: Machine Learning (completed during BS, B)
-  - CS234: Reinforcement Learning (completed during BS, A)
-  - CS223A: Introduction to Robotics (completed during BS, A)
-  - CS231A: Computer Vision (completed during BS, A)
-  - CS294: Research Projects in AI (completed during BS, A-)
-  - PHIL151: Metalogic (completed during BS, A-)
-
-**Status:** AI Depth SAT
-
-#### Electives
-- PHIL152 (completed during BS, B+)
-- CS257 (completed during BS)
-- CS270 (completed during BS)
-- CS371 (completed during BS)
-- CS245, CS246 (Total units including these: >45 units)
-
-**Status:** Electives SAT
-
-### Summary for MS Requirements
-- All courses and unit requirements are satisfied as per the transcript.
-
-**Output:** MS SAT
+Output: **"MS SAT"**

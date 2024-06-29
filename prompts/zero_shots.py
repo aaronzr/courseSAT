@@ -30,6 +30,11 @@ def end_to_end_evaluation_a(dir, transcript_path, synthetic):
 	zero_shot_answer_a = gpt_infer(prompt_a)
 	print(zero_shot_answer_a)
 	file = open(f"{dir}/{os.path.splitext(transcript_name)[0]}_zero_shot_a.txt", 'w+')
+	file.write(transcript_name)
+	transcript_file2 = open(transcript_path, "r")
+	transcript2 = transcript_file2.read()
+	file.write(transcript2)
+	file.write("==================================================\n")
 	file.write(zero_shot_answer_a)
 	file.close()
 
@@ -53,6 +58,11 @@ def end_to_end_evaluation_b(dir, transcript_path, synthetic):
 	zero_shot_answer_b = gpt_infer(prompt_b)
 	print(zero_shot_answer_b)
 	file = open(f"{dir}/{os.path.splitext(transcript_name)[0]}_zero_shot_b.txt", 'w+')
+	file.write(transcript_name)
+	transcript_file2 = open(transcript_path, "r")
+	transcript2 = transcript_file2.read()
+	file.write(transcript2)
+	file.write("===================================================\n")
 	file.write(zero_shot_answer_b)
 	file.close()
 
@@ -77,6 +87,11 @@ def end_to_end_evaluation_c(dir, transcript_path, synthetic):
 	zero_shot_answer_c = gpt_infer(prompt_c)
 	print(zero_shot_answer_c)
 	file = open(f"{dir}/{os.path.splitext(transcript_name)[0]}_zero_shot_c.txt", 'w+')
+	file.write(transcript_name)
+	transcript_file2 = open(transcript_path, "r")
+	transcript2 = transcript_file2.read()
+	file.write(transcript2)
+	file.write("===================================================\n")	
 	file.write(zero_shot_answer_c)
 	file.close()
 
@@ -106,12 +121,19 @@ def end_to_end_evaluation_d(dir, transcript_path, synthetic):
 	"""
 	zero_shot_answer_two = gpt_infer(prompt_two)
 	file = open(f"{dir}/{os.path.splitext(transcript_name)[0]}_zero_shot_d.txt", 'w+')
+	file.write(transcript_name)
+	transcript_file2 = open(transcript_path, "r")
+	transcript2 = transcript_file2.read()
+	file.write(transcript2)
+	file.write("========================================================\n")	
 	file.write("========================GPT Answer to Prompt One Regarding BS Requirements====================\n")
 	file.write(zero_shot_answer_one)
 	file.write("========================GPT Answer to Prompt Two Regarding MS Requirements====================\n")
 	file.write(zero_shot_answer_two)
 	file.close()
 
+#folder is where all test transcripts (must be in pdf format) reside
+#synthetic means whether we use synthetic benchmarks (all are in txt format)
 def evluate_benchmark(folder, synthetic=True):
 	count = 0
 	for path, folders, files in os.walk(folder):
@@ -121,10 +143,10 @@ def evluate_benchmark(folder, synthetic=True):
 			results_directory = f"{SYNTHETIC_BASELINE_DIR}/{count}"
 			if not os.path.exists(results_directory):
 				os.makedirs(results_directory)
-				end_to_end_evaluation_a(results_directory, transcript_path, synthetic)
-				end_to_end_evaluation_b(results_directory, transcript_path, synthetic)
-				end_to_end_evaluation_c(results_directory, transcript_path, synthetic)
-				end_to_end_evaluation_d(results_directory, transcript_path, synthetic)
+			end_to_end_evaluation_a(results_directory, transcript_path, synthetic)
+			end_to_end_evaluation_b(results_directory, transcript_path, synthetic)
+			end_to_end_evaluation_c(results_directory, transcript_path, synthetic)
+			end_to_end_evaluation_d(results_directory, transcript_path, synthetic)
 
 
 
