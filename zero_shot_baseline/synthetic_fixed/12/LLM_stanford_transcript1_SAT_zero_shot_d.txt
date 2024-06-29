@@ -1,0 +1,405 @@
+LLM_stanford_transcript1_SAT.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Johnson,Alex Michael
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/01/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Smith,Emily J.
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/20/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2023 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2022 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Physics 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH 19 CALCULUS 3.00 3.00 A-
+   John Doe
+CS  106A PROGRAMMING 
+METHODOLOGY 5.00 5.00 A
+   Mehran Sahami
+ENGR   40 AN INTRO TO MAKING: 
+WHAT IS EE? 5.00 5.00 B+
+   David Kelley
+PWR    1GV WRITING & RHETORIC 1:  
+TECHNOLOGY & SCIENCE 4.00 4.00 A-
+   Jennifer Johnson
+   
+UG Term GPA 3.773 Term Totals 17.00 17.00
+UG Cum GPA 3.773 Cum  Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+CS  103 MATHEMATICAL 
+FOUNDATIONS OF 
+COMPUTING 5.00 5.00 B+
+   Adam Smith
+MATH 20 CALCULUS 3.00 3.00 A-
+   John Doe
+PHYSICS   41 MECHANICS 4.00 4.00 B+
+   Sarah Lee
+HISTORY   106B EAST ASIAN  
+BUDDHISM 3.00 3.00 B+
+   Elizabeth Mason
+   
+UG Term GPA 3.507 Term Totals 15.00 15.00
+UG Cum GPA 3.644 Cum  Totals 32.00 32.00
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS 5.00 5.00 A
+   Jerry Cain
+MATH 21 CALCULUS 3.00 3.00 A-
+   Jane Doe
+PHYSICS   43 ELECTRICITY AND 
+MAGNETISM 4.00 4.00 B+
+   Chris Evans
+PWR    2AR WRITING & RHETORIC 2:  
+TECHNICAL WRITING 4.00 4.00 A-
+   Laura Young
+   
+UG Term GPA 3.700 Term Totals 16.00 16.00
+UG Cum GPA 3.661 Cum  Totals 48.00 48.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 
+AND SYSTEMS 5.00 5.00 B+
+   Jerry Cain
+MATH 51 LINEAR ALGEBRA AND 
+DIFFERENTIAL CALCULUS 5.00 5.00 A-
+   David Steele
+HISTORY   150A THE HISTORY OF THE  
+INTERNET 5.00 5.00 A
+   Robert Johnson
+
+UG Term GPA 3.714 Term Totals 15.00 15.00
+UG Cum GPA 3.676 Cum  Totals 63.00 63.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS 
+PRINCIPLES 5.00 5.00 A
+   John Ousterhout
+CS  109 INTRODUCTION TO 
+PROBABILITY FOR 
+COMPUTER SCIENTISTS 5.00 5.00 B+
+   Serena Chen
+MUSIC   171 CHAMBER MUSIC 1.00 1.00 A
+   Deborah Fong
+ENGR   102A MATERIALS SCIENCE 
+LABORATORY 4.00 4.00 B+
+   Alan Wright
+   
+UG Term GPA 3.733 Term Totals 15.00 15.00
+UG Cum GPA 3.687 Cum  Totals 78.00 78.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS 5.00 5.00 A-
+   Tim Roughgarden
+PHYSICS   45 LIGHT AND HEAT 4.00 4.00 B
+   Giorgio Gratta
+ENGR   108 COMPUTATIONAL 
+MATHEMATICS 4.00 4.00 B+
+   Nicholas Melosh
+CS  194 SOFTWARE PROJECT EXPERIENCE  5.00 5.00 A
+   Stephen Boyd
+   
+UG Term GPA 3.583 Term Totals 18.00 18.00
+UG Cum GPA 3.669 Cum  Totals 96.00 96.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES 5.00 5.00 B+
+   Percy Liang
+CS  224N NATURAL LANGUAGE 
+PROCESSING WITH DEEP 
+LEARNING 3.00 3.00 A-
+   Chris Manning
+CS  237A INTRODUCTION TO 
+ROBOTICS 3.00 3.00 B+
+   Oussama Khatib
+MUSIC   171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+UG Term GPA 3.571 Term Totals 12.00 12.00
+UG Cum GPA 3.661 Cum  Totals 108.00 108.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  229 MACHINE LEARNING 5.00 5.00 A
+   Andrew Ng
+CS  223A ROBOTICS 3.00 3.00 B+
+   Oussama Khatib
+CS  228 STATISTICAL LEARNING 
+THEORY 3.00 3.00 A-
+   Trevor Hastie
+ENGR   40A PHYSICAL CHEMISTRY 4.00 4.00 B
+   Michael Fayer
+MUSIC   171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+UG Term GPA 3.667 Term Totals 16.00 16.00
+UG Cum GPA 3.662 Cum  Totals 124.00 124.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 B+
+   Emma Brunskill
+CS  238 DECISION MAKING UNDER 
+UNCERTAINTY 3.00 3.00 A
+   Mykel Kochenderfer
+PHYSICS   46 LIGHT AND HEAT 
+LABORATORY 1.00 1.00 A
+   Giorgio Gratta
+MUSIC   171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+ENGR   60 ENGINEERING 
+PRACTICE 4.00 4.00 B+
+   Edward Carryer
+   
+UG Term GPA 3.733 Term Totals 12.00 12.00
+UG Cum GPA 3.668 Cum  Totals 136.00 136.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  298 SEMINAR ON AI AND 
+ETHICS 3.00 3.00 A-
+   Fei-Fei Li
+CS  240 ALGORITHM DESIGN TECHNIQUES 3.00 3.00 B+
+   Subhash Khot
+CS  231N CONVOLUTIONAL NEURAL 
+NETWORKS FOR VISUAL 
+RECOGNITION 3.00 3.00 A
+   Fei-Fei Li
+CS  191 INDEPENDENT PROJECT 5.00 5.00 A
+   Chris Gregg
+MUSIC   171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+UG Term GPA 3.864 Term Totals 15.00 15.00
+UG Cum GPA 3.683 Cum  Totals 151.00 151.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS 210A ADVANCED SOFTWARE DEVELOPMENT 5.00 5.00 A
+   Mehran Sahami
+CS 245 DATABASE MANAGEMENT 
+SYSTEMS 3.00 3.00 B+
+   Hector Garcia-Molina
+CS 140 OPERATING SYSTEMS 4.00 4.00 A-
+  David Mazières
+PHYSICS 70 FOUNDATIONS OF MODERN 
+PHYSICS 4.00 4.00 B+
+   Andrei Linde
+   
+UG Term GPA 3.750 Term Totals 16.00 16.00
+UG Cum GPA 3.689 Cum  Totals 167.00 167.00
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 272 COMBINATORIAL ALGORITHMS AND 
+DATA STRUCTURES 3.00 3.00 B+
+   Alex Aiken
+CS 276 INFORMATION RETRIEVAL AND 
+WEB SEARCH 3.00 3.00 A
+   Jeff Ullman
+PHYSICS 74 ELECTRICITY AND MAGNETISM 
+LAB 1.00 1.00 A
+   Sarah Kane
+MUSIC 171 CHAMBER MUSIC  1.00 1.00 A
+   Sharon Wei
+CS 299 SEMINAR ON COMPUTATIONAL 
+BIOLOGY 3.00 3.00 A-
+   Serafim Batzoglou
+   
+UG Term GPA 3.750 Term Totals 11.00 11.00
+UG Cum GPA 3.692 Cum  Totals 178.00 178.00
+GR Term GPA 0.000 Term Totals 3.00 3.00
+GR Cum GPA 0.000 Cum  Totals 3.00 3.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS 210B PROJECT EXPERIENCE WITH 
+CORPORATE PARTNERS 4.00 4.00 A
+   Mehran Sahami
+CS 356 CRYPTOGRAPHY 3.00 3.00 A-
+   Dan Boneh
+CS 348 GRAPHICS PROGRAMMING 3.00 3.00 B+
+   Pat Hanrahan
+PHYSICS 49 BASIC PHYSICS LAB 2.00 2.00 B+
+   Graham Walker
+   
+UG Term GPA 3.783 Term Totals 12.00 12.00
+UG Cum GPA 3.698 Cum  Totals 190.00 190.00
+GR Term GPA 4.000 Term Totals 12.00 12.00
+GR Cum GPA 3.833 Cum  Totals 15.00 15.00
+
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Johnson,Alex Michael
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+--------------------------------------------------------------------------------
+Graduate Career Totals
+Cum GPA 3.833 Cum Totals 15.00 15.00
+Undergraduate Career Totals
+Cum GPA 3.698 Cum Totals 190.00 190.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 190.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 190.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+To assess whether the student has met the Bachelor of Science (BS) degree requirements in Computer Science at Stanford University, we need to cross-check their completed coursework and grades against the following criteria:
+
+1. **BS Core Requirements:**
+    - **CS 106B**: Completed with an A
+    - **CS 107**: Completed with a B+
+    - **CS 111**: Completed with an A
+    - **CS 103**: Completed with a B+
+    - **CS 109**: Completed with a B+
+    - **CS 161**: Completed with an A-
+
+2. **Senior Project Requirements:**
+    - **CS 194**: Completed with an A (Also satisfies the Senior Project Requirement, which has been completed with grades contributing to the GPA requirement)
+
+3. **Math and Science Requirements:**
+    - **Mathematics: (26 units minimum)**
+        - MATH 19: Completed with an A- (Note: AP credit of 10 units covers equivalent coursework)
+        - MATH 20: Completed with an A- 
+        - MATH 21: Completed with an A- 
+        - CS 103: (also listed under core requirements): Completed with a B+
+        - CS 109: (also listed under core requirements): Completed with a B+
+        - Electives (to reach the required 26 units):
+            - MATH 51: Completed with an A-
+            - ENGR 108: Completed with a B+
+    - **Science: (11 units minimum)**
+        - PHYS 41: Completed with a B+
+        - PHYS 43: Completed with a B+
+        - Elective:
+            - PHYS 45: Completed with a B
+            - PHYS 46: Completed with an A 
+            - PHYS 70: Completed with a B+
+            - PHYS 74: Completed with an A
+
+4. **Engineering Fundamentals (10 units minimum)**
+    - **CS 106B**: Completed with an A 
+    - **ENGR 40**: Completed with a B+
+    - Additional Fundamental Courses:
+        - ENGR 102A: Completed with a B+
+        - ENGR 60: Completed with a B+
+
+5. **Technology in Society Requirement:**
+    - **PWR 1GV**: Completed with an A- (Note this is a writing & rhetoric course, not a Technology in Society course - Additional verification may be needed)
+
+6. **Artificial Intelligence Track Requirements:**
+    - **Core (15 units minimum):**
+        - CS 107: Completed with a B+
+        - CS 111: Completed with an A
+        - CS 161: Completed with an A-
+    - **Track and Electives (25 units and seven courses minimum):**
+        - **CS 221**: Completed with a B+
+        - **CS 224N**: Completed with an A-
+        - **CS 237A**: Completed with a B+
+        - Additional Electives:
+            - CS 229: Completed with an A
+            - CS 223A: Completed with a B+
+            - CS 228: Completed with an A-
+            - CS 234: Completed with a B+
+            - CS 238: Completed with an A
+            - CS 298: Completed with an A-
+            - CS 240: Completed with a B+
+            - CS 231N: Completed with an A
+            - CS 245: Completed with a B+
+            - CS 299: Completed with an A-
+            - CS 272: Completed with a B+
+            - CS 276: Completed with an A
+
+Minimum GPA Requirement (2.0): The cumulative GPA from the transcript is 3.698 which satisfies the minimum GPA requirement.
+
+Given these details, "BS SAT" can be output as the student has successfully met all the BS degree requirements in Computer Science at Stanford University.========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Let's evaluate whether the student's transcript satisfies the requirements for the MS in Computer Science with a specialization in Artificial Intelligence.
+
+### FOUNDATIONS REQUIREMENT:
+**Must satisfy the following courses:**
+1. Logic, Automata & Complexity (CS103) - **Completed** (Grade: B+)
+2. Probability (CS109, Stat116, CME106, MS&E220, EE178) - **Completed** (CS109, Grade: B+)
+3. Algorithmic Analysis (CS161) - **Completed** (Grade: A-)
+4. Computer Org & Sys (CS107 or 107E) - **Completed** (CS107, Grade: B+)
+5. Principles of Computer Systems (CS110 or CS111) - **Completed** (CS111, Grade: A)
+
+### SIGNIFICANT IMPLEMENTATION REQUIREMENT:
+**One course required:**
+1. CS 210B - **Completed** (Grade: A)
+
+### BREADTH REQUIREMENT:
+**Three courses, one from each breadth area (A, B, C, or D):**
+1. Area A. Mathematical and Theoretical Foundations: Not listed
+2. Area B. Computer Systems: CS 140 - **Completed** (Grade: A-)
+3. Area C. Applications: CS 231N - **Completed** (Grade: A)
+4. Area D. Computing and Society: Not listed
+
+### DEPTH REQUIREMENT (AI Specialization):
+**Must satisfy:**
+1. CS 221 - **Completed** (Grade: B+)
+2. At least four of: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238.
+  - CS 223A - **Completed** (Grade: B+)
+  - CS 224N - **Completed** (Grade: A-)
+  - CS 228 - **Completed** (Grade: A-)
+  - CS 237A - **Completed** (Grade: B+)
+
+**Total of at least 21 units from (a) CS 221 and (b) the following:**
+  - Completed depth courses: CS 221 (5 units), CS 223A (3 units), CS 224N (3 units), CS 228 (3 units), CS 237A (3 units)
+  - Total = 17 units **(Need at least 21 units)**
+  - Additional depth courses:
+    - CS 231N - **Completed** (Grade: A, 3 units)
+    - CS 234 - **Completed** (Grade: B+, 3 units)
+    - CS 238 - **Completed** (Grade: A, 3 units)
+  - Total Depth Units = 29 units **(21 units requirement satisfied)**
+
+### ELECTIVES:
+**Need enough elective units to complete a total of 45 units for the MS program.**
+1. CS 356 - **Completed** (Grade: A-, 3 units)
+2. CS 348 - **Completed** (Grade: B+, 3 units)
+3. CS 272 - **Completed** (Grade: B+, 3 units)
+4. CS 276 - **Completed** (Grade: A, 3 units)
+5. CS 299 - **Completed** (Grade: A-, 3 units)
+6. CS 240 - **Completed** (Grade: B+, 3 units)
+7. CS 245 - **Completed** (Grade: B+, 3 units)
+
+**Total Units Applied to MS:**
+Depth Units: 29
+Elective Units: 18
+Total: 47 units (requirement is minimum 45 units)
+
+### ADDITIONAL REQUIREMENTS:
+1. All courses numbered 100 or greater - **Satisfied**
+2. At most 10 units of Foundations counted towards 45 units - **Satisfied** (Only 10 units)
+3. At most 3 units of 1-2 unit seminars counted - **Satisfied** (Not included seminars)
+4. At least 36 units taken for a letter grade - **Satisfied** (All documented as letter grades)
+5. Average grade at least a B - **Satisfied** (GPA: 3.833 for graduate courses)
+6. Units previously applied toward BS not counted - **Satisfied**
+7. Complete 45 graduate units at Stanford - **Satisfied** (Total of 47 units documented)
+
+**Therefore, the student satisfies the MS degree requirements.**
+
+### Result:
+"MS SAT"

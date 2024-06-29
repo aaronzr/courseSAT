@@ -1,0 +1,297 @@
+LLM_stanford_transcript1_SAT_5.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+
+Name: Johnson, Emily Grace
+Student ID: 04987654
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/10/2023
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Roberts, Sarah 
+
+--------- Stanford Degrees Awarded ---------
+
+Degree: Bachelor of Science
+Confer Date: 06/15/2023
+Plan: Computer Science
+
+--------- Academic Program ---------
+Program: Computer Science
+06/15/2022: Computer Science (MS)
+Active in Program 
+Program: Undergraduate Matriculated
+09/21/2019: Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/16/2022 
+Coterminal Undergraduate, 09/21/2019 - 06/15/2022
+
+--------- Advanced Placement Test Credit ---------
+Applied Toward Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Spanish 10.00
+Advanced Placement      Mathematics: Calculus AB 5.00
+Total Quarter Units Posted: 15.00
+Allowable Test Credit subject to restrictions.
+
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS 106A PROGRAMMING METHODOLOGY 5.00 5.00 B+
+   John Mitchell
+MATH 19 CALCULUS 5.00 5.00 A
+   Ravi Vakil
+IHUM 101A INTRODUCTION TO THE HUMANITIES 4.00 4.00 A-
+   Alice Sturgis
+MUSIC 123 STUDIES IN MUSIC THEORY 1.00 1.00 CR
+   Mark Applebaum
+
+UG Term GPA 3.640 Term Totals 15.00 15.00
+UG Cum GPA 3.640 Cum Totals 15.00 15.00
+
+2019-2020 Winter   
+Course Title Attempted Earned Grade 
+CS 106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B
+   Mehran Sahami
+MATH 20 CALCULUS 5.00 5.00 A-
+   Rafe Mazzeo
+PHYSICS 41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.560 Term Totals 15.00 15.00
+UG Cum GPA 3.600 Cum Totals 30.00 30.00
+
+2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 21 CALCULUS 5.00 5.00 A-
+   Daniel Budhiraja
+CS 103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B+
+   Saharon Shelah
+PHILOS 20 HISTORICAL PHILOSOPHICAL TEXTS 4.00 4.00 B+
+   Alex Oliver
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+
+UG Term GPA 3.526 Term Totals 15.00 15.00
+UG Cum GPA 3.609 Cum Totals 45.00 45.00
+
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS 107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 B
+   Jerry Cain
+MATH 51 LINEAR ALGEBRA 5.00 5.00 A
+   Vassil Kostov
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 A-
+   Sarah Church
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.708 Term Totals 15.00 15.00
+UG Cum GPA 3.646 Cum Totals 60.00 60.00
+
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS 109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 B+
+   Mehran Sahami
+ENGR 40M AN INTRO TO MAKING: WHAT IS EE? 5.00 5.00 A-
+   Mark Horowitz
+CS 111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 B+
+   Jinyang Li
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.567 Term Totals 16.00 16.00
+UG Cum GPA 3.618 Cum Totals 76.00 76.00
+
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS 161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+
+   Tim Roughgarden
+ENGR 108 INTRODUCTION TO ELECTROMAGNETICS 5.00 5.00 A
+   Robert Dutton
+CS 221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 B
+   Andrew Ng
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.567 Term Totals 14.00 14.00
+UG Cum GPA 3.608 Cum Totals 90.00 90.00
+
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS 224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A
+   Christopher Manning
+CS 231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 4.00 4.00 A-
+   Silvio Savarese
+PHYSICS 45 LIGHT AND HEAT 4.00 4.00 B+
+   Giorgio Gratta
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 12.00 12.00
+UG Cum GPA 3.632 Cum Totals 102.00 102.00
+
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS 224W ANALYSIS OF NETWORKS 3.00 3.00 A
+   Jure Leskovec
+CS 231N CONVOLUTIONAL NEURAL NETWORKS FOR VISUAL RECOGNITION 3.00 3.00 B+
+   Fei-Fei Li
+STAT 202 DATA MINING AND ANALYSIS 3.00 3.00 A-
+   Trevor Hastie
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.806 Term Totals 10.00 10.00
+UG Cum GPA 3.643 Cum Totals 112.00 112.00
+
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS 194 SOFTWARE PROJECT EXPERIENCE 5.00 5.00 A
+   Chris Gregg
+CS 234 REINFORCEMENT LEARNING 4.00 4.00 A
+   Emma Brunskill
+CS 238 DECISION MAKING UNDER UNCERTAINTY 3.00 3.00 A-
+   Mykel Kochenderfer
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.900 Term Totals 13.00 13.00
+UG Cum GPA 3.678 Cum Totals 125.00 125.00
+
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS 210B PROJECT EXPERIENCE WITH CORPORATE PARTNERS 4.00 4.00 A
+   Mehran Sahami
+CS 237A PRINCIPLES OF ROBOTICS 3.00 3.00 A-
+   Oussama Khatib
+MS&E 226 ORGANIZATIONAL LEARNING 3.00 3.00 A
+   Robert Sutton
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 11.00 11.00
+UG Cum GPA 3.703 Cum Totals 136.00 136.00
+
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 229 MACHINE LEARNING 3.00 3.00 A
+   Andrew Ng
+CS 248 INTERACTIVE COMPUTER GRAPHICS 3.00 3.00 B+
+   Pat Hanrahan
+ENGR 248 ENGINEERING ENTREPRENEURSHIP 3.00 3.00 A
+   Tom Byers
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.768 Term Totals 10.00 10.00
+UG Cum GPA 3.702 Cum Totals 146.00 146.00
+
+GR Term GPA 0.000 Term Totals 0.00 0.00
+GR Cum GPA 0.000 Cum Totals 13.00 13.00
+
+Graduate Career Totals
+Cum GPA 3.730 Cum Totals 13.00 13.00
+
+Undergraduate Career Totals
+Cum GPA 3.702 Cum Totals 146.00 146.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 182.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 146.00
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel * 
+********************************************************************************************* 
+END OF TRANSCRIPT.
+==========================================**Analysis for BS Requirements:**
+
+1. **Core Requirements (must include CS 103, 107, 109, 111, and 161)**:
+   - CS 106B: Programming Abstractions (Winter 2019-2020) - Grade B
+   - CS 107: Computer Organization and Systems (Winter 2020-2021) - Grade B
+   - CS 103: Mathematical Foundations of Computing (Autumn 2020-2021) - Grade B+
+   - CS 109: Introduction to Probability for Computer Scientists (Spring 2020-2021) - Grade B+
+   - CS 111: Operating Systems Principles (Spring 2020-2021) - Grade B+
+   - CS 161: Design and Analysis of Algorithms (Autumn 2021-2022) - Grade B+
+   - **Status:** Satisfied.
+
+2. **Depth Requirements**:
+   - Must take CS 221 and at least three more courses related to AI track:
+     - CS 221: Artificial Intelligence: Principles and Techniques (Autumn 2021-2022) - Grade B
+     - CS 224N: NLP with Deep Learning (Winter 2021-2022) - Grade A
+     - CS 231A: Computer Vision: From 3D Reconstruction to Recognition (Winter 2021-2022) - Grade A-
+     - CS 224W: Analysis of Networks (Spring 2021-2022) - Grade A
+     - **Status:** Satisfied (in-depth courses exceed the minimum).
+
+3. **Senior Project**: 
+   - CS 194: Software Project Experience (Autumn 2022-2023) - Grade A
+   - CS 210B: Project Experience with Corporate Partners (Winter 2022-2023) - Grade A
+   - **Status:** Satisfied.
+
+4. **Math Requirements** (including MATH 19, 20, 21, and 51):
+   - MATH 19: Calculus (Autumn 2019-2020) - Grade A
+   - MATH 20: Calculus (Winter 2019-2020) - Grade A-
+   - MATH 21: Calculus (Autumn 2020-2021) - Grade A-
+   - MATH 51: Linear Algebra (Winter 2020-2021) - Grade A
+   - **Status:** Satisfied.
+
+5. **Science Requirements** (PHYS 41, 43, and one elective):
+   - PHYS 41: Mechanics (Winter 2019-2020) - Grade A
+   - PHYS 43: Electricity and Magnetism (Winter 2020-2021) - Grade A-
+   - **Status:** Satisfied.
+
+6. **Engineering Fundamentals** (Minimum 10 units):
+   - ENGR 40M: An Intro to Making: What is EE? (Spring 2020-2021) - Grade A-
+   - **Status:** Satisfied.
+
+7. **Electives and Humanities**:
+   - Multiple CS courses and MUSIC 109 courses.
+   - **Status:** Satisfied.
+
+8. **Overall GPA requirement (>2.0 in major)**:
+   - UG Cum GPA: 3.702
+   - **Status:** Satisfied.
+
+**Result for BS: BS SAT**
+
+---
+
+**Analysis for MS Requirements:**
+
+1. **Foundations Requirements**:
+   - CS 103: Mathematical Foundations of Computing (Autumn 2020-2021) - Grade B+
+   - CS 109: Introduction to Probability for Computer Scientists (Spring 2020-2021) - Grade B+
+   - CS 161: Design and Analysis of Algorithms (Autumn 2021-2022) - Grade B+
+   - CS 107: Computer Organization and Systems (Winter 2020-2021) - Grade B
+   - CS 111: Operating Systems Principles (Spring 2020-2021) - Grade B+
+   - **Status:** Satisfied.
+
+2. **Significant Implementation Requirement**:
+   - CS 194: Software Project Experience (Autumn 2022-2023) - Grade A
+   - **Status:** Satisfied.
+
+3. **Breadth Requirement (Three courses from different areas)**:
+   - Area A: Not explicitly found - Required.
+   - Area B: CS 107 and 111 already count.
+   - Area C: CS 224N: NLP with Deep Learning (Winter 2021-2022) - Grade A
+   - Area D: ENGR 248: Engineering Entrepreneurship (Spring 2022-2023) - Grade A
+   - **Status:** Partially Satisfied (Area A required).
+
+4. **AI Depth Requirements (at least 21 units)**:
+   - CS 221: AI: Principles and Techniques (Autumn 2021-2022) - Grade B
+   - CS 224N: NLP with Deep Learning (Winter 2021-2022) - Grade A
+   - CS 231A: Computer Vision: From 3D Reconstruction to Recognition (Winter 2021-2022) - Grade A-
+   - CS 224W: Analysis of Networks (Spring 2021-2022) - Grade A
+   - CS 234: Reinforcement Learning (Autumn 2022-2023) - Grade A
+   - CS 237A: Principles of Robotics (Winter 2022-2023) - Grade A-
+   - CS 238: Decision Making Under Uncertainty (Autumn 2022-2023) - Grade A-
+   - **Status:** Satisfied.
+
+5. **Electives**:
+   - MS&E 226: Organizational Learning (Winter 2022-2023) - Grade A
+   - **Status:** Satisfied.
+
+**Result for MS: Partially satisfied (Needs Area A breadth course)**

@@ -1,0 +1,345 @@
+LLM_stanford_transcript1_UNSAT_0.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bergson,Julian Mark
+Student ID : 09573245
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 01/22/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Turner,Alice P
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :01/08/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2021 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2021 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Spanish 15.00
+Advanced Placement      Mathematics: Calculus AB 10.00
+Total Quarter Units Posted: 25.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  50 DISCRETE MATHEMATICS FOR 
+ENGINEERS4.00 4.00 B
+   Sara Smith
+CS  108 SHARED PROGRAMMING 
+PRACTICES5.00 5.00 C+
+   David Johnson
+IHUM   55 INNOVATION AND 
+TECHNOLOGY: 
+INTERDISCIPLINARY 
+APPROACHES3.00 3.00 B-
+   Michael Johns
+ARTSTUDI  101 DRAWING I 2.00 2.00 CR
+   Ryan Thomas
+   
+UG Term GPA 2.967 Term Totals 14.00 14.00
+UG Cum GPA 2.967 Cum  Totals 14.00 14.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+STAT  110 ELEMENTARY STATISTICS 4.00 4.00 B+
+   Emily White
+PHIL   20 PHILOSOPHY OF SCIENCE3.00 3.00 B
+   Peter Cross
+PHYSICS  55 CLASSICAL MECHANICS 3.00 3.00 B
+   Anne Newton
+   
+UG Term GPA 3.167 Term Totals 10.00 10.00
+UG Cum GPA 3.067 Cum  Totals 24.00 24.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bergson,Julian Mark
+Student ID : 09573245
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+MATH  70 INTRODUCTION TO LINEAR 
+ALGEBRA4.00 4.00 B-
+   Amy Lee
+ENGR   20 SUSTAINABLE ENGINEERING 
+PRACTICES4.00 4.00 C+
+   Daniel Curry
+PSYCH  10 INTRODUCTION TO 
+PSYCHOLOGY3.00 3.00 A-
+   Gloria Harper
+CHEM   40 GENERAL CHEMISTRY 4.00 4.00 B
+   Jonathan Bale
+   
+UG Term GPA 3.100 Term Totals 15.00 15.00
+UG Cum GPA 3.078 Cum  Totals 39.00 39.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  100A INTRODUCTION TO 
+COMPUTER SCIENCE4.00 4.00 B-
+   Greg Owens
+EE  50 FUNDAMENTALS OF 
+ELECTRONICS4.00 4.00 A-
+   Susan Davis
+ARTSTUDI  203 PAINTING II 3.00 3.00 B
+   Julia Adams
+PHYSICS  22 THERMODYNAMICS IN 
+THE PRACTICAL WORLD3.00 3.00 C+
+   Robert Sanchez
+   
+UG Term GPA 3.100 Term Totals 14.00 14.00
+UG Cum GPA 3.083 Cum  Totals 53.00 53.00 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+ENGLISH  120 CONTEMPORARY 
+LITERATURE 3.00 3.00 B+
+   Isaac Harris
+MATH  112 ADVANCED CALCULUS II 4.00 4.00 B
+   Michael Jones
+EE  101 SIGNAL PROCESSING AND 
+APPLICATIONS4.00 4.00 B-
+   Lauren Wong
+CS  106C DATA STRUCTURES AND 
+ALGORITHMS 5.00 5.00 C
+   Nathaniel George
+   
+UG Term GPA 3.033 Term Totals 16.00 16.00
+UG Cum GPA 3.072 Cum  Totals 69.00 69.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+EE   77 INTRODUCTORY 
+MICROELECTRONICS3.00 3.00 A
+   Kevin Davis
+CS  145 DATABASE SYSTEMS 4.00 4.00 B
+   Alexander Lee
+BIO   101 INTRODUCTION TO 
+BIOLOGY 4.00 4.00 B-
+   Rebecca Green
+ARTSTUDI  210 INTERMEDIATE 
+SCULPTURE2.00 2.00 A
+   Matthew Scott
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bergson,Julian Mark
+Student ID : 09573245
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.400 Term Totals 13.00 13.00
+UG Cum GPA 3.111 Cum  Totals 82.00 82.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  200 OPERATING SYSTEM 
+CONCEPTS4.00 4.00 B
+   Charlotte Kim
+EE  120 SIGNAL AND SYSTEMS 
+ANALYSIS3.00 3.00 B+
+   William Chen
+BIO   120 EVOLUTIONARY 
+BIOLOGY4.00 4.00 B
+   Emily Crimson
+PHYSICS   30 OPTICS AND 
+PHOTONICS4.00 4.00 B-
+   Jonathan Adams
+   
+UG Term GPA 3.200 Term Totals 15.00 15.00
+UG Cum GPA 3.120 Cum  Totals 97.00 97.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+ETHICS  101 MODERN ETHICAL 
+THOUGHT3.00 3.00 B+
+   Michael Green
+CS  210 INTRODUCTION TO AI 4.00 4.00 B
+   William Johnson
+PSYCH   25 SOCIAL PSYCHOLOGY3.00 3.00 B-
+   Elizabeth Turner
+ENGR   50C DYNAMICS IN ENGINEERING4.00 4.00 B-
+   Kevin Lewis
+   
+UG Term GPA 3.133 Term Totals 14.00 14.00
+UG Cum GPA 3.124 Cum  Totals 111.00 111.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+MATH  130 PROBABILITY THEORY 4.00 4.00 B-
+   Rebecca Black
+CS  250 ADVANCED ALGORITHMS4.00 4.00 B-
+   Emily Johnson
+BIO   140 ECOLOGY AND 
+EVOLUTION4.00 4.00 B
+   David Harper
+ENGR   60B ENERGY AND 
+SUSTAINABILITY4.00 4.00 B-
+   Michael Brown
+   
+UG Term GPA 3.033 Term Totals 16.00 16.00
+UG Cum GPA 3.117 Cum  Totals 127.00 127.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  199 AI CAPSTONE PROJECT 5.00 5.00 B
+   Alexander Smith
+PHYSICS  145 QUANTUM MECHANICS4.00 4.00 B
+   Andrew Miller
+ARTSTUDI  401 ADVANCED PAINTING 3.00 3.00 A-
+   John Lee
+BIO  110 MOLECULAR BIOLOGY 4.00 4.00 C+
+   Susan Green
+   
+UG Term GPA 3.100 Term Totals 16.00 16.00
+UG Cum GPA 3.115 Cum  Totals 143.00 143.00
+GR Term GPA 0.000 Term Totals 0.00 0.00
+GR Cum GPA 0.000 Cum  Totals 0.00 0.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+MATH  220 COMPLEX VARIABLES 3.00 3.00 A
+   Lisa White
+CS  260 MACHINE LEARNING3.00 3.00 B+
+   Brian Red
+BIO  130 GENETICS 4.00 4.00 B
+   David Green
+ARTSTUDI  420 SCULPTING WITH 
+MIXED MEDIA3.00 3.00 A
+   Joseph Hunter
+   
+GR Term GPA 3.675 Term Totals 13.00 13.00
+GR Cum GPA 3.675 Cum  Totals 13.00 13.00
+ 
+Graduate Career Totals
+Cum GPA 3.675 Cum Totals 13.00 13.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.115 Cum Totals 143.00 143.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 168.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 143.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==========================================**Student ID:** 09573245  
+**Name:** Julian Mark Bergson  
+
+**Degree Conferred:** Bachelor of Science  
+**Confer Date:** 01/08/2023  
+**Transcript Analysis:**
+
+### Core Requirements Analysis
+
+**General Core Requirements:**
+1. **CS107 - Computer Organization and Systems:** Not listed on the transcript.
+2. **CS111 - Operating Systems Principles:** Taken as CS 200 Operating System Concepts, Grade B.
+3. **CS161 - Design and Analysis of Algorithms:** Not listed on the transcript.
+4. **CS103 - Mathematical Foundations of Computing:** Taken, Grade B-.
+5. **CS109 - Introduction to Probability for Computer Scientists:** Taken, Grade B.
+
+### BS Core Requirements
+For the BS in Computer Science, these courses must be taken:
+- **CS103:** Satisfied with B.
+- **CS109:** Satisfied with B.
+- **CS107 or 107E:** Not listed, course lacking.
+- **CS111:** Satisfied taken as CS200, Grade B.
+- **CS161:** Not listed, course lacking.
+
+### Track Requirements and Electives
+**Track Requirement A:** 
+- **CS221:** Introduction to AI, Grade B.
+
+**Track Requirement B (Two courses from different areas):**
+- **CS260:** Machine Learning, Grade B+.
+- Only one course is listed; the second course from a different area is missing.
+
+**Track Requirement C:**
+- One additional course from Requirement B list or other specified courses. Missing.
+
+**Electives:** 
+- **CS199 - AI Capstone Project:** Satisfied Grade B.
+- Additional electives taken are not clearly listed under the AI track electives.
+
+### Senior Project
+**Senior Project:**
+- **CS199 AI Capstone Project:** Satisfied as the required Senior Project.
+
+### Other Requirements
+- **Ethics Requirement:** Ethics Modern Ethical Thought, Grade B+.
+- **Technology in Society Requirement:** Not clearly indicated.
+
+### Summary of BS Requirements:
+- **CS103:** Satisfied.
+- **CS109:** Satisfied.
+- **CS107 or 107E:** Not satisfied.
+- **CS111:** Satisfied (CS200).
+- **CS161:** Not satisfied.
+- **CS221:** Satisfied.
+- **Track Requirements:** Partially satisfied (Missing one B requirement and one C requirement).
+- **Electives:** Insufficient information provided in the transcript to determine full satisfaction.
+- **Senior Project:** Satisfied (CS199).
+- **Ethics Requirement:** Satisfied.
+- **Technology in Society:** Not clearly indicated on the transcript.
+- **Minimum GPA:** Cum GPA is 3.115, which is acceptable.
+
+### Output for BS:
+**BS Requirements Status:** 
+**Courses Not Satisfied:**
+- CS107 or 107E
+- CS161
+- One additional Track Requirement B from a different area
+- One Track Requirement C course
+- Technology in Society Requirement (if not taken)
+
+### MS Specialization Requirements Analysis
+**General Requirements:**
+- **Foundations Requirement:** Each course in Logic, Automata & Complexity, Probability, Algorithmic Analysis, Computer Organization & Systems, and Principles of Computer Systems.
+  
+### Foundations Requirements for MS:
+- **CS103:** Satisfied during undergraduate.
+- **CS109:** Satisfied during undergraduate.
+- **CS107 or 107E:** Not satisfied during undergraduate or MS.
+- **CS110 or CS111:** Satisfied (CS200).
+- **CS161:** Not satisfied during undergraduate or MS.
+
+### Significant Implementation Requirement:
+- **CS199 AI Capstone Project:** Satisfied, Grade B.
+
+### Breadth Requirement:
+- **Three Courses from Different Breadth Areas:**
+  - **Area A:**
+    - Not listed.
+  - **Area B:**
+    - Not listed.
+  - **Area C:**
+    - CS260: Machine Learning, Grade B+.
+  - **Area D:**
+    - Not listed.
+
+### Depth Requirement:
+- **CS221:** Satisfied.
+- **Four courses from listed depth areas for AI specialization:** Only CS260 is listed.
+- **21 units from a combination of depth courses:** Not satisfied.
+
+### Electives:
+- Additional courses to complete 45-unit requirement: Not clearly indicated on transcript.
+
+**Advisory Notes:**
+- **Foundations Requirement:** Not satisfied fully (missing CS107 and CS161).
+- **Breadth Requirement:** Not satisfied (only one course listed under breadth).
+- **Depth Requirement:** Not satisfied (missing three more depth courses).
+- **Electives:** Insufficient information.
+  
+### Output for MS:
+**MS Requirements Status:** 
+**Courses Not Satisfied:**
+- Foundations Requirement: CS107, CS161
+- Breadth Requirement: Area A, Area B, Area D
+- Depth Requirement: Three more depth courses
+- Electives: Additional electives to meet the 45-unit requirement
+
+**Output:**
+- **BS Status:** List of courses not satisfied.
+- **MS Status:** List of courses not satisfied.

@@ -1,0 +1,255 @@
+LLM_stanford_transcript1_UNSAT.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Jane, Doe 
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/02/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Clark, Michael 
+
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2021 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/15/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/05/2023 -
+Coterminal Undergraduate, 01/06/2021 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Spanish 8.00
+Advanced Placement      Mathematics: Calculus AB 8.00
+Total Quarter Units Posted: 16.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  19 CALCULUS 3.00 3.00 B+
+   Robert Sinclair
+ENGLISH   101 INTRO TO LITERATURE 4.00 4.00 A
+BIO   42 GENETIC BIOLOGY 4.00 4.00 A-
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Felix Rey 
+   
+UG Term GPA 3.571 Term Totals 12.00 12.00
+UG Cum GPA 3.571 Cum  Totals 12.00 12.00
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+MATH  20 CALCULUS 3 3.00 3.00 B
+   Jason Taylor
+CS  106B PROGRAMMING 
+ABSTRACTIONS6.00 6.00 C+
+   Mehran Sahami
+PHYSICS  22 THERMODYNAMICS 4.00 4.00 B+
+   
+UG Term GPA 2.917 Term Totals 13.00 13.00
+UG Cum GPA 3.238 Cum  Totals 25.00 25.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Jane, Doe
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+STAT	116 PROBABILITY AND STATISTICS 4.00 4.00 B
+	Paul Allison
+CS	107 COMPUTER ORGANIZATION AND SYSTEMS 4.00 4.00 B
+	Eric Sorooshian
+CS	124 NATURAL LANGUAGE PROCESSING 5.00 5.00 C+
+	Chris Manning
+   
+UG Term GPA 2.917 Term Totals 13.00 13.00
+UG Cum GPA 3.169 Cum  Totals 38.00 38.00
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+HISTORY  101 EUROPEAN HISTORY 4.00 4.00 A-
+   James Casey
+CS	161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 C
+   Tim Roughgarden
+CS	224N NATURAL LANGUAGE PROCESSING 4.00 4.00 C
+   Dan Jurafsky
+   
+UG Term GPA 2.917 Term Totals 12.00 12.00
+UG Cum GPA 3.065 Cum  Totals 50.00 50.00
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRO TO PROBABILITY FOR CS 5.00 5.00 C
+   John Duchi
+PHIL	151 METAPHYSICS 4.00 4.00 B+
+   Lanier Anderson
+CS	144 INTRO TO COMPUTER NETWORKING 4.00 4.00 B+
+   
+UG Term GPA 2.963 Term Totals 13.00 13.00
+UG Cum GPA 3.055 Cum  Totals 63.00 63.00
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS	111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 C
+   David Cheriton
+BIO	82 MOLECULAR BIOLOGY 4.00 4.00 B+
+ENGR 50 INTRO TO MATERIALS SCIENCE 5.00 5.00 B+
+   
+UG Term GPA 2.906 Term Totals 14.00 14.00
+UG Cum GPA 3.032 Cum  Totals 77.00 77.00
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS	225A ROBOTICS 4.00 4.00 B+
+Dan Koditschek
+
+EE	261 IMAGE PROCESSING 4.00 4.00 C
+Trevor Darrell
+
+BIO	130 CELL BIOLOGY 4.00 4.00 B+ 
+Amy Berg
+
+MUSIC   12 BEGINNING PIANO 1.00 1.00 CR
+   John Roland
+   
+UG Term GPA 2.823 Term Totals 13.00 13.00
+UG Cum GPA 2.927 Cum  Totals 90.00 90.00
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CHEM   31A CHEMICAL PRINCIPLES 4.00 4.00 B-
+BIO	151 OCEANOGRAPHY 3.00 3.00 B
+CS	231A COMPUTER VISION 4.00 4.00 C+
+Andrew Ng
+   
+UG Term GPA 2.869 Term Totals 11.00 11.00
+UG Cum GPA 2.902 Cum  Totals 101.00 101.00
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS	131 INTRO TO RISK ANALYSIS 4.00 4.00 C+
+CS	271 ARTIFICIAL INTELLIGENCE 4.00 4.00 C 
+CS	234 REINFORCEMENT LEARNING 4.00 4.00 C-
+Andrew Ng
+   
+UG Term GPA 2.438 Term Totals 12.00 12.00
+UG Cum GPA 2.843 Cum  Totals 113.00 113.00
+2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS	210B SOFTWARE ENGINEERING 4.00 4.00 B+
+CS	348 LARGE-SCALE LEARNING 4.00 4.00 B
+LING	280 COMPUTATIONAL LINGUISTICS 4.00 4.00 B+
+   
+UG Term GPA 3.167 Term Totals 12.00 12.00
+UG Cum GPA 2.901 Cum  Totals 125.00 125.00
+GR Term GPA 3.167 Term Totals 12.00 12.00
+GR Cum GPA 3.167 Cum  Totals 12.00 12.00
+2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS 140 OPERATING SYSTEMS 4.00 4.00 B+
+MATH	220 CONTINUOUS DISCRETE MATH 4.00 4.00 B
+PHYS 150 ATOMIC STRUCTURE 4.00 4.00 B+
+   
+GR Term GPA 3.500 Term Totals 12.00 12.00
+GR Cum GPA 3.333 Cum Totals 24.00 24.00
+2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS	348K DEEP LEARNING THEORY 4.00 4.00 B
+STATS 240 STATISTICAL INFERENCE 4.00 4.00 C+
+EE	275 MACHINE LEARNING 4.00 4.00 B-
+   
+GR Term GPA 2.833 Term Totals 12.00 12.00
+GR Cum GPA 3.197 Cum Totals 36.00 36.00
+ 
+Graduate Career Totals
+Cum GPA 3.197 Cum Totals 36.00 36.00
+Undergraduate Career Totals
+ 
+Cum GPA 2.901 Cum Totals 125.00 125.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 125.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 125.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==========================================Based on the given transcript and the specified requirements for the BS and MS in Computer Science with an Artificial Intelligence Specialization, I have conducted a detailed review to determine if Jane Doe satisfies all the requirements for both degrees.
+
+### BS in Computer Science Degree Requirements Analysis
+
+#### Core Requirements
+1. **CS 103** (Mathematical Foundations of Computing): Not listed in the transcript.
+2. **CS 106B** (Programming Abstractions): Completed with a grade of C+ for 6 units.
+3. **CS 107** (Computer Organization and Systems): Completed with a grade of B.
+4. **CS 109** (Introduction to Probability for Computer Scientists): Completed with a grade of C.
+5. **CS 111** (Operating Systems Principles): Completed with a grade of C.
+6. **CS 161** (Design and Analysis of Algorithms): Completed with a grade of C.
+
+#### Math Requirements
+1. **Calculus Sequence** (MATH 19, 20, 21): Jane completed MATH 19 and 20; MATH 21 is not listed.
+2. **Probability Course**: STAT 116 completed with a grade of B.
+3. Additional Math Electives: No clear elective math courses are listed beyond the required MATH and core courses.
+
+#### Science Requirements
+1. **PHYS 41** (Mechanics): Not listed.
+2. **PHYS 43** (Electricity and Magnetism): Not listed.
+3. **Science Elective**: BIO 42, BIO 82, BIO 130, CHEM 31A, BIO 151 (various grades ranging from A- to B-).
+
+#### Engineering Fundamentals
+1. **ENGR Requirement**: ENGR 50 was completed with a grade of B+.
+
+#### Senior Project Requirement
+1. **Senior Project (CS 210B)**: Completed with a grade of B+.
+
+### BS Degree Summary
+- **Mathematical Foundations of Computing (CS 103)**: Not completed.
+- **One Calculus Course (MATH 21)**: Not completed.
+- **Physics Sequence**: Not completed.
+
+**Conclusion**: Due to the absence of completed courses for MATH 21, CS 103, and the required Physics sequence, the BS requirements are **not satisfied**.
+
+**Output**: 
+```
+BS NOT SAT
+Missing: MATH 21, CS 103, PHYS 41, PHYS 43
+```
+
+### MS in Computer Science: Artificial Intelligence Specialization Requirements Analysis
+
+#### Foundations Requirement
+1. **Logic, Automata & Complexity**: CS 103: Not completed.
+2. **Probability**: STAT 116 completed.
+3. **Algorithmic Analysis**: CS 161 completed.
+4. **Computer Organization & Systems**: CS 107 completed.
+5. **Principles of Computer Systems (CS 110/111)**: CS 111 completed.
+
+#### Significant Implementation Requirement
+- CS 210B (Software Engineering) satisfies the requirement.
+
+#### Breadth Requirement
+1. **Area A (Mathematical and Theoretical Foundations)**: No qualifying courses listed for MS.
+2. **Area B (Computer Systems)**: CS 140 in ongoing term.
+3. **Area C (Applications)**: CS 231A completed with a C+.
+4. **Area D (Computing and Society)**: Not listed.
+
+#### AI Depth Requirement
+- **CS 221** is not explicitly listed but CS 271 (Artificial Intelligence) with grade C may be considered for AI principles.
+- Depth options like CS 231A (completed), CS 234 (Reinforcement Learning C-). Other depth courses specified: CS 225A, CS 348K.
+
+#### Electives
+- Depth/Elective courses taken include CS 348K, CS 271, CS 234, CS 210B.
+
+### MS Degree Summary
+- **Breadth courses** are partially unlisted.
+- **CS 103 (Logic) not completed**.
+- AI Depth requirement needs review but generally fulfilled.
+
+**Conclusion**: Due to missing courses in the foundations breadth category and incompletely listed depth/electives, the MS requirements are **not fully satisfied**.
+
+**Output**:
+```
+MS NOT SAT
+Missing: Logic Automata & Complexity (CS 103), Depth/Breadth courses review needed.
+```
+
+**General Conclusion**: Jane Doe does not currently meet all the requirements for either the BS or the MS degree based on the provided information.

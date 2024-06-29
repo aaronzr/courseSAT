@@ -1,0 +1,332 @@
+LLM_stanford_transcript1_SAT_1.txtLeland Stanford Jr. University
+Stanford, CA 94305 
+USA
+
+Undergraduate Unofficial Transcript
+
+Name : Smith,Emily Jane
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2023
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Johnson,Laura M
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :01/08/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2023 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2021 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2022 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+
+2020-2021 Autumn
+Advanced Placement      Chemistry 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+
+--------- Beginning of Academic  Record --------- 
+
+2020-2021 Autumn   
+
+Course Title Attempted Earned Grade 
+CME 100 VECTOR CALCULUS FOR 
+ENGINEERS 5.00 5.00 A-
+   John Stewart
+CS 106A PROGRAMMING 
+METHODOLOGY 5.00 5.00 A
+   Mehran Sahami
+PWR 1WR WRITING & RHETORIC 1: 
+WRITING AND RHETORIC 4.00 4.00 B+
+   Kelly Austin
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 CR
+   Debra Fong
+   
+UG Term GPA 3.707 Term Totals 15.00 15.00
+UG Cum GPA 3.707 Cum  Totals 15.00 15.00
+
+2020-2021 Winter   
+
+Course Title Attempted Earned Grade 
+CME 102 ORDINARY DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS 5.00 5.00 A
+   Michael Barnes
+PHIL 1 INTRODUCTION TO PHILOSOPHY 4.00 4.00 B
+   Mark Crimmins
+PHYSICS 41 MECHANICS 4.00 4.00 B+
+   Patricia Burchat
+CS 106B PROGRAMMING 
+ABSTRACTIONS 5.00 5.00 B+
+   Jerry Cain
+   
+UG Term GPA 3.569 Term Totals 18.00 18.00
+UG Cum GPA 3.626 Cum Totals 33.00 33.00  
+
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+
+Undergraduate Unofficial Transcript
+
+Name : Smith,Emily Jane
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+
+2020-2021 Spring   
+
+Course Title Attempted Earned Grade 
+CME 104 LINEAR ALGEBRA AND 
+PARTIAL DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS 5.00 5.00 B+
+   John Stewart
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 B
+   Ian Fisher
+PHIL 2 MORAL PROBLEMS 4.00 4.00 A-
+   Thomas Flint
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+CS 103 MATHEMATICAL FOUNDATIONS 
+OF COMPUTING 5.00 5.00 A-
+   Keith Schwarz
+   
+UG Term GPA 3.538 Term Totals 19.00 19.00
+UG Cum GPA 3.604 Cum Totals 52.00 52.00
+
+2021-2022 Autumn   
+
+Course Title Attempted Earned Grade 
+CS 107 COMPUTER ORGANIZATION AND 
+SYSTEMS 5.00 5.00 A
+   Jerry Cain
+EE 102A SIGNAL PROCESSING AND 
+LINEAR SYSTEMS I 4.00 4.00 B+
+   John Pauly
+PHYSICS 70 FOUNDATIONS OF MODERN 
+PHYSICS 4.00 4.00 A
+   Andrei Linde
+PWR 2WR WRITING & RHETORIC 2: 
+ADVANCED WRITING AND RHETORIC 4.00 4.00 B-
+   Grace Wang
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+UG Term GPA 3.586 Term Totals 18.00 18.00
+UG Cum GPA 3.595 Cum  Totals 70.00 70.00
+
+2021-2022 Winter   
+
+Course Title Attempted Earned Grade 
+CS 109 INTRODUCTION TO PROBABILITY FOR 
+COMPUTER SCIENTISTS 5.00 5.00 B+
+   Mehran Sahami
+PHIL 151 METALOGIC 4.00 4.00 A
+   Mark Crimmins
+EE 108 DIGITAL SYSTEMS I 4.00 4.00 B
+   Subhasish Mitra
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PHYSICS 42 CLASSICAL MECHANICS 
+LABORATORY 1.00 1.00 S
+   Patricia Burchat
+   
+UG Term GPA 3.586 Term Totals 15.00 15.00
+UG Cum GPA 3.594 Cum Totals 85.00 85.00
+
+2021-2022 Spring   
+  
+Course Title Attempted Earned Grade 
+CS 161 DESIGN AND ANALYSIS OF 
+ALGORITHMS 5.00 5.00 A-
+   Tim Roughgarden
+EE 101A CIRCUITS I 4.00 4.00 B+
+   S Wong
+PWR 3WR WRITING & RHETORIC 3: 
+PROFESSIONAL AND TECHNICAL WRITING 4.00 4.00 B
+   John Logie
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PSYS 30 INTRODUCTION TO PERCEPTION 4.00 4.00 B+
+   Brian Wandell
+   
+UG Term GPA 3.685 Term Totals 18.00 18.00
+UG Cum GPA 3.614 Cum Totals 103.00 103.00
+
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+
+Undergraduate Unofficial Transcript
+
+Name : Smith,Emily Jane
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+
+2022-2023 Autumn   
+
+Course Title Attempted Earned Grade 
+CS 111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 A-
+   David Mazières
+CS 221 ARTIFICIAL INTELLIGENCE: 
+PRINCIPLES AND TECHNIQUES 5.00 5.00 B+
+   Percy Liang
+MATH 51 LINEAR ALGEBRA AND DIFFERENTIAL 
+CALCULUS OF SEVERAL VARIABLES 5.00 5.00 B
+   O.V. Planas
+CS 224N NATURAL LANGUAGE 
+PROCESSING WITH DEEP LEARNING 3.00 3.00 A
+   Christopher Manning
+   
+UG Term GPA 3.632 Term Totals 18.00 18.00
+UG Cum GPA 3.617 Cum Totals 121.00 121.00
+
+2022-2023 Winter   
+
+Course Title Attempted Earned Grade 
+CS 230 DEEP LEARNING 4.00 4.00 B+
+   Andrew Ng
+CS 224S NATURAL LANGUAGE 
+UNDERSTANDING 4.00 4.00 A
+   Noah Goodman
+EE 123 DIGITAL SIGNAL PROCESSING 3.00 3.00 B+
+   Bernard Widrow
+MUSIC 154 AESTHETICS OF 
+ELECTRONIC MUSIC 3.00 3.00 CR
+   Holly Herndon
+
+UG Term GPA 3.528 Term Totals 14.00 14.00
+UG Cum GPA 3.60 Cum Totals 135.00 135.00
+
+2022-2023 Spring  
+
+Course Title Attempted Earned Grade 
+CS 227B GENERAL GAME PLAYING 3.00 3.00 A
+   Michael Genesereth
+CS 238 DECISION MAKING UNDER 
+UNCERTAINTY 3.00 3.00 A-
+   Mykel Kochenderfer
+CS 229 MACHINE LEARNING 3.00 3.00 A-
+   Andrew Ng
+MATH 53 ORDINARY DIFFERENTIAL EQUATIONS 
+WITH LINEAR ALGEBRA 5.00 5.00 B+
+   Richard Green
+ENGR 40M AN INTRO TO MAKING: WHAT IS EE? 3.00 3.00 A
+   Fred Gibbons
+   
+UG Term GPA 3.767 Term Totals 17.00 17.00
+UG Cum GPA 3.632 Cum  Totals 152.00 152.00
+
+
+--------- End Of Transcript ---------==========================================To evaluate whether Emily Jane Smith has met the BS and MS degree requirements for Computer Science, we will compare her transcript against each set of requirements.
+
+### BS Degree Requirements:
+#### BS Core Requirements:
+- **CS 103**: Mathematical Foundations of Computing (Taken)
+- **CS 106B**: Programming Abstractions (Taken)
+- **CS 107**: Computer Organization and Systems (Taken)
+- **CS 109**: Introduction to Probability for Computer Scientists (Taken)
+- **CS 111**: Operating Systems Principles (Taken)
+- **CS 161**: Design and Analysis of Algorithms (Taken)
+
+#### BS Senior Project Requirements:
+- **CS 191/191W**: Independent Project or Writing Intensive (Not listed)
+- **CS 194/194W**: Software Project Experience or Writing Intensive (Not listed)
+- **CS 210B**: Project Experience with Corporate Partners (Not listed)
+- **CS 294**: Directed Research (Not listed)
+
+#### BS AI Track Requirements:
+- Core (15 units minimum):
+  - **CS 107 or 107E**: Computer Organization and Systems (Taken)
+  - **CS 111**: Operating Systems Principles (Taken)
+  - **CS 161**: Design and Analysis of Algorithms (Taken)
+  
+- Depth; Track and Electives (25 units and seven courses minimum):
+  - **CS 221**: AI: Principles and Techniques (Taken)
+  - Track Requirement B
+    - One course from AI Methods (e.g., **CS 224N**: Taken)
+    - One course from Natural Language Processing (e.g., **CS 224S**: Taken)
+  - Track Requirement C: One additional course from the Track Requirement B list or others (e.g., **CS 230**: Deep Learning: Taken)
+  - Electives:
+    - **CS 224U**: Another eligible course (Not listed)
+    - **CS 229**: Machine Learning (Taken)
+    - **CS 238**: Decision Making Under Uncertainty (Taken)
+
+- Senior Project
+  - At least 3 units from CS 191/W, 194/W, 210B, or 294 (Requirement not satisfied)
+
+#### Math and Science Requirements:
+- Math (26 units minimum):
+  - **CME 100** (Taken)
+  - **CME 102** (Taken)
+  - **CME 104** (Taken)
+  - **MATH 51** (Taken)
+  - **MATH 53** (Taken)
+  - **CS 103** (Taken, Core)
+  - **CS 109** (Taken, Core)
+    
+- Science (11 units minimum):
+  - **PHYS 41** (Taken)
+  - **PHYS 43** (Taken)
+  - Elective (Requirement not listed, but likely satisfied by AP Chemistry if validated)
+
+- Technology in Society (1 course req'd from Approved TiS list)
+  - **ENGR 40M**: An Intro to Making: What is EE? (Taken, also counts as Engineering Fundamentals)
+
+All requirements for the BS degree in Computer Science are satisfied except for the Senior Project.
+
+**BS Result:**
+```
+BS NOT SAT – Missing Senior Project
+```
+
+### MS Degree Requirements:
+#### Foundations Requirement:
+- **CS 103**: Logic, Automata & Complexity (Taken in BS)
+- **CS 109**: Probability (Taken in BS)
+- **CS 161**: Algorithmic Analysis (Taken in BS)
+- **CS 107 (or 107E)**: Computer Organization & Systems (Taken in BS)
+- **CS 110 or 111**: Principles of Computer Systems (Taken in BS as CS 111)
+- Total units: maximum of 10 units counted (All courses taken during BS)
+
+#### Significant Implementation Requirement:
+- **CS 227B**: General Game Playing (Taken)
+
+#### Breadth Requirement (must be taken for at least 3 units each):
+- **Area A**: CS 224N – Natural Language Processing with Deep Learning (Taken)
+- **Area B**: No course listed
+- **Area C**: CS 230 – Deep Learning (Taken)
+- **Area D**: No course listed
+
+#### Artificial Intelligence Depth Requirement:
+- a) **CS 221**: Artificial Intelligence: Principles and Techniques (Taken)
+- b) At least four of: **CS 224N, CS 224S, CS 229, CS 238** (All taken)
+- c) A total of at least 21 units (21 units met if all courses from b) and c) are counted):
+  - Additional courses: **CS 224N, CS 224S, CS 229, CS 238** 
+
+#### Electives:
+- Not specifically listed, but likely met if all graduate-level courses taken and numbered above 111, except certain exclusions, are counted.
+
+**MS Result:**
+```
+MS NOT SAT – Missing three courses for Breadth Requirement Area B and D
+```
+
+The student has met most of the requirements but needs to fulfill the Senior Project requirement for the BS and the remaining Breadth courses for the MS degree.
+
+### Final Output:
+```
+BS NOT SAT – Missing Senior Project
+MS NOT SAT – Missing three courses for Breadth Requirement Area B and D
+```

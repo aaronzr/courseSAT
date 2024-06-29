@@ -1,0 +1,319 @@
+LLM_stanford_transcript1_UNSAT_9.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Lewinsky, Sandra Marie
+Student ID : 08795421
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 11/05/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Thompson, Gary K
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/14/2023
+Plan :Physics  
+--------- Academic Program ---------
+Program :   Physics
+09/15/2022 :Physics (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/16/2019 :Physics (BS)
+Completed Program 
+Coterminal Graduate, 06/14/2023 - 
+Coterminal Undergraduate, 06/15/2022 - 06/14/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Spanish 12.00
+Advanced Placement      Mathematics: Calculus AB 8.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS  101 INTRODUCTION TO 
+COMPUTING5.00 5.00 B
+   Emily Fox
+PHYS  21 CLASSICAL PHYSICS 4.00 4.00 B
+   John Doe
+ENGL  72A CONTEMPORARY AUSTEN 4.00 4.00 A-
+   Jane Austen
+BIO  101 INTRODUCTION TO BIOLOGY 4.00 4.00 CR
+   Richard Dawkins
+   
+UG Term GPA 3.250 Term Totals 17.00 17.00
+UG Cum GPA 3.250 Cum Totals 17.00 17.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+HIST  23 HISTORY OF SCIENCE 4.00 4.00 A
+   Charles Darwin
+ANTH  101 CULTURAL ANTHROPOLOGY 3.00 3.00 A-
+   Margaret Mead
+MATH 51 LINEAR ALGEBRA WITH 
+APPLICATIONS5.00 5.00 B+
+   Albert Einstein
+PHYS  22 ELECTRICITY AND MAGNETISM 4.00 4.00 C+
+   Neils Bohr
+   
+UG Term GPA 3.200 Term Totals 16.00 16.00
+UG Cum GPA 3.225 Cum Totals 33.00 33.00
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+CS  102 DATA STRUCTURES 5.00 5.00 W
+   Carl Gauss
+PHIL  12 ETHICS IN SCIENCE 4.00 4.00 B+
+   Immanuel Kant
+MATH 52 MULTIVARIATE CALCULUS 5.00 5.00 A-
+   Benjamin Franklin
+BIO  103 GENETICS 4.00 4.00 C
+   James Watson
+   
+UG Term GPA 2.925 Term Totals 18.00 13.00
+UG Cum GPA 3.125 Cum Totals 51.00 46.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 53 ORDINARY 
+DIFFERENTIAL EQUATIONS5.00 5.00 C+
+   Paul Dirac
+PHIL  151 LOGIC 4.00 4.00 C-
+   Bertrand Russell
+HUM   110 INTRO TO PHILOSOPHY 4.00 4.00 B
+   Socrates
+PHYS  45 LIGHT AND THERMODYNAMICS 4.00 4.00 B+
+   Max Planck
+   
+UG Term GPA 2.770 Term Totals 17.00 17.00
+UG Cum GPA 3.025 Cum Totals 68.00 63.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+EE  102 LINEAR SYSTEMS 4.00 4.00 B+
+   Nikola Tesla
+PHYS  160 QUANTUM MECHANICS 5.00 5.00 B
+   Murray Gell-Mann
+MATH 104 COMPLEX ANALYSIS 4.00 4.00 C
+   Pierre-Simon Laplace
+CS  103 COMPUTER THEORY 5.00 5.00 W
+   Clifford Algebra
+   
+UG Term GPA 2.900 Term Totals 18.00 17.00
+UG Cum GPA 2.984 Cum Totals 86.00 80.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  101C ADVANCED PROGRAMMING 5.00 5.00 B
+   Ada Lovelace
+PHYS  161 INTRODUCTION TO 
+PARTICLE PHYSICS4.00 4.00 B+
+   Steven Weinberg
+CHEM  31A CHEMICAL PRINCIPLES I 4.00 4.00 B-
+   Linus Pauling
+STATS 116 STATISTICAL INFERENCE 5.00 5.00 B+
+   Ronald Fisher
+   
+UG Term GPA 3.100 Term Totals 18.00 18.00
+UG Cum GPA 3.030 Cum Totals 104.00 98.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 5.00 5.00 B+
+   Steve Wozniak
+PHYS  170 THERMODYNAMICS 5.00 5.00 B+
+   Ludwig Boltzmann
+MATH 108 NUMERICAL METHODS 4.00 4.00 A
+   Leonhard Euler
+HUM   22 MEDIEVAL HISTORY 4.00 4.00 S
+   Thomas Aquinas
+   
+UG Term GPA 3.450 Term Totals 18.00 18.00
+UG Cum GPA 3.125 Cum Totals 122.00 116.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  109 INTRO TO PROBABILITY & 
+STATISTICS5.00 5.00 A-
+   Andrey Kolmogorov
+PHYS  180 ELECTRODYNAMICS 5.00 5.00 B-
+   Carl Friedrich Gauss
+CHEM  31B CHEMICAL PRINCIPLES II 4.00 4.00 B
+   Marie Curie
+   
+UG Term GPA 2.933 Term Totals 14.00 14.00
+UG Cum GPA 3.091 Cum Totals 136.00 130.00
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Let's break down the Bachelor of Science (BS) in Computer Science requirements and check them against the student transcript provided for Sandra Marie Lewinsky.
+
+### Core Requirements
+1. **Programming Abstractions (CS106B)**: Not taken. Needs to be fulfilled.
+2. **Computer Organization and Systems (CS107)**: Taken in Autumn 2021-2022 and passed with a B+.
+3. **Operating Systems Principles (CS111)**: Not taken. Needs to be fulfilled.
+4. **Mathematical Foundations of Computing (CS103)**: Attempted twice (Winter 2020-2021 and Winter 2021-2022) and received a W both times; must be completed.
+5. **Introduction to Probability for Computer Scientists (CS109)**: Taken in Winter 2021-2022 and passed with an A-.
+6. **Design and Analysis of Algorithms (CS161)**: Not taken. Needs to be fulfilled.
+
+### Senior Project Requirements
+1. **One of CS191, CS191W, CS194, CS194W, CS194H, CS210B, or CS294**: Not taken. Needs to be fulfilled.
+
+### Mathematics and Science Requirements (37 units minimum combined)
+1. **Mathematics (26 units minimum)**:
+   - AP Calculus AB: 8 units earned.
+   - MATH 51, Linear Algebra: Taken and passed with a B+.
+   - MATH 52, Multivariate Calculus: Taken and passed with an A-.
+   - MATH 53, Ordinary Differential Equations: Taken and passed with a C+.
+   - MATH 104, Complex Analysis: Taken and passed with a C.
+   - MATH 108, Numerical Methods: Taken and passed with an A.
+   - CS103, Mathematical Foundations of Computing: Needs to be fulfilled.
+   - CS109, Introduction to Probability: Already counted in core requirements, hence no double-counting.
+
+   **Total Units**: 8 (AP) + 5 (MATH 51) + 5 (MATH 52) + 5 (MATH 53) + 4 (MATH 104) + 4 (MATH 108) = 31 units (excluding CS103 which is not completed yet).
+
+2. **Science (11 units minimum)**:
+   - PHYS 21, Classical Physics: Taken and passed with a B.
+   - PHYS 22, Electricity and Magnetism: Taken and passed with a C+.
+   - CHEM 31A, Chemical Principles I: Taken and passed with a B-.
+   - CHEM 31B, Chemical Principles II: Taken and passed with a B.
+
+   **Total Units**: 4 (PHYS 21) + 4 (PHYS 22) + 4 (CHEM 31A) + 4 (CHEM 31B) = 16 units (exceeds minimum requirement).
+
+### Engineering Fundamentals (10 units minimum)
+1. **CS106B Programming Abstractions**: Needs to be fulfilled.
+2. **ENGR40M or 76 Introduction to Making / EE**: Not listed on transcript. Needs to be fulfilled.
+
+### Technology in Society Requirement
+1. **One course from the approved TiS list**: Not identified on transcript. Needs to be fulfilled.
+
+### Depth Requirements and Electives for AI Track (43 units minimum)
+1. **Core Requirements (15 units)**
+   - CS107: Fulfilled.
+   - CS111: Needs to be fulfilled.
+   - CS161: Needs to be fulfilled.
+
+2. **Track Requirements and Electives (25 units and seven courses minimum)**
+   - **CS221**: Not taken. Needs to be fulfilled.
+   - **Two courses from different areas of Track Requirement B**: Not listed.
+   - **One additional course from Track Requirement C**: Not listed.
+   - **Three electives from the Track Requirement B/C, additional electives, or general CS electives**: Not listed.
+
+3. **Senior Project (3 units minimum)**
+   - Not completed.
+
+### Summary
+Based on the requirements and Sandra's transcript, the following courses and requirements are missing or need attention:
+
+1. **Core Requirements**:
+   - **CS106B Programming Abstractions**: Not completed.
+   - **CS111 Operating Systems Principles**: Not completed.
+   - **CS103 Mathematical Foundations of Computing**: Not completed.
+   - **CS161 Design and Analysis of Algorithms**: Not completed.
+
+2. **Senior Project**:
+   - Not completed.
+
+3. **Mathematics**:
+   - **CS103 Mathematical Foundations of Computing**: Not completed.
+
+4. **Engineering Fundamentals**:
+   - **CS106B Programming Abstractions**: Not completed.
+   - **ENGR40M or 76 Introduction to Making / EE**: Not listed.
+
+5. **Technology in Society Requirement**:
+   - Not identified on the transcript.
+
+6. **Depth Requirements and Electives for AI Track**:
+   - CS221: Not completed.
+   - Two courses from different areas of Track Requirement B: Not listed.
+   - One course from Track Requirement C: Not listed.
+   - Three additional electives: Not listed.
+
+Hence, the student has not satisfied the BS requirements for Computer Science.
+
+**Output**: List of courses not satisfied:
+- CS106B Programming Abstractions
+- CS111 Operating Systems Principles
+- CS103 Mathematical Foundations of Computing
+- CS161 Design and Analysis of Algorithms
+- Senior Project
+- ENGR40M or 76 Introduction to Making / EE
+- Technology in Society Requirement
+- Depth Track Requirement, including electives and CS221========================GPT Answer to Prompt Two Regarding MS Requirements====================
+Based on the provided requirements for the Master of Science in Computer Science (MSCS) degree specializing in Artificial Intelligence at Stanford University, let's evaluate Sandra Marie Lewinsky’s transcript to determine if she meets those requirements.
+
+### Foundations Requirement
+1. **Logic, Automata & Complexity (CS103)**
+   - She withdrew from CS103: Not satisfied.
+   
+2. **Probability** 
+   - Completed CS 109 (Intro to Probability & Statistics) with an A-: Satisfied.
+   
+3. **Algorithmic Analysis (CS161)**
+   - Not listed in transcript: Not satisfied.
+   
+4. **Computer Organization & Systems (CS107 or 107E)**
+   - Completed CS 107 (Computer Organization) with a B+: Satisfied.
+   
+5. **Principles of Computer Systems (CS110 or CS111)**
+   - Not listed in transcript: Not satisfied.
+   
+Total units from Foundations courses: 
+- CS 109: 5 units
+- CS 107: 5 units
+- Total: 10 units (within the allowed 10 units)
+
+### Foundation Checklist Summary
+- Logic, Automata & Complexity: Not satisfied
+- Probability: Satisfied
+- Algorithmic Analysis: Not satisfied
+- Computer Organ & Sys: Satisfied
+- Principles of Computer Systems: Not satisfied
+
+### Significant Implementation Requirement
+- Requires completion of a designated course: Not listed in the transcript.
+Courses that may satisfy include CS 140, 140E, 143, 144, etc.: Not satisfied.
+
+### Breadth Requirement
+- Three courses from different areas (A, B, C, or D): Not listed in the transcript.
+   - Area A (Mathematical and Theoretical Foundations): Not satisfied
+   - Area B (Computer Systems): Not satisfied
+   - Area C (Applications): Not satisfied
+   - Area D (Computing and Society): Not satisfied
+
+### Artificial Intelligence Depth Requirement
+- **CS 221**: Not listed.
+- **Four Depth Courses**: Not listed.
+- **Total 21 Units from Depth Requirement**: Not met (None listed).
+
+### Electives
+- List here any additional courses used to complete the 45-unit requirement for the MSCS degree: Not enough information on chosen electives.
+
+### Additional Requirements
+1. **Total graduate units**: Not enough information.
+2. **Courses numbered 100 or greater**: Considered where applicable.
+3. **At most 10 units of Foundations**: Valid
+4. **Minimum of 36 units with a letter grade**: Not enough information.
+5. **Average grade at least B**: UG Cum GPA is 3.091
+6. **45 graduate units completed at Stanford**: Not enough information.
+
+### Summary
+Based on the information provided, Sandra Marie Lewinsky did not meet multiple requirements for the MSCS degree. Specifically, the missing or unsatisfied requirements are:
+
+1. **Logic, Automata & Complexity (CS103)**
+2. **Algorithmic Analysis (CS161)**
+3. **Principles of Computer Systems (CS110 or CS111)**
+4. **Significant Implementation Requirement**
+5. **Breadth Requirement** (All areas not listed)
+6. **Artificial Intelligence Depth Requirement** (CS 221 and four additional depth courses)
+7. **Electives** and total graduate units for completing the 45-unit requirement.
+
+Therefore, the output is:
+```
+MS NOT SAT
+Courses not satisfied:
+- Logic, Automata & Complexity (CS103)
+- Algorithmic Analysis (CS161)
+- Principles of Computer Systems (CS110 or CS111)
+- Significant Implementation Requirement
+- Breadth Requirement (Areas A, B, C, D)
+- Artificial Intelligence Depth Requirement (CS 221 and four from the list)
+- Electives and total units for the 45-unit requirement
+```

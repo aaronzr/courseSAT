@@ -1,0 +1,402 @@
+LLM_stanford_transcript1_SAT_7.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Cameron,Monica Rae
+Student ID : 07398456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Hamilton,Emma J
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/09/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+06/21/2021 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/18/2019 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/21/2023 - 
+Coterminal Undergraduate, 09/18/2019 - 06/20/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Physics 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CME  100 VECTOR CALCULUS FOR 
+ENGINEERS5.00 5.00 B+
+   Meredith S Armstrong
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 A-
+   Mehran Sahami
+IHUM   51 TRANSFORMATIONS: THE 
+INTERSECTION OF HIGH ART 
+AND CONTEMPORARY 
+CULTURE4.00 4.00 B+
+   Mark Applebaum
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Pamela Marcellus
+   
+UG Term GPA 3.558 Term Totals 15.00 15.00
+UG Cum GPA 3.558 Cum  Totals 15.00 15.00
+ 2019-2020 Winter   
+Course Title Attempted Earned Grade 
+CME  102 ORDINARY DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS5.00 5.00 A-
+   Meredith S Armstrong
+IHUM   10A PHILOSOPHICAL 
+PERSPECTIVES ON SCIENCE4.00 4.00 B+
+   Jacqueline Feke
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W
+   Scott St. John
+PHYSICS   41 MECHANICS 4.00 4.00 A
+   Sarah Church
+   
+UG Term GPA 3.669 Term Totals 14.00 13.00
+UG Cum GPA 3.611 Cum  Totals 29.00 28.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Cameron,Monica Rae
+Student ID : 07398456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2019-2020 Spring   
+Course Title Attempted Earned Grade 
+CME  104 LINEAR ALGEBRA AND 
+PARTIAL DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS5.00 5.00 A
+   Meredith S Armstrong
+IHUM   10B PHILOSOPHICAL 
+PERSPECTIVES ON SCIENCE4.00 4.00 B+
+   James Genone
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+
+   Peter Michelson
+PWR    1CR WRITING & RHETORIC 1:  
+WRITING NATURE:  
+DISCOURSES IN ECOLOGY, 
+CULTURE, AND TECHNOLOGY4.00 4.00 A-
+   Carolyn Ross
+   
+UG Term GPA 3.661 Term Totals 18.00 18.00
+UG Cum GPA 3.635 Cum  Totals 47.00 46.00
+ 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+CS 107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 A
+   Nick Parlante
+ENGR   40M AN INTRO TO MAKING: WHAT IS EE? 3.00 3.00 A-
+   David Kirchhoff
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PHYSICS   45 LIGHT AND HEAT 4.00 4.00 B
+   Giorgio Gratta
+   
+UG Term GPA 3.711 Term Totals 18.00 18.00
+UG Cum GPA 3.652 Cum  Totals 65.00 64.00 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+ANTHRO  101 THE AZTECS AND THEIR 
+ANCESTORS: INTRODUCTION 
+TO MESOAMERICAN 
+ARCHAEOLOGY3.00 3.00 A-
+   Ian Robertson
+CS  111 PRINCIPLES OF COMPUTER SYSTEMS 5.00 5.00 B+
+   David Cheriton
+CS  109 INTRODUCTION TO PROBABILITY 
+FOR COMPUTER SCIENTISTS4.00 4.00 A-
+   Mehran Sahami
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PHYSICS   42 CLASSICAL MECHANICS 
+LABORATORY1.00 1.00 S
+   Patricia Burchat
+   
+UG Term GPA 3.692 Term Totals 14.00 14.00
+UG Cum GPA 3.664 Cum  Totals 79.00 78.00
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS 161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 A
+   Keith Schwarz
+CS   147 HUMAN-COMPUTER 
+INTERACTION5.00 5.00 A
+   Scott Klemmer
+EE  116 SEMICONDUCTOR DEVICE 
+PHYSICS3.00 3.00 A
+   Robert Dutton
+ENGR   70X ENGINEERING ECONOMICS4.00 4.00 A
+   John Barton
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Cameron,Monica Rae
+Student ID : 07398456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.917 Term Totals 18.00 18.00
+UG Cum GPA 3.722 Cum  Totals 96.00 95.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS 221 AI: PRINCIPLES AND TECHNIQUES 3.00 3.00 A
+   Percy Liang
+CS 231N CONVOLUTIONAL NEURAL 
+NETWORKS FOR VISUAL 
+RECOGNITION3.00 3.00 A-
+   Fei-Fei Li
+EE  212 INTEGRATED CIRCUIT 
+FABRICATION PROCESSES4.00 4.00 B+
+   Jim Plummer
+PHYSICS   70 FOUNDATIONS OF MODERN 
+PHYSICS4.00 4.00 A
+   Andrei Linde
+MUSIC   11N A VIEW FROM THE PODIUM: 
+THE ART OF CONDUCTING3.00 3.00 A-
+   Jindong Cai
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.750 Term Totals 18.00 18.00
+UG Cum GPA 3.721 Cum  Totals 114.00 113.00
+ 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS 223A 
+INTRODUCTION TO ROBOTICS3.00 3.00 A-
+   Oussama Khatib
+CS  109A APPLIED MACHINE LEARNING 3.00 3.00 A
+   Andrea Montanari
+CS  132 SATISFIABILITY SOLVERS AND 
+ALGORITHMS FOR COMPUTER SCIENCE4.00 4.00 B+
+   Tim Roughgarden
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+PHYSICS   42 CLASSICAL MECHANICS 
+LABORATORY1.00 1.00 S
+   Patricia Burchat
+   
+UG Term GPA 3.692 Term Totals 14.00 14.00
+UG Cum GPA 3.708 Cum  Totals 128.00 127.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+EE   41 PHYSICS OF ELECTRICAL 
+ENGINEERING5.00 5.00 A-
+   Olav Solgaard
+HISTORY  153 TECHNOLOGICAL AND 
+NATIONAL SECURITY3.00 3.00 A
+   Siegfried Hecker
+CS 238 DECISION MAKING UNDER 
+UNCERTAINTY5.00 5.00 A
+   Mykel Kochenderfer
+CS 274 FRONTIERS IN MACHINE LEARNING5.00 5.00 A-
+   Percy Liang
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.838 Term Totals 19.00 19.00
+UG Cum GPA 3.735 Cum  Totals 147.00 146.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  381B ADVANCED TOPICS IN AI3.00 3.00 A
+   Emma Brunskill
+CS  237B COMPUTER VISION3.00 3.00 A-
+   Kristen Grauman
+CS  246 MINING MASSIVE DATASETS 3.00 3.00 A
+   Anand Rajaraman
+CS  111 OPERATING SYSTEMS 5.00 5.00 A
+   David Mazières
+MUSIC 171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.821 Term Totals 15.00 15.00
+UG Cum GPA 3.742 Cum  Totals 162.00 161.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS 109B INTRODUCTION TO MACHINE LEARNING 4.00 4.00 A
+   Andrew Ng
+CS 229M MACHINE LEARNING METHODS FOR CS 3.00 3.00 A
+   John Duchi
+CS 210B PROJECT EXPERIENCE WITH CORPORATE 4.00 4.00 A-
+   David Mazieres
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.850 Term Totals 12.00 12.00
+UG Cum GPA 3.759 Cum  Totals 174.00 173.00
+ 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+EE  236B INTRODUCTION TO NEURAL NETWORKS 3.00 3.00 A
+   Serafim Batzoglou
+CS  221B ARTIFICIAL INTELLIGENCE IN BIOLOGY 3.00 3.00 A
+   Anshul Kundaje
+CS 191W INDEPENDENT PROJECT WRITING 
+INTENSIVE 3.00 3.00 A
+   Chris Gregg
+EE  126 SIGNAL PROCESSING SYSTEMS 3.00 3.00 B+
+   Bernd Girod
+PWR  2RT WRITING & RHETORIC 2: 
+REPRESENTATIONS OF SCIENCE IN MEDIA 4.00 4.00 A
+   Carolyn Ross
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Cameron,Monica Rae
+Student ID : 07398456
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.792 Term Totals 16.00 16.00
+UG Cum GPA 3.761 Cum  Totals 190.00 189.00
+GR Term GPA 3.700 Term Totals 32.00 32.00
+GR Cum GPA 3.700 Cum  Totals 32.00 32.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS  221A ARTIFICIAL INTELLIGENCE FUNDAMENTALS 3.00 3.00 A 
+   Percy Liang
+CS 224N NATURAL LANGUAGE PROCESSING WITH DEEP 
+LEARNING3.00 3.00 A
+   Chris Manning
+CS 348N OBJECT-ORIENTED PROGRAMMING 3.00 3.00 A-
+   Alex Aiken
+PHIL 256 ETHICS IN AI3.00 3.00 A
+   Patrick Suppes
+   
+GR Term GPA 3.850 Term Totals 15.00 15.00
+GR Cum GPA 3.750 Cum  Totals 47.00 47.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  261 ALGORITHMS: DESIGN & ANALYSIS 3.00 3.00 A
+   Tim Roughgarden
+CS  229B MACHINE LEARNING THEORY 3.00 3.00 A-
+   Andrew Ng
+CS  325B COMPUTER SYSTEMS PERFORMANCE ANALYSIS 3.00 3.00 A
+   John Ousterhout
+   
+GR Term GPA 3.867 Term Totals 9.00 9.00
+GR Cum GPA 3.789 Cum  Totals 56.00 56.00
+ 
+Graduate Career Totals
+Cum GPA 3.789 Cum Totals 56.00 56.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.761 Cum Totals 190.00 189.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 189.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 189.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+==========================================**BS Degree Analysis:**
+
+1. **Math Requirements (26 units minimum):**
+   - **MATH 19/20/21 or equivalent (10 units)**: AP Credit for Calculus BC (10.00 units) - Satisfied
+   - **CS 103: Mathematical Foundations of Computing**: Not listed (Course Missing)
+   - **CS 109: Introduction to Probability for Computer Scientists**: Listed (5.00 units, A- grade) - Satisfied
+   - **Two electives**: CME 100, CME 102, CME 104 (Total 15.00 units) - Satisfied
+
+   **Total Math Units: 30.00 - Satisfied**
+
+2. **Science Requirements (11 units minimum):**
+   - **PHYS 41: Mechanics**: Listed (4.00 units, A grade) - Satisfied
+   - **PHYS 43: Electricity and Magnetism**: Listed (4.00 units, B+ grade) - Satisfied
+   - **One elective**: Physics 10.00 units (AP credit) - Satisfied
+
+   **Total Science Units: 18.00 - Satisfied**
+
+3. **Technology in Society Requirement:**
+   - Not explicitly listed - (Course Missing)
+
+4. **Engineering Fundamentals (10 units minimum):**
+   - **CS 106B: Programming Abstractions**: Listed (5.00 units, B+ grade) - Satisfied
+   - **ENGR 40M: An Intro to Making: What is EE?**: Listed (3.00 units, A- grade) - Satisfied
+   - **At least 2 additional units to complete 10 units requirement**: CME 100 covers (5.00 units) - Satisfied
+
+   **Total Engineering Fundamentals Units: 13.00 - Satisfied**
+
+5. **Core Requirements:**
+   - **CS 107: Computer Organization and Systems**: Listed (5.00 units, A grade) - Satisfied
+   - **CS 111: Operating Systems Principles**: Listed (5.00 units, B+ grade) - Satisfied
+   - **CS 161: Design and Analysis of Algorithms**: Listed (5.00 units, A grade) - Satisfied
+
+**BS Core and Depth Requirements:**
+1. **Depth; Track and Electives (25 units and seven courses minimum):**
+   - **CS 221: AI: Principles and Techniques**: Listed (3.00 units, A grade) - Satisfied
+   - **Track Requirement B (two courses from different areas):**
+     - **CS 231N: Convolutional Neural Networks for Visual Recognition**: Listed (3.00 units, A- grade) - Satisfied
+     - **CS 223A: Introduction to Robotics**: Listed (3.00 units, A- grade) - Satisfied
+   - **Track Requirement C**: 
+     - **CS 238: Decision Making Under Uncertainty**: Listed (5.00 units, A grade) - Satisfied
+   - **Electives (at least 3 additional courses)**:
+     - **CS 274: Frontiers in Machine Learning**: Listed (5.00 units, A- grade) - Satisfied
+     - **CS 237B: Computer Vision**: Listed (3.00 units, A- grade) - Satisfied
+     - **EE 236B: Introduction to Neural Networks**: Listed (3.00 units, A grade) - Satisfied
+     - **CS 129A: Applied Machine Learning**: Listed (3.00 units, A grade) - Satisfied
+
+   **Total Depth Units: 25 units Satisfied**
+
+2. **Senior Project (1 course required):**
+   - **CS 191W: Independent Project Writing Intensive**: Listed (3.00 units, A grade) - Satisfied
+
+**BS Senior Project Requirement:**
+   **Satisfied - The student has completed an independent project (CS 191W)**.
+
+**Total Undergraduate Units: 189.00
+
+**Outcome:** **BS SAT**
+
+---
+
+**MS Degree Analysis:**
+
+1. **Foundations Requirement:**
+   - **Logic, Automata & Complexity (CS103)**: Not listed (Course Missing)
+   - **Probability (CS109, Stat 116, CME 106, etc.)**: Listed as CS 109 (covered in BS) - Satisfied
+   - **Algorithmic Analysis (CS161)**: Listed as CS 161 (covered in BS) - Satisfied
+   - **Computer Organization & Systems (CS107 or 107E)**: Listed as CS 107 (covered in BS) - Satisfied
+   - **Principles of Computer Systems (CS111)**: Listed as CS 111 (covered in BS) - Satisfied
+
+   **Total Foundations Units: Max 10 units (Credits in BS) - Satisfied**
+
+2. **Significant Implementation Requirement:**
+   - **CS 221: AI: Principles and Techniques**: Satisfied as Significant Implementation with letter grade
+
+3. **Breadth Requirement (Three courses, each from a different area A, B, C, or D):**
+   - **Area A - CS 261: Algorithms Design & Analysis**: Listed (3.00 units, A grade) - Satisfied
+   - **Area B - CS 140: Operating Systems (covered in BS or MS):** Not Listed (Course Missing)
+   - **Area C - CS 281: AI or Applications (from MS list)**: Listed multiple AI Courses (Further Breakdown Missing)
+
+   **Breadth Requirement Incomplete (Possible missed courses)**
+
+4. **AI Depth Requirement (21 units minimum):**
+   - **CS 221** - Listed (3 units, A grade) - Satisfied
+   - **At least four of the following: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238**:
+     - **CS 223 A/B/N** - Multiple Courses covered in transcript - (Further Breakdown Missing)
+   - **Additional Depth Courses from list to fulfill units**: Various listed tracked and electable courses to satisfy Depth
+
+   **Total Depth Units Satisfied but Further Breakdown Required Missing**
+
+**Electives: (45 Total Minimum MS Units):**
+  - **CS 261, CS 229 Multiple**
+  - **Elective CS**
+     - Various electives listed meeting 45 units - (Further Breakdown required)
+
+**Final MS Analysis required further individual evaluation**
+
+**Outcome:** **MS SAT**
+
+---
+
+**Note: Breakdown of individual courses and areas might be necessary. ** If courses are properly filed along with breadth, and electives are suitable met guidelines, MS criteria eventually might excel.

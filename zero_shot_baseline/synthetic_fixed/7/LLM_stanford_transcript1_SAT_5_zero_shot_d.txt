@@ -1,0 +1,356 @@
+LLM_stanford_transcript1_SAT_5.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+
+Name: Johnson, Emily Grace
+Student ID: 04987654
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/10/2023
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Roberts, Sarah 
+
+--------- Stanford Degrees Awarded ---------
+
+Degree: Bachelor of Science
+Confer Date: 06/15/2023
+Plan: Computer Science
+
+--------- Academic Program ---------
+Program: Computer Science
+06/15/2022: Computer Science (MS)
+Active in Program 
+Program: Undergraduate Matriculated
+09/21/2019: Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/16/2022 
+Coterminal Undergraduate, 09/21/2019 - 06/15/2022
+
+--------- Advanced Placement Test Credit ---------
+Applied Toward Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Spanish 10.00
+Advanced Placement      Mathematics: Calculus AB 5.00
+Total Quarter Units Posted: 15.00
+Allowable Test Credit subject to restrictions.
+
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS 106A PROGRAMMING METHODOLOGY 5.00 5.00 B+
+   John Mitchell
+MATH 19 CALCULUS 5.00 5.00 A
+   Ravi Vakil
+IHUM 101A INTRODUCTION TO THE HUMANITIES 4.00 4.00 A-
+   Alice Sturgis
+MUSIC 123 STUDIES IN MUSIC THEORY 1.00 1.00 CR
+   Mark Applebaum
+
+UG Term GPA 3.640 Term Totals 15.00 15.00
+UG Cum GPA 3.640 Cum Totals 15.00 15.00
+
+2019-2020 Winter   
+Course Title Attempted Earned Grade 
+CS 106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B
+   Mehran Sahami
+MATH 20 CALCULUS 5.00 5.00 A-
+   Rafe Mazzeo
+PHYSICS 41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.560 Term Totals 15.00 15.00
+UG Cum GPA 3.600 Cum Totals 30.00 30.00
+
+2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 21 CALCULUS 5.00 5.00 A-
+   Daniel Budhiraja
+CS 103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B+
+   Saharon Shelah
+PHILOS 20 HISTORICAL PHILOSOPHICAL TEXTS 4.00 4.00 B+
+   Alex Oliver
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+
+UG Term GPA 3.526 Term Totals 15.00 15.00
+UG Cum GPA 3.609 Cum Totals 45.00 45.00
+
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS 107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 B
+   Jerry Cain
+MATH 51 LINEAR ALGEBRA 5.00 5.00 A
+   Vassil Kostov
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 A-
+   Sarah Church
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.708 Term Totals 15.00 15.00
+UG Cum GPA 3.646 Cum Totals 60.00 60.00
+
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS 109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 B+
+   Mehran Sahami
+ENGR 40M AN INTRO TO MAKING: WHAT IS EE? 5.00 5.00 A-
+   Mark Horowitz
+CS 111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 B+
+   Jinyang Li
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.567 Term Totals 16.00 16.00
+UG Cum GPA 3.618 Cum Totals 76.00 76.00
+
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS 161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+
+   Tim Roughgarden
+ENGR 108 INTRODUCTION TO ELECTROMAGNETICS 5.00 5.00 A
+   Robert Dutton
+CS 221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 B
+   Andrew Ng
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.567 Term Totals 14.00 14.00
+UG Cum GPA 3.608 Cum Totals 90.00 90.00
+
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS 224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A
+   Christopher Manning
+CS 231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 4.00 4.00 A-
+   Silvio Savarese
+PHYSICS 45 LIGHT AND HEAT 4.00 4.00 B+
+   Giorgio Gratta
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 12.00 12.00
+UG Cum GPA 3.632 Cum Totals 102.00 102.00
+
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS 224W ANALYSIS OF NETWORKS 3.00 3.00 A
+   Jure Leskovec
+CS 231N CONVOLUTIONAL NEURAL NETWORKS FOR VISUAL RECOGNITION 3.00 3.00 B+
+   Fei-Fei Li
+STAT 202 DATA MINING AND ANALYSIS 3.00 3.00 A-
+   Trevor Hastie
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.806 Term Totals 10.00 10.00
+UG Cum GPA 3.643 Cum Totals 112.00 112.00
+
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS 194 SOFTWARE PROJECT EXPERIENCE 5.00 5.00 A
+   Chris Gregg
+CS 234 REINFORCEMENT LEARNING 4.00 4.00 A
+   Emma Brunskill
+CS 238 DECISION MAKING UNDER UNCERTAINTY 3.00 3.00 A-
+   Mykel Kochenderfer
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.900 Term Totals 13.00 13.00
+UG Cum GPA 3.678 Cum Totals 125.00 125.00
+
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS 210B PROJECT EXPERIENCE WITH CORPORATE PARTNERS 4.00 4.00 A
+   Mehran Sahami
+CS 237A PRINCIPLES OF ROBOTICS 3.00 3.00 A-
+   Oussama Khatib
+MS&E 226 ORGANIZATIONAL LEARNING 3.00 3.00 A
+   Robert Sutton
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 11.00 11.00
+UG Cum GPA 3.703 Cum Totals 136.00 136.00
+
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 229 MACHINE LEARNING 3.00 3.00 A
+   Andrew Ng
+CS 248 INTERACTIVE COMPUTER GRAPHICS 3.00 3.00 B+
+   Pat Hanrahan
+ENGR 248 ENGINEERING ENTREPRENEURSHIP 3.00 3.00 A
+   Tom Byers
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.768 Term Totals 10.00 10.00
+UG Cum GPA 3.702 Cum Totals 146.00 146.00
+
+GR Term GPA 0.000 Term Totals 0.00 0.00
+GR Cum GPA 0.000 Cum Totals 13.00 13.00
+
+Graduate Career Totals
+Cum GPA 3.730 Cum Totals 13.00 13.00
+
+Undergraduate Career Totals
+Cum GPA 3.702 Cum Totals 146.00 146.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 182.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 146.00
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel * 
+********************************************************************************************* 
+END OF TRANSCRIPT.
+==================================================================GPT Answer to Prompt One Regarding BS Requirements====================
+Based on the provided information, I will evaluate whether Emily Grace Johnson's transcript satisfies the Bachelor of Science (BS) in Computer Science requirements as specified. The BS requirements include completing core courses, senior projects, electives, math, science, engineering fundamentals, and a Technology in Society course. Let's go through each requirement step by step:
+
+### Core Requirements
+1. **CS 106B: Programming Abstractions** - Completed with a grade of B.
+2. **CS 107: Computer Organization and Systems** - Completed with a grade of B.
+3. **CS 111: Operating Systems Principles** - Completed with a grade of B+.
+4. **CS 103: Mathematical Foundations of Computing** - Completed with a grade of B+.
+5. **CS 109: Introduction to Probability for Computer Scientists** - Completed with a grade of B+.
+6. **CS 161: Design and Analysis of Algorithms** - Completed with a grade of B+.
+
+### Senior Project Requirement
+Emily has completed two senior projects:
+1. **CS 194: Software Project Experience** - Completed with a grade of A.
+2. **CS 210B: Project Experience with Corporate Partners** - Completed with a grade of A.
+
+### Mathematics Requirement
+1. **MATH 19: Calculus** - Completed with a grade of A.
+2. **MATH 20: Calculus** - Completed with a grade of A-.
+3. **MATH 21: Calculus** - Completed with a grade of A-.
+4. **MATH 51: Linear Algebra** - Completed with a grade of A.
+5. **CS 103: Mathematical Foundations of Computing** - Already listed above as part of the core requirements.
+6. **CS 109: Introduction to Probability for Computer Scientists** - Already listed above as part of the core requirements.
+
+Additional math electives:
+- **ENGR 108: Introduction to Electromagnetics** - Completed with a grade of A.
+
+### Science Requirement
+1. **PHYS 41: Mechanics** - Completed with a grade of A.
+2. **PHYS 43: Electricity and Magnetism** - Completed with a grade of A-.
+3. Additional electives: **PHYS 45: Light and Heat** - Completed with a grade of B+.
+
+### Engineering Fundamentals
+1. **CS 106B: Programming Abstractions** - Already listed above as part of the core requirements.
+2. **ENGR 40M: An Intro to Making: What is EE?** - Completed with a grade of A-.
+
+### Technology in Society Requirement
+- Not explicitly listed in the transcript, so this needs to be checked.
+
+### Core, Depth, and Electives (AI Track)
+1. **CS 107: Computer Organization and Systems** - Completed with a grade of B.
+2. **CS 111: Operating Systems Principles** - Completed with a grade of B+.
+3. **CS 161: Design and Analysis of Algorithms** - Completed with a grade of B+.
+4. **CS 221: Artificial Intelligence: Principles and Techniques** - Completed with a grade of B.
+5. Track Requirement B (two courses from different areas):
+   - **CS 224N: Natural Language Processing with Deep Learning** - Completed with a grade of A.
+   - **CS 231A: Computer Vision: From 3D Reconstruction to Recognition** - Completed with a grade of A-.
+6. Track Requirement C:
+   - **CS 224W: Analysis of Networks** - Completed with a grade of A.
+7. Additional Electives:
+   - **CS 231N: Convolutional Neural Networks for Visual Recognition** - Completed with a grade of B+.
+   - **STAT 202: Data Mining and Analysis** - Completed with a grade of A-.
+   - **CS 234: Reinforcement Learning** - Completed with a grade of A.
+   - **CS 238: Decision Making Under Uncertainty** - Completed with a grade of A-.
+
+### Summary and Conclusion
+- Emily has successfully completed the **core courses** required.
+- She has satisfied the **senior project requirement** by completing CS 194 and CS 210B.
+- The **mathematics and science units** requirements are met.
+- The **engineering fundamentals** requirements are met.
+- **Technology in Society (TiS)** requirement is not explicitly stated in the transcript.
+
+Since the TiS requirement is not explicitly satisfied, I need to list it:
+
+`"Technology in Society (TiS) course from the approved list"`
+
+Otherwise, everything else seems in order.
+
+### Output
+```
+Technology in Society (TiS) course from the approved list
+```========================GPT Answer to Prompt Two Regarding MS Requirements====================
+To determine if Emily Grace Johnson satisfies the MSCS Artificial Intelligence Specialization requirements based on her transcript, we need to systematically evaluate each section of the requirements:
+
+### 1. Foundations Requirement
+- **CS 103 (Logic, Automata & Complexity):** Completed, B+
+- **CS 109 (Probability):** Completed, B+
+- **CS 161 (Algorithmic Analysis):** Completed, B+
+- **CS 107 (Computer Organization & Systems):** Completed, B
+- **CS 110 or CS 111 (Principles of Computer Systems):** Completed CS 111, B+
+
+Emily has satisfied all the required foundation courses.
+
+### 2. Significant Implementation Requirement
+A course from the list needs to be marked as satisfying this requirement:
+- **CS 210B (Project Experience with Corporate Partners):** Grade A, this course can be used to satisfy the Significant Implementation Requirement.
+
+### 3. Breadth Requirement
+Emily needs three courses from different Breadth areas (A, B, C, D):
+- **Area A:** No course listed
+- **Area B:** CS 210B, A (Computer Systems)
+- **Area C:** CS 224N, A (Applications)
+- **Area D:** ENGR 248, A (Computing and Society)
+
+Emily has completed Breadth areas B, C, and D. However, she did not complete a course from Area A (Mathematical and Theoretical Foundations).
+
+### 4. AI Depth Requirement
+- **CS 221:** Completed, B
+- Four additional AI courses:
+  - **CS 224N:** Completed, A
+  - **CS 224W:** Completed, A
+  - **CS 231A:** Completed, A-
+  - **CS 231N:** Completed, B+
+  - **CS 234:** Completed, A
+
+  At least 21 units from the combined list:
+  - CS 221 (3 units)
+  - CS 224N (3 units)
+  - CS 224W (3 units)
+  - CS 231A (4 units)
+  - CS 231N (3 units)
+  - CS 234 (4 units)
+  - STAT 202 (3 units)
+Total AI Depth units: 23 units
+
+### 5. Electives
+Electives are needed to reach the 45-unit requirement for the MSCS degree:
+- **CS 238:** 3 units, A-
+- **CS 229:** 3 units, A
+- **CS 248:** 3 units, B+
+
+Emily has completed additional units beyond the 21 units from the AI Depth requirement, and she has elective units.
+
+### 6. Additional Requirements
+- All courses numbered 100 or greater: Yes
+- Max 10 units from Foundations: Yes, verified
+- At most 3 units of 1-2 unit seminars: No seminars counted for MS units
+- At least 36 units for letter grades: Yes
+- Average grade at least B (3.0 GPA): Yes, GPA is 3.73
+- Units previously applied towards BS not counted towards MS: Verified (no overlap)
+- At least 45 graduate units at Stanford: Needs calculation from coursework
+
+Using the listed and verified courses, we perform the final check:
+1. Foundations: 10 units
+2. Significant Implementation (also counting towards another requirement)
+3. Breadth: Covered by CS 210B (B), CS 224N (A), and ENGR 248 (A)
+4. Depth: Covered with AI courses and additional units (23 units total)
+5. Electives: Completed with CS 238, CS 229, and CS 248.
+
+### Conclusion
+Emily has satisfied all requirements except the Breadth Area A. Thus, she does not yet satisfy all the degree requirements.
+
+Final Output:
+```
+Courses not satisfied:
+- Breadth Area A (Mathematical and Theoretical Foundations)
+```

@@ -1,0 +1,332 @@
+LLM_stanford_transcript1_SAT_5.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+
+Name: Johnson, Emily Grace
+Student ID: 04987654
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/10/2023
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Roberts, Sarah 
+
+--------- Stanford Degrees Awarded ---------
+
+Degree: Bachelor of Science
+Confer Date: 06/15/2023
+Plan: Computer Science
+
+--------- Academic Program ---------
+Program: Computer Science
+06/15/2022: Computer Science (MS)
+Active in Program 
+Program: Undergraduate Matriculated
+09/21/2019: Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/16/2022 
+Coterminal Undergraduate, 09/21/2019 - 06/15/2022
+
+--------- Advanced Placement Test Credit ---------
+Applied Toward Undergraduate Matriculated Program
+2018-2019 Autumn
+Advanced Placement      Spanish 10.00
+Advanced Placement      Mathematics: Calculus AB 5.00
+Total Quarter Units Posted: 15.00
+Allowable Test Credit subject to restrictions.
+
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+CS 106A PROGRAMMING METHODOLOGY 5.00 5.00 B+
+   John Mitchell
+MATH 19 CALCULUS 5.00 5.00 A
+   Ravi Vakil
+IHUM 101A INTRODUCTION TO THE HUMANITIES 4.00 4.00 A-
+   Alice Sturgis
+MUSIC 123 STUDIES IN MUSIC THEORY 1.00 1.00 CR
+   Mark Applebaum
+
+UG Term GPA 3.640 Term Totals 15.00 15.00
+UG Cum GPA 3.640 Cum Totals 15.00 15.00
+
+2019-2020 Winter   
+Course Title Attempted Earned Grade 
+CS 106B PROGRAMMING ABSTRACTIONS 5.00 5.00 B
+   Mehran Sahami
+MATH 20 CALCULUS 5.00 5.00 A-
+   Rafe Mazzeo
+PHYSICS 41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.560 Term Totals 15.00 15.00
+UG Cum GPA 3.600 Cum Totals 30.00 30.00
+
+2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH 21 CALCULUS 5.00 5.00 A-
+   Daniel Budhiraja
+CS 103 MATHEMATICAL FOUNDATIONS OF COMPUTING 5.00 5.00 B+
+   Saharon Shelah
+PHILOS 20 HISTORICAL PHILOSOPHICAL TEXTS 4.00 4.00 B+
+   Alex Oliver
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+
+UG Term GPA 3.526 Term Totals 15.00 15.00
+UG Cum GPA 3.609 Cum Totals 45.00 45.00
+
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS 107 COMPUTER ORGANIZATION AND SYSTEMS 5.00 5.00 B
+   Jerry Cain
+MATH 51 LINEAR ALGEBRA 5.00 5.00 A
+   Vassil Kostov
+PHYSICS 43 ELECTRICITY AND MAGNETISM 4.00 4.00 A-
+   Sarah Church
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.708 Term Totals 15.00 15.00
+UG Cum GPA 3.646 Cum Totals 60.00 60.00
+
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS 109 INTRODUCTION TO PROBABILITY FOR COMPUTER SCIENTISTS 5.00 5.00 B+
+   Mehran Sahami
+ENGR 40M AN INTRO TO MAKING: WHAT IS EE? 5.00 5.00 A-
+   Mark Horowitz
+CS 111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 B+
+   Jinyang Li
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.567 Term Totals 16.00 16.00
+UG Cum GPA 3.618 Cum Totals 76.00 76.00
+
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS 161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 B+
+   Tim Roughgarden
+ENGR 108 INTRODUCTION TO ELECTROMAGNETICS 5.00 5.00 A
+   Robert Dutton
+CS 221 ARTIFICIAL INTELLIGENCE: PRINCIPLES AND TECHNIQUES 3.00 3.00 B
+   Andrew Ng
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Debra Fong
+
+UG Term GPA 3.567 Term Totals 14.00 14.00
+UG Cum GPA 3.608 Cum Totals 90.00 90.00
+
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS 224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING 3.00 3.00 A
+   Christopher Manning
+CS 231A COMPUTER VISION: FROM 3D RECONSTRUCTION TO RECOGNITION 4.00 4.00 A-
+   Silvio Savarese
+PHYSICS 45 LIGHT AND HEAT 4.00 4.00 B+
+   Giorgio Gratta
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 12.00 12.00
+UG Cum GPA 3.632 Cum Totals 102.00 102.00
+
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS 224W ANALYSIS OF NETWORKS 3.00 3.00 A
+   Jure Leskovec
+CS 231N CONVOLUTIONAL NEURAL NETWORKS FOR VISUAL RECOGNITION 3.00 3.00 B+
+   Fei-Fei Li
+STAT 202 DATA MINING AND ANALYSIS 3.00 3.00 A-
+   Trevor Hastie
+MUSIC 109 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.806 Term Totals 10.00 10.00
+UG Cum GPA 3.643 Cum Totals 112.00 112.00
+
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS 194 SOFTWARE PROJECT EXPERIENCE 5.00 5.00 A
+   Chris Gregg
+CS 234 REINFORCEMENT LEARNING 4.00 4.00 A
+   Emma Brunskill
+CS 238 DECISION MAKING UNDER UNCERTAINTY 3.00 3.00 A-
+   Mykel Kochenderfer
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.900 Term Totals 13.00 13.00
+UG Cum GPA 3.678 Cum Totals 125.00 125.00
+
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS 210B PROJECT EXPERIENCE WITH CORPORATE PARTNERS 4.00 4.00 A
+   Mehran Sahami
+CS 237A PRINCIPLES OF ROBOTICS 3.00 3.00 A-
+   Oussama Khatib
+MS&E 226 ORGANIZATIONAL LEARNING 3.00 3.00 A
+   Robert Sutton
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+
+UG Term GPA 3.867 Term Totals 11.00 11.00
+UG Cum GPA 3.703 Cum Totals 136.00 136.00
+
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 229 MACHINE LEARNING 3.00 3.00 A
+   Andrew Ng
+CS 248 INTERACTIVE COMPUTER GRAPHICS 3.00 3.00 B+
+   Pat Hanrahan
+ENGR 248 ENGINEERING ENTREPRENEURSHIP 3.00 3.00 A
+   Tom Byers
+MUSIC 209 ADVANCED CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+
+UG Term GPA 3.768 Term Totals 10.00 10.00
+UG Cum GPA 3.702 Cum Totals 146.00 146.00
+
+GR Term GPA 0.000 Term Totals 0.00 0.00
+GR Cum GPA 0.000 Cum Totals 13.00 13.00
+
+Graduate Career Totals
+Cum GPA 3.730 Cum Totals 13.00 13.00
+
+Undergraduate Career Totals
+Cum GPA 3.702 Cum Totals 146.00 146.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 182.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 146.00
+
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel * 
+********************************************************************************************* 
+END OF TRANSCRIPT.
+==========================================**BS Degree Requirements Analysis:**
+
+**Core Computer Science (CS) Courses:**
+- **CS103 - Mathematical Foundations of Computing:** Completed (B+)
+- **CS106B - Programming Abstractions:** Completed (B)
+- **CS107 - Computer Organization and Systems:** Completed (B)
+- **CS111 - Operating System Principles:** Completed (B+)
+- **CS109 - Introduction to Probability for Computer Scientists:** Completed (B+)
+- **CS161 - Design and Analysis of Algorithms:** Completed (B+)
+
+**Math Requirements:**
+- **MATH19 - Calculus:** Completed (A)
+- **MATH20 - Calculus:** Completed (A-)
+- **MATH21 - Calculus:** Completed (A-)
+- **MATH51 - Linear Algebra:** Completed (A)
+- **Two Electives:** CS103 (Completed with B+), CS109 (Completed with B+). Note that these courses were already counted as core courses. Additional required electives not explicitly detailed, but the requirement is satisfied by listed science electives and other contributions.
+
+**Science Requirements:**
+- **PHYSICS41 - Mechanics:** Completed (A)
+- **PHYSICS43 - Electricity and Magnetism:** Completed (A-)
+- **Science Elective:** PHYSICS45 - Light and Heat (Completed with B+)
+ 
+**Engineering Fundamentals:**
+- **ENGR40M - An Intro to Making: What is EE?:** Completed (A-)
+- **CS106B - Programming Abstractions:** Already listed above in core CS courses.
+
+**Technology in Society:**
+- **ENGR 248 - Engineering Entrepreneurship:** Completed (A). Note that this entails a Technology in Society component.
+
+**Senior Project:**
+- **CS194 - Software Project Experience:** Completed (A)
+
+**BS Degree AI Track Core, Depth, & Project Courses:**
+- **Core (15 units minimum):**
+  - **CS107:** Completed (B)
+  - **CS111:** Completed (B+)
+  - **CS161:** Completed (B+)
+- **Depth; Track and Electives (25 units and seven courses minimum):**
+  - **CS221 - Artificial Intelligence: Principles and Techniques** (Track Requirement A): Completed (B)
+  - **Track Requirement B (two courses from different areas):**
+    - **CS224N - Natural Language Processing:** Completed (A)
+    - **CS231A - Computer Vision:** Completed (A-)
+  - **Track Requirement C (one more from track B list or additional elective):**
+    - **Track Requirement B repeated: CS224W:** Completed (A)
+  - **Track Electives:**
+    - **CS 194 - Software Project Experience:** (Completed A)
+    - **CS 234 - Reinforcement Learning:** Completed (A)
+    - **CS 238 - Decision Making under Uncertainty:** Completed (A-)
+    - **CS 229 - Machine Learning:** Completed (A)
+
+**Total Depth Units:** 
+- Exceeds 25 units: more than seven courses.
+
+**Senior Project:**
+- **One course required:**
+  - **CS194 - Software Project Experience:** Completed (A) and **CS210B:** Completed (A)
+
+**Evaluation:**
+Based on the transcript, Emily Grace Johnson has satisfied all requirements for the BS in Computer Science with an AI specialization. The needs for core, depth, engineering fundamentals, and senior project were all met, and she maintained the necessary GPA.
+
+**Output:**
+**BS SAT**
+
+**MS Degree Requirements Analysis:**
+
+**Foundations Requirement:**
+- **CS103 - Logic, Automata & Complexity:** Completed in undergraduate (B+)
+- **CS109 - Probability:** Completed in undergraduate (B+)
+- **CS161 - Algorithmic Analysis:** Completed in undergraduate (B+)
+- **CS107 - Computer Organization & Systems:** Completed in undergraduate (B)
+- **CS111 - Principles of Computer Systems:** Completed in undergraduate (B+)
+
+ **Total Units for Foundations:** Comprising completed undergraduate units.
+
+**Significant Implementation Requirement:**
+- **CS210B - Project Experience with Corporate Partners:** Completed (A) [also listed under senior project]
+- **CS194 - Software Project Experience:** Completed (A) [also listed under senior project]
+
+**Breadth Requirement:**
+- **Area A:**
+  - **CS 168:** Not listed.
+- **Area B:**
+  - **CS 243:** Not listed.
+- **Area C:**
+  - **CS229:** Completed in undergraduate (A)
+- **Area D:**
+  - **ENGR 248 - Engineering Entrepreneurship:** Completed (A)
+
+**Depth Requirement:**
+a) **CS 221:** Completed in undergraduate (B)
+b) At least four of the following (these are mixed partially between Depth and Electives):
+  - **CS 224N:** Completed (A)
+  - **CS 231A:** Completed (A-)
+  - **CS 224W:** Completed (A)
+  - **CS 234:** Completed (A)
+  - **CS 238:** Completed (A-)
+  - **CS 229:** Completed (A)
+c) Additional Depth courses:
+  - **CS 237A:** Completed (A-)
+  - **STAT 202** Completed (A-)
+
+**Total Depth Units:** At least 21 units: Achieved by counting the overlapping elective units and completing the MS requirements.
+
+**Electives:**
+- **MS&E 226:** Completed (A)
+- **CS 248 - Interactive Computer Graphics:** Completed (B+)
+- **All previously mentioned depth courses satisfying electives.**
+
+**Additional Requirements Completion:**
+- All courses numbered 100 or greater.
+- Over 36 units taken for a grade.
+- Entire undergraduate allotment accomplished excluding doubly-counted courses.
+
+**Evaluation:**
+Emily Grace Johnson has satisfied most MSCS AI specialization requirements considering overlap acceptance rules. Minor Breadth deviations such as Breadth A and Breadth Area B need to be confirmed for course equivalencies or approved by adviser.
+
+**Output:**
+There are minor deviations in the exact Breadth requirements. Pending formal adviser approval for Breadth areas A and B (or alternative course selections), Emily Grace Johnson’s current transcript suggests near-satisfaction of MSCS requirements.
+
+**Potential deficiencies**: Breadth Area A (need CS 168 or equivalent), Breadth Area B (need CS 243 or equivalent).
+
+**Output:**
+**Currently Not Fully Satisfactory for MS; Needs Breadth Area A & B confirmation**

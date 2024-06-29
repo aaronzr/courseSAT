@@ -1,0 +1,366 @@
+LLM_stanford_transcript1_UNSAT_5.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA
+Undergraduate Unofficial Transcript
+
+Name : Jordan,Alexandra Marie  
+Student ID : 04872934  
+
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 10/11/2023  
+
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+
+Academic Advisor: Thompson,Richard A  
+
+--------- Stanford Degrees Awarded ---------  
+
+Degree :Bachelor of Science  
+Confer Date :01/10/2023  
+Plan :Biology  
+
+--------- Academic Program ---------  
+
+Program :   Biological Sciences  
+01/05/2021 :Biological Sciences (MS)  
+Active in Program  
+Program :   Undergraduate Matriculated  
+09/21/2019 :Biological Sciences (BS)  
+Completed Program  
+
+Coterminal Graduate, 01/06/2023 -  
+Coterminal Undergraduate, 01/05/2021 - 01/05/2023  
+
+--------- Advanced Placement Test Credit ---------  
+Applied Toward  Undergraduate Matriculated Program  
+2018-2019 Autumn  
+Advanced Placement      Biology 10.00  
+Advanced Placement      Mathematics: Calculus AB 10.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.  
+
+--------- Beginning of Academic  Record ---------  
+2019-2020 Autumn  
+Course Title Attempted Earned Grade  
+CHEM   33  STRUCTURE AND  
+REACTIVITY 5.00 5.00 C+  
+   Richard Zare  
+CS  106A  PROGRAMMING   
+METHODOLOGY 5.00 5.00 B-  
+   Mehran Sahami  
+HISTORY   95  MODERN HISTORY 4.00 4.00 B+  
+   Allyson Hobbs  
+MUSIC  171  CHAMBER MUSIC 1.00 1.00 CR  
+   Debra Fong  
+
+UG Term GPA 2.930 Term Totals 15.00 15.00  
+UG Cum GPA 2.930 Cum  Totals 15.00 15.00  
+
+2019-2020 Winter  
+Course Title Attempted Earned Grade  
+BIOLOGY   42  THE BIOLOGY OF   
+ORGANISMS 4.00 4.00 B  
+   Susan McConnell  
+MATH  51  LINEAR ALGEBRA AND   
+DIFFERENTIAL  
+EQUATIONS 5.00 5.00 C+  
+   Trevor Hastie  
+CHEM  121  ORGANIC CHEMISTRY 5.00 5.00 B-  
+   Chris Chidsey  
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W  
+   Scott St. John  
+
+UG Term GPA 2.820 Term Totals 15.00 14.00  
+UG Cum GPA 2.875 Cum  Totals 30.00 29.00  
+
+2020-2021 Spring  
+Course Title Attempted Earned Grade  
+BIOLOGY   89  PLANT BIOLOGY 4.00 4.00 B-  
+   Peter K. Endress  
+MATH   53  PARTIAL DIFFERENTIAL   
+EQUATIONS 5.00 5.00 C+  
+   Persi Diaconis  
+CHEM   33  STRUCTURE AND  
+REACTIVITY (RETAKE) 5.00 5.00 B  
+   Richard Zare  
+PHYSICS  53  CLASSICAL PHYSICS 5.00 5.00 B-  
+   Patricia Burchat  
+PWR   2CR WRITING & RHETORIC 2:  
+SCIENTIFIC  
+WRITING 4.00 4.00 A-  
+   Carolyn Ross  
+
+UG Term GPA 2.940 Term Totals 23.00 23.00  
+UG Cum GPA 2.912 Cum  Totals 53.00 52.00  
+
+2020-2021 Autumn  
+Course Title Attempted Earned Grade  
+CS  106B  PROGRAMMING  
+ABSTRACTIONS 5.00 5.00 C+  
+   Eric Roberts  
+BIOLOGY   102   EVOLUTIONARY BIOLOGY 4.00 4.00 B-  
+   Marcus Feldman  
+CHEM   100  CHEMISTRY LABORATORY 1.00 1.00 S  
+   Dorian Farber  
+PHYSICS  61  CLASSICAL MECHANICS 3.00 3.00 B  
+    Daniel  Edelstein  
+BIOLOGY  107  GENETICS 3.00 3.00 B+  
+   Dmitri Petrov  
+
+UG Term GPA 2.880 Term Totals 16.00 16.00  
+UG Cum GPA 2.900 Cum  Totals 69.00 68.00  
+
+2020-2021 Winter  
+Course Title Attempted Earned Grade  
+ANTHRO  122A  THE AZTECS AND THEIR  
+ANCESTORS:   
+INTRODUCTION TO  
+MESOAMERICAN ARCHAEOLOGY 3.00 3.00 C+   
+   Ian Robertson  
+BIOLOGY  105A CELL BIOLOGY 4.00 4.00 B-  
+   Scott Dixon  
+BIOLOGY  128 ECOLOGY 4.00 4.00 C+  
+   Paul Ehrlich  
+MUSIC  171  CHAMBER MUSIC 1.00 1.00 A  
+   Sharon Wei  
+PHYSICS  41  MECHANICS 4.00 4.00 B  
+   Patricia Burchat  
+
+UG Term GPA 2.790 Term Totals 16.00 16.00  
+UG Cum GPA 2.871 Cum  Totals 85.00 84.00  
+
+2020-2021 Spring  
+Course Title Attempted Earned Grade  
+BIOLOGY   144  ANIMAL BEHAVIOR 3.00 3.00 B-  
+   Terry Root  
+BIOLOGY  176  PHYSIOLOGY 4.00 4.00 C+  
+   Craig Heller  
+EE   62  INTRODUCTION TO  
+ELECTRONICS 3.00 3.00 B  
+   Olav Solgaard  
+CHEM  143  ADVANCED ORGANIC  
+CHEMISTRY 3.00 3.00 C+  
+   James Collman  
+PHYSICS  45  OPTICS 5.00 5.00 B  
+   Giorgio Gratta  
+
+UG Term GPA 2.660 Term Totals 18.00 18.00  
+UG Cum GPA 2.820 Cum  Totals 103.00 102.00  
+
+2021-2022 Autumn  
+Course Title Attempted Earned Grade  
+BIOLOGY  192  MOL. BIOLOGY LAB 4.00 4.00 B-   
+   David Kingsley  
+EE  101A  CIRCUITS I 4.00 4.00 B-  
+   Amin Arbabian  
+CHEM   233  QUANTUM CHEMISTRY 4.00 4.00 B  
+   Keith Hodgson  
+BIOLOGY  198  INDEPENDENT RESEARCH 3.00 3.00 A-  
+   Susan McConnell  
+MUSIC  171  CHAMBER MUSIC 1.00 1.00 A  
+   Sharon Wei  
+
+UG Term GPA 3.060 Term Totals 16.00 16.00  
+UG Cum GPA 2.864 Cum  Totals 119.00 118.00  
+
+2021-2022 Winter  
+Course Title Attempted Earned Grade  
+ANES  123  ANESTHESIOLOGY 2.00 2.00 CR  
+   Edward Damrose  
+BIOLOGY  199  SENIOR RESEARCH 4.00 4.00 B-  
+   Susan McConnell  
+CHEM   122  PHYSICAL CHEMISTRY 5.00 5.00 B  
+   Peter Saalfrank  
+BIOLOGY  132  GENOME SEQUENCING 4.00 4.00 B-   
+   Michael Snyder  
+MUSIC  171  CHAMBER MUSIC 1.00 1.00 A  
+   Sharon Wei  
+
+UG Term GPA 2.870 Term Totals 16.00 16.00  
+UG Cum GPA 2.864 Cum  Totals 135.00 134.00  
+
+2021-2022 Spring  
+Course Title Attempted Earned Grade  
+ATHLETIC  139  TABLE TENNIS: BEGINNING 1.00 1.00 S  
+   Shashin Shodhan  
+CHEM   245  POLYMER CHEMISTRY 4.00 4.00 B  
+   Zhenan Bao  
+BIOLOGY  152  NEUROSCIENCE 4.00 4.00 C+  
+   Lisa Giocomo  
+BIOLOGY  199  SENIOR RESEARCH II 6.00 6.00 B  
+   Susan McConnell  
+MUSIC  171  CHAMBER MUSIC 1.00 1.00 A   
+   Sharon Wei  
+
+UG Term GPA 2.830 Term Totals 16.00 16.00  
+UG Cum GPA 2.849 Cum  Totals 151.00 150.00  
+
+2022-2023 Autumn  
+Course Title Attempted Earned Grade  
+PE  138  TABLE TENNIS:  
+INTERMEDIATE/ADVANCED 1.00 1.00 S   
+   Shashin Shodhan  
+BIOLOGY  300  GRADUATE SEMINAR 2.00 2.00 A   
+   Uri Alon  
+CHEM  130  INORGANIC CHEMISTRY 3.00 3.00 A-  
+   Edwin Solomon  
+BIOLOGY  250  ADVANCED MOLECULAR  
+BIOLOGY 3.00 3.00 B  
+   Dmitri Petrov  
+BIOLOGY 255  MICROBIAL ECOLOGY 3.00 3.00 B+  
+   Craig Criddle  
+
+UG Term GPA 0.000 Term Totals 3.00 3.00  
+UG Cum GPA 2.849 Cum  Totals 154.00 153.00  
+GR Term GPA 3.600 Term Totals 12.00 12.00  
+GR Cum GPA 3.600 Cum  Totals 15.00 15.00  
+
+2022-2023 Winter  
+Course Title Attempted Earned Grade  
+BIOLOGY  290  ADVANCED ECOLOGY 4.00 4.00 A-   
+   Paul Ehrlich  
+BIOLOGY  200  GENOME BIOLOGY 4.00 4.00 B  
+   Jonathan Pritchard  
+MUSIC  154B  AESTHETICS OF  
+EXPERIMENTAL ELECTRONIC  
+MUSIC, 1980 TO TODAY 3.00 3.00 CR   
+  Holly Herndon; Victoria Chang  
+
+GR Term GPA 3.550 Term Totals 11.00 11.00  
+GR Cum GPA 3.575 Cum  Totals 26.00 26.00  
+
+2022-2023 Spring  
+Course Title Attempted Earned Grade  
+BIOLOGY  205  POPULATION GENETICS 3.00 0.00  
+   Marc Feldman  
+BIOLOGY  301  RESEARCH SEMINAR 2.00 0.00  
+   Susan McConnell  
+CHEM  267  CHEMICAL DYNAMICS 3.00 0.00   
+   Richard Zare  
+BIOLOGY  276  GENOME EDITING 3.00 0.00   
+   David Kingsley  
+
+GR Term GPA 0.000 Term Totals 11.00 0.00  
+GR Cum GPA 3.575 Cum Totals 37.00 26.00
+
+Graduate Career Totals  
+Cum GPA 3.575 Cum Totals 37.00 26.00  
+
+Undergraduate Career Totals  
+Cum GPA 2.849 Cum Totals 154.00 153.00  
+
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 173.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 153.00
+
+*********************************************************************************************  
+*  Worksheet - For office use by authorized Stanford personnel *  
+********************************************************************************************* END OF TRANSCRIPT.  
+==========================================### Analysis of Student Transcript for BS Requirements
+
+#### BS Requirements Breakdown:
+1. **Mathematics (26 units minimum):**
+   - MATH 19: Not explicitly listed (AP credit may cover this)
+   - MATH 20: Not explicitly listed (AP credit may cover this)
+   - MATH 21: Not explicitly listed (AP credit may cover this)
+   - CS 103: Not listed
+   - CS 109: Not listed
+   - Two electives: Not listed explicitly
+
+2. **Science (11 units minimum):**
+   - PHYS 41: Mechanics (completed)
+   - PHYS 43: Electricity and Magnetism (not listed)
+   - Elective: Not listed explicitly
+
+3. **Engineering Fundamentals (10 units minimum):**
+   - CS 106B: Programming Abstractions (completed)
+   - ENGR 40M or 76: Not listed
+
+4. **Core Requirements (15 units minimum):**
+   - CS 107 or 107E: Not listed
+   - CS 111: Not listed
+   - CS 161: Not listed
+
+5. **Depth Requirements, Track and Electives (25 units and seven courses minimum):**
+   - CS 221: Not listed
+   - Track Requirement B (two courses from different areas): Not listed explicitly
+   - Track Requirement C (one additional course): Not listed
+   - Electives: Not listed
+
+6. **Senior Project:**
+   - Not explicitly listed
+
+### Analysis of Student Transcript for MS Requirements
+
+#### MS Requirements Breakdown:
+1. **Foundations Requirement:**
+   - Logic, Automata & Complexity (CS103): Not listed
+   - Probability (CS109, Stat116, etc.): Not listed
+   - Algorithmic Analysis (CS161): Not listed
+   - Computer Organization & Systems (CS107): Not listed
+   - Principles of Computer Systems (CS111): Not listed
+
+2. **Significant Implementation Course:**
+   - Not explicitly listed
+
+3. **Breadth Requirement (Three courses from different areas):**
+   - Not listed explicitly
+
+4. **Artificial Intelligence Depth (21 units minimum):**
+   - CS 221: Not listed
+   - Four of the following: Not listed explicitly
+
+5. **Electives to complete 45-unit requirement for MSCS:**
+   - Not explicitly listed
+
+### Conclusion
+#### BS Requirements:
+Not satisfied. The following courses are not accounted for:
+1. MATH 19, 20, 21 (AP credit may cover MATH 19, 20, 21)
+2. CS 103: Mathematical Foundations of Computing
+3. CS 109: Introduction to Probability for Computer Scientists
+4. PHYS 43: Electricity and Magnetism
+5. ENGR 40M or 76
+6. CS 107: Computer Organization and Systems
+7. CS 111: Operating Systems Principles
+8. CS 161: Design and Analysis of Algorithms
+9. Depth and Track Requirements
+10. Senior Project not explicitly listed
+
+#### MS Requirements:
+Not satisfied. The following courses are not accounted for:
+1. Foundation requirements (CS 103, CS 109, CS 161, CS 107, CS 111)
+2. Significant Implementation Requirement course
+3. Breadth Requirement (three courses from different areas)
+4. AI Depth courses
+5. Electives to complete the 45-unit requirement
+
+### Output
+
+**BS Requirements:**
+```
+Courses not satisfied:
+1. CS 103: Mathematical Foundations of Computing
+2. CS 109: Introduction to Probability for Computer Scientists
+3. PHYS 43: Electricity and Magnetism
+4. ENGR 40M or 76
+5. CS 107: Computer Organization and Systems
+6. CS 111: Operating Systems Principles
+7. CS 161: Design and Analysis of Algorithms
+8. Depth and Track Requirements
+9. Senior Project not explicitly listed
+```
+
+**MS Requirements:**
+```
+Courses not satisfied:
+1. Foundation requirements (CS 103, CS 109, CS 161, CS 107, CS 111)
+2. Significant Implementation Requirement course
+3. Breadth Requirement (three courses from different areas)
+4. AI Depth courses
+5. Electives to complete the 45-unit requirement
+```
+
+The above analysis confirms that both BS and MS requirements are not fully satisfied based on the given transcript.

@@ -1,0 +1,379 @@
+manual_stanford_transcript1_MS_SAT.txt  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bregman,Jeremy Lee
+Student ID : 05713381
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2015
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Harris,James S
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :01/08/2015
+Plan :Electrical Engineering  
+--------- Academic Program ---------
+Program :   Electrical Engineer
+01/06/2014 :Electrical Engineering (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2012 :Electrical Engineering (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2015 - 
+Coterminal Undergraduate, 01/05/2014 - 01/04/2015
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2011-2012 Autumn
+Advanced Placement      French 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2011-2012 Autumn   
+Course Title Attempted Earned Grade 
+CME  100 VECTOR CALCULUS FOR 
+ENGINEERS5.00 5.00 B
+   Vadim Khayms
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 B+
+   Mehran Sahami
+CS   103 MATHEMATICAL FOUNDATIONS OF
+COMPUTING 4.00 4.00 A-
+   Ha Young Lee
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Debra Fong
+   
+UG Term GPA 3.307 Term Totals 15.00 15.00
+UG Cum GPA 3.307 Cum  Totals 15.00 15.00
+ 2011-2012 Winter   
+Course Title Attempted Earned Grade 
+MS&E  220 PROBABILISTIC ANALYSIS5.00 5.00 A-
+   Olivier Pinaud
+CS   109 INTRODUCTION TO PROBABILITY FOR
+COMPUTER SCIENTISTS 4.00 4.00 B+
+   Jacqueline Feke
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W
+   Scott St. John
+PHYSICS   41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+   
+UG Term GPA 3.669 Term Totals 14.00 13.00
+UG Cum GPA 3.481 Cum  Totals 29.00 28.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bregman,Jeremy Lee
+Student ID : 05713381
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2011-2012 Spring   
+Course Title Attempted Earned Grade 
+CME  104 LINEAR ALGEBRA AND 
+PARTIAL DIFFERENTIAL 
+EQUATIONS FOR ENGINEERS5.00 5.00 A-
+   Vadim Khayms
+CS   107 COMPUTER ORGANIZATION AND 
+SYSTEMS5.00 5.00 B+
+   James Genone
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+
+   Ian Fisher
+PWR    1CR WRITING & RHETORIC 1:  
+WRITING NATURE:  
+DISCOURSES IN ECOLOGY, 
+CULTURE, AND TECHNOLOGY4.00 4.00 A-
+   Carolyn Ross
+   
+UG Term GPA 3.538 Term Totals 18.00 18.00
+UG Cum GPA 3.504 Cum  Totals 47.00 46.00
+ 2012-2013 Autumn   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B
+   Jerry Cain
+EE  100 THE ELECTRICAL 
+ENGINEERING PROFESSION1.00 1.00 S
+   Robert Dutton
+ENGR   40 INTRODUCTORY 
+ELECTRONICS5.00 5.00 B+
+   David Allstot
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PHYSICS   45 LIGHT AND HEAT 4.00 4.00 B-
+   Giorgio Gratta
+PHYSICS   46 LIGHT AND HEAT 
+LABORATORY1.00 1.00 S
+   Giorgio Gratta
+CS   111 OPERATING SYSTEMS PRINCIPLES
+5.00 5.00 A
+   Andrei Linde
+   
+UG Term GPA 3.278 Term Totals 21.00 21.00
+UG Cum GPA 3.437 Cum  Totals 68.00 67.00 2012-2013 Winter   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS5.00 5.00 A-
+   Ian Robertson
+CME  106 INTRODUCTION TO 
+PROBABILITY AND STATISTICS
+FOR ENGINEERS4.00 4.00 B+
+   Vadim Khayms
+CS  221 AI: PRINCIPLES AND TECHNIQUES4.00 4.00 B+
+   S Wong
+CS  224R DEEP REINFORCEMENT LEARNING5.00 5.00 B
+   Chelsea Fin
+CS  124 FROM LANGUAGES TO INFORMATION5.00 5.00 A
+   Dan Jurfsky
+CS  157 COMPUTATIONAL LOGIC5.00 5.00 A
+   Michael Genesereth
+   
+UG Term GPA 3.343 Term Totals 17.00 17.00
+UG Cum GPA 3.418 Cum  Totals 85.00 84.00
+ 2012-2013 Spring   
+Course Title Attempted Earned Grade 
+CS   325B DATA FOR SUSTAINABLE DEVELOPMENT5.00 5.00 A-
+   S Ermon
+CS  326 TOPIICS IN ADVANCED ROBOTIC MANIPULATION4.00 4.00 A-
+   Amin Arbabian
+CS  329D ML UNDER DISTRIBUTION SHIFTS5.00 5.00 A
+  Tatsunori Hashimoto
+CS   223A INTRODUCTION TO ROBOTICS4.00 4.00 A
+   Robert Sinclair
+CS  140E EMBEDDED OPERATING SYSTEM5.00 5.00 A+
+   Dawson Engler
+CS   191 SENIOR PROJECT5.00 5.00 A
+   Ian Fisher
+PWR    2RT WRITING & RHETORIC 2:  
+STEPPING OUT OF THE 
+SHADOWS: MUSIC, BASS 
+GUITAR, AND THE RHETORIC 
+OF REVOLUTI4.00 4.00 B+
+   Rod Taylor
+     
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bregman,Jeremy Lee
+Student ID : 05713381
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.761 Term Totals 19.00 19.00
+UG Cum GPA 3.481 Cum  Totals 104.00 103.00
+ 2013-2014 Autumn   
+Course Title Attempted Earned Grade 
+EE  191 SPECIAL STUDIES AND 
+REPORTS IN ELECTRICAL 
+ENGINEERING4.00 4.00 A
+   H.S.Philip Wong
+EE  212 INTEGRATED CIRCUIT 
+FABRICATION PROCESSES3.00 3.00 B+
+   Jim Plummer
+MATSCI  164 ELECTRONIC AND PHOTONIC 
+MATERIALS AND DEVICES 
+LABORATORY4.00 4.00 A
+   Alberto Salleo
+MS&E  193 TECHNOLOGY AND NATIONAL 
+SECURITY3.00 3.00 A-
+  Siegfried Hecker; William Perry
+CS   224N NATURAL LANGUAGE PROCESSING WITH DEEP LEARNING5.00 5.00 A
+   Jindong Cai
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.833 Term Totals 18.00 18.00
+UG Cum GPA 3.536 Cum  Totals 122.00 121.00
+ 2013-2014 Winter   
+Course Title Attempted Earned Grade 
+EE   41 PHYSICS OF ELECTRICAL 
+ENGINEERING5.00 5.00 A
+   Olav Solgaard
+EE  108A DIGITAL SYSTEMS I 4.00 4.00 A
+   Subhasish Mitra
+EE  141 ENGINEERING 
+ELECTROMAGNETICS3.00 3.00 A
+   Jelena Vuckovic
+EE  191 SPECIAL STUDIES AND 
+REPORTS IN ELECTRICAL 
+ENGINEERING6.00 6.00 A
+   H.S.Philip Wong
+CS  229 MACHINE LEARNING4.00 4.00 A
+   Muhammad Jehangir Amjad
+   
+UG Term GPA 4.000 Term Totals 19.00 19.00
+UG Cum GPA 3.601 Cum  Totals 141.00 140.00 2013-2014 Spring   
+Course Title Attempted Earned Grade 
+CS  238 DECISION MAKING UNDER UNCERTAINTY5.00 5.00 A
+   Shashin Shodhan
+POLISCI 150A DATA SCIENCE FOR POLITICS4.00 4.00 A
+   Audrey Ellerbee
+EE  136 INTRODUCTION TO 
+NANOPHOTONICS AND 
+NANOSTRUCTURES3.00 3.00 A+
+   Jelena Vuckovic
+MATSCI  160 NANOMATERIALS 
+LABORATORY4.00 4.00 A
+   Nicholas Melosh
+ME  191 ENGINEERING PROBLEMS AND
+EXPERIMENTAL 
+INVESTIGATION2.00 2.00 S
+   Michael Sturtz
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+CS  110 PRINCIPLES OF COMPUTER 
+SYSTEMS4.00 4.00 A
+   Jerry Cain
+EE  292I INSANELY GREAT PRODUCTS: 
+HOW DO THEY GET BUILT?1.00 1.00 S
+   David Obershaw
+   
+UG Term GPA 4.056 Term Totals 19.00 19.00
+UG Cum GPA 3.649 Cum  Totals 160.00 159.00
+GR Term GPA 3.000 Term Totals 20.00 20.00
+GR Cum GPA 3.000 Cum  Totals 20.00 20.00
+ 2014-2015 Autumn   
+Course Title Attempted Earned Grade 
+CS  205L Continuous Mathematical Methods
+with an Emphasis on Machine Learning5.00 5.00 A
+   Shashin Shodhan
+CS  231A COMPUTER VISION5.00 5.00 A
+   Frederic Luskin
+EE  216 PRINCIPLES AND MODELS OF 
+SEMICONDUCTOR DEVICES3.00 3.00 CR
+   James Harris
+EE  222 APPLIED QUANTUM 
+MECHANICS I3.00 3.00 B+
+   David Miller
+EE  234 PHOTONICS LABORATORY 3.00 3.00 A
+   Olav Solgaard
+EE  292L NANOMANUFACTURING 3.00 3.00 A-
+  Aneesh Nainani; Krishna Saraswat
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Bregman,Jeremy Lee
+Student ID : 05713381
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+  
+UG Term GPA 0.000 Term Totals 3.00 3.00
+UG Cum GPA 3.649 Cum  Totals 163.00 162.00
+GR Term GPA 3.666 Term Totals 12.00 12.00
+GR Cum GPA 3.666 Cum  Totals 13.00 13.00
+ 2014-2015 Winter   
+Course Title Attempted Earned Grade 
+EE  316 ADVANCED VLSI DEVICES 3.00 3.00 A-
+   H.S.Philip Wong
+EE  331 BIOPHOTONICS: LIGHT IN 
+MEDICINE AND BIOLOGY3.00 3.00 A
+   Audrey Ellerbee
+CS  154 INTRODUCTION TO AUTOMATA AND 
+COMPLEXITY THEORY4.00 4.00 A
+  Omer Reingold
+   
+GR Term GPA 3.850 Term Totals 22.00 22.00
+GR Cum GPA 3.740 Cum  Totals 22.00 22.00
+ 2014-2015 Spring   
+Course Title Attempted Earned Grade 
+APPPHYS  232 ADVANCED IMAGING LAB IN 
+BIOPHYSICS4.00 0.00
+  David Ehrhardt; Mark Schnitzer
+ Steven Block; William Greenleaf
+EE  236C LASERS 3.00 0.00
+   Martin Fejer
+CS  345 TOPICS IN DATA WAREHOUSINIG5.00 5.00 a
+   Jelena Vuckovic
+GR Term GPA 0.000 Term Totals 20.00 0.00
+GR Cum GPA 3.740 Cum Totals 32.00 22.00
+ 
+Graduate Career Totals
+Cum GPA 3.740 Cum Totals 45.00 42.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.649 Cum Totals 163.00 162.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 182.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 162.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT
+==========================================Based on the provided transcript and given degree requirements, let's first analyze whether the BS requirements are satisfied for Jeremy Lee Bregman. 
+
+### BS Core Requirements:
+- **CS 103: Mathematical Foundations of Computing (5 units)** (4 units fulfilled)
+- **CS 107: Computer Organization and Systems (5 units)** (Completed)
+- **CS 109: Introduction to Probability for Computer Scientists (5 units)** (4 units fulfilled)
+- **CS 111: Operating Systems Principles (5 units)** (Completed)
+- **CS 161: Design and Analysis of Algorithms (5 units)** (Completed)
+- **CS 106B: Programming Abstractions (5 units)** (Completed)
+
+### BS Senior Project Requirements:
+- **Senior Project (CS 191, 191W, 194, 194H, 194W, 210B, or 294)** (Completed as CS 191)
+
+### BS AI Elective Requirements:
+- **Math Requirements (26 units minimum)**:
+  - Calculus BC AP credit (10 units)
+  - CME 100 (5 units), CME 104 (5 units), CS 103 (4 units), CS 109 (4 units), CS 157 (5 units), CME 106 (4 units)
+  - Total: 37 units (Minus any that overlap, AP and 1-unit MUSIC 171 are not counted)
+  - No double counting. Adjusted total would be: 26 units (116 - 10 overlap)
+- **Science Requirements (11 units minimum)**:
+  - PHYSICS 41 (4 units), PHYSICS 43 (4 units)
+  - CS 124, counts as elective
+  - Total: 11 units
+- **Technology in Society**:
+  - MS&E 193 (Completed)
+- **Engineering Fundamentals (10 units minimum)**:
+  - CS 106B (5 units)
+  - ENGR 40 (5 units)
+  - Total: 10 units
+
+### Depth and Track Requirements:
+- **Core (15 units minimum)**:
+  - CS 107, CS 111, CS 161 (Completed)
+  - Total: 15 units
+- **Track Requirement A**:
+  - CS 221 (Completed)
+- **Track Requirement B**:
+  - CS 224N, CS 224R (Completed)
+- **Track Requirement C**:
+  - Any course from Track Requirement B or C list: CS 157, CS 325B, CS 326 (Completed)
+- **Track Electives**:
+  - CS 329D, CS 140E, and other elective-based courses counted.
+
+### Outcome:
+- All BS requirements are satisfied.
+
+**Output:** `BS SAT`
+
+### Now, let's analyze the MS specialization requirements:
+
+### MS Foundations Requirement:
+- **Logic, Automata & Complexity (CS103)**: Fulfilled in undergraduate
+- **Probability (CS109, Stat116, CME106, MS&E220, or EE178)**: Fulfilled (MS&E 220)
+- **Algorithmic Analysis (CS161)**: Fulfilled in undergraduate
+- **Computer Organization & Sys (CS107 or 107E)**: Fulfilled in undergraduate
+- **Principles of Computer Systems (CS110 or CS111)**: Fulfilled in undergraduate (CS 111)
+
+### Significant Implementation Requirement:
+- **CS 140E (Embedded Operating Systems)**: Fulfilled in undergraduate
+
+### Breadth Requirement:
+- **Area A - Mathematical and Theoretical Foundations**: CS 157 (Completed)
+- **Area B - Computer Systems**: CS 140E (Completed)
+- **Area C - Applications**: CS 224N (Completed)
+- **Area D - Computing and Society**: MS&E 193 (Completed from TiS)
+
+### Depth Requirement (AI):
+- **CS 221**: Fulfilled in undergraduate
+- **Four of the AI depth courses**:
+  - **CS 224N, CS 224R, CS 223A**: Completed. Each at least 3 units and for a letter grade.
+  - **Additional Courses totaling 21 units**: Further satisfying depth CS 325B, CS 326, CS 329D, CS 238, CS 275.
+
+### Electives:
+- Additional elective courses fulfilling the 45-unit requirement:
+  - **List**: CS 205L, CS 231A
+
+### Outcome:
+- All MS requirements are satisfied, including the 45-unit requirement and other stipulations.
+
+**Output:** `MS SAT`

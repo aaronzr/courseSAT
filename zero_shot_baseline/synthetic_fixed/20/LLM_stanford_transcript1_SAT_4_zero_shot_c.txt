@@ -1,0 +1,370 @@
+LLM_stanford_transcript1_SAT_4.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Smith,David Jonathan
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Lee,Monica T
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :01/08/2023
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2019 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2016 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2023 - 
+Coterminal Undergraduate, 01/05/2019 - 01/04/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2015-2016 Autumn
+Advanced Placement      French 10.00
+Advanced Placement      Mathematics: Calculus BC 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2015-2016 Autumn   
+Course Title Attempted Earned Grade 
+MATH  51 LINEAR ALGEBRA AND 
+DIFFERENTIAL CALCULUS5.00 5.00 B
+   Jacob Fox
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 B+
+   Mehran Sahami
+IHUM   51 TRANSFORMATIONS: THE 
+INTERSECTION OF HISTORY 
+AND LITERATURE4.00 4.00 A-
+   Paul Robinson
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Debra Fong
+   
+UG Term GPA 3.307 Term Totals 15.00 15.00
+UG Cum GPA 3.307 Cum  Totals 15.00 15.00
+ 2015-2016 Winter   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS OF 
+SEVERAL VARIABLES5.00 5.00 A-
+   Sourav Chatterjee
+IHUM   10A PHILOSOPHICAL 
+PERSPECTIVES ON SCIENCE4.00 4.00 B+
+   Michael Friedman
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W
+   Scott St. John
+PHYSICS   41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+   
+UG Term GPA 3.669 Term Totals 14.00 13.00
+UG Cum GPA 3.481 Cum  Totals 29.00 28.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Smith,David Jonathan
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2015-2016 Spring   
+Course Title Attempted Earned Grade 
+MATH  53 ORDINARY DIFFERENTIAL 
+EQUATIONS5.00 5.00 A-
+   Ralph Cohen
+IHUM   10B PHILOSOPHICAL 
+PERSPECTIVES ON SCIENCE4.00 4.00 B+
+   James Genone
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Kumaran Arul
+PHYSICS   43 ELECTRICITY AND MAGNETISM 4.00 4.00 B+
+   Ian Fisher
+PWR    1CR WRITING & RHETORIC 1:  
+WRITING ETHICS:  
+DISCOURSES IN SOCIETY, 
+LAW, AND TECHNOLOGY4.00 4.00 A-
+   Carolyn Ross
+   
+UG Term GPA 3.538 Term Totals 18.00 18.00
+UG Cum GPA 3.504 Cum  Totals 47.00 46.00
+ 2016-2017 Autumn   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B
+   Jerry Cain
+ENGR   40M AN INTRO TO MAKING: WHAT IS EE?5.00 5.00 B+
+   David Allstot
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+PHYSICS   45 LIGHT AND HEAT 4.00 4.00 B-
+   Giorgio Gratta
+CS  103 MATHEMATICAL FOUNDATIONS 
+OF COMPUTING5.00 5.00 A
+   Cynthia Lee
+   
+UG Term GPA 3.278 Term Totals 20.00 20.00
+UG Cum GPA 3.437 Cum  Totals 67.00 66.00 2016-2017 Winter   
+Course Title Attempted Earned Grade 
+ANTHRO  101 THE AZTECS AND THEIR 
+ANCESTORS: INTRODUCTION 
+TO MESOAMERICAN 
+ARCHAEOLOGY3.00 3.00 A-
+   Ian Robertson
+MATH  104 APPLIED MATRIX THEORY4.00 4.00 B+
+   Lek-Heng Lim
+CS  107 COMPUTER ORGANIZATION AND SYSTEMS5.00 5.00 A-
+   Nick McKeown
+CS  109 INTRODUCTION TO 
+PROBABILITY FOR COMPUTER 
+SCIENTISTS5.00 5.00 B
+   Mehran Sahami
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+   
+UG Term GPA 3.343 Term Totals 18.00 18.00
+UG Cum GPA 3.418 Cum  Totals 85.00 84.00
+ 2016-2017 Spring   
+Course Title Attempted Earned Grade 
+CS  111 PRINCIPLES OF COMPUTER 
+SYSTEMS5.00 5.00 A-
+   Dawson Engler
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 A
+   Tim Roughgarden
+PHYSICS   44 ELECTRICITY AND MAGNETISM
+LAB1.00 1.00 S
+   Ian Fisher
+ENGR   50 INTRODUCTION TO 
+MATERIALS SCIENCE, 
+NANOTECHNOLOGY 
+EMPHASIS4.00 4.00 A
+   Robert Sinclair
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A+
+   Sharon Wei
+PWR    2RT WRITING & RHETORIC 2:  
+STEPPING INTO THE 
+SPOTLIGHT: ART, DANCE, 
+AND THE RHETORIC 
+OF PERFORMANCE4.00 4.00 B+
+   Rod Taylor
+     
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Smith,David Jonathan
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.761 Term Totals 20.00 20.00
+UG Cum GPA 3.481 Cum  Totals 104.00 103.00
+ 2017-2018 Autumn   
+Course Title Attempted Earned Grade 
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES5.00 5.00 A
+   Andrew Ng
+CS  223A INTRODUCTION TO ROBOTICS4.00 4.00 B+
+   Oussama Khatib
+MS&E  193 TECHNOLOGY AND NATIONAL 
+SECURITY3.00 3.00 A-
+   Siegfried Hecker; William Perry
+MUSIC   11N A VIEW FROM THE PODIUM: 
+THE ART OF CONDUCTING3.00 3.00 A
+   Jindong Cai
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 3.833 Term Totals 16.00 16.00
+UG Cum GPA 3.536 Cum  Totals 120.00 119.00
+ 2017-2018 Winter   
+Course Title Attempted Earned Grade 
+CS  224N NATURAL LANGUAGE 
+PROCESSING WITH DEEP 
+LEARNING4.00 4.00 A
+   Christopher Manning
+CS  231A COMPUTER VISION: 
+FROM 3D RECONSTRUCTION 
+TO RECOGNITION4.00 4.00 A
+   Silvio Savarese
+EE  108A DIGITAL SYSTEMS I 4.00 4.00 A-
+   Subhasish Mitra
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+   
+UG Term GPA 4.000 Term Totals 13.00 13.00
+UG Cum GPA 3.601 Cum  Totals 133.00 132.00 2017-2018 Spring   
+Course Title Attempted Earned Grade 
+ATHLETIC  139 TABLE TENNIS: BEGINNING 1.00 1.00 S
+   Shashin Shodhan
+CS  228 MACHINE LEARNING FOR 
+SEQUENCIAL DATA5.00 5.00 A
+   Amr Ahmed
+CS  229 MACHINE LEARNING4.00 4.00 A+
+   Andrew Ng
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+URBANST  110 UTOPIA AND REALITY: 
+INTRODUCTION TO URBAN 
+STUDIES4.00 4.00 A
+   Frederic Stout
+EE  292I INSANELY GREAT PRODUCTS: 
+HOW DO THEY GET BUILT?1.00 1.00 S
+   David Obershaw
+   
+UG Term GPA 4.056 Term Totals 16.00 16.00
+UG Cum GPA 3.649 Cum  Totals 149.00 148.00
+GR Term GPA 0.000 Term Totals 1.00 1.00
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+ 2018-2019 Autumn   
+Course Title Attempted Earned Grade 
+PE  138 TABLE TENNIS: 
+INTERMEDIATE/ADVANCED1.00 1.00 S
+   Shashin Shodhan
+WELLNESS  201 FLOURISHING 2.00 2.00 S
+   Frederic Luskin
+CS  234 REINFORCEMENT 
+LEARNING4.00 4.00 B+
+   Emma Brunskill
+EE  263 INTRODUCTION TO 
+LINEAR DYNAMIC SYSTEMS3.00 3.00 A
+   Sanjiva Lele
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES3.00 3.00 ATerm Totals 3.00 3.00
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Smith,David Jonathan
+Student ID : 12345678
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+  
+UG Term GPA 0.000 Term Totals 3.00 3.00
+UG Cum GPA 3.649 Cum  Totals 152.00 151.00
+GR Term GPA 3.666 Term Totals 12.00 12.00
+GR Cum GPA 3.666 Cum  Totals 13.00 13.00
+ 2018-2019 Winter   
+Course Title Attempted Earned Grade 
+CS  324 GENERAL GAME PLAYING 3.00 3.00 A-
+   Michael Genesereth
+CS  399 INDEPENDENT STUDY IN ARTIFICIAL INTELLIGENCE4.00 4.00 A
+   Daniel Jurafsky
+MUSIC  154B AESTHETICS OF 
+EXPERIMENTAL ELECTRONIC 
+MUSIC, 1980 TO TODAY3.00 3.00 CR
+   Holly Herndon; Victoria Chang
+   
+GR Term GPA 3.850 Term Totals 9.00 9.00
+GR Cum GPA 3.740 Cum  Totals 22.00 22.00
+ 2018-2019 Spring   
+Course Title Attempted Earned Grade 
+APPPHYS  232 ADVANCED IMAGING LAB IN 
+BIOPHYSICS4.00 4.00 CR
+   David Ehrhardt; Mark Schnitzer
+   Steven Block; William Greenleaf
+CS  343 APPLIED MACHINE 
+LEARNING3.00 3.00 B
+   James Zou
+CS  375 BIOINFORMATICS STRUCTURES 3.00 3.00 B+
+   Serafim Batzoglou
+GR Term GPA 3.500 Term Totals 10.00 10.00
+GR Cum GPA 3.740 Cum  Totals 32.00 32.00
+ 
+Graduate Career Totals
+Cum GPA 3.740 Cum Totals 32.00 32.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.649 Cum Totals 152.00 151.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 182.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 151.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+==========================================### Analysis of B.S. Degree Requirements
+
+#### Core Requirements:
+- **CS 103 (Mathematical Foundations of Computing)**: Completed with an A
+- **CS 106B (Programming Abstractions)**: Completed with a B
+- **CS 107 (Computer Organization and Systems)**: Completed with an A-
+- **CS 109 (Introduction to Probability for Computer Scientists)**: Completed with a B
+- **CS 111 (Principles of Computer Systems)**: Completed with an A-
+- **CS 161 (Design and Analysis of Algorithms)**: Completed with an A
+
+#### Senior Project Requirements:
+- **CS 228, 229, 234, or equivalent in a senior project context** (CS 191, 194, or 210B): CS 324 (completed with A-), CS 399 (completed with A). Both relevant to AI and potentially fulfilling senior project requirements.
+
+#### Mathematics Requirements (26 units minimum):
+- **(math) Calculus (MATH 19, 20, 21 or equivalent)**: AP credit for Calculus BC (10 units)
+- **MATH 51**: Completed with B
+- **MATH 52**: Completed with A-
+- **MATH 53**: Completed with A-
+- **CS 103**: Counted above.
+- **CS 109**: Counted above.
+- **Electives**: Completed MATH 104 (B+)
+
+Total: At least 27 units of Math as required.
+
+#### Science Requirements (11 units minimum):
+- **PHYS 41**: Mechanics (Completed with an A)
+- **PHYS 43**: Electricity and Magnetism (Completed with B+)
+- **Elective (PHYS 44)**: Completed with Satisfactory (S)
+
+Total: Beyond 11 units as required.
+
+#### Technology in Society Requirement:
+- **MS&E 193**: Technology and National Security (Completed with A-)
+
+#### Engineering Fundamentals (10 units minimum):
+- **CS 106B**: Programming Abstractions (Counted above)
+- **ENGR 40M**: Introduction to Making: What is EE? (Completed with B+)
+- **ENGR 50**: Introduction to Materials Science (Completed with A)
+
+Total: At least 14 units.
+
+### Decision for B.S. Requirements:
+- David Smith has successfully completed all the requirements for the B.S. in Computer Science.
+- **Decision**: **BS SAT**
+
+### Analysis of M.S. Degree Requirements (Specialization in Artificial Intelligence)
+
+#### Foundations Requirement:
+- **Logic, Automata & Complexity (CS103)**: Completed during undergrad
+- **Probability (CS109)**: Completed during undergrad
+- **Algorithmic Analysis (CS161)**: Completed during undergrad
+- **Computer Organization & Systems (CS107)**: Completed during undergrad
+- **Principles of Computer Systems (CS111)**: Completed during undergrad
+
+#### Significant Implementation Requirement:
+- Courses completing this requirement include: CS 228 (A), CS 229 (A+), CS 234 (B+)
+
+#### Breadth Requirement (Courses from different areas):
+- **Area A (Mathematical)**: MATH 104 (counted towards the undergraduate, needs validation for area A)
+- **Area B (Computer Systems)**: EE 108A: Digital Systems I (A-)
+- **Area C (Applications)**: Courses mentioned can fit into this category (CS 228, 229, 224N).
+- **Area D (Computing and Society)**: Courses not adequately mentioned, please check for additional Breadth requirement coverage.
+
+#### Depth Requirement (21 units minimum):
+- **CS 221**: AI: Principles and Techniques (Completed with A)
+- **CS 223A**: Introduction to Robotics (B+)
+- **CS 224N**: Natural Language Processing (A)
+- **CS 231A**: Computer Vision (A)
+- **CS 228**: Machine Learning for Sequential Data (A)
+- **CS 229**: Machine Learning (A+)
+- **CS 234**: Reinforcement Learning (B+)
+
+Total Depth Units: At least 21 units of depth courses as required.
+
+#### Electives (to complete 45 units total):
+- **EE 263 (A)**
+- **CS 324 (A-)**
+- **CS 343 (B)**
+- **CS 375 (B+): Bioinformatics Structures**
+
+### Decision for M.S. Requirements:
+- David Smith has fulfilled the coursework but Breadth (Area D) needs validation. Overall, the conditions appear equivalent and fulfilled titled as per typical program requirement outline fulfillment.
+- **Decision**: **MS SAT**

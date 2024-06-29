@@ -1,0 +1,311 @@
+LLM_stanford_transcript1_UNSAT_7.txt
+**Leland Stanford Jr. University**  
+Stanford, CA 94305  
+USA  
+
+**Undergraduate Unofficial Transcript**  
+Name : **Smith,John Alex**  
+Student ID : **06472918**  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+
+Print Date: **04/17/2023**  
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+Academic Advisor: **White, Samantha E**  
+
+--------- Stanford Degrees Awarded ---------
+
+Degree :**Bachelor of Science**  
+Confer Date :**01/12/2023**  
+Plan :**Mechanical Engineering**  
+
+--------- Academic Program ---------  
+Program : Mechanical Engineer  
+**01/06/2023**: Mechanical Engineering (MS)  
+Active in Program  
+Program : Undergraduate Matriculated  
+**06/21/2020**: Mechanical Engineering (BS)  
+Completed Program  
+Coterminal Graduate, **01/04/2023** -  
+Coterminal Undergraduate, **01/05/2022 - 01/04/2023**  
+
+--------- Advanced Placement Test Credit ---------  
+Applied Toward Undergraduate Matriculated Program  
+**2019-2020 Autumn**   
+Advanced Placement French **8.00**  
+Advanced Placement Mathematics: Calculus AB **6.00**  
+Total Quarter Units Posted: **14.00**  
+Allowable Test Credit subject to restrictions.  
+
+--------- Beginning of Academic Record --------- 
+**2019-2020 Autumn**   
+Course Title Attempted Earned Grade   
+ANTHRO 100 Introduction to Anthropology **4.00 4.00 A-**  
+**Professor: Mary J. Swift**  
+ENGR 10 Introduction to Engineering **3.00 3.00 B+**  
+**Professor: Alan G. Nishio**  
+HST 113 History of Technology **4.00 4.00 B-**  
+**Professor: Laura B. Carney**  
+MUSIC 172 Intro to Jazz **3.00 3.00 CR**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.189 Term Totals 14.00 14.00**  
+**UG Cum GPA 3.189 Cum Totals 14.00 14.00**  
+
+**2019-2020 Winter**   
+Course Title Attempted Earned Grade   
+HST 114 Technology and Society **4.00 4.00 B**  
+**Professor: Diane R. Cook**  
+CE 100 Intro to Civil Engineering **4.00 4.00 B+**  
+**Professor: Martin K. Johnson**  
+MATH 19 Calculus **5.00 5.00 B**  
+**Professor: Victor L. Cheng**  
+MUSIC 172 Intro to Jazz **1.00 0.00 W**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.231 Term Totals 14.00 13.00**  
+**UG Cum GPA 3.210 Cum Totals 28.00 27.00**  
+
+**2019-2020 Spring**   
+Course Title Attempted Earned Grade   
+CE 102 Statics and Structures **4.00 4.00 B+**  
+**Professor: John P. Miller**  
+MATH 20 Calculus **5.00 5.00 B-**  
+**Professor: Victor L. Cheng**  
+HST 115 Modern Tech History **4.00 4.00 B**  
+**Professor: George E. Davis**  
+BIO 81 Intro to Biology **3.00 3.00 A-**  
+**Professor: Lisa R. Evans**  
+PWR 1AB Writing & Rhetoric **4.00 4.00 B**  
+**Professor: Nathan S. Pierce**  
+
+**UG Term GPA 3.190 Term Totals 20.00 20.00**  
+**UG Cum GPA 3.202 Cum Totals 48.00 47.00**  
+
+**2020-2021 Autumn**   
+Course Title Attempted Earned Grade   
+CS 106A Introduction to Programming **5.00 5.00 B+**  
+**Professor: Amir S. Sheik**  
+MATH 21 Intermediate Calculus **5.00 5.00 B**  
+**Professor: David H. Lee**  
+PHYS 41 Mechanics **5.00 5.00 A-**  
+**Professor: Julie R. Kim**  
+MUSIC 172 Intro to Jazz **1.00 1.00 A**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.407 Term Totals 16.00 16.00**  
+**UG Cum GPA 3.278 Cum Totals 64.00 63.00**  
+
+**2020-2021 Winter**   
+Course Title Attempted Earned Grade   
+ANTHRO 102 Cultural Anthropology **4.00 4.00 B**  
+**Professor: Steve P. Clark**  
+MATH 53 Linear Algebra **4.00 4.00 B-**  
+**Professor: Rachel S. Suarez**  
+PHYS 43 Electricity & Magnetism **5.00 5.00 B**  
+**Professor: Michael T. Hart**  
+BIO 82 Biological Systems **4.00 3.00 W**  
+**Professor: Karen L. Davis**  
+ENGR 20 Engineering Mechanics **4.00 4.00 B+**  
+**Professor: Amy K. Thompson**  
+
+**UG Term GPA 3.117 Term Totals 17.00 16.00**  
+**UG Cum GPA 3.244 Cum Totals 81.00 79.00**  
+
+**2020-2021 Spring**   
+Course Title Attempted Earned Grade   
+CE 101 Structural Analysis **4.00 4.00 A-**  
+**Professor: Timothy R. Harris**  
+CS 106B Programming Abstractions **5.00 5.00 B-**  
+**Professor: Emily J. Payne**  
+PHYS 45 Modern Physics **5.00 5.00 B**  
+**Professor: Richard K. Ford**  
+BIO 83 Bioinformatics **3.00 3.00 A-**  
+**Professor: Samuel J. King**  
+PWR 2CD Advanced Writing **4.00 4.00 B**  
+**Professor: Melanie Q. Lewis**  
+
+**UG Term GPA 3.270 Term Totals 21.00 21.00**  
+**UG Cum GPA 3.258 Cum Totals 102.00 100.00**  
+
+**2021-2022 Autumn**   
+Course Title Attempted Earned Grade   
+EE 101 Electronic Circuits **4.00 4.00 B+**  
+**Professor: Brian L. Wong**  
+MATH 104 Advanced Calculus **5.00 5.00 A-**  
+**Professor: Erica P. Johnson**  
+PHYS 46 Experimental Physics **4.00 4.00 B**  
+**Professor: Tom F. Hunter**  
+ENGR 50 Materials Science **4.00 4.00 B-**  
+**Professor: Sarah M. James**  
+MUSIC 172 Intro to Jazz **1.00 1.00 A**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.300 Term Totals 18.00 18.00**  
+**UG Cum GPA 3.265 Cum Totals 120.00 118.00**  
+
+**2021-2022 Winter**   
+Course Title Attempted Earned Grade   
+EE 102 Signal Processing **4.00 4.00 B-**  
+**Professor: Charles M. Lee**  
+EE 108 Digital Systems Design **4.00 4.00 B+**  
+**Professor: Paul N. Smith**  
+MATH 108 Complex Variables **5.00 5.00 B**  
+**Professor: Jeremy P. Andrews**  
+BIO 84 Genetics **3.00 3.00 A**  
+**Professor: William G. Davis**  
+ENGR 70 Thermodynamics **4.00 4.00 B**  
+**Professor: George K. Thomas**  
+
+**UG Term GPA 3.167 Term Totals 20.00 20.00**  
+**UG Cum GPA 3.266 Cum Totals 140.00 138.00**  
+
+**2021-2022 Spring**   
+Course Title Attempted Earned Grade   
+CS 107E Operating Systems **5.00 5.00 B**  
+**Professor: Elizabeth J. Brown**  
+EE 142 Electromagnetic Waves **4.00 4.00 B-**  
+**Professor: Douglas M. Green**  
+PHYS 70 Quantum Mechanics **5.00 5.00 B-**  
+**Professor: Lydia J. Carpenter**  
+BIO 95 Biophysics **3.00 3.00 A-**  
+**Professor: Anna L. White**  
+HUM 10 Introduction to Humanities **4.00 4.00 B**  
+**Professor: James S. Yates**  
+
+**UG Term GPA 3.059 Term Totals 21.00 21.00**  
+**UG Cum GPA 3.233 Cum Totals 161.00 159.00**  
+
+**2022-2023 Autumn**   
+Course Title Attempted Earned Grade   
+ENGR 90 Principles of Engineering **5.00 5.00 B-**  
+**Professor: Julia P. Mendes**  
+MATH 109 Differential Equations **5.00 5.00 B**  
+**Professor: Karen L. Smith**  
+PHYS 80 Statistical Mechanics **4.00 4.00 B+**  
+**Professor: Michael J. Lee**  
+BIO 98 Evolutionary Biology **3.00 3.00 A**  
+**Professor: Rachel Y. Watson**  
+MUSIC 172 Intro to Jazz **1.00 1.00 A**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.217 Term Totals 18.00 18.00**  
+**UG Cum GPA 3.240 Cum Totals 179.00 177.00**  
+
+**2022-2023 Winter**   
+Course Title Attempted Earned Grade   
+EE 191 Special Studies in EE **4.00 4.00 A**  
+**Professor: Olivia K. Adams**  
+ME 142 Fluid Mechanics **4.00 4.00 A-**  
+**Professor: Timothy L. Parker**  
+MATH 110 Numerical Methods **5.00 5.00 B+**  
+**Professor: Henry P. Franklin**  
+BIO 101 Cellular Biology **3.00 3.00 A**  
+**Professor: Alice T. Wood**  
+ENGR 110 Engineering Optimization **4.00 4.00 B**  
+**Professor: Stephen R. Walker**  
+MUSIC 172 Intro to Jazz **1.00 1.00 A**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.625 Term Totals 21.00 21.00**  
+**UG Cum GPA 3.302 Cum Totals 200.00 198.00**  
+
+**2022-2023 Spring**   
+Course Title Attempted Earned Grade   
+ME 191 Senior Project **4.00 4.00 A**  
+**Professor: William W. Taylor**  
+MATH 111 Advanced Analysis **5.00 5.00 A-**  
+**Professor: Linda S. Brown**  
+PHYS 90 Advanced Mechanics **3.00 3.00 B**  
+**Professor: Sarah R. Cook**  
+BIO 105 Environmental Biology **3.00 3.00 A**  
+**Professor: David L. Turner**  
+ENGR 120 Reliability Engineering **4.00 4.00 A**  
+**Professor: Charles M. Black**  
+MUSIC 172 Intro to Jazz **1.00 1.00 A**  
+**Professor: Robert Lin**  
+
+**UG Term GPA 3.640 Term Totals 20.00 20.00**  
+**UG Cum GPA 3.334 Cum Totals 220.00 218.00**  
+
+**Graduate Career Totals**  
+**Cum GPA 0.000 Cum Totals 0.00 0.00**  
+**Undergraduate Career Totals**  
+
+**Cum GPA 3.334 Cum Totals 220.00 218.00**  
+**UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 218.00**  
+**STANFORD TOTAL UNDERGRADUATE UNITS: 218.00**  
+
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *   
+*********************************************************************************************  
+
+**END OF TRANSCRIPT**  
+
+==========================================### Analysis of BS Requirements
+
+#### Core Requirements:
+1. **Programming Abstractions (CS106B)**: Taken in Spring 2020, Grade: B-
+2. **Computer Organization and Systems (CS107)**: Satisfied with CS107E in Spring 2022, Grade: B
+3. **Mathematical Foundations of Computing (CS103)**: Not taken (requires manual verification since not listed in the transcript).
+4. **Introduction to Probability for Computer Scientists (CS109)**: Not taken (requires manual verification since not listed in the transcript).
+5. **Design and Analysis of Algorithms (CS161)**: Not taken (requires manual verification since not listed in the transcript).
+
+#### Senior Project Requirements:
+1. **Senior Project Course Options**: Not fulfilled with a Computer Science course.
+
+#### AI Elective Requirements:
+1. **Core Courses**:
+   - **CS107**: Satisfied with CS107E in Spring 2022.
+   - **CS111**: Not taken.
+   - **CS161**: Not taken.
+2. **Track Requirement Courses**:
+   - **CS221**: Not taken.
+
+### Summary for BS Requirements:
+- **Core Requirements**: CS103, CS109, CS161 are not satisfied.
+- **Senior Project**: Not satisfied with a Computer Science course.
+- **AI Elective Requirements**: CS111, CS221 are not satisfied.
+
+**BS SAT**: Not satisfied.
+**Courses not satisfied for BS:**
+- CS103 (Mathematical Foundations of Computing)
+- CS109 (Introduction to Probability for Computer Scientists)
+- CS161 (Design and Analysis of Algorithms)
+- CS111 (Operating Systems Principles)
+- Senior Project (CS194/CS194W/CS210B/CS191/CS191W/CS294)
+
+---
+
+### Analysis of MS Requirements (Artificial Intelligence Specialization)
+
+#### Foundations Requirement:
+- **CS103**: Not confirmed taken. (Likely taken at another institution if not present since Mechanical Engineering BS).
+- **CS109**: Not confirmed taken.
+- **CS161**: Not confirmed taken.
+- **CS107**: Satisfied with CS107E.
+- **CS110**: Not taken/confirmed.
+
+#### Significant Implementation Requirements:
+- Significant Implementation Course not confirmed taken (requires manual verification).
+
+#### Breadth Requirement:
+Courses not explicitly mentioned; assumed not taken.
+
+**Courses Required for AI Depth**:
+   - **CS221**: Core course, not taken.
+   - At least four from: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238: none taken.
+
+Breadth, Depth, and Electives: Insufficient evidence of satisfaction from undergraduate transcript. MS requirements are strict, and it’s not feasible to confirm without additional course details for depth and electives.
+
+**MS SAT**: Not satisfied.
+**Courses not satisfied for MS:**
+- Foundations Requirement: CS103, CS109, CS161, CS110.
+- CS221.
+- At least four AI depth courses.
+- Breadth and significant implementation details required.
+
+---
+
+Given the gaps in both the BS and MS requirements based on the provided transcript, John Alex Smith has not yet fulfilled the respective degree requirements for both BS in Computer Science and MS in Computer Science with an Artificial Intelligence specialization at Stanford.

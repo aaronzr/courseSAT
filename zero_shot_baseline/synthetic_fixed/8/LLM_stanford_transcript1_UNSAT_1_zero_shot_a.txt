@@ -1,0 +1,310 @@
+LLM_stanford_transcript1_UNSAT_1.txt
+Leland Stanford Jr. University  
+Stanford, CA 94305  
+USA
+
+Undergraduate Unofficial Transcript  
+Name: Franklin, Samantha Marie  
+Student ID: 09876543  
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.  
+Print Date: 02/01/2023
+
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  
+Academic Advisor: Cohen, Lisa M.
+
+--------- Stanford Degrees Awarded ---------  
+
+Degree: Bachelor of Science  
+Confer Date: 05/15/2023  
+Plan: Computer Science  
+--------- Academic Program ---------  
+Program: Computer Science  
+01/06/2023: Mathematics (MS)  
+Active in Program  
+Program: Undergraduate Matriculated  
+09/22/2019: Computer Science (BS)  
+Completed Program  
+Coterminal Graduate, 01/10/2023 -  
+Coterminal Undergraduate, 09/05/2019 - 01/10/2023  
+
+--------- Advanced Placement Test Credit ---------  
+Applied Toward Undergraduate Matriculated Program  
+2019-2020 Autumn   
+Advanced Placement      Chemistry 10.00  
+Advanced Placement      Mathematics: Calculus AB 10.00  
+Total Quarter Units Posted: 20.00  
+Allowable Test Credit subject to restrictions.  
+--------- Beginning of Academic Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade  
+BIO 101 INTRODUCTION TO BIOLOGY 4.00 4.00 B-  
+    Dr. Janet Thompson  
+CS 101 INTRODUCTION TO COMPUTING 3.00 3.00 A-  
+    Dr. Clara Smith  
+ANTHRO 10 CULTURE AND SOCIETY 4.00 4.00 A  
+    Dr. Mark Fields  
+MATH 41 CALCULUS I 5.00 5.00 S  
+    Dr. Emily White
+    
+UG Term GPA 3.200 Term Totals 16.00 16.00  
+UG Cum GPA 3.200 Cum Totals 16.00 16.00  
+2019-2020 Winter   
+Course Title Attempted Earned Grade  
+CS 102 DATA STRUCTURES 4.00 4.00 B+  
+    Dr. Clara Smith  
+HIST 101 WORLD HISTORY I 3.00 3.00 A  
+    Dr. Alan Green  
+PHYS 101 GENERAL PHYSICS I 4.00 4.00 S  
+    Dr. William Harris  
+ART 20 INTRODUCTION TO DRAWING 3.00 2.00 W  
+    Dr. Hannah Lee
+    
+UG Term GPA 3.333 Term Totals 14.00 13.00  
+UG Cum GPA 3.262 Cum Totals 30.00 29.00  
+2020-2021 Spring   
+Course Title Attempted Earned Grade  
+CS 201 ALGORITHMS 3.00 3.00 A-  
+    Dr. Susan Clark  
+PHYS 102 GENERAL PHYSICS II 4.00 4.00 B  
+    Dr. William Harris  
+ENGR 10 INTRODUCTION TO ENGINEERING 4.00 4.00 B  
+    Dr. Michael Zhang  
+MUSIC 101 FUNDAMENTALS OF MUSIC 3.00 3.00 A+  
+    Prof. Caren Blake
+    
+UG Term GPA 3.600 Term Totals 14.00 14.00  
+UG Cum GPA 3.320 Cum Totals 44.00 43.00  
+2020-2021 Autumn   
+Course Title Attempted Earned Grade  
+CS 202 OPERATING SYSTEMS 4.00 4.00 B-  
+    Dr. Paul Matthews  
+EE 101 CIRCUITS I 4.00 4.00 C+  
+    Dr. Andrew Lin  
+MATH 42 CALCULUS II 5.00 5.00 S  
+    Dr. Emily White  
+ANTHRO 11 CULTURE AND SOCIETY II 4.00 4.00 A-  
+    Dr. Mark Fields  
+MUSIC 171 INTRODUCTION TO JAZZ 2.00 2.00 S  
+    Prof. Caren Blake
+    
+UG Term GPA 3.018 Term Totals 19.00 19.00  
+UG Cum GPA 3.269 Cum Totals 63.00 62.00  
+2020-2021 Winter   
+Course Title Attempted Earned Grade  
+PHIL 1 INTRODUCTION TO PHILOSOPHY 4.00 4.00 A  
+    Dr. John Lewis  
+PSYCH 1 INTRODUCTION TO PSYCHOLOGY 3.00 3.00 B+  
+    Dr. Laura Brown  
+BIO 102 ORGANIC CHEMISTRY 4.00 4.00 C  
+    Dr. Janet Thompson  
+CS 301 INTERACTIVE COMPUTER GRAPHICS 3.00 3.00 A+  
+    Dr. Clara Smith  
+MATH 51 LINEAR ALGEBRA 4.00 4.00 B  
+    Dr. Emily White
+    
+UG Term GPA 3.350 Term Totals 18.00 18.00  
+UG Cum GPA 3.301 Cum Totals 81.00 80.00  
+2021-2022 Spring   
+Course Title Attempted Earned Grade  
+ART 30A INTERMEDIATE DRAWING 3.00 3.00 A  
+    Dr. Hannah Lee  
+CS 303 MACHINE LEARNING 4.00 4.00 A  
+    Dr. Susan Clark  
+PHYS 103 GENERAL PHYSICS III 4.00 4.00 B-  
+    Dr. William Harris  
+HIST 102 WORLD HISTORY II 3.00 3.00 B+  
+    Dr. Alan Green  
+    
+UG Term GPA 3.416 Term Totals 14.00 14.00  
+UG Cum GPA 3.326 Cum Totals 95.00 94.00  
+2021-2022 Autumn   
+Course Title Attempted Earned Grade  
+CS 305 DATABASE SYSTEMS 4.00 4.00 A-  
+    Dr. Clara Smith  
+BIO 201 CELLULAR BIOLOGY 4.00 4.00 B+  
+    Dr. Janet Thompson  
+MATH 113 INTRO TO COMPLEX VARIABLES 5.00 5.00 S  
+    Dr. Emily White  
+PHYS 104 GENERAL PHYSICS LAB 2.00 2.00 S  
+    Dr. William Harris  
+    
+UG Term GPA 3.600 Term Totals 15.00 15.00  
+UG Cum GPA 3.340 Cum Totals 110.00 109.00  
+2021-2022 Winter   
+Course Title Attempted Earned Grade  
+CS 306 ARTIFICIAL INTELLIGENCE 3.00 3.00 A+  
+    Dr. Susan Clark  
+BIO 202 GENETICS 4.00 4.00 B-  
+    Dr. Janet Thompson  
+MATH 115 PARTIAL DIFFERENTIAL EQUATIONS 4.00 4.00 B  
+    Dr. Emily White  
+HIST 103 MODERN HISTORY 4.00 4.00 B+  
+    Dr. Alan Green  
+    
+UG Term GPA 3.446 Term Totals 15.00 15.00  
+UG Cum GPA 3.351 Cum Totals 125.00 124.00  
+2021-2022 Spring   
+Course Title Attempted Earned Grade  
+CS 307 NATURAL LANGUAGE PROCESSING 4.00 4.00 B+  
+    Dr. Cindy Martinez  
+BIO 203 BIOINFORMATICS 4.00 4.00 A  
+    Dr. Janet Thompson  
+PHY 105 QUANTUM MECHANICS 4.00 4.00 C+  
+    Dr. William Anderson  
+MATH 121 DIFFERENTIAL GEOMETRY 4.00 4.00 B  
+    Dr. Emily White  
+    
+UG Term GPA 3.233 Term Totals 16.00 16.00  
+UG Cum GPA 3.350 Cum Totals 141.00 140.00  
+2022-2023 Autumn   
+Course Title Attempted Earned Grade  
+CS 401 ADVANCED MACHINE LEARNING 4.00 4.00 B-  
+    Dr. Clare Benson  
+BIO 301 MOLECULAR BIOLOGY 4.00 4.00 B  
+    Dr. Janet Thompson  
+MATH 130 TOPOLOGY 3.00 3.00 S  
+    Dr. Emily White  
+HIST 104 COLONIAL HISTORY 4.00 4.00 B+  
+    Dr. Alan Green
+    
+UG Term GPA 3.134 Term Totals 15.00 15.00  
+UG Cum GPA 3.339 Cum Totals 156.00 155.00  
+2022-2023 Winter   
+Course Title Attempted Earned Grade  
+CS 402 ROBOTICS 4.00 4.00 A  
+    Dr. Cindy Martinez  
+BIO 302 MICROBIOLOGY 4.00 4.00 B+  
+    Dr. Janet Thompson  
+MATH 140 REAL ANALYSIS 4.00 4.00 C-  
+    Dr. Emily White  
+ANTHRO 110 CULTURAL ANTHROPOLOGY 3.00 3.00 A-  
+    Dr. Lisa Chen  
+    
+UG Term GPA 3.234 Term Totals 15.00 15.00  
+UG Cum GPA 3.340 Cum Totals 171.00 170.00  
+2022-2023 Spring  
+Course Title Attempted Earned Grade  
+CS 403 DEEP LEARNING 4.00 4.00 B+  
+    Dr. Cindy Martinez  
+BIO 303 ECOLOGY 4.00 4.00 B-  
+    Dr. Janet Thompson  
+PHYS 106 THERMODYNAMICS 4.00 4.00 B-  
+    Dr. William Anderson  
+MATH 150 COMBINATORICS 4.00 4.00 C+  
+    Dr. Emily White  
+    
+UG Term GPA 3.050 Term Totals 16.00 16.00  
+UG Cum GPA 3.334 Cum Totals 187.00 186.00
+
+Graduate Career Totals  
+Cum GPA 0.000 Cum Totals 0.00 0.00  
+Undergraduate Career Totals  
+
+Cum GPA 3.334 Cum Totals 187.00 186.00  
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 187.00  
+STANFORD TOTAL UNDERGRADUATE UNITS: 186.00  
+*********************************************************************************************  
+* Worksheet - For office use by authorized Stanford personnel *  
+*********************************************************************************************  END OF TRANSCRIPT.
+==========================================### Analysis of Transcript for BS Requirements
+
+#### BS Core Requirements
+The core requirements for a BS in Computer Science are:
+
+1. **Systems Core:**
+   - CS103: Mathematical Foundations of Computing
+   - CS109: Introduction to Probability for Computer Scientists
+   - CS107 or 107E: Computer Organization and Systems
+   - CS111: Operating Systems Principles
+   - CS161: Design and Analysis of Algorithms
+
+2. **Additional Mathematics Courses:**
+   - MATH 19, 20, 21 (or equivalent)
+   - Electives (Math 51, 52, 53, 104, 107, 108, 109, 110, 113; CS 157, 205L; PHIL 151; CME 100, 102, 104; ENGR 108)
+
+3. **Science Requirements:**
+   - PHYS 41: Mechanics (or equivalent)
+   - PHYS 43: Electricity and Magnetism (or equivalent)
+   - Additional elective from SoE Science list, PSYCH 30, or AP Chemistry
+
+4. **Technology in Society:**
+   - 1 course from the approved list
+
+5. **Engineering Fundamentals:**
+   - CS106B: Programming Abstractions
+   - ENGR40M or 76: An Intro to Making: What is EE? or Information Science
+
+6. **Senior Project:**
+   - One senior project course (CS194, CS194W, CS210B, CS191, CS191W)
+
+#### Transcript Analysis
+My analysis of the student’s transcript is as follows:
+
+1. **Systems Core Courses Taken:**
+   - CS103 (Mathematical Foundations of Computing) - Requirement not satisfied: CS103 is not listed on the transcript.
+   - CS109 (Introduction to Probability) - Requirement satisfied.
+   - CS107 (Computer Organization) - Requirement not satisfied: Student has taken EE101 which is not equivalent to CS107.
+   - CS111 (Operating Systems Principles): Taken as CS202 - Requirement satisfied.
+   - CS161 (Design and Analysis of Algorithms): Taken as CS201 - Requirement satisfied.
+
+2. **Mathematics Courses:**
+   - MATH 19/20/21 or equivalents: 
+     - The transcript includes MATH 41 (Calculus I) and MATH 42 (Calculus II), but the equivalent courses to MATH 19, 20, and 21 are not explicitly clear from the provided transcript.
+   - Electives:
+     - MATH 51 (Linear Algebra), MATH 121 (Differential Geometry), MATH 113 (Intro to Complex Variables) - Requirement satisfied.
+
+3. **Science Courses:**
+   - PHYS 41 (Mechanics): Equivalent not explicit in transcript.
+   - PHYS 43 (Electricity and Magnetism): Taken as PHYS 102.
+   - Additional elective (one from SoE Science list, PSYCH 30, or AP Chemistry): Requirements met via BIO 101, BIO 102.
+
+4. **Technology in Society:**
+   - Not explicitly mentioned in the transcript.
+
+5. **Engineering Fundamentals:**
+   - CS106B: Programming Abstractions taken as CS102 (Data Structures) - Requirement conditionally satisfied if treated as equivalent.
+   - ENGR40M or 76: Not explicitly listed. ENGR 10 might cover basics, but no direct match.
+
+6. **Senior Project:**
+   - CS306 fulfills senior project and writing requirement if washed as Approved (AI).
+
+#### Result for BS Degree
+- **BS NOT SAT**: Below requirements not explicitly satisfied:
+  - CS103: Mathematical Foundations of Computing
+  - CS106B or equivalent clearly not demarcated.
+  - Technology in Society: Unlisted.
+  - CS107 or equivalent clearly demarcated.
+
+### Analysis for MS Requirements
+#### MS Artificial Intelligence Specialization
+To verify the MS satisfaction status, a detailed program sheet covers the:
+1. **Foundations Requirement:**
+   - Logic, Automata & Complexity
+   - Probability
+   - Algorithmic Analysis
+   - Computer Organization & Systems
+   - Principles of Computer Systems
+
+2. **Significant Implementation Requirement:**
+   - One course from defined list.
+
+3. **Breadth Requirement:**
+   - One course from three different breadth areas (A, B, C, or D).
+
+4. **AI Depth:**
+   - CS 221
+   - Four from defined list
+   - Total of 21 units from a set list.
+
+5. **Additional Electives:**
+   - Until 45 units met.
+
+#### Transcript Analysis
+- Most courses for the MS specialization are missing from the undergraduate transcript provided. Verification and satisfaction analyses cannot be drawn without the incumbent MS progression transcript data.
+
+### Summary Outcome
+- **BS Status**: **BS NOT SAT** due to core requirement gaps.
+- **MS Status**: Verification unavailable due to incomplete graduate-level transcript details.
+
+Further confirmation and completion of outstanding requisites are necessary to solidify degrees as dialoged above—pending course sign-off.

@@ -1,0 +1,363 @@
+LLM_stanford_transcript1_SAT_8.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 08/29/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Brown,Emma C
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2024
+Plan :Computer Science  
+--------- Academic Program ---------
+Program :   Computer Science
+06/15/2024 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/23/2020 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 06/15/2024 - 
+Coterminal Undergraduate, 06/15/2023 - 06/14/2024
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2020-2021 Autumn
+Advanced Placement      Chemistry 10.00
+Advanced Placement      Mathematics: Calculus AB 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+MATH  51 LINEAR ALGEBRA AND 
+MULTIVARIABLE CALCULUS5.00 5.00 B
+   Gennady Ravich
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 B+
+   Mehran Sahami
+IHUM   57 INNOVATING FOR IMPACT4.00 4.00 A-
+   Thomas Sheehan
+PHYSICS   41 MECHANICS 4.00 4.00 A
+   Patricia Burchat
+   
+UG Term GPA 3.507 Term Totals 18.00 18.00
+UG Cum GPA 3.507 Cum  Totals 18.00 18.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+MATH  52 INTEGRAL CALCULUS OF 
+SEVERAL VARIABLES5.00 5.00 A-
+   Frank Sawyer
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+PWR   1D WRITING & RHETORIC: 
+EXPLORING KNOWLEDGE4.00 4.00 B+
+   Emily Polk
+PHYSICS   43 ELECTRICITY AND 
+MAGNETISM 4.00 4.00 A-
+   Ian Fisher
+   
+UG Term GPA 3.669 Term Totals 18.00 18.00
+UG Cum GPA 3.588 Cum  Totals 36.00 36.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+MATH  53 ORDINARY DIFFERENTIAL 
+EQUATIONS5.00 5.00 A-
+   Stanley Osher
+CS  109 INTRODUCTION TO 
+PROBABILITY FOR 
+COMPUTER SCIENTISTS5.00 5.00 B+
+   Mehran Sahami
+PHYSICS  44 CLASSICAL MECHANICS 
+LAB1.00 1.00 S
+   Patricia Burchat
+ENGR  70A PROGRAMMING 
+METHODOLOGY (JAVA)4.00 4.00 B+
+   Cynthia Lee
+   
+UG Term GPA 3.538 Term Totals 15.00 15.00
+UG Cum GPA 3.563 Cum  Totals 51.00 51.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  103 MATHEMATICAL 
+FOUNDATIONS OF COMPUTING5.00 5.00 B
+   Keith Schwarz
+CS  107 COMPUTER ORGANIZATION 
+AND SYSTEMS5.00 5.00 B+
+   Nick Troccoli
+PHYSICS  45 LIGHT AND HEAT4.00 4.00 B-
+   Giorgio Gratta
+ENGR  40M AN INTRO TO MAKING: 
+WHAT IS EE? 3.00 3.00 A
+   David Allstot
+   
+UG Term GPA 3.278 Term Totals 17.00 17.00
+UG Cum GPA 3.493 Cum  Totals 68.00 68.00 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS 
+PRINCIPLES5.00 5.00 B+
+   Ryan Stutsman
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 B+
+   Chris Piech
+HISTORY  150C THE UNITED STATES IN 
+THE TWENTIETH CENTURY4.00 4.00 A
+   Gordon Chang
+   
+UG Term GPA 3.543 Term Totals 14.00 14.00
+UG Cum GPA 3.505 Cum  Totals 85.00 82.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Stephen Harrison
+CS  221 ARTIFICIAL INTELLIGENCE: 
+PRINCIPLES AND 
+TECHNIQUES 3.00 3.00 A-
+   Percy Liang
+CS  224N NATURAL LANGUAGE 
+PROCESSING 3.00 3.00 A+
+   Chris Manning
+EE  126 SIMULATION OF DYNAMIC 
+SYSTEMS3.00 3.00 A
+   Sanjay Lall
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.917 Term Totals 10.00 10.00
+UG Cum GPA 3.576 Cum  Totals 95.00 92.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  123 ROBOTICS 3.00 3.00 B+
+   Oussama Khatib
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A-
+   Emma Brunskill
+CS  246 MINING MASSIVE DATASETS 3.00 3.00 A-
+   Jure Leskovec
+EE  180 DIGITAL SIGNAL 
+PROCESSING 3.00 3.00 A
+   Brad Osgood
+   
+UG Term GPA 3.750 Term Totals 12.00 12.00
+UG Cum GPA 3.592 Cum  Totals 107.00 104.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  195S INTRODUCTION TO 
+DISCRETE MATHEMATICS 5.00 5.00 B
+   Daniel Bextra
+CS  224S SPEECH RECOGNITION 3.00 3.00 B+
+   Andrew Maas
+PSYCH  204B COGNITIVE NEUROSCIENCE 4.00 4.00 A
+   John Gabrieli
+   
+UG Term GPA 3.323 Term Totals 12.00 12.00
+UG Cum GPA 3.55 Cum  Totals 119.00 116.00 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS 191 INDEPENDENT PROJECT 3.00 3.00 A
+   Fei-Fei Li
+CS  225A ROBOTICS AND CONTROL 3.00 3.00 A
+   Oussama Khatib
+CS  228 MACHINE LEARNING 3.00 3.00 A+
+   Andrew Ng
+CS  237A ROBOTICS MECHANICS 3.00 3.00 A
+   Angela Schoellig
+   
+UG Term GPA 4.000 Term Totals 15.00 15.00
+UG Cum GPA 3.632 Cum  Totals 134.00 131.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+PE  138 TABLE TENNIS: 
+INTERMEDIATE/ADVANCED1.00 1.00 S
+   Shashin Shodhan
+WELLNESS  202 MINDFULNESS 2.00 2.00 S
+   Frederick Luskin
+CS  230 DEEP LEARNING 3.00 3.00 A
+   Serena Yeung
+CS  231N NEURAL NETWORKS FOR 
+COMPUTER VISION3.00 3.00 A
+   Fei-Fei Li
+CS  194 SOFTWARE PROJECT 
+EXPERIENCE3.00 3.00 A
+   Mehran Sahami
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Winters,Alexandra Marie
+Student ID : 06542397
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 4.000 Term Totals 12.00 12.00
+UG Cum GPA 3.676 Cum  Totals 146.00 143.00
+GR Term GPA 4.000 Term Totals 12.00 12.00
+GR Cum GPA 4.000 Cum  Totals 12.00 12.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS 328 NLP FOR SOCIAL GOOD 3.00 3.00 A
+   Dan Jurafsky
+CS  231A COMPUTER VISION: FOUNDATIONS AND APPLICATIONS3.00 3.00 A
+   Silvio Savarese
+EE  264 DIGITAL COMMUNICATIONS 3.00 3.00 A
+   Tsachy Weissman
+   
+GR Term GPA 4.000 Term Totals 9.00 9.00
+GR Cum GPA 4.000 Cum  Totals 21.00 21.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  294 DIRECTED RESEARCH 3.00 3.00 A
+   Fei-Fei Li
+EE  367A CRYPTOGRAPHY 3.00 3.00 A-
+   Dan Boneh
+CS  399 INDEPENDENT STUDY3.00 3.00 A
+   Daphne Koller
+   
+GR Term GPA 3.959 Term Totals 9.00 9.00
+GR Cum GPA 3.986 Cum Totals 30.00 30.00
+ 
+Graduate Career Totals
+Cum GPA 3.986 Cum Totals 30.00 30.00
+Undergraduate Career Totals
+ 
+Cum GPA 3.676 Cum Totals 146.00 143.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 161.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 143.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT. 
+==========================================### BS in Computer Science Requirements Analysis
+#### Core Requirements
+1. **System Courses:**
+   - CS 106B - Programming Abstractions (Completed with B+)
+   - CS 107 - Computer Organization and Systems (Completed with B+)
+   - CS 111 - Operating Systems Principles (Completed with B+)
+   - CS 161 - Design and Analysis of Algorithms (Completed with B+)
+   
+2. **Theory Courses:**
+   - CS 103 - Mathematical Foundations of Computing (Completed with B)
+   - CS 109 - Introduction to Probability for Computer Scientists (Completed with B+)
+   
+3. **Math Requirements:** 
+   - MATH 19, 20, 21 or equivalent
+      - MATH 51 - Linear Algebra and Multivariable Calculus (Completed with B)
+      - MATH 52 - Integral Calculus of Several Variables (Completed with A-)
+      - MATH 53 - Ordinary Differential Equations (Completed with A-)
+   - Math Electives (Two Required)
+      - Advanced Placement Mathematics: Calculus AB (10.00 units)
+      - CS 195S - Introduction to Discrete Mathematics (Completed with B)
+   
+4. **Science Requirements:**
+   - PHYS 41 - Mechanics (Completed with A)
+   - PHYS 43 - Electricity and Magnetism (Completed with A-)
+   - Advanced Placement Chemistry (10.00 units)
+   
+5. **Technology in Society Requirement:**
+   - (Not explicitly mentioned in the transcript; requires course from an approved list)
+   
+6. **Engineering Fundamentals:**
+   - ENGR 40M - An Intro to Making: What is EE? (Completed with A)
+   - ENGR 70A - Programming Methodology (Java) (Completed with B+)
+
+#### Depth Requirements (AI Track)
+1. **Core Courses:**
+   - CS 221 - AI: Principles and Techniques (Completed with A-)
+   - CS 224N - Natural Language Processing (Completed with A+)
+   - CS 123 - Robotics (Completed with B+)
+   - CS 234 - Reinforcement Learning (Completed with A-)
+   - CS 246 - Mining Massive Datasets (Completed with A-)
+   
+2. **Track Requirements:**
+   - AI Methods: 
+     - CS 228 - Machine Learning (Completed with A+)
+   - Vision: 
+     - CS 231A - Computer Vision: Foundations and Applications (Completed with A)
+     - CS 231N - Neural Networks for Computer Vision (Completed with A)
+   - Robotics: 
+     - CS 225A - Robotics and Control (Completed with A)
+     - CS 237A - Robotics Mechanics (Completed with A)
+   
+3. **Electives:**
+   - PSYCH 204B - Cognitive Neuroscience (Completed with A)
+   - EE 180 - Digital Signal Processing (Completed with A)
+   
+#### Senior Project:
+   - CS 191 - Independent Project (Completed with A)
+   - CS 194 - Software Project Experience (Completed with A)
+
+#### Summary:
+- The student has satisfied all necessary BS core requirements, including systems, theory, math, and science.
+- All mandatory and elective depth courses for the AI track are completed.
+- Senior project requirement is fulfilled with grades exceeding the required GPA.
+
+### BS Result:
+**BS SAT**
+
+### MS in Computer Science with Artificial Intelligence Specialization Requirements Analysis
+#### Foundations Requirement:
+1. **Required Courses:**
+   - Logic, Automata & Complexity (CS 103) – Completed
+   - Probability (CS 109) – Completed
+   - Algorithmic Analysis (CS 161) – Completed
+   - Computer Organization & Systems (CS 107) – Completed
+   - Principles of Computer Systems (CS 111) – Completed
+   
+#### Significant Implementation Requirement:
+- This requirement is satisfied by taking one of the following courses already completed with a significant implementation component:
+   - CS 221 - AI: Principles and Techniques (Completed with A-)
+  
+#### Breadth Requirement (Courses chosen from different areas):
+1. **Area A - Mathematical and Theoretical Foundations:**
+   - CS 195S - Introduction to Discrete Mathematics (Completed with B)
+   
+2. **Area B - Computer Systems:**
+   - EE 264 - Digital Communications (Completed with A)
+
+3. **Area C - Applications:**
+   - CS 229 - Machine Learning (Completed with A+)
+   
+4. **Depth Requirement for AI Specialization** (all depth courses must be taken for a letter grade for at least 3 units):
+   - a) CS 221 (Completed with A-)
+   - b) Four of the specified courses:
+     - CS 224N (Completed with A+)
+     - CS 231A (Completed with A)
+     - CS 231N (Completed with A)
+     - CS 234 (Completed with A-)
+   - Additional courses to reach 21 units:
+     - CS 228 (Completed with A+)
+     - CS 237A (Completed with A)
+     - CS 229 (Completed with A+)
+     - EE 264 (Completed with A)
+     
+#### Electives:
+- CS 230 - Deep Learning (Completed with A)
+- CS 328 - NLP for Social Good (Completed with A)
+- EE 367A - Cryptography (Completed with A-)
+- CS 294 - Directed Research (Completed with A)
+- CS 399 - Independent Study (Completed with A)
+
+#### Additional MS Requirements:
+- Minimum 45 units including all courses submitted with the MS sheet.
+- Courses taken for letter grades.
+- Average grade for MS courses submitted is at least B.
+- No double-counting of BS courses.
+- At least 45 graduate units completed at Stanford.
+
+### MS Result:
+**MS SAT**
+
+### Final Output:
+**BS SAT**
+**MS SAT**

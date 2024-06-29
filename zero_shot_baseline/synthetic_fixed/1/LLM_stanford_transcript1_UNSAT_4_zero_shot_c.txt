@@ -1,0 +1,291 @@
+LLM_stanford_transcript1_UNSAT_4.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Wilson,Alex Robert
+Student ID : 06894523
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 10/05/2023
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Miller,Nancy T
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/15/2023
+Plan :Biology  
+--------- Academic Program ---------
+Program :   Biology
+06/21/2023 :   Biology (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+09/21/2019 :   Biology (BS)
+Completed Program 
+Coterminal Graduate, 06/15/2023 - 
+Coterminal Undergraduate, 09/21/2019 - 06/15/2023
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2019-2020 Autumn
+Advanced Placement      Biology 10.00
+Advanced Placement      Chemistry 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2019-2020 Autumn   
+Course Title Attempted Earned Grade 
+MATH  19 CALCULUS 5.00 1.00 D
+   Michael Jordan
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 C+
+   Mehran Sahami
+ENGLISH  10 LITERATURE & SCIENCE4.00 4.00 B+
+   Sarah Kailath
+MUSIC  151 INTRO TO MUSIC 2.00 2.00 CR
+   James Reese
+
+UG Term GPA 2.870 Term Totals 16.00 12.00
+UG Cum GPA 2.870 Cum  Totals 16.00 12.00
+2019-2020 Winter   
+Course Title Attempted Earned Grade 
+PSYCH  50 INTRO TO COGNITIVE SCIENCE4.00 4.00 C-
+   Melanie Krug
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 D+
+   Jerry Cain
+CHEM  31B CHEMICAL PRINCIPLES5.00 5.00 B
+   Ronald Zare
+PHYS  21 MECHANICS 4.00 4.00 C+
+   Patricia Burchat
+
+UG Term GPA 2.675 Term Totals 18.00 18.00
+UG Cum GPA 2.773 Cum  Totals 34.00 30.00
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Wilson,Alex Robert
+Student ID : 06894523
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+2019-2020 Spring   
+Course Title Attempted Earned Grade 
+PHYS  43 ELECTRICITY AND MAGNETISM4.00 4.00 C-
+   Ian Fisher
+BIO  101 ECOLOGICAL PRINCIPLES4.00 4.00 B
+   Elizabeth Hadly
+MUSIC  152 ADVANCED MUSIC 2.00 2.00 B+
+   James Reese
+HISTORY  50 HISTORY OF SCIENCE 4.00 4.00 A-
+   Greg Priest
+
+UG Term GPA 2.875 Term Totals 14.00 14.00
+UG Cum GPA 2.725 Cum  Totals 48.00 44.00
+2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+ANTHRO  101 CULTURAL ANTHROPOLOGY4.00 4.00 B+
+   Ian Robertson
+CS  107E COMPUTER SYSTEMS ENGINEERING5.00 5.00 D
+   Jerry Cain
+BIO  110 GENETICS4.00 4.00 C+
+   Stanley Falkow
+MATH  51 LINEAR ALGEBRA 5.00 2.00 D+
+   Robert Osserman
+
+UG Term GPA 2.570 Term Totals 18.00 15.00
+UG Cum GPA 2.675 Cum  Totals 66.00 59.00
+2020-2021 Winter   
+Course Title Attempted Earned Grade 
+BIO  120 MARINE BIOLOGY4.00 4.00 B+
+   Barbara Block
+PHIL  150 PHILOSOPHY OF MIND3.00 3.00 C
+   Helen Longino
+CHEM  141 ORGANIC CHEMISTRY5.00 5.00 D+
+   John Brauman
+CS  109 INTRO TO PROBABILITY4.00 4.00 D+
+   Trevor Hastie
+
+UG Term GPA 2.387 Term Totals 16.00 16.00
+UG Cum GPA 2.573 Cum  Totals 82.00 75.00
+2020-2021 Spring   
+Course Title Attempted Earned Grade 
+BIO  150 BIOCHEMISTRY 4.00 4.00 B-
+   Roger Kornberg
+MUSIC  172 CHORAL MUSIC 2.00 2.00 CR
+   Stephen Hinton
+MATH  52 MULTIVARIATE CALCULUS 5.00 2.00 D+
+   Ralph Cohen
+ENGLISH  30 WRITING AND RHETORIC 4.00 4.00 C+
+   Jonathan Berger
+
+UG Term GPA 2.560 Term Totals 15.00 12.00
+UG Cum GPA 2.600 Cum  Totals 97.00 87.00
+2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS PRINCIPLES 5.00 5.00 D-
+   Timothy Roscoe
+PSYCH  101 INTRODUCTION TO PSYCHOLOGY 4.00 4.00 B-
+   Laura Carstensen
+CS  161 DESIGN AND ANALYSIS OF ALGORITHMS 5.00 5.00 D+
+   Tim Roughgarden
+MUSIC  171 CHAMBER MUSIC 2.00 2.00 A
+   Stephen Harrison
+
+UG Term GPA 2.220 Term Totals 16.00 16.00
+UG Cum GPA 2.552 Cum  Totals 113.00 103.00
+2021-2022 Winter   
+Course Title Attempted Earned Grade 
+ENGLISH  51 AMERICAN LITERATURE 4.00 4.00 B-
+   Elizabeth Tallent
+BIO  140 NEUROBIOLOGY 5.00 5.00 D
+   Eric Knudsen
+HISTORY  64 WORLD HISTORY 4.00 4.00 B+
+   Allyson Hobbs
+CS  221 ARTIFICIAL INTELLIGENCE 5.00 5.00 D
+   Daphne Koller
+
+UG Term GPA 2.575 Term Totals 18.00 18.00
+UG Cum GPA 2.550 Cum  Totals 131.00 121.00
+2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  224N NATURAL LANGUAGE PROCESSING 5.00 5.00 D
+   Christopher Manning
+BIO  151 CELL BIOLOGY 5.00 5.00 C-
+   Tim Stearns
+CHEM  110 PHYSICAL CHEMISTRY 4.00 4.00 C+
+   Richard Zare
+
+UG Term GPA 2.400 Term Totals 14.00 14.00
+UG Cum GPA 2.540 Cum  Totals 145.00 135.00
+2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+PSYCH  111 ADVANCED PSYCHOLOGY 4.00 4.00 B
+   James Gross
+CS  229 MACHINE LEARNING 5.00 5.00 D+
+   Andrew Ng
+BIO  180 CONSERVATION BIOLOGY 4.00 4.00 B
+   Gretchen Daily
+MATH  53 COMPLEX VARIABLES 5.00 2.00 D+
+   John L. Hennessy
+
+UG Term GPA 2.690 Term Totals 18.00 15.00
+UG Cum GPA 2.555 Cum  Totals 163.00 150.00
+2022-2023 Winter   
+Course Title Attempted Earned Grade 
+BIO  210S SYNTHETIC BIOLOGY 4.00 4.00 B+
+   Drew Endy
+PHIL  151E LOGIC AND COMPUTATION 3.00 3.00 C+
+   Solomon Feferman
+EE  101C ELECTRONICS 5.00 5.00 D
+   Thomas Lee
+BIO  130 SENSORY NEUROBIOLOGY 4.00 4.00 C-
+   David Bialik
+
+UG Term GPA 2.520 Term Totals 16.00 16.00
+UG Cum GPA 2.550 Cum  Totals 179.00 166.00
+2022-2023 Spring   
+Course Title Attempted Earned Grade 
+MUSIC  180 COMPOSITION 4.00 4.00 B+
+   Mark Applebaum
+BIO  128 ANIMAL BEHAVIOR 5.00 5.00 C+
+   Robert Sapolsky
+PHYS  110 INTRODUCTION TO BIOPHYSICS 4.00 4.00 D+
+   Steven Chu
+
+UG Term GPA 2.790 Term Totals 13.00 13.00
+UG Cum GPA 2.573 Cum  Totals 193.00 179.00
+
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USA
+Undergraduate Unofficial Transcript
+Name : Wilson,Alex Robert
+Student ID : 06894523
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+
+Graduate Career Totals
+Cum GPA 2.573 Cum Totals 13.00 13.00
+
+Undergraduate Career Totals
+Cum GPA 2.573 Cum Totals 193.00 179.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 193.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 179.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+END OF TRANSCRIPT.
+==========================================Based on the provided degree requirements and the student's transcript, here is the detailed analysis:
+
+### BS Core Requirements Analysis
+
+1. **Programming Abstractions (CS106B)**
+   - Taken in Winter 2019-2020, Grade: D+
+   
+2. **Computer Organization and Systems (CS107) or CS107E**
+   - CS107E taken in Autumn 2020-2021, Grade: D
+   
+3. **Principles of Computer Systems (CS111)**
+   - Taken in Autumn 2021-2022, Grade: D-
+   
+4. **Mathematical Foundations of Computing (CS103)**
+   - Not taken
+   
+5. **Introduction to Probability for Computer Scientists (CS109)**
+   - Taken in Winter 2020-2021, Grade: D+
+   
+6. **Data Structures and Algorithms (CS161)**
+   - Taken in Autumn 2021-2022, Grade: D+
+   
+### Senior Project Requirements Analysis
+
+1. The student did not complete any of the senior project courses (e.g., CS194, CS194W, CS210B, CS191, CS191W, CS294).
+
+### Mathematics and Science Requirements Analysis
+
+1. **Mathematics Requirements (26 units minimum)**
+   - MATH 19: Taken in Autumn 2019-2020, Grade: D
+   - MATH 51: Taken Autumn 2020-2021, Grade: D+
+   - MATH 52: Taken Spring 2020-2021, Grade: D+
+   - MATH 53: Taken Autumn 2022-2023, Grade: D+
+
+   The total units for Mathematics: 16 units attempted, but several do not count due to grades below C-.
+
+2. **Science Requirements (11 units minimum)**
+   - PHYS 21: Taken in Winter 2019-2020, Grade: C+
+   - PHYS 43: Taken in Spring 2019-2020, Grade: C-
+
+   The total units for Science: 8 units attempted, 8 units earned.
+
+### AI Track Core, Depth, and Elective Requirements Analysis
+
+1. **Core (15 units minimum)**
+   - CS107 or CS107E (already mentioned), Grade: D
+   - CS111 (already mentioned), Grade: D-
+   - CS161 (already mentioned), Grade: D+
+
+2. **Track Requirements**
+   - CS221: Artificial Intelligence - Winter 2021-2022, Grade: D
+   - CS224N: Natural Language Processing - Spring 2021-2022, Grade: D
+   - CS229: Machine Learning - Autumn 2022-2023, Grade: D+
+
+### Conclusion
+
+Alex Robert Wilson does **not** satisfy the required courses for the BS in Computer Science. The key deficiencies are:
+
+- CS103 (Mathematical Foundations of Computing) is not taken.
+- The grades in significant core courses (CS106B, CS107E, CS111, CS109, CS161, etc.) are below the required minimum (C-).
+- The Mathematics requirement is not fulfilled (less than 26 units with acceptable grades).
+- The Science requirement is partially fulfilled (needs 3 more units).
+- No senior project course completed.
+- The GPA for core, depth, and senior project courses is below the required minimum of 2.0.
+
+**BS NOT SATISFIED**.
+
+### MS Specialization Requirements Analysis
+
+If the BS requirements are not satisfied, the student is not eligible for the MS.
+
+**MS NOT SATISFIED**. 
+
+The student must retake and improve grades in the deficient courses listed above and fulfill the remaining requirements in order to meet the degree requirements for the BS in Computer Science before considering the MS specialization in Artificial Intelligence.

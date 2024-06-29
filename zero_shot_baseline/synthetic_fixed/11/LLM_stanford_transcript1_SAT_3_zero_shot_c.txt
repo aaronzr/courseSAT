@@ -1,0 +1,338 @@
+LLM_stanford_transcript1_SAT_3.txt
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+Print Date: 04/17/2024
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************
+Academic Advisor: Johnson,Michael R
+  
+--------- Stanford Degrees Awarded ---------
+  
+Degree :Bachelor of Science 
+Confer Date :06/17/2024
+Plan :Computer Science 
+--------- Academic Program ---------
+Program :   Computer Science
+01/06/2024 :Computer Science (MS)
+Active in Program 
+Program :   Undergraduate Matriculated
+06/21/2021 :Computer Science (BS)
+Completed Program 
+Coterminal Graduate, 01/04/2024 - 
+Coterminal Undergraduate, 01/05/2023 - 01/04/2024
+ 
+--------- Advanced Placement Test Credit ---------
+Applied Toward  Undergraduate Matriculated Program
+2020-2021 Autumn
+Advanced Placement      Physics 10.00
+Advanced Placement      Mathematics: Calculus AB 10.00
+Total Quarter Units Posted: 20.00
+Allowable Test Credit subject to restrictions.
+--------- Beginning of Academic  Record --------- 2020-2021 Autumn   
+Course Title Attempted Earned Grade 
+CS  106A PROGRAMMING 
+METHODOLOGY5.00 5.00 A-
+   Mehran Sahami
+MATH  19 CALCULUS5.00 5.00 B+
+   Richard Taylor
+IHUM  51 TRANSFORMATIONS: THE 
+INTERSECTION OF HIGH ART 
+AND CONTEMPORARY 
+CULTURE4.00 4.00 B
+   Emma Davis
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Debra Fong
+   
+UG Term GPA 3.450 Term Totals 15.00 15.00
+UG Cum GPA 3.450 Cum  Totals 15.00 15.00
+ 2020-2021 Winter   
+Course Title Attempted Earned Grade 
+CS  106B PROGRAMMING 
+ABSTRACTIONS5.00 5.00 B+
+   Jerry Cain
+MATH  20 CALCULUS5.00 5.00 A
+   Jonathan Smith
+PHYSICS  41 MECHANICS 4.00 4.00 B+
+   Carla Green
+MUSIC  171 CHAMBER MUSIC 1.00 0.00 W
+   Scott St. John
+   
+UG Term GPA 3.708 Term Totals 14.00 13.00
+UG Cum GPA 3.582 Cum  Totals 29.00 28.00  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+ 2020-2021 Spring   
+Course Title Attempted Earned Grade 
+CS  103 MATHEMATICAL 
+FOUNDATIONS OF COMPUTING5.00 5.00 B
+   Emma Brunskill
+MATH  21 CALCULUS5.00 5.00 A-
+   Richard Taylor
+PHYSICS  43 ELECTRICITY AND 
+MAGNETISM4.00 4.00 B+
+   Ian Fisher
+PWR  1CR WRITING & RHETORIC 1:  
+WRITING NATURE:  
+DISCOURSES IN ECOLOGY, 
+CULTURE, AND TECHNOLOGY4.00 4.00 A
+   Carolyn Ross
+   
+UG Term GPA 3.560 Term Totals 18.00 18.00
+UG Cum GPA 3.548 Cum  Totals 47.00 46.00
+ 2021-2022 Autumn   
+Course Title Attempted Earned Grade 
+CS  107 COMPUTER ORGANIZATION 
+AND SYSTEMS5.00 5.00 B
+   Julie Zelenski
+ENGR 40M AN INTRO TO MAKING: 
+WHAT IS EE?5.00 5.00 A-
+   David Allstot
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 A
+   Sharon Wei
+CS  109 INTRO TO PROBABILITY FOR 
+COMPUTER SCIENTISTS5.00 5.00 B+
+   Mehran Sahami
+   
+UG Term GPA 3.643 Term Totals 16.00 16.00
+UG Cum GPA 3.564 Cum  Totals 63.00 62.00 2021-2022 Winter   
+Course Title Attempted Earned Grade 
+CS  111 OPERATING SYSTEMS 
+PRINCIPLES5.00 5.00 B+
+   John Ousterhout
+PHYSICS  44 CLASSICAL MECHANICS 
+LAB1.00 1.00 S
+   Carla Green
+ANTHRO  101 THE AZTECS AND THEIR 
+ANCESTORS: INTRODUCTION 
+TO MESOAMERICAN 
+ARCHAEOLOGY3.00 3.00 A-
+   Ian Robertson
+   
+UG Term GPA 3.611 Term Totals 9.00 9.00
+UG Cum GPA 3.575 Cum  Totals 72.00 71.00
+ 2021-2022 Spring   
+Course Title Attempted Earned Grade 
+CS  161 DESIGN AND ANALYSIS OF 
+ALGORITHMS5.00 5.00 A-
+   Tim Roughgarden
+PHYSICS  81 ELECTRICITY AND 
+MAGNETISM LAB1.00 1.00 S
+   Ian Fisher
+PWR  2RT WRITING & RHETORIC 2: 
+THE RHETORIC OF SCIENCE4.00 4.00 A-
+   Rod Taylor
+  
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+UG Term GPA 3.700 Term Totals 10.00 10.00
+UG Cum GPA 3.596 Cum  Totals 82.00 81.00
+ 2022-2023 Autumn   
+Course Title Attempted Earned Grade 
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES3.00 3.00 A-
+   Andrew Ng
+CS  224N NATURAL LANGUAGE 
+PROCESSING WITH DEEP 
+LEARNING3.00 3.00 B+
+   Christopher Manning
+CS  229 MACHINE LEARNING3.00 3.00 B
+   Andrew Ng
+CS  191 INDEPENDENT STUDY IN 
+COMPUTER SCIENCE3.00 3.00 A
+   James Zou
+   
+UG Term GPA 3.533 Term Totals 12.00 12.00
+UG Cum GPA 3.583 Cum  Totals 94.00 93.00
+ 2022-2023 Winter   
+Course Title Attempted Earned Grade 
+CS  124 FROM LANGUAGES TO 
+INFORMATION3.00 3.00 A-
+   Chris Manning
+CS  221 AI: PRINCIPLES AND 
+TECHNIQUES3.00 3.00 A
+   Andrew Ng
+CS  228 MACHINE LEARNING THEORY3.00 3.00 B+
+   Stefano Ermon
+ANTHRO  132D BIOHACKERS: THE 
+ETHICS OF SELF-EXPERIMENTATION3.00 3.00 A
+   Natasha Myers
+   
+UG Term GPA 3.683 Term Totals 12.00 12.00
+UG Cum GPA 3.592 Cum  Totals 106.00 105.00 2022-2023 Spring   
+Course Title Attempted Earned Grade 
+CS  234 REINFORCEMENT LEARNING 3.00 3.00 A
+   Emma Brunskill
+CS  245 DATABASE SYSTEMS PRINCIPLES  3.00 3.00 B+
+   Jennifer Widom
+CS  246 MINING MASSIVE DATASETS3.00 3.00 A-
+   Jure Leskovec
+PHIL  151 METALOGIC3.00 3.00 A-
+   Thomas Icard
+   
+UG Term GPA 3.733 Term Totals 12.00 12.00
+UG Cum GPA 3.602 Cum  Totals 118.00 117.00
+ 2023-2024 Autumn   
+Course Title Attempted Earned Grade 
+CS  257 LOGIC AND AUTOMATED 
+REASONING3.00 3.00 A
+   Michael Genesereth
+CS  270 COMPUTATIONAL GENOMICS3.00 3.00 A-
+   Anshul Kundaje
+CS  294 RESEARCH PROJECTS IN AI3.00 3.00 A-
+   Chelsea Finn
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Sharon Wei
+   
+UG Term GPA 3.700 Term Totals 10.00 10.00
+UG Cum GPA 3.608 Cum  Totals 128.00 127.00
+ 2023-2024 Winter   
+Course Title Attempted Earned Grade 
+CS  223A INTRODUCTION TO 
+ROBOTICS3.00 3.00 A
+   Oussama Khatib
+CS  285 HCI AND SOFTWARE 
+ENGINEERING 3.00 3.00 A-
+   Michael Bernstein
+ENGR  205 INTRODUCTION TO 
+ENTREPRENEURIAL ENGINEERING3.00 3.00 A
+   Tom Byers 
+MUSIC  171 CHAMBER MUSIC 1.00 1.00 CR
+   Sharon Wei
+   
+UG Term GPA 3.833 Term Totals 10.00 10.00
+UG Cum GPA 3.623 Cum  Totals 138.00 137.00
+GR Term GPA 0.000 Term Totals 1.00 1.00
+GR Cum GPA 0.000 Cum  Totals 1.00 1.00
+ 2023-2024 Spring   
+Course Title Attempted Earned Grade 
+CS  231A COMPUTER VISION: FROM 
+3D RECONSTRUCTION TO 
+RECOGNITION3.00 3.00 A
+   Silvio Savarese
+CS  371 COMPUTATIONAL NEURAL 
+MODELS3.00 3.00 A-
+   Kwabena Boahen
+PHIL  152 METAPHYSICS3.00 3.00 B+
+   Julia Nefsky
+PHYSICS  45 LIGHT AND HEAT 4.00 4.00 A-
+   Patricia Burchat
+   
+Leland Stanford Jr. University
+Stanford, CA 94305 
+USAUndergraduate Unofficial Transcript
+Name : Smith,Alexandra Marie
+Student ID : 07234289
+Information must be kept confidential and must not be disclosed to other parties without the written consent of the student.
+   
+UG Term GPA 3.725 Term Totals 13.00 13.00
+UG Cum GPA 3.631 Cum  Totals 151.00 150.00
+UNITS COMPLETED TOWARDS UNDERGRADUATE DEGREE: 150.00
+STANFORD TOTAL UNDERGRADUATE UNITS: 150.00
+*********************************************************************************************
+*  Worksheet - For office use by authorized Stanford personnel *
+*********************************************************************************************END OF TRANSCRIPT.
+==========================================### BS Requirements Analysis:
+
+1. **BS Core Requirements:**
+   - CS 106B (Programming Abstractions): **Completed** (B+)
+   - CS 107 (Computer Organization and Systems): **Completed** (B)
+   - CS 111 (Operating Systems Principles): **Completed** (B+)
+   - CS 103 (Mathematical Foundations of Computing): **Completed** (B)
+   - CS 109 (Introduction to Probability for Computer Scientists): **Completed** (B+)
+   - CS 161 (Design and Analysis of Algorithms): **Completed** (A-)
+
+2. **BS Senior Project Requirements:**
+   - CS 191 (Independent Study in Computer Science): **Completed** (3 units, A)
+
+3. **BS AI Elective Requirements:**
+   - Math and Science:
+     - MATH 19, 20, 21: **Completed**
+     - CS 103: **Completed**
+     - CS 109: **Completed**
+     - PHYSICS 41: **Completed** (B+)
+     - PHYSICS 43: **Completed** (B+)
+   - Engineering Fundamentals:
+     - CS 106B: **Completed**
+     - ENGR 40M: **Completed** (A-)
+   - Core, Depth, Senior Project Combined GPA: Minimum 2.0, **GPA**: **3.631**
+   - Core (15 units minimum): **Fulfilled**
+     - CS 107: **Completed** (5 units)
+     - CS 111: **Completed** (5 units)
+     - CS 161: **Completed** (5 units)
+   - AI Depth (25 units and seven courses minimum):
+     - CS 221 (AI: Principles and Techniques): **Completed** (3 units, A-, A)
+     - CS 224N (Natural Language Processing with Deep Learning): **Completed** (3 units, B+)
+     - CS 229 (Machine Learning): **Completed** (3 units, B)
+     - CS 234 (Reinforcement Learning): **Completed** (3 units, A)
+     - CS Elective (additional depth courses): 
+       - CS 124 (From Languages to Information): **Completed** (3 units, A-)
+       - CS 228 (Machine Learning Theory): **Completed** (3 units, B+)
+       - CS 245 (Database Systems Principles): **Completed** (3 units, B+)
+       - CS 246 (Mining Massive Datasets): **Completed** (3 units, A-)
+       - CS 257 (Logic and Automated Reasoning): **Completed** (3 units, A)
+       - CS 270 (Computational Genomics): **Completed** (3 units, A-)
+       - CS 294 (Research Projects in AI): **Completed** (3 units, A-)
+       - CS 371 (Computational Neural Models): **Completed** (3 units, A-)
+   - Total AI Depth Units: Over 25 units from required and elective courses.
+   - Senior Project: **Completed** (CS 191, 3 units)
+
+**Result: BS SAT**
+
+### MS Requirements Analysis:
+
+1. **Foundations Requirement:**
+   - CS 103 (Logic, Automata & Complexity): **Completed** as UG
+   - CS 109 (Probability): **Completed** as UG
+   - CS 161 (Algorithmic Analysis): **Completed** as UG
+   - CS 107 (Computer Organization & Systems): **Completed** as UG
+   - CS 111 (Principles of Computer Systems): **Completed** as UG
+
+   - Total units used: up to 10 units (already satisfied as they were taken during UG)
+
+2. **Significant Implementation Requirement:**
+   - CS 221 (AI: Principles and Techniques): **Completed** (A)
+     - Note: Meets implementation requirement.
+
+3. **Breadth Requirement:**
+   - Course 1 (Area B: Computer Systems): CS 285 (HCI and Software Engineering): **Completed** (A-)
+   - Course 2 (Area C: Applications): CS 245 (Database Systems Principles): **Completed** (B+)
+   - Course 3 (Area D: Computing and Society): ANTHRO 132D (Biohackers: The Ethics of Self-Experimentation): **Completed** (A)
+
+4. **Artificial Intelligence Depth:**
+   - CS 221: **Completed** (A-, A)
+   - CS 223A: **Completed** (A)
+   - CS 224N: **Completed** (B+)
+   - CS 229: **Completed** (B)
+   - CS 234: **Completed** (A)
+   - Additional depth units from categories:
+     - CS 257: **Completed** (A)
+     - CS 270: **Completed** (A-)
+     - CS 294: **Completed** (A-)
+     - CS 371: **Completed** (A-)
+   - Total AI Depth Units: **At least 21 units**
+
+5. **Electives:**
+   - Needs a total of 45 units for the MS degree, including Breadth and Depth.
+
+**Result: MS SAT**
+
+**Summary:**
+
+- **BS SAT**
+- **MS SAT**
+
+
+Alexandra Marie Smith has satisfied all requirements for both the BS and MS degrees in Computer Science at Stanford University.
