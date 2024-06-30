@@ -368,7 +368,6 @@ def translate_undergrad_to_formal_statements(doc, requirement):
 	formula_file.close()
 
 if __name__ == "__main__":
-	'''
 	translate_undergrad_to_formal_statements(doc="../program_sheets/CS_AI_2324PS.pdf", \
 	 					requirement="Mathmatics and Science Requirement")
 	translate_undergrad_to_formal_statements(doc="../program_sheets/CS_AI_2324PS.pdf", \
@@ -381,7 +380,6 @@ if __name__ == "__main__":
 	 					requirement="AI Track DEPTH")
 	translate_undergrad_to_formal_statements(doc="../program_sheets/CS_AI_2324PS.pdf", \
 	 					requirement="SENIOR PROJECT")
-	'''
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
 	 			requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
