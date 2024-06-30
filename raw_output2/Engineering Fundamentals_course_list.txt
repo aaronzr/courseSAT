@@ -1,0 +1,20 @@
+Sure! Let's extract the required courses from the "Engineering Fundamentals" section, including any relevant elective courses mentioned in the notes.
+
+The courses directly mentioned in the Engineering Fundamentals section are:
+1. CS106B
+2. ENGR40M
+3. ENGR76
+
+Additionally, according to note (2) under the "Mathematics and Science Requirements," electives include courses such as ENGR 108.
+
+Combining the required courses and the electives:
+
+```python
+courses = ["CS106B", "ENGR40M", "ENGR76", "ENGR108"]
+```
+
+Here is the single Python list containing the course numbers:
+
+```python
+["CS106B", "ENGR40M", "ENGR76", "ENGR108"]
+```

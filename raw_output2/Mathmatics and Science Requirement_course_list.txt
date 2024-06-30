@@ -1,0 +1,12 @@
+```python
+[
+    "MATH19", "MATH20", "MATH21", "CS103", "CS109", 
+    "MATH51", "MATH52", "MATH53", "MATH104", "MATH107", "MATH108", "MATH109", "MATH110", "MATH113", 
+    "CS157", "CS205L", 
+    "PHIL151", 
+    "CME100", "CME102", "CME104", 
+    "ENGR108", 
+    "PHYS41", "PHYS21", "PHYS61", "PHYS43", "PHYS23", "PHYS81", "PHYS63", 
+    "PSYCH30", "AP Chemistry"
+]
+```

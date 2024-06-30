@@ -133,9 +133,7 @@ def check_stanford_master_breadth_requirements(course_choices):
     solver.setOption("produce-unsat-cores", "true")
     solver.setOption("produce-models", "true")
     solver.setLogic("ALL")
-    # Couse choices along with untis taken  
-    
-    #a list of solver statements for courses from LLM: 
+
     cs154 = solver.mkConst(solver.getBooleanSort(), "CS154")
     cs154_units = solver.mkConst(solver.getIntegerSort(), "CS154_units")
 

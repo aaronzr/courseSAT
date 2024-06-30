@@ -1,0 +1,59 @@
+Certainly! Here is the list of required courses from the AI Track Core along with the relevant elective courses:
+
+Core Courses:
+- CS107 or 107E (Computer Organization and Systems)
+- CS111 (Operating Systems Principles)
+- CS161 (Design and Analysis of Algorithms)
+
+Track Requirement A:
+- CS221 (AI: Principles and Techniques)
+
+Track Requirement B (Two courses, each from a different area):
+- AI Methods: CS224R, CS228, CS229, CS229M, CS229T, CS234, CS238
+- Natural Language Processing: CS124, CS224N, CS224S, CS224U, CS224V
+- Vision: CS131, CS231A, CS231N
+- Robotics: CS123, CS223A, CS237A
+
+Track Requirement C (One additional course from the Track Requirement B list, or from the following):
+- AI Methods: CS157, CS205L, CS230, CS236, CS257, Stats315A, Stats315B
+- Comp Bio: CS235, CS279, CS371
+- Information and the Web: CS224W, CS276
+- Ethics: CS256
+- Other: CS151, CS227B
+- Robotics and Control: CS225A, CS327A, CS329 (with advisor approval), ENGR205, MS&E251, MS&E351
+
+Track Electives (At least three additional courses selected from the Track Requirement B list, C list, the General CS Electives list, or the following):
+- CS325B, CS326, CS329D, CS330, CS338, CS428
+- EE263, EE278, EE364A, EE364B
+- MS&E252, MS&E352, MS&E355
+- PHIL152
+- PSYCH204A, PSYCH204B, PSYCH209
+- STATS200, STATS202, STATS203, STATS205, STATS271
+
+Senior Project Courses:
+- At least 3 units of CS191, CS191W, CS194, CS194H, CS194W, CS210B, or CS294
+
+The combined Python list for all these courses is:
+
+```python
+[
+    "CS107", "CS107E", "CS111", "CS161", "CS221",
+    "CS224R", "CS228", "CS229", "CS229M", "CS229T", "CS234", "CS238",
+    "CS124", "CS224N", "CS224S", "CS224U", "CS224V",
+    "CS131", "CS231A", "CS231N",
+    "CS123", "CS223A", "CS237A",
+    "CS157", "CS205L", "CS230", "CS236", "CS257", "Stats315A", "Stats315B",
+    "CS235", "CS279", "CS371",
+    "CS224W", "CS276",
+    "CS256",
+    "CS151", "CS227B",
+    "CS225A", "CS327A", "CS329", "ENGR205", "MS&E251", "MS&E351",
+    "CS325B", "CS326", "CS329D", "CS330", "CS338", "CS428",
+    "EE263", "EE278", "EE364A", "EE364B",
+    "MS&E252", "MS&E352", "MS&E355",
+    "PHIL152",
+    "PSYCH204A", "PSYCH204B", "PSYCH209",
+    "STATS200", "STATS202", "STATS203", "STATS205", "STATS271",
+    "CS191", "CS191W", "CS194", "CS194H", "CS194W", "CS210B", "CS294"
+]
+```

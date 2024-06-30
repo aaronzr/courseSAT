@@ -1,0 +1,7 @@
+Based on the provided details and notes in the program sheet, the Technology in Society (TiS) requirement can be fulfilled by courses from the Approved TiS list at ughb.stanford.edu the year taken. Additionally, as per note (8), courses CS 181W or 182W can also meet the Writing in the Major (WiM) requirement along with the Technology in Society (TiS) requirement.
+
+Here are the courses related to the Technology in Society Requirement:
+
+```python
+["CS181W", "CS182W"]
+```
