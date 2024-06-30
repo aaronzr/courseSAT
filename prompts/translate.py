@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 from openai import OpenAI
 
-RESULTS_DIR = "../raw_output"
+RESULTS_DIR = "../raw_output2"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 STANFORD_SOE_SCIENCE_WEBLINK = "https://ughb.stanford.edu/courses/approved-courses/science-courses-2023-24"
@@ -200,8 +200,15 @@ def translate_masters_to_formal_statements(doc, requirement):
 		Given a list of required and elective courses {courses} from {requirement} in the following
 		document: {text}. GPT4o has identified the following list of courses for cvc5 formula constraints solving: 
 		i) a list of courses: {grouped_courses}; and ii) course units: {course_units}. Please carefully analyze the units and course requirements in the {requirement} and generate solver formulas in python code
-		that check if specified constraints are satisfied accordingly. 
-		For example, one such formulaa to check if a list of course 
+		that check if specified constraints are satisfied accordingly. You can assume a user input of taken courses in a variable `course_choices` in the following format: 
+		```python
+  		course_choices = {{
+			cs154: [False, 0],
+			cs140: [True, 3],
+			history244f: [True, 3],
+			cs348a: [True, 3]}}
+		```
+		Given a list of taken course_choices as input, one such formula to check if a list of course satisfies: 
 		```python
 		course_requirements = [
 		cs103,
@@ -335,8 +342,15 @@ def translate_undergrad_to_formal_statements(doc, requirement):
  	Given a list of required and elective courses {courses} from {requirement} in the following
 	document: {text} and SOE science elective courses: {SOE_science_courses}, GPT4o has identified the following list of courses for cvc5 formula constraints solving: 
  	i) a list of courses: {grouped_courses}; and ii) course units: {course_units}. Please carefully analyze the units and course requirements in the {requirement} and generate solver formulas in python code
-  	that check if specified constraints are satisfied accordingly. 
-	For example, one such formulaa to check if a list of course 
+  	that check if specified constraints are satisfied accordingly. You can assume a user input of taken courses in a variable `course_choices` in the following format: 
+		```python
+  		course_choices = {{
+			cs154: [False, 0],
+			cs140: [True, 3],
+			history244f: [True, 3],
+			cs348a: [True, 3]}}
+		```
+		Given a list of taken course_choices as input, one such formula to check if a list of courses satisfy constraints can be: 
 	```python
 	course_requirements = [
 	cs103,
