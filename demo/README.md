@@ -1,30 +1,8 @@
-# PDF RAG ChatBot with Llama2 and Gradio
-![image](https://github.com/Niez-Gharbi/PDF-RAG-with-Llama2-and-Gradio/assets/57814219/29efb4c9-1f15-479a-a57b-34bdd2085068)
+# Requirements2LLM-Solver Demo
 
 
-PDFChatBot is a Python-based chatbot designed to answer questions based on the content of uploaded PDF files. It utilizes the Gradio library for creating a user-friendly interface and LangChain for natural language processing.
 
-## Technologies Used 🚀
-* Langchain
-* Llama2
-* ChromaDB
-* Hugging Face
-* Gradio
-
-## Features ⭐
-* Process PDF files and extract information for answering questions.
-* Maintain chat history and provide detailed explanations.
-* Generate responses using a Conversational Retrieval Chain.
-* Display specific pages of PDF files according to the answer.
-
-## Prerequisites 📋
-Before running the ChatBot, ensure that you have the required dependencies installed. You can install them using the following command:
-```
-pip install -r requirements.txt
-```
-
-## Configuration ⚙️
-The ChatBot uses a configuration file (config.yaml) to specify Hugging Face model and embeddings details. Make sure to update the configuration file with the appropriate values if you wanted to try another model or embeddings.
+PDFChatBot is a Python-based chatbot designed to answer questions based on the content of uploaded PDF files. It utilizes the Gradio library for creating a user-friendly interface. 
 
 ## Usage 📚
 1. Upload a PDF file using the "📁 Upload PDF" button.
