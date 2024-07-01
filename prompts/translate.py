@@ -9,6 +9,7 @@ RESULTS_DIR = "../raw_output2"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 STANFORD_SOE_SCIENCE_WEBLINK = "https://ughb.stanford.edu/courses/approved-courses/science-courses-2023-24"
+STANFORD_SEMINAR_WEBLINK = "https://exploreintrosems.stanford.edu/seminars-school-engineering"
 
 def gpt_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -84,6 +85,73 @@ def llm_synthetic_transcript(transcript_path, count):
 #granular translation: requirement by requirement precise solver statement translation
 def translate_masters_to_formal_statements(doc, requirement):
 	text = pdf_to_text(doc)
+	seminar_courses = weblink_to_text(STANFORD_SEMINAR_WEBLINK)
+ 
+	if requirement == "ELECTIVES":
+		extract_prompt = f"""
+		Please extract the seminar course numbers from {seminar_courses} based on the following: {text}.
+		Please pay attention to notes for relevant electives of {requirement} and extract relevant elective courses related to {requirement} too.
+		Remember, please output output all course numbers in a single python list [] only.  
+		"""
+
+		seminar_courses = gpt_infer(extract_prompt)
+		print(seminar_courses)
+		course_file = open(f"{RESULTS_DIR}/{requirement}_course_list.txt", "w+")
+		course_file.write(seminar_courses)
+
+		solver_prompt = f"""
+		Given a list of courses {seminar_courses}, please translate each course into 
+		corresponding cvc5 solver statements. For example, for cs103, you need to generate two python code statements like below: 
+		```python 
+		cs103 = solver.mkConst(solver.getBooleanSort(), "CS103")
+		cs103_units = solver.mkConst(solver.getIntegerSort(), "CS103_units")
+		```
+		The course variable should be in lower case. For example cs103, NOT CS103 or CS 103 or CS_103 on the left hand. 
+		Please generate compilable solver statements for each course in the list. Please output code only. 
+		"""
+		solver_statements = gpt_infer(solver_prompt)
+		print(solver_statements)
+		solver_file = open(f"{RESULTS_DIR}/{requirement}_solver_statements.py", "w+")
+		solver_file.write(solver_statements)
+
+		formula_prompt = f"""
+		Your task is to generate python compilable CVC5 solver formulas based on constraints in a course requirements document. 
+		Given a list of related elective courses {seminar_courses} from {requirement} in the following
+		document: {text}, please carefully analyze the units and course requirements in the {requirement} and generate solver formulas in python code
+		that check if specified constraints are satisfied accordingly. You can assume a user input of elective courses in a variable `elective_choices` in the following format: 
+			```python
+			course_choices = {{
+				cs154: [False, 0],
+				cs140: [True, 3],
+				history244f: [True, 3],
+				cs348a: [True, 3]}}
+			```
+			Given a list of taken course_choices as input, one such formula to check if a list of courses satisfy constraints can be: 
+		```python
+		course_requirements = [
+		cs103,
+		cs161,
+		(cs107, cs107e),
+		(cs110, cs111),
+		(cs109, ee178, stat116, cme106, msande220),
+		]
+		for requirement in course_requirements:
+			if isinstance(requirement, tuple):
+			solver.assertFormula(solver.mkTerm(Kind.OR, *requirement))
+			else:
+			solver.assertFormula(
+				solver.mkTerm(Kind.EQUAL, requirement, solver.mkTrue())
+			)
+		```
+		Please make sure the genrated constraints also satisfy specified seminar course requirements {seminar_courses}.
+  		Remember, you must generate cvc5 formulas in python code that meet 
+		specified constraints of {requirement} in {text}.
+		"""
+		formula_statements = gpt_infer(formula_prompt)
+		print(formula_statements)
+		formula_file = open(f"{RESULTS_DIR}/{requirement}_solver_formulas.py", "w+")
+		formula_file.write(formula_statements)
+  
 	extract_prompt = f"""
 	Please extract the required courses from {requirement} in the following: {text}.
 	Remember, please output every course number in each category and output all course numbers in a single python list [] only.  
@@ -251,8 +319,9 @@ def translate_masters_to_formal_statements(doc, requirement):
 #generate a duo of synthetic transcrpts that satisfy and unsatisfy the BS/MS in CS program 
 #count: the desired count of such duo synthetc transcrpts
 def translate_undergrad_to_formal_statements(doc, requirement):
-	SOE_science_courses = weblink_to_text(STANFORD_SOE_SCIENCE_WEBLINK)
 	text = pdf_to_text(doc)
+	SOE_science_courses = weblink_to_text(STANFORD_SOE_SCIENCE_WEBLINK)
+ 		
 	extract_prompt = f"""
 	Please extract the required courses from {requirement} in the following: {text}.
 	Please pay attention to notes for relevant electives of {requirement} and extract relevant elective courses related to {requirement} too.
@@ -409,11 +478,11 @@ def translate_all():
 	 			requirement='BREADTH REQUIREMENT')
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
 	 			requirement='ARTIFICIAL INTELLIGENCE DEPTH REQUIREMENT')
-	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
-	 			requirement='ELECTIVES')
 	'''
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
-	 			requirement='ADDITIONAL REQUIREMENTS')
+	 			requirement='ELECTIVES')	
+	#translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
+	# 			requirement='ADDITIONAL REQUIREMENTS')
  
 if __name__ == "__main__":
 	translate_all()

@@ -1,25 +1,30 @@
-Here is the list of all course numbers from the ELECTIVES category in the given program sheet, formatted as a single Python list:
+Sure, here is the list of all the courses extracted from the ELECTIVES and other required categories presented in the document:
 
 ```python
-elective_courses = [
-    'CS111', 'CS140', 'CS140E', 'CS143', 'CS144', 'CS145', 'CS147', 'CS148', 
-    'CS149', 'CS151', 'CS155', 'CS161', 'CS173', 'CS181', 'CS182', 'CS190', 
-    'CS195', 'CS196', 'CS198', 'CS199', 'CS200', 'CS202', 'CS210B', 'CS221', 
-    'CS223A', 'CS224N', 'CS224S', 'CS224U', 'CS224V', 'CS224W', 'CS225A', 
-    'CS228', 'CS229', 'CS229M', 'CS230', 'CS231A', 'CS231N', 'CS233', 'CS234', 
-    'CS235', 'CS236', 'CS237A', 'CS237B', 'CS238', 'CS239', 'CS242', 'CS243', 
-    'CS244', 'CS244B', 'CS245', 'CS246', 'CS247', 'CS248', 'CS248A', 'CS251', 
-    'CS255', 'CS257', 'CS258', 'CS261', 'CS262', 'CS263', 'CS264', 'CS265', 
-    'CS266', 'CS268', 'CS270', 'CS271', 'CS273A', 'CS273B', 'CS274', 'CS275', 
-    'CS276', 'CS278', 'CS279', 'CS281', 'CS295', 'CS302', 'CS322', 'CS324', 
-    'CS325B', 'CS326', 'CS327A', 'CS329', 'CS330', 'CS331B', 'CS332', 'CS333', 
-    'CS345', 'CS348A', 'CS348B', 'CS348C', 'CS348E', 'CS348I', 'CS348K', 
-    'CS348N', 'CS355', 'CS356', 'CS361', 'CS368', 'CS371', 'CS372', 'CS373', 
-    'CS375', 'CS377', 'CS379', 'CS398', 'CS399', 'CS428A', 'CS428B', 'CS432', 
-    'EE180', 'EE263', 'EE276', 'EE278', 'EE282', 'EE364A', 'EE364B', 'EE377', 
-    'EE378B', 'EE382E', 'ENGR205', 'ENGR209A', 'MS&E220', 'MS&E226', 'MS&E252', 
-    'PSYCH209', 'STATS202', 'STATS315A', 'STATS315B'
+course_numbers = [
+    "CS103", "CS109", "Stat116", "CME106", "MS&E220", "EE178", "CS161", "CS107", "CS107E", 
+    "CS110", "CS111", "CS140", "CS140E", "CS143", "CS144", "CS145", "CS148", "CS151", "CS190", 
+    "CS210B", "CS212", "CS221", "CS227B", "CS231N", "CS243", "CS248", "CS248A", "CS341", 
+    "CS154", "CS157", "CS168", "CS254", "CS261", "CS265", "EE364A", "EE364B", "Phil251", 
+    "CS140", "CS140E", "CS143", "CS144", "CS149", "CS212", "CS242", "CS243", "CS244", "CS244B", 
+    "CS295", "CS316", "CS358", "EE180", "EE282", "EE382E", "CS145", "CS147", "CS148", "CS155", 
+    "CS173", "CS221", "CS223A", "CS224N", "CS224U", "CS224W", "CS227B", "CS228", "CS229", 
+    "CS229M", "CS231A", "CS231N", "CS234", "CS236", "CS237A", "CS245", "CS246", "CS247", 
+    "CS248", "CS248A", "CS251", "CS255", "CS273A", "CS273B", "CS279", "CS345", "CS347", 
+    "CS348A", "CS348B", "CS348C", "CS348E", "CS348I", "CS348K", "CS355", "CS356", "CS373", 
+    "CS152", "CS181", "CS182", "CS256", "CS281", "CS329T", "CS384", "AMSTUD133", "AMSTUD145", 
+    "ANTHRO132D", "COMM118S", "COMM120W", "COMM124", "COMM130D", "COMM145", "COMM154", 
+    "COMM166", "COMM186W", "COMM230A", "COMM230B", "COMM230C", "DESINST215", "DESINST240", 
+    "EARTHSYS213", "ENGLISH184D", "ENGR248", "HISTORY244F", "INTLPOL268", "LAW4039", 
+    "ME177", "MS&E193", "MS&E231", "MS&E234", "MS&E254", "POLISCI150A", "PSYCH215", 
+    "PUBLPPOL103F", "PUBLPPOL353B", "CS221", "CS223A", "CS224N", "CS224S", "CS224U", 
+    "CS224V", "CS224W", "CS228", "CS229", "CS231A", "CS231N", "CS234", "CS237A", "CS237B", 
+    "CS238", "CS205L", "CS224R", "CS225A", "CS227B", "CS229M", "CS230", "CS233", "CS235", 
+    "CS236", "CS239", "CS246", "CS257", "CS270", "CS271", "CS273A", "CS273B", "CS274", 
+    "CS275", "CS279", "CS281", "CS322", "CS324", "CS325B", "CS326", "CS327A", "CS329", 
+    "CS330", "CS331B", "CS332", "CS333", "CS345", "CS348N", "CS361", "CS368", "CS371", 
+    "CS375", "CS377", "CS379", "CS398", "CS399", "CS428A", "CS428B", "CS432", "EE263", 
+    "EE276", "EE278", "EE364A", "EE364B", "EE377", "EE378B", "ENGR205", "ENGR209A", 
+    "MS&E226", "MS&E252", "PSYCH209", "STATS202", "STATS315A", "STATS315B"
 ]
 ```
-
-This list contains all elective course numbers as extracted from the provided text.

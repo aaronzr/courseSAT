@@ -1,127 +1,175 @@
-To generate the required CVC5 solver formulas in Python to verify if the course choices meet the specified constraints from the MSCS Program Sheet for the Artificial Intelligence Specialization, we need to follow a systematic approach. Below is the complete Python code using CVC5's Python API which adheres to the required constraints.
-
-Make sure to install the CVC5 Python bindings before running this code. You can install it via pip:
-```
-pip install cvc5
-```
-
-### Python Code with CVC5 Formulas
+Sure, here's the Python code to generate cvc5 solver formulas based on the given course requirements, taking into account the constraints provided in the DEPARTMENT OF COMPUTER SCIENCE MSCS Program Sheet (2022-23):
 
 ```python
 import cvc5
 from cvc5 import Kind
 
-# Initialize the solver
 solver = cvc5.Solver()
+solver.setOption("produce-models", "true")
 
-# Assuming each course is represented as a boolean variable indicating whether it was taken
-# Let's initialize variables for each course in the elective list, as well as the required ones
-
+# Define boolean variables for each course
 course_vars = {}
-elective_courses = [
-    'cs111', 'cs140', 'cs140e', 'cs143', 'cs144', 'cs145', 'cs147', 'cs148', 
-    'cs149', 'cs151', 'cs155', 'cs161', 'cs173', 'cs181', 'cs182', 'cs190', 
-    'cs195', 'cs196', 'cs198', 'cs199', 'cs200', 'cs202', 'cs210b', 'cs221', 
-    'cs223a', 'cs224n', 'cs224s', 'cs224u', 'cs224v', 'cs224w', 'cs225a', 
-    'cs228', 'cs229', 'cs229m', 'cs230', 'cs231a', 'cs231n', 'cs233', 'cs234', 
-    'cs235', 'cs236', 'cs237a', 'cs237b', 'cs238', 'cs239', 'cs242', 'cs243', 
-    'cs244', 'cs244b', 'cs245', 'cs246', 'cs247', 'cs248', 'cs248a', 'cs251', 
-    'cs255', 'cs257', 'cs258', 'cs261', 'cs262', 'cs263', 'cs264', 'cs265', 
-    'cs266', 'cs268', 'cs270', 'cs271', 'cs273a', 'cs273b', 'cs274', 'cs275', 
-    'cs276', 'cs278', 'cs279', 'cs281', 'cs295', 'cs302', 'cs322', 'cs324', 
-    'cs325b', 'cs326', 'cs327a', 'cs329', 'cs330', 'cs331b', 'cs332', 'cs333', 
-    'cs345', 'cs348a', 'cs348b', 'cs348c', 'cs348e', 'cs348i', 'cs348k', 
-    'cs348n', 'cs355', 'cs356', 'cs361', 'cs368', 'cs371', 'cs372', 'cs373', 
-    'cs375', 'cs377', 'cs379', 'cs398', 'cs399', 'cs428a', 'cs428b', 'cs432', 
-    'ee180', 'ee263', 'ee276', 'ee278', 'ee282', 'ee364a', 'ee364b', 'ee377', 
-    'ee378b', 'ee382e', 'engr205', 'engr209a', 'msande220', 'msande226', 'msande252', 
-    'psych209', 'stats202', 'stats315a', 'stats315b'
-]
+for course in [
+    "cs103", "cs161", "cs107", "cs107e", "cs110", "cs111", "cs109", "ee178", "stat116", "cme106", "msande220",
+    "cs140", "cs140e", "cs143", "cs144", "cs145", "cs148", "cs151", "cs190", "cs210b", "cs212", "cs221", "cs227b",
+    "cs231n", "cs243", "cs248", "cs248a", "cs341", "cs154", "cs157", "cs168", "cs254", "cs261", "cs265", "ee364a",
+    "ee364b", "phil251", "cs149", "cs242", "cs244", "cs244b", "cs295", "cs316", "cs358", "ee180", "ee282", "ee382e",
+    "cs147", "cs155", "cs173", "cs223a", "cs224n", "cs224u", "cs224w", "cs228", "cs229", "cs229m", "cs231a", "cs234",
+    "cs236", "cs237a", "cs245", "cs246", "cs247", "cs247a", "cs247b", "cs247c", "cs247d", "cs247e", "cs247f", "cs251",
+    "cs255", "cs273a", "cs273b", "cs279", "cs345", "cs347", "cs348a", "cs348b", "cs348c", "cs348e", "cs348i", "cs348k",
+    "cs355", "cs356", "cs373", "cs152", "cs181", "cs182", "cs256", "cs281", "cs329t", "cs384", "amstud133", "amstud145",
+    "anthro132d", "comm118s", "comm120w", "comm124", "comm130d", "comm145", "comm154", "comm166", "comm186w", "comm230a",
+    "comm230b", "comm230c", "desinst215", "desinst240", "earthsys213", "english184d", "engr248", "history244f",
+    "intlpol268", "law4039", "me177", "msande193", "msande231", "msande234", "msande254", "polisci150a", "psych215",
+    "publppol103f", "publppol353b", "cs224s", "cs224v", "cs238", "cs205l", "cs224r", "cs225a", "cs230", "cs233", "cs235",
+    "cs239", "cs257", "cs270", "cs271", "cs274", "cs275", "cs322", "cs324", "cs325b", "cs326", "cs327a", "cs329", "cs330",
+    "cs331b", "cs332", "cs333", "cs348n", "cs361", "cs368", "cs371", "cs375", "cs377", "cs377a", "cs377b", "cs377c",
+    "cs377d", "cs377e", "cs377f", "cs379", "cs379a", "cs379b", "cs379c", "cs379d", "cs379e", "cs379f", "cs398", "cs399",
+    "cs428a", "cs428b", "cs432", "ee263", "ee276", "ee278", "ee377", "ee378b", "engr205", "engr209a", "msande226",
+    "msande252", "psych209", "stats202", "stats315a", "stats315b"
+]:
+    course_vars[course] = solver.mkBoolean(course)
 
-required_courses = [
-    'cs103', 'cs161', ('cs107', 'cs107e'), ('cs110', 'cs111'), 
-    ('cs109', 'ee178', 'stat116', 'cme106', 'msande220')
-]
-
-# Create a boolean variable for each course
-for course in elective_courses:
-    course_vars[course] = solver.mkBool(course)
-
-# Sample course choices (this would be the actual input in realistic code)
+# Define the requirement constraints
 course_choices = {
-    'cs154': [False, 0],
-    'cs140': [True, 3],
-    'history244f': [True, 3],
-    'cs348a': [True, 3]
+    "cs154": [False, 0], "cs140": [True, 3], "history244f": [True, 3], "cs348a": [True, 3]
 }
 
-# Let's translate course choices to solver variables
-taken_courses = {}
-for course, (taken, units) in course_choices.items():
-    if course in course_vars:
-        taken_courses[course] = (taken, units)
+# Foundations Requirement
+foundations_requirements = [
+    "cs103", "cs161",
+    ("cs107", "cs107e"), ("cs110", "cs111"),
+    ("cs109", "ee178", "stat116", "cme106", "msande220")
+]
 
-# Assert constraints for the required courses
-for req in required_courses:
-    if isinstance(req, tuple):
-        or_terms = []
-        for c in req:
-            if c in course_vars:
-                or_terms.append(course_vars[c])
-        if or_terms:
-            solver.assertFormula(solver.mkTerm(Kind.OR, *or_terms))
+total_foundations_units = solver.mkInteger(0)
+for course in course_vars:
+    if "units" in course:
+        total_foundations_units = solver.mkTerm(
+            Kind.PLUS, total_foundations_units, course_vars[course][1]
+        )
+
+solver.assertFormula(
+    solver.mkTerm(Kind.LEQ, total_foundations_units, solver.mkInteger(10))
+)
+
+for requirement in foundations_requirements:
+    if isinstance(requirement, tuple):
+        course_alternatives = [course_vars[course][0] for course in requirement]
+        solver.assertFormula(solver.mkTerm(Kind.OR, *course_alternatives))
     else:
-        if req in course_vars:
-            solver.assertFormula(solver.mkTerm(Kind.EQUAL, course_vars[req], solver.mkTrue()))
+        solver.assertFormula(course_vars[requirement][0])
 
-# ELECTIVES constraints as per the program sheet
-# Condition to count at least 3 units from electives and ensuring no course is CS196, CS198, CS390A/B/C  
+# Significant Implementation Requirement
+significant_impl_requirements = [
+    "cs140", "cs140e", "cs143", "cs144", "cs145", "cs148", "cs151", "cs190", "cs210b", "cs212", "cs221", "cs227b",
+    "cs231n", "cs243", "cs248", "cs248a", "cs341"
+]
 
-elective_constraints = []
-elective_units = 0
+significant_impl_constraint = solver.mkBoolean(False)
+for course in significant_impl_requirements:
+    significant_impl_constraint = solver.mkTerm(
+        Kind.OR, significant_impl_constraint, course_vars[course][0]
+    )
 
-for course in elective_courses:
-    if course in taken_courses:
-        taken, units = taken_courses[course]
-        if taken:
-            elective_constraints.append(course_vars[course])
-            elective_units += units
-        
-assert elective_units >= 3
+solver.assertFormula(significant_impl_constraint)
 
-solver.assertFormula(solver.mkTerm(Kind.OR, *elective_constraints))
+# Breadth Requirement
+breadth_areas = {
+    'A': ["cs154", "cs157", "cs168", "cs254", "cs261", "cs265", "ee364a", "ee364b", "phil251"],
+    'B': ["cs140", "cs140e", "cs143", "cs144", "cs149", "cs212", "cs242", "cs243", "cs244", "cs244b", "cs295",
+          "cs316", "cs358", "ee180", "ee282", "ee382e"],
+    'C': ["cs145", "cs147", "cs148", "cs155", "cs173", "cs221", "cs223a", "cs224n", "cs224u", "cs224w", "cs227b",
+          "cs228", "cs229", "cs229m", "cs231a", "cs231n", "cs234", "cs236", "cs237a", "cs245", "cs246", ("cs247",
+          "cs247a", "cs247b", "cs247c", "cs247d", "cs247e", "cs247f"), "cs248", "cs248a", "cs251", "cs255", "cs273a",
+          "cs273b", "cs279", "cs345", "cs347", "cs348a", "cs348b", "cs348c", "cs348e", "cs348i", "cs348k", "cs355",
+          "cs356", "cs373"],
+    'D': ["cs152", "cs181", "cs182", "cs256", "cs281", "cs329t", "cs384", "amstud133", "amstud145", "anthro132d",
+          "comm118s", "comm120w", "comm124", "comm130d", "comm145", "comm154", "comm166", "comm186w", "comm230a",
+          "comm230b", "comm230c", "desinst215", "desinst240", "earthsys213", "english184d", "engr248", "history244f",
+          "intlpol268", "law4039", "me177", "msande193", "msande231", "msande234", "msande254", "polisci150a",
+          "psych215", "publppol103f", "publppol353b"]
+}
 
-# Example to check if we meet the minimum elective units
-min_units = 3
-unit_constraints = []
+breadth_areas_vars = {area: solver.mkBoolean(False) for area in breadth_areas.keys()}
+used_areas = set()
 
-for course, (_, units) in taken_courses.items():
-    if course in elective_courses and 'cs196' not in course and 'cs198' not in course and not course.startswith('cs390'):
-        unit_constraints.append(solver.mkTerm(Kind.GEQ, solver.mkReal(units), solver.mkReal(min_units)))
+for course, choice in course_choices.items():
+    for area, courses in breadth_areas.items():
+        if course in courses:
+            breadth_areas_vars[area] = solver.mkTerm(Kind.OR, breadth_areas_vars[area], choice[0])
+            used_areas.add(area)
 
-# Ensuring we meet the unit constraints for electives
-if unit_constraints:
-    solver.assertFormula(solver.mkTerm(Kind.AND, *unit_constraints))
+for area, var in breadth_areas_vars.items():
+    solver.assertFormula(var)
 
-# Check satisfiability
-result = solver.checkSat()
-print(result.isSat())
+assert len(used_areas) == 3, "Exactly 3 breadth areas must be used."
+
+# AI Depth Requirement
+ai_depth_courses = [
+    "cs221", "cs223a", "cs224n", "cs224s", "cs224u", "cs224v", "cs224w", "cs228", "cs229", "cs231a", "cs231n", "cs234",
+    "cs237a", "cs237b", "cs238", "cs205l", "cs224r", "cs225a", "cs227b", "cs229m", "cs230", "cs233", "cs235", "cs236",
+    "cs239", "cs246", "cs257", "cs270", "cs271", "cs273a", "cs273b", "cs274", "cs275", "cs279", "cs281", "cs322",
+    "cs324", "cs325b", "cs326", "cs327a", "cs329", "cs330", "cs331b", "cs332", "cs333", "cs345", "cs348n", "cs361",
+    "cs368", "cs371", "cs375", "cs377", "cs379", "cs398", "cs399", "cs428a", "cs428b", "cs432", "ee263", "ee276",
+    "ee278", "ee364a", "ee364b", "ee377", "ee378b", "engr205", "engr209a", "msande226", "msande252", "psych209",
+    "stats202", "stats315a", "stats315b"
+]
+
+total_ai_depth_units = solver.mkInteger(0)
+depth_taken_courses = []
+
+for course, choice in course_choices.items():
+    if course in ai_depth_courses:
+        total_ai_depth_units = solver.mkTerm(Kind.PLUS, total_ai_depth_units, choice[1])
+        depth_taken_courses.append(course)
+
+solver.assertFormula(solver.mkTerm(Kind.GEQ, total_ai_depth_units, solver.mkInteger(21)))
+
+# Constraint for one "a" category course
+cs221_constraint = solver.mkBoolean(False)
+if "cs221" in course_choices:
+    cs221_constraint = course_choices["cs221"][0]
+
+solver.assertFormula(cs221_constraint)
+
+# At least 4 courses from "b" category
+b_courses = [
+    "cs223a", "cs224n", "cs224s", "cs224u", "cs224v", "cs224w", "cs228", "cs229", "cs231a", "cs231n", "cs234", "cs237a",
+    "cs237b", "cs238"]
+
+b_course_vars = [course_vars[course][0] for course in b_courses if course in course_choices]
+
+total_b_courses = solver.mkInteger(0)
+for b_course in b_course_vars:
+    total_b_courses = solver.mkTerm(Kind.PLUS, total_b_courses, b_course)
+
+solver.assertFormula(solver.mkTerm(Kind.GEQ, total_b_courses, solver.mkInteger(4)))
+
+# Electives
+electives_courses = [
+    course for course in course_choices if course not in ai_depth_courses and course not in foundations_requirements
+]
+
+total_electives_units = solver.mkInteger(0)
+
+for course in electives_courses:
+    total_electives_units = solver.mkTerm(Kind.PLUS, total_electives_units, course_choices[course][1])
+
+solver.assertFormula(solver.mkTerm(Kind.GEQ, total_electives_units, solver.mkInteger(45 - (21 + 10))))
+
+# Overall constraints
+total_units = solver.mkInteger(0)
+for course, choice in course_choices.items():
+    total_units = solver.mkTerm(Kind.PLUS, total_units, choice[1])
+
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, total_units, solver.mkInteger(45)))
+
+# Check the satisfiability
+if solver.checkSat().isSat():
+    print("The course selection is valid.")
+else:
+    print("The course selection is not valid.")
 ```
 
-### Explanation
-1. **Initialize Solver**: We initialize the CVC5 solver.
-2. **Declare Variables**: Create boolean variables for all the elective courses.
-3. **Parse Course Choices**: Convert provided course choices into solver variables.
-4. **Assert Required Courses**: 
-    - Loop through the list of required courses and build proper constraints for tuples (indicating alternative courses).
-5. **Elective Constraints**:
-    - Ensure that elective courses (excluding invalid courses `CS196, CS198, CS390A/B/C`) account for at least 3 units.
-
-### Assumptions
-- Variable `course_choices` is provided.
-- Units and course specifics match the program sheet constraints.
-
-This should help verify if the current course selections satisfy the elective constraints of the program.
-
-### Note
-You need to substitute actual course units and make sure all elective and required courses constraints are met as per updated requirements document. Each input should be carefully checked against the constraints deriving from the program sheet.
+This Python code uses the `cvc5` solver to check if the course selections in `course_choices` meet all the specified constraints from the MSCS program sheet. The constraints include foundations requirement, significant implementation requirement, breadth requirement, AI depth requirement, and electives requirement. This ensures that the selected courses fulfill the graduation criteria outlined in the program sheet.
