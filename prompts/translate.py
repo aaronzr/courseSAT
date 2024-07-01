@@ -167,7 +167,15 @@ def translate_masters_to_formal_statements(doc, requirement):
 		document: {text}. GPT4o has identified the following list of courses for cvc5 formula constraints solving: 
 		i) a list of possible courses: {courses}; and ii) course units: {course_units}. Please carefully analyze the units and course requirements in the {requirement} and generate solver formulas in python code
 		that check if specified constraints are satisfied accordingly. 
-		For example, one such formulaa to check if a list of course 
+		You can assume a user input of taken courses in a variable `course_choices` in the following format: 
+		```python
+  		course_choices = {{
+			cs154: [False, 0],
+			cs140: [True, 3],
+			history244f: [True, 3],
+			cs348a: [True, 3]}}
+		```
+		Given a list of taken course_choices as input, one such formula to check if a list of course satisfies: 
 		```python
 		course_units = [
 			cs103_units,
@@ -381,7 +389,8 @@ def translate_undergrad_to_formal_statements(doc, requirement):
 	units_file.close()
 	formula_file.close()
 
-if __name__ == "__main__":
+def translate_all():
+	'''
 	translate_undergrad_to_formal_statements(doc="../program_sheets/CS_AI_2324PS.pdf", \
 	 					requirement="Mathmatics and Science Requirement")
 	translate_undergrad_to_formal_statements(doc="../program_sheets/CS_AI_2324PS.pdf", \
@@ -402,6 +411,11 @@ if __name__ == "__main__":
 	 			requirement='ARTIFICIAL INTELLIGENCE DEPTH REQUIREMENT')
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
 	 			requirement='ELECTIVES')
+	'''
 	translate_masters_to_formal_statements(doc="../program_sheets/Stanford_AI_MS.pdf", \
 	 			requirement='ADDITIONAL REQUIREMENTS')
+ 
+if __name__ == "__main__":
+	translate_all()
+
 	

@@ -1,116 +1,109 @@
-To generate CVC5 formulas in Python that check the constraints specified in the additional requirements for the MSCS degree, we need to break down the requirements and translate them into CVC5 constraints.
+To generate CVC5 solver formulas in Python based on the "ADDITIONAL REQUIREMENTS" section from the MSCS Program Sheet, we'll consider the constraints mentioned. Here's the Python code that builds these constraints using a hypothetical `course_choices` dictionary. The assumptions and constraints based on the document include:
 
-Below is the Python code with CVC5 solver formulas for each specified requirement:
+1. **Total Units**: At least 45 units are required to complete the MSCS degree.
+2. **Foundations Requirement**: Maximum 10 units out of the total 45 units.
+3. **Significant Implementation**: At least one course (taken for a letter grade, at Stanford).
+4. **Breadth Requirement**: Three courses, one from each of different areas (A, B, C, or D), taken for a letter grade and at least 3 units each.
+5. **Depth Requirement**: A total of at least 21 units from AI specific courses, including CS 221 and at least four other specified courses.
+6. **Electives**: Additional courses to complete the 45-unit requirement, with constraints on the grade and level.
 
-1. **All courses must be numbered 100 or greater**: This is inherently satisfied since all course numbers provided are 100 or greater.
-
-2. **At most 10 units of Foundations requirement courses may be counted toward your 45 units**:
-
-3. **At most 3 units of 1-2 unit seminars may be counted toward your 45 units**:
-
-4. **At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade**:
-
-5. **The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford's GPA scale)**:
-
-6. **Units previously applied toward BS requirements may not also be counted toward the MSCS**: This is a bit difficult to encode without knowing which units were previously counted towards the BS.
-
-7. **You must complete at least 45 graduate units at Stanford before receiving the MSCS degree**:
-
-Here is the Python code for these requirements using the CVC5 solver:
+Here's the Python code utilizing the CVC5 solver to check if the specified constraints are satisfied:
 
 ```python
-import pycvc5
-from pycvc5 import Solver
-from pycvc5 import Kind
+from cvc5 import Solver, Kind
+
+# Hypothetical choices
+course_choices = {
+    "cs154": [True, 4],
+    "cs140": [True, 3],
+    "history244f": [True, 3],
+    "cs348a": [True, 3],
+    "cs221": [True, 3],
+}
 
 solver = Solver()
-solver.setLogic("QF_LIA")
 
-# Declare course unit variables:
-course_units = {
-    "cs103_units": solver.mkInteger(3),
-    "cs109_units": solver.mkInteger(4),
-    "stat116_units": solver.mkInteger(3),
-    # add remaining unit declarations as per your list...
-    "cs229_units": solver.mkInteger(3),
-    # Add more units if needed here...
+# Course Units for each requirement
+foundations_units = [3, 3, 3, 3, 3]  # Replace with actual values from course_choices
+significant_implementation_units = [3]
+breadth_units = {
+    "area_a": [4],
+    "area_b": [3],
+    "area_c": [3],
+    "area_d": [3]
 }
+ai_depth_units = [3, 3, 3, 3, 3, 3]  # Replace with actual values from course_choices
+electives_units = [3, 3]  # Replace with actual values from course_choices
 
-# Example: we have a list of the units taken for Foundations Requirement, which should be a subset of the complete list.
-foundations_units = [
-    course_units["cs103_units"],
-    course_units["cs109_units"],
-    course_units["cs161_units"],
-    course_units["cs107_units"],
-    course_units["cs110_units"]
-]
+# ADDITIONAL REQUIREMENTS:
+# At least 45 units required
+total_units = sum(foundations_units + significant_implementation_units + 
+                   breadth_units["area_a"] + breadth_units["area_b"] + breadth_units["area_c"] + 
+                   ai_depth_units + electives_units)
+solver.assertFormula(
+    solver.mkTerm(
+        Kind.GEQ,
+        solver.mkInteger(total_units),
+        solver.mkInteger(45)
+    )
+)
 
-# Add the constraint that the total units for the Foundations Requirement must not exceed 10
-foundations_total_units = solver.mkInteger(0)
-for unit in foundations_units:
-    foundations_total_units = solver.mkTerm(Kind.ADD, foundations_total_units, unit)
+# Maximum 10 units from Foundations
+foundations_total_units = sum(foundations_units)
+solver.assertFormula(
+    solver.mkTerm(
+        Kind.LEQ,
+        solver.mkInteger(foundations_total_units),
+        solver.mkInteger(10)
+    )
+)
 
-solver.assertFormula(solver.mkTerm(Kind.LEQ, foundations_total_units, solver.mkInteger(10)))
+# At least one course fulfilling the Significant Implementation Requirement
+sig_impl_courses = [(course, units) for course, (taken, units) in course_choices.items() if course in [
+    "cs140", "cs140e", "cs143", "cs144", "cs145", "cs148", "cs151", 
+    "cs190", "cs210b", "cs212", "cs221", "cs227b", "cs231n", "cs243", 
+    "cs248", "cs248a", "cs341"] and taken]
+solver.assertFormula(
+    solver.mkTerm(
+        Kind.GEQ,
+        solver.mkInteger(len(sig_impl_courses)),
+        solver.mkInteger(1)
+    )
+)
 
-# Example seminar units, assuming we have a method to determine seminar courses
-seminar_units = [
-    course_units["some_seminar_units_1"],
-    course_units["some_seminar_units_2"]
-]
+# Breadth Requirement: one course from each of different areas
+breadth_total = sum(breadth_units["area_a"]) + sum(breadth_units["area_b"]) + sum(breadth_units["area_c"])
+solver.assertFormula(
+    solver.mkTerm(
+        Kind.GEQ,
+        solver.mkInteger(breadth_total),
+        solver.mkInteger(9)  # 3 units from each of three areas
+    )
+)
 
-# Add the constraint that the total seminar units must not exceed 3
-seminar_total_units = solver.mkInteger(0)
-for unit in seminar_units:
-    seminar_total_units = solver.mkTerm(Kind.ADD, seminar_total_units, unit)
+# Depth Requirement: At least 21 units from AI specific courses
+ai_depth_total_units = sum(ai_depth_units)
+solver.assertFormula(
+    solver.mkTerm(
+        Kind.GEQ,
+        solver.mkInteger(ai_depth_total_units),
+        solver.mkInteger(21)
+    )
+)
 
-solver.assertFormula(solver.mkTerm(Kind.LEQ, seminar_total_units, solver.mkInteger(3)))
-
-# Add the constraint for the total units and those taken for a letter grade
-total_units = solver.mkInteger(0)
-letter_grade_units = solver.mkInteger(0)
-for course, unit in course_units.items():
-    total_units = solver.mkTerm(Kind.ADD, total_units, unit)
-    # Assuming we know which courses are taken for a letter grade:
-    if course in ["list_of_letter_grade_courses"]:
-        letter_grade_units = solver.mkTerm(Kind.ADD, letter_grade_units, unit)
-
-# Constraint that the total units should be at least 45
-solver.assertFormula(solver.mkTerm(Kind.GEQ, total_units, solver.mkInteger(45)))
-
-# Constraint that the letter grade units should be at least 36
-solver.assertFormula(solver.mkTerm(Kind.GEQ, letter_grade_units, solver.mkInteger(36)))
-
-# Average grade must be at least B (3.0 in GPA)
-# Assuming we have grades as integers and units, we compute the weighted average
-grades = {
-    "cs103_grade": solver.mkInteger(3),  # Assume A = 4, B = 3, C = 2, etc.
-    "cs109_grade": solver.mkInteger(4),
-    # add remaining grade declarations as per your list...
-    "cs229_grade": solver.mkInteger(3),
-}
-total_grade_points = solver.mkInteger(0)
-
-for course, grade in grades.items():
-    total_grade_points = solver.mkTerm(Kind.ADD, total_grade_points, solver.mkTerm(Kind.MUL, unit, grade))
-
-# The average grade calculation
-average_grade = solver.mkTerm(Kind.DIV, total_grade_points, total_units)
-
-# Constraint that the average grade should be at least 3.0
-solver.assertFormula(solver.mkTerm(Kind.GEQ, average_grade, solver.mkInteger(3)))
-
-# Check the constraints
-result = solver.checkSat()
-assert result.isSat(), "The course plan does not satisfy the MSCS degree requirements!"
-
-print("The course plan satisfies all the specified constraints.")
+# Verify satisfiability
+if solver.checkSat().isSat():
+    print("The course selection satisfies all MSCS requirements.")
+else:
+    print("The course selection does not satisfy the MSCS requirements.")
 ```
 
-In this code:
-- We have defined integer variables for units for each course.
-- Then, we have set constraints for the Foundations requirement to not exceed 10 units.
-- We ensure that at most 3 units of the seminar courses are counted.
-- We also ensure the total units are at least 45 and at least 36 units from courses taken for a letter grade.
-- Calculated the average grade to ensure it's at least a B (3.0 GPA).
+This Python code utilizes the `cvc5` solver to assert constraints derived from the MSCS program requirements:
 
-Note: Some assumptions in the code need to be adjusted based on actual data input and lists for letter-graded courses and specific seminars. The example provides a general approach to adding constraints for the MSCS degree requirements.
+1. **Total Units**: Ensure you have at least 45 units in total.
+2. **Foundations Requirement**: No more than 10 units should be counted towards foundations.
+3. **Significant Implementation**: At least one course from the designated list must be included.
+4. **Breadth Requirement**: At least one course from each of three different areas (A, B, and C).
+5. **Depth Requirement**: At least 21 units must come from AI-specific depth courses.
+
+Make sure to replace placeholder values with actual data from `course_choices`. Adjust the input and the overall logic as per your specific requirements and data available.
