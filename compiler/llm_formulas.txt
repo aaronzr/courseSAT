@@ -1,0 +1,50 @@
+```python
+import cvc5
+from cvc5 import Kind
+
+# Create a Solver instance
+solver = cvc5.Solver()
+
+# Define the data types
+String = solver.getStringSort()
+Integer = solver.getIntegerSort()
+Boolean = solver.getBooleanSort()
+
+# Create variables for student data
+name = solver.mkConst(String, 'name')
+student_id = solver.mkConst(Integer, 'student_id')
+is_coterm = solver.mkConst(Boolean, 'is_coterm')
+cs103_grade = solver.mkConst(String, 'cs103_grade')
+cs103_units = solver.mkConst(Integer, 'cs103_units')
+cs161_grade = solver.mkConst(String, 'cs161_grade')
+cs161_units = solver.mkConst(Integer, 'cs161_units')
+total_units = solver.mkConst(Integer, 'total_units')
+
+# MsDegree completion
+mscs_total_units = solver.mkConst(Integer, 'mscs_total_units')
+
+# Constraints for Alice Smith
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, name, solver.mkString("Alice Smith")))
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, student_id, solver.mkInteger(123456)))
+solver.assertFormula(solver.mkTerm(Kind.NOT, is_coterm))
+
+# Courses information
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, cs103_grade, solver.mkString("A")))
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, cs103_units, solver.mkInteger(3)))
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, cs161_grade, solver.mkString("B+")))
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, cs161_units, solver.mkInteger(4)))
+
+# Master Degree Requirement: Total units >= 45
+solver.assertFormula(solver.mkTerm(Kind.GREATER_EQUAL, total_units, solver.mkInteger(45)))
+
+# Constraints to ensure ms apply rules
+total_taken_units = solver.mkTerm(Kind.ADD, cs103_units, cs161_units)
+solver.assertFormula(solver.mkTerm(Kind.EQUAL, mscs_total_units, total_taken_units))
+
+# Assert mscs_total_units is part of Master's degree requirement
+solver.assertFormula(solver.mkTerm(Kind.LESS_EQUAL, mscs_total_units, solver.mkInteger(10)))
+
+# Checking the satisfaction of constraints
+result = solver.checkSat()
+print("Result:", result)
+```
