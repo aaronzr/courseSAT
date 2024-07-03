@@ -1,0 +1,173 @@
+To construct an abstract syntax tree (AST) that captures the constraints and relationships in the provided information, we need to break down the information into a hierarchical structure with nodes representing various elements and sub-elements. Here's an approach to constructing this AST:
+
+```
+MSCSProgram
+├── StudentInfo
+│   ├── Name : "Alice Smith"
+│   ├── StudentID : 123456
+│   ├── CoterminalStatus : False
+│   ├── CoursesTaken
+│   │   ├── Course
+│   │   │   ├── Number : CS103
+│   │   │   ├── Title : "Logic, Automata"
+│   │   │   ├── Units : 3
+│   │   │   ├── Grade : A
+│   │   ├── Course
+│   │   │   ├── Number : CS161
+│   │   │   ├── Title : "Algorithmic Analysis"
+│   │   │   ├── Units : 4
+│   │   │   ├── Grade : B+
+│   ├── CoursesCompleted
+│   │   ├── CourseNumber : CS103
+│   │   ├── CourseNumber : CS161
+│   ├── MSRequirements
+│   │   ├── TotalUnitsRequired : 45
+│   │   ├── FoundationsRequirements
+│   │   │   ├── SubRequirements
+│   │   │   │   ├── LogicAutomataComplexity : CS103
+│   │   │   │   ├── Probability : CS109 or Stat116 or CME106 or MS&E220 or EE178
+│   │   │   │   ├── AlgorithmicAnalysis : CS161
+│   │   │   │   ├── ComputerOrgSys : CS107 or CS107E
+│   │   │   │   ├── PrinciplesComputerSystems : CS110 or CS111
+│   │   │   │   ├── TotalUnits : ≤10
+│   │   │   ├── Waivers : None
+│   │   ├── SignificantImplementationRequirement
+│   │   │   ├── Requirement : 1 course
+│   │   │   ├── Courses
+│   │   │   │   ├── List
+│   │   │   │   │   ├── CS140
+│   │   │   │   │   ├── CS140E
+│   │   │   │   │   ├── CS143
+│   │   │   │   │   ├── CS144
+│   │   │   │   │   ├── CS145
+│   │   │   │   │   ├── CS148
+│   │   │   │   │   ├── CS151
+│   │   │   │   │   ├── CS190
+│   │   │   │   │   ├── CS210B
+│   │   │   │   │   ├── CS212
+│   │   │   │   │   ├── CS221
+│   │   │   │   │   ├── CS227B
+│   │   │   │   │   ├── CS231N
+│   │   │   │   │   ├── CS243
+│   │   │   │   │   ├── CS248/248A
+│   │   │   │   │   ├── CS341
+│   │   ├── BreadthRequirement
+│   │   │   ├── Areas
+│   │   │   │   ├── AreaA
+│   │   │   │   │   ├── List
+│   │   │   │   │   │   ├── CS154
+│   │   │   │   │   │   ├── CS157
+│   │   │   │   │   │   ├── CS168
+│   │   │   │   │   │   ├── CS254
+│   │   │   │   │   │   ├── CS261
+│   │   │   │   │   │   ├── CS265
+│   │   │   │   │   │   ├── EE364A
+│   │   │   │   │   │   ├── EE364B
+│   │   │   │   │   │   ├── Phil251
+│   │   │   │   ├── AreaB
+│   │   │   │   │   ├── List
+│   │   │   │   │   │   ├── CS140
+│   │   │   │   │   │   ├── CS140E
+│   │   │   │   │   │   ├── CS143
+│   │   │   │   │   │   ├── CS144
+│   │   │   │   │   │   ├── CS149
+│   │   │   │   │   │   ├── CS212
+│   │   │   │   │   │   ├── CS242
+│   │   │   │   │   │   ├── CS243
+│   │   │   │   │   │   ├── CS244
+│   │   │   │   │   │   ├── CS244B
+│   │   │   │   │   │   ├── CS295
+│   │   │   │   │   │   ├── CS316
+...
+ │   │   │   │   │   │   ├── EE180
+│   │   │   │   │   │   ├── EE282
+│   │   │   │   │   │   ├── EE382E
+│   │   │   │   ├── AreaC
+│   │   │   │   │   ├── List
+│   │   │   │   │   │   ├── CS145
+│   │   │   │   │   │   ├── CS147
+│   │   │   │   │   │   ├── CS148
+│   │   │   │   │   │   ├── CS155
+│   │   │   │   │   │   ├── CS173
+│   │   │   │   │   │   ├── CS221
+│   │   │   │   │   │   ├── CS223A
+│   │   │   │   │   │   ├── CS224N
+│   │   │   │   │   │   ├── CS224U
+│   │   │   │   │   │   ├── CS224W
+...
+│   │   │   ├── AreaD
+│   │   │   │   ├── List
+│   │   │   │   │   ├── CS152
+│   │   │   │   │   ├── CS181
+│   │   │   │   │   ├── CS182
+│   │   │   │   │   ├── CS256
+│   │   │   │   │   ├── CS281
+│   │   │   │   │   ├── CS329T
+│   │   │   │   │   ├── CS384
+│   │   │   │   │   ├── AMSTUD133
+│   │   │   │   │   ├── AMSTUD145
+│   │   │   │   │   ├── ANTHRO132D
+...
+│   │   ├── ArtificialIntelligenceDepth
+│   │   │   ├── Requirement : 21 units
+│   │   │   ├── Courses
+│   │   │   │   ├── Course
+│   │   │   │   │   ├── Number : CS221
+│   │   │   │   │   ├── SubRequirement
+│   │   │   │   │   │   ├── FourOutOf
+│   │   │   │   │   │   │   ├── CS223A
+│   │   │   │   │   │   │   ├── CS224N
+│   │   │   │   │   │   │   ├── CS224S
+│   │   │   │   │   │   │   ├── CS224U
+│   │   │   │   │   │   │   ├── CS224V
+│   │   │   │   │   │   │   ├── CS224W
+│   │   │   │   │   │   │   ├── CS228
+│   │   │   │   │   │   │   ├── CS229
+│   │   │   │   │   │   │   ├── CS231A
+│   │   │   │   │   │   │   ├── CS231N
+│   │   │   │   │   │   │   ├── CS234
+│   │   │   │   │   │   │   ├── CS237A
+│   │   │   │   │   │   │   ├── CS237B
+│   │   │   │   │   │   │   ├── CS238
+│   │   │   │   │   ├── AdditionalCourses
+│   │   │   │   │   │   ├── ListAndOr
+│   │   │   │   │   │   │   ├── CS205L
+│   │   │   │   │   │   │   ├── CS224R
+│   │   │   │   │   │   │   ├── CS225A
+│   │   │   │   │   │   │   ├── CS227B
+│   │   │   │   │   │   │   ├── CS229M
+│   │   │   │   │   │   │   ├── CS230
+│   │   │   │   │   │   │   ├── CS233
+...
+│   │   │   ├── AdviserNotes : None
+│   │   ├── Electives
+│   │   │   ├── Maximum1-2UnitsSeminars : 3
+│   │   │   ├── ApprovedCourses
+│   │   │   │   ├── List
+│   │   │   │   │   ├── Non-CS (technical, 100+)
+│   │   │   │   │   ├── CS (111+, except CS196, CS198, CS390A/B/C)
+│   │   │   │   ├── MaxUnitCourses : 36
+│   ├── CompletedUnits : 7
+│   ├── MinimumAverageGrade : B (3.0 in GPA)
+├── GeneralInstructions
+│   ├── FirstQuarterRequirementCompletion
+│   ├── ElectronicSubmission : true
+│   ├── AdvisorReview : true
+│   ├── DocumentLink : "http://cs.stanford.edu/degrees/mscs/programsheets/psguide2022.pdf"
+├── AdditionalRequirements
+│   ├── CoursesNumbering : 100+
+│   ├── MaximumFoundationsUnitsCount : 10
+│   ├── MaximumSeminarsUnitsCount : 3
+│   ├── UnitsForLetterGrade : 36
+│   ├── BSMSOverlapRestriction : true
+│   ├── TotalGraduateUnits : 45
+```
+
+In this AST:
+- The `StudentInfo` node encapsulates information about the student, such as name, ID, coterminal status, and the courses she has taken and completed.
+- The `MSRequirements` node captures requirements for the Master's degree, including total units required, foundational requirements, significant implementation requirement, breadth requirement, AI depth, and electives.
+- Various nodes under `MSRequirements` provide the specific requirements for each category, such as courses that can be taken, units, and any waivers or restrictions.
+- `GeneralInstructions` provide administrative details on how to fulfill and submit the program requirements.
+- `AdditionalRequirements` includes constraints that must be followed across the MS program, like course numbering, maximum allowable unit counts, and GPA requirements.
+
+This AST can be adapted as needed to represent further details and relational constraints.

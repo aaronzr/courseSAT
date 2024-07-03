@@ -15,14 +15,6 @@ class CVC5Compiler:
             if isinstance(constraint, Constraint):
                 self.compile_constraint(constraint)
 
-    def compile_constraint(self, constraint):
-        if constraint.constraint_type == "General Constraints for MSCS Degree":
-            condition = constraint.condition
-            if condition == "TotalUnits >= 45":
-                total_units = self.compute_total_units()
-                formula = self.solver.mkTerm(Kind.GEQ, total_units, self.solver.mkInteger(45))
-                self.solver.assertFormula(formula)
-    
     def compute_total_units(self):
         student_node = self.ast.children[0]
         total_units = self.solver.mkInteger(0)
@@ -30,7 +22,17 @@ class CVC5Compiler:
             if isinstance(course, Course):
                 total_units = self.solver.mkTerm(Kind.ADD, total_units, self.solver.mkInteger(course.units))
         return total_units
-
+    
+    def compile_constraint(self, constraint):
+        #manual fix if condition based on IR string-
+        if constraint.constraint_type == "Total Units":
+            condition = constraint.condition
+            #manual fix if condition based on IR string- 
+            if condition == "The total number of units must be greater than or equal to 45.":
+                total_units = self.compute_total_units()
+                formula = self.solver.mkTerm(Kind.GEQ, total_units, self.solver.mkInteger(45))
+                self.solver.assertFormula(formula)
+    
     def check_sat(self):
         return self.solver.checkSat()
 
