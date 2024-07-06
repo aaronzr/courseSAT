@@ -1,0 +1,52 @@
+Here is a list of requirements extracted from the MSCS Program Sheet (2022-23) for the Artificial Intelligence Specialization:
+
+### General Instructions:
+1. Complete a program sheet by filling in the number, name, and units of each course intended for the degree.
+2. Submit program sheets and foundation course waiver forms electronically on the Gates Information Network.
+
+### Foundations Requirement:
+1. Satisfy the requirements listed in each of the following areas:
+   - Logic, Automata & Complexity (CS103)
+   - Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+   - Algorithmic Analysis (CS161)
+   - Computer Organ & Sys (CS107 or 107E)
+   - Principles of Computer Systems (CS110 or CS111)
+2. Any courses taken elsewhere must be approved by an adviser.
+3. Total units used to satisfy the Foundations Requirement must not exceed 10 units.
+
+### Significant Implementation Requirement:
+1. At least one course designated as satisfying the Significant Implementation Requirement.
+2. Must be taken for a letter grade at Stanford.
+3. Courses acceptable for this requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+
+### Breadth Requirement:
+1. Three courses, each from a different Breadth Area (A, B, C, or D), each taken for at least 3 units and for a letter grade.
+2. Breadth Areas and acceptable courses:
+   - Area A. Mathematical and Theoretical Foundations: CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251
+   - Area B. Computer Systems: CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E
+   - Area C. Applications: CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373
+   - Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B
+
+### Artificial Intelligence Depth:
+1. All depth courses must be taken for a letter grade for 3 or more units.
+2. A maximum of 6 units of CS 399 Independent Study may be counted towards the depth.
+3. Courses for depth requirement:
+   - a) CS 221
+   - b) At least four of: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238
+   - c) A total of at least 21 units from categories (a), (b) and the following: CS 205L, 224R, 225A, 227B, 229M, 230, 233, 235, 236, 239, 246, 257, 270, 271, 273A, 273B, 274, 275, 279, 281, 322, 324, 325B, 326, 327A, 329 (any suffix), 330, 331B, 332, 333, 345, 348N, 361, 368, 371, 375, 377 (any suffix), 379 (any suffix), 398, 399, 428A, 428B, 432; EE 263, 276, 278, 364A, 364B, 377, 378B; ENGR 205, 209A; MS&E 226, 252; PSYCH 209; STATS 202, 315A, 315B.
+
+### Electives:
+1. List additional courses used to complete the 45-unit requirement.
+2. Up to 3 units of 1-2 unit seminars offered in the School of Engineering can be counted.
+3. All other electives must be taken for 3 or more units.
+4. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives.
+5. Non-CS courses must be technical, numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator.
+
+### Additional Requirements:
+1. All courses submitted for the MSCS degree must be numbered 100 or greater.
+2. At most 10 units of Foundations requirement courses may be counted toward the 45 units.
+3. At most 3 units of 1-2 unit seminars may be counted toward the 45 units.
+4. At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.
+5. The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+6. Units applied toward BS requirements may not also be counted toward the MSCS.
+7. Complete at least 45 graduate units at Stanford before receiving the MSCS degree.
