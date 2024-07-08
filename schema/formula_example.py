@@ -56,10 +56,7 @@ def solver_init():
 	return solver 
  
 def cvc5_example_1():
-	solver = cvc5.Solver()
-	solver.setOption("produce-unsat-cores", "true")
-	solver.setOption("produce-models", "true")
-	solver.setLogic("ALL")
+	solver = solver_init()
  
 
 	# Create varaibles for each intended course variables: mkConst is not making 
@@ -280,10 +277,10 @@ def pysmt_example_1():
 	else:
 		print("No solution exists.")
 
-#cvc5_example_1()
+cvc5_example_1()
 #cvc5_example_2()
 #cvc5_example_3()
 #cvc5_example_4()
-cvc5_example_5()
+#cvc5_example_5()
 
 #pysmt_example_1()

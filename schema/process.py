@@ -45,10 +45,11 @@ def process_individual_transcript(results_dir, transcript_path):
         Please fill out a json schema template containing Student (student information from the given transcript),
         AP_Credits (Advanced Placement title and Earned Units from the given transcript),
         Courses_Taken (a list of taken courses with relevant course information from the given transcript), 
-        Approval (whether an advior has approved a taken course for degree requirements. This is typically unknown from the transcript unless
+        Deviations (a list of taken courses deviated from major or specializaion requirements, but can be approved by an advisor to meet a requirement),
+        Approval (whether an advior has approved a taken course for degree requirements. This is typically false or unknown from the transcript unless
         otherwise specified), and Cumulative GPA (cumulative GPA for undnergraduate and graduate degrees) 
         from a given transcript. It's vitally IMPORTANT that you double check and fill in correct information from the given transcript.
-        Here is the transcript: {transcript}. Please output a filled transcript json schema in the following formt only. 
+        Here is the transcript: {transcript}. Please output a filled transcript json schema in the following format only. Your output MUST strictly follow the format.
         ```
         transcript = {{
         "Student": {{
@@ -67,16 +68,29 @@ def process_individual_transcript(results_dir, transcript_path):
                 {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}}, 
                 ...
         ]
-        "Approval": [
+        "Deviations": [
                 {{
-                "Approved": Boolean or "UNKOWN",
-                "Approved_By": String or None,
-                "Approved_Course_ID": String or None
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
         }},
           {{
-                "Approved": Boolean or "UNKNOWN",
-                "Approved_By": String or None when "Approved"=="UNKNOWN",
-                "Approved_Course_ID": String or None when "Approved"=="UNKNOWN"
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        }},
+        ]
+        
+        "Approval": [
+                {{
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        }},
+          {{
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
         }},
         ]
         
@@ -104,6 +118,7 @@ def parse_schema(schema_path):
         ap_credits = data.get("AP_Credits", [])
         courses_taken = data.get("Courses_Taken", [])
         approval = data.get("Approval", [])
+        deviations = data.get("Deviations", [])
         cumulative_gpa = data.get("Cumulative_GPA", {})
 
         # Accessing student information
@@ -135,6 +150,11 @@ def parse_schema(schema_path):
                 approved_course_id = app.get("Approved_Course_ID")
                 print(f"Approved: {approved}, Approved By: {approved_by}, Approved Course ID: {approved_course_id}")
 
+        # Accessing Approval Information
+        for dev in deviations:
+                approved_by = app.get("Approved_By")
+                dev_ourse_id = app.get("Deviated_Course_ID")
+                print(f"deviations: {dev}, Approved By: {approved_by}, Deviated Course ID: {dev_ourse_id}")
         # Accessing Cumulative GPA
         undergrad_gpa = cumulative_gpa.get("Undergrad")
         graduate_gpa = cumulative_gpa.get("Graduate")
