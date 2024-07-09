@@ -103,128 +103,199 @@
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ADDITIONAL REQUIREMENT. You should also include
-        solver formulas for advisor approval and deviation constraints if there is one. Please generate
-        formulas with respect to the requirements only. 
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ADDITIONAL REQUIREMENT. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please note that not all taken couses in the transcript satisfy the given requierments. Please generate
+        parameterized formulas with respect to the requirements only. 
         =======================formula ouput===========================
-Absolutely, let's generate cvc5 SMT solver formulas to verify the constraints based on the provided transcript schema template and the mentioned requirements. Here's how we can achieve this:
+Sure, I can help you generate the CVC5 solver formulas to check the constraints for the MSCS degree requirements based on the provided transcript schema. Below are the constraints broken down and appropriately represented in CVC5.
 
-1. **All courses submitted for the MSCS degree must be numbered 100 or greater.**
-2. **At most 10 units of Foundations requirement courses may be counted toward your 45 units.**
-3. **At most 3 units of 1-2 unit seminars may be counted toward your 45 units.**
-4. **At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
-*All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade.**
-5. **The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).**
-6. **Units previously applied toward BS requirements may not also be counted toward the MSCS.**
-7. **You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.**
+### Initial Setup
 
-Let's write the constraints:
+First, we'll set up the CVC5 solver and the required sorts.
 
 ```python
 from cvc5 import Solver, Kind
 
-def generate_constraints(transcript):
-    solver = Solver()
+solver = Solver()
+solver.setOption("produce-models", "true")
 
-    # Constraint 1: All courses must be numbered 100 or greater.
-    for course in transcript.get("Courses_Taken", []):
-        course_id_var = solver.mkConst(solver.getIntegerSort(), f"course_id_{course['Course_ID']}")
-        course_id_val = solver.mkInteger(course["Course_ID"])
-        solver.assertFormula(solver.mkTerm(Kind.GEQ, course_id_val, solver.mkInteger(100)))
-    
-    # Constraint 2: At most 10 units of Foundations courses.
-    foundations_units = sum(course["Earned_Units"] for course in transcript.get("Courses_Taken", []) if "Foundations" in course["Title"])
-    solver.assertFormula(solver.mkTerm(Kind.LEQ, solver.mkInteger(foundations_units), solver.mkInteger(10)))
-    
-    # Constraint 3: At most 3 units of 1-2 unit seminars.
-    seminar_units = sum(course["Earned_Units"] for course in transcript.get("Courses_Taken", []) if course["Earned_Units"] in [1, 2])
-    solver.assertFormula(solver.mkTerm(Kind.LEQ, solver.mkInteger(seminar_units), solver.mkInteger(3)))
-    
-    # Constraint 4: At least 36 units taken for a letter grade.
-    units_letter_grade = sum(
-        course["Earned_Units"]
-        for course in transcript.get("Courses_Taken", [])
-        if course["Grade"] not in ["CR", "S"] # Assuming CR or S imply not letter grade
-        or "Spring 19-20" in course.get("Term", "")  # Assume Term attribute for special conditions
-        or "Fall 20-21" in course.get("Term", "")
-        or "Winter 20-21" in course.get("Term", "")
-        or "Spring 20-21" in course.get("Term", "")
-        or "Summer 20-21" in course.get("Term", "")
-    )
-    solver.assertFormula(solver.mkTerm(Kind.GEQ, solver.mkInteger(units_letter_grade), solver.mkInteger(36)))
-    
-    # Constraint 5: Average grade must be at least 3.0.
-    total_units = sum(course["Earned_Units"] for course in transcript.get("Courses_Taken", []))
-    grades_as_numbers = {
-        "A": 4.0, "A-": 3.7, "B+": 3.3, "B": 3.0, "B-": 2.7,
-        "C+": 2.3, "C": 2.0, "C-": 1.7, "D+": 1.3, "D": 1.0, "D-": 0.7, "F": 0.0
-    }
-    
-    total_grade_points = sum(
-        course["Earned_Units"] * grades_as_numbers.get(course["Grade"], 0.0)
-        for course in transcript.get("Courses_Taken", [])
-    )
-    average_grade = total_grade_points / total_units
-    solver.assertFormula(solver.mkTerm(Kind.GEQ, solver.mkReal(average_grade), solver.mkReal(3.0)))
-    
-    # Constraint 6: Units previously applied toward BS cannot be counted.
-    ap_credits = sum(course["Earned_Units"] for course in transcript.get("AP_Credits", []))
-    solver.assertFormula(solver.mkTerm(Kind.EQUAL, solver.mkInteger(ap_credits), solver.mkInteger(0)))
-    
-    # Constraint 7: You must complete at least 45 graduate units.
-    graduate_units = sum(course["Earned_Units"] for course in transcript.get("Courses_Taken", []) if course["Course_ID"] >= 200)
-    solver.assertFormula(solver.mkTerm(Kind.GEQ, solver.mkInteger(graduate_units), solver.mkInteger(45)))
-    
-    # Advisor approvals
-    for deviation in transcript.get("Deviations", []):
-        if deviation["Approved"]:
-            approved_var = solver.mkConst(solver.getBooleanSort(), f"deviation_approved_{deviation['Deviated_Course_ID']}")
-            solver.assertFormula(solver.mkTerm(Kind.EQUAL, approved_var, solver.mkBoolean(True)))
-    
-    for approval in transcript.get("Approval", []):
-        if approval["Approved"]:
-            approved_var = solver.mkConst(solver.getBooleanSort(), f"approval_approved_{approval['Approved_Course_ID']}")
-            solver.assertFormula(solver.mkTerm(Kind.EQUAL, approved_var, solver.mkBoolean(True)))
-    
-    return solver
-
-transcript = {
-    "Student": {
-        "Name": "Alice",
-        "Program": "MSCS", 
-        "StudentID": 123456,
-        "Coterm": False
-    },
-    "AP_Credits": [],
-    "Courses_Taken": [
-        {"Course_ID": 101, "Title": "Intro to CS", "Earned_Units": 5, "Grade": "A"},
-        {"Course_ID": 102, "Title": "Data Structures", "Earned_Units": 4, "Grade": "A-"}, 
-        # Add more courses here...
-    ],
-    "Deviations": [
-        {
-            "Deviated_Course_ID": "CS 103",
-            "Approved": True,
-            "Approved_By": "Advisor1",
-        },
-    ],
-    "Approval": [
-        {
-            "Approved": True,
-            "Approved_By": "Advisor1",
-            "Approved_Course_ID": "CS 104"
-        },
-    ],    
-    "Cumulative_GPA": {
-        "Undergrad": 3.5,
-        "Graduate": 3.8,
-    },
-}
-
-solver = generate_constraints(transcript)
-result = solver.checkSat()
-
-print(result)  # Result will be 'sat' if the constraints hold, 'unsat' otherwise.
+# Sorts
+string_sort = solver.getStringSort()
+int_sort = solver.getIntegerSort()
+real_sort = solver.getRealSort()
+bool_sort = solver.getBooleanSort()
 ```
 
-The provided script creates a solver and checks the constraints for the given requirements. Each requirement is individually addressed and added to the solver along with assertions for deviations and advisor approvals. The solver checks the transcript's satisfiability vis-a-vis all the constraints. If the constraints hold, `solver.checkSat()` will return 'sat'.
+### Variables
+
+Next, we'll setup variables and gather the data from the transcript.
+
+```python
+# Extract data from the transcript
+courses_taken = transcript.get("Courses_Taken", [])
+ap_credits = transcript.get("AP_Credits", [])
+deviations = transcript.get("Deviations", [])
+approvals = transcript.get("Approval", [])
+
+# Variables for holding information
+total_units = solver.mkConst(int_sort, "total_units")
+letter_grade_units = solver.mkConst(int_sort, "letter_grade_units")
+foundation_units = solver.mkConst(int_sort, "foundation_units")
+seminar_units = solver.mkConst(int_sort, "seminar_units")
+gpa_sum = solver.mkConst(real_sort, "gpa_sum")
+valid_courses = []
+
+# For calculating average GPA
+classification_map = {
+    'A': 4.0,
+    'B': 3.0,
+    'C': 2.0,
+    'D': 1.0,
+    'F': 0.0,
+    'CR': 0.0,
+    'NC': 0.0,
+    'S': 0.0,
+    'U': 0.0
+}
+```
+
+### Constraint Formulas
+
+#### 1. All courses must be numbered 100 or greater
+
+```python
+for course in courses_taken:
+    course_id = course.get("Course_ID")
+    earned_units = course.get("Earned_Units")
+    grade = course.get("Grade")
+    
+    course_var = solver.mkConst(int_sort, f"course_{course_id}")
+
+    is_course_valid = solver.mkTerm(Kind.GE, course_var, solver.mkInteger(100))
+    valid_courses.append(is_course_valid)
+
+solver.assertFormula(solver.mkTerm(Kind.AND, *valid_courses))
+```
+
+#### 2. At most 10 units of Foundations requirement courses may be counted toward your 45 units
+
+```python
+foundations_units = []
+for course in courses_taken:
+    if "Foundations" in course.get("Title"):
+        foundations_units.append(course.get("Earned_Units"))
+        
+limit_foundation_units = solver.mkTerm(
+    Kind.LE, 
+    solver.mkInteger(sum(foundations_units)), 
+    solver.mkInteger(10)
+)
+solver.assertFormula(limit_foundation_units )
+```
+
+#### 3. At most 3 units of 1-2 unit seminars may be counted toward your 45 units
+
+```python
+seminar_units = sum(course.get("Earned_Units") for course in courses_taken if 1 <= course.get("Earned_Units") <= 2)
+limit_seminar_units = solver.mkTerm(Kind.LE, solver.mkInteger(seminar_units), solver.mkInteger(3))
+solver.assertFormula(limit_seminar_units)
+```
+
+#### 4. At least 36 units must be taken for a letter grade
+
+```python
+for course in courses_taken:
+    earned_units = course.get("Earned_Units")
+    grade = course.get("Grade")
+    
+    is_letter_grade = solver.mkTerm(Kind.OR, 
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("A")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("B")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("C")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("D")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("F")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("CR")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("NC")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("S")),
+                                    solver.mkTerm(Kind.EQUAL, solver.mkString(grade), solver.mkString("U"))
+                                    )
+    
+    count_letter_grade_units = solver.mkTerm(Kind.ITE, is_letter_grade, solver.mkInteger(earned_units), solver.mkInteger(0))
+    letter_grade_units = solver.mkTerm(Kind.PLUS, letter_grade_units, count_letter_grade_units)
+
+constraint_36_letter_grade_units = solver.mkTerm(Kind.GE, letter_grade_units, solver.mkInteger(36))
+
+solver.assertFormula(constraint_36_letter_grade_units)
+```
+
+#### 5. Average grade of at least B (3.0 GPA)
+
+```python
+total_weighted_grades = 0.0
+total_units_taken = 0
+for course in courses_taken:
+    earned_units = course.get("Earned_Units")
+    grade = course.get("Grade")
+    
+    if classification_map.get(grade) is not None:
+        total_weighted_grades += classification_map[grade] * earned_units
+        total_units_taken += earned_units
+
+average_gpa = total_weighted_grades / total_units_taken
+
+# Ensure GPA is at least 3.0
+min_gpa_constraint = solver.mkTerm(Kind.GE, solver.mkReal(average_gpa), solver.mkReal(3.0))
+solver.assertFormula(min_gpa_constraint)
+```
+
+#### 6. Units previously applied toward BS requirements may not also be counted toward the MSCS
+
+```python
+# This requires a list of courses for BS, if any.
+bs_courses = ["list_of_bs_courses"]
+
+for course in courses_taken:
+    course_id = course.get("Course_ID")
+    course_var = solver.mkConst(string_sort, f'course_{course_id}')
+    not_bs_course = solver.mkNot(solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(course_id)))
+    solver.assertFormula(not_bs_course)
+```
+
+#### 7. You must complete at least 45 graduate units at Stanford
+
+```python
+total_units_taken = sum(course.get("Earned_Units") for course in courses_taken)
+at_least_45_units_constraint = solver.mkTerm(Kind.GE, solver.mkInteger(total_units_taken), solver.mkInteger(45))
+solver.assertFormula(at_least_45_units_constraint)
+```
+
+#### Advisor Approval and Deviations
+
+```python
+# All courses that have approved deviations or approvals
+approved_courses = []
+for deviation in deviations:
+    if deviation.get("Approved"):
+        course_id = deviation.get("Deviated_Course_ID")
+        approved_courses.append(f"course_{course_id}")
+
+for approval in approvals:
+    if approval.get("Approved"):
+        course_id = approval.get("Approved_Course_ID")
+        approved_courses.append(f"course_{course_id}")
+
+approved_courses_constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkTrue()) for course in approved_courses]
+if approved_courses_constraints:
+    solver.assertFormula(solver.mkTerm(Kind.AND, *approved_courses_constraints))
+```
+
+Finally, add all constraints to the solver and check satisfiability:
+
+```python
+if solver.checkSat().isSat():
+    print("The transcript satisfies the MSCS degree requirements.")
+else:
+    print("The transcript does not satisfy the MSCS degree requirements.")
+```
+
+This script lays out the constraints for the given MSCS degree requirements using CVC5 in Python. You can customize it further to check against specific courses or other attributes as per your transcript setup and required conditions.

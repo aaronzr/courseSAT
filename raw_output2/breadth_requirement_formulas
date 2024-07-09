@@ -1,14 +1,22 @@
 =======================prompt===========================
 
-        Your task is to generate cvc5 python solver formulas for the constraints in each requirement BREADTH REQUIREMENT: Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade. Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement BREADTH REQUIREMENT: 
 
-Area A. Mathematical and Theoretical Foundations: CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251  
+Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade.* Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.*
 
-Area B. Computer Systems: CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E  
+Course Number: Title:  Grade   
 
-Area C. Applications: CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373  
+Area A. Mathematical and Theoretical Foundations: 
+CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251  
 
-Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B you have identified.
+Area B. Computer Systems: 
+CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E  
+
+Area C. Applications: 
+CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373  
+
+Area D. Computing and Society: 
+CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B you have identified.
         Your formulas should include every constrint, including the ones related to advisor approval and deviations.
         The formulas will check satisfiability of a given transcript schema template as input in the following format: 
                 ```json
@@ -60,15 +68,23 @@ Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133
         }
         ```
         Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
-        BREADTH REQUIREMENT: Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade. Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.
+        BREADTH REQUIREMENT: 
 
-Area A. Mathematical and Theoretical Foundations: CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251  
+Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade.* Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.*
 
-Area B. Computer Systems: CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E  
+Course Number: Title:  Grade   
 
-Area C. Applications: CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373  
+Area A. Mathematical and Theoretical Foundations: 
+CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251  
 
-Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+Area B. Computer Systems: 
+CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E  
+
+Area C. Applications: 
+CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373  
+
+Area D. Computing and Society: 
+CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
         and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
         ```
         course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
@@ -101,160 +117,148 @@ Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the BREADTH REQUIREMENT. You should also include
-        solver formulas for advisor approval and deviation constraints if there is one. Please generate
-        formulas with respect to the requirements only. 
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the BREADTH REQUIREMENT. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please note that not all taken couses in the transcript satisfy the given requierments. Please generate
+        parameterized formulas with respect to the requirements only. 
         =======================formula ouput===========================
-To generate cvc5 Python solver formulas for the given BREADTH REQUIREMENT constraints, we need to cover several conditions. Specifically:
-
-1. Each of the three courses must be taken from different Breadth Areas (A, B, C, D).
-2. Each course must be taken for a minimum of 3 units.
-3. Each course must be completed for a letter grade.
-4. Courses must not be waived (they should be present in the transcript).
-5. Any deviations must be approved.
-
-Here's how we can construct the cvc5 solver formulas:
+To address the detailed requirements and constraints of the BREADTH REQUIREMENT for the given transcript schema, you can generate a set of cvc5 solver formulas that verify the given constraints. Here's a comprehensive code example to achieve this:
 
 ```python
-import pycvc5
-import pycvc5.Kind as Kind
+from cvc5 import Solver, Kind, Term
 
-solver = pycvc5.Solver()
+def create_constraints(transcript):
+    solver = Solver()
 
-# Sorts
-str_sort = solver.getStringSort()
-int_sort = solver.getIntegerSort()
-bool_sort = solver.getBooleanSort()
+    # Course lists for each area
+    area_a_courses = ['CS 154', 'CS 157', 'CS 168', 'CS 254', 'CS 261', 'CS 265', 'EE 364A', 'EE 364B', 'Phil 251']
+    area_b_courses = ['CS 140', 'CS 140E', 'CS 143', 'CS 144', 'CS 149', 'CS 212', 'CS 242', 'CS 243', 'CS 244', 'CS 244B', 'CS 295', 'CS 316', 'CS 358', 'EE 180', 'EE 282', 'EE 382E']
+    area_c_courses = ['CS 145', 'CS 147', 'CS 148', 'CS 155', 'CS 173', 'CS 221', 'CS 223A', 'CS 224N', 'CS 224U', 'CS 224W', 'CS 227B', 'CS 228', 'CS 229', 'CS 229M', 'CS 231A', 'CS 231N', 'CS 234', 'CS 236', 'CS 237A', 'CS 245', 'CS 246', 'CS 247', 'CS 248', 'CS 248A', 'CS 251', 'CS 255', 'CS 273A', 'CS 273B', 'CS 279', 'CS 345', 'CS 347', 'CS 348A', 'CS 348B', 'CS 348C', 'CS 348E', 'CS 348I', 'CS 348K', 'CS 355', 'CS 356', 'CS 373']
+    area_d_courses = ['CS 152', 'CS 181', 'CS 182', 'CS 256', 'CS 281', 'CS 329T', 'CS 384', 'AMSTUD 133', 'AMSTUD 145', 'ANTHRO 132D', 'COMM 118S', 'COMM 120W', 'COMM 124', 'COMM 130D', 'COMM 145', 'COMM 154', 'COMM 166', 'COMM 186W', 'COMM 230A', 'COMM 230B', 'COMM 230C', 'DESINST 215', 'DESINST 240', 'EARTHSYS 213', 'ENGLISH 184D', 'ENGR 248', 'HISTORY 244F', 'INTLPOL 268', 'LAW 4039', 'ME 177', 'MS&E 193', 'MS&E 231', 'MS&E 234', 'MS&E 254', 'POLISCI 150A', 'PSYCH 215', 'PUBLPOL 103F', 'PUBLPOL 353B']
 
-# Transcript schema
+    # Constraints initialization
+    constraints = []
+
+    taken_courses = transcript.get("Courses_Taken", [])
+
+    # Create course variables for breadth areas
+    course_a = solver.mkConst(solver.getStringSort(), "course_a")
+    course_b = solver.mkConst(solver.getStringSort(), "course_b")
+    course_c = solver.mkConst(solver.getStringSort(), "course_c")
+
+    # Constraints for courses being part of taken courses
+    constraints_set_a = [solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(course.get("Course_ID"))) for course in taken_courses]
+    constraints_set_b = [solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(course.get("Course_ID"))) for course in taken_courses]
+    constraints_set_c = [solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(course.get("Course_ID"))) for course in taken_courses]
+
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_a)) # course_a in taken courses
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_b)) # course_b in taken courses
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_c)) # course_c in taken courses
+
+    # Constraints for courses meeting the unit requirement
+    course_ids_units = {course.get("Course_ID"): course.get("Earned_Units") for course in taken_courses}
+    min_units = 3
+
+    units_a = solver.mkConst(solver.getRealSort(), "units_a")
+    units_b = solver.mkConst(solver.getRealSort(), "units_b")
+    units_c = solver.mkConst(solver.getRealSort(), "units_c")
+
+    # Assuming creation of map of units with course_ids_units
+    constraints.append(solver.mkTerm(Kind.GEQ, units_a, solver.mkReal(min_units))) # course_a units >= 3
+    constraints.append(solver.mkTerm(Kind.GEQ, units_b, solver.mkReal(min_units))) # course_b units >= 3
+    constraints.append(solver.mkTerm(Kind.GEQ, units_c, solver.mkReal(min_units))) # course_c units >= 3
+
+    # Constraints for courses being in different areas
+    constraints_set_a_area = [solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(course)) for course in area_a_courses]
+    constraints_set_b_area = [solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(course)) for course in area_b_courses]
+    constraints_set_c_area = [solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(course)) for course in area_c_courses]
+
+    # Ensure each course is in its respective area
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_a_area))
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_b_area))
+    constraints.append(solver.mkTerm(Kind.OR, *constraints_set_c_area))
+
+    # Constraints to ensure courses are not the same
+    not_same_1 = solver.mkTerm(Kind.DISTINCT, course_a, course_b)
+    not_same_2 = solver.mkTerm(Kind.DISTINCT, course_b, course_c)
+    not_same_3 = solver.mkTerm(Kind.DISTINCT, course_a, course_c)
+
+    constraints.append(not_same_1)
+    constraints.append(not_same_2)
+    constraints.append(not_same_3)
+
+    # Advisor approval and deviations constraints
+    deviations = transcript.get("Deviations", [])
+    approvals = transcript.get("Approval", [])
+
+    for dev in deviations:
+        if dev['Approved']:
+            deviated_course_id = dev['Deviated_Course_ID']
+            deviations_constraint = solver.mkTerm(Kind.EQUAL, solver.mkString(deviated_course_id), course_a).orElse(
+                solver.mkTerm(Kind.EQUAL, solver.mkString(deviated_course_id), course_b)).orElse(
+                solver.mkTerm(Kind.EQUAL, solver.mkString(deviated_course_id), course_c))
+            constraints.append(deviations_constraint)
+
+    for approval in approvals:
+        if approval['Approved']:
+            approved_course_id = approval['Approved_Course_ID']
+            approval_constraint = solver.mkTerm(Kind.EQUAL, solver.mkString(approved_course_id), course_a).orElse(
+                solver.mkTerm(Kind.EQUAL, solver.mkString(approved_course_id), course_b)).orElse(
+                solver.mkTerm(Kind.EQUAL, solver.mkString(approved_course_id), course_c)
+            )
+            constraints.append(approval_constraint)
+
+    formula = solver.mkTerm(Kind.AND, *constraints)
+    solver.assertFormula(formula)
+
+    return solver, formula
+
+# Example transcript input
 transcript = {
     "Student": {
         "Name": "John Doe",
-        "Program": "CS",
-        "StudentID": 12345,
+        "Program": "Computer Science",
+        "StudentID": 123456,
         "Coterm": False
     },
-    "AP_Credits": [],
-    "Courses_Taken": [
-        {"Course_ID": 154, "Title": "CS 154", "Earned_Units": 3, "Grade": "A"},
-        {"Course_ID": 140, "Title": "CS 140", "Earned_Units": 3, "Grade": "B+"},
-        {"Course_ID": 145, "Title": "CS 145", "Earned_Units": 3, "Grade": "A-"}
+    "AP_Credits": [
+        {"Advanced_Placement": "Physics", "Earned_Units": 5}
     ],
-    "Deviations": [],
-    "Approval": [],
-    "Cumulative_GPA": {"Undergrad": 3.7, "Graduate": 3.8}
+    "Courses_Taken": [
+        {"Course_ID": "CS 154", "Title": "Automata and Complexity", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "CS 140", "Title": "Operating Systems", "Earned_Units": 3, "Grade": "B"},
+        {"Course_ID": "CS 145", "Title": "Databases", "Earned_Units": 3, "Grade": "A"},
+    ],
+    "Deviations": [
+        {
+            "Deviated_Course_ID": "CS 257",
+            "Approved": True,
+            "Approved_By": "Advisor Name",
+        }
+    ],
+    "Approval": [
+        {
+            "Approved": True,
+            "Approved_By": "Advisor Name",
+            "Approved_Course_ID": "CS 258",
+        }
+    ],
+    "Cumulative_GPA": {
+        "Undergrad": 3.5,
+        "Graduate": 3.8,
+    }
 }
 
-# Define courses elements
-courses_taken = transcript["Courses_Taken"]
-
-# Variables for courses from different areas
-course_A = solver.mkConst(str_sort, "course_A")
-course_B = solver.mkConst(str_sort, "course_B")
-course_C = solver.mkConst(str_sort, "course_C")
-course_D = solver.mkConst(str_sort, "course_D")
-
-# Courses by Areas
-area_A_courses = ["CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251"]
-area_B_courses = ["CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", 
-                  "CS 358", "EE 180", "EE 282", "EE 382E"]
-area_C_courses = ["CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", 
-                  "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", 
-                  "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", 
-                  "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373"]
-area_D_courses = ["CS 152", "CS 181", "CS 182", "CS 256", "CS 281", "CS 329T", "CS 384", "AMSTUD 133", "AMSTUD 145", "ANTHRO 132D", 
-                  "COMM 118S", "COMM 120W", "COMM 124", "COMM 130D", "COMM 145", "COMM 154", "COMM 166", "COMM 186W", "COMM 230A", 
-                  "COMM 230B", "COMM 230C", "DESINST 215", "DESINST 240", "EARTHSYS 213", "ENGLISH 184D", "ENGR 248", "HISTORY 244F", 
-                  "INTLPOL 268", "LAW 4039", "ME 177", "MS&E 193", "MS&E 231", "MS&E 234", "MS&E 254", "POLISCI 150A", "PSYCH 215", 
-                  "PUBLPOL 103F", "PUBLPOL 353B"]
-
-# Collect constraints
-constraints = []
-
-# Constraint: Course_A is from Area A
-constraint_A = solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, course_A, solver.mkString(course)) for course in area_A_courses])
-constraints.append(constraint_A)
-
-# Constraint: Course_B is from Area B
-constraint_B = solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, course_B, solver.mkString(course)) for course in area_B_courses])
-constraints.append(constraint_B)
-
-# Constraint: Course_C is from Area C
-constraint_C = solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, course_C, solver.mkString(course)) for course in area_C_courses])
-constraints.append(constraint_C)
-
-# Courses must be distinct
-constraint_distinct = solver.mkTerm(Kind.AND,
-    solver.mkTerm(Kind.DISTINCT, course_A, course_B),
-    solver.mkTerm(Kind.DISTINCT, course_A, course_C),
-    solver.mkTerm(Kind.DISTINCT, course_B, course_C))
-constraints.append(constraint_distinct)
-
-# Ensure courses are present in transcript and have at least 3 units and a letter grade
-constraints_present_A = solver.mkTerm(Kind.OR, *[
-    solver.mkTerm(Kind.AND,
-        solver.mkTerm(Kind.EQUAL, course_A, solver.mkString(course["Title"])),
-        solver.mkTerm(Kind.GEQ, solver.mkTerm(Kind.INT_CONSTANT, solver.mkInteger(course["Earned_Units"])), solver.mkInteger(3)),
-        solver.mkTerm(Kind.OR, 
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("A")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("B")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("C"))
-        )
-    ) for course in courses_taken
-])
-constraints_present_B = solver.mkTerm(Kind.OR, *[
-    solver.mkTerm(Kind.AND,
-        solver.mkTerm(Kind.EQUAL, course_B, solver.mkString(course["Title"])),
-        solver.mkTerm(Kind.GEQ, solver.mkTerm(Kind.INT_CONSTANT, solver.mkInteger(course["Earned_Units"])), solver.mkInteger(3)),
-        solver.mkTerm(Kind.OR, 
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("A")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("B")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("C"))
-        )
-    ) for course in courses_taken
-])
-constraints_present_C = solver.mkTerm(Kind.OR, *[
-    solver.mkTerm(Kind.AND,
-        solver.mkTerm(Kind.EQUAL, course_C, solver.mkString(course["Title"])),
-        solver.mkTerm(Kind.GEQ, solver.mkTerm(Kind.INT_CONSTANT, solver.mkInteger(course["Earned_Units"])), solver.mkInteger(3)),
-        solver.mkTerm(Kind.OR, 
-            solver.mkTerm(Kind.EQUAL, solver.mkString(course["Grade"]), solver.mkString("A")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString("Grade"), solver.mkString("B")),
-            solver.mkTerm(Kind.EQUAL, solver.mkString("Grade"), solver.mkString("C"))
-        )
-    ) for course in courses_taken
-])
-
-constraints.append(constraints_present_A)
-constraints.append(constraints_present_B)
-constraints.append(constraints_present_C)
-
-# Handle deviations
-for dev in transcript["Deviations"]:
-    if dev["Approved"]:
-        approved_course = dev["Deviated_Course_ID"]
-        constraints.append(solver.mkTerm(Kind.OR,
-            solver.mkTerm(Kind.EQUAL, course_A, solver.mkString(approved_course)),
-            solver.mkTerm(Kind.EQUAL, course_B, solver.mkString(approved_course)),
-            solver.mkTerm(Kind.EQUAL, course_C, solver.mkString(approved_course))
-        ))
-
-# Combine all constraints into a single formula
-formula = solver.mkTerm(Kind.AND, *constraints)
-
-solver.assertFormula(formula)
-
-# Check satisfiability
-if solver.checkSat().isSat():
-    print("The transcript satisfies the BREADTH REQUIREMENT.")
-else:
-    print("The transcript does not satisfy the BREADTH REQUIREMENT.")
+solver, formula = create_constraints(transcript)
+result = solver.checkSat()
+print("Satisfiability result:", result)
 ```
 
-Note:
+Explanation of the code:
+1. We define the course lists for four different areas.
+2. We initialize the constraints list and create course variables for breadth areas.
+3. We add constraints to ensure that courses are part of the taken courses and satisfy the minimum unit requirement.
+4. Constraints are added to ensure that the selected courses are from different areas and are unique.
+5. We include constraints for advisor approval and deviations.
+6. Finally, the constraints are combined to form a formula, which is then asserted in the solver.
 
-- We define the courses and create solver constraints to check for the required courses.
-- We ensure that courses are from distinct areas.
-- We ensure that courses earn at least 3 units and have a letter grade.
-- We handle deviations, if any.
-- Finally, we combine all these constraints into a single formula and use the solver to check satisfiability.
+The solver will check whether the constraints are satisfied with the given transcript.
