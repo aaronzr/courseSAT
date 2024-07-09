@@ -1,0 +1,205 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement ELECTIVES
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units                        
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS you have identified.
+        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ELECTIVES
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units                        
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
+	course_variable_2 = solver.mkConst(solver.getStringSort(), "course2")
+	#Course1 is \in transcript[*].course; 
+	#Course2 is \in transcript[*].course;
+	constraints_set1 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraints_set2 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraint_1 = solver.mkTerm(Kind.OR, *constraints_set1)
+	constraint_2 = solver.mkTerm(Kind.OR, *constraints_set2)
+ 	#Course1 is in one of (100,101,102)
+	#Course2 is in one of (101, 102, 103)
+	constraints_set3 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course_unit))for course_unit in ['CS 100', 'CS 101', 'CS 102']]
+	constraints_set4 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course_unit))for course_unit in ['CS 101', 'CS 102', 'CS 103']]
+	constraint_3 = solver.mkTerm(Kind.OR, *constraints_set3)
+	constraint_4 = solver.mkTerm(Kind.OR, *constraints_set4)
+	#AND all previous individual constraints
+	#Course1 is \in transcript[*].course AND 
+	#Course2 is \in transcript[*].course AND
+  	#Course1 is in one of (100,101,102)AND
+	#Course2 is in one of (101, 102, 103)AND
+ 
+	constraint_5 = solver.mkTerm(Kind.AND, constraint_1, constraint_2, constraint_3, constraint_4)
+	#The same course cannot be used to satisfy two different requirements: 
+	#course_1 == coures_2
+	constraint_6 = solver.mkTerm(Kind.EQUAL, course_variable_1, course_variable_2)
+	#NEGATE(course_1 == coures_2)=> course_1 != coures_2
+	constraint_7 = solver.mkTerm(Kind.NOT, constraint_6)
+	#final formula:
+	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
+        solver.assertFormula(formula)
+        ```
+        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ELECTIVES. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please generate
+        formulas with respect to the requirements only. 
+        =======================formula ouput===========================
+Certainly! Here's how you can generate cvc5 formulas for each constraint in the ELECTIVES section:
+
+1. **Count Up to a Maximum of 3 Units of 1-2 Unit Seminars offered in the School of Engineering.**
+2. **All other electives must be taken for 3 or more units.**
+3. **CS courses above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives.**
+4. **Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator.**
+5. **CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement.**
+
+```python
+from cvc5 import Solver, Kind
+
+# Initialize solver
+solver = Solver()
+
+# Define transcript schema
+transcript = {
+    "Student": {
+        "Name": "John Doe",
+        "Program": "MSCS",
+        "StudentID": 123456,
+        "Coterm": False
+    },
+    "AP_Credits": [
+        {"Advanced_Placement": "Physics", "Earned_Units": 10}
+    ],
+    "Courses_Taken": [
+        {"Course_ID": 112, "Title": "Data Structures", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": 229, "Title": "Machine Learning", "Earned_Units": 3, "Grade": "B"},
+        # Add more courses here
+    ],
+    "Deviations": [
+        {"Deviated_Course_ID": "210", "Approved": True, "Approved_By": "Advisor"},
+    ],
+    "Approval": [
+        {"Approved": True, "Approved_By": "Advisor", "Approved_Course_ID": "210"},
+    ],
+    "Cumulative_GPA": {
+        "Undergrad": 3.6,
+        "Graduate": 3.9,
+    },
+}
+
+# Variables for constraints
+sems_units = solver.mkConst(solver.getIntegerSort(), "seminars_units")
+cs_units = solver.mkConst(solver.getIntegerSort(), "cs_units")
+non_cs_units = solver.mkConst(solver.getIntegerSort(), "non_cs_units")
+total_elective_units = solver.mkConst(solver.getIntegerSort(), "total_elective_units")
+cs_129_included = solver.mkConst(solver.getBooleanSort(), "cs_129_included")
+cs_229_counted = solver.mkConst(solver.getBooleanSort(), "cs_229_counted")
+
+# Helper functions and variables
+units_constraints = []
+cs_course_ids = [int(course["Course_ID"]) for course in transcript["Courses_Taken"] if course["Course_ID"] > 111 and course["Course_ID"] not in [196, 198, 390]]
+non_cs_courses = [course for course in transcript["Courses_Taken"] if int(course["Course_ID"]) <= 111]
+
+# Count total units for seminars
+seminar_units = sum(course["Earned_Units"] for course in non_cs_courses if 1 <= course["Earned_Units"] <= 2)
+sems_units_term = solver.mkInteger(seminar_units)
+units_constraints.append(solver.mkTerm(Kind.LEQ, sems_units_term, solver.mkInteger(3)))
+
+# All other electives must be 3 or more units
+other_units = sum(course["Earned_Units"] for course in non_cs_courses if course["Earned_Units"] >= 3)
+other_units_term = solver.mkInteger(other_units)
+units_constraints.append(solver.mkTerm(Kind.GEQ, other_units_term, solver.mkInteger(0)))
+
+# Calculate total elective units
+total_units = seminar_units + other_units  # Add other elective constraints as necessary
+total_elective_units_term = solver.mkInteger(total_units)
+units_constraints.append(solver.mkTerm(Kind.EQUAL, total_elective_units, total_elective_units_term))
+
+# CS courses above 111, excluding CS196, CS198, CS390
+cs_units_count = sum(course["Earned_Units"] for course in transcript["Courses_Taken"] if course["Course_ID"] in cs_course_ids)
+cs_units_term = solver.mkInteger(cs_units_count)
+units_constraints.append(solver.mkTerm(Kind.GEQ, cs_units_term, solver.mkInteger(0)))
+
+# Non-CS courses approval
+for course in non_cs_courses:
+    approved_courses = [item["Approved_Course_ID"] for item in transcript["Approval"] if item["Approved"]]
+    if str(course["Course_ID"]) in approved_courses:
+        units_constraints.append(solver.mkTerm(Kind.GEQ, solver.mkInteger(course["Earned_Units"]), solver.mkInteger(3)))
+
+# CS 129 and CS 229 mutual exclusion
+cs_129_taken = any(course["Course_ID"] == 129 for course in transcript["Courses_Taken"])
+cs_229_taken = any(course["Course_ID"] == 229 for course in transcript["Courses_Taken"])
+
+units_constraints.append(solver.mkTerm(Kind.EQUAL, cs_129_included, solver.mkBoolean(cs_129_taken)))
+units_constraints.append(solver.mkTerm(Kind.EQUAL, cs_229_counted, solver.mkBoolean(cs_229_taken)))
+units_constraints.append(solver.mkTerm(Kind.IMPLIES, solver.mkTerm(Kind.AND, cs_129_included, cs_229_counted), solver.mkBoolean(False)))
+
+# Combine all the constraints
+final_formula = solver.mkTerm(Kind.AND, *units_constraints)
+
+# Assert the formula
+solver.assertFormula(final_formula)
+
+# Check satisfiability
+result = solver.checkSat()
+
+print("Is the transcript satisfactory?", result)
+```
+
+This script generates necessary constraints to validate the transcript concerning the electives'. Each constraint is translated into a cvc5 formula, and the final conjunction of these constraints is checked for satisfiability. The `result` will tell you if the transcript meets all the requirements.

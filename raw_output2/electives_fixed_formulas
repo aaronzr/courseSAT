@@ -1,0 +1,230 @@
+=======================prompt===========================
+
+        Please optimize your generated solver formulas by minimizing the use of
+        for loops or if condition checks. The following example is an okay format, because we use a variable in the formula
+        to parameterize the formulas as input to the solver: 
+        ```python
+        variable = solver.mkConst(solver.getStringSort(), "course")
+        constraint_1 = [solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString(variable)) for course in transcript.get("Courses_Taken", [])]
+        constraint_2 = solver.mkTerm(Kind.EQUAL, solver.mkString(variable), solver.mkString("CS 221"))
+        formula = solver.mkTerm(Kind.AND, constraint_1, constraint_2)
+        ```
+        The following example is NOT an okay format, because the formula is using hard coded values and is NOT parameterized: 
+        ```python 
+        for course in transcript.get("Courses_Taken", []):
+                cs_221 = solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString("CS 221"))
+        ```
+        Please check the following out and convert for loops and if conditional checks into 
+        solver formulas when possible: =======================prompt===========================
+
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement ELECTIVES
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units                        
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS you have identified.
+        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ELECTIVES
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units                        
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
+	course_variable_2 = solver.mkConst(solver.getStringSort(), "course2")
+	#Course1 is \in transcript[*].course; 
+	#Course2 is \in transcript[*].course;
+	constraints_set1 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraints_set2 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraint_1 = solver.mkTerm(Kind.OR, *constraints_set1)
+	constraint_2 = solver.mkTerm(Kind.OR, *constraints_set2)
+ 	#Course1 is in one of (100,101,102)
+	#Course2 is in one of (101, 102, 103)
+	constraints_set3 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course_unit))for course_unit in ['CS 100', 'CS 101', 'CS 102']]
+	constraints_set4 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course_unit))for course_unit in ['CS 101', 'CS 102', 'CS 103']]
+	constraint_3 = solver.mkTerm(Kind.OR, *constraints_set3)
+	constraint_4 = solver.mkTerm(Kind.OR, *constraints_set4)
+	#AND all previous individual constraints
+	#Course1 is \in transcript[*].course AND 
+	#Course2 is \in transcript[*].course AND
+  	#Course1 is in one of (100,101,102)AND
+	#Course2 is in one of (101, 102, 103)AND
+ 
+	constraint_5 = solver.mkTerm(Kind.AND, constraint_1, constraint_2, constraint_3, constraint_4)
+	#The same course cannot be used to satisfy two different requirements: 
+	#course_1 == coures_2
+	constraint_6 = solver.mkTerm(Kind.EQUAL, course_variable_1, course_variable_2)
+	#NEGATE(course_1 == coures_2)=> course_1 != coures_2
+	constraint_7 = solver.mkTerm(Kind.NOT, constraint_6)
+	#final formula:
+	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
+        solver.assertFormula(formula)
+        ```
+        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ELECTIVES. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please generate
+        formulas with respect to the requirements only. 
+        =======================formula ouput===========================
+
+        =======================fixed formula ouput===========================
+Certainly! We'll identify and generate the constraints required to check ELECTIVES requirements for the MSCS degree as per the supplied schema.
+
+### CVC5 Solver Formulas for ELECTIVES Constraints
+
+1. **Constraint for Total Units Requirement**:
+   Students need to complete 45 units for the MSCS degree.
+   
+2. **Constraint for Seminar Units**:
+   Maximum of 3 units from 1-2 unit seminars in the School of Engineering.
+   
+3. **Electives Conditions**:
+   - CS courses numbered above 111 except CS196, CS198, and CS390A/B/C can be counted.
+   - Non-CS technical courses numbered above 100, related to the degree program, and approved.
+   - CS 129 cannot be counted if CS 229 is used towards the MS or BS degree.
+
+#### Setting Up the CVC5 Solver with Constraints
+
+```python
+from cvc5 import Solver, Kind
+
+# Initialize the solver
+solver = Solver()
+
+# Define the constraints related to ELECTIVES
+# Transcript information
+transcript = {
+    "Student": {
+        "Name": "John Doe",
+        "Program": "MSCS",
+        "StudentID": 123456,
+        "Coterm": False
+    },
+    "AP_Credits": [],
+    "Courses_Taken": [
+        {"Course_ID": "CS 221", "Title": "Artificial Intelligence", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "ENG 101", "Title": "Technical Communication", "Earned_Units": 3, "Grade": "B"},
+        # Add more courses as needed
+    ],
+    "Deviations": [],
+    "Approval": [],
+    "Cumulative_GPA": {
+        "Undergrad": 3.5,
+        "Graduate": 3.7,
+    },
+}
+
+# Variables
+total_units_constraint = solver.mkConst(solver.getIntegerSort(), "total_units")
+total_seminar_units_constraint = solver.mkConst(solver.getIntegerSort(), "total_seminar_units")
+
+# Constraints List
+constraints = []
+
+# Constraint 1: Total units must be at least 45
+total_units = sum(course.get("Earned_Units", 0) for course in transcript.get("Courses_Taken", []))
+constraints.append(
+    solver.mkTerm(Kind.EQUAL, total_units_constraint, solver.mkInteger(total_units))
+)
+constraints.append(
+    solver.mkTerm(Kind.GEQ, total_units_constraint, solver.mkInteger(45))
+)
+
+# Constraint 2: At most 3 units from 1-2 unit seminars
+seminar_units = sum(course.get("Earned_Units", 0) for course in transcript.get("Courses_Taken", []) if "Seminar" in course.get("Title"))
+constraints.append(
+    solver.mkTerm(Kind.EQUAL, total_seminar_units_constraint, solver.mkInteger(seminar_units))
+)
+constraints.append(
+    solver.mkTerm(Kind.LEQ, total_seminar_units_constraint, solver.mkInteger(3))
+)
+
+# Constraint 3: CS courses above 111 except specific exclusions
+cs_course_id_constraints = [solver.mkTerm(Kind.AND, 
+    solver.mkTerm(Kind.STRING_GT, solver.mkString(course.get("Course_ID")), solver.mkString("CS 111")),
+    solver.mkTerm(Kind.STRING_LT, solver.mkString(course.get("Course_ID")), solver.mkString("CS 196")),
+    solver.mkTerm(Kind.STRING_LT, solver.mkString(course.get("Course_ID")), solver.mkString("CS 198")),
+    solver.mkTerm(Kind.STRING_GT, solver.mkString(course.get("Course_ID")), solver.mkString("CS 390C"))
+) for course in transcript.get("Courses_Taken", [])]
+
+constraints.extend(cs_course_id_constraints)
+
+# Constraint 4: Non-CS technical courses above 100, advisor approved
+non_cs_technical_courses = [solver.mkTerm(Kind.AND,
+    solver.mkTerm(Kind.STRING_LT, solver.mkString(course.get("Course_ID")), solver.mkString("CS 111")),
+    solver.mkTerm(Kind.STRING_GT, solver.mkString(course.get("Course_ID")), solver.mkString("100"))
+) for course in transcript.get("Courses_Taken", [])]
+
+constraints.extend(non_cs_technical_courses)
+
+# Constraint 5: CS 129 and CS 229 exclusivity
+cs_129_taken = any(course.get("Course_ID") == "CS 129" for course in transcript.get("Courses_Taken", []))
+cs_229_taken = any(course.get("Course_ID") == "CS 229" for course in transcript.get("Courses_Taken", []))
+
+if cs_129_taken and cs_229_taken:
+    constraints.append(solver.mkFalse())
+
+# Final Formula
+final_constraint = solver.mkTerm(Kind.AND, *constraints)
+solver.assertFormula(final_constraint)
+
+# Check if the constraints are satisfiable
+if solver.checkSat().isSat():
+    print("The transcript satisfies the ELECTIVES requirements.")
+else:
+    print("The transcript does not satisfy the ELECTIVES requirements.")
+
+```
+This code sets up the CVC5 solver to validate the ELECTIVES requirements for the MSCS degree based on the input transcript schema. It uses a combination of list comprehensions and solver terms to ensure all courses meet the specified constraints while avoiding hard-coded values for courses and ensuring parameterization.

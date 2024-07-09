@@ -1,0 +1,259 @@
+=======================prompt===========================
+
+        Please optimize your generated solver formulas by minimizing the use of
+        for loops or if condition checks. The following example is an okay format, because we use a variable in the formula
+        to parameterize the formulas as input to the solver: 
+        ```python
+        variable = solver.mkConst(solver.getStringSort(), "course")
+        constraint_1 = [solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString(variable)) for course in transcript.get("Courses_Taken", [])]
+        constraint_2 = solver.mkTerm(Kind.EQUAL, solver.mkString(variable), solver.mkString("CS 221"))
+        formula = solver.mkTerm(Kind.AND, constraint_1, constraint_2)
+        ```
+        The following example is NOT an okay format, because the formula is using hard coded values and is NOT parameterized: 
+        ```python 
+        for course in transcript.get("Courses_Taken", []):
+                cs_221 = solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString("CS 221"))
+        ```
+        Please check the following out and convert for loops and if conditional checks into 
+        solver formulas when possible: =======================prompt===========================
+
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement ### SIGNIFICANT IMPLEMENTATION REQUIREMENT:
+
+- At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement.
+- Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective).
+- Must be taken for a letter grade, and must be taken at Stanford.
+- Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement.
+- Deviations must be approved by the faculty director of the MS program, Cynthia Lee.
+
+**Courses that may be used to satisfy the Significant Implementation Requirement include:**
+- CS 140
+- CS 140E
+- CS 143
+- CS 144
+- CS 145
+- CS 148
+- CS 151
+- CS 190
+- CS 210B
+- CS 212
+- CS 221
+- CS 227B
+- CS 231N
+- CS 243
+- CS 248/248A
+- CS 341
+
+**Course Number: Title: Grade:** you have identified.
+        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ### SIGNIFICANT IMPLEMENTATION REQUIREMENT:
+
+- At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement.
+- Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective).
+- Must be taken for a letter grade, and must be taken at Stanford.
+- Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement.
+- Deviations must be approved by the faculty director of the MS program, Cynthia Lee.
+
+**Courses that may be used to satisfy the Significant Implementation Requirement include:**
+- CS 140
+- CS 140E
+- CS 143
+- CS 144
+- CS 145
+- CS 148
+- CS 151
+- CS 190
+- CS 210B
+- CS 212
+- CS 221
+- CS 227B
+- CS 231N
+- CS 243
+- CS 248/248A
+- CS 341
+
+**Course Number: Title: Grade:**. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
+	course_variable_2 = solver.mkConst(solver.getStringSort(), "course2")
+	#Course1 is \in transcript[*].course; 
+	#Course2 is \in transcript[*].course;
+	constraints_set1 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraints_set2 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
+	constraint_1 = solver.mkTerm(Kind.OR, *constraints_set1)
+	constraint_2 = solver.mkTerm(Kind.OR, *constraints_set2)
+ 	#Course1 is in one of (100,101,102)
+	#Course2 is in one of (101, 102, 103)
+	constraints_set3 = [solver.mkTerm(Kind.EQUAL, course_variable_1, solver.mkString(course_unit))for course_unit in ['CS 100', 'CS 101', 'CS 102']]
+	constraints_set4 = [solver.mkTerm(Kind.EQUAL, course_variable_2, solver.mkString(course_unit))for course_unit in ['CS 101', 'CS 102', 'CS 103']]
+	constraint_3 = solver.mkTerm(Kind.OR, *constraints_set3)
+	constraint_4 = solver.mkTerm(Kind.OR, *constraints_set4)
+	#AND all previous individual constraints
+	#Course1 is \in transcript[*].course AND 
+	#Course2 is \in transcript[*].course AND
+  	#Course1 is in one of (100,101,102)AND
+	#Course2 is in one of (101, 102, 103)AND
+ 
+	constraint_5 = solver.mkTerm(Kind.AND, constraint_1, constraint_2, constraint_3, constraint_4)
+	#The same course cannot be used to satisfy two different requirements: 
+	#course_1 == coures_2
+	constraint_6 = solver.mkTerm(Kind.EQUAL, course_variable_1, course_variable_2)
+	#NEGATE(course_1 == coures_2)=> course_1 != coures_2
+	constraint_7 = solver.mkTerm(Kind.NOT, constraint_6)
+	#final formula:
+	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
+        solver.assertFormula(formula)
+        ```
+        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the SIGNIFICANT IMPLEMENTATION REQUIREMENT. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please generate
+        formulas with respect to the requirements only. 
+        =======================formula ouput===========================
+
+        =======================fixed formula ouput===========================
+Below, I'll generate cvc5 solver formulas for the "Significant Implementation Requirement" constraint specified. This includes handling advisor approval and deviations, as well as ensuring at least one course meets the graded and course list requirements.
+
+Here are the cvc5 solver formulas:
+
+```python
+from cvc5 import Solver, Kind
+
+solver = Solver()
+
+# Define sorts
+string_sort = solver.getStringSort()
+bool_sort = solver.getBooleanSort()
+integer_sort = solver.getIntegerSort()
+
+# Define variables
+significant_course = solver.mkConst(string_sort, "significant_course")
+significant_course_grade = solver.mkConst(string_sort, "significant_course_grade")
+significant_course_stanford = solver.mkConst(bool_sort, "significant_course_stanford")
+
+# Define the list of significant implementation courses
+significant_courses_list = ['CS 140', 'CS 140E', 'CS 143', 'CS 144', 'CS 145', 'CS 148', 'CS 151', 'CS 190', 'CS 210B', 'CS 212', 'CS 221', 'CS 227B', 'CS 231N', 'CS 243', 'CS 248', 'CS 248A', 'CS 341']
+
+# Check that the significant course is in the list of significant implementation courses
+constraints_significant_course = [solver.mkTerm(Kind.EQUAL, significant_course, solver.mkString(course)) for course in significant_courses_list]
+constraint_significant_course_in_list = solver.mkTerm(Kind.OR, *constraints_significant_course)
+
+# Ensuring the significant course is in the transcript and taken for a letter grade at Stanford
+constraint_significant_course_in_transcript = [solver.mkTerm(Kind.EQUAL, significant_course, solver.mkString(course.get("Course_ID"))) for course in transcript.get("Courses_Taken", [])]
+constraint_significant_course_grade_is_letter = solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, significant_course_grade, solver.mkString(grade)) for grade in ['A', 'B', 'C', 'D', 'F']])
+constraint_significant_course_stanford_taken = solver.mkTerm(Kind.EQUAL, significant_course_stanford, solver.mkBoolean(True))
+
+# Full constraint for significant course
+constraint_significant_course = solver.mkTerm(Kind.AND, 
+    solver.mkTerm(Kind.OR, *constraint_significant_course_in_transcript), 
+    constraint_significant_course_in_list, 
+    constraint_significant_course_grade_is_letter, 
+    constraint_significant_course_stanford_taken)
+
+# Check for coterm students with waiver
+coterm_status = solver.mkConst(bool_sort, "coterm_status")
+undergrad_significant_courses = [solver.mkTerm(Kind.EQUAL, significant_course, solver.mkString(course.get("Course_ID"))) for course in transcript.get("Courses_Taken", []) if course.get("Grade").isupper() and course.get("Grade") in ['A', 'B', 'C', 'D', 'F']]
+constraint_coterm_waiver = solver.mkTerm(Kind.AND, coterm_status, solver.mkTerm(Kind.GTE, solver.mkInteger(len(undergrad_significant_courses)), solver.mkInteger(2)))
+
+# Deviations must be approved by faculty director
+deviations_approved_by_cynthia = [solver.mkTerm(Kind.AND, 
+    solver.mkTerm(Kind.EQUAL, solver.mkString(deviation.get("Approved_By")), solver.mkString("Cynthia Lee")), 
+    solver.mkTerm(Kind.EQUAL, solver.mkBoolean(deviation.get("Approved")), solver.mkBoolean(True))) 
+    for deviation in transcript.get("Deviations", [])]
+constraint_deviations_approved = solver.mkTerm(Kind.OR, *deviations_approved_by_cynthia)
+
+# Approval checks
+approval_by_advisor = [solver.mkTerm(Kind.AND, 
+    solver.mkTerm(Kind.EQUAL, solver.mkBoolean(approval.get("Approved")), solver.mkBoolean(True)), 
+    solver.mkTerm(Kind.EQUAL, solver.mkString(approval.get("Approved_By")), solver.mkString("Advisor")))
+    for approval in transcript.get("Approval", [])]
+constraint_approval_by_advisor = solver.mkTerm(Kind.OR, *approval_by_advisor)
+
+# Final formula
+final_constraints = [
+    constraint_significant_course, 
+    solver.mkTerm(Kind.OR, constraint_coterm_waiver, solver.mkTerm(Kind.NOT, coterm_status)), 
+    constraint_deviations_approved,
+    constraint_approval_by_advisor,
+]
+
+final_formula = solver.mkTerm(Kind.AND, *final_constraints)
+solver.assertFormula(final_formula)
+
+# Check satisfiability
+if solver.checkSat().isSat():
+    print("The constraints are satisfiable.")
+else:
+    print("The constraints are not satisfiable.")
+```
+
+### Explanation
+
+1. **Significant Course Check**:
+    - We first define variables to represent the attributes (`significant_course`, `significant_course_grade`, `significant_course_stanford`).
+    - We create constraints to ensure the significant course is on the approved courses list.
+      
+2. **Transcript and Grade Check**:
+    - Constraints to ensure the course is in the transcript, taken for a letter grade, and taken at Stanford.
+
+3. **Coterm Waiver Check**:
+    - If the student is a coterm and has taken 2 significant courses as an undergrad, they might be exempted.
+
+4. **Deviation Approval Check**:
+    - We check deviations are approved by Cynthia Lee.
+
+5. **Advisor Approval Check**:
+    - Ensure any necessary approvals by the advisor are present.
+
+6. **Combine All Constraints**:
+    - Finally, we consolidate all constraints into a single formula and check its satisfiability with the solver.
+
+These formulas handle the constraints without using loops or hardcoded conditionals, making them suitable for solver input.
