@@ -1,12 +1,13 @@
 import os
 import openai
 import requests
+import subprocess
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 from openai import OpenAI
 
 
-RESULTS_DIR = "../raw_output2"
+RESULTS_DIR = "../raw_output3"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 STANFORD_SOE_SCIENCE_WEBLINK = "https://ughb.stanford.edu/courses/approved-courses/science-courses-2023-24"
@@ -39,6 +40,43 @@ def weblink_to_text(link):
 	soup = BeautifulSoup(response.text, 'html.parser')
 	return soup.text
 
+def automated_code_fixer(inferred_formulas_file, iterations):
+        for i in range(iterations):
+                cmd = ["python", inferred_formulas_file]
+                process = subprocess.Popen(cmd, 
+                           stdout=subprocess.PIPE, 
+                           stderr=subprocess.PIPE)
+
+                # wait for the process to terminate
+                out, err = process.communicate()
+                print(f"out:\n {out}")
+                print(f"err:\n {err}")
+                errcode = process.returncode
+                if "Error" in err.decode("utf-8"):
+                        code = open(inferred_formulas_file, "r")
+                        print("We are going to prompt for code fix...\n")
+                        prompt = f"""
+                        Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
+                        preserving correct logic.
+                        """
+                        fixed_code =gpt_infer(prompt)
+                        print(f"===============error message=======================\n")
+                        print(err)
+                        print(f"==============={i} iteration of fixing code=======================\n")
+                        start = "```python"
+                        end = "```"
+                        reformatted_fixed_code = fixed_code.split(start)[1].split(end)[0]
+                        print(fixed_code)
+                        fixed_file = open(f"{inferred_formulas_file}", "w+")
+                        fixed_file.write(reformatted_fixed_code)
+                        fixed_file.close()
+                else:
+                        break
+        return True
+                        
+                        
+                
+                
 def extract_requirements(requirement_path):
         text = pdf_to_text(requirement_path)
         seminar_courses = weblink_to_text(STANFORD_SEMINAR_WEBLINK)
@@ -71,6 +109,8 @@ def read_constraints(requirement_path):
    
         
 def get_requirement(doc, requirement):
+        if not os.path.exists(RESULTS_DIR):
+                os.makedirs(RESULTS_DIR)
         text = pdf_to_text(doc)
         requirement =f"""
         Please extract relevant {requirement} from {text}. Please output 
@@ -137,8 +177,8 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         }}
         ```
         Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
-        {requirement_out}. Below is an example formula for a given requiremet: Pick one of the courses (100, 101, 102)
-        and one of the courses (101, 102, 103). The same course cannot be used to satisfy two different requirements.
+        {requirement_out}. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
         ```
         course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
 	course_variable_2 = solver.mkConst(solver.getStringSort(), "course2")
@@ -170,9 +210,9 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the {requirement}. You should also include
-        solver formulas for advisor approval and deviation constraints if there is one. Please generate
-        formulas with respect to the requirements only. 
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the {requirement_out}. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
+        parameterized formulas with respect to the requirements only. 
         """
         formula_out = gpt_infer(formula_prompt)
         output_filename = requirement.replace(" ", "_")
@@ -182,35 +222,75 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         file.write("=======================formula ouput===========================\n")
         file.write(formula_out)
         prior_output = open(f"{RESULTS_DIR}/{output_filename.lower()}_formulas", "r")
-        fix_prompt = f"""
-        Please optimize your generated solver formulas by minimizing the use of
-        for loops or if condition checks. The following example is an okay format, because we use a variable in the formula
-        to ensure epxresssiveness: 
-        ```python
-        variable = solver.mkConst(solver.getStringSort(), "course")
-        constraint_1 = [solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString(variable)) for course in transcript.get("Courses_Taken", [])]
-        constraint_2 = solver.mkTerm(Kind.EQUAL, solver.mkString(variable), solver.mkString("CS 221"))
-        formula = solver.mkTerm(Kind.AND, constraint_1, constraint_2)
+        compile_prompt = f"""
+        Your task is to convert every lines of python code and relevant comments into
+        a compilable format in a template provided to you and write a simple test case to prove correctness. 
+        Please format inferred solver fomulas {formula_out} in ```python ....``` to the following compilable format: 
         ```
-        The following example is NOT an okay format, because the formula is using hard coded values: 
-        ```python 
-        for course in transcript.get("Courses_Taken", []):
-                cs_221 = solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Course_ID")), solver.mkString("CS 221"))
-        ```
-        Please check the following out and convert for loops and if conditional checks into 
-        solver formulas when possible: {prior_output.read()}
+        import os
+        import sys
+        import cvc5
+        import json
+        from cvc5 import Kind
+
+        def solver_init(): 
+                solver = cvc5.Solver()
+                solver.setOption("produce-unsat-cores", "true")
+                solver.setOption("produce-models", "true")
+                solver.setLogic("ALL")
+                return solver 
+
+
+        def result_checker(solver, variables):
+                result = solver.checkSat()
+                print("Satisfiability:", result)
+                if result.isSat():
+                        print("SAT")
+                        if variables: 
+                                for variable in variables: 
+                                        model = solver.getValue(variable)
+                                        print(f"Model for {{variable}}:", model)
+                else: 
+                        core = solver.getUnsatCore()
+                        print("Unsat requirement core is: ", core)
+                return result
+
+        def function(transcript):
+                solver = solver_init()
+                
+                ...#insert inferred formulas and constraint comments here
+        ``` Please be sure to convert all code and relevnt comments in {formula_out} to the format above and write a transcript schema to
+        test code correctness. 
         """
-        formula_fix = gpt_infer(fix_prompt)
-        file = open(f"{RESULTS_DIR}/{output_filename.lower()}_fixed_formulas", "w+")
-        file.write("=======================prompt===========================\n")
-        file.write(fix_prompt)
-        file.write("=======================fixed formula ouput===========================\n")
-        file.write(formula_fix)
-        print(formula_fix)
-        
-requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
-#extract_requirements(requirement_path)
-#read_constraints(requirement_path)
-#translate_requirements_to_formal_statements(requirement_path, "BREADTH REQUIREMENT")
-translate_requirements_to_formal_statements(requirement_path, "ARTIFICIAL INTELLEGIENCE DEPTH")
+        formula_compile = gpt_infer(compile_prompt)    
+        python_file = open(f"{output_filename.lower()}_formulas.py", "w+")
+        start = "```python"
+        end = "```"
+        reformatted_formula_compile = formula_compile.split(start)[1].split(end)[0]
+        print(reformatted_formula_compile)
+        python_file.write(reformatted_formula_compile)
+        python_file_name = f"{output_filename.lower()}_formulas.py"
+        return python_file_name
  
+def main():
+        requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
+        reqs = ["ELECTIVES", "BREADTH REQUIREMENT", "ARTIFICIAL INTELLEGIENCE DEPTH", "FOUNDATIONS REQUIERMENT",\
+                "SIGNIFICANT IMPLEMENTATION REQUIREMENT", "ADDITIONAL REQUIREMENT"]
+        '''
+        for req in reqs:
+                python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
+                return_value = automated_code_fixer(python_file_name, 30)
+                if return_value == True: 
+                        print("code fix is completed\n")
+        '''
+        python_file_name = translate_requirements_to_formal_statements(requirement_path, "SIGNIFICANT IMPLEMENTATION REQUIREMENT")
+        return_value = automated_code_fixer(python_file_name, 30)
+        if return_value == True: 
+                print("code fix is completed\n")
+
+if __name__ == "__main__":
+        main()
+         
+        
+        
+
