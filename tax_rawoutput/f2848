@@ -1,0 +1,240 @@
+===================generated constraints===========================
+Below are the extracted requirements and constraints mentioned in the "Instructions for Form 2848 (09/2021)" from the IRS:
+
+### General Requirements:
+1. **Use Form 2848** to authorize an individual to represent you before the IRS.
+2. **Form 8821**: Use this form if you want to authorize an individual or organization to inspect and/or receive your confidential tax return information but not to represent you.
+3. **Form 56**: Use this form to notify the IRS of a fiduciary relationship.
+4. **Update last known address** using Form 8822 for home addresses and Form 8822-B for business addresses.
+5. **Method of Submission**: Different methods for submitting Form 2848 including online, fax, or mail, depending on specific criteria.
+
+### How To File Constraints:
+1. If you check the box on line 4, **mail or fax** Form 2848 to the IRS office handling the specific matter.
+2. Without checking the box on line 4, you can submit your Form 2848 **online** only if using an electronic signature.
+3. **Secure Access Account** is needed for online submission.
+4. **Fax and Mail** options are provided in a specific chart based on your location.
+
+### Electronic Signatures Constraints:
+1. **Forms 2848 with electronic signatures** can only be submitted online.
+2. **Types of Electronic Signatures**:
+   - Typed name in the signature block.
+   - Scanned image of a handwritten signature.
+   - Handwritten signature on a signature pad.
+   - Handwritten signature on a display screen with a stylus.
+   - Signature created using third-party software.
+3. **Remote transactions**: Third-parties submitting Form 2848 must attest to authenticating the taxpayer’s identity with valid government-issued photo ID.
+
+### Authority Granted Constraints:
+1. Representatives **cannot endorse or negotiate checks** issued by the government.
+2. **Additional powers** (like substituting or adding representatives, signing certain returns, etc.) must be specifically stated.
+
+### Special Rules and Requirements for Unenrolled Return Preparers:
+1. **Limited representation rights**: Valid only for specific situations.
+2. **Representation requirements**: Must possess a valid PTIN and must comply with certain criteria based on the date of return preparation.
+
+### Revocation and Withdrawal Constraints:
+1. **Revocation**: Write "REVOKE" across the top of the first page of the power of attorney with a current signature and date.
+2. **Withdrawal by Representative**: Write "WITHDRAW" across the top of the first page with a current signature and date.
+
+### Additional Instructions:
+1. **Part I - Power of Attorney**: Specific information needed based on taxpayer type (individuals, partnerships, corporations, trusts, estates, etc.).
+2. **Line 2 - Representative(s)**: Name, address, and required identifiers like CAF number and PTIN (if applicable).
+3. **Line 3 - Acts Authorized**: Specific descriptions of matters, tax form numbers, and applicable years/periods.
+4. **Line 4 - Specific Use Not Recorded on the CAF**: Check the box for specific-use issues not recorded on the CAF.
+5. **Line 5a - Additional Acts Authorized**: Checking relevant boxes for specific additional authorities like signing returns.
+6. **Line 5b - Specific Acts Not Authorized**: List acts you do not want the representative to perform.
+7. **Line 6 - Retention/Revocation of Prior Power(s) of Attorney**: Specific instructions on how to handle previous powers of attorney.
+
+### Part II Description of Representative:
+1. Representatives must sign and list their designation (e.g., attorney, CPA, enrolled agent).
+2. **Attachment**: Authorization letter must be attached for qualifying students or law graduates in LITCs and STCPs.
+   
+### Privacy Act and Paperwork Reduction Act Notice:
+1. **Provision of information**: Explanation of legal basis and use of provided information.
+
+By following these requirements and constraints, you can properly complete and submit Form 2848 to authorize representation before the IRS.===================generated formulas===========================
+To convert the extracted constraints from "Instructions for Form 2848 (09/2021)" into cvc5 SMT formulas, we need to carefully encode each requirement into logical conditions and properties that cvc5 can process. Here’s a detailed breakdown of how we can transform these requirements into cvc5 SMT formulas:
+
+### General Requirements:
+1. **Use Form 2848 to authorize an individual to represent you before the IRS.**
+   ```smt
+   (assert (=> (use_form 2848) (authorize_representation true)))
+   ```
+
+2. **Form 8821: Use this form if you want to authorize an individual or organization to inspect and/or receive your confidential tax return information but not to represent you.**
+   ```smt
+   (assert (=> (use_form 8821) (and (authorize_inspect true) (authorize_receive true) (authorize_representation false))))
+   ```
+
+3. **Form 56: Use this form to notify the IRS of a fiduciary relationship.**
+   ```smt
+   (assert (=> (use_form 56) (notify_fiduciary_relationship true)))
+   ```
+
+4. **Update last known address using Form 8822 for home addresses and Form 8822-B for business addresses.**
+   ```smt
+   (assert (=> (want_update_address home) (use_form 8822)))
+   (assert (=> (want_update_address business) (use_form 8822-B)))
+   ```
+
+5. **Method of Submission: Different methods for submitting Form 2848 including online, fax, or mail, depending on specific criteria.**
+   ```smt
+   (declare-fun method_of_submission () String)
+   (assert (or (= method_of_submission "online")
+               (= method_of_submission "fax")
+               (= method_of_submission "mail")))
+   ```
+
+### How To File Constraints:
+1. **If you check the box on line 4, mail or fax Form 2848 to the IRS office handling the specific matter.**
+   ```smt
+   (assert (=> (box_checked line_4) (or (= method_of_submission "mail")
+                                         (= method_of_submission "fax"))))
+   ```
+
+2. **Without checking the box on line 4, you can submit your Form 2848 online only if using an electronic signature.**
+   ```smt
+   (assert (=> (and (not (box_checked line_4)) (using_electronic_signature true)) 
+               (= method_of_submission "online")))
+   ```
+
+3. **Secure Access Account is needed for online submission.**
+   ```smt
+   (assert (=> (= method_of_submission "online") (have_secure_access_account true)))
+   ```
+
+### Electronic Signatures Constraints:
+1. **Forms 2848 with electronic signatures can only be submitted online.**
+   ```smt
+   (assert (=> (using_electronic_signature true) (= method_of_submission "online")))
+   ```
+
+2. **Types of Electronic Signatures:**
+   ```smt
+   (declare-fun signature_type () String)
+   (assert (or (= signature_type "typed_name")
+               (= signature_type "scanned_image")
+               (= signature_type "signature_pad")
+               (= signature_type "display_screen")
+               (= signature_type "third_party_software")))
+   ```
+
+3. **Remote transactions: Third-parties submitting Form 2848 must attest to authenticating the taxpayer’s identity with valid government-issued photo ID.**
+   ```smt
+   (assert (=> (and (remote_transaction true) (third_party_submit true))
+               (has_valid_id true)))
+   ```
+
+### Authority Granted Constraints:
+1. **Representatives cannot endorse or negotiate checks issued by the government.**
+   ```smt
+   (assert (not (can_endorse_or_negotiate_checks representative)))
+   ```
+
+2. **Additional powers must be specifically stated.**
+   ```smt
+   (assert (=> (grant_additional_powers true) (specify_additional_powers true)))
+   ```
+
+### Special Rules and Requirements for Unenrolled Return Preparers:
+1. **Limited representation rights: Valid only for specific situations.**
+   ```smt
+   (assert (=> (unenrolled_return_preparer true) (limited_representation_rights true)))
+   ```
+
+2. **Representation requirements: Must possess a valid PTIN and must comply with certain criteria based on the date of return preparation.**
+   ```smt
+   (assert (=> (representative_unenrolled_preparer true)
+               (and (has_valid_ptin true) (date_of_preparation_criteria_met true))))
+   ```
+
+### Revocation and Withdrawal Constraints:
+1. **Revocation: Write "REVOKE" across the top of the first page of the power of attorney with a current signature and date.**
+   ```smt
+   (assert (=> (want_revoke_power_of_attorney true) 
+               (and (write "REVOKE")
+                    (current_signature true)
+                    (current_date true))))
+   ```
+
+2. **Withdrawal by Representative: Write "WITHDRAW" across the top of the first page with a current signature and date.**
+   ```smt
+   (assert (=> (representative_withdraw true) 
+               (and (write "WITHDRAW")
+                    (current_signature true)
+                    (current_date true))))
+   ```
+
+### Additional Instructions:
+1. **Part I - Power of Attorney: Specific information needed based on taxpayer type (individuals, partnerships, corporations, trusts, estates, etc.).**
+   ```smt
+   (declare-fun taxpayer_type () String)
+   (assert (or (= taxpayer_type "individuals")
+               (= taxpayer_type "partnerships")
+               (= taxpayer_type "corporations")
+               (= taxpayer_type "trusts")
+               (= taxpayer_type "estates")))
+   ```
+
+2. **Line 2 - Representative(s): Name, address, and required identifiers like CAF number and PTIN (if applicable).**
+   ```smt
+   (declare-fun representative_name () String)
+   (declare-fun representative_address () String)
+   (declare-fun representative_caf_number () String)
+   (declare-fun representative_ptin () String)
+   (assert (not (is_empty representative_name)))
+   (assert (not (is_empty representative_address)))
+   ```
+
+3. **Line 3 - Acts Authorized: Specific descriptions of matters, tax form numbers, and applicable years/periods.**
+   ```smt
+   (declare-fun description_of_matter () String)
+   (declare-fun tax_form_number () String)
+   (declare-fun year_or_period () String)
+   (assert (and (not (is_empty description_of_matter))
+                (not (is_empty tax_form_number))
+                (not (is_empty year_or_period))))
+   ```
+
+4. **Line 4 - Specific Use Not Recorded on the CAF: Check the box for specific-use issues not recorded on the CAF.**
+   ```smt
+   (assert (=> (specific_use_issue true) (check_box line_4)))
+   ```
+
+5. **Line 5a - Additional Acts Authorized: Checking relevant boxes for specific additional authorities like signing returns.**
+   ```smt
+   (assert (=> (additional_acts_authorized true) (and (check_relevant_boxes true))))
+   ```
+
+6. **Line 5b - Specific Acts Not Authorized: List acts you do not want the representative to perform.**
+   ```smt
+   (declare-fun acts_not_authorized () String)
+   (assert (not (is_empty acts_not_authorized)))
+   ```
+
+7. **Line 6 - Retention/Revocation of Prior Power(s) of Attorney: Specific instructions on how to handle previous powers of attorney.**
+   ```smt
+   (assert (=> (retain_previous_poa true) (attach_copy_prior_poa true)))
+   ```
+
+### Part II Description of Representative:
+1. **Representatives must sign and list their designation (e.g., attorney, CPA, enrolled agent).**
+   ```smt
+   (declare-fun representative_signature () Bool)
+   (declare-fun representative_designation () String)
+   (assert (and representative_signature (not (is_empty representative_designation))))
+   ```
+
+2. **Attachment: Authorization letter must be attached for qualifying students or law graduates in LITCs and STCPs.**
+   ```smt
+   (assert (=> (qualifying_student_or_law_graduate true) (attachment_authorization_letter true)))
+   ```
+
+### Privacy Act and Paperwork Reduction Act Notice:
+1. **Provision of information: Explanation of legal basis and use of provided information.**
+   ```smt
+   (assert (=> (provide_information true) (and (legal_basis_explained true) 
+                                               (use_of_information_explained true))))
+   ```
+
+These cvc5 SMT formulas encode the identified constraints and requirements from the "Instructions for Form 2848 (09/2021)" document, covering the submission methods, electronic signature types, authority limitations, and various other specific instructions. Each formula is structured to ensure compliance with the given IRS guidance.
