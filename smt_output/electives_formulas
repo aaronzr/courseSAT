@@ -1,0 +1,216 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 smt solver formulas for the constraints in each requirement ELECTIVES 
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS  you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ELECTIVES 
+
+List here any additional courses used to complete the 45-unit requirement for the MSCS degree. You may count up to a maximum of 3 units of 1-2 unit seminars offered in the School of Engineering. All other electives must be taken for 3 or more units. CS courses numbered above 111, excluding CS196, CS198, and CS390A/B/C, can be used as MS electives. Non-CS courses must be technical courses numbered above 100, related to the degree program, and approved by the adviser and the MS program administrator. Note that CS 129 may not be counted towards the MS if CS 229 is being counted towards any BS or MS requirement. 
+
+Course number Title Grade Units
+
+TOTAL ELECTIVE UNITS APPLIED TO MSCS . Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        (set-logic ALL)
+
+        (declare-const course1 String)
+        (declare-const course2 String)
+
+        ;; Course1 is \in transcript[*].course
+        ;; Course2 is \in transcript[*].course
+        (define-fun constraint_1 () Bool 
+        (or 
+        (and (str.contains course1 "CS 100") true)
+        (and (str.contains course1 "CS 101") true)
+        (and (str.contains course1 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        (define-fun constraint_2 () Bool 
+        (or 
+        (and (str.contains course2 "CS 100") true)
+        (and (str.contains course2 "CS 101") true)
+        (and (str.contains course2 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        ;; Course1 is in one of (100,101,102)
+        ;; Course2 is in one of (101, 102, 103)
+        (define-fun constraint_3 () Bool 
+        (or 
+        (= course1 "CS 100")
+        (= course1 "CS 101")
+        (= course1 "CS 102")
+        )
+        )
+
+        (define-fun constraint_4 () Bool 
+        (or 
+        (= course2 "CS 101")
+        (= course2 "CS 102")
+        (= course2 "CS 103")
+        )
+        )
+
+        ;; AND all previous individual constraints
+        (define-fun constraint_5 () Bool 
+        (and constraint_1 constraint_2 constraint_3 constraint_4)
+        )
+
+        ;; The same course cannot be used to satisfy two different requirements:
+        ;; course_1 == course_2
+        (define-fun constraint_6 () Bool 
+        (= course1 course2)
+        )
+
+        ;; NEGATE(course_1 == course_2) => course_1 != course_2
+        (define-fun constraint_7 () Bool 
+        (not constraint_6)
+        )
+
+        ;; final formula:
+        (assert (and constraint_7 constraint_5))
+
+        (check-sat)
+        ```
+        =======================formula ouput===========================
+Sure! Here are the cvc5 SMT solver formulas to represent the constraints listed in the ELECTIVES requirement for the MSCS degree:
+
+```smtlib
+(set-logic ALL)
+
+;; Declarations of inputs based on the given transcript schema
+(declare-const total_units Int)
+(declare-const total_seminar_units Int)
+(declare-const cs229_counted Boolean)
+
+(define-fun valid_course ( (course_id Int) ) Bool
+  (and
+    ;; CS courses above 111 excluding CS196, CS198, CS390A/B/C
+    (or
+      (and (>= course_id 111) (not (= course_id 196)) (not (= course_id 198))
+           (not (= course_id 390A)) (not (= course_id 390B)) (not (= course_id 390C)))
+      ;; Non-CS technical courses above 100 but need advisor approval
+      (and (>= course_id 100) (not (>= course_id 111))))
+    ;; Exclude CS 129 if CS 229 is counted
+    (or (not (= course_id 129)) (not cs229_counted))
+  )
+)
+
+;; Total units must meet the 45-unit requirement
+(define-fun constraint_total_units () Bool 
+  (= total_units 45)
+)
+
+;; Limit of 3 units for 1-2 unit seminars
+(define-fun constraint_seminar_units () Bool
+  (<= total_seminar_units 3)
+)
+
+;; Ensure all courses are valid electives
+(define-fun validate_courses ( (courses (Array Int Int)) (n Int) ) Bool
+  (ite
+    (= n 0)
+    true
+    (and (valid_course (select courses (- n 1))) (validate_courses courses (- n 1)))
+  )
+)
+
+;; Ensure all deviations are approved
+(define-fun all_deviations_approved ( (deviations (Array Int Bool)) (n Int) ) Bool
+  (ite
+    (= n 0)
+    true
+    (and (select deviations (- n 1)) (all_deviations_approved deviations (- n 1)))
+  )
+)
+
+;; Constraints on individual courses
+(declare-fun total_courses () Int)
+(declare-fun courses (Array Int Int))
+(assert (validate_courses courses total_courses))
+
+;; Constraints on deviations
+(declare-fun total_deviations () Int)
+(declare-fun deviations (Array Int Bool))
+(assert (all_deviations_approved deviations total_deviations))
+
+;; Apply the total unit constraints
+(assert constraint_total_units)
+(assert constraint_seminar_units)
+
+;; Final formula: all constraints must hold
+(check-sat)
+```
+
+Explanation of the constraints and formulas:
+1. **Total Units Constraint**:
+    - The total units required for the MSCS degree must be 45 units.
+2. **Seminar Units Constraint**:
+    - Only up to 3 units of 1-2 unit seminars can be counted.
+3. **Valid Courses Constraint**:
+    - Each course must be a valid elective, either a CS course above 111 (excluding specific courses) or a non-CS technical course above 100 with required approvals.
+4. **Course Exclusion Constraint**:
+    - CS 129 cannot be counted if CS 229 is already counted towards the BS or MS requirement.
+5. **Deviation Approval Constraint**:
+    - Any deviation from the standard course list must be explicitly approved.
+
+The final formula checks the satisfiability of these constraints over the given transcript data. Each declared input and function will be used to validate the courses and units within the program requirements.

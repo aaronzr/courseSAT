@@ -1,0 +1,247 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 smt solver formulas for the constraints in each requirement BREADTH REQUIREMENT:
+Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade.* Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.*
+
+Course Number: Title: Grade
+
+Area A. Mathematical and Theoretical Foundations:
+CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251
+
+Area B. Computer Systems:
+CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E
+
+Area C. Applications:
+CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373
+
+Area D. Computing and Society:
+CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        BREADTH REQUIREMENT:
+Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade.* Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.*
+
+Course Number: Title: Grade
+
+Area A. Mathematical and Theoretical Foundations:
+CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251
+
+Area B. Computer Systems:
+CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E
+
+Area C. Applications:
+CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373
+
+Area D. Computing and Society:
+CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        (set-logic ALL)
+
+        (declare-const course1 String)
+        (declare-const course2 String)
+
+        ;; Course1 is \in transcript[*].course
+        ;; Course2 is \in transcript[*].course
+        (define-fun constraint_1 () Bool 
+        (or 
+        (and (str.contains course1 "CS 100") true)
+        (and (str.contains course1 "CS 101") true)
+        (and (str.contains course1 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        (define-fun constraint_2 () Bool 
+        (or 
+        (and (str.contains course2 "CS 100") true)
+        (and (str.contains course2 "CS 101") true)
+        (and (str.contains course2 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        ;; Course1 is in one of (100,101,102)
+        ;; Course2 is in one of (101, 102, 103)
+        (define-fun constraint_3 () Bool 
+        (or 
+        (= course1 "CS 100")
+        (= course1 "CS 101")
+        (= course1 "CS 102")
+        )
+        )
+
+        (define-fun constraint_4 () Bool 
+        (or 
+        (= course2 "CS 101")
+        (= course2 "CS 102")
+        (= course2 "CS 103")
+        )
+        )
+
+        ;; AND all previous individual constraints
+        (define-fun constraint_5 () Bool 
+        (and constraint_1 constraint_2 constraint_3 constraint_4)
+        )
+
+        ;; The same course cannot be used to satisfy two different requirements:
+        ;; course_1 == course_2
+        (define-fun constraint_6 () Bool 
+        (= course1 course2)
+        )
+
+        ;; NEGATE(course_1 == course_2) => course_1 != course_2
+        (define-fun constraint_7 () Bool 
+        (not constraint_6)
+        )
+
+        ;; final formula:
+        (assert (and constraint_7 constraint_5))
+
+        (check-sat)
+        ```
+        =======================formula ouput===========================
+Here's how we can define the SMT formulas to represent the constraints for the BREADTH REQUIREMENT:
+
+We'll need to define constraints that check if three selected courses are from different Breadth areas (A, B, C, or D), each course is taken for at least 3 units, and each course is completed for a letter grade. Additionally, no course can be waived.
+
+We'll use cvc5 SMT solver formulas for this purpose:
+
+1. Define the course sets for each Breadth area.
+2. Check if the courses taken are from different areas.
+3. Assert that each taken course has at least 3 units.
+4. Assert that each taken course is graded with a letter.
+5. Ensure no deviations unless they are approved.
+
+```smt2
+(set-logic ALL)
+
+(declare-const areaA (set String))
+(declare-const areaB (set String))
+(declare-const areaC (set String))
+(declare-const areaD (set String))
+
+(declare-const course1 String)
+(declare-const course2 String)
+(declare-const course3 String)
+(declare-const units1 Int)
+(declare-const units2 Int)
+(declare-const units3 Int)
+(declare-const grade1 String)
+(declare-const grade2 String)
+(declare-const grade3 String)
+(declare-const deviation_approved Bool)
+
+(define-fun is_letter_grade ((grade String)) Bool
+    (or (= grade "A") (= grade "B") (= grade "C") (= grade "D") (= grade "F"))
+)
+
+(define-fun is_in_areaA ((course String)) Bool
+    (or (= course "CS 154") (= course "CS 157") ... (= course "Phil 251"))
+)
+
+(define-fun is_in_areaB ((course String)) Bool
+    (or (= course "CS 140") (= course "CS 140E") ... (= course "EE 382E"))
+)
+
+(define-fun is_in_areaC ((course String)) Bool
+    (or (= course "CS 145") (= course "CS 147") ... (= course "CS 373"))
+)
+
+(define-fun is_in_areaD ((course String)) Bool
+    (or (= course "CS 152") (= course "CS 181") ... (= course "PUBLPOL 353B"))
+)
+
+;; Constraints for each course
+(define-fun course_constraints ((course String) (units Int) (grade String)) Bool
+    (and 
+        (>= units 3)
+        (is_letter_grade grade)
+    )
+)
+
+;; Courses from different areas
+(define-fun different_areas ((course1 String) (course2 String) (course3 String)) Bool
+    (and 
+        (distinct 
+            (or (if (is_in_areaA course1) "A" (if (is_in_areaB course1) "B" (if (is_in_areaC course1) "C" "D")))))
+            (or (if (is_in_areaA course2) "A" (if (is_in_areaB course2) "B" (if (is_in_areaC course2) "C" "D")))))
+            (or (if (is_in_areaA course3) "A" (if (is_in_areaB course3) "B" (if (is_in_areaC course3) "C" "D")))))
+        )
+    )
+)
+
+;; Final constraints
+(assert 
+    (and
+        (course_constraints course1 units1 grade1)
+        (course_constraints course2 units2 grade2)
+        (course_constraints course3 units3 grade3)
+        (different_areas course1 course2 course3)
+        (not deviation_approved)
+    )
+)
+
+(check-sat)
+```
+
+Explanation:
+
+1. **Breadth Area Definitions**: Lists all courses under Breadth Areas A, B, C, and D using separate boolean functions for each area.
+2. **Letter Grade Check**: `is_letter_grade` function checks if the grade is a valid letter grade.
+3. **Course Constraints**: The formula `course_constraints` checks if each course has at least 3 units and a letter grade.
+4. **Different Areas Constraint**: The formula `different_areas` ensures that the taken courses are from distinct areas.
+5. **Final Formula**: Asserts all constraints, including the negation of deviation approval.
+
+Be sure to populate the courses in `is_in_areaA`, `is_in_areaB`, etc., with the respective lists of courses corresponding to areas A, B, C, and D from your requirement description.
+
+This setup ensures that the three courses selected meet all the given constraints, and the SMT solver will check the satisfiability of these constraints based on the provided transcript data.

@@ -1,0 +1,305 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 smt solver formulas for the constraints in each requirement ADDITIONAL REQUIREMENTS
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
+
+*All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade. you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ADDITIONAL REQUIREMENTS
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
+
+*All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade.. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        (set-logic ALL)
+
+        (declare-const course1 String)
+        (declare-const course2 String)
+
+        ;; Course1 is \in transcript[*].course
+        ;; Course2 is \in transcript[*].course
+        (define-fun constraint_1 () Bool 
+        (or 
+        (and (str.contains course1 "CS 100") true)
+        (and (str.contains course1 "CS 101") true)
+        (and (str.contains course1 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        (define-fun constraint_2 () Bool 
+        (or 
+        (and (str.contains course2 "CS 100") true)
+        (and (str.contains course2 "CS 101") true)
+        (and (str.contains course2 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        ;; Course1 is in one of (100,101,102)
+        ;; Course2 is in one of (101, 102, 103)
+        (define-fun constraint_3 () Bool 
+        (or 
+        (= course1 "CS 100")
+        (= course1 "CS 101")
+        (= course1 "CS 102")
+        )
+        )
+
+        (define-fun constraint_4 () Bool 
+        (or 
+        (= course2 "CS 101")
+        (= course2 "CS 102")
+        (= course2 "CS 103")
+        )
+        )
+
+        ;; AND all previous individual constraints
+        (define-fun constraint_5 () Bool 
+        (and constraint_1 constraint_2 constraint_3 constraint_4)
+        )
+
+        ;; The same course cannot be used to satisfy two different requirements:
+        ;; course_1 == course_2
+        (define-fun constraint_6 () Bool 
+        (= course1 course2)
+        )
+
+        ;; NEGATE(course_1 == course_2) => course_1 != course_2
+        (define-fun constraint_7 () Bool 
+        (not constraint_6)
+        )
+
+        ;; final formula:
+        (assert (and constraint_7 constraint_5))
+
+        (check-sat)
+        ```
+        =======================formula ouput===========================
+Sure! Below are the cvc5 SMT solver formulas for the constraints specified in the ADDITIONAL REQUIREMENTS section.
+
+### Declaration of Variables
+
+```smt2
+(set-logic ALL)
+
+; Declarations for courses and units
+(declare-const n_courses Int)  ;; Total number of courses taken
+(declare-const n_apcredits Int)  ;; Total number of AP Credits
+(declare-const n_deviations Int)  ;; Total number of deviations
+(declare-const n_approvals Int)  ;; Total number of approvals
+
+; Courses taken
+(declare-fun Course_ID (Int) Int)
+(declare-fun Earned_Units (Int) Int)
+(declare-fun Grade (Int) String)
+(declare-fun Term (Int) String)
+
+; AP Credits
+(declare-fun AP_Earned_Units (Int) Int)
+
+; Deviations
+(declare-fun Deviated_Course_ID (Int) String)
+(declare-fun Deviations_Approved (Int) Bool)
+
+; Approvals
+(declare-fun Approved (Int) Bool)
+(declare-fun Approved_Course_ID (Int) String)
+
+(declare-const Cumulative_GPA_Graduate Real)  ;; Graduate GPA
+```
+
+### Constraints
+
+#### Constraint: All courses must be numbered 100 or greater
+
+```smt2
+(define-fun courses_numbered_correctly () Bool
+  (forall ((i Int))
+    (implies (and (>= i 0) (< i n_courses))
+             (>= (Course_ID i) 100)))
+)
+```
+
+#### Constraint: At most 10 units of Foundations requirement courses may be counted
+
+Note: Assuming Foundation courses are flagged somehow; here it’s abstracted as a mock condition for simplicity.
+
+```smt2
+(declare-fun Is_Foundation_Course (Int) Bool)
+
+(define-fun max_foundation_units () Bool
+  (let ((total_foundation_units
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (and (Is_Foundation_Course i) (>= i 0) (< i n_courses)) 
+                        (Earned_Units i) 0))
+                  (0 n_courses)))))
+    (<= total_foundation_units 10)
+  )
+)
+```
+
+#### Constraint: At most 3 units of 1-2 unit seminars may be counted
+
+```smt2
+(define-fun max_seminar_units () Bool
+  (let ((total_seminar_units
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (and (>= (Earned_Units i) 1) (<= (Earned_Units i) 2) (>= i 0) (< i n_courses)) 
+                        (Earned_Units i) 0))
+                  (0 n_courses)))))
+    (<= total_seminar_units 3)
+  )
+)
+```
+
+#### Constraint: At least 36 units must be taken for a letter grade
+
+```smt2
+(define-fun earned_units_letter_grade () Bool
+  (let ((term_check (lambda ((term String)) (or (= term "Spring 19-20") (= term "Fall 20-21") (= term "Summer 20-21")))))
+        (grades_letter 
+          (lambda ((grade String) (term String)) 
+            (or (and (term_check term) (or (= grade "CR") (= grade "S"))) 
+                (not (or (= grade "CR") (= grade "S")))))))
+  (let ((total_letter_grade_units
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (and (grades_letter (Grade i) (Term i)) (>= i 0) (< i n_courses)) 
+                        (Earned_Units i) 0))
+                  (0 n_courses)))))
+    (>= total_letter_grade_units 36)
+  )
+)
+```
+
+#### Constraint: Average grade must be at least a B (3.0 GPA)
+
+Note: Assuming grades are parsed into GPA correctly.
+
+```smt2
+(declare-fun Grade_To_GPA (String) Real)
+
+(define-fun average_gpa () Bool
+  (let ((total_grades
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (>= i 0) (< i n_courses) (*(Grade_To_GPA (Grade i))) (Earned_Units i))))
+                  (0 n_courses)))))
+        (total_units 
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (>= i 0) (< i n_courses) (Earned_Units i)))
+                  (0 n_courses)))))
+    (>= (/ total_grades total_units) 3.0)
+  )
+)
+```
+
+#### Constraint: Units previously applied toward BS requirements may not count toward the MSCS
+
+```smt2
+(declare-fun Is_BS_Unit (Int) Bool)
+
+(define-fun no_bs_units () Bool
+  (forall ((i Int))
+    (implies (and (>= i 0) (< i n_apcredits)) 
+             (not (Is_BS_Unit i))))
+)
+```
+
+#### Constraint: 45 graduate units needed at Stanford
+
+```smt2
+(define-fun total_graduate_units () Bool
+  (let ((total_units
+          (sum 
+            (map (lambda ((i Int)) 
+                   (ite (>= i 0) (< i n_courses) (Earned_Units i)))
+                  (0 n_courses)))))
+  (>= total_units 45)
+)
+```
+
+### Combination of All Constraints
+
+```smt2
+(assert
+  (and courses_numbered_correctly 
+       max_foundation_units 
+       max_seminar_units 
+       earned_units_letter_grade 
+       average_gpa 
+       no_bs_units 
+       total_graduate_units
+  )
+)
+
+(check-sat)
+```
+
+This model combines all specified constraints to determine the satisfiability based on the transcript provided. Each constraint is checked individually and collectively to ensure compliance with all the specified requirements.

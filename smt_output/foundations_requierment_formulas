@@ -1,0 +1,272 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 smt solver formulas for the constraints in each requirement ### FOUNDATIONS REQUIREMENT
+
+You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
+
+Required | Equivalent elsewhere (course numbers/titles/institution) | Grade | Units
+--- | --- | --- | ---
+Logic, Automata & Complexity (CS103) |  |  | 
+Probability (CS109, Stat116, CME106, MS&E220, or EE178) |  |  | 
+Algorithmic Analysis (CS161) |  |  | 
+Computer Organ & Sys (CS107 or 107E) |  |  | 
+Principles of Computer Systems (CS110 or CS111) |  |  | 
+
+TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.) you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        ### FOUNDATIONS REQUIREMENT
+
+You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
+
+Required | Equivalent elsewhere (course numbers/titles/institution) | Grade | Units
+--- | --- | --- | ---
+Logic, Automata & Complexity (CS103) |  |  | 
+Probability (CS109, Stat116, CME106, MS&E220, or EE178) |  |  | 
+Algorithmic Analysis (CS161) |  |  | 
+Computer Organ & Sys (CS107 or 107E) |  |  | 
+Principles of Computer Systems (CS110 or CS111) |  |  | 
+
+TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.). Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+        ```
+        (set-logic ALL)
+
+        (declare-const course1 String)
+        (declare-const course2 String)
+
+        ;; Course1 is \in transcript[*].course
+        ;; Course2 is \in transcript[*].course
+        (define-fun constraint_1 () Bool 
+        (or 
+        (and (str.contains course1 "CS 100") true)
+        (and (str.contains course1 "CS 101") true)
+        (and (str.contains course1 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        (define-fun constraint_2 () Bool 
+        (or 
+        (and (str.contains course2 "CS 100") true)
+        (and (str.contains course2 "CS 101") true)
+        (and (str.contains course2 "CS 102") true)
+        ;; Add all course IDs from transcript here
+        )
+        )
+
+        ;; Course1 is in one of (100,101,102)
+        ;; Course2 is in one of (101, 102, 103)
+        (define-fun constraint_3 () Bool 
+        (or 
+        (= course1 "CS 100")
+        (= course1 "CS 101")
+        (= course1 "CS 102")
+        )
+        )
+
+        (define-fun constraint_4 () Bool 
+        (or 
+        (= course2 "CS 101")
+        (= course2 "CS 102")
+        (= course2 "CS 103")
+        )
+        )
+
+        ;; AND all previous individual constraints
+        (define-fun constraint_5 () Bool 
+        (and constraint_1 constraint_2 constraint_3 constraint_4)
+        )
+
+        ;; The same course cannot be used to satisfy two different requirements:
+        ;; course_1 == course_2
+        (define-fun constraint_6 () Bool 
+        (= course1 course2)
+        )
+
+        ;; NEGATE(course_1 == course_2) => course_1 != course_2
+        (define-fun constraint_7 () Bool 
+        (not constraint_6)
+        )
+
+        ;; final formula:
+        (assert (and constraint_7 constraint_5))
+
+        (check-sat)
+        ```
+        =======================formula ouput===========================
+Sure! Here is the set of cvc5 SMT solver formulas to encode the constraints of the Foundations Requirement for a student's transcript:
+
+```smtlib
+(set-logic ALL)
+
+;; Declare constants for courses and adviser approvals
+(declare-const logic_course String)
+(declare-const prob_course String)
+(declare-const algo_course String)
+(declare-const comp_org_course String)
+(declare-const sys_course String)
+
+(declare-const total_units Int)
+(declare-const foundation_courses_taken (Array Int String))
+
+;; Sample course list schema
+(define-sort Course () (Tuple String Int String String)) ;; (Course_ID, Title, Earned_Units, Grade)
+
+;; Example Placeholder Courses List in Transcripts (Manually input list)
+(assert (= (select foundation_courses_taken 0) (Course "CS103" 4 "A")))
+(assert (= (select foundation_courses_taken 1) (Course "CS109" 3 "B")))
+(assert (= (select foundation_courses_taken 2) (Course "CS161" 3 "A-")))
+(assert (= (select foundation_courses_taken 3) (Course "CS107" 4 "B+")))
+(assert (= (select foundation_courses_taken 4) (Course "CS110" 3 "B")))
+
+;; Constraint 1: Required Foundation Courses
+(define-fun logic_constraint () Bool 
+  (or
+    (str.contains logic_course "CS103")
+    (exists ((i Int)) (= (select foundation_courses_taken i) "CS103"))
+  )
+)
+
+(define-fun prob_constraint () Bool 
+  (or
+    (str.contains prob_course "CS109")
+    (str.contains prob_course "Stat116")
+    (str.contains prob_course "CME106")
+    (str.contains prob_course "MS&E220")
+    (str.contains prob_course "EE178")
+    (exists ((i Int)) 
+      (or
+        (= (select foundation_courses_taken i) "CS109")
+        (= (select foundation_courses_taken i) "Stat116")
+        (= (select foundation_courses_taken i) "CME106")
+        (= (select foundation_courses_taken i) "MS&E220")
+        (= (select foundation_courses_taken i) "EE178")
+      )
+    )
+  )
+)
+
+(define-fun algo_constraint () Bool 
+  (or
+    (str.contains algo_course "CS161")
+    (exists ((i Int)) (= (select foundation_courses_taken i) "CS161"))
+  )
+)
+
+(define-fun comp_org_constraint () Bool 
+  (or
+    (str.contains comp_org_course "CS107")
+    (str.contains comp_org_course "CS107E")
+    (exists ((i Int)) 
+      (or
+        (= (select foundation_courses_taken i) "CS107")
+        (= (select foundation_courses_taken i) "CS107E")
+      )
+    )
+  )
+)
+
+(define-fun sys_constraint () Bool 
+  (or
+    (str.contains sys_course "CS110")
+    (str.contains sys_course "CS111")
+    (exists ((i Int)) 
+      (or
+        (= (select foundation_courses_taken i) "CS110")
+        (= (select foundation_courses_taken i) "CS111")
+      )
+    )
+  )
+)
+
+;; Constraint 2: Total Units for Foundations Requirement may not exceed 10 units
+(define-fun units_constraint () Bool (= total_units 10))
+
+;; Constraint 3: Advisor Approval for courses taken elsewhere
+(declare-const deviation_approved Bool)
+(declare-const approved_course String)
+
+(define-fun deviation_constraint () Bool 
+  (or
+    (not deviation_approved) ;; If not approved, ignore
+    (exists ((i Int)) (= approved_course (select foundation_courses_taken i)))
+  )
+)
+
+;; Aggregate all constraints
+(define-fun all_constraints () Bool 
+  (and 
+    logic_constraint
+    prob_constraint
+    algo_constraint
+    comp_org_constraint
+    sys_constraint
+    units_constraint
+    deviation_constraint
+  )
+)
+
+;; Assert the constraints
+(assert all_constraints)
+
+;; Check if the constraints can be satisfied
+(check-sat)
+```
+
+This code sets up constraints according to the given requirements:
+
+1. **Required Foundation Courses**: Ensures that courses in logic, probability, algorithmic analysis, computer organization, and principles of computer systems are taken.
+2. **Total Units Constraint**: Ensures the total units used to satisfy the Foundations Requirement do not exceed 10 units.
+3. **Advisor Approval Constraint**: Ensures any deviation or courses taken elsewhere are approved by the advisor. 
+
+The provided script should be extended to correctly map the actual data structure used in the system being tested and handle additional constraints (like AP credits or deviations). The total units calculation should also adapt to the actual transcripts, and the respective elements must be defined realistically.
