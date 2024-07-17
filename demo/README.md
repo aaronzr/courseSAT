@@ -1,10 +1,14 @@
-# Requirements2LLM-Solver Demo
+# Requirements2LLM-Solver Two Demos
+
+Requirements -> Solver Formulas 
+##  First📚 on Chainlit
+```
+chainlit run demo.py -w
+```
 
 
 
-PDFChatBot is a Python-based chatbot designed to answer questions based on the content of uploaded PDF files. It utilizes the Gradio library for creating a user-friendly interface. 
-
-## Usage 📚
+##  Seccond📚 on Gradio
 1. Upload a PDF file using the "📁 Upload PDF" button.
 2. Enter your questions in the text box.
 3. Click the "Send" button to submit your question.
