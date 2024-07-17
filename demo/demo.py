@@ -79,60 +79,7 @@ def translate_to_smt(requirement_text, requirement):
 		requirement_out = get_requirement(requirement_text, requirement)
 		formula_prompt =f"""
 		Your task is to generate parameterized cvc5 smt solver formulas for the constraints in each requirement {requirement_out} you have identified.
-		Your formulas should include every constraint, including the ones related to advisor approval and deviations. You do not need to 
-		consider approvals and deviations if they are not in the constraints. 
-		The parameterized smt formulas will check satisfiability of a given transcript schema template as input in the following format: 
-				```json
-		transcript = {{
-		"Student": {{
-				"Name": String,
-				"Program": String, 
-				"StudentID": Integer,
-				"Coterm": Boolean
-		}},
-		"AP_Credits": [
-				{{"Advanced_Placement": String,
-				  "Earned_Units": Integer                   
-				}}
-		]
-		"Courses_Taken": [
-				{{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}},
-				{{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}}, 
-				...
-		]
-		"Deviations": [
-				{{
-				"Deviated_Course_ID": String or "None" when "Approved"==false
-				"Approved": Boolean,
-				"Approved_By": String or "None" when "Approved"==false,
-		}},
-		  {{
-				"Deviated_Course_ID": String or "None" when "Approved"==false
-				"Approved": Boolean,
-				"Approved_By": String or "None" when "Approved"==false,
-		}},
-		]
-		"Approval": [
-				{{
-				"Approved": Boolean,
-				"Approved_By": String or "None" when "Approved"==false,
-				"Approved_Course_ID": String or "None" when "Approved"==false
-		}},
-		  {{
-				"Approved": Boolean,
-				"Approved_By": String or "None" when "Approved"==false,
-				"Approved_Course_ID": String or "None" when "Approved"==false
-		}},
-		]    
-		"Cumulative_GPA": {{
-				"Undergrad": Real,
-				"Graduate": Real,
-		}},
-		}}
-		```
-		Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
-		{requirement_out}. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
-		and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+		be used to satisfy two different requirements.
 		```
 		(set-logic ALL)
 
