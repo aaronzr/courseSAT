@@ -78,9 +78,10 @@ def get_requirement(text_file, requirement):
 def translate_to_smt(requirement_text, requirement): 
 		requirement_out = get_requirement(requirement_text, requirement)
 		formula_prompt =f"""
-		Your task is to generate cvc5 smt solver formulas for the constraints in each requirement {requirement_out} you have identified.
-		Your formulas should include every constraint, including the ones related to advisor approval and deviations.
-		The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+		Your task is to generate parameterized cvc5 smt solver formulas for the constraints in each requirement {requirement_out} you have identified.
+		Your formulas should include every constraint, including the ones related to advisor approval and deviations. You do not need to 
+		consider approvals and deviations if they are not in the constraints. 
+		The parameterized smt formulas will check satisfiability of a given transcript schema template as input in the following format: 
 				```json
 		transcript = {{
 		"Student": {{
@@ -140,65 +141,41 @@ def translate_to_smt(requirement_text, requirement):
 
 		;; Course1 is \in transcript[*].course
 		;; Course2 is \in transcript[*].course
-		(define-fun constraint_1 () Bool 
-		(or 
-		(and (str.contains course1 "CS 100") true)
-		(and (str.contains course1 "CS 101") true)
-		(and (str.contains course1 "CS 102") true)
-		;; Add all course IDs from transcript here
-		)
-		)
+        (and (= course1 course) for course in Transcript.get("Courses_Taken")
+        (= course1 course) for course in Transcript.get("Courses_Taken"))
 
-		(define-fun constraint_2 () Bool 
-		(or 
-		(and (str.contains course2 "CS 100") true)
-		(and (str.contains course2 "CS 101") true)
-		(and (str.contains course2 "CS 102") true)
-		;; Add all course IDs from transcript here
-		)
-		)
 
 		;; Course1 is in one of (100,101,102)
 		;; Course2 is in one of (101, 102, 103)
-		(define-fun constraint_3 () Bool 
-		(or 
-		(= course1 "CS 100")
+	
+		(and (or(= course1 "CS 100")
 		(= course1 "CS 101")
-		(= course1 "CS 102")
-		)
-		)
-
-		(define-fun constraint_4 () Bool 
-		(or 
-		(= course2 "CS 101")
+		(= course1 "CS 102"))
+		(or(= course2 "CS 101")
 		(= course2 "CS 102")
-		(= course2 "CS 103")
-		)
-		)
+		(= course2 "CS 103")))
 
-		;; AND all previous individual constraints
-		(define-fun constraint_5 () Bool 
-		(and constraint_1 constraint_2 constraint_3 constraint_4)
-		)
 
 		;; The same course cannot be used to satisfy two different requirements:
-		;; course_1 == course_2
-		(define-fun constraint_6 () Bool 
-		(= course1 course2)
-		)
-
-		;; NEGATE(course_1 == course_2) => course_1 != course_2
-		(define-fun constraint_7 () Bool 
-		(not constraint_6)
-		)
+		 (not (= course1 course2))
+		
 
 		;; final formula:
-		(assert (and constraint_7 constraint_5))
-
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
 		(check-sat)
 		```
 		Remember, it's very important that you generate smt formulas that PARAMETRIZE
-		the variables in the transcript type for {requirement_out}. 
+		course variables to check variables in a given transcript against requirements. Please only generate a
+  		giant prameterized formula like the following:  
+		```
+		(set-logic ALL)
+
+		(declare-const course1 String)
+		(declare-const course2 String)
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+		(check-sat)
+		```
+		Your task is to generate a parameterized formula reflecting the correct logic of {requirement_out}.
 		"""
 		formula_out = gpt_infer(formula_prompt)
 		start = "```smt"
