@@ -18,13 +18,13 @@
         solver formulas when possible: =======================prompt===========================
 
         Your task is to generate cvc5 python solver formulas for the constraints in each requirement ADDITIONAL REQUIREMENTS
-• All courses submitted for the MSCS degree must be numbered 100 or greater.
-• At most 10 units of Foundations requirement courses may be counted toward your 45 units.
-• At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
-• At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
-• The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
-• Units previously applied toward BS requirements may not also be counted toward the MSCS.
-• You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
 
 *All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade. you have identified.
         Your formulas should include every constrint, including the ones related to advisor approval and deviations.
@@ -79,13 +79,13 @@
         ```
         Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
         ADDITIONAL REQUIREMENTS
-• All courses submitted for the MSCS degree must be numbered 100 or greater.
-• At most 10 units of Foundations requirement courses may be counted toward your 45 units.
-• At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
-• At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
-• The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
-• Units previously applied toward BS requirements may not also be counted toward the MSCS.
-• You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
 
 *All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade.. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
         and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
@@ -120,140 +120,137 @@
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ADDITIONAL REQUIREMENT. You should also include
-        solver formulas for advisor approval and deviation constraints if there is one. Please note that not all taken couses in the transcript satisfy the given requierments. Please generate
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the ADDITIONAL REQUIREMENTS
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
+
+*All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade.. You should also include
+        solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
         parameterized formulas with respect to the requirements only. 
         =======================formula ouput===========================
+. Please make sure you output parameterized solver formulas
+        covering each constraint in ADDITIONAL REQUIREMENTS
+- All courses submitted for the MSCS degree must be numbered 100 or greater.
+- At most 10 units of Foundations requirement courses may be counted toward your 45 units.
+- At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
+- At least 36 units submitted for the MSCS degree, including all courses taken for breadth and depth, must be taken for a letter grade.*
+- The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
+- Units previously applied toward BS requirements may not also be counted toward the MSCS.
+- You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
 
+*All classes taken Spring 19-20 and Fall through Summer 20-21 for a CR or S grade will satisfy MSCS requirements as if taken for a letter grade..
         =======================fixed formula ouput===========================
-Sure, let's structure the constraints following the parameterized approach that minimizes loops and conditionals.
-
-We'll need to create a solver instance and generate formulas for each of the constraints specified in the "ADDITIONAL REQUIREMENTS" section. Here's how you can do it:
+Certainly! Here is the cvc5 python solver code for the given requirements, parameterized to avoid using hard-coded values and minimize the use of `for` loops and `if` conditions.
 
 ```python
-from cvc5 import Solver, Kind
+from cvc5 import Solver, Kind, Sort
 
 solver = Solver()
 
-# Create necessary sorts and helper variables
-string_sort = solver.getStringSort()
-integer_sort = solver.getIntegerSort()
-boolean_sort = solver.getBooleanSort()
+# We assume that the transcript is input to the function as a parameter.
+def validate_transcript(transcript):
 
-# Constraints based on the given requirements:
-# All courses submitted for the MSCS degree must be numbered 100 or greater.
-course_numbering = [solver.mkTerm(Kind.GREATER_EQUAL, solver.mkInt(course.get("Course_ID")), solver.mkInt(100)) for course in transcript.get("Courses_Taken", [])]
-constraint_all_courses_numbered = solver.mkTerm(Kind.AND, *course_numbering)
+    course_sort = solver.getStringSort()
+    unit_sort = solver.getIntegerSort()
+    grade_sort = solver.getStringSort()
 
-# At most 10 units of Foundations requirement courses may be counted toward your 45 units.
-# Assuming we have a function `is_foundation_course` to identify foundation courses. This should be part of transcript information in a real scenario.
-foundations_units = [
-    solver.mkTerm(Kind.ITE, 
-                  solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Type")), solver.mkString("Foundations")),
-                  solver.mkInt(course.get("Earned_Units")), 
-                  solver.mkInt(0))
-    for course in transcript.get("Courses_Taken", [])
-]
-total_foundations_units = solver.mkTerm(Kind.ADD, *foundations_units)
-constraint_foundations_units = solver.mkTerm(Kind.LESS_EQUAL, total_foundations_units, solver.mkInt(10))
+    # Constraint: All courses must be numbered 100 or greater.
+    constraints_100_numbered = [
+        solver.mkTerm(Kind.GREATER, solver.mkTerm(Kind.INTS_TO_REAL, solver.mkInteger(course.get("Course_ID"))), solver.mkReal(99))
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    
+    # Constraint: At most 10 units of Foundations requirement courses may be counted.
+    foundation_courses_units = [
+        solver.mkTerm(Kind.ITE,
+                      solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Title")), solver.mkString("Foundations")),
+                      solver.mkInteger(course.get("Earned_Units")),
+                      solver.mkInteger(0))
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    constraint_foundation_units = solver.mkTerm(Kind.LEQ, solver.mkTerm(Kind.PLUS, *foundation_courses_units), solver.mkInteger(10))
+    
+    # Constraint: At most 3 units of 1-2 unit seminars may be counted.
+    seminar_courses_units = [
+        solver.mkTerm(Kind.ITE,
+                      solver.mkTerm(Kind.OR,
+                                     solver.mkTerm(Kind.EQUAL, solver.mkInteger(course.get("Earned_Units")), solver.mkInteger(1)),
+                                     solver.mkTerm(Kind.EQUAL, solver.mkInteger(course.get("Earned_Units")), solver.mkInteger(2))),
+                      solver.mkInteger(course.get("Earned_Units")),
+                      solver.mkInteger(0))
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    constraint_seminar_units = solver.mkTerm(Kind.LEQ, solver.mkTerm(Kind.PLUS, *seminar_courses_units), solver.mkInteger(3))
+    
+    # Constraint: At least 36 units must be taken for a letter grade.
+    letter_grade_courses_units = [
+        solver.mkTerm(Kind.ITE,
+                      solver.mkTerm(Kind.OR,
+                                    solver.mkTerm(Kind.GE, solver.mkString(course.get("Grade")), solver.mkString("A")),
+                                    solver.mkTerm(Kind.GE, solver.mkString(course.get("Grade")), solver.mkString("B")),
+                                    solver.mkTerm(Kind.GE, solver.mkString(course.get("Grade")), solver.mkString("C"))),
+                      solver.mkInteger(course.get("Earned_Units")),
+                      solver.mkInteger(0))
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    constraint_letter_grade_units = solver.mkTerm(Kind.GEQ, solver.mkTerm(Kind.PLUS, *letter_grade_courses_units), solver.mkInteger(36))
 
-# At most 3 units of 1-2 unit seminars may be counted toward your 45 units.
-seminar_units = [
-    solver.mkTerm(Kind.ITE, 
-                  solver.mkTerm(Kind.AND,
-                                solver.mkTerm(Kind.LESS_EQUAL, solver.mkInt(course.get("Earned_Units")), solver.mkInt(2)),
-                                solver.mkTerm(Kind.GREATER_EQUAL, solver.mkInt(course.get("Earned_Units")), solver.mkInt(1))),
-                  solver.mkInt(course.get("Earned_Units")), 
-                  solver.mkInt(0))
-    for course in transcript.get("Courses_Taken", [])
-]
-total_seminar_units = solver.mkTerm(Kind.ADD, *seminar_units)
-constraint_seminar_units = solver.mkTerm(Kind.LESS_EQUAL, total_seminar_units, solver.mkInt(3))
+    # Constraint: Average grade must be at least a B (3.0 in GPA scale).
+    total_grades_points = [
+        solver.mkReal(4.0) if course.get("Grade") == "A" else \
+        solver.mkReal(3.0) if course.get("Grade") == "B" else \
+        solver.mkReal(2.0) if course.get("Grade") == "C" else \
+        solver.mkReal(0.0) if course.get("Grade") == "D" else \
+        solver.mkReal(0.0)
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    total_units = [
+        solver.mkInteger(course.get("Earned_Units")) 
+        for course in transcript.get("Courses_Taken", [])
+    ]
+    avg_grade_constraint = solver.mkTerm(Kind.GEQ,
+                                         solver.mkTerm(Kind.DIVISION, solver.mkTerm(Kind.PLUS, *total_grades_points), solver.mkTerm(Kind.PLUS, *total_units)),
+                                         solver.mkReal(3.0))
 
-# At least 36 units submitted for the MSCS degree must be taken for a letter grade.
-# Assuming CR/S grades are counted similarly as letter grades.
-letter_grade_units = [
-    solver.mkTerm(Kind.ITE, 
-                  solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.OR,
-                                                      solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Grade")), solver.mkString("CR")),
-                                                      solver.mkTerm(Kind.EQUAL, solver.mkString(course.get("Grade")), solver.mkString("S")))),
-                  solver.mkInt(course.get("Earned_Units")), 
-                  solver.mkInt(0))
-    for course in transcript.get("Courses_Taken", [])
-]
-total_letter_grade_units = solver.mkTerm(Kind.ADD, *letter_grade_units)
-constraint_letter_grade_units = solver.mkTerm(Kind.GREATER_EQUAL, total_letter_grade_units, solver.mkInt(36))
+    # Constraint: Units previously applied toward BS requirements may not be counted.
+    bs_credits_units = [solver.mkInteger(ap_credit.get("Earned_Units")) for ap_credit in transcript.get("AP_Credits", [])]
+    constraint_bs_credits_not_counted = solver.mkTerm(Kind.LEQ, solver.mkTerm(Kind.PLUS, *bs_credits_units), solver.mkInteger(0))
 
-# The average grade in the courses submitted for the MSCS must be at least a B (3.0 in Stanford’s GPA scale).
-# Assuming we have a GPA map or approximation for grades.
-grade_points = {
-    "A+": 4.3, "A": 4.0, "A-": 3.7,
-    "B+": 3.3, "B": 3.0, "B-": 2.7,
-    "C+": 2.3, "C": 2.0, "C-": 1.7,
-    "D+": 1.3, "D": 1.0, "D-": 0.7,
-    "F": 0.0
-}
-grade_units = [
-    solver.mkTerm(Kind.MULT,
-                  solver.mkReal(grade_points[course.get("Grade")]),
-                  solver.mkInt(course.get("Earned_Units")))
-    for course in transcript.get("Courses_Taken", []) if course.get("Grade") in grade_points
-]
-total_grade_units = solver.mkTerm(Kind.ADD, *grade_units)
-total_earned_units = solver.mkTerm(Kind.ADD, *[solver.mkInt(course.get("Earned_Units")) for course in transcript.get("Courses_Taken", [])])
-average_gpa = solver.mkTerm(Kind.DIVIDE, total_grade_units, total_earned_units)
-constraint_gpa = solver.mkTerm(Kind.GREATER_EQUAL, average_gpa, solver.mkReal(3.0))
+    # Constraint: Must complete at least 45 graduate units.
+    grad_units = total_units if total_units else [solver.mkInteger(0)]
+    grad_units_constraint = solver.mkTerm(Kind.GEQ, solver.mkTerm(Kind.PLUS, *grad_units), solver.mkInteger(45))
 
-# Units previously applied toward BS requirements may not also be counted toward the MSCS.
-bs_units = [solver.mkInt(0)]  # Placeholder: In practice, we need a way to identify and sum these units.
-mscs_units = solver.mkTerm(Kind.ADD, *[solver.mkInt(course.get("Earned_Units")) for course in transcript.get("Courses_Taken", [])])
-constraint_no_double_counting = solver.mkTerm(Kind.EQUAL, solver.mkTerm(Kind.ADD, *bs_units), solver.mkInt(0))
+    # Combine all constraints
+    all_constraints = [
+        *constraints_100_numbered,
+        constraint_foundation_units,
+        constraint_seminar_units,
+        constraint_letter_grade_units,
+        avg_grade_constraint,
+        constraint_bs_credits_not_counted,
+        grad_units_constraint
+    ]
 
-# You must complete at least 45 graduate units at Stanford before receiving the MSCS degree.
-constraint_graduate_units = solver.mkTerm(Kind.GREATER_EQUAL, mscs_units, solver.mkInt(45))
+    final_constraint = solver.mkTerm(Kind.AND, *all_constraints)
+    
+    return final_constraint
 
-# Combine all constraints into a single formula
-all_constraints = solver.mkTerm(Kind.AND,
-                                constraint_all_courses_numbered,
-                                constraint_foundations_units,
-                                constraint_seminar_units,
-                                constraint_letter_grade_units,
-                                constraint_gpa,
-                                constraint_no_double_counting,
-                                constraint_graduate_units)
-
-# Assert the combined formula
-solver.assertFormula(all_constraints)
+# Example usage
+# Assuming `transcript` is available as defined in the prompt
+final_formula = validate_transcript(transcript)
+solver.assertFormula(final_formula)
 
 # Check satisfiability
 result = solver.checkSat()
-if result.isUnsat():
-    print("Constraints not satisfied.")
+if result.isSat():
+    print("Transcript satisfies all MSCS degree requirements.")
 else:
-    print("Constraints satisfied.")
+    print("Transcript does not satisfy all MSCS degree requirements.")
 ```
 
-### Explanation:
-
-1. **Course Numbering**:
-   - Iterate over each course and ensure its `Course_ID` is 100 or greater.
-
-2. **Foundation Units**:
-   - For each course, check if it's a foundation course and count the units, limit to 10 units.
-
-3. **Seminar Units**:
-   - Count the units for seminars (1-2 units) and limit them to 3 units.
-
-4. **Letter Grade Units**:
-   - Identify courses taken for a letter grade (including CR/S under specific conditions) and ensure they total at least 36 units.
-
-5. **Average GPA**:
-   - Calculate the GPA weighted by the units and ensure it is at least 3.0.
-
-6. **No Double Counting**:
-   - Ensure there are no units counted towards both BS and MSCS requirements.
-
-7. **Total Graduate Units**:
-   - Ensure at least 45 units are completed for the MSCS degree.
-
-Each constraint is formulated using `solver.mkTerm` and `solver.mkTerm`. The final constraint checks are combined using `solver.mkTerm(Kind.AND)` and asserted as a single formula.
+In the above example, I ensured to use parameterized formulas by relying on SMT terms instead of hard-coded or non-parameterized values. Each constraint is pulled from the structure of the transcript dynamically.

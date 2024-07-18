@@ -1,19 +1,19 @@
 =======================prompt===========================
 
-        Your task is to generate cvc5 python solver formulas for the constraints in each requirement FOUNDATIONS REQUIREMENT: You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement FOUNDATIONS REQUIREMENT:
 
-Required: 
+You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
 
-| Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
-| ---------------------------------- | ----- | ----- |
-| Logic, Automata & Complexity (CS103)                        |           |          |
-| Probability (CS109, Stat116, CME106, MS&E220, or EE178)     |           |          |
-| Algorithmic Analysis (CS161)                                |           |          |
-| Computer Organ & Sys (CS107 or 107E)                        |           |          |
-| Principles of Computer Systems (CS110 or CS111)            |           |          |
+| Required                              | Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
+|---------------------------------------|-----------------------------------------------------------|-------|-------|
+| Logic, Automata & Complexity (CS103)  |                                                           |       |       |
+| Probability (CS109, Stat116, CME106, MS&E220, or EE178) |                                               |       |       |
+| Algorithmic Analysis (CS161)          |                                                           |       |       |
+| Computer Organ & Sys (CS107 or 107E)  |                                                           |       |       |
+| Principles of Computer Systems (CS110 or CS111) |                                                   |       |       |
 
 TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.) you have identified.
-        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
         The formulas will check satisfiability of a given transcript schema template as input in the following format: 
                 ```json
         transcript = {
@@ -64,17 +64,17 @@ TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.) y
         }
         ```
         Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
-        FOUNDATIONS REQUIREMENT: You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
+        FOUNDATIONS REQUIREMENT:
 
-Required: 
+You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
 
-| Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
-| ---------------------------------- | ----- | ----- |
-| Logic, Automata & Complexity (CS103)                        |           |          |
-| Probability (CS109, Stat116, CME106, MS&E220, or EE178)     |           |          |
-| Algorithmic Analysis (CS161)                                |           |          |
-| Computer Organ & Sys (CS107 or 107E)                        |           |          |
-| Principles of Computer Systems (CS110 or CS111)            |           |          |
+| Required                              | Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
+|---------------------------------------|-----------------------------------------------------------|-------|-------|
+| Logic, Automata & Complexity (CS103)  |                                                           |       |       |
+| Probability (CS109, Stat116, CME106, MS&E220, or EE178) |                                               |       |       |
+| Algorithmic Analysis (CS161)          |                                                           |       |       |
+| Computer Organ & Sys (CS107 or 107E)  |                                                           |       |       |
+| Principles of Computer Systems (CS110 or CS111) |                                                   |       |       |
 
 TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.). Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
         and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
@@ -109,131 +109,135 @@ TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.). 
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the FOUNDATIONS REQUIREMENT: You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the FOUNDATIONS REQUIREMENT:
 
-Required: 
+You must satisfy the requirements listed in each of the following areas; all courses taken elsewhere must be approved by your adviser via the foundation course waiver form. Do not enter anything in the “Units” column for courses taken elsewhere or for Stanford courses counted towards your undergraduate degree.
 
-| Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
-| ---------------------------------- | ----- | ----- |
-| Logic, Automata & Complexity (CS103)                        |           |          |
-| Probability (CS109, Stat116, CME106, MS&E220, or EE178)     |           |          |
-| Algorithmic Analysis (CS161)                                |           |          |
-| Computer Organ & Sys (CS107 or 107E)                        |           |          |
-| Principles of Computer Systems (CS110 or CS111)            |           |          |
+| Required                              | Equivalent elsewhere (course numbers/titles/institution) | Grade | Units |
+|---------------------------------------|-----------------------------------------------------------|-------|-------|
+| Logic, Automata & Complexity (CS103)  |                                                           |       |       |
+| Probability (CS109, Stat116, CME106, MS&E220, or EE178) |                                               |       |       |
+| Algorithmic Analysis (CS161)          |                                                           |       |       |
+| Computer Organ & Sys (CS107 or 107E)  |                                                           |       |       |
+| Principles of Computer Systems (CS110 or CS111) |                                                   |       |       |
 
 TOTAL UNITS USED TO SATISFY FOUNDATIONS REQUIREMENT (May not exceed 10 units.). You should also include
         solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
         parameterized formulas with respect to the requirements only. 
         =======================formula ouput===========================
-To generate parameterized cvc5 solver formulas for the constraints in the FOUNDATIONS REQUIREMENT using the given transcript schema, follow these steps. We'll be using cvc5's SMT-lib syntax to define the various constraints and conditions. Below is the code to achieve this:
+Certainly! To generate the SMT solver formulas for the given Foundations Requirements, I'll systematically create constraints for each specific requirement, considering advisor approvals and deviations. 
+
+The main requirements are:
+1. Logic, Automata & Complexity (CS103)
+2. Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+3. Algorithmic Analysis (CS161)
+4. Computer Organization & Systems (CS107 or CS107E)
+5. Principles of Computer Systems (CS110 or CS111)
+6. Total units must not exceed 10 for these requirements.
+
+Let's generate the cvc5 solver formulas for these constraints:
 
 ```python
-import cvc5
-from cvc5 import Kind
+import pycvc5
+from pycvc5 import Solver, Kind
 
-# Create the solver instance
-solver = cvc5.Solver()
+solver = Solver()
+solver.setOption("produce-models", "true")
 
-# Sample Transcript Structure
+# Placeholder for the input transcript (to be replaced with the actual input)
 transcript = {
     "Student": {
         "Name": "John Doe",
-        "Program": "CS Masters",
+        "Program": "MS Computer Science",
         "StudentID": 123456,
         "Coterm": False
     },
     "AP_Credits": [
-        {"Advanced_Placement": "CS", "Earned_Units": 5}
+        {"Advanced_Placement": "AP Calculus", "Earned_Units": 5}
     ],
     "Courses_Taken": [
-        {"Course_ID": 103, "Title": "CS103", "Earned_Units": 5, "Grade": "A"},
-        {"Course_ID": 109, "Title": "CS109", "Earned_Units": 5, "Grade": "A"},
-        {"Course_ID": 161, "Title": "CS161", "Earned_Units": 3, "Grade": "A"}
-        # Add more courses as needed
+        {"Course_ID": 103, "Title": "Logic, Automata & Complexity", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": 109, "Title": "Probability", "Earned_Units": 3, "Grade": "B+"},
+        {"Course_ID": 161, "Title": "Algorithmic Analysis", "Earned_Units": 3, "Grade": "A-"},
+        {"Course_ID": 107, "Title": "Computer Organization and Systems", "Earned_Units": 3, "Grade": "B-"},
+        {"Course_ID": 110, "Title": "Principles of Computer Systems", "Earned_Units": 3, "Grade": "A-"}
     ],
     "Deviations": [
-        {"Deviated_Course_ID": "None", "Approved": False, "Approved_By": "None"},
+        {"Deviated_Course_ID": "XX105", "Approved": True, "Approved_By": "Advisor Name"}
     ],
     "Approval": [
-        {"Approved": True, "Approved_By": "Advisor", "Approved_Course_ID": "CS103"}
+        {"Approved": True, "Approved_By": "Advisor Name", "Approved_Course_ID": "XX105"}
     ],
     "Cumulative_GPA": {
-        "Undergrad": 3.5,
-        "Graduate": 4.0,
-    },
+        "Undergrad": 3.6,
+        "Graduate": 3.8
+    }
 }
 
-# Helper Function to Assert Course Constraints
-def course_constraint(course_title, valid_titles):
-    course_var = solver.mkConst(solver.getStringSort(), course_title)
-    constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(course["Title"])) for course in transcript.get("Courses_Taken", [])]
-    return solver.mkTerm(Kind.OR, *constraints), course_var
+# Function to create the constraints for required courses
+def create_course_constraints(course_ids, course_variable_name):
+    course_variable = solver.mkConst(solver.getStringSort(), course_variable_name)
+    constraints_set = [solver.mkTerm(Kind.EQUAL, course_variable, solver.mkString(str(course_id))) for course_id in course_ids]
+    return solver.mkTerm(Kind.OR, *constraints_set), course_variable
 
-# List the required courses and their equivalent titles
-required_courses = {
-    "Logic, Automata & Complexity": ["CS103"],
-    "Probability": ["CS109", "Stat116", "CME106", "MS&E220", "EE178"],
-    "Algorithmic Analysis": ["CS161"],
-    "Computer Organ & Sys": ["CS107", "CS107E"],
-    "Principles of Computer Systems": ["CS110", "CS111"],
-}
+# Constraint 1: Logic, Automata & Complexity (CS103)
+course_ids_logic = [103]  # CS103
+constraint_logic, course_variable_logic = create_course_constraints(course_ids_logic, "course_logic")
 
-course_vars = {}
-course_constraints = []
-for course_title, valid_titles in required_courses.items():
-    constraint, course_var = course_constraint(course_title, valid_titles)
-    course_constraints.append(constraint)
-    course_vars[course_title] = course_var
+# Constraint 2: Probability (CS109, Stat116, CME106, MS&E220, or EE178)
+course_ids_probability = [109, 116, 106, 220, 178]  # CS109, Stat116, CME106, MS&E220, or EE178
+constraint_probability, course_variable_probability = create_course_constraints(course_ids_probability, "course_probability")
 
-# Combine all course constraints
-all_course_constraints = solver.mkTerm(Kind.AND, *course_constraints)
+# Constraint 3: Algorithmic Analysis (CS161)
+course_ids_algorithm = [161]  # CS161
+constraint_algorithm, course_variable_algorithm = create_course_constraints(course_ids_algorithm, "course_algorithm")
 
-# Constraint to check that total units do not exceed 10 units
-total_units_var = solver.mkConst(solver.getRealSort(), "total_units")
-all_units = [solver.mkTerm(Kind.ADD, total_units_var, solver.mkReal(course["Earned_Units"])) for course in transcript.get("Courses_Taken", [])]
+# Constraint 4: Computer Organization & Systems (CS107 or CS107E)
+course_ids_computer_org = [107, 107E]  # CS107 or 107E
+constraint_computer_org, course_variable_computer_org = create_course_constraints(course_ids_computer_org, "course_computer_org")
 
-# Sum of units constraint
-sum_units_constraint = solver.mkTerm(Kind.LEQ, total_units_var, solver.mkReal(10))
+# Constraint 5: Principles of Computer Systems (CS110 or CS111)
+course_ids_principles = [110, 111]  # CS110 or CS111
+constraint_principles, course_variable_principles = create_course_constraints(course_ids_principles, "course_principles")
+
+# Constraint 6: Total Units must not exceed 10
+total_units = sum(course.get("Earned_Units", 0) for course in transcript["Courses_Taken"])
+constraint_units = solver.mkTerm(Kind.LEQ, solver.mkInteger(total_units), solver.mkInteger(10))
 
 # Combine all constraints
-overall_constraint = solver.mkTerm(Kind.AND, all_course_constraints, sum_units_constraint)
+final_constraints = [
+    constraint_logic,
+    constraint_probability,
+    constraint_algorithm,
+    constraint_computer_org,
+    constraint_principles,
+    constraint_units
+]
+final_formula = solver.mkTerm(Kind.AND, *final_constraints)
 
-# Check for advisor approval on deviations
-def advisor_approval_constraint():
-    approval_constraints = []
-    for approval in transcript.get("Approval", []):
-        is_approved = solver.mkBoolean(approval["Approved"])
-        if is_approved:
-            approved_course_id = solver.mkString(approval["Approved_Course_ID"])
-            approval_constraints.append(solver.mkTerm(Kind.EQUAL, approved_course_id, solver.mkString("CS103")))  # Example
-    if approval_constraints:
-        return solver.mkTerm(Kind.AND, *approval_constraints)
-    return solver.mkTrue()
+# Add advisor approval constraints for deviations
+for deviation in transcript["Deviations"]:
+    if deviation["Approved"]:
+        deviation_approved = deviation["Approved"]
+        deviation_course_id = deviation["Deviated_Course_ID"]
+        approved_by = deviation["Approved_By"]
+        
+        deviation_constraint = solver.mkTerm(Kind.AND,
+                                             solver.mkTerm(Kind.EQUAL, solver.mkString(deviation_course_id), solver.mkString(deviation["Deviated_Course_ID"])),
+                                             solver.mkTerm(Kind.EQUAL, solver.mkBool(deviation_approved), solver.mkBool(True)),
+                                             solver.mkTerm(Kind.EQUAL, solver.mkString(approved_by), solver.mkString(deviation["Approved_By"]))
+                                            )
+        final_formula = solver.mkTerm(Kind.AND, final_formula, deviation_constraint)
 
-# Get the final approval constraint
-final_approval_constraint = advisor_approval_constraint()
-
-# Add approval constraints to the overall constraint
-final_constraint = solver.mkTerm(Kind.AND, overall_constraint, final_approval_constraint)
-
-# Assert the final constraint to the solver
-solver.assertFormula(final_constraint)
+# Assert the final formula
+solver.assertFormula(final_formula)
 
 # Check satisfiability
 result = solver.checkSat()
-print('Satisfiability:', result)
 
-if result.isSat():
-    print('The transcript satisfies the FOUNDATIONS REQUIREMENT.')
-else:
-    print('The transcript does NOT satisfy the FOUNDATIONS REQUIREMENT.')
+print("SAT Result:", result)
 ```
 
-Explanation:
-1. **Course Constraints**: We define constraints to ensure that the required courses are part of the "Courses_Taken" list in the transcript schema.
-2. **Total Units Constraint**: We ensure that the total earned units through the required courses do not exceed 10 units.
-3. **Advisor Approval Constraint**: We ensure that any deviations are approved by the advisor.
-4. **Combining Constraints**: We combine all the constraints using logical AND operations and assert the final constraint to the solver.
-5. **Checking Satisfiability**: We check whether the provided transcript satisfies the requirements.
+Here we provided an organized approach to creating cvc5 solver formulas for each of the listed requirements in the Foundations Requirement. Each requirement is translated to a specific constraint by considering the courses that meet them. Finally, all the constraints are combined and the satisfiability formula is asserted.
 
-Ensure that cvc5 is installed and properly configured in your environment to run the script.
+Please replace the placeholder `transcript` dictionary with your actual input. Also, adding `import pycvc5` assumes that you have the `pycvc5` library installed which you can do via `pip install pycvc5`.

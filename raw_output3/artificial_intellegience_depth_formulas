@@ -1,89 +1,18 @@
 =======================prompt===========================
 
-        Your task is to generate cvc5 python solver formulas for the constraints in each requirement Sure, here are the extracted requirements for the ARTIFICIAL INTELLIGENCE DEPTH from the given document:
+        Your task is to generate cvc5 python solver formulas for the constraints in each requirement Sure, here is the extracted requirement for the ARTIFICIAL INTELLIGENCE DEPTH from the document:
 
-1. **Required Courses:**
-   - **CS 221** (students with equivalent course work may waive with adviser approval)
+**ARTIFICIAL INTELLIGENCE DEPTH**  
+All depth courses must be taken for a letter grade* for 3 or more units. A maximum of 6 units of CS 399 Independent Study may be counted towards the depth. Any deviations from the stated requirements must be noted and approved by your adviser in the Adviser Notes box provided (maximum of one adviser-approved deviation allowed). Courses taken for your Stanford undergraduate degree do not need to be repeated. Enter course selection in the table below:  
 
-2. **Four of the following courses:**
-   - CS 223A
-   - CS 224N
-   - CS 224S
-   - CS 224U
-   - CS 224V
-   - CS 224W
-   - CS 228
-   - CS 229
-   - CS 231A
-   - CS 231N
-   - CS 234
-   - CS 237A
-   - CS 237B
-   - CS 238
+a) **CS 221** (students with equivalent course work may waive with adviser approval)  
+b) **At least four of**: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238  
+c) **A total of at least 21 units** from categories (a), (b) and the following: CS 205L, 224R, 225A, 227B, 229M, 230, 233, 235, 236, 239, 246, 257, 270, 271, 273A, 273B, 274, 275, 279, 281, 322, 324, 325B, 326, 327A, 329 (any suffix), 330, 331B, 332, 333, 345, 348N, 361, 368, 371, 375, 377† (any suffix), 379† (any suffix), 398, 399†, 428A, 428B, 432; EE 263, 276, 278, 364A, 364B, 377, 378B; ENGR 205, 209A; MS&E 226, 252; PSYCH 209; STATS 202, 315A, 315B (courses with † notation require approval of MS adviser)  
 
-3. **Additional Courses:**
-   - A total of at least 21 units from categories (a), (b), and the following:
-     - CS 205L
-     - CS 224R
-     - CS 225A
-     - CS 227B
-     - CS 229M
-     - CS 230
-     - CS 233
-     - CS 235
-     - CS 236
-     - CS 239
-     - CS 246
-     - CS 257
-     - CS 270
-     - CS 271
-     - CS 273A
-     - CS 273B
-     - CS 274
-     - CS 275
-     - CS 279
-     - CS 281
-     - CS 322
-     - CS 324
-     - CS 325B
-     - CS 326
-     - CS 327A
-     - CS 329 (any suffix)
-     - CS 330
-     - CS 331B
-     - CS 332
-     - CS 333
-     - CS 345
-     - CS 348N
-     - CS 361
-     - CS 368
-     - CS 371
-     - CS 375
-     - CS 377† (any suffix)
-     - CS 379† (any suffix)
-     - CS 398
-     - CS 399†
-     - CS 428A
-     - CS 428B
-     - CS 432
-     - EE 263
-     - EE 276
-     - EE 278
-     - EE 364A
-     - EE 364B
-     - EE 377
-     - EE 378B
-     - ENGR 205
-     - ENGR 209A
-     - MS&E 226
-     - MS&E 252
-     - PSYCH 209
-     - STATS 202
-     - STATS 315A
-     - STATS 315B
-
-**Note:** Courses marked with † notation require approval of the MS adviser. you have identified.
-        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+**Course number** Title (Depth courses must be taken for at least 3 units.) **Grade Units**                                       
+**TOTAL DEPTH UNITS APPLIED TO MSCS** (must total at least 21 units) Letter grades only.*
+ you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
         The formulas will check satisfiability of a given transcript schema template as input in the following format: 
                 ```json
         transcript = {
@@ -134,89 +63,18 @@
         }
         ```
         Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
-        Sure, here are the extracted requirements for the ARTIFICIAL INTELLIGENCE DEPTH from the given document:
+        Sure, here is the extracted requirement for the ARTIFICIAL INTELLIGENCE DEPTH from the document:
 
-1. **Required Courses:**
-   - **CS 221** (students with equivalent course work may waive with adviser approval)
+**ARTIFICIAL INTELLIGENCE DEPTH**  
+All depth courses must be taken for a letter grade* for 3 or more units. A maximum of 6 units of CS 399 Independent Study may be counted towards the depth. Any deviations from the stated requirements must be noted and approved by your adviser in the Adviser Notes box provided (maximum of one adviser-approved deviation allowed). Courses taken for your Stanford undergraduate degree do not need to be repeated. Enter course selection in the table below:  
 
-2. **Four of the following courses:**
-   - CS 223A
-   - CS 224N
-   - CS 224S
-   - CS 224U
-   - CS 224V
-   - CS 224W
-   - CS 228
-   - CS 229
-   - CS 231A
-   - CS 231N
-   - CS 234
-   - CS 237A
-   - CS 237B
-   - CS 238
+a) **CS 221** (students with equivalent course work may waive with adviser approval)  
+b) **At least four of**: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238  
+c) **A total of at least 21 units** from categories (a), (b) and the following: CS 205L, 224R, 225A, 227B, 229M, 230, 233, 235, 236, 239, 246, 257, 270, 271, 273A, 273B, 274, 275, 279, 281, 322, 324, 325B, 326, 327A, 329 (any suffix), 330, 331B, 332, 333, 345, 348N, 361, 368, 371, 375, 377† (any suffix), 379† (any suffix), 398, 399†, 428A, 428B, 432; EE 263, 276, 278, 364A, 364B, 377, 378B; ENGR 205, 209A; MS&E 226, 252; PSYCH 209; STATS 202, 315A, 315B (courses with † notation require approval of MS adviser)  
 
-3. **Additional Courses:**
-   - A total of at least 21 units from categories (a), (b), and the following:
-     - CS 205L
-     - CS 224R
-     - CS 225A
-     - CS 227B
-     - CS 229M
-     - CS 230
-     - CS 233
-     - CS 235
-     - CS 236
-     - CS 239
-     - CS 246
-     - CS 257
-     - CS 270
-     - CS 271
-     - CS 273A
-     - CS 273B
-     - CS 274
-     - CS 275
-     - CS 279
-     - CS 281
-     - CS 322
-     - CS 324
-     - CS 325B
-     - CS 326
-     - CS 327A
-     - CS 329 (any suffix)
-     - CS 330
-     - CS 331B
-     - CS 332
-     - CS 333
-     - CS 345
-     - CS 348N
-     - CS 361
-     - CS 368
-     - CS 371
-     - CS 375
-     - CS 377† (any suffix)
-     - CS 379† (any suffix)
-     - CS 398
-     - CS 399†
-     - CS 428A
-     - CS 428B
-     - CS 432
-     - EE 263
-     - EE 276
-     - EE 278
-     - EE 364A
-     - EE 364B
-     - EE 377
-     - EE 378B
-     - ENGR 205
-     - ENGR 209A
-     - MS&E 226
-     - MS&E 252
-     - PSYCH 209
-     - STATS 202
-     - STATS 315A
-     - STATS 315B
-
-**Note:** Courses marked with † notation require approval of the MS adviser.. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+**Course number** Title (Depth courses must be taken for at least 3 units.) **Grade Units**                                       
+**TOTAL DEPTH UNITS APPLIED TO MSCS** (must total at least 21 units) Letter grades only.*
+. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
         and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
         ```
         course_variable_1 = solver.mkConst(solver.getStringSort(), "course1")
@@ -249,184 +107,113 @@
 	formula = solver.mkTerm(Kind.AND, constraint_7, constraint_5)
         solver.assertFormula(formula)
         ```
-        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the Sure, here are the extracted requirements for the ARTIFICIAL INTELLIGENCE DEPTH from the given document:
+        When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the Sure, here is the extracted requirement for the ARTIFICIAL INTELLIGENCE DEPTH from the document:
 
-1. **Required Courses:**
-   - **CS 221** (students with equivalent course work may waive with adviser approval)
+**ARTIFICIAL INTELLIGENCE DEPTH**  
+All depth courses must be taken for a letter grade* for 3 or more units. A maximum of 6 units of CS 399 Independent Study may be counted towards the depth. Any deviations from the stated requirements must be noted and approved by your adviser in the Adviser Notes box provided (maximum of one adviser-approved deviation allowed). Courses taken for your Stanford undergraduate degree do not need to be repeated. Enter course selection in the table below:  
 
-2. **Four of the following courses:**
-   - CS 223A
-   - CS 224N
-   - CS 224S
-   - CS 224U
-   - CS 224V
-   - CS 224W
-   - CS 228
-   - CS 229
-   - CS 231A
-   - CS 231N
-   - CS 234
-   - CS 237A
-   - CS 237B
-   - CS 238
+a) **CS 221** (students with equivalent course work may waive with adviser approval)  
+b) **At least four of**: CS 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238  
+c) **A total of at least 21 units** from categories (a), (b) and the following: CS 205L, 224R, 225A, 227B, 229M, 230, 233, 235, 236, 239, 246, 257, 270, 271, 273A, 273B, 274, 275, 279, 281, 322, 324, 325B, 326, 327A, 329 (any suffix), 330, 331B, 332, 333, 345, 348N, 361, 368, 371, 375, 377† (any suffix), 379† (any suffix), 398, 399†, 428A, 428B, 432; EE 263, 276, 278, 364A, 364B, 377, 378B; ENGR 205, 209A; MS&E 226, 252; PSYCH 209; STATS 202, 315A, 315B (courses with † notation require approval of MS adviser)  
 
-3. **Additional Courses:**
-   - A total of at least 21 units from categories (a), (b), and the following:
-     - CS 205L
-     - CS 224R
-     - CS 225A
-     - CS 227B
-     - CS 229M
-     - CS 230
-     - CS 233
-     - CS 235
-     - CS 236
-     - CS 239
-     - CS 246
-     - CS 257
-     - CS 270
-     - CS 271
-     - CS 273A
-     - CS 273B
-     - CS 274
-     - CS 275
-     - CS 279
-     - CS 281
-     - CS 322
-     - CS 324
-     - CS 325B
-     - CS 326
-     - CS 327A
-     - CS 329 (any suffix)
-     - CS 330
-     - CS 331B
-     - CS 332
-     - CS 333
-     - CS 345
-     - CS 348N
-     - CS 361
-     - CS 368
-     - CS 371
-     - CS 375
-     - CS 377† (any suffix)
-     - CS 379† (any suffix)
-     - CS 398
-     - CS 399†
-     - CS 428A
-     - CS 428B
-     - CS 432
-     - EE 263
-     - EE 276
-     - EE 278
-     - EE 364A
-     - EE 364B
-     - EE 377
-     - EE 378B
-     - ENGR 205
-     - ENGR 209A
-     - MS&E 226
-     - MS&E 252
-     - PSYCH 209
-     - STATS 202
-     - STATS 315A
-     - STATS 315B
-
-**Note:** Courses marked with † notation require approval of the MS adviser.. You should also include
+**Course number** Title (Depth courses must be taken for at least 3 units.) **Grade Units**                                       
+**TOTAL DEPTH UNITS APPLIED TO MSCS** (must total at least 21 units) Letter grades only.*
+. You should also include
         solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
         parameterized formulas with respect to the requirements only. 
         =======================formula ouput===========================
-To generate cvc5 solver formulas for validating the given transcript schema against the ARTIFICIAL INTELLIGENCE DEPTH requirements, we need to create assertions for each of the requirements. Below is the structured approach and cvc5 solver formulas to achieve this:
+Sure, I will generate cvc5 Python solver formulas for the constraints extracted from the ARTIFICIAL INTELLIGENCE DEPTH requirements:
 
-### Required Courses
-1. **Required Courses:**
-   - **CS 221** (students with equivalent course work may waive with adviser approval)
+1. All courses must be taken for a letter grade and for 3 or more units.
+2. A maximum of 6 units of CS 399 Independent Study may be counted.
+3. Any deviations must be noted and approved (maximum of one adviser-approved deviation allowed).
+4. Courses already taken for Stanford undergraduate degree do not need to be repeated.
+5. Specific courses to be taken from lists (a) and (b).
+6. A total of at least 21 units from specified courses.
 
-```python
-# Required Course CS 221 or approved equivalent.
-req_course_221 = solver.mkConst(solver.getStringSort(), "req_course_221")
-cs_221_in_transcript = [solver.mkTerm(Kind.EQUAL, req_course_221, solver.mkString(course.get("Course_ID")))for course in transcript.get("Courses_Taken", [])]
-cs_221_approved = solver.mkTerm(Kind.OR, 
-    solver.mkTerm(Kind.AND, 
-        solver.mkTerm(Kind.EQUAL, solver.mkString("CS 221"), req_course_221), 
-        solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.EQUAL, req_course_221, solver.mkString("None")))
-    ), 
-    solver.mkTerm(Kind.AND, 
-        solver.mkTerm(Kind.EQUAL, solver.mkString("None"), req_course_221), 
-        solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.AND, 
-            solver.mkTerm(Kind.EQUAL, 
-                solver.mkString(deviation.get("Deviated_Course_ID")), 
-                solver.mkString(req_course_221)),
-            solver.mkTerm(Kind.EQUAL, solver.mkBool(deviation.get("Approved")), solver.mkBool(True))
-        )for deviation in transcript.get("Deviations", [])])
-    )
-)
-req_course_221_constraint = solver.mkTerm(Kind.AND, solver.mkTerm(Kind.OR, *cs_221_in_transcript), cs_221_approved)
-solver.assertFormula(req_course_221_constraint)
-```
-
-### Choice of Four Elective Courses
-2. **Four of the following courses:**
+Here's how to implement this in cvc5:
 
 ```python
-# List of elective courses
-elective_courses = ["CS 223A", "CS 224N", "CS 224S", "CS 224U", "CS 224V", "CS 224W", "CS 228", "CS 229", "CS 231A", "CS 231N", "CS 234", "CS 237A", "CS 237B", "CS 238"]
-elective_vars = [solver.mkConst(solver.getStringSort(), "elective_course_" + str(i)) for i in range(4)]
-elective_constraints = []
+from cvc5 import Kind, Solver
 
-# Check four elective courses in transcript
-for var in elective_vars:
-    elective_in_transcript = [solver.mkTerm(Kind.EQUAL, var, solver.mkString(course.get("Course_ID"))) for course in transcript.get("Courses_Taken", [])]
-    elective_in_list = [solver.mkTerm(Kind.EQUAL, var, solver.mkString(course)) for course in elective_courses]
-    elective_constraints.append(solver.mkTerm(Kind.AND, solver.mkTerm(Kind.OR, *elective_in_transcript), solver.mkTerm(Kind.OR, *elective_in_list)))
+solver = Solver()
+solver.setOption("produce-models", "true")
+solver.setLogic("QF_LIA")
 
-solver.assertFormula(solver.mkTerm(Kind.AND, *elective_constraints))
+# Extract variables from the schema
+transcript_courses = transcript.get("Courses_Taken", [])
+dev_courses = transcript.get("Deviations", [])
+approved_courses = transcript.get("Approval", [])
+
+# Variables for constraints
+course_ids = ["CS 221", "CS 223A", "CS 224N", "CS 224S", "CS 224U", "CS 224V", "CS 224W",
+              "CS 228", "CS 229", "CS 231A", "CS 231N", "CS 234", "CS 237A", "CS 237B",
+              "CS 238", "CS 205L", "CS 224R", "CS 225A", "CS 227B", "CS 229M", "CS 230",
+              "CS 233", "CS 235", "CS 236", "CS 239", "CS 246", "CS 257", "CS 270", "CS 271",
+              "CS 273A", "CS 273B", "CS 274", "CS 275", "CS 279", "CS 281", "CS 322", "CS 324",
+              "CS 325B", "CS 326", "CS 327A", "CS 329", "CS 330", "CS 331B", "CS 332", "CS 333",
+              "CS 345", "CS 348N", "CS 361", "CS 368", "CS 371", "CS 375", "CS 377", "CS 379",
+              "CS 398", "CS 399", "CS 428A", "CS 428B", "CS 432", "EE 263", "EE 276", "EE 278",
+              "EE 364A", "EE 364B", "EE 377", "EE 378B", "ENGR 205", "ENGR 209A", "MS&E 226",
+              "MS&E 252", "PSYCH 209", "STATS 202", "STATS 315A", "STATS 315B"]
+
+# Helper function to create course constraints
+def course_in_transcript(course_id):
+    return [solver.mkTerm(Kind.EQUAL, solver.mkString(course_id), solver.mkString(course["Course_ID"])) for course in transcript_courses]
+
+# Constraints for 3 or more units and letter grade
+min_units_constraint = solver.mkTrue()
+letter_grade_constraint = solver.mkTrue()
+for course in transcript_courses:
+    min_units_constraint = solver.mkTerm(Kind.AND, min_units_constraint, solver.mkTerm(Kind.GEQ, solver.mkInteger(course["Earned_Units"]), solver.mkInteger(3)))
+    letter_grade_constraint = solver.mkTerm(Kind.AND, letter_grade_constraint, solver.mkTerm(Kind.IS_CONSTANT, solver.mkString(course["Grade"])))
+
+# Constraints for CS 399 max units
+cs399_units = 0
+for course in transcript_courses:
+    if course["Course_ID"] == "CS 399":
+        cs399_units += course["Earned_Units"]
+
+cs399_constraint = solver.mkTerm(Kind.LEQ, solver.mkInteger(cs399_units), solver.mkInteger(6))
+
+# Constraints for approved deviations (max one)
+approved_deviation_count = sum(1 for dev in dev_courses if dev["Approved"])
+approved_deviation_constraint = solver.mkTerm(Kind.LEQ, solver.mkInteger(approved_deviation_count), solver.mkInteger(1))
+
+# Constraints for specific courses lists
+cs221_constraint = solver.mkTerm(Kind.OR, *course_in_transcript("CS 221"))
+courses_from_b = ["CS 223A", "CS 224N", "CS 224S", "CS 224U", "CS 224V", "CS 224W", "CS 228", "CS 229", 
+                  "CS 231A", "CS 231N", "CS 234", "CS 237A", "CS 237B", "CS 238"]
+b_constraints = [solver.mkTerm(Kind.OR, *course_in_transcript(course_id)) for course_id in courses_from_b]
+at_least_four_from_b = solver.mkTerm(Kind.GEQ, solver.mkSum(*[solver.mkTerm(Kind.ITE, term, solver.mkInteger(1), solver.mkInteger(0)) for term in b_constraints]), solver.mkInteger(4))
+
+# Constraint for at least 21 units from specified courses
+total_units = sum(solver.mkTerm(Kind.ITE, solver.mkTerm(Kind.EQUAL, solver.mkString(course["Course_ID"]), solver.mkString(course_id)), solver.mkInteger(course["Earned_Units"]), solver.mkInteger(0)) 
+                  for course in transcript_courses for course_id in course_ids)
+
+total_units_constraint = solver.mkTerm(Kind.GEQ, solver.mkSum(*[total_units]), solver.mkInteger(21))
+
+# Overall constraint
+final_constraint = solver.mkTerm(Kind.AND, min_units_constraint, 
+                                 letter_grade_constraint, 
+                                 cs399_constraint,
+                                 approved_deviation_constraint, 
+                                 cs221_constraint, 
+                                 at_least_four_from_b, 
+                                 total_units_constraint)
+
+solver.assertFormula(final_constraint)
+
+# Check satisfiability
+result = solver.checkSat()
+print("Satisfiable" if result.isSat() else "Unsatisfiable")
 ```
 
-### Additional Courses for Unit Requirement
-3. **Additional Courses:**
+### Explanation:
+1. **Course Units and Grades Constraints**: Ensure all courses have at least 3 units and a letter grade.
+2. **CS 399 Constraint**: Limit the counted units of CS 399 to 6.
+3. **Deviation Approval Constraint**: Ensure no more than one approved deviation.
+4. **Specific Course Constraints**: Check if `CS 221` is taken or waived, and ensure at least four courses from list (b) are taken.
+5. **Total Units Constraint**: Ensure at least 21 units are taken from the specified courses.
 
-```python
-# List of additional approved courses
-additional_courses = ["CS 205L", "CS 224R", "CS 225A", "CS 227B", "CS 229M", "CS 230", "CS 233", "CS 235", "CS 236", "CS 239", "CS 246", "CS 257", "CS 270", "CS 271", "CS 273A", "CS 273B", "CS 274", "CS 275", "CS 279", "CS 281", "CS 322", "CS 324", "CS 325B", "CS 326", "CS 327A", "CS 329", "CS 330", "CS 331B", "CS 332", "CS 333", "CS 345", "CS 348N", "CS 361", "CS 368", "CS 371", "CS 375", "CS 377", "CS 379", "CS 398", "CS 399", "CS 428A", "CS 428B", "CS 432", "EE 263", "EE 276", "EE 278", "EE 364A", "EE 364B", "EE 377", "EE 378B", "ENGR 205", "ENGR 209A", "MS&E 226", "MS&E 252", "PSYCH 209", "STATS 202", "STATS 315A", "STATS 315B"]
-
-# Check total units from approved additional courses (must sum to at least 21 units)
-total_units = solver.mkConst(solver.getIntegerSort(), "total_units")
-units_expr = solver.mkInteger(0)
-for course in transcript.get("Courses_Taken", []):
-    course_id = course.get("Course_ID")
-    earned_units = solver.mkInteger(course.get("Earned_Units"))
-    if course_id in additional_courses:
-        units_expr = solver.mkTerm(Kind.ADD, units_expr, earned_units)
-
-unit_constraint = solver.mkTerm(Kind.GEQ, units_expr, solver.mkInteger(21))
-solver.assertFormula(unit_constraint)
-```
-
-### Advisor Approval Constraints
-
-Check prerequisites for special courses that need advisor approval annotated with "†":
-
-```python
-advisor_approved_courses = [course for course in additional_courses if "†" in course]
-approved_courses_vars = [solver.mkConst(solver.getStringSort(), f"approved_course_var_{i}") for i in range(len(advisor_approved_courses))]
-
-approved_constraints = []
-for i, var in enumerate(approved_courses_vars):
-    approval_check = [solver.mkTerm(Kind.EQUAL, var, solver.mkString(course.get("Approved_Course_ID"))) for course in transcript.get("Approval", [])]
-    advisor_approved = solver.mkTerm(Kind.AND, solver.mkTerm(Kind.OR, *approval_check), solver.mkTerm(Kind.EQUAL, var, solver.mkString(advisor_approved_courses[i])))
-    approved_constraints.append(advisor_approved)
-
-solver.assertFormula(solver.mkTerm(Kind.AND, *approved_constraints))
-```
-
-### Final Formula
-
-Combine all constraints together:
-
-```python
-final_constraints = [req_course_221_constraint] + elective_constraints + [unit_constraint] + approved_constraints
-final_formula = solver.mkTerm(Kind.AND, *final_constraints)
-solver.assertFormula(final_formula)
-```
-
-This set of statements constructs and checks all the given requirements and constraints against the transcript schema using the cvc5 solver in Python. The logic ensures that each student satisfies the core requirements, elective course constraints, additional course unit requirements, and any necessary advisor approvals for deviations or special course conditions.
+You'd also need to adjust the constraints and add corresponding logic to handle waivers, undergraduate course exclusions, and validate the derived constraints against the actual transcript data.

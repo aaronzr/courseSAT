@@ -3,6 +3,7 @@ gradio
 openai
 requests
 PyPDF2
+pysmt
 fastapi==0.92.0
 httpx==0.23.3
 loguru==0.6.0

@@ -1,0 +1,579 @@
+To construct a formal and intermediate representation for a system that parses natural language from the course requirement document and the student's transcript into a formal language, we can define entities, their relationships, and constraints. Let's start by identifying key entities and their attributes, and then define the relationships and constraints between them:
+
+### Entities:
+
+1. **Program**
+   - `ProgramID`: Unique identifier for the program (e.g., MSCS-AI).
+   - `TotalUnitsRequired`: Total units required for completion (e.g., 45 units).
+   - `DepthUnitsRequired`: Units required specifically for depth courses.
+   - `BreadthUnitsRequired`: Units required specifically for breadth courses.
+   - `ElectiveUnitsRequired`: Units required specifically for elective courses.
+   - `FoundationsUnitsMax`: Maximum units that can be fulfilled by foundations.
+   - `MinimumGPA`: Minimum GPA required for program completion.
+
+2. **Course**
+   - `CourseID`: Unique course identifier.
+   - `Title`: Title of the course.
+   - `Units`: Number of units the course is worth.
+   - `Grade` (Optional for planned courses): Grade achieved in the course.
+   - `Area`: Area the course belongs to (Foundations, Depth, Breadth, Elective).
+   - `Category`: Category or sub-area for specific requirements (e.g., Mathematics, Systems).
+
+3. **Requirement**
+   - `RequirementID`: Unique identifier for the requirement.
+   - `Name`: Name of the requirement.
+   - `Category`: Underlying category of the requirement (e.g., Foundations, Significant Implementation).
+   - `MinCourses`: Minimum number of courses required to fulfil the requirement.
+   - `MinUnits`: Minimum number of units required for the requirement.
+   - `MaxUnits`: Maximum number of units that can be applied for the requirement.
+   - `GradeCriteria`: Grade type required (e.g., Letter Grade, CR/S).
+
+4. **FoundationRequirement**: Extends `Requirement`
+   - `GradeCriteria` specified as mandatory letter grade.
+
+5. **BreadthRequirement**: Extends `Requirement`
+   - `AreaDiversification`: The requirement to come from different breadth areas.
+   - `AllowedAreas`: List of area identifiers (A, B, C, D).
+
+6. **DepthRequirement**: Extends `Requirement`
+   - `DepthAreas`: Specific areas within depth category (e.g., Artificial Intelligence).
+
+7. **ElectiveRequirement**: Extends `Requirement`
+   - `OpenCategories`: Broad set of categories allowed.
+
+8. **Student**
+   - `StudentID`: Unique identifier for the student.
+   - `Name`: Name of the student.
+   - `DegreeTrack`: Degree track chosen (e.g., MSCS-AI).
+   - `GPA`: Cumulative GPA.
+   - `CompletedCourses`: List of `CourseID` representing completed courses.
+
+### Relationships:
+
+1. **Program-Course Relation**:
+    - `Program -> Courses`: Defines all courses part of a program, filtered by requirements like depth, breadth, elective, etc.
+    - `Program.Requirements`: List of `RequirementID` for the program.
+
+2. **Requirement-Course Relation**:
+   - `Requirement -> Course`: Maps requirements to the courses satisfying them.
+
+3. **Student-Course Relation**:
+   - `Student -> CompletedCourses`: List of courses the student has completed.
+   - `Student.CoursesPlanned`: List of courses planned to take.
+
+### Constraints:
+
+1. **Foundations Constraint**:
+   - `MaxUnits`: Foundations units applied to MSCS should not exceed 10 units.
+
+2. **Significant Implementation Constraint**:
+   - Required only once and must be taken for a letter grade at Stanford.
+
+3. **Breadth Constraint**:
+   - Courses must be taken from different predefined Area categories (A, B, C, D).
+
+4. **Depth Constraint**:
+   - Minimum 21 units in specified depth areas.
+   - Any deviations must be adviser-approved.
+
+5. **Elective Constraint**:
+   - Electives may include seminars, provided they don’t exceed 3 units.
+
+6. **Grade Constraints**:
+   - At least 36 units must have a letter grade.
+   - Minimum average GPA of 3.0.
+
+### Functions
+
+1. **AddToCompletedCourses**(StudentID, CourseID, Grade, Units): Adds a course to the completed list of the student.
+2. **CheckRequirementFulfillment**(StudentID, RequirementID): Verifies if a student fulfills a specific requirement.
+3. **CalculateGPA**(StudentID): Calculates the cumulative GPA of the student.
+4. **ApplyCourseToRequirement**(StudentID, RequirementID, CourseID): Applies a course towards fulfilling a requirement.
+5. **VerifyProgramCompletion**(StudentID, ProgramID): Ensures all program requirements are satisfied.
+
+### Formal Semantics
+
+The formal semantics describe how entities, relationships, and constraints interact. For instance:
+
+```
+FoundationRequirement.fulfills(StudentID, CourseID) <-
+    Course.Category == "Foundations" and
+    Course.Grade in ('A', 'B', 'C', 'D') and
+    Course.Units + Student.CompletedFoundationsUnits <= 10
+
+BreadthRequirement.fulfills(StudentID, RequirementID) <-
+    Requirement.AreaDiversification == True and
+    len(set(Student.CompletedCourses.Areas)) >= 3
+
+DepthRequirement.fulfills(StudentID, RequirementID) <-
+    Requirement.MinUnits <= sum(Student.CompletedDepthCourses.Units) >= 21
+
+Program.fulfills(StudentID, ProgramID) <-
+    all(Requirement.fulfills(StudentID) for Requirement in Program.Requirements) and
+    sum(Student.CompletedCourses.Units) >= 45 and
+    Student.GPA >= 3.0
+```
+
+By using these representations, the intermediate semantic layer can facilitate automated parsing, validation, and checking of program requirements against a student's transcript.=======================================
+To transform the given intermediate representation into an abstract syntax tree (AST) using Python, we will need to define an AST structure and implement a parser that can read the representation and generate the corresponding AST. We can use classes to represent nodes in the AST, and we will need methods to handle the parsing process.
+
+Here’s a step-by-step approach to accomplish this:
+
+1. **Define AST Node Classes**: These classes will represent the different elements in our intermediate representation.
+2. **Implement the Parser**: This parser will construct the AST by reading through the representation.
+3. **Utility Functions**: Functions to handle specific parsing tasks, like adding a course to a student’s transcript, checking requirement fulfillment, and verifying program completion.
+
+### Step 1: Define AST Node Classes
+
+We will start by creating classes for each entity and relationship in our intermediate representation.
+
+```python
+class Program:
+    def __init__(self, ProgramID, TotalUnitsRequired, DepthUnitsRequired, BreadthUnitsRequired, 
+                 ElectiveUnitsRequired, FoundationsUnitsMax, MinimumGPA):
+        self.ProgramID = ProgramID
+        self.TotalUnitsRequired = TotalUnitsRequired
+        self.DepthUnitsRequired = DepthUnitsRequired
+        self.BreadthUnitsRequired = BreadthUnitsRequired
+        self.ElectiveUnitsRequired = ElectiveUnitsRequired
+        self.FoundationsUnitsMax = FoundationsUnitsMax
+        self.MinimumGPA = MinimumGPA
+        self.Requirements = []
+
+class Course:
+    def __init__(self, CourseID, Title, Units, Grade, Area, Category):
+        self.CourseID = CourseID
+        self.Title = Title
+        self.Units = Units
+        self.Grade = Grade
+        self.Area = Area
+        self.Category = Category
+
+class Requirement:
+    def __init__(self, RequirementID, Name, Category, MinCourses, MinUnits, MaxUnits, GradeCriteria):
+        self.RequirementID = RequirementID
+        self.Name = Name
+        self.Category = Category
+        self.MinCourses = MinCourses
+        self.MinUnits = MinUnits
+        self.MaxUnits = MaxUnits
+        self.GradeCriteria = GradeCriteria
+        self.Courses = []
+
+class FoundationRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits):
+        super().__init__(RequirementID, Name, "Foundations", MinCourses, MinUnits, MaxUnits, "Letter")
+
+class BreadthRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits, AllowedAreas):
+        super().__init__(RequirementID, Name, "Breadth", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.AllowedAreas = AllowedAreas
+        self.AreaDiversification = True
+
+class DepthRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits, DepthAreas):
+        super().__init__(RequirementID, Name, "Depth", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.DepthAreas = DepthAreas
+
+class ElectiveRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits):
+        super().__init__(RequirementID, Name, "Elective", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.OpenCategories = True
+
+class Student:
+    def __init__(self, StudentID, Name, DegreeTrack, GPA):
+        self.StudentID = StudentID
+        self.Name = Name
+        self.DegreeTrack = DegreeTrack
+        self.GPA = GPA
+        self.CompletedCourses = []
+        self.CoursesPlanned = []
+```
+
+### Step 2: Implement the Parser
+
+The parser will read the intermediate representation and construct the AST.
+
+```python
+import json
+
+class Parser:
+    def __init__(self):
+        self.programs = {}
+        self.students = {}
+        self.courses = {}
+        self.requirements = {}
+
+    def parse_program(self, data):
+        program = Program(
+            data['ProgramID'], data['TotalUnitsRequired'], data['DepthUnitsRequired'], 
+            data['BreadthUnitsRequired'], data['ElectiveUnitsRequired'], data['FoundationsUnitsMax'], 
+            data['MinimumGPA']
+        )
+        for req in data['Requirements']:
+            program.Requirements.append(self.requirements[req])
+        self.programs[program.ProgramID] = program
+    
+    def parse_course(self, data):
+        course = Course(
+            data['CourseID'], data['Title'], data['Units'], data['Grade'], 
+            data['Area'], data['Category']
+        )
+        self.courses[course.CourseID] = course
+
+    def parse_requirement(self, data):
+        if data['Category'] == "Foundations":
+            req = FoundationRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits']
+            )
+        elif data['Category'] == "Breadth":
+            req = BreadthRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits'], data['AllowedAreas']
+            )
+        elif data['Category'] == "Depth":
+            req = DepthRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits'], data['DepthAreas']
+            )
+        elif data['Category'] == "Elective":
+            req = ElectiveRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits']
+            )
+        else:
+            req = Requirement(
+                data['RequirementID'], data['Name'], data['Category'], 
+                data['MinCourses'], data['MinUnits'], data['MaxUnits'], 
+                data['GradeCriteria']
+            )
+        for course_id in data['Courses']:
+            req.Courses.append(self.courses[course_id])
+        self.requirements[req.RequirementID] = req
+    
+    def parse_student(self, data):
+        student = Student(
+            data['StudentID'], data['Name'], data['DegreeTrack'], data['GPA']
+        )
+        for course_id in data['CompletedCourses']:
+            student.CompletedCourses.append(self.courses[course_id])
+        self.students[student.StudentID] = student
+
+    def from_json(self, json_data):
+        data = json.loads(json_data)
+        for course_data in data['Courses']:
+            self.parse_course(course_data)
+        for req_data in data['Requirements']:
+            self.parse_requirement(req_data)
+        for prog_data in data['Programs']:
+            self.parse_program(prog_data)
+        for stu_data in data['Students']:
+            self.parse_student(stu_data)
+
+# Sample JSON string (Intermediate representation) for testing
+json_data = '''
+{
+    "Courses": [
+        {"CourseID": "CS103", "Title": "Logic, Automata & Complexity", "Units": 3, "Grade": "A", "Area": "Foundations", "Category": "Logic"},
+        {"CourseID": "CS109", "Title": "Probability", "Units": 4, "Grade": "B", "Area": "Foundations", "Category": "Probability"}
+    ],
+    "Requirements": [
+        {"RequirementID": "1", "Name": "Foundations", "Category": "Foundations", "MinCourses": 5, "MinUnits": 10, "MaxUnits": 10, "GradeCriteria": "Letter", "Courses": ["CS103", "CS109"]}
+    ],
+    "Programs": [
+        {"ProgramID": "MSCS-AI", "TotalUnitsRequired": 45, "DepthUnitsRequired": 21, "BreadthUnitsRequired": 9, "ElectiveUnitsRequired": 15, "FoundationsUnitsMax": 10, "MinimumGPA": 3.0, "Requirements": ["1"]}
+    ],
+    "Students": [
+        {"StudentID": "123", "Name": "John Doe", "DegreeTrack": "MSCS-AI", "GPA": 3.5, "CompletedCourses": ["CS103", "CS109"]}
+    ]
+}
+'''
+
+parser = Parser()
+parser.from_json(json_data)
+print(parser.programs)
+print(parser.students)
+```
+
+### Step 3: Utility Functions
+
+You can extend the Parser class with utility functions to check requirements and validate program completion.
+
+```python
+def check_requirement_fulfillment(self, student_id, requirement_id):
+    student = self.students[student_id]
+    requirement = self.requirements[requirement_id]
+    # Logic to check if the student meets the requirement
+    # ...
+
+def verify_program_completion(self, student_id, program_id):
+    student = self.students[student_id]
+    program = self.programs[program_id]
+    # Logic to verify if the student meets all program requirements
+    # ...
+
+Parser.check_requirement_fulfillment = check_requirement_fulfillment
+Parser.verify_program_completion = verify_program_completion
+```
+
+This setup provides a framework to parse the intermediate representation and build the AST. The utility functions can further be developed to handle specific validations and checks.
+
+The provided code should be extended with more domain-specific logic based on the detailed requirements and constraints mentioned. This gives you a structured and extensible way to parse the given data into an actionable abstract syntax tree for further processing.=======================================
+To generate CORRECT cvc5 solver formulas from an abstract syntax tree (AST), you’ll need to write code that parses the AST and constructs cvc5-compatible assertions and constraints. Below is the step-by-step Python code that defines the AST structure, implements the parser, and then composes cvc5 solver formulas to check the satisfiability of constraints.
+
+### Step 1: Define AST Node Classes
+
+These classes represent the different elements in the intermediate representation:
+
+```python
+class Program:
+    def __init__(self, ProgramID, TotalUnitsRequired, DepthUnitsRequired, BreadthUnitsRequired, 
+                 ElectiveUnitsRequired, FoundationsUnitsMax, MinimumGPA):
+        self.ProgramID = ProgramID
+        self.TotalUnitsRequired = TotalUnitsRequired
+        self.DepthUnitsRequired = DepthUnitsRequired
+        self.BreadthUnitsRequired = BreadthUnitsRequired
+        self.ElectiveUnitsRequired = ElectiveUnitsRequired
+        self.FoundationsUnitsMax = FoundationsUnitsMax
+        self.MinimumGPA = MinimumGPA
+        self.Requirements = []
+
+class Course:
+    def __init__(self, CourseID, Title, Units, Grade, Area, Category):
+        self.CourseID = CourseID
+        self.Title = Title
+        self.Units = Units
+        self.Grade = Grade
+        self.Area = Area
+        self.Category = Category
+
+class Requirement:
+    def __init__(self, RequirementID, Name, Category, MinCourses, MinUnits, MaxUnits, GradeCriteria):
+        self.RequirementID = RequirementID
+        self.Name = Name
+        self.Category = Category
+        self.MinCourses = MinCourses
+        self.MinUnits = MinUnits
+        self.MaxUnits = MaxUnits
+        self.GradeCriteria = GradeCriteria
+        self.Courses = []
+
+class FoundationRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits):
+        super().__init__(RequirementID, Name, "Foundations", MinCourses, MinUnits, MaxUnits, "Letter")
+
+class BreadthRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits, AllowedAreas):
+        super().__init__(RequirementID, Name, "Breadth", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.AllowedAreas = AllowedAreas
+        self.AreaDiversification = True
+
+class DepthRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits, DepthAreas):
+        super().__init__(RequirementID, Name, "Depth", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.DepthAreas = DepthAreas
+
+class ElectiveRequirement(Requirement):
+    def __init__(self, RequirementID, Name, MinCourses, MinUnits, MaxUnits):
+        super().__init__(RequirementID, Name, "Elective", MinCourses, MinUnits, MaxUnits, "Letter")
+        self.OpenCategories = True
+
+class Student:
+    def __init__(self, StudentID, Name, DegreeTrack, GPA):
+        self.StudentID = StudentID
+        self.Name = Name
+        self.DegreeTrack = DegreeTrack
+        self.GPA = GPA
+        self.CompletedCourses = []
+        self.CoursesPlanned = []
+```
+
+### Step 2: Implement the Parser
+
+The parser will read the intermediate representation and construct the AST.
+
+```python
+import json
+
+class Parser:
+    def __init__(self):
+        self.programs = {}
+        self.students = {}
+        self.courses = {}
+        self.requirements = {}
+
+    def parse_program(self, data):
+        program = Program(
+            data['ProgramID'], data['TotalUnitsRequired'], data['DepthUnitsRequired'], 
+            data['BreadthUnitsRequired'], data['ElectiveUnitsRequired'], data['FoundationsUnitsMax'], 
+            data['MinimumGPA']
+        )
+        for req in data['Requirements']:
+            program.Requirements.append(self.requirements[req])
+        self.programs[program.ProgramID] = program
+    
+    def parse_course(self, data):
+        course = Course(
+            data['CourseID'], data['Title'], data['Units'], data['Grade'], 
+            data['Area'], data['Category']
+        )
+        self.courses[course.CourseID] = course
+
+    def parse_requirement(self, data):
+        if data['Category'] == "Foundations":
+            req = FoundationRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits']
+            )
+        elif data['Category'] == "Breadth":
+            req = BreadthRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits'], data['AllowedAreas']
+            )
+        elif data['Category'] == "Depth":
+            req = DepthRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits'], data['DepthAreas']
+            )
+        elif data['Category'] == "Elective":
+            req = ElectiveRequirement(
+                data['RequirementID'], data['Name'], data['MinCourses'], 
+                data['MinUnits'], data['MaxUnits']
+            )
+        else:
+            req = Requirement(
+                data['RequirementID'], data['Name'], data['Category'], 
+                data['MinCourses'], data['MinUnits'], data['MaxUnits'], 
+                data['GradeCriteria']
+            )
+        for course_id in data['Courses']:
+            req.Courses.append(self.courses[course_id])
+        self.requirements[req.RequirementID] = req
+    
+    def parse_student(self, data):
+        student = Student(
+            data['StudentID'], data['Name'], data['DegreeTrack'], data['GPA']
+        )
+        for course_id in data['CompletedCourses']:
+            student.CompletedCourses.append(self.courses[course_id])
+        self.students[student.StudentID] = student
+
+    def from_json(self, json_data):
+        data = json.loads(json_data)
+        for course_data in data['Courses']:
+            self.parse_course(course_data)
+        for req_data in data['Requirements']:
+            self.parse_requirement(req_data)
+        for prog_data in data['Programs']:
+            self.parse_program(prog_data)
+        for stu_data in data['Students']:
+            self.parse_student(stu_data)
+```
+
+### Step 3: Convert AST to cvc5 Solver Formulas
+
+Once the AST is constructed, we need to generate cvc5 solver formulas to check the constraints. Let’s create some utility functions to help with this task:
+
+```python
+from cvc5 import *
+
+class CVCSolver:
+    def __init__(self, ast):
+        self.ast = ast
+        self.solver = Solver()
+        self.solver.setOption("produce-unsat-cores", "true")
+        self.solver.setOption("produce-models", "true")
+        self.solver.setOption("produce-proofs", "true")
+        self.solver.setLogic("ALL")
+
+    def create_variable(self, name, type):
+        return self.solver.mkConst(type, name)
+
+    def create_integer_variable(self, name):
+        return self.create_variable(name, self.solver.getIntegerSort())
+
+    def create_boolean_variable(self, name):
+        return self.create_variable(name, self.solver.getBooleanSort())
+
+    def apply_foundations_requirements(self, student):
+        total_units = 0
+        letter_grade_units = 0
+
+        for course in student.CompletedCourses:
+            if course.Area == "Foundations":
+                total_units += course.Units
+                if course.Grade in ('A', 'B', 'C', 'D'):
+                    letter_grade_units += course.Units
+
+        foundations_units_var = self.create_integer_variable("foundations_units")
+        letter_grade_units_var = self.create_integer_variable("letter_grade_units")
+
+        self.solver.assertFormula(self.solver.mkTerm(Kind.EQUAL, foundations_units_var, self.solver.mkInteger(total_units)))
+        self.solver.assertFormula(self.solver.mkTerm(Kind.EQUAL, letter_grade_units_var, self.solver.mkInteger(letter_grade_units)))
+
+        # Constraint: Total Foundations units <= FoundationsUnitsMax
+        self.solver.assertFormula(self.solver.mkTerm(Kind.LEQ, foundations_units_var, self.solver.mkInteger(self.ast.programs[student.DegreeTrack].FoundationsUnitsMax)))
+        # Constraint: Letter grade foundation units should be at least 36 - any non-letter-grade courses
+        self.solver.assertFormula(self.solver.mkTerm(Kind.GEQ, letter_grade_units_var, self.solver.mkInteger(36)))   
+
+    def apply_gpa_requirement(self, student):
+        # GPA constraints
+        gpa_var = self.create_integer_variable("gpa")
+        self.solver.assertFormula(self.solver.mkTerm(Kind.EQUAL, gpa_var, self.solver.mkReal(student.GPA)))
+
+        min_gpa = self.ast.programs[student.DegreeTrack].MinimumGPA
+
+        # Constraint: GPA >= Minimum GPA
+        self.solver.assertFormula(self.solver.mkTerm(Kind.GEQ, gpa_var, self.solver.mkReal(min_gpa)))
+
+    def check(self):
+        result = self.solver.checkSat()
+        return result
+
+# Sample AST (assuming the Parser has successfully parsed data)
+class SampleAST:
+    def __init__(self):
+        self.programs = {
+            "MSCS-AI": Program(
+                "MSCS-AI", 45, 21, 9, 15, 10, 3.0
+            )
+        }
+        self.students = {
+            "123": Student("123", "John Doe", "MSCS-AI", 3.5)
+        }
+        self.courses = {
+            "CS103": Course("CS103", "Logic", 3, "A", "Foundations", "Logic"),
+            "CS109": Course("CS109", "Probability", 4, "B", "Foundations", "Probability")
+        }
+        self.requirements = {}
+
+        self.students["123"].CompletedCourses.append(self.courses["CS103"])
+        self.students["123"].CompletedCourses.append(self.courses["CS109"])
+
+# Creating a sample AST and solver instance
+parsed_ast = SampleAST()
+solver = CVCSolver(parsed_ast)
+
+# Applying requirements to the student
+student = parsed_ast.students["123"]
+solver.apply_foundations_requirements(student)
+solver.apply_gpa_requirement(student)
+
+# Check constraints
+print(solver.check())
+```
+
+### Explanation
+
+1. **AST Node Classes**: Defines classes for key entities (`Program`, `Course`, `Requirement`, `FoundationRequirement`, `BreadthRequirement`, `DepthRequirement`, `ElectiveRequirement`, and `Student`).
+
+2. **Parser**: Implements methods to parse JSON data into the AST structure.
+
+3. **cvc5 Solver Integration**:
+    - Initializes the cvc5 solver.
+    - Defines utility methods to create solver variables.
+    - Adds methods to apply specific constraints (e.g., Foundations, GPA).
+    - Uses assertion of formulas and checking their satisfiability.
+
+This setup provides a foundation to further extend and tailor the constraints and checks based on more specific requirements from the provided constraints document.=======================================

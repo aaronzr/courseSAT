@@ -1,0 +1,41 @@
+To solve the problem using Satisfiability Modulo Theories (SMT), we will define a simple SMT program using the Z3 SMT solver from Microsoft Research. SMT solvers are powerful tools that allow us to check the satisfiability of logical formulas over one or more theories.
+
+Given that the student has taken CS 101, we want to determine if this course meets the requirement of taking courses above 100. Here's how you can write the SMT program to test this requirement:
+
+```python
+from z3 import *
+
+# Define the course number
+course_number = Int('course_number')
+
+# Define the constraints
+# The student has taken CS 101, so course_number = 101
+cs101 = course_number == 101
+
+# The requirement is that the course number must be greater than 100
+requirement = course_number > 100
+
+# Create a solver instance
+s = Solver()
+
+# Add the constraints to the solver
+s.add(cs101)
+s.add(requirement)
+
+# Check satisfiability
+if s.check() == sat:
+    print("The student satisfies the requirement of taking courses above 100.")
+else:
+    print("The student does not satisfy the requirement of taking courses above 100.")
+```
+
+This program uses the Z3 SMT solver in Python to determine whether the student satisfies the requirement of taking a course above 100.
+
+Explanation:
+1. We define `course_number` as an integer variable.
+2. We set a constraint `cs101` that specifies the student has taken course 101 (`course_number == 101`).
+3. We define another constraint `requirement` which states that courses must have a number greater than 100 (`course_number > 100`).
+4. We create an instance of the Z3 solver and add both constraints (`cs101` and `requirement`) to it.
+5. Finally, we check the satisfiability of these constraints using the `s.check()` function. If it's satisfiable (`sat`), then the student meets the requirement.
+
+You can run this code in a Python environment where you have the Z3 solver installed. If the constraints are satisfiable, it indicates that the course CS 101 satisfies the condition of taking courses numbered above 100.

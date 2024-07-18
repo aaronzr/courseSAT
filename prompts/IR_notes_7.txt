@@ -1,0 +1,410 @@
+To construct a rigorous intermediate representation for parsing the provided course requirement document and transcript into a formal language, we will represent the mathematical and logical structure using entities, relations, and constraints. This intermediate representation will facilitate further processing to check compliance, suggest courses, and generate outputs. 
+
+### Intermediate Representation for Course Requirements and Transcript
+
+#### Entities
+
+1. **Student**
+    - Attributes: `Name`, `StudentID`, `Adviser`, `Date`, `Email`, `DegreeConferralDate`, `HCP`, `Coterm`, `AdvisorSignature`, `AdvisorNotes`
+  
+2. **Course**
+    - Attributes: `CourseNumber`, `Title`, `Units`, `Grade`, `Institution`, `Term`, `Category`
+  
+3. **Requirement**
+    - Attributes: `Type` (e.g., Foundations, Significant Implementation, Breadth, Depth, Elective), `Area` (if applicable), `MinimumUnits`, `LetterGradeRequired`, `GPARequirement`, `Waivable`, `AdvisorApprovalRequired`
+  
+4. **Approval**
+    - Attributes: `ApprovedBy`, `Date`
+
+#### Relations
+
+1. **StudentEnrolledInCourse (StudentID, CourseNumber, Term, Grade, Units)**: Indicates the enrollment of a student in a course.
+2. **CourseSatisfiesRequirement (CourseNumber, RequirementType, Area)**: Indicates which requirement(s) a particular course satisfies.
+3. **StudentMeetsRequirement (StudentID, RequirementType, Status, ApprovedBy, Date)**: Tracks the status of a student meeting a specific requirement.
+
+#### Constraints
+
+1. **Requirement Completion**: Each requirement must be satisfied by appropriate courses.
+   - `∑(StudentEnrolledInCourse.Units | StudentID, RequirementType) >= Requirement.MinimumUnits`
+   - If `Requirement.LetterGradeRequired == True`, then `Course.Grade != 'CR' AND Course.Grade != 'S'`
+   - If `Requirement.GPARequirement == True`, then `GPA(Student, RequirementType) >= 3.0`
+   - For breadth requirements: `∀ Course: CourseSatisfiesRequirement.Area must be unique across the courses fulfilling the Breadth requirement.`
+   - If `Requirement.AdvisorApprovalRequired == True`, then `∃ Approval: (ApprovedBy, Date)`
+
+2. **Course Validity**: Courses counted towards MSCS must be valid according to constraints.
+   - `Course.Units >= 3` unless explicitly noted.
+   - Courses taken for `CR` or `S` during Spring 19-20 and Fall through Summer 20-21 are exceptions.
+   - Specific exclusions (e.g., CS 196, CS 198, CS 390A/B/C).
+
+3. **Degree Progression**: Tracking overall progress towards degree requirements.
+   - `At most 10 units` of Foundations requirement counted towards the total 45 units.
+   - `At most 3 units` of 1-2 unit seminars.
+   - `At least 36 units` from required courses must be taken for a letter grade.
+   - `TotalMSCSUnits(Student) >= 45`
+   - Courses from undergraduate degrees cannot double count.
+
+4. **Significant Implementation Requirement**: At least one course satisfying the implementation requirement.
+   - `∃ CourseSatisfiesRequirement where RequirementType == 'Significant Implementation' AND StudentEnrolledInCourse.Grade != 'N/A'`
+   - Must be taken for a letter grade and not waived unless coterminal student exceptions apply.
+
+5. **GPA Calculation**: Compute cumulative GPA for requirements where applicable.
+   - `GPA(RequirementType) = Sum((Course.GradePoint * Course.Units) | Student, RequirementType) / Sum(Course.Units | Student, RequirementType)`
+
+#### Functions
+
+1. **CalculateGPA(StudentID, RequirementType)**
+   - Computes GPA for a specific requirement type.
+
+2. **TotalMSCSUnits(StudentID)**
+   - Computes the total number of units counting towards the MSCS degree.
+
+3. **GPA(StudentID)**
+   - Computes the overall GPA of the student. 
+
+4. **CheckRequirementSatisfaction(StudentID, RequirementType)**
+   - Returns whether a student satisfies a specific requirement.
+
+5. **AssignApproval(RequirementType, ApprovedBy, Date)**
+   - Tracks advisor approval for specific requirements.
+
+### Example Representation
+
+**Student**
+```
+Student {
+  Name: "Jeremy Lee Bregman",
+  StudentID: "05713381",
+  Adviser: "James S. Harris",
+  Date: "2022-2023",
+  Email: "",
+  DegreeConferralDate: "01/08/2015",
+  HCP: "",
+  Coterm: "Yes",
+  AdvisorSignature: "James S. Harris",
+  AdvisorNotes: ""
+}
+```
+
+**Course**
+```
+Course {
+  CourseNumber: "CME 100",
+  Title: "VECTOR CALCULUS FOR ENGINEERS",
+  Units: 5,
+  Grade: "B",
+  Institution: "Stanford"
+}
+```
+
+**Requirement**
+```
+Requirement {
+  Type: "Foundations",
+  Area: "Mathematics",
+  MinimumUnits: 45,
+  LetterGradeRequired: True,
+  GPARequirement: True,
+  Waivable: True,
+  AdvisorApprovalRequired: True
+}
+```
+
+This representation ensures that each pieceful of the degree requirement document and the transcript is methodically parsed, making it suitable for constructing a semantic parser and subsequently a compiler.=======================================
+To automate the parsing of a given intermediate representation into an abstract syntax tree (AST), we can create a lexer and a parser using Python libraries such as PLY (Python Lex-Yacc) or Lark. Here, I'll use Lark, a modern parsing library for Python. We'll define the grammar for our intermediate representation and then implement the parser to generate the AST.
+
+1. Install Lark:
+   ```bash
+   pip install lark-parser
+   ```
+
+2. Define the grammar and parser implementation:
+
+```python
+from lark import Lark, Transformer
+
+# Define the grammar for the intermediate representation
+grammar = """
+    start: entity_list
+
+    entity_list: entity+
+    entity: student | course | requirement
+
+    student: "Student" "{" student_attributes "}"
+    student_attributes: (pair ("," pair)*)?
+    pair: key ":" value
+    key: /[A-Za-z_]+/
+    value: ESCAPED_STRING | NUMBER | "true" | "false" | "null"
+
+    course: "Course" "{" course_attributes "}"
+    course_attributes: (pair ("," pair)*)?
+
+    requirement: "Requirement" "{" requirement_attributes "}"
+    requirement_attributes: (pair ("," pair)*)?
+
+    %import common.ESCAPED_STRING
+    %import common.NUMBER
+    %import common.WS
+    %ignore WS
+"""
+
+# Define a transformer class to convert the parse tree into an AST
+class TreeToAST(Transformer):
+    def start(self, items):
+        return {"entities": items}
+    
+    def entity_list(self, items):
+        return items
+    
+    def entity(self, items):
+        return items[0]
+    
+    def student(self, items):
+        return {"Student": dict(items[0] if items else [])}
+    
+    def course(self, items):
+        return {"Course": dict(items[0] if items else [])}
+    
+    def requirement(self, items):
+        return {"Requirement": dict(items[0] if items else [])}
+
+    def student_attributes(self, items):
+        return items
+    
+    def course_attributes(self, items):
+        return items
+    
+    def requirement_attributes(self, items):
+        return items
+    
+    def pair(self, items):
+        key, value = items
+        return (key, value)
+    
+    def key(self, items):
+        return items[0]
+    
+    def value(self, items):
+        return items[0][1:-1]  # Remove quotes
+
+# Initialize the parser with the grammar
+parser = Lark(grammar, parser='lalr', transformer=TreeToAST())
+
+# Function to parse the intermediate representation into AST
+def parse_to_ast(intermediate_representation):
+    return parser.parse(intermediate_representation)
+
+# Example Intermediate Representation
+intermediate_representation = """
+    Student {
+      Name: "Jeremy Lee Bregman",
+      StudentID: "05713381",
+      Adviser: "James S. Harris",
+      Date: "2022-2023",
+      Email: "",
+      DegreeConferralDate: "01/08/2015",
+      HCP: "",
+      Coterm: "Yes",
+      AdvisorSignature: "James S. Harris",
+      AdvisorNotes: ""
+    }
+    Course {
+      CourseNumber: "CME 100",
+      Title: "VECTOR CALCULUS FOR ENGINEERS",
+      Units: 5,
+      Grade: "B",
+      Institution: "Stanford"
+    }
+    Requirement {
+      Type: "Foundations",
+      Area: "Mathematics",
+      MinimumUnits: 45,
+      LetterGradeRequired: true,
+      GPARequirement: true,
+      Waivable: true,
+      AdvisorApprovalRequired: true
+    }
+"""
+
+# Parse the intermediate representation into an AST
+ast = parse_to_ast(intermediate_representation)
+print(ast)
+```
+
+In this implementation:
+- We use Lark to define a grammar that matches the structure of the intermediate representation.
+- We define a `Transformer` class named `TreeToAST` that converts the parsed tree into an abstract syntax tree (AST).
+- The `parse_to_ast` function uses the parser to convert the given intermediate representation into an AST.
+
+Note: The example provided for the intermediate representation assumes that all keys are strings and all values are either strings, numbers, or boolean literals. You may need to adapt the grammar and transformer if there are additional data types or behaviors that need to be supported.=======================================
+To achieve the task of generating cvc5 solver formulas from the AST produced by parsing the given intermediate representation using Lark, we need to develop a compiler that translates this AST into cvc5 formulas. Below is a detailed implementation of such a compiler.
+
+### Step 1: Define necessary helper functions
+
+First, let's implement helper functions for creating course variables and constraints as you mentioned in your cvc5 formula example.
+
+```python
+import cvc5
+from cvc5 import Kind, Solver, Term
+
+def create_course_vars_and_constraints(solver, courses, choices):
+    vars = {}
+    for course, (taken, units, grade) in courses.items():
+        var_name_units = f"{course}_units"
+        vars[var_name_units] = solver.mkRealSort()
+        vars[var_name_units] = solver.mkReal(units)
+
+        var_name_taken = f"{course}_taken"
+        vars[var_name_taken] = solver.mkBoolSort()
+        vars[var_name_taken] = solver.mkTerm(Kind.EQUAL, solver.mkString(taken), solver.mkString("Yes"))
+        
+        var_name_grade = f"{course}_grade"
+        vars[var_name_grade] = solver.mkRealSort()
+        # This can be expanded to handle letter grades appropriately
+        # For simplicity, assuming grades A, B, C translate to 4.0, 3.0, 2.0 respectively
+        grade_mapping = {'A': 4.0, 'B': 3.0, 'C': 2.0, 'CR': 1.0, 'S': 1.0}
+        vars[var_name_grade] = solver.mkReal(grade_mapping.get(grade, 0.0))
+
+    return vars
+```
+
+### Step 2: Compiler Code to Transpile AST to cvc5 Formulas
+
+Next, let's write a function to traverse the AST and generate the corresponding cvc5 formulas. This function will handle the main entities and constraints described in the intermediate representation.
+
+```python
+def compile_ast_to_cvc5(ast):
+    solver = Solver()
+    solver.setOption("produce-unsat-cores", "true")
+    solver.setOption("produce-models", "true")
+    solver.setOption("produce-proofs", "true")
+    solver.setLogic("ALL")
+
+    for entity in ast['entities']:
+        if 'Student' in entity:
+            student = entity['Student']
+            student_id = student['StudentID']
+            # Handle student-specific constraints
+            #...
+
+        elif 'Course' in entity:
+            course = entity['Course']
+            course_number = course['CourseNumber']
+            title = course['Title']
+            units = course['Units']
+            grade = course['Grade']
+            institution = course['Institution']
+            # Handle course-specific constraints
+
+        elif 'Requirement' in entity:
+            requirement = entity['Requirement']
+            req_type = requirement['Type']
+            area = requirement.get('Area', None)
+            min_units = requirement['MinimumUnits']
+            letter_grade_required = requirement['LetterGradeRequired']
+            gpa_required = requirement['GPARequirement']
+            waivable = requirement['Waivable']
+            advisor_approval_required = requirement['AdvisorApprovalRequired']
+
+            # Generate constraints for the requirements
+            if req_type == 'Foundations':
+                handle_foundations_requirement(solver, min_units, letter_grade_required,
+                                               gpa_required, advisor_approval_required)
+            # Additional handlers for other requirement types
+
+    # Solver to check satisfiability
+    result = solver.checkSat()
+    if result.isSat():
+        print("The constraints are satisfiable.")
+    else:
+        print("The constraints are not satisfiable.")
+        print("Unsat core:", solver.getUnsatCore())
+
+def handle_foundations_requirement(solver, min_units, letter_grade_required, gpa_required, advisor_approval_required):
+    # Handle foundations' requirements constraints
+    solver.assertFormula(solver.mkTerm(Kind.GEQ,
+                                       solver.mkInteger(min_units),
+                                       solver.mkInteger(10)))  # Example constraint
+
+    if letter_grade_required:
+        # Constrain to letter grade
+        letter_grade_constraints = []
+        letter_grades = ['A', 'B', 'C']  # Example letter grades
+        for grade in letter_grades:
+            letter_grade_constraints.append(solver.mkTerm(Kind.EQUAL, solver.mkReal(grade), solver.mkRealSort()))
+        solver.assertFormula(solver.mkTerm(Kind.OR, *letter_grade_constraints))
+
+    if gpa_required:
+        # GPA constraint example
+        solver.assertFormula(solver.mkTerm(Kind.GEQ,
+                                           solver.mkReal(3.0),
+                                           solver.mkRealSort()))
+
+    if advisor_approval_required:
+        # Handle advisor approval
+        pass
+
+# Example AST converted from intermediate representation
+example_ast = {
+    "entities": [
+        {
+            "Student": {
+                "Name": "Jeremy Lee Bregman",
+                "StudentID": "05713381",
+                "Adviser": "James S. Harris",
+                "Date": "2022-2023",
+                "Email": "",
+                "DegreeConferralDate": "01/08/2015",
+                "HCP": "",
+                "Coterm": "Yes",
+                "AdvisorSignature": "James S. Harris",
+                "AdvisorNotes": ""
+            }
+        },
+        {
+            "Course": {
+                "CourseNumber": "CME 100",
+                "Title": "VECTOR CALCULUS FOR ENGINEERS",
+                "Units": 5,
+                "Grade": "B",
+                "Institution": "Stanford"
+            }
+        },
+        {
+            "Requirement": {
+                "Type": "Foundations",
+                "Area": "Mathematics",
+                "MinimumUnits": 45,
+                "LetterGradeRequired": True,
+                "GPARequirement": True,
+                "Waivable": True,
+                "AdvisorApprovalRequired": True
+            }
+        }
+    ]
+}
+
+# Invoke the compiler
+compile_ast_to_cvc5(example_ast)
+```
+
+### Explanation
+
+1. **Helper Functions**: 
+   - `create_course_vars_and_constraints` initializes variables and constraints for courses based on their attributes.
+
+2. **Compiler Function (`compile_ast_to_cvc5`)**:
+   - Initializes a cvc5 solver and sets options for unsat cores, models, and proofs.
+   - Iterates through the entities in the parsed AST and applies the appropriate constraints.
+   - Specific functions like `handle_foundations_requirement` are used to handle complex requirement constraints.
+   
+3. **AST Example**:
+   - An example AST is provided based on the given intermediate representation which includes a student, a course, and a requirement.
+
+4. **Invocation**:
+   - The compiler function `compile_ast_to_cvc5` is invoked with an example AST.
+
+### Notes:
+- Expand `handle_foundations_requirement` and similar functions to cover more constraints and scenarios as described in your constraints list.
+- Consider additional data validations and handling more detailed constraints for grades, GPA calculations, and advisor approvals.
+
+This approach provides a systematic way to compile the intermediate representation and AST from the parser into cvc5 solver formulas.=======================================

@@ -1,6 +1,7 @@
 import os
 import openai
 from openai import OpenAI
+from PyPDF2 import PdfReader
 from translate import (
 	gpt_infer, 
 	get_AI_requirements,
@@ -147,11 +148,33 @@ def evluate_benchmark(folder, synthetic=True):
 			end_to_end_evaluation_b(results_directory, transcript_path, synthetic)
 			end_to_end_evaluation_c(results_directory, transcript_path, synthetic)
 			end_to_end_evaluation_d(results_directory, transcript_path, synthetic)
+def pdf_to_text(doc):
+	reader = PdfReader(doc)
+	number_of_pages = len(reader.pages)
+	text = ""
+	for i in range(0, number_of_pages):
+		page = reader.pages[i]
+		text += page.extract_text()
+	return text
 
-
+def zero_shot_example(transcript_path, requirement_path): 
+        transcript_pdf = open(transcript_path, "r")
+        requirement = open(requirement_path, "r")
+        req = pdf_to_text(requirement_path)
+        transcript = pdf_to_text(transcript_path)
+        prompt = f"""
+        Please analyze the given transcript {transcript} and check if it satisfies foundamental requirement
+        in the document {req}
+        """
+        out = gpt_infer(prompt)
+        print(out)
+        file = open("./example.txt", "w+")
+        file.write(out)
 
 if __name__ == "__main__":
 	#translate_to_formal_statements(doc="../Stanford_AI.pdf", requirement='SIGNIFICANT IMPLEMENTATION REQUIREMENT')
-	#transcript = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
-	folder = "/home/sallyjunsongwang/courseSAT/transcripts/synthetic"
-	evluate_benchmark(folder)
+	transcript = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
+	req = "/home/sallyjunsongwang/courseSAT/program_sheets/Stanford_AI_MS.pdf"
+	#folder = "/home/sallyjunsongwang/courseSAT/transcripts/synthetic"
+	#evluate_benchmark(folder)
+	zero_shot_example(transcript, req)

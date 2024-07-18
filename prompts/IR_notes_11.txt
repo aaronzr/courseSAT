@@ -1,0 +1,591 @@
+To generate a formal intermediate representation that facilitates the construction of a semantic parser for the MSCS Program Sheet and the provided transcript, we will construct a schema comprising entities, relations, constraints, and functions. This schema will capture course requirements, validate student progress, and detail faculty approval and additional requirements.
+
+### Entities
+
+1. **Student**
+    - `student_id`: String
+    - `name`: String
+    - `email`: String
+    - `degree_confer_date`: String
+    - `is_HCP`: Boolean
+    - `is_Coterm`: Boolean
+
+2. **Course**
+    - `course_id`: String
+    - `title`: String
+    - `units`: Integer
+    - `grade`: String
+
+3. **ProgramRequirement**
+    - `requirement_id`: String
+    - `description`: String
+    - `required_units`: Integer
+
+4. **Approval**
+    - `approval_id`: String
+    - `approved_by`: String
+    - `approval_date`: String
+    - `note`: String
+
+### Relations
+
+1. **Enrolled_In**
+    - `Student` -> `Course`
+
+2. **Satisfies**
+    - `Course` -> `ProgramRequirement`
+
+3. **Approved_By**
+    - `ProgramRequirement` -> `Approval`
+
+### Constraints
+
+1. **Minimum Units Requirement**
+    - `total_units(student: Student) >= 45`
+
+2. **Foundations Units Limit**
+    - `sum(course.units where course in get_courses(student) and course.satisfies("FOUNDATIONS")) <= 10`
+
+3. **Letter Grade Requirement**
+    - `sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36`
+
+4. **Specific Course Requirements**
+    - Foundation: Required courses in the foundation must be satisfied.
+    - Breadth: Courses from three different Breadth areas (A, B, C, D) must be taken.
+    - Significant Implementation: At least one designated significant implementation course.
+    - AI Depth: Specific depth courses and a total of at least 21 depth units.
+
+5. **Grade Average Requirement**
+    - `calculate_average_grade(student: Student) >= 3.0`
+
+6. **Electives Unit Limit**
+    - Up to 3 units of 1-2 unit seminars can be counted towards the 45-unit requirement.
+
+7. **Undergraduate Course Reuse**
+    - Courses previously applied towards BS requirements may not also be counted toward the MSCS.
+
+### Functions
+
+1. **validate_foundations(student: Student) -> Boolean**
+    - Checks if the student meets the foundation requirements.
+
+2. **validate_breadth(student: Student) -> Boolean**
+    - Ensures different Breadth areas are covered.
+
+3. **validate_significant_implementation(student: Student) -> Boolean**
+    - Ensures at least one significant implementation course with a letter grade.
+
+4. **validate_AI_depth(student: Student) -> Boolean**
+    - Validates that AI depth requirements are met including specific courses and total depth units.
+
+5. **calculate_average_grade(student: Student) -> Float**
+    - Computes the average grade for all courses submitted for the MSCS.
+
+6. **validate_total_units(student: Student) -> Boolean**
+    - Ensures total units meet or exceed 45 units.
+
+7. **validate_letter_grade_units(student: Student) -> Boolean**
+    - Ensures at least 36 units are taken for a letter grade.
+
+8. **get_courses(student: Student) -> List[Course]**
+    - Retrieves all courses the student is enrolled in.
+
+9. **course_approved(course_id: String, requirement_id: String) -> Boolean**
+    - Checks if a specific course taken is approved for satisfying a specific program requirement.
+
+### Formal Representation
+
+```plaintext
+Entity Student:
+    - Attributes:
+        - student_id: String
+        - name: String
+        - email: String
+        - degree_confer_date: String
+        - is_HCP: Boolean
+        - is_Coterm: Boolean
+
+Entity Course:
+    - Attributes:
+        - course_id: String
+        - title: String
+        - units: Integer
+        - grade: String
+
+Entity ProgramRequirement:
+    - Attributes:
+        - requirement_id: String
+        - description: String
+        - required_units: Integer
+
+Entity Approval:
+    - Attributes:
+        - approval_id: String
+        - approved_by: String
+        - approval_date: String
+        - note: String
+
+Relation Enrolled_In:
+    - From: Student
+    - To: Course
+
+Relation Satisfies:
+    - From: Course
+    - To: ProgramRequirement
+
+Relation Approved_By:
+    - From: ProgramRequirement
+    - To: Approval
+
+Constraint Minimum Units Requirement:
+    - total_units(student: Student) >= 45
+
+Constraint Foundations Units Limit:
+    - sum(course.units where course in get_courses(student) and course.satisfies("FOUNDATIONS")) <= 10
+
+Constraint Letter Grade Requirement:
+    - sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36
+
+Constraint Specific Course Requirements:
+    - validate_foundations(student)
+    - validate_significant_implementation(student)
+    - validate_breadth(student)
+    - validate_AI_depth(student)
+
+Constraint Grade Average Requirement:
+    - calculate_average_grade(student) >= 3.0
+
+Constraint Electives Unit Limit:
+    - sum(course.units where course in get_courses(student) and course.units in [1, 2]) <= 3
+
+Constraint Undergraduate Course Reuse:
+    - sum(course.units where course in get_courses(student) and course.applied_to_bs == True) == 0
+
+Function validate_foundations(student: Student) -> Boolean:
+    - Check foundation courses (CS103, CS109, CS161, CS107, CS110) are taken and approved
+
+Function validate_significant_implementation(student: Student) -> Boolean:
+    - Ensure one significant implementation course (CS140, CS145 etc.) with letter grade
+
+Function validate_breadth(student: Student) -> Boolean:
+    - Ensure different Breadth areas (A, B, C, D) are covered
+
+Function validate_AI_depth(student: Student) -> Boolean:
+    - Ensure 21 units of depth requirements are met including specific courses and total depth units
+
+Function calculate_average_grade(student: Student) -> Float:
+    - Compute average grade of MSCS submitted courses
+
+Function validate_total_units(student: Student) -> Boolean:
+    - Ensure student has at least 45 units
+
+Function validate_letter_grade_units(student: Student) -> Boolean:
+    - Ensure at least 36 units are for letter grades
+
+Function get_courses(student: Student) -> List[Course]:
+    - Return all courses taken by student
+
+Function course_approved(course_id: String, requirement_id: String) -> Boolean:
+    - Check if course satisfies requirement
+```
+
+This formal representation captures the essential requirements, faculty approvals, and constraints for effective parsing and validation of the MSCS program using a semantic parser.=======================================
+To generate Python code that automatically parses a given intermediate representation into an abstract syntax tree (AST) for the MSCS Program Sheet and the provided transcript, we'll follow a structured approach. We'll define classes that represent entities, relations, constraints, and functions, and then implement parsers that construct these entities from the given intermediate representation (IR).
+
+### Step-by-Step Implementation
+
+1. **Define Classes:**
+   - Create Python classes for each entity and relation.
+   - Create a main class to handle parsing and building the AST.
+
+2. **Parsing Functions:**
+   - Implement functions to parse the IR into the respective entities and relations.
+   - Build relationships between entities.
+
+3. **Main Parsing Logic:**
+   - Parse the entities and relations from the input IR and construct the AST.
+
+Here's the Python code to accomplish this:
+
+```python
+class Student:
+    def __init__(self, student_id, name, email, degree_confer_date, is_HCP, is_Coterm):
+        self.student_id = student_id
+        self.name = name
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.is_HCP = is_HCP
+        self.is_Coterm = is_Coterm
+        self.courses = []
+
+    def add_course(self, course):
+        self.courses.append(course)
+
+class Course:
+    def __init__(self, course_id, title, units, grade):
+        self.course_id = course_id
+        self.title = title
+        self.units = units
+        self.grade = grade
+        self.satisfies_requirements = []
+
+    def add_requirement(self, requirement):
+        self.satisfies_requirements.append(requirement)
+
+class ProgramRequirement:
+    def __init__(self, requirement_id, description, required_units):
+        self.requirement_id = requirement_id
+        self.description = description
+        self.required_units = required_units
+        self.approvals = []
+
+    def add_approval(self, approval):
+        self.approvals.append(approval)
+
+class Approval:
+    def __init__(self, approval_id, approved_by, approval_date, note):
+        self.approval_id = approval_id
+        self.approved_by = approved_by
+        self.approval_date = approval_date
+        self.note = note
+
+class EnrolledIn:
+    def __init__(self, student, course):
+        self.student = student
+        self.course = course
+
+class Satisfies:
+    def __init__(self, course, program_requirement):
+        self.course = course
+        self.program_requirement = program_requirement
+
+class ApprovedBy:
+    def __init__(self, program_requirement, approval):
+        self.program_requirement = program_requirement
+        self.approval = approval
+
+class Parser:
+    def __init__(self, intermediate_representation):
+        self.ir = intermediate_representation
+        self.students = []
+        self.courses = []
+        self.requirements = []
+        self.approvals = []
+        
+    def parse(self):
+        try:
+            for item in self.ir:
+                if item['type'] == 'Student':
+                    student = self.parse_student(item)
+                    self.students.append(student)
+                elif item['type'] == 'Course':
+                    course = self.parse_course(item)
+                    self.courses.append(course)
+                elif item['type'] == 'ProgramRequirement':
+                    requirement = self.parse_requirement(item)
+                    self.requirements.append(requirement)
+                elif item['type'] == 'Approval':
+                    approval = self.parse_approval(item)
+                    self.approvals.append(approval)
+                elif item['type'] == 'Relation':
+                    self.parse_relation(item)
+        except KeyError as e:
+            print(f"Key Error: The key {e} is missing in the IR item {item}")
+        except Exception as e:
+            print(f"Error: {e}")
+    
+    def parse_student(self, item):
+        return Student(
+            student_id=item['student_id'],
+            name=item['name'],
+            email=item['email'],
+            degree_confer_date=item['degree_confer_date'],
+            is_HCP=item['is_HCP'],
+            is_Coterm=item['is_Coterm']
+        )
+    
+    def parse_course(self, item):
+        return Course(
+            course_id=item['course_id'],
+            title=item['title'],
+            units=item['units'],
+            grade=item['grade']
+        )
+    
+    def parse_requirement(self, item):
+        return ProgramRequirement(
+            requirement_id=item['requirement_id'],
+            description=item['description'],
+            required_units=item['required_units']
+        )
+    
+    def parse_approval(self, item):
+        return Approval(
+            approval_id=item['approval_id'],
+            approved_by=item['approved_by'],
+            approval_date=item['approval_date'],
+            note=item['note']
+        )
+    
+    def parse_relation(self, item):
+        relation_type = item['relation_type']
+        if relation_type == 'Enrolled_In':
+            student = self.find_entity(self.students, 'student_id', item['student_id'])
+            course = self.find_entity(self.courses, 'course_id', item['course_id'])
+            if student and course:
+                student.add_course(course)
+        elif relation_type == 'Satisfies':
+            course = self.find_entity(self.courses, 'course_id', item['course_id'])
+            requirement = self.find_entity(self.requirements, 'requirement_id', item['requirement_id'])
+            if course and requirement:
+                course.add_requirement(requirement)
+        elif relation_type == 'Approved_By':
+            requirement = self.find_entity(self.requirements, 'requirement_id', item['requirement_id'])
+            approval = self.find_entity(self.approvals, 'approval_id', item['approval_id'])
+            if requirement and approval:
+                requirement.add_approval(approval)
+    
+    def find_entity(self, entities, key, value):
+        for entity in entities:
+            if getattr(entity, key) == value:
+                return entity
+        return None
+
+# Example Input Data (Intermediate Representation)
+input_data = [
+    {'type': 'Student', 'student_id': '05713381', 'name': 'Jeremy Lee Bregman', 'email': 'jeremy@stanford.edu', 'degree_confer_date': '01/08/2015', 'is_HCP': False, 'is_Coterm': True},
+    {'type': 'Course', 'course_id': 'CS106A', 'title': 'Programming Methodology', 'units': 5, 'grade': 'B+'},
+    # Add more student, course, requirement, approval, and relation items here as needed.
+]
+
+# Instantiate a parser with the input data and parse.
+parser = Parser(input_data)
+parser.parse()
+
+# Debug: Print students and their courses for verification
+for student in parser.students:
+    print(f"Student: {student.name}")
+    for course in student.courses:
+        print(f"  Course: {course.title}, Grade: {course.grade}")
+```
+
+### Explanation
+
+1. **Step 1 - Define Classes:**
+    - Classes for `Student`, `Course`, `ProgramRequirement`, `Approval`, and relations are defined.
+    - Each class initializes with their respective attributes.
+   
+2. **Step 2 - Parsing Functions:**
+    - The `Parser` class receives the intermediate representation and contains methods to parse each item type (`Student`, `Course`, `ProgramRequirement`, `Approval`, and `Relation`).
+    - `parse_student`, `parse_course`, `parse_requirement`, `parse_approval` methods create instances of the respective classes using the IR data.
+    - `parse_relation` links entities based on the relationship type specified in the IR.
+
+3. **Step 3 - Main Parsing Logic:**
+    - The `parse` method iterates over the IR data and processes each item based on its type.
+    - Parsed entities are stored in lists (`students`, `courses`, `requirements`, `approvals`).
+    - Relationships between entities are created using the `parse_relation` method.
+
+This code forms the foundation to build an AST from the given intermediate representation for the MSCS Program Sheet and the provided transcript. Further expansion can include detailed parsing logic to handle additional constraints, validations, and functions necessary for the MSCS requirements.=======================================
+To create a compiler that converts an example AST from a parsed intermediate representation (IR) into CVC5 solver formulas, we need to follow these steps:
+
+1. **Parse the Intermediate Representation**: Represent the MSCS requirements and the student transcript as an AST in Python.
+2. **Generate CVC5 Formulas from the AST**: Use the AST to create constraints and assertions necessary for the CVC5 solver.
+
+Below is the complete code implementation to parse the IR, build the AST, and then generate the CVC5 solver formulas to check the requirements.
+
+### Step 1: Define Classes and Parse the Intermediate Representation
+Here we define the classes and implement the parsing logic as explained:
+
+```python
+class Student:
+    def __init__(self, student_id, name, email, degree_confer_date, is_HCP, is_Coterm):
+        self.student_id = student_id
+        self.name = name
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.is_HCP = is_HCP
+        self.is_Coterm = is_Coterm
+        self.courses = []
+
+    def add_course(self, course):
+        self.courses.append(course)
+
+class Course:
+    def __init__(self, course_id, title, units, grade):
+        self.course_id = course_id
+        self.title = title
+        self.units = units
+        self.grade = grade
+        self.satisfies_requirements = []
+
+    def add_requirement(self, requirement):
+        self.satisfies_requirements.append(requirement)
+
+class ProgramRequirement:
+    def __init__(self, requirement_id, description, required_units):
+        self.requirement_id = requirement_id
+        self.description = description
+        self.required_units = required_units
+        self.approvals = []
+
+    def add_approval(self, approval):
+        self.approvals.append(approval)
+
+class Parser:
+    def __init__(self, intermediate_representation):
+        self.ir = intermediate_representation
+        self.students = []
+        self.courses = []
+        self.requirements = []
+        self.approvals = []
+
+    def parse(self):
+        for item in self.ir:
+            if item['type'] == 'Student':
+                student = self.parse_student(item)
+                self.students.append(student)
+            elif item['type'] == 'Course':
+                course = self.parse_course(item)
+                self.courses.append(course)
+            elif item['type'] == 'ProgramRequirement':
+                requirement = self.parse_requirement(item)
+                self.requirements.append(requirement)
+            elif item['type'] == 'Approval':
+                approval = self.parse_approval(item)
+                self.approvals.append(approval)
+            elif item['type'] == 'Relation':
+                self.parse_relation(item)
+    
+    def parse_student(self, item):
+        return Student(
+            student_id=item['student_id'],
+            name=item['name'],
+            email=item['email'],
+            degree_confer_date=item['degree_confer_date'],
+            is_HCP=item['is_HCP'],
+            is_Coterm=item['is_Coterm']
+        )
+    
+    def parse_course(self, item):
+        return Course(
+            course_id=item['course_id'],
+            title=item['title'],
+            units=item['units'],
+            grade=item['grade']
+        )
+    
+    def parse_requirement(self, item):
+        return ProgramRequirement(
+            requirement_id=item['requirement_id'],
+            description=item['description'],
+            required_units=item['required_units']
+        )
+    
+    def parse_approval(self, item):
+        return Approval(
+            approval_id=item['approval_id'],
+            approved_by=item['approved_by'],
+            approval_date=item['approval_date'],
+            note=item['note']
+        )
+    
+    def parse_relation(self, item):
+        relation_type = item['relation_type']
+        if relation_type == 'Enrolled_In':
+            student = self.find_entity(self.students, 'student_id', item['student_id'])
+            course = self.find_entity(self.courses, 'course_id', item['course_id'])
+            if student and course:
+                student.add_course(course)
+        elif relation_type == 'Satisfies':
+            course = self.find_entity(self.courses, 'course_id', item['course_id'])
+            requirement = self.find_entity(self.requirements, 'requirement_id', item['requirement_id'])
+            if course and requirement:
+                course.add_requirement(requirement)
+    
+    def find_entity(self, entities, key, value):
+        for entity in entities:
+            if getattr(entity, key) == value:
+                return entity
+        return None
+
+# Example IR Input Data
+input_data = [
+    {'type': 'Student', 'student_id': '05713381', 'name': 'Jeremy Lee Bregman', 'email': 'jeremy@stanford.edu', 'degree_confer_date': '01/08/2015', 'is_HCP': False, 'is_Coterm': True},
+    {'type': 'Course', 'course_id': 'CS106A', 'title': 'Programming Methodology', 'units': 5, 'grade': 'B+'},
+    # Add more student, course, requirement, approval, and relation items here as needed.
+]
+
+# Parse the IR
+parser = Parser(input_data)
+parser.parse()
+```
+
+### Step 2: Generate CVC5 Solver Formulas from the AST
+Once we have the AST, we can generate constraints for the CVC5 solver. Here's an example function to generate CVC5 formulas:
+
+```python
+import cvc5
+from cvc5.pythonic import *
+
+def generate_cvc5_formulas(students, courses, requirements):
+    # Initialize solver
+    solver = Solver()
+    solver.setOption("produce-models", "true")
+    solver.setLogic("ALL")
+
+    # Create Variables
+    vars_dict = {}
+    for student in students:
+        vars_dict[student.student_id] = {}
+        for course in student.courses:
+            vars_dict[student.student_id][course.course_id] = solver.mkBoolean(course.grade in ['A', 'B', 'C'])
+
+    # Constraints for each student
+    for student in students:
+        student_vars = vars_dict[student.student_id]
+        total_units = solver.mkInteger(0)
+        letter_grade_units = solver.mkInteger(0)
+        elective_units = solver.mkInteger(0)
+
+        for course in student.courses:
+            units_term = solver.mkInteger(course.units)
+            total_units = solver.mkTerm(Kind.ADD, total_units, units_term)
+            if course.grade in ['A', 'B', 'C']:
+                letter_grade_units = solver.mkTerm(Kind.ADD, letter_grade_units, units_term)
+            if 1 <= course.units <= 2:
+                elective_units = solver.mkTerm(Kind.ADD, elective_units, units_term)
+
+        # Minimum Units Requirement
+        solver.assertFormula(solver.mkTerm(Kind.GEQ, total_units, solver.mkInteger(45)))
+
+        # Letter Grade Requirement
+        solver.assertFormula(solver.mkTerm(Kind.GEQ, letter_grade_units, solver.mkInteger(36)))
+
+        # Electives Unit Limit
+        solver.assertFormula(solver.mkTerm(Kind.LEQ, elective_units, solver.mkInteger(3)))
+
+    return solver
+
+# Generate CVC5 Formulas
+solver = generate_cvc5_formulas(parser.students, parser.courses, parser.requirements)
+
+# Check Satisfiability
+result = solver.checkSat()
+print(f"Sat: {result}")
+if result.isSat():
+    model = solver.getModel()
+    print(f"Model: {model}")
+else:
+    print("No satisfying solution found.")
+```
+
+### Explanation:
+
+1. **Initialization of the CVC5 Solver**: We initialize a CVC5 solver and set relevant options.
+2. **Creating Variables**: We create variables for each course and student.
+3. **Generating Constraints**:
+   - Convert constraints such as minimum units, letter grade units, and elective unit limits into CVC5 constraints.
+   - Specifically use `Kind.GEQ`, `Kind.LEQ`, and other terms to represent the constraints.
+4. **Checking Satisfiability**: Finally, we check the satisfiability of the constraints using the CVC5 solver and print the results.
+
+This code provides a structured pipeline to parse IR into an AST and then compile the AST into CVC5 solver formulas to validate the constraints specified for the MSCS program. You can further customize the constraints and extend the functions to address specific requirements.=======================================

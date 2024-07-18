@@ -1,0 +1,618 @@
+To generate a formal intermediate representation that can facilitate building a semantic parser for the MSCS Program Sheet and the provided transcript, we need to define a schema comprising entities, relations, constraints, and functions. This schema will capture all the required elements of the master's program and validate a student's progress against the provided course requirements.
+
+### Entities
+1. **Course**
+    - `course_id`: String
+    - `title`: String
+    - `units`: Integer
+    - `grade`: String
+    - `is_foundation`: Boolean
+    - `is_breadth_area_A`: Boolean
+    - `is_breadth_area_B`: Boolean
+    - `is_breadth_area_C`: Boolean
+    - `is_breadth_area_D`: Boolean
+    - `is_significant_implementation`: Boolean
+
+2. **Student**
+    - `student_id`: String
+    - `name`: String
+    - `email`: String
+    - `degree_confer_date`: String
+    - `is_HCP`: Boolean
+    - `is_Coterm`: Boolean
+
+3. **ProgramRequirement**
+    - `requirement_id`: String
+    - `description`: String
+    - `required_units`: Integer
+
+4. **Approval**
+    - `approval_id`: String
+    - `approved_by`: String
+    - `approval_date`: String
+    - `note`: String
+
+### Relations
+1. **Enrolled_At**
+    - `Student` -> `Course`
+    - Properties:
+        - `semester`: String
+        - `year`: Integer
+
+2. **Satisfies**
+    - `Course` -> `ProgramRequirement`
+
+3. **Approved_By**
+    - `ProgramRequirement` -> `Approval`
+
+### Constraints
+
+1. **Minimum Units Requirement**
+    - All students must complete at least 45 graduate units at Stanford.
+
+2. **Foundations Units Limit**
+    - A maximum of 10 units can be counted towards the Foundations requirement.
+
+3. **Breadth Requirement**
+    - Three courses, with each course chosen from a different Breadth area (A, B, C, D).
+
+4. **Significant Implementation Requirement**
+    - At least one course must satisfy the Significant Implementation Requirement and be taken for a letter grade at Stanford.
+
+5. **Letter Grade Requirement**
+    - At least 36 out of the 45 units must be taken for a letter grade, except for courses taken during specified terms where CR or S grades are acceptable.
+
+6. **Course Grade Constraint**
+    - The average grade in the courses submitted for the MSCS must be at least a B (3.0 GPA).
+
+### Functions
+
+1. **validate_foundations(student: Student) -> Boolean**
+    - Checks if the student has met the foundation requirement.
+
+2. **validate_significant_implementation(student: Student) -> Boolean**
+    - Ensures at least one significant implementation course is completed with a letter grade at Stanford.
+
+3. **validate_breadth(student: Student) -> Boolean**
+    - Ensures breadth requirement is met by checking that courses from three different areas (A, B, C, D) are taken.
+
+4. **validate_total_units(student: Student) -> Boolean**
+    - Ensures the total units (minimum 45 units, only 10 from Foundations) requirement is met.
+
+5. **validate_letter_grade_units(student: Student) -> Boolean**
+    - Ensures at least 36 units are taken for a letter grade.
+
+6. **calculate_average_grade(student: Student) -> Float**
+    - Computes the average grade for all courses submitted for the MSCS.
+
+7. **get_courses(student: Student) -> List[Course]**
+    - Retrieves all courses the student is enrolled in.
+
+8. **course_approved(course_id: String, requirement_id: String) -> Boolean**
+    - Checks if a specific course is approved for satisfying a specific program requirement.
+
+9. **total_units(student: Student) -> Integer**
+    - Calculates the total units completed by the student.
+
+### Formal Representation
+
+```plaintext
+Entity Student:
+    - Attributes:
+        - student_id: String
+        - name: String
+        - email: String
+        - degree_confer_date: String
+        - is_HCP: Boolean
+        - is_Coterm: Boolean
+
+Entity Course:
+    - Attributes:
+        - course_id: String
+        - title: String
+        - units: Integer
+        - grade: String
+        - is_foundation: Boolean
+        - is_breadth_area_A: Boolean
+        - is_breadth_area_B: Boolean
+        - is_breadth_area_C: Boolean
+        - is_breadth_area_D: Boolean
+        - is_significant_implementation: Boolean
+
+Entity ProgramRequirement:
+    - Attributes:
+        - requirement_id: String
+        - description: String
+        - required_units: Integer
+
+Entity Approval:
+    - Attributes:
+        - approval_id: String
+        - approved_by: String
+        - approval_date: String
+        - note: String
+
+Relation Enrolled_At:
+    - From: Student
+    - To: Course
+    - Attributes:
+        - semester: String
+        - year: Integer
+
+Relation Satisfies:
+    - From: Course
+    - To: ProgramRequirement
+
+Relation Approved_By:
+    - From: ProgramRequirement
+    - To: Approval
+
+Constraint Minimum Units Requirement:
+    - total_units(student: Student) >= 45
+
+Constraint Foundations Units Limit:
+    - sum(course.units where course in get_courses(student) and course.is_foundation) <= 10
+
+Constraint Breadth Requirement:
+    - validate_breadth(student)
+
+Constraint Significant Implementation Requirement:
+    - validate_significant_implementation(student)
+
+Constraint Letter Grade Requirement:
+    - sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36
+
+Constraint Course Grade Constraint:
+    - calculate_average_grade(student) >= 3.0
+
+Function validate_foundations(student: Student) -> Boolean:
+    - Check foundation courses (CS103, CS109, CS161, CS107, CS110) are taken and approved
+
+Function validate_significant_implementation(student: Student) -> Boolean:
+    - Ensure one significant implementation course (CS140, CS145 etc.) with letter grade is completed at Stanford
+
+Function validate_breadth(student: Student) -> Boolean:
+    - Ensure three different breadth areas (A, B, C, D) are covered by enrolled courses
+
+Function validate_total_units(student: Student) -> Boolean:
+    - Ensure student has at least 45 units
+
+Function validate_letter_grade_units(student: Student) -> Boolean:
+    - Ensure at least 36 units are for letter grades
+
+Function calculate_average_grade(student: Student) -> Float:
+    - Compute average grade of MSCS submitted courses
+
+Function get_courses(student: Student) -> List[Course]:
+    - Return all courses taken by student
+
+Function course_approved(course_id: String, requirement_id: String) -> Boolean:
+    - Check if course satisfies requirement
+
+Function total_units(student: Student) -> Integer:
+    - Return sum of units of taken courses
+```=======================================
+To parse a given intermediate representation into an abstract syntax tree (AST) suitable for generating cvc5 solver formulas, we first need to define the corresponding Python classes for each entity and relation in your schema. Then, we'll implement a parsing mechanism to read the intermediate representation and construct the AST. 
+
+Here's the Python code to achieve this:
+
+```python
+from typing import List, Optional, Dict, Any
+
+
+class Course:
+    def __init__(self, course_id: str, title: str, units: int, grade: str,
+                 is_foundation: bool, is_breadth_area_A: bool, is_breadth_area_B: bool,
+                 is_breadth_area_C: bool, is_breadth_area_D: bool, is_significant_implementation: bool):
+        self.course_id = course_id
+        self.title = title
+        self.units = units
+        self.grade = grade
+        self.is_foundation = is_foundation
+        self.is_breadth_area_A = is_breadth_area_A
+        self.is_breadth_area_B = is_breadth_area_B
+        self.is_breadth_area_C = is_breadth_area_C
+        self.is_breadth_area_D = is_breadth_area_D
+        self.is_significant_implementation = is_significant_implementation
+
+
+class Student:
+    def __init__(self, student_id: str, name: str, email: str, degree_confer_date: str,
+                 is_HCP: bool, is_Coterm: bool, courses: Optional[List[Course]] = None):
+        self.student_id = student_id
+        self.name = name
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.is_HCP = is_HCP
+        self.is_Coterm = is_Coterm
+        self.courses = courses or []
+
+
+class ProgramRequirement:
+    def __init__(self, requirement_id: str, description: str, required_units: int):
+        self.requirement_id = requirement_id
+        self.description = description
+        self.required_units = required_units
+
+
+class Approval:
+    def __init__(self, approval_id: str, approved_by: str, approval_date: str, note: str):
+        self.approval_id = approval_id
+        self.approved_by = approved_by
+        self.approval_date = approval_date
+        self.note = note
+
+
+class EnrolledAt:
+    def __init__(self, student: Student, course: Course, semester: str, year: int):
+        self.student = student
+        self.course = course
+        self.semester = semester
+        self.year = year
+
+
+class Satisfies:
+    def __init__(self, course: Course, requirement: ProgramRequirement):
+        self.course = course
+        self.requirement = requirement
+
+
+class ApprovedBy:
+    def __init__(self, requirement: ProgramRequirement, approval: Approval):
+        self.requirement = requirement
+        self.approval = approval
+
+
+class AST:
+    def __init__(self):
+        self.students: Dict[str, Student] = {}
+        self.courses: Dict[str, Course] = {}
+        self.program_requirements: Dict[str, ProgramRequirement] = {}
+        self.approvals: Dict[str, Approval] = {}
+        self.enrollments: List[EnrolledAt] = []
+        self.satisfies: List[Satisfies] = []
+        self.approvals_by: List[ApprovedBy] = []
+
+    def add_student(self, student: Student):
+        self.students[student.student_id] = student
+
+    def add_course(self, course: Course):
+        self.courses[course.course_id] = course
+
+    def add_program_requirement(self, requirement: ProgramRequirement):
+        self.program_requirements[requirement.requirement_id] = requirement
+
+    def add_approval(self, approval: Approval):
+        self.approvals[approval.approval_id] = approval
+
+    def add_enrollment(self, enrollment: EnrolledAt):
+        self.enrollments.append(enrollment)
+
+    def add_satisfaction(self, satisfaction: Satisfies):
+        self.satisfies.append(satisfaction)
+
+    def add_approval_by(self, approval_by: ApprovedBy):
+        self.approvals_by.append(approval_by)
+
+    def parse_intermediate_representation(self, intermediate: Dict[str, Any]):
+        # Parse Students
+        for student_data in intermediate.get('students', []):
+            student = Student(
+                student_id=student_data['student_id'],
+                name=student_data['name'],
+                email=student_data['email'],
+                degree_confer_date=student_data['degree_confer_date'],
+                is_HCP=student_data['is_HCP'],
+                is_Coterm=student_data['is_Coterm']
+            )
+            self.add_student(student)
+
+        # Parse Courses
+        for course_data in intermediate.get('courses', []):
+            course = Course(
+                course_id=course_data['course_id'],
+                title=course_data['title'],
+                units=course_data['units'],
+                grade=course_data['grade'],
+                is_foundation=course_data['is_foundation'],
+                is_breadth_area_A=course_data['is_breadth_area_A'],
+                is_breadth_area_B=course_data['is_breadth_area_B'],
+                is_breadth_area_C=course_data['is_breadth_area_C'],
+                is_breadth_area_D=course_data['is_breadth_area_D'],
+                is_significant_implementation=course_data['is_significant_implementation']
+            )
+            self.add_course(course)
+
+        # Parse Program Requirements
+        for requirement_data in intermediate.get('program_requirements', []):
+            requirement = ProgramRequirement(
+                requirement_id=requirement_data['requirement_id'],
+                description=requirement_data['description'],
+                required_units=requirement_data['required_units']
+            )
+            self.add_program_requirement(requirement)
+
+        # Parse Approvals
+        for approval_data in intermediate.get('approvals', []):
+            approval = Approval(
+                approval_id=approval_data['approval_id'],
+                approved_by=approval_data['approved_by'],
+                approval_date=approval_data['approval_date'],
+                note=approval_data['note']
+            )
+            self.add_approval(approval)
+
+        # Parse Enrollments
+        for enrollment_data in intermediate.get('enrollments', []):
+            student = self.students[enrollment_data['student_id']]
+            course = self.courses[enrollment_data['course_id']]
+            enrollment = EnrolledAt(
+                student=student,
+                course=course,
+                semester=enrollment_data['semester'],
+                year=enrollment_data['year']
+            )
+            self.add_enrollment(enrollment)
+
+        # Parse Satisfactions
+        for satisfaction_data in intermediate.get('satisfactions', []):
+            course = self.courses[satisfaction_data['course_id']]
+            requirement = self.program_requirements[satisfaction_data['requirement_id']]
+            satisfaction = Satisfies(
+                course=course,
+                requirement=requirement
+            )
+            self.add_satisfaction(satisfaction)
+
+        # Parse Approval By Relations
+        for approval_by_data in intermediate.get('approvals_by', []):
+            requirement = self.program_requirements[approval_by_data['requirement_id']]
+            approval = self.approvals[approval_by_data['approval_id']]
+            approval_by = ApprovedBy(
+                requirement=requirement,
+                approval=approval
+            )
+            self.add_approval_by(approval_by)
+
+
+# Example usage
+def main():
+    intermediate_representation = {
+        "students": [
+            {
+                "student_id": "123",
+                "name": "John Doe",
+                "email": "john.doe@example.com",
+                "degree_confer_date": "2023-06-15",
+                "is_HCP": False,
+                "is_Coterm": True
+            }
+        ],
+        "courses": [
+            {
+                "course_id": "CS101",
+                "title": "Introduction to Computer Science",
+                "units": 4,
+                "grade": "A-",
+                "is_foundation": False,
+                "is_breadth_area_A": False,
+                "is_breadth_area_B": False,
+                "is_breadth_area_C": True,
+                "is_breadth_area_D": False,
+                "is_significant_implementation": False
+            }
+        ],
+        "program_requirements": [
+            {
+                "requirement_id": "breadth",
+                "description": "Breadth Requirement",
+                "required_units": 9
+            }
+        ],
+        "approvals": [
+            {
+                "approval_id": "approve1",
+                "approved_by": "Advisor1",
+                "approval_date": "2023-01-15",
+                "note": "Approved for foundation"
+            }
+        ],
+        "enrollments": [
+            {
+                "student_id": "123",
+                "course_id": "CS101",
+                "semester": "Fall",
+                "year": 2022
+            }
+        ],
+        "satisfactions": [
+            {
+                "course_id": "CS101",
+                "requirement_id": "breadth"
+            }
+        ],
+        "approvals_by": [
+            {
+                "requirement_id": "breadth",
+                "approval_id": "approve1"
+            }
+        ]
+    }
+
+    ast = AST()
+    ast.parse_intermediate_representation(intermediate_representation)
+
+    # Debugging: Print parsed AST
+    for student_id, student in ast.students.items():
+        print(f"Student: {student_id}, {student.name}")
+
+    for course_id, course in ast.courses.items():
+        print(f"Course: {course_id}, {course.title}")
+
+    for requirement_id, requirement in ast.program_requirements.items():
+        print(f"Requirement: {requirement_id}, {requirement.description}")
+
+    for approval_id, approval in ast.approvals.items():
+        print(f"Approval: {approval_id}, {approval.approved_by}")
+
+    for enrollment in ast.enrollments:
+        print(f"Enrollment: {enrollment.student.name} -> {enrollment.course.title}")
+
+    for satisfaction in ast.satisfies:
+        print(f"Satisfaction: {satisfaction.course.title} -> {satisfaction.requirement.description}")
+
+    for approval_by in ast.approvals_by:
+        print(f"Approval By: {approval_by.requirement.description} -> {approval_by.approval.approved_by}")
+
+
+if __name__ == "__main__":
+    main()
+```
+
+This Python code defines the entities and relations as classes and provides a method to parse the given intermediate representation into an AST. The example usage function demonstrates how to use this parser and print the parsed AST for debugging purposes.=======================================
+To generate cvc5 solver formulas from an abstract syntax tree (AST) for an MSCS Program, we need to translate the constraints defined in the intermediate representation into cvc5 formulas. These formulas will help us automatically verify whether a student meets all the program requirements. Here’s the Python code to achieve this:
+
+```python
+import cvc5
+from cvc5 import Kind
+from typing import List, Dict, Any
+
+class Course:
+    def __init__(self, course_id: str, title: str, units: int, grade: str,
+                 is_foundation: bool, is_breadth_area_A: bool, is_breadth_area_B: bool,
+                 is_breadth_area_C: bool, is_breadth_area_D: bool, is_significant_implementation: bool):
+        self.course_id = course_id
+        self.title = title
+        self.units = units
+        self.grade = grade
+        self.is_foundation = is_foundation
+        self.is_breadth_area_A = is_breadth_area_A
+        self.is_breadth_area_B = is_breadth_area_B
+        self.is_breadth_area_C = is_breadth_area_C
+        self.is_breadth_area_D = is_breadth_area_D
+        self.is_significant_implementation = is_significant_implementation
+
+class Student:
+    def __init__(self, student_id: str, name: str, email: str, degree_confer_date: str,
+                 is_HCP: bool, is_Coterm: bool, courses: List[Course]):
+        self.student_id = student_id
+        self.name = name
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.is_HCP = is_HCP
+        self.is_Coterm = is_Coterm
+        self.courses = courses
+
+def generate_cvc5_solver_formulas(student: Student):
+    # Initialize solver
+    solver = cvc5.Solver()
+    solver.setOption("produce-unsat-cores", "true")
+    solver.setOption("produce-models", "true")
+    solver.setOption("produce-proofs", "true")
+    solver.setLogic("ALL")
+
+    # Variables for grades
+    grade_vars = {course.course_id: solver.mkConst(solver.getBooleanSort(), course.course_id + "_grade") for course in student.courses}
+    unit_vars = {course.course_id: solver.mkConst(solver.mkIntegerSort(), course.course_id + "_units") for course in student.courses}
+
+    # Minimum Units Requirement
+    total_units = solver.mkInteger(0)
+    for course in student.courses:
+        total_units = solver.mkTerm(Kind.ADD, total_units, solver.mkInteger(course.units))
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, total_units, solver.mkInteger(45)))
+
+    # Foundations Units Limit
+    foundation_units = solver.mkInteger(0)
+    for course in student.courses:
+        if course.is_foundation:
+            foundation_units = solver.mkTerm(Kind.ADD, foundation_units, solver.mkInteger(course.units))
+    solver.assertFormula(solver.mkTerm(Kind.LEQ, foundation_units, solver.mkInteger(10)))
+
+    # Breadth Requirement
+    breadth_areas = {
+        'A': solver.mkBoolean(False),
+        'B': solver.mkBoolean(False),
+        'C': solver.mkBoolean(False),
+        'D': solver.mkBoolean(False),
+    }
+    
+    for course in student.courses:
+        if course.is_breadth_area_A:
+            breadth_areas['A'] = solver.mkBoolean(True)
+        if course.is_breadth_area_B:
+            breadth_areas['B'] = solver.mkBoolean(True)
+        if course.is_breadth_area_C:
+            breadth_areas['C'] = solver.mkBoolean(True)
+        if course.is_breadth_area_D:
+            breadth_areas['D'] = solver.mkBoolean(True)
+
+    solver.assertFormula(solver.mkTerm(Kind.DISTINCT, breadth_areas.values()))
+
+    # Significant Implementation Requirement
+    sig_impl_found = solver.mkBoolean(False)
+    for course in student.courses:
+        if course.is_significant_implementation:
+            sig_impl_found = solver.mkTerm(Kind.OR, sig_impl_found, solver.mkBoolean(True))
+    solver.assertFormula(sig_impl_found)
+    
+    # Letter Grade Requirement
+    letter_grade_units = solver.mkInteger(0)
+    for course in student.courses:
+        if course.grade in ['A', 'B', 'C']:
+            letter_grade_units = solver.mkTerm(Kind.ADD, letter_grade_units, solver.mkInteger(course.units))
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, letter_grade_units, solver.mkInteger(36)))
+
+    # Course Grade Constraint
+    total_grade_points = solver.mkInteger(0)
+    total_graded_units = solver.mkInteger(0)
+    grade_points_map = {'A': 4, 'B': 3, 'C': 2, 'D': 1, 'F': 0}
+
+    for course in student.courses:
+        if course.grade in grade_points_map:
+            grade_points = solver.mkInteger(grade_points_map[course.grade])
+            units = solver.mkInteger(course.units)
+            total_grade_points = solver.mkTerm(Kind.ADD, total_grade_points, solver.mkTerm(Kind.MULT, grade_points, units))
+            total_graded_units = solver.mkTerm(Kind.ADD, total_graded_units, units)
+
+    average_gpa = solver.mkTerm(Kind.DIVISION, total_grade_points, total_graded_units)
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, average_gpa, solver.mkInteger(3.0)))
+
+    # Check satisfiability
+    result = solver.checkSat()
+    if result.isSat():
+        print("The student meets all the MSCS requirements.")
+        print("Courses used to meet the requirements:")
+        for course in student.courses:
+            print(f"{course.course_id}: {course.title} ({course.units} units, {course.grade})")
+    else:
+        print("The student does not meet all the MSCS requirements.")
+        unsat_core = solver.getUnsatCore()
+        print("Unsatisfied constraints include:")
+        for formula in unsat_core:
+            print(formula)
+
+# Example usage
+def main():
+    # Define courses
+    courses = [
+        Course(course_id="CS101", title="Introduction to Computer Science", units=4, grade="A-", is_foundation=False, is_breadth_area_A=False, is_breadth_area_B=False, is_breadth_area_C=True, is_breadth_area_D=False, is_significant_implementation=False),
+        Course(course_id="CS102", title="Data Structures", units=3, grade="B", is_foundation=True, is_breadth_area_A=True, is_breadth_area_B=False, is_breadth_area_C=False, is_breadth_area_D=False, is_significant_implementation=True)
+    ]
+
+    # Define student
+    student = Student(student_id="123", name="John Doe", email="john.doe@example.com", degree_confer_date="2023-06-15", is_HCP=False, is_Coterm=True, courses=courses)
+
+    # Generate and check cvc5 solver formulas
+    generate_cvc5_solver_formulas(student)
+
+if __name__ == "__main__":
+    main()
+```
+
+In this code:
+- We define the student and courses with the given attributes and constraints.
+- We initialize the cvc5 solver and create variables for the required constraints.
+- We assert various constraints based on the MSCS requirements, such as minimum units, foundation units limit, breadth requirement, significant implementation, letter grade requirement, and course grade constraint.
+- Finally, we check the satisfiability of the constraints and print results accordingly.
+
+This should help automate the process of verifying if a student meets the MSCS program requirements using the cvc5 solver.=======================================

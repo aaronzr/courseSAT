@@ -14,7 +14,8 @@ class CVC5Compiler:
         for constraint in self.ast.children:
             if isinstance(constraint, Constraint):
                 self.compile_constraint(constraint)
-
+                
+    #this function below has to be automatically generated, in a formula 
     def compute_total_units(self):
         student_node = self.ast.children[0]
         total_units = self.solver.mkInteger(0)
@@ -31,6 +32,7 @@ class CVC5Compiler:
             if condition == "The total number of units must be greater than or equal to 45.":
                 total_units = self.compute_total_units()
                 formula = self.solver.mkTerm(Kind.GEQ, total_units, self.solver.mkInteger(45))
+                print(formula)
                 self.solver.assertFormula(formula)
     
     def check_sat(self):

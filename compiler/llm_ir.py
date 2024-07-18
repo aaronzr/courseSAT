@@ -31,44 +31,37 @@ requirement_sentence_2 = f"""
 """
 
 def find_IR(requirement_path, transcript_path):
-        prompt = f""" Your task is to fill in the blanks such as "" and Bool in a json file with given
-        sentences and texts. The sentence will be given to you one by one. You should output a filled json file
-        from information in the given sentences and texts. 
-        Given {transcript_sentence_1} and {transcript_sentence_2}, please fill in the following json file 
+        prompt = f"""
+        Please fill out a json schema template containing Student (student information from the transcript),
+        Courses_Taken (a list of taken courses with relevant course information from the transcript), 
+        Approval (whether an advior has approved a taken course for degree requirements. This is typically unknown from the transcript unless
+        otherwise specified), and Cumulative GPA (cumulative GPA for undnergraduate and graduate degrees) 
+        from a given transcript. Here is the
+        transcript: {transcript}. Please output a filled transcript json schema only. 
         ```json
-                intermediate_representation = {{
+        transcript = {{
         "Student": {{
-                "Name": "",
-                "StudentID": "",
-                "Coterm": Bool
+                "Name": String,
+                "StudentID": Integer,
+                "Coterm": Boolean
         }},
-        "Courses": [
-                {{"CourseNumber": "", "Title": "", "Units": , "Grade": ""}},
-                {{"CourseNumber": "", "Title": "", "Units": , "Grade": ""}}
-        ],
-        "Requirements": [
-                {{
-                "RequirementType": "",
-                "Satisfied": Bool,
-                "SubRequirements": [
-                        {{"Course": "", "Satisfied": Bool, "WaiverAllowed": }},
-                        {{"Course": "", "Satisfied": Bool, "WaiverAllowed": }},
-                        {{"Course": "", "Satisfied": Bool, "WaiverAllowed": }},
-                        {{"Course": "", "Satisfied": Bool, "WaiverAllowed": }},
-                        {{"Course": "", "Satisfied": Bool, "WaiverAllowed": }},
-                ]
-                }}
-        ],
-        "Relations": [
-                {{"RelationType": "", "Attributes": {{"Completed": , "ForMS": , "Waivers": []}}}}
-        ],
-        "Constraints": [
-                {{"ConstraintType": "", "Condition": ""}}
+        "Courses_Taken": [
+                {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}},
+                {{"Course_ID": "", "Title": "", "Units": , "Grade": }}, 
+                ...
         ]
+        "Approval": {{
+                "Approved": Boolean,
+                "Approved_By": String,
+                "Course_ID": String
+        }},
+        
+        "Cumulative_GPA": {{
+                "Undergrad": Real,
+                "Graduate": Real,
+        }},
         }}
         ```
-        Please remember your json output from prior step. Now given {requirement_sentence_1} and 
-        {requirement_sentence_2}, please fill in all remaining blanks in the json file and output the filled json file only. 
         """
         out = gpt_infer(prompt)
         print(out)
@@ -83,7 +76,60 @@ def failed_baseline():
         print(out)
         file = open("./llm_ast.txt", "w+")
         file.write(out)
-        print("=======================================\n")    
+        print("=======================================\n")
+
+
+def failed_baseline_2():
+        prompt = f"""A student has taken CS 101, write a smt program to test if he saitsfy the reqirement of taking 
+        courses above 100.. 
+        """
+        out = gpt_infer(prompt)
+        print(out)
+        file = open("./llm_formula2.txt", "w+")
+        file.write(out)
+        print("=======================================\n")       
          
-#find_IR(requirement_path, transcript_path)
-failed_baseline()
+find_IR(requirement_path, transcript_path)
+#failed_baseline_2()
+
+
+	if requirement == "ELECTIVES":
+		extract_prompt = f"""
+		Please extract the seminar course numbers from {seminar_courses} based on the following: {text}.
+		Please pay attention to notes for relevant electives of {requirement} and extract relevant elective courses related to {requirement} too.
+		Remember, please output output all course numbers in a single python list [] only.  
+		"""
+
+		seminar_courses = gpt_infer(extract_prompt)
+		print(seminar_courses)
+		course_file = open(f"{RESULTS_DIR}/{requirement}_course_list.txt", "w+")
+		course_file.write(seminar_courses)
+
+		solver_prompt = f"""
+		Given a list of courses {seminar_courses}, please translate each course into 
+		corresponding cvc5 solver statements. For example, for cs103, you need to generate two python code statements like below: 
+		```python 
+		cs103 = solver.mkConst(solver.getBooleanSort(), "CS103")
+		cs103_units = solver.mkConst(solver.getIntegerSort(), "CS103_units")
+		```
+		The course variable should be in lower case. For example cs103, NOT CS103 or CS 103 or CS_103 on the left hand. 
+		Please generate compilable solver statements for each course in the list. Please output code only. 
+		"""
+		solver_statements = gpt_infer(solver_prompt)
+		print(solver_statements)
+		solver_file = open(f"{RESULTS_DIR}/{requirement}_solver_statements.py", "w+")
+		solver_file.write(solver_statements)
+
+		formula_prompt = f"""
+		Your task is to generate python compilable CVC5 solver formulas based on constraints in a course requirements document. 
+		Given a list of related elective courses {seminar_courses} from {requirement} in the following
+		document: {text}, please carefully analyze the units and course requirements in the {requirement} and generate solver formulas in python code
+		that check if specified constraints are satisfied accordingly. You can assume a user input of elective courses in a variable `elective_choices` in the following format: 
+		Please make sure the genrated constraints also satisfy specified seminar course requirements {seminar_courses}.
+  		Remember, you must generate cvc5 formulas in python code that meet 
+		specified constraints of {requirement} in {text}.
+		"""
+		formula_statements = gpt_infer(formula_prompt)
+		print(formula_statements)
+		formula_file = open(f"{RESULTS_DIR}/{requirement}_solver_formulas.py", "w+")
+		formula_file.write(formula_statements)

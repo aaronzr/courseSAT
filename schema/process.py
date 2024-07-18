@@ -2,6 +2,7 @@ import os
 import sys 
 import json
 import requests
+import subprocess
 from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 from openai import OpenAI
@@ -51,7 +52,7 @@ def process_individual_transcript(results_dir, transcript_path):
         from a given transcript. It's vitally IMPORTANT that you double check and fill in correct information from the given transcript.
         Here is the transcript: {transcript}. Please output a filled transcript json schema in the following format only. Your output MUST strictly follow the format.
         ```
-        transcript = {{
+        {{
         "Student": {{
                 "Name": String,
                 "Program": String, 
@@ -100,71 +101,81 @@ def process_individual_transcript(results_dir, transcript_path):
         }},
         }}
         ```
+        Remember, your json schema output should strictly follow the given format above and your json schema output will be read as a ```file``` directly by json.load(file). 
         """
         schema = gpt_infer(prompt)
-        print(schema)
+        start = "```json"
+        start2 = "```python"
+        end = "```"
+        if start in schema: 
+                schema_fix = schema.split(start)[1].split(end)[0]
+                if "transcript = " in schema_fix: 
+                        schema_fix = schema_fix.replace("transcript =","").strip()
+        if start2 in schema: 
+                schema_fix = read_code.split(start)[1].split(end)[0]
+                if "transcript = " in schema_fix: 
+                        schema_fix = schema_fix.replace("transcript =","").strip()
+        print(schema_fix)
         print("=======================================\n") 
         if not os.path.exists(results_dir):
                 os.makedirs(results_dir)
         file = open(f"{results_dir}/{transcript_name}.json", "w+")
-        file.write(schema)  
+        file.write(schema_fix)  
+        file.close()
+        path = f"{results_dir}/{transcript_name}.json"
+        return path
 
-def parse_schema(schema_path):
-        with open(schema_path, 'r') as file:
-                data = json.load(file)
-        name = os.path.basename(schema_path)
-        transcript_name, _ = name.split(".")
-        student = data.get("Student", {})
-        ap_credits = data.get("AP_Credits", [])
-        courses_taken = data.get("Courses_Taken", [])
-        approval = data.get("Approval", [])
-        deviations = data.get("Deviations", [])
-        cumulative_gpa = data.get("Cumulative_GPA", {})
-
-        # Accessing student information
-        student_name = student.get("Name")
-        student_program = student.get("Program")
-        student_id = student.get("StudentID")
-        student_coterm = student.get("Coterm")
-
-        print(f"Student Name: {student_name}, Program: {student_program}, ID: {student_id}, Coterm: {student_coterm}")
-
-        # Accessing AP Credits
-        for credit in ap_credits:
-                advanced_placement = credit.get("Advanced_Placement")
-                earned_units = credit.get("Earned_Units")
-                print(f"AP Credit: {advanced_placement}, Earned Units: {earned_units}")
-
-        # Accessing Courses Taken
-        for course in courses_taken:
-                course_id = course.get("Course_ID")
-                title = course.get("Title")
-                earned_units = course.get("Earned_Units")
-                grade = course.get("Grade")
-                print(f"Course ID: {course_id}, Title: {title}, Earned Units: {earned_units}, Grade: {grade}")
-
-        # Accessing Approval Information
-        for app in approval:
-                approved = app.get("Approved")
-                approved_by = app.get("Approved_By")
-                approved_course_id = app.get("Approved_Course_ID")
-                print(f"Approved: {approved}, Approved By: {approved_by}, Approved Course ID: {approved_course_id}")
-
-        # Accessing Approval Information
-        for dev in deviations:
-                approved_by = app.get("Approved_By")
-                dev_ourse_id = app.get("Deviated_Course_ID")
-                print(f"deviations: {dev}, Approved By: {approved_by}, Deviated Course ID: {dev_ourse_id}")
-        # Accessing Cumulative GPA
-        undergrad_gpa = cumulative_gpa.get("Undergrad")
-        graduate_gpa = cumulative_gpa.get("Graduate")
-
-        print(f"Undergrad GPA: {undergrad_gpa}, Graduate GPA: {graduate_gpa}")
-        return student, ap_credits, courses_taken, approval, cumulative_gpa
         
-        
-transcript_path = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
-requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
-schema_path = "../schema_results/stanford_transcript1.json"
-#process_individual_transcript(RESULTS_DIR, transcript_path)
-parse_schema(schema_path)
+def automated_code_fixer(path, iterations):
+        for i in range(iterations):
+                cmd = ["python", "schema/schema_test.py", "--t", path]
+                process = subprocess.Popen(cmd, 
+                           stdout=subprocess.PIPE, 
+                           stderr=subprocess.PIPE)
+
+                # wait for the process to terminate
+                out, err = process.communicate()
+                print(f"out:\n {out}")
+                print(f"err:\n {err}")
+                errcode = process.returncode
+                if "Error" in err.decode("utf-8"):
+                        code = open(path, "r")
+                        print("We are going to prompt for transcript json schema fix...\n")
+                        prompt = f"""
+                        Given the error message {err.decode("utf-8")}, please fix the following json file {code.read()} while
+                        preserving the original substance.
+                        """
+                        fixed_code =gpt_infer(prompt)
+                        print(f"===============error message=======================\n")
+                        print(err.decode("utf-8"))
+                        print(f"==============={i} iteration of fixing code=======================\n")
+                        start = "```python"
+                        start2 = "```json"
+                        end = "```"
+                        if start in fixed_code: 
+                                reformatted_fixed_code = fixed_code.split(start)[1].split(end)[0]
+                        if "transcript =" in fixed_code: 
+                                reformatted_fixed_code = fixed_code.replace("transcript =","")
+                        if start2 in fixed_code: 
+                                reformatted_fixed_code = fixed_code.split(start2)[1].split(end)[0]
+                        else:
+                                reformatted_fixed_code = fixed_code
+                        file = open(f"{path}", "w+")
+                        file.write(reformatted_fixed_code)
+                        file.close()
+                else:
+                        break
+        return path 
+
+def process(transcript_path):
+        path = process_individual_transcript(RESULTS_DIR, transcript_path)
+        val = automated_code_fixer(path, 30)
+        return val
+
+if __name__ == "__main__":
+        transcript_path = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
+        requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
+        schema_path = "../schema_results/stanford_transcript1.json"
+
+
+

@@ -8,6 +8,7 @@ from openai import OpenAI
 
 
 RESULTS_DIR = "../raw_output3"
+SMT_DIR = "../smt_output"
 STANFORD_CS_CORE_WEBLINK = "https://www.cs.stanford.edu/bs-core-requirements"
 STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-senior-project"
 STANFORD_SOE_SCIENCE_WEBLINK = "https://ughb.stanford.edu/courses/approved-courses/science-courses-2023-24"
@@ -120,13 +121,139 @@ def get_requirement(doc, requirement):
         print(individual_requirement)
         return  individual_requirement
         
+def translate_to_smt(dir, requirement_path, requirement): 
+        if not os.path.exists(dir):
+                os.makedirs(dir)
+        name = os.path.basename(requirement_path)
+        requirement_name, _ = name.split(".")
+        requirement_out = get_requirement(requirement_path, requirement)
+        formula_prompt =f"""
+        Your task is to generate cvc5 smt solver formulas for the constraints in each requirement {requirement_out} you have identified.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {{
+        "Student": {{
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        }},
+        "AP_Credits": [
+                {{"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }}
+        ]
+        "Courses_Taken": [
+                {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}},
+                {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}}, 
+                ...
+        ]
+        "Deviations": [
+                {{
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        }},
+          {{
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        }},
+        ]
+        "Approval": [
+                {{
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        }},
+          {{
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        }},
+        ]    
+        "Cumulative_GPA": {{
+                "Undergrad": Real,
+                "Graduate": Real,
+        }},
+        }}
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for each constraint in the 
+        {requirement_out}. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+                ```
+		(set-logic ALL)
+
+		(declare-const course1 String)
+		(declare-const course2 String)
+
+		;; Course1 is \in transcript[*].course
+		;; Course2 is \in transcript[*].course
+        (and (= course1 course) for course in Transcript.get("Courses_Taken")
+        (= course1 course) for course in Transcript.get("Courses_Taken"))
+
+
+		;; Course1 is in one of (100,101,102)
+		;; Course2 is in one of (101, 102, 103)
+	
+		(and (or(= course1 "CS 100")
+		(= course1 "CS 101")
+		(= course1 "CS 102"))
+		(or(= course2 "CS 101")
+		(= course2 "CS 102")
+		(= course2 "CS 103")))
+
+
+		;; The same course cannot be used to satisfy two different requirements:
+		 (not (= course1 course2))
+		
+
+		;; final formula:
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+		(check-sat)
+		```
+		Remember, it's very important that you generate smt formulas that PARAMETRIZE
+		course variables to check variables in a given transcript against requirements. Please only generate a
+  		giant prameterized formula like the following:  
+		```smt
+		(set-logic ALL)
+
+		(declare-const course1 String)
+		(declare-const course2 String)
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+		(check-sat)
+		```
+		Your task is to generate a parameterized formula reflecting the correct logic of {requirement_out}.
+		"""
+        formula_out = gpt_infer(formula_prompt)
+        output_filename = requirement.replace(" ", "_")
+        file = open(f"{dir}/{output_filename.lower()}_formulas", "w+")
+        file.write("=======================prompt===========================\n")
+        file.write(formula_prompt)
+        file.write("=======================formula ouput===========================\n")
+        file.write(formula_out)
+        prior_output = open(f"{dir}/{output_filename.lower()}_formulas", "r")
+        return requirement_out, formula_out
+
+def ms_to_smt(requirement_path):
+        reqs = ["ELECTIVES", "BREADTH REQUIREMENT", "ARTIFICIAL INTELLEGIENCE DEPTH", "FOUNDATIONS REQUIERMENT",\
+                "SIGNIFICANT IMPLEMENTATION REQUIREMENT", "ADDITIONAL REQUIREMENT"]
+        req_out = []
+        formulas = []
+        for req in reqs:
+                requirement_out, formula_out = translate_to_smt(SMT_DIR, requirement_path, req)
+                req_out.append(requirement_out)
+                formulas.append(formula_out)
+        return reqs, req_out, formulas
+
 def translate_requirements_to_formal_statements(requirement_path, requirement): 
         name = os.path.basename(requirement_path)
         requirement_name, _ = name.split(".")
         requirement_out = get_requirement(requirement_path, requirement)
         formula_prompt =f"""
         Your task is to generate cvc5 python solver formulas for the constraints in each requirement {requirement_out} you have identified.
-        Your formulas should include every constrint, including the ones related to advisor approval and deviations.
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
         The formulas will check satisfiability of a given transcript schema template as input in the following format: 
                 ```json
         transcript = {{
@@ -271,22 +398,27 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         python_file.write(reformatted_formula_compile)
         python_file_name = f"{output_filename.lower()}_formulas.py"
         return python_file_name
- 
+
+
 def main():
         requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
         reqs = ["ELECTIVES", "BREADTH REQUIREMENT", "ARTIFICIAL INTELLEGIENCE DEPTH", "FOUNDATIONS REQUIERMENT",\
                 "SIGNIFICANT IMPLEMENTATION REQUIREMENT", "ADDITIONAL REQUIREMENT"]
-        '''
+        
         for req in reqs:
+                print(f"fixing {req}...\n")
                 python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
                 return_value = automated_code_fixer(python_file_name, 30)
                 if return_value == True: 
                         print("code fix is completed\n")
         '''
-        python_file_name = translate_requirements_to_formal_statements(requirement_path, "SIGNIFICANT IMPLEMENTATION REQUIREMENT")
+        python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
         return_value = automated_code_fixer(python_file_name, 30)
         if return_value == True: 
                 print("code fix is completed\n")
+        for req in reqs:
+                python_file_name = translate_to_smt(SMT_DIR, requirement_path, req)
+        '''
 
 if __name__ == "__main__":
         main()

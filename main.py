@@ -6,65 +6,57 @@ import sys
 import pygsheets
 import gspread
 import pandas as pd
-from oauth2client.service_account import ServiceAccountCredentials
-from schema.requirements_formula import  check_artificial_depth
+from formulas.parse_requirements import ms_to_smt
+from schema.requirements_formula import (
+        check_breadth,
+        check_foundations,
+        check_significant_implementation,
+        check_artificial_depth,
+        check_electives)
+from schema.process import process
 
-def get_worksheet(credentials): 
-        scope = ['https://spreadsheets.google.com/feeds','https://www.googleapis.com/auth/drive']
-        creds = ServiceAccountCredentials.from_json_keyfile_name('./credentials.json', scope)
-        client = gspread.authorize(creds)
-        SAMPLE_RANGE_NAME = "GenieWS_requirements"
-        sheet = client.open("GenieWS_requirements")
-        course_sheet = sheet.get_worksheet(0)
-        df = pd.DataFrame.from_dict(course_sheet.get_all_records())
-        print(df.head())
-        return df, sheet 
+DIR = "./schema_results"
 
-def run_analysis(transcript, requirement_doc, specification): 
-        result = check_artificial_depth(transcript)
-        return result
-
-def tell_agent(credentials, df, sheet, transcript_path, requirement_doc, specification): 
-        with open(transcript_path, 'r') as file:
-                transcript = json.load(file)
-        result = run_analysis(transcript, requirement_doc, specification)
-        df = pd.DataFrame(df)
-        if result.isSat() == False: 
-                new_row = pd.DataFrame({'Kind': ["Internal"]})
-                new_row = pd.DataFrame({"Type": ["str"]})
-                new_row = pd.DataFrame({"Name": ["str"]})
-                new_row = pd.DataFrame({"Enum Values": ["MS AI"]})
-                new_row = pd.DataFrame({"Description": [f"{specification} is not met"]})
-                new_row = pd.DataFrame({"Action": [f"if self.ArtificialIntelligenceCourseTaken == False: >say('You need to take more AI depth courses to satisfy requirements')"]})
-                df = pd.concat([df, new_row], ignore_index=True)
-        print(df.tail(1))
-        client = gspread.authorize(credentials)
-        #sheet.add_worksheet(rows=df.shape[0],cols=df.shape[1],title=f"{specification.replace('', '_').lower()}")
-        #new_action_sheet = sheet.get_worksheet(1)
-        #new_action_sheet.insert_rows(df.head(1).values.tolist())
-        file_name = 'policy.xlsx'
-        df.to_excel(file_name)
+def run_analysis(transcript_path, requirement_doc):
         
-  
+        print("Let's first translate the uploaded document into SMT fomulas...\n") 
+        reqs, req_out, formulas = ms_to_smt(requirement_doc)
+        for i in range(len(reqs)):
+                print(f"for {reqs[i]} in the document, we first break it down to {req_out[i]},\
+                      and then we have the following formulas: \n")
+                print(formulas[i])    
+        print("Let's parse the given transcript into a json schema...\n")  
+        transcript = process(transcript_path)
+        foundations_result = check_foundations(transcript)
+        print(f"We obtained the following result from solving foundations requirement constraints: \n")
+        print(foundations_result)
+        breadth_result = check_breadth(transcript)
+        print(f"We obtained the following result from solving breadth requirement constraints: \n")
+        print(breadth_result)
+        significant_implementation_result = check_significant_implementation(transcript)
+        print(f"We obtained the following result from solving significant_implementation  requirement constraints: \n")
+        print(significant_implementation_result)
+        depth_result = check_artificial_depth(transcript)
+        print(f"We obtained the following result from solving depth requirement constraints: \n")
+        print(depth_result)
+        electives_result = check_electives(transcript)
+        print(f"We obtained the following result from solving elective requirement constraints: \n")
+        print(electives_result)
                 
 
 def parse_arguments(args):
         parser = argparse.ArgumentParser(sys.argv[0])
-        parser.add_argument('--t', type=str, required=False, default='./schema_results/stanford_transcript1.json')
-        parser.add_argument('--r', type=str, required=False, default='./program_sheets/Stanford_AI_MS.pdf')
-        parser.add_argument('--s', type=str, required=False, default='FOUNDATIONS REQUIREMENT')
+        parser.add_argument('--t', type=str, required=True, help="Please uploading a transcript", default="/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf")
+        parser.add_argument('--r', type=str, required=True, help="Please uploading a requirement document", default='./program_sheets/Stanford_AI_MS.pdf')
         args = parser.parse_args()
         return parser.parse_args()
 
 def main():
         args = parse_arguments(sys.argv[1:])
-        if args.t == True: 
-                pass
-        if args.r == True:
-                pass
-        creds = ServiceAccountCredentials.from_json_keyfile_name('credentials.json')
-        df, sheet = get_worksheet(creds)
-        tell_agent(creds, df, sheet, args.t, args.r, args.s)
-main()
+        print(run_analysis(args.t, args.r))
+
+        
+if __name__ == "__main__":
+        main()
         
         

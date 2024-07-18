@@ -1,0 +1,725 @@
+Based on the provided course requirement document and transcript for the MSCS Program in Artificial Intelligence Specialization, a precise, formal, and rigorous intermediate representation can be specified as follows:
+
+### Entities:
+1. **Course**
+   - Attributes: `course_number`, `course_title`, `units`, `is_taken_at_stanford`, `is_undergraduate`, `grade`
+   
+2. **Requirement**
+   - Attributes: `requirement_type`, `minimum_units`, `maximum_units`, `courses` (list of Course entities)
+   
+3. **Approval**
+   - Attributes: `approval_type`, `approved_by`, `details`
+   
+4. **ProgramSheet**
+   - Attributes: `student_name`, `advisor_name`, `date`, `student_id`, `email`, `degree_conferral_date`, `is_hcp`, `is_coterm`, `foundations_requirement` (Requirement), `significant_implementation_requirement` (Requirement), `breadth_requirement` (Requirement), `ai_depth_requirement` (Requirement), `electives` (Requirement), `total_units`, `advisor_signature`, `approval_notes`
+
+### Relations:
+1. **Satisfies**
+   - Attributes: `course`, `requirement`
+   
+2. **ApprovedBy** 
+   - Attributes: `approval`, `approver`
+   
+3. **BelongsTo**
+   - Attributes: `course`, `requirement`
+
+### Constraints:
+1. For each `Course` in the `significant_implementation_requirement`, `course.is_taken_at_stanford` must be `true`.
+2. Each `Course` in `breadth_requirement` must belong to a different `breadth_area`.
+3. In `ai_depth_requirement`:
+   - `minimum_units` for total depth courses must be at least 21 units.
+   - If applicable, a maximum of 6 units of `CS 399` can be counted towards the depth.
+4. Maximum units for `foundations_requirement` should not exceed 10 units.
+5. Total units for the MSCS degree must be at least 45.
+6. At least 36 units in breadth and depth must be taken for a letter grade.
+7. Average grade must be at least B (3.0 GPA).
+8. Units previously applied towards BS requirements should not be counted towards MSCS requirements.
+
+### Functions:
+1. **CalculateTotalUnits** of `ProgramSheet`
+2. **VerifyUnitCount** within each `Requirement`
+3. **VerifyGrade** (average GPA calculation)
+4. **CheckBreadthAreaDiversity** for `breadth_requirement`
+
+### Formal Semantics for Intermediate Representation:
+
+#### Course Representation:
+```
+Course(course_number: String, course_title: String, units: Integer, is_taken_at_stanford: Boolean, is_undergraduate: Boolean, grade: String)
+```
+
+#### Requirement Representation:
+```
+Requirement(requirement_type: String, minimum_units: Integer, maximum_units: Integer, courses: List[Course])
+```
+
+#### Approval Representation:
+```
+Approval(approval_type: String, approved_by: String, details: String)
+```
+
+#### ProgramSheet Representation:
+```
+ProgramSheet(student_name: String, advisor_name: String, date: Date, student_id: String, email: String, degree_conferral_date: Date, is_hcp: Boolean, is_coterm: Boolean, foundations_requirement: Requirement, significant_implementation_requirement: Requirement, breadth_requirement: Requirement, ai_depth_requirement: Requirement, electives: Requirement, total_units: Integer, advisor_signature: String, approval_notes: String)
+```
+
+### Relationships and Constraints:
+
+#### Satisfies Relationship:
+```
+Satisfies(course: Course, requirement: Requirement)
+```
+
+#### ApprovedBy Relationship:
+```
+ApprovedBy(approval: Approval, approver: String)
+```
+
+#### BelongsTo Relationship:
+```
+BelongsTo(course: Course, requirement: Requirement)
+```
+
+#### Constraint Examples:
+1. Constraint on `significant_implementation_requirement`:
+```
+forall(c in significant_implementation_requirement.courses, c.is_taken_at_stanford = true)
+```
+
+2. Constraint for `breadth_requirement` course diversity:
+```
+unique(breadth_requirement.courses.breadth_area) = breadth_requirement.courses.size
+```
+
+3. Minimum units in `ai_depth_requirement`:
+```
+sum(ai_depth_requirement.courses.units) >= 21
+```
+
+4. Total units calculation:
+```
+CalculateTotalUnits(ProgramSheet) = sum of all units in all requirements
+```
+
+5. GPA Calculation:
+```
+VerifyGrade(ProgramSheet) = average_grade(ProgramSheet) >= 3.0
+```
+
+#### Formal Functions:
+
+**CalculateTotalUnits**:
+```
+function CalculateTotalUnits(program_sheet: ProgramSheet): Integer {
+    total_units = sum(program_sheet.foundations_requirement.courses.units) 
+                + sum(program_sheet.significant_implementation_requirement.courses.units) 
+                + sum(program_sheet.breadth_requirement.courses.units) 
+                + sum(program_sheet.ai_depth_requirement.courses.units) 
+                + sum(program_sheet.electives.courses.units)
+    return total_units
+}
+```
+
+**VerifyUnitCount**:
+```
+function VerifyUnitCount(requirement: Requirement): Boolean {
+    units_within_limits = requirement.minimum_units <= sum(requirement.courses.units) <= requirement.maximum_units
+    return units_within_limits
+}
+```
+
+**VerifyGrade**:
+```
+function VerifyGrade(program_sheet: ProgramSheet): Boolean {
+    average_grade = (sum of all course grades in numeric terms / total number of courses)
+    return average_grade >= 3.0
+}
+```
+
+**CheckBreadthAreaDiversity**:
+```
+function CheckBreadthAreaDiversity(requirement: Requirement): Boolean {
+    unique_areas = unique(requirement.courses.breadth_area)
+    return unique_areas.size == requirement.courses.size
+}
+```
+
+This formal intermediate representation can be utilized to build a semantic parser and facilitate the construction of a compiler for parsing natural language into this formal language specific to the given course requirements and transcript data. 
+
+=======================================
+To accomplish the task of parsing the given intermediate representation into an abstract syntax tree (AST), you'll need to define the AST data structures and then write a parser that transforms the intermediate representation into these AST nodes. Below is the Python code that defines the AST classes according to the provided formal semantics and an example parser to process the intermediate representation into the AST.
+
+### Define the AST Classes
+
+```python
+from typing import List, Union
+
+# AST Node Classes
+class Course:
+    def __init__(self, course_number: str, course_title: str, units: int, is_taken_at_stanford: bool, is_undergraduate: bool, grade: str):
+        self.course_number = course_number
+        self.course_title = course_title
+        self.units = units
+        self.is_taken_at_stanford = is_taken_at_stanford
+        self.is_undergraduate = is_undergraduate
+        self.grade = grade
+
+    def __repr__(self):
+        return f"Course({self.course_number}, {self.course_title}, {self.units}, {self.is_taken_at_stanford}, {self.is_undergraduate}, {self.grade})"
+
+class Requirement:
+    def __init__(self, requirement_type: str, minimum_units: int, maximum_units: int, courses: List[Course]):
+        self.requirement_type = requirement_type
+        self.minimum_units = minimum_units
+        self.maximum_units = maximum_units
+        self.courses = courses
+
+    def __repr__(self):
+        return f"Requirement({self.requirement_type}, {self.minimum_units}, {self.maximum_units}, {self.courses})"
+
+class Approval:
+    def __init__(self, approval_type: str, approved_by: str, details: str):
+        self.approval_type = approval_type
+        self.approved_by = approved_by
+        self.details = details
+
+    def __repr__(self):
+        return f"Approval({self.approval_type}, {self.approved_by}, {self.details})"
+
+class ProgramSheet:
+    def __init__(self, student_name: str, advisor_name: str, date: str, student_id: str, email: str, degree_conferral_date: str, 
+                 is_hcp: bool, is_coterm: bool, foundations_requirement: Requirement, significant_implementation_requirement: Requirement, 
+                 breadth_requirement: Requirement, ai_depth_requirement: Requirement, electives: Requirement, total_units: int, 
+                 advisor_signature: str, approval_notes: str):
+        self.student_name = student_name
+        self.advisor_name = advisor_name
+        self.date = date
+        self.student_id = student_id
+        self.email = email
+        self.degree_conferral_date = degree_conferral_date
+        self.is_hcp = is_hcp
+        self.is_coterm = is_coterm
+        self.foundations_requirement = foundations_requirement
+        self.significant_implementation_requirement = significant_implementation_requirement
+        self.breadth_requirement = breadth_requirement
+        self.ai_depth_requirement = ai_depth_requirement
+        self.electives = electives
+        self.total_units = total_units
+        self.advisor_signature = advisor_signature
+        self.approval_notes = approval_notes
+
+    def __repr__(self):
+        return f"ProgramSheet({self.student_name}, {self.advisor_name}, {self.date}, {self.student_id}, {self.email}, " \
+               f"{self.degree_conferral_date}, {self.is_hcp}, {self.is_coterm}, {self.foundations_requirement}, " \
+               f"{self.significant_implementation_requirement}, {self.breadth_requirement}, {self.ai_depth_requirement}, " \
+               f"{self.electives}, {self.total_units}, {self.advisor_signature}, {self.approval_notes})"
+```
+
+### Parser Implementation
+
+Below is the example parser code that processes the intermediate representation and constructs the AST nodes.
+
+```python
+import json
+
+class Parser:
+    def parse_course(self, course_data):
+        return Course(
+            course_number=course_data['course_number'],
+            course_title=course_data['course_title'],
+            units=course_data['units'],
+            is_taken_at_stanford=course_data['is_taken_at_stanford'],
+            is_undergraduate=course_data['is_undergraduate'],
+            grade=course_data['grade']
+        )
+
+    def parse_requirement(self, requirement_data):
+        courses = [self.parse_course(course) for course in requirement_data['courses']]
+        return Requirement(
+            requirement_type=requirement_data['requirement_type'],
+            minimum_units=requirement_data['minimum_units'],
+            maximum_units=requirement_data['maximum_units'],
+            courses=courses
+        )
+
+    def parse_approval(self, approval_data):
+        return Approval(
+            approval_type=approval_data['approval_type'],
+            approved_by=approval_data['approved_by'],
+            details=approval_data['details']
+        )
+    
+    def parse_program_sheet(self, program_sheet_data):
+        foundations_requirement = self.parse_requirement(program_sheet_data['foundations_requirement'])
+        significant_implementation_requirement = self.parse_requirement(program_sheet_data['significant_implementation_requirement'])
+        breadth_requirement = self.parse_requirement(program_sheet_data['breadth_requirement'])
+        ai_depth_requirement = self.parse_requirement(program_sheet_data['ai_depth_requirement'])
+        electives = self.parse_requirement(program_sheet_data['electives'])
+        
+        return ProgramSheet(
+            student_name=program_sheet_data['student_name'],
+            advisor_name=program_sheet_data['advisor_name'],
+            date=program_sheet_data['date'],
+            student_id=program_sheet_data['student_id'],
+            email=program_sheet_data['email'],
+            degree_conferral_date=program_sheet_data['degree_conferral_date'],
+            is_hcp=program_sheet_data['is_hcp'],
+            is_coterm=program_sheet_data['is_coterm'],
+            foundations_requirement=foundations_requirement,
+            significant_implementation_requirement=significant_implementation_requirement,
+            breadth_requirement=breadth_requirement,
+            ai_depth_requirement=ai_depth_requirement,
+            electives=electives,
+            total_units=program_sheet_data['total_units'],
+            advisor_signature=program_sheet_data['advisor_signature'],
+            approval_notes=program_sheet_data['approval_notes']
+        )
+
+# Example usage
+if __name__ == "__main__":
+    # Example JSON representing the intermediate representation
+    program_sheet_json = """
+    {
+        "student_name": "John Doe",
+        "advisor_name": "Jane Smith",
+        "date": "2022-01-01",
+        "student_id": "123456789",
+        "email": "johndoe@stanford.edu",
+        "degree_conferral_date": "2023-06-01",
+        "is_hcp": false,
+        "is_coterm": true,
+        "foundations_requirement": {
+            "requirement_type": "Foundations",
+            "minimum_units": 0,
+            "maximum_units": 10,
+            "courses": [
+                {
+                    "course_number": "CS103",
+                    "course_title": "Logic, Automata & Complexity",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS109",
+                    "course_title": "Probability",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "B+"
+                }
+            ]
+        },
+        "significant_implementation_requirement": {
+            "requirement_type": "Significant Implementation",
+            "maximum_units": 3,
+            "minimum_units": 3,
+            "courses": [
+                {
+                    "course_number": "CS140",
+                    "course_title": "Operating Systems and System Programming",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A-"
+                }
+            ]
+        },
+        "breadth_requirement": {
+            "requirement_type": "Breadth",
+            "minimum_units": 9,
+            "maximum_units": 9,
+            "courses": [
+                {
+                    "course_number": "CS154",
+                    "course_title": "Automata and Complexity Theory",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS140",
+                    "course_title": "Operating Systems and System Programming",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                }
+            ]
+        },
+        "ai_depth_requirement": {
+            "requirement_type": "AI Depth",
+            "minimum_units": 21,
+            "maximum_units": null,
+            "courses": [
+                {
+                    "course_number": "CS221",
+                    "course_title": "Artificial Intelligence: Principles and Techniques",
+                    "units": 3,
+                    "is_taken_at_stanford": false,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS229",
+                    "course_title": "Machine Learning",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                }
+            ]
+        },
+        "electives": {
+            "requirement_type": "Elective",
+            "minimum_units": 5,
+            "maximum_units": null,
+            "courses": [
+                {
+                    "course_number": "CS106A",
+                    "course_title": "Programming Methodology",
+                    "units": 5,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": true,
+                    "grade": "A-"
+                }
+            ]
+        },
+        "total_units": 45,
+        "advisor_signature": "Jane Smith",
+        "approval_notes": "Approved for graduation."
+    }
+    """
+
+    program_sheet_data = json.loads(program_sheet_json)
+    parser = Parser()
+    program_sheet = parser.parse_program_sheet(program_sheet_data)
+    print(program_sheet)
+```
+
+### Explanation:
+
+1. **AST Classes:** We define the classes `Course`, `Requirement`, `Approval`, and `ProgramSheet` to represent the nodes in the abstract syntax tree. Each class has an initializer method (`__init__`) to set the attributes and a string representation method (`__repr__`) for printing purposes.
+
+2. **Parser Class:** The `Parser` class contains methods to parse the JSON data into the corresponding AST nodes:
+    - `parse_course`: Converts a dictionary representing a course into a `Course` object.
+    - `parse_requirement`: Converts a dictionary representing a requirement into a `Requirement` object. It also parses the list of courses within the requirement.
+    - `parse_approval`: Converts a dictionary representing an approval into an `Approval` object.
+    - `parse_program_sheet`: Converts the overall JSON data into a `ProgramSheet` object by parsing each section individually.
+
+3. **Example Usage:** We create a string `program_sheet_json` representing the example intermediate representation in JSON format. We then parse this JSON string into a Python dictionary and use the `Parser` class to parse this data into the `ProgramSheet` AST node. Finally, we print the resulting `ProgramSheet` object.
+
+This code provides the foundational structure needed to parse the given intermediate representation into an AST, which can then be used to generate solver formulas and verify complex constraints.=======================================
+To generate cvc5 solver formulas to check the satisfiability of the constraints based on the abstract syntax tree (AST) for a course requirement program, we will transform the provided AST into SMT-LIB format, which is understood by the cvc5 solver. Below are the steps and corresponding code to accomplish this:
+
+### Step 1: Define and Parse the Intermediate Representation to AST
+
+First, ensure the provided classes and parser code are defined and working correctly. Here is the intermediate representation we already have:
+
+```python
+from typing import List
+import json
+
+# AST Node Classes
+class Course:
+    def __init__(self, course_number: str, course_title: str, units: int, is_taken_at_stanford: bool, is_undergraduate: bool, grade: str):
+        self.course_number = course_number
+        self.course_title = course_title
+        self.units = units
+        self.is_taken_at_stanford = is_taken_at_stanford
+        self.is_undergraduate = is_undergraduate
+        self.grade = grade
+
+    def __repr__(self):
+        return f"Course({self.course_number}, {self.course_title}, {self.units}, {self.is_taken_at_stanford}, {self.is_undergraduate}, {self.grade})"
+
+class Requirement:
+    def __init__(self, requirement_type: str, minimum_units: int, maximum_units: int, courses: List[Course]):
+        self.requirement_type = requirement_type
+        self.minimum_units = minimum_units
+        self.maximum_units = maximum_units
+        self.courses = courses
+
+    def __repr__(self):
+        return f"Requirement({self.requirement_type}, {self.minimum_units}, {self.maximum_units}, {self.courses})"
+
+class ProgramSheet:
+    def __init__(self, student_name: str, advisor_name: str, date: str, student_id: str, email: str, degree_conferral_date: str, 
+                 is_hcp: bool, is_coterm: bool, foundations_requirement: Requirement, significant_implementation_requirement: Requirement, 
+                 breadth_requirement: Requirement, ai_depth_requirement: Requirement, electives: Requirement, total_units: int, 
+                 advisor_signature: str, approval_notes: str):
+        self.student_name = student_name
+        self.advisor_name = advisor_name
+        self.date = date
+        self.student_id = student_id
+        self.email = email
+        self.degree_conferral_date = degree_conferral_date
+        self.is_hcp = is_hcp
+        self.is_coterm = is_coterm
+        self.foundations_requirement = foundations_requirement
+        self.significant_implementation_requirement = significant_implementation_requirement
+        self.breadth_requirement = breadth_requirement
+        self.ai_depth_requirement = ai_depth_requirement
+        self.electives = electives
+        self.total_units = total_units
+        self.advisor_signature = advisor_signature
+        self.approval_notes = approval_notes
+
+    def __repr__(self):
+        return f"ProgramSheet({self.student_name}, {self.advisor_name}, {self.date}, {self.student_id}, {self.email}, " \
+               f"{self.degree_conferral_date}, {self.is_hcp}, {self.is_coterm}, {self.foundations_requirement}, " \
+               f"{self.significant_implementation_requirement}, {self.breadth_requirement}, {self.ai_depth_requirement}, " \
+               f"{self.electives}, {self.total_units}, {self.advisor_signature}, {self.approval_notes})"
+
+# Parser Class
+class Parser:
+    def parse_course(self, course_data):
+        return Course(
+            course_number=course_data['course_number'],
+            course_title=course_data['course_title'],
+            units=course_data['units'],
+            is_taken_at_stanford=course_data['is_taken_at_stanford'],
+            is_undergraduate=course_data['is_undergraduate'],
+            grade=course_data['grade']
+        )
+
+    def parse_requirement(self, requirement_data):
+        courses = [self.parse_course(course) for course in requirement_data['courses']]
+        return Requirement(
+            requirement_type=requirement_data['requirement_type'],
+            minimum_units=requirement_data['minimum_units'],
+            maximum_units=requirement_data['maximum_units'],
+            courses=courses
+        )
+    
+    def parse_program_sheet(self, program_sheet_data):
+        foundations_requirement = self.parse_requirement(program_sheet_data['foundations_requirement'])
+        significant_implementation_requirement = self.parse_requirement(program_sheet_data['significant_implementation_requirement'])
+        breadth_requirement = self.parse_requirement(program_sheet_data['breadth_requirement'])
+        ai_depth_requirement = self.parse_requirement(program_sheet_data['ai_depth_requirement'])
+        electives = self.parse_requirement(program_sheet_data['electives'])
+        
+        return ProgramSheet(
+            student_name=program_sheet_data['student_name'],
+            advisor_name=program_sheet_data['advisor_name'],
+            date=program_sheet_data['date'],
+            student_id=program_sheet_data['student_id'],
+            email=program_sheet_data['email'],
+            degree_conferral_date=program_sheet_data['degree_conferral_date'],
+            is_hcp=program_sheet_data['is_hcp'],
+            is_coterm=program_sheet_data['is_coterm'],
+            foundations_requirement=foundations_requirement,
+            significant_implementation_requirement=significant_implementation_requirement,
+            breadth_requirement=breadth_requirement,
+            ai_depth_requirement=ai_depth_requirement,
+            electives=electives,
+            total_units=program_sheet_data['total_units'],
+            advisor_signature=program_sheet_data['advisor_signature'],
+            approval_notes=program_sheet_data['approval_notes']
+        )
+
+# Example usage
+if __name__ == "__main__":
+    # Example JSON representing the intermediate representation
+    program_sheet_json = """
+    {
+        "student_name": "John Doe",
+        "advisor_name": "Jane Smith",
+        "date": "2022-01-01",
+        "student_id": "123456789",
+        "email": "johndoe@stanford.edu",
+        "degree_conferral_date": "2023-06-01",
+        "is_hcp": false,
+        "is_coterm": true,
+        "foundations_requirement": {
+            "requirement_type": "Foundations",
+            "minimum_units": 0,
+            "maximum_units": 10,
+            "courses": [
+                {
+                    "course_number": "CS103",
+                    "course_title": "Logic, Automata & Complexity",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS109",
+                    "course_title": "Probability",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "B+"
+                }
+            ]
+        },
+        "significant_implementation_requirement": {
+            "requirement_type": "Significant Implementation",
+            "maximum_units": 3,
+            "minimum_units": 3,
+            "courses": [
+                {
+                    "course_number": "CS140",
+                    "course_title": "Operating Systems and System Programming",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A-"
+                }
+            ]
+        },
+        "breadth_requirement": {
+            "requirement_type": "Breadth",
+            "minimum_units": 9,
+            "maximum_units": 9,
+            "courses": [
+                {
+                    "course_number": "CS154",
+                    "course_title": "Automata and Complexity Theory",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS140",
+                    "course_title": "Operating Systems and System Programming",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                }
+            ]
+        },
+        "ai_depth_requirement": {
+            "requirement_type": "AI Depth",
+            "minimum_units": 21,
+            "maximum_units": null,
+            "courses": [
+                {
+                    "course_number": "CS221",
+                    "course_title": "Artificial Intelligence: Principles and Techniques",
+                    "units": 3,
+                    "is_taken_at_stanford": false,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                },
+                {
+                    "course_number": "CS229",
+                    "course_title": "Machine Learning",
+                    "units": 3,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": false,
+                    "grade": "A"
+                }
+            ]
+        },
+        "electives": {
+            "requirement_type": "Elective",
+            "minimum_units": 5,
+            "maximum_units": null,
+            "courses": [
+                {
+                    "course_number": "CS106A",
+                    "course_title": "Programming Methodology",
+                    "units": 5,
+                    "is_taken_at_stanford": true,
+                    "is_undergraduate": true,
+                    "grade": "A-"
+                }
+            ]
+        },
+        "total_units": 45,
+        "advisor_signature": "Jane Smith",
+        "approval_notes": "Approved for graduation."
+    }
+    """
+
+    program_sheet_data = json.loads(program_sheet_json)
+    parser = Parser()
+    program_sheet = parser.parse_program_sheet(program_sheet_data)
+    print(program_sheet)
+```
+
+### Step 2: Generate cvc5 Solver Formulas
+
+Now we will define a function that takes this `ProgramSheet` AST and generates the corresponding cvc5 solver formulas in SMT-LIB format.
+
+```python
+def generate_cvc5_solver_formulas(program_sheet: ProgramSheet):
+    formulas = []
+    
+    # Minimum units for AI depth requirement (Constraint 3)
+    ai_depth_units = sum(course.units for course in program_sheet.ai_depth_requirement.courses)
+    formulas.append(f"(assert (>= {ai_depth_units} 21))")
+
+    # Maximum units for foundations requirement (Constraint 4)
+    foundations_units = sum(course.units for course in program_sheet.foundations_requirement.courses)
+    formulas.append(f"(assert (<= {foundations_units} 10))")
+
+    # Total minimum units for the MSCS degree (Constraint 5)
+    formulas.append(f"(assert (>= {program_sheet.total_units} 45))")
+
+    # Units taken for a letter grade (Constraint 6, assuming GPA-calculable courses only)
+    letter_grade_courses = [course for req in (program_sheet.breadth_requirement.courses +
+                                               program_sheet.ai_depth_requirement.courses)
+                            for course in req
+                            if course.grade not in ['CR', 'S']]
+    letter_grade_units = sum(course.units for course in letter_grade_courses)
+    formulas.append(f"(assert (>= {letter_grade_units} 36))")
+  
+    # GPA constraint (Constraint 7), assuming grade conversion and average calculation
+    gpa_courses = program_sheet.foundations_requirement.courses + \
+                  program_sheet.significant_implementation_requirement.courses + \
+                  program_sheet.breadth_requirement.courses + \
+                  program_sheet.ai_depth_requirement.courses + \
+                  program_sheet.electives.courses
+    
+    grade_points = { 'A+': 4.0, 'A': 4.0, 'A-': 3.7, 'B+': 3.3, 'B': 3.0, 'B-': 2.7, 
+                     'C+': 2.3, 'C': 2.0, 'C-': 1.7, 'D+': 1.3, 'D': 1.0, 'D-': 0.7, 'F': 0.0 }
+    
+    total_grade_points = sum(grade_points.get(course.grade, 0) * course.units for course in gpa_courses)
+    gpa = total_grade_points / program_sheet.total_units
+    formulas.append(f"(assert (>= {gpa} 3.0))")
+
+    # Units not counted towards both BS and MSCS (Constraint 8)
+    # Assuming `is_undergraduate` attribute indicates if it was counted towards BS
+    ms_courses = [course for course in gpa_courses if not course.is_undergraduate]
+    ms_units = sum(course.units for course in ms_courses)
+    formulas.append(f"(assert (>= {ms_units} 45))")
+
+    return "\n".join(formulas)
+
+# Example Usage
+if __name__ == "__main__":
+    program_sheet_data = json.loads(program_sheet_json)
+    parser = Parser()
+    program_sheet = parser.parse_program_sheet(program_sheet_data)
+    cvc5_formulas = generate_cvc5_solver_formulas(program_sheet)
+    print(cvc5_formulas)
+```
+
+### Explanation
+
+1. **Generate Minimum Units Constraint**:
+   - We sum the units of all courses in the AI Depth requirement and assert it is at least 21 units.
+
+2. **Generate Maximum Units Constraint**:
+   - We sum the units of all courses in the Foundations requirement and assert it does not exceed 10 units.
+
+3. **Generate Total Minimum Units Constraint**:
+   - We assert that the total units for the MSCS degree are at least 45.
+
+4. **Generate Units Taken for a Letter Grade Constraint**:
+   - We consider only courses in Breadth and Depth taken for a letter grade and assert a minimum of 36 units.
+
+5. **Generate GPA Constraint**:
+   - We calculate the GPA using a predefined mapping of grades to GPA points and assert it is at least 3.0.
+
+6. **Generate Units Not Counted Towards Both BS and MSCS Constraint**:
+   - We assert that no undergraduate course units contribute towards the graduate requirement of at least 45 units.
+
+The above code will generate SMT-LIB constraints that can be used with the cvc5 solver to ensure the program sheet satisfies all specified constraints.=======================================

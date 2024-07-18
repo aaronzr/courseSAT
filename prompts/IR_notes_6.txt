@@ -1,0 +1,572 @@
+To facilitate the construction of a semantic parser capable of translating natural language into a formal representation for the MSCS program requirements, the intermediate representation needs to capture entities, relations, constraints, and functions rigorously. Below is the formal intermediate representation.
+
+### Entities:
+1. **Student**
+   - Attributes: `Name`, `StudentID`, `Advisor`, `Email`, `DegreeConferralDate`, `HCP`, `Coterm`
+2. **Course**
+   - Attributes: `CourseNumber`, `Title`, `Units`, `Grade`
+3. **Requirement**
+   - Subtypes: `Foundations`, `SignificantImplementation`, `Breadth`, `AI_Depth`, `Elective`
+   - Attributes (generic): `RequirementType`, `Satisfied`
+
+### Relations:
+1. **Student-Takes-Course**:
+   - Attributes: `Completed`, `ForMS`, `Waivers`
+2. **Course-Satisfies-Requirement**
+3. **Requirement-Has-SubRequirement**
+   - Attributes: `Weight`, `Mandatory`
+
+### Constraints:
+1. **General Constraints for MSCS Degree**:
+   - `TotalUnits >= 45`
+   - `MinimumGPA >= 3.0`
+   - `AtLeastLetterGradeUnits >= 36`
+   - `MaximumFoundationsUnits <= 10`
+   - `Maximum1-2UnitSeminarUnits <= 3`
+
+2. **Foundations Requirement**:
+   - `Number of Courses = 5`
+   - `WaiverAllowed = True`
+   - Valid courses: 
+     - `Logic, Automata & Complexity (CS103)`
+     - `Probability (CS109, Stat116, CME106, MS&E220, or EE178)`
+     - `Algorithmic Analysis (CS161)`
+     - `Computer Organ & Sys (CS107 or 107E)`
+     - `Principles of Computer Systems (CS110 or CS111)`
+
+3. **Significant Implementation Requirement**:
+   - `LetterGradeRequired = True`
+   - `MustBeTakenAtStanford = True`
+   - `ValidCourses`: 
+     - List of valid course numbers
+
+4. **Breadth Requirement**:
+   - `Number of Courses = 3`
+   - `EachCourseFromDifferentArea = True`
+   - Valid areas and courses:
+     - `Area A: Mathematical and Theoretical Foundations`
+     - `Area B: Computer Systems`
+     - `Area C: Applications`
+     - `Area D: Computing and Society`
+
+5. **Artificial Intelligence Depth Requirement**:
+   - `LetterGradeRequired = True`
+   - `AtLeast21UnitsFromDepth = True`
+   - Valid categories:
+     - `Category A: CS 221`
+     - `Category B: At least four of specified courses`
+     - `Category C: Additional courses to meet total 21 units`
+
+6. **Electives Requirement**:
+   - `FulfillsRemainingUnitsFor45`
+   - `ValidElectives`: 
+     - `CS courses numbered above 111 (excluding CS196, CS198, and CS390A/B/C)`
+     - `Non-CS courses numbered above 100, related to the degree program, and faculty-approved`
+
+### Functions:
+1. **ComputeTotalUnits(studentID)**:
+   - Calculate the total number of units taken by a student.
+
+2. **ComputeGPA(studentID)**:
+   - Calculate the GPA for the courses counted towards the MSCS degree.
+
+3. **CheckCourseForRequirement(courseID, requirementType)**:
+   - Verify if a course satisfies a given requirement.
+
+4. **ValidateMSCSCompletion(studentID)**:
+   - Validate that a student meets all the criteria for the MSCS degree including core, breadth, depth, and elective requirements.
+
+5. **CheckWaiverApproval(studentID, courseID)**:
+   - Check if a waiver has been approved for a foundation or other required course.
+
+### Example Formal Representation of One Requirement:
+```plaintext
+Requirement: Foundations
+Attributes: 
+  RequirementType = "Foundations"
+  Satisfied = False
+
+SubRequirements: 
+  - Course: CS103
+    Attributes: 
+      Satisfied = False
+      WaiverAllowed = True
+
+  - Course: Probability
+    Attributes:
+      Satisfied = False
+      WaiverAllowed = True
+
+  - Course: CS161
+    Attributes:
+      Satisfied = False
+      WaiverAllowed = True
+
+  - Course: CS107 or CS107E
+    Attributes:
+      Satisfied = False
+      WaiverAllowed = True
+
+  - Course: CS110 or CS111
+    Attributes:
+      Satisfied = False
+      WaiverAllowed = True
+```
+
+This representation defines a rigorous intermediate structure, ensuring precise parsing of the course requirement sheet and student transcript data into a formal language for later compiler construction.=======================================
+To parse a given intermediate representation into an abstract syntax tree (AST) in Python, we need a structured approach to define the various nodes of the AST, parse the intermediate representation into these nodes, and then construct the AST. Here's how we can do it step-by-step:
+
+1. **Define the class structures for the AST nodes**.
+2. **Implement a parser to transform the intermediate representation into these AST nodes**.
+3. **Construct the AST based on the parsed data**.
+
+Let's start:
+
+### Step 1: Define AST Node Classes
+
+First, we'll define classes for the different kinds of nodes in the AST.
+
+```python
+from typing import List, Dict, Union
+
+class ASTNode:
+    def __init__(self):
+        self.children = []  # All nodes can have children.
+
+class Student(ASTNode):
+    def __init__(self, name, student_id, advisor, email, degree_confer_date, hcp, coterm):
+        super().__init__()
+        self.name = name
+        self.student_id = student_id
+        self.advisor = advisor
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.hcp = hcp
+        self.coterm = coterm
+
+class Course(ASTNode):
+    def __init__(self, course_number, title, units, grade):
+        super().__init__()
+        self.course_number = course_number
+        self.title = title
+        self.units = units
+        self.grade = grade
+
+class Requirement(ASTNode):
+    def __init__(self, requirement_type, satisfied):
+        super().__init__()
+        self.requirement_type = requirement_type
+        self.satisfied = satisfied
+        self.subrequirements = []
+
+class SubRequirement(ASTNode):
+    def __init__(self, course, satisfied, waiver_allowed=False):
+        super().__init__()
+        self.course = course
+        self.satisfied = satisfied
+        self.waiver_allowed = waiver_allowed
+
+class Relation(ASTNode):
+    def __init__(self, relation_type, attributes):
+        super().__init__()
+        self.relation_type = relation_type
+        self.attributes = attributes
+
+class Constraint(ASTNode):
+    def __init__(self, constraint_type, condition):
+        super().__init__()
+        self.constraint_type = constraint_type
+        self.condition = condition
+```
+
+### Step 2: Intermediate Representation Parsing
+
+Next, we'll implement a parser to convert the intermediate representation into instances of these classes and build the tree.
+
+```python
+class Parser:
+    def __init__(self, intermediate_representation):
+        self.intermediate_representation = intermediate_representation
+        self.ast = ASTNode()  # Root node
+
+    def parse_student(self, student_data):
+        student = Student(
+            name=student_data['Name'],
+            student_id=student_data['StudentID'],
+            advisor=student_data['Advisor'],
+            email=student_data['Email'],
+            degree_confer_date=student_data['DegreeConferralDate'],
+            hcp=student_data['HCP'],
+            coterm=student_data['Coterm']
+        )
+        self.ast.children.append(student)
+        return student
+
+    def parse_courses(self, courses_data):
+        courses = []
+        for course_data in courses_data:
+            course = Course(
+                course_number=course_data['CourseNumber'],
+                title=course_data['Title'],
+                units=course_data['Units'],
+                grade=course_data['Grade']
+            )
+            courses.append(course)
+        return courses
+
+    def parse_requirements(self, requirements_data):
+        requirements = []
+        for requirement_data in requirements_data:
+            requirement = Requirement(
+                requirement_type=requirement_data['RequirementType'],
+                satisfied=requirement_data['Satisfied']
+            )
+            for subreq_data in requirement_data.get('SubRequirements', []):
+                subreq = SubRequirement(
+                    course=subreq_data['Course'],
+                    satisfied=subreq_data['Satisfied'],
+                    waiver_allowed=subreq_data.get('WaiverAllowed', False)
+                )
+                requirement.subrequirements.append(subreq)
+            requirements.append(requirement)
+        return requirements
+
+    def parse_relations(self, relations_data):
+        relations = []
+        for relation_data in relations_data:
+            relation = Relation(
+                relation_type=relation_data['RelationType'],
+                attributes=relation_data['Attributes']
+            )
+            relations.append(relation)
+        return relations
+
+    def parse_constraints(self, constraints_data):
+        constraints = []
+        for constraint_data in constraints_data:
+            constraint = Constraint(
+                constraint_type=constraint_data['ConstraintType'],
+                condition=constraint_data['Condition']
+            )
+            constraints.append(constraint)
+        return constraints
+
+    def parse(self):
+        ir = self.intermediate_representation
+
+        student = self.parse_student(ir['Student'])
+        courses = self.parse_courses(ir['Courses'])
+        requirements = self.parse_requirements(ir['Requirements'])
+        relations = self.parse_relations(ir['Relations'])
+        constraints = self.parse_constraints(ir['Constraints'])
+
+        student.children.extend(courses)
+        student.children.extend(requirements)
+        self.ast.children.extend(relations)
+        self.ast.children.extend(constraints)
+
+        return self.ast
+```
+
+### Step 3: Usage Example
+
+Assume `intermediate_representation` is a dictionary that matches the structure defined above.
+
+```python
+# Example intermediate representation
+intermediate_representation = {
+    "Student": {
+        "Name": "Alice Smith",
+        "StudentID": "123456",
+        "Advisor": "Dr. Bob",
+        "Email": "alice@stanford.edu",
+        "DegreeConferralDate": "2023-06-15",
+        "HCP": True,
+        "Coterm": False
+    },
+    "Courses": [
+        {"CourseNumber": "CS103", "Title": "Logic, Automata", "Units": 3, "Grade": "A"},
+        {"CourseNumber": "CS161", "Title": "Algorithmic Analysis", "Units": 4, "Grade": "B+"}
+    ],
+    "Requirements": [
+        {
+            "RequirementType": "Foundations",
+            "Satisfied": False,
+            "SubRequirements": [
+                {"Course": "CS103", "Satisfied": True, "WaiverAllowed": False},
+                {"Course": "Probability", "Satisfied": False, "WaiverAllowed": True}
+            ]
+        }
+    ],
+    "Relations": [
+        {"RelationType": "Student-Takes-Course", "Attributes": {"Completed": True, "ForMS": True, "Waivers": []}}
+    ],
+    "Constraints": [
+        {"ConstraintType": "General Constraints for MSCS Degree", "Condition": "TotalUnits >= 45"}
+    ]
+}
+
+# Create a parser instance
+parser = Parser(intermediate_representation)
+
+# Parse to generate AST
+ast = parser.parse()
+
+# Print the AST structure
+def print_ast(node, indent=""):
+    print(indent + type(node).__name__)
+    for child in node.children:
+        print_ast(child, indent + "  ")
+
+print_ast(ast)
+```
+
+This code will print the structure of the AST, confirming that it was built correctly from the intermediate representation. The parser class takes the intermediate representation as input, creates the appropriate node instances, and constructs the tree.=======================================
+Sure, I can guide you through generating correct CVC5 solver formulas to check the constraints from an Abstract Syntax Tree (AST) representation. Let's break it down into steps:
+
+### Step 1: Define AST Node Classes
+We need to define classes to represent each part of the intermediate representation. Below are the classes:
+
+```python
+from typing import List, Dict, Union
+
+class ASTNode:
+    def __init__(self):
+        self.children = []  # All nodes can have children.
+
+class Student(ASTNode):
+    def __init__(self, name, student_id, advisor, email, degree_confer_date, hcp, coterm):
+        super().__init__()
+        self.name = name
+        self.student_id = student_id
+        self.advisor = advisor
+        self.email = email
+        self.degree_confer_date = degree_confer_date
+        self.hcp = hcp
+        self.coterm = coterm
+
+class Course(ASTNode):
+    def __init__(self, course_number, title, units, grade):
+        super().__init__()
+        self.course_number = course_number
+        self.title = title
+        self.units = units
+        self.grade = grade
+
+class Requirement(ASTNode):
+    def __init__(self, requirement_type, satisfied):
+        super().__init__()
+        self.requirement_type = requirement_type
+        self.satisfied = satisfied
+        self.subrequirements = []
+
+class SubRequirement(ASTNode):
+    def __init__(self, course, satisfied, waiver_allowed=False):
+        super().__init__()
+        self.course = course
+        self.satisfied = satisfied
+        self.waiver_allowed = waiver_allowed
+
+class Relation(ASTNode):
+    def __init__(self, relation_type, attributes):
+        super().__init__()
+        self.relation_type = relation_type
+        self.attributes = attributes
+
+class Constraint(ASTNode):
+    def __init__(self, constraint_type, condition):
+        super().__init__()
+        self.constraint_type = constraint_type
+        self.condition = condition
+```
+
+### Step 2: Intermediate Representation Parsing
+Next, we implement the parser to convert the intermediate representation into instances of these classes to form an AST.
+
+```python
+class Parser:
+    def __init__(self, intermediate_representation):
+        self.intermediate_representation = intermediate_representation
+        self.ast = ASTNode()  # Root node
+
+    def parse_student(self, student_data):
+        student = Student(
+            name=student_data['Name'],
+            student_id=student_data['StudentID'],
+            advisor=student_data['Advisor'],
+            email=student_data['Email'],
+            degree_confer_date=student_data['DegreeConferralDate'],
+            hcp=student_data['HCP'],
+            coterm=student_data['Coterm']
+        )
+        self.ast.children.append(student)
+        return student
+
+    def parse_courses(self, courses_data):
+        courses = []
+        for course_data in courses_data:
+            course = Course(
+                course_number=course_data['CourseNumber'],
+                title=course_data['Title'],
+                units=course_data['Units'],
+                grade=course_data['Grade']
+            )
+            courses.append(course)
+        return courses
+
+    def parse_requirements(self, requirements_data):
+        requirements = []
+        for requirement_data in requirements_data:
+            requirement = Requirement(
+                requirement_type=requirement_data['RequirementType'],
+                satisfied=requirement_data['Satisfied']
+            )
+            for subreq_data in requirement_data.get('SubRequirements', []):
+                subreq = SubRequirement(
+                    course=subreq_data['Course'],
+                    satisfied=subreq_data['Satisfied'],
+                    waiver_allowed=subreq_data.get('WaiverAllowed', False)
+                )
+                requirement.subrequirements.append(subreq)
+            requirements.append(requirement)
+        return requirements
+
+    def parse_relations(self, relations_data):
+        relations = []
+        for relation_data in relations_data:
+            relation = Relation(
+                relation_type=relation_data['RelationType'],
+                attributes=relation_data['Attributes']
+            )
+            relations.append(relation)
+        return relations
+
+    def parse_constraints(self, constraints_data):
+        constraints = []
+        for constraint_data in constraints_data:
+            constraint = Constraint(
+                constraint_type=constraint_data['ConstraintType'],
+                condition=constraint_data['Condition']
+            )
+            constraints.append(constraint)
+        return constraints
+
+    def parse(self):
+        ir = self.intermediate_representation
+
+        student = self.parse_student(ir['Student'])
+        courses = self.parse_courses(ir['Courses'])
+        requirements = self.parse_requirements(ir['Requirements'])
+        relations = self.parse_relations(ir['Relations'])
+        constraints = self.parse_constraints(ir['Constraints'])
+
+        student.children.extend(courses)
+        student.children.extend(requirements)
+        self.ast.children.extend(relations)
+        self.ast.children.extend(constraints)
+
+        return self.ast
+```
+
+### Step 3: Usage Example
+Below is an example of constructing an AST from an intermediate representation.
+
+```python
+# Example intermediate representation
+intermediate_representation = {
+    "Student": {
+        "Name": "Alice Smith",
+        "StudentID": "123456",
+        "Advisor": "Dr. Bob",
+        "Email": "alice@stanford.edu",
+        "DegreeConferralDate": "2023-06-15",
+        "HCP": True,
+        "Coterm": False
+    },
+    "Courses": [
+        {"CourseNumber": "CS103", "Title": "Logic, Automata", "Units": 3, "Grade": "A"},
+        {"CourseNumber": "CS161", "Title": "Algorithmic Analysis", "Units": 4, "Grade": "B+"}
+    ],
+    "Requirements": [
+        {
+            "RequirementType": "Foundations",
+            "Satisfied": False,
+            "SubRequirements": [
+                {"Course": "CS103", "Satisfied": True, "WaiverAllowed": False},
+                {"Course": "Probability", "Satisfied": False, "WaiverAllowed": True}
+            ]
+        }
+    ],
+    "Relations": [
+        {"RelationType": "Student-Takes-Course", "Attributes": {"Completed": True, "ForMS": True, "Waivers": []}}
+    ],
+    "Constraints": [
+        {"ConstraintType": "General Constraints for MSCS Degree", "Condition": "TotalUnits >= 45"}
+    ]
+}
+
+# Create a parser instance
+parser = Parser(intermediate_representation)
+
+# Parse to generate AST
+ast = parser.parse()
+
+# Print the AST structure
+def print_ast(node, indent=""):
+    print(indent + type(node).__name__)
+    for child in node.children:
+        print_ast(child, indent + "  ")
+
+print_ast(ast)
+```
+
+### Step 4: Generate CVC5 Solver Formulas to Check Satisfiability
+Next, we need to generate CVC5 solver formulas based on the constructed AST. Here is how you can do it:
+
+```python
+from cvc5 import Solver, Kind
+
+class CVC5Compiler:
+    def __init__(self, ast):
+        self.ast = ast
+        self.solver = Solver()
+        self.solver.setOption("produce-models", "true")
+        self.solver.setLogic("ALL")
+        self.variables = {}
+
+    def compile(self):
+        for constraint in self.ast.children:
+            if isinstance(constraint, Constraint):
+                self.compile_constraint(constraint)
+
+    def compile_constraint(self, constraint):
+        if constraint.constraint_type == "General Constraints for MSCS Degree":
+            condition = constraint.condition
+            if condition == "TotalUnits >= 45":
+                total_units = self.compute_total_units()
+                formula = self.solver.mkTerm(Kind.GEQ, total_units, self.solver.mkInteger(45))
+                self.solver.assertFormula(formula)
+    
+    def compute_total_units(self):
+        student_node = self.ast.children[0]
+        total_units = self.solver.mkInteger(0)
+        for course in student_node.children:
+            if isinstance(course, Course):
+                total_units = self.solver.mkTerm(Kind.ADD, total_units, self.solver.mkInteger(course.units))
+        return total_units
+
+    def check_sat(self):
+        return self.solver.checkSat()
+
+# Instantiate the compiler with the AST
+compiler = CVC5Compiler(ast)
+compiler.compile()
+
+# Check satisfiability
+result = compiler.check_sat()
+print("Satisfiability:", result)
+```
+
+This code ensures that the intermediate representation is processed into an AST, and then the constraints are compiled into CVC5 solver formulas to check their satisfiability. The main function of `CVC5Compiler` is to compile the constraints and check them using the CVC5 solver. 
+
+Please note that this is a simplified version, and more intricate constraints such as handling GPA, specific course requirements, and others would require similar implementations within the `compile_constraint` method.=======================================

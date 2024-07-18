@@ -1,0 +1,723 @@
+To generate a formal intermediate representation that can facilitate building a semantic parser for the MSCS Program Sheet and the provided transcript, we will define the semantics using a schema comprising entities, relations, constraints, and accompanying functions. The schema is designed to capture all the required elements of the master's program and validate a student's progress against the provided course requirements.
+
+### Entities
+1. **Course**
+    - `course_id`: String
+    - `title`: String
+    - `units`: Integer
+    - `grade`: String
+
+2. **Student**
+    - `student_id`: String
+    - `name`: String
+    - `email`: String
+    - `degree_confer_date`: String
+    - `is_HCP`: Boolean
+    - `is_Coterm`: Boolean
+
+3. **ProgramRequirement**
+    - `requirement_id`: String
+    - `description`: String
+    - `required_units`: Integer
+
+4. **Approval**
+    - `approval_id`: String
+    - `approved_by`: String
+    - `approval_date`: String
+    - `note`: String
+
+### Relations
+
+1. **Enrolled_At**
+    - `Student` -> `Course`
+
+2. **Satisfies**
+    - `Course` -> `ProgramRequirement`
+
+3. **Approved_By**
+    - `ProgramRequirement` -> `Approval`
+
+### Constraints
+
+1. **Minimum Units Requirement**
+    - All students must complete at least 45 graduate units at Stanford.
+
+2. **Foundations Units Limit**
+    - A maximum of 10 units can be counted towards the Foundations requirement.
+
+3. **Letter Grade Requirement**
+    - At least 36 out of the 45 units must be taken for a letter grade, except for classes taken during specified terms where CR or S grades are acceptable.
+
+4. **Specific Course Requirements**
+    - A set of specific foundational, breadth, and depth courses must be taken.
+    
+5. **Course Grade Constraint**
+    - The average grade in the courses submitted for the MSCS must be at least a B (3.0 GPA).
+
+### Functions
+
+1. **validate_foundations(student: Student) -> Boolean**
+    - Checks if the student has met the foundation requirement.
+
+2. **validate_significant_implementation(student: Student) -> Boolean**
+    - Ensures at least one significant implementation course is completed with a letter grade.
+
+3. **validate_breadth(student: Student) -> Boolean**
+    - Ensures breadth requirement is met by checking that courses from three different areas (A, B, C, D) are taken.
+
+4. **validate_depth(student: Student) -> Boolean**
+    - Validates that 21 units from depth and approved additional courses (CS 221 and a list of specified courses) are satisfied.
+
+5. **calculate_average_grade(student: Student) -> Float**
+    - Computes the average grade for all courses submitted for the MSCS.
+
+6. **validate_total_units(student: Student) -> Boolean**
+    - Ensures the total units (minimum 45 units, only 10 from Foundations) requirement is met.
+
+7. **validate_letter_grade_units(student: Student) -> Boolean**
+    - Ensures at least 36 units are taken for a letter grade.
+
+8. **get_courses(student: Student) -> List[Course]**
+    - Retrieves all courses the student is enrolled in.
+
+9. **course_approved(course_id: String, requirement_id: String) -> Boolean**
+    - Checks if a specific course taken is approved for satisfying a specific program requirement.
+
+10. **total_units(student: Student) -> Integer**
+    - Calculates the total units completed by the student.
+
+### Formal Representation
+
+```plaintext
+Entity Student:
+    - Attributes:
+        - student_id: String
+        - name: String
+        - email: String
+        - degree_confer_date: String
+        - is_HCP: Boolean
+        - is_Coterm: Boolean
+
+Entity Course:
+    - Attributes:
+        - course_id: String
+        - title: String
+        - units: Integer
+        - grade: String
+
+Entity ProgramRequirement:
+    - Attributes:
+        - requirement_id: String
+        - description: String
+        - required_units: Integer
+
+Entity Approval:
+    - Attributes:
+        - approval_id: String
+        - approved_by: String
+        - approval_date: String
+        - note: String
+
+Relation Enrolled_At:
+    - From: Student
+    - To: Course
+
+Relation Satisfies:
+    - From: Course
+    - To: ProgramRequirement
+
+Relation Approved_By:
+    - From: ProgramRequirement
+    - To: Approval
+
+Constraint Minimum Units Requirement:
+    - total_units(student: Student) >= 45
+
+Constraint Foundations Units Limit:
+    - sum(course.units where course in get_courses(student) and course.satisfies(FOUNDATIONS)) <= 10
+
+Constraint Letter Grade Requirement:
+    - sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36
+
+Constraint Specific Course Requirements:
+    - validate_foundations(student)
+    - validate_significant_implementation(student)
+    - validate_breadth(student)
+    - validate_depth(student)
+
+Constraint Course Grade Constraint:
+    - calculate_average_grade(student) >= 3.0
+
+Function validate_foundations(student: Student) -> Boolean:
+    - Check foundation courses (CS103, CS109, CS161, CS107, CS110) are taken and approved
+
+Function validate_significant_implementation(student: Student) -> Boolean:
+    - Ensure one significant implementation course (CS140, CS145 etc.) with letter grade
+
+Function validate_breadth(student: Student) -> Boolean:
+    - Ensure different breadth areas (A, B, C, D) are covered
+
+Function validate_depth(student: Student) -> Boolean:
+    - Ensure 21 units of depth requirements are met
+
+Function calculate_average_grade(student: Student) -> Float:
+    - Compute average grade of MSCS submitted courses
+
+Function validate_total_units(student: Student) -> Boolean:
+    - Ensure student has at least 45 units
+
+Function validate_letter_grade_units(student: Student) -> Boolean:
+    - Ensure at least 36 units are for letter grades
+
+Function get_courses(student: Student) -> List[Course]:
+    - Return all courses taken by student
+
+Function course_approved(course_id: String, requirement_id: String) -> Boolean:
+    - Check if course satisfies requirement
+
+Function total_units(student: Student) -> Integer:
+    - Return sum of units of taken courses
+```
+
+This formal representation provides a comprehensive foundation to build a semantic parser for translating natural language course requirements and transcript data into this structured intermediate representation for further processing and validation.=======================================
+To generate Python code that can automatically parse a given intermediate representation into an abstract syntax tree (AST), we need to first define the corresponding classes and methods that represent our entities, relations, constraints, and functions.
+
+We'll use a library like `lark` to build our parser which will transform the intermediate representation into an AST structure. 
+
+Here's the Python code that accomplishes this:
+
+```python
+from lark import Lark, Transformer, v_args
+
+# Define the Lark grammar for the Intermediate Representation.
+grammar = """
+    ?start: program
+
+    program: "Entities" entity_list "Relations" relation_list "Constraints" constraint_list "Functions" function_list
+    
+    entity_list: (entity)*
+    entity: "Entity" IDENT ":" "-" "Attributes:" attribute_list
+    attribute_list: (attribute)*
+    attribute: "-" IDENT ":" STRING
+
+    relation_list: (relation)*
+    relation: "Relation" IDENT ":" "-" "From:" IDENT "-" "To:" IDENT
+    
+    constraint_list: (constraint)*
+    constraint: "Constraint" IDENT ":" constraint_constraint
+    
+    function_list: (function)*
+    function: "Function" IDENT "(" parameters ")" "->" IDENT ":" "-" func_body
+    parameters: parameter ("," parameter)*
+    parameter: IDENT ":" IDENT
+    
+    constraint_constraint: IDENT "(" parameters ")" ("=="|"!="|">="|"<="|">"|"<") value
+    value: NUMBER | STRING
+
+    func_body: line+
+    line: statement* NEWLINE
+    statement: INDENT expression (NEWLINE | UNDENT)
+    expression: "return" cond_expr
+
+    cond_expr: or_expr
+    or_expr: and_expr
+            | and_expr "or" or_expr
+            | and_expr "|" or_expr
+    and_expr: not_expr
+            | not_expr "and" and_expr
+            | not_expr "&" and_expr
+    not_expr: "not" not_expr
+            | comparison
+    comparison: sum_expr
+               | sum_expr "==" sum_expr
+               | sum_expr "!=" sum_expr
+               | sum_expr ">" sum_expr
+               | sum_expr "<" sum_expr
+               | sum_expr ">=" sum_expr
+               | sum_expr "<=" sum_expr
+
+    sum_expr: product
+             | sum_expr "+" product
+             | sum_expr "-" product
+    product: atom
+            | atom "*" product
+            | atom "/" product
+    atom: "(" cond_expr ")"
+        | NUMBER
+        | STRING
+        | IDENT
+
+    STRING: /"[^"]*"/
+    NUMBER: /[0-9]+(\.[0-9]+)?/
+    IDENT: /[a-zA-Z_][a-zA-Z0-9_]*/
+    %import common.WS
+    %import common.NEWLINE
+    %import common.INDENT
+    %import common.UNDENT
+    %ignore WS
+"""
+
+# Transformer to convert parsed intermediate representation into an AST.
+@v_args(inline=True)
+class ASTBuilder(Transformer):
+
+    def program(self, *args):
+        entities, relations, constraints, functions = args
+        return {
+            'entities': entities,
+            'relations': relations,
+            'constraints': constraints,
+            'functions': functions
+        }
+
+    def entity(self, name, *attrs):
+        return {'type': 'entity', 'name': name, 'attributes': attrs}
+
+    def attribute(self, name, data_type):
+        return {'name': name, 'data_type': data_type}
+
+    def relation(self, relation_name, from_entity, to_entity):
+        return {'relation': relation_name, 'from': from_entity, 'to': to_entity}
+
+    def constraint(self, constraint_name, lhs, op, rhs):
+        return {'constraint': constraint_name, 'lhs': lhs, 'operator': op, 'rhs': rhs}
+
+    def function(self, func_name, params, return_type, body):
+        return {'function': func_name, 'params': params, 'return_type': return_type, 'body': body}
+
+    def parameters(self, *params):
+        return list(params)
+
+    def parameter(self, name, type):
+        return {'name': name, 'type': type}
+
+    def expression(self, expr):
+        return expr
+
+    def cond_expr(self, *expr):
+        return expr
+
+    def atom(self, value):
+        return value
+
+    def STRING(self, s):
+        return str(s).strip('"')
+
+    def NUMBER(self, n):
+        return float(n)
+
+
+# Initialize the parser and the transformer.
+parser = Lark(grammar, parser='lalr', transformer=ASTBuilder())
+text = """
+Entities
+Entity Student:
+- Attributes:
+- student_id: String
+- name: String
+- email: String
+- degree_confer_date: String
+- is_HCP: Boolean
+- is_Coterm: Boolean
+
+Entity Course:
+- Attributes:
+- course_id: String
+- title: String
+- units: Integer
+- grade: String
+
+Entity ProgramRequirement:
+- Attributes:
+- requirement_id: String
+- description: String
+- required_units: Integer
+
+Entity Approval:
+- Attributes:
+- approval_id: String
+- approved_by: String
+- approval_date: String
+- note: String
+
+Relations
+Relation Enrolled_At:
+- From: Student
+- To: Course
+
+Relation Satisfies:
+- From: Course
+- To: ProgramRequirement
+
+Relation Approved_By:
+- From: ProgramRequirement
+- To: Approval
+
+Constraints
+Constraint Minimum_Units_Requirement:
+total_units(student, Student) >= 45
+
+Constraint Foundations_Units_Limit:
+sum(course.units where course in get_courses(student) and course.satisfies(FOUNDATIONS)) <= 10
+
+Constraint Letter_Grade_Requirement:
+sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36
+
+Constraint Specific_Course_Requirements:
+validate_foundations(student) == True
+
+Constraint Course_Grade_Constraint:
+calculate_average_grade(student) >= 3.0
+
+Functions
+Function validate_foundations(student: Student) -> Boolean:
+return CS103 in get_courses(student) and CS109 in get_courses(student)
+
+Function validate_significant_implementation(student: Student) -> Boolean:
+return any(course in ["CS140", "CS145"] for course in get_courses(student))
+
+Function validate_breadth(student: Student) -> Boolean:
+return set(get_courses(student)).issubset(set(["A", "B", "C"]))
+
+Function validate_depth(student: Student) -> Boolean:
+return sum(course.units for course in get_courses(student) if course in ["CS221"]) >= 21
+
+Function calculate_average_grade(student: Student) -> Float:
+return sum(course.grade for course in get_courses(student)) / len(get_courses(student))
+
+Function validate_total_units(student: Student) -> Boolean:
+return total_units(student) >= 45
+
+Function validate_letter_grade_units(student: Student) -> Boolean:
+return sum(course.units for course in get_courses(student) if course.grade in ['A', 'B', 'C']) >= 36
+
+Function get_courses(student: Student) -> List[Course]:
+return [course for course in get_courses(student)]
+"""
+
+# Parse the text to produce an AST
+ast = parser.parse(text.strip())
+print(ast)
+```
+
+This script uses the `lark` library to:
+1. Define a grammar for the intermediate representation.
+2. Parse the input text based on the defined grammar.
+3. Transform the parsed input into an AST structure.
+
+The grammar captures the essential structures of an entity, attribute, relation, constraint, and function definitions. The `ASTBuilder` transformer then processes these structures to build an AST that is represented as a JSON-like Python dictionary.
+
+You can run the `print(ast)` statement to see the AST representation of the given intermediate representation text.=======================================
+To generate the cvc5 solver code from the abstract syntax tree (AST) parsed by your provided script, we need to create a compiler that translates the AST components into appropriate cvc5 constraints. This compiler will generate a Python function like the provided example for checking "Stanford master's elective requirements".
+
+Below, I'll provide a Python script that demonstrates the entire process of compiling an example AST into cvc5 solver formulas.
+
+### Step-by-Step Process
+
+1. **Define the Parser and AST Transformation**: As given in your example code, we parse the intermediate representation and transform it into an AST.
+2. **Create the Compiler**: Write a function to convert the AST into cvc5 solver formulas.
+3. **Generate Python Code**: Use the compiler to generate the desired Python code.
+
+### Example AST Compilation
+
+Let's first initialize the AST and then implement the compiler:
+
+```python
+from lark import Lark, Transformer, v_args
+import cvc5
+from cvc5 import Kind
+
+# Define the Lark grammar for the Intermediate Representation.
+grammar = """
+    ?start: program
+
+    program: "Entities" entity_list "Relations" relation_list "Constraints" constraint_list "Functions" function_list
+    
+    entity_list: (entity)*
+    entity: "Entity" IDENT ":" "-" "Attributes:" attribute_list
+    attribute_list: (attribute)*
+    attribute: "-" IDENT ":" STRING
+
+    relation_list: (relation)*
+    relation: "Relation" IDENT ":" "-" "From:" IDENT "-" "To:" IDENT
+    
+    constraint_list: (constraint)*
+    constraint: "Constraint" IDENT ":" constraint_constraint
+    
+    function_list: (function)*
+    function: "Function" IDENT "(" parameters ")" "->" IDENT ":" "-" func_body
+    parameters: parameter ("," parameter)*
+    parameter: IDENT ":" IDENT
+    
+    constraint_constraint: IDENT "(" parameters ")" ("=="|"!="|">="|"<="|">"|"<") value
+    value: NUMBER | STRING
+
+    func_body: line+
+    line: statement* NEWLINE
+    statement: INDENT expression (NEWLINE | UNDENT)
+    expression: "return" cond_expr
+
+    cond_expr: or_expr
+    or_expr: and_expr
+            | and_expr "or" or_expr
+            | and_expr "|" or_expr
+    and_expr: not_expr
+            | not_expr "and" and_expr
+            | not_expr "&" and_expr
+    not_expr: "not" not_expr
+            | comparison
+    comparison: sum_expr
+               | sum_expr "==" sum_expr
+               | sum_expr "!=" sum_expr
+               | sum_expr ">" sum_expr
+               | sum_expr "<" sum_expr
+               | sum_expr ">=" sum_expr
+               | sum_expr "<=" sum_expr
+
+    sum_expr: product
+             | sum_expr "+" product
+             | sum_expr "-" product
+    product: atom
+            | atom "*" product
+            | atom "/" product
+    atom: "(" cond_expr ")"
+        | NUMBER
+        | STRING
+        | IDENT
+
+    STRING: /"[^"]*"/
+    NUMBER: /[0-9]+(\.[0-9]+)?/
+    IDENT: /[a-zA-Z_][a-zA-Z0-9_]*/
+    %import common.WS
+    %import common.NEWLINE
+    %import common.INDENT
+    %import common.UNDENT
+    %ignore WS
+"""
+
+# Transformer to convert parsed intermediate representation into an AST.
+@v_args(inline=True)
+class ASTBuilder(Transformer):
+
+    def program(self, *args):
+        entities, relations, constraints, functions = args
+        return {
+            'entities': entities,
+            'relations': relations,
+            'constraints': constraints,
+            'functions': functions
+        }
+
+    def entity(self, name, *attrs):
+        return {'type': 'entity', 'name': name, 'attributes': attrs}
+
+    def attribute(self, name, data_type):
+        return {'name': name, 'data_type': data_type}
+
+    def relation(self, relation_name, from_entity, to_entity):
+        return {'relation': relation_name, 'from': from_entity, 'to': to_entity}
+
+    def constraint(self, constraint_name, lhs, op, rhs):
+        return {'constraint': constraint_name, 'lhs': lhs, 'operator': op, 'rhs': rhs}
+
+    def function(self, func_name, params, return_type, body):
+        return {'function': func_name, 'params': params, 'return_type': return_type, 'body': body}
+
+    def parameters(self, *params):
+        return list(params)
+
+    def parameter(self, name, type):
+        return {'name': name, 'type': type}
+
+    def expression(self, expr):
+        return expr
+
+    def cond_expr(self, *expr):
+        return expr
+
+    def atom(self, value):
+        return value
+
+    def STRING(self, s):
+        return str(s).strip('"')
+
+    def NUMBER(self, n):
+        return float(n)
+
+
+# Initialize the parser and transform the input text to an AST
+parser = Lark(grammar, parser='lalr', transformer=ASTBuilder())
+text = """
+Entities
+Entity Student:
+- Attributes:
+- student_id: String
+- name: String
+- email: String
+- degree_confer_date: String
+- is_HCP: Boolean
+- is_Coterm: Boolean
+
+Entity Course:
+- Attributes:
+- course_id: String
+- title: String
+- units: Integer
+- grade: String
+
+Entity ProgramRequirement:
+- Attributes:
+- requirement_id: String
+- description: String
+- required_units: Integer
+
+Entity Approval:
+- Attributes:
+- approval_id: String
+- approved_by: String
+- approval_date: String
+- note: String
+
+Relations
+Relation Enrolled_At:
+- From: Student
+- To: Course
+
+Relation Satisfies:
+- From: Course
+- To: ProgramRequirement
+
+Relation Approved_By:
+- From: ProgramRequirement
+- To: Approval
+
+Constraints
+Constraint Minimum_Units_Requirement:
+total_units(student, Student) >= 45
+
+Constraint Foundations_Units_Limit:
+sum(course.units where course in get_courses(student) and course.satisfies(FOUNDATIONS)) <= 10
+
+Constraint Letter_Grade_Requirement:
+sum(course.units where course in get_courses(student) and course.grade in ['A', 'B', 'C']) >= 36
+
+Constraint Specific_Course_Requirements:
+validate_foundations(student) == True
+
+Constraint Course_Grade_Constraint:
+calculate_average_grade(student) >= 3.0
+
+Functions
+Function validate_foundations(student: Student) -> Boolean:
+return "CS103" in get_courses(student) and "CS109" in get_courses(student)
+"""
+
+# Parse the text to produce an AST
+ast = parser.parse(text.strip())
+
+# Function to generate cvc5 solver formulas
+def generate_cvc5_code(ast):
+    solver_code = """
+import cvc5
+from cvc5 import Kind
+
+def check_mscs_requirements(student_courses):
+    # Initialize solver
+    solver = cvc5.Solver()
+    solver.setOption("produce-unsat-cores", "true")
+    solver.setOption("produce-models", "true")
+    solver.setOption("produce-proofs", "true")
+    solver.setLogic("ALL")
+    
+    # Create variables for each course and their associated attributes
+    courses = {}
+    for course_id, course in student_courses.items():
+        courses[course_id] = {
+            "units": solver.mkInteger(course["units"]),
+            "grade": solver.mkInteger(course["grade"]),
+        }
+    
+    # Create constraints
+"""
+
+    for constraint in ast['constraints']:
+        if constraint['constraint'] == "Minimum_Units_Requirement":
+            solver_code += f"""
+    # Minimum units requirement
+    total_units = solver.mkTerm(Kind.ADD, {[f'courses["{course_id}"]["units"]' for course_id in student_courses.keys()]})
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, total_units, solver.mkInteger(45)))
+"""
+        
+        elif constraint['constraint'] == "Foundations_Units_Limit":
+            solver_code += """
+    # Foundations units limit
+    foundations_units = solver.mkInteger(0)
+    for course_id, course in student_courses.items():
+        if "FOUNDATIONS" in course["satisfies"]:
+            foundations_units = solver.mkTerm(Kind.ADD, foundations_units, courses[course_id]["units"])
+    solver.assertFormula(solver.mkTerm(Kind.LEQ, foundations_units, solver.mkInteger(10)))
+"""
+        
+        elif constraint['constraint'] == "Letter_Grade_Requirement":
+            solver_code += """
+    # Letter grade requirement
+    letter_grade_units = solver.mkInteger(0)
+    for course_id, course in student_courses.items():
+        if course["grade"] in ['A', 'B', 'C']:
+            letter_grade_units = solver.mkTerm(Kind.ADD, letter_grade_units, courses[course_id]["units"])
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, letter_grade_units, solver.mkInteger(36)))
+"""
+        
+        elif constraint['constraint'] == "Specific_Course_Requirements":
+            solver_code += """
+    # Specific course requirements
+    foundations_courses = ["CS103", "CS109"]  # Example foundations courses
+    for course in foundations_courses:
+        solver.assertFormula(solver.mkTerm(Kind.AND, [solver.mkTerm(Kind.EQUAL, solver.mkTerm(Kind.CONSTANT, course), solver.mkTerm(Kind.CONSTANT, "True")) for course in foundations_courses]))
+"""
+        
+        elif constraint['constraint'] == "Course_Grade_Constraint":
+            solver_code += """
+    # Course grade constraint
+    total_grade_points = solver.mkInteger(0)
+    for course_id, course in student_courses.items():
+        total_grade_points = solver.mkTerm(Kind.ADD, total_grade_points, solver.mkTerm(Kind.MULT, courses[course_id]["units"], courses[course_id]["grade"]))
+    average_grade = solver.mkTerm(Kind.DIV, total_grade_points, solver.mkInteger(len(student_courses)))
+    solver.assertFormula(solver.mkTerm(Kind.GEQ, average_grade, solver.mkInteger(3.0)))
+"""
+        
+    solver_code += """
+    # Check satisfiability
+    result = solver.checkSat()
+    if result.isSat():
+        print("Satisfiable")
+    else:
+        print("Not satisfiable")
+
+# Example usage:
+student_courses = {
+    "CS103": {"units": 3, "grade": "A", "satisfies": ["FOUNDATIONS"]},
+    "CS109": {"units": 3, "grade": "B", "satisfies": ["FOUNDATIONS"]},
+    # More courses...
+}
+check_mscs_requirements(student_courses)
+"""
+    return solver_code
+
+# Generate and print the cvc5 solver code
+cvc5_code = generate_cvc5_code(ast)
+print(cvc5_code)
+```
+
+### Explanation
+
+1. **Initial Setup**: Import necessary libraries and define the grammar for the intermediate representation.
+2. **Parsing**: Parse the intermediate representation text to create the abstract syntax tree (AST).
+3. **Compiler Function**: The `generate_cvc5_code` function takes an AST and generates the corresponding cvc5 solver code in Python.
+4. **Constraints Handling**: The function covers multiple constraints, such as `Minimum_Units_Requirement`, `Foundations_Units_Limit`, etc., and translates them into cvc5 solver formulas.
+
+### Running the Generated Code
+
+You can now run the `cvc5_code` to validate specific examples given in the intermediate representation. This approach ensures that constraints are correctly checked as per the MSCS requirements.
+
+Note: Ensure that the cvc5 library is installed and properly configured to run the generated code.=======================================

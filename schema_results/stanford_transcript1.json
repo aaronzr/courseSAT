@@ -1,0 +1,113 @@
+{
+    "Student": {
+        "Name": "Bregman, Jeremy Lee",
+        "Program": "Electrical Engineering",
+        "StudentID": "05713381",
+        "Coterm": "True"
+    },
+    "AP_Credits": [
+        {
+            "Advanced_Placement": "French",
+            "Earned_Units": 10
+        },
+        {
+            "Advanced_Placement": "Mathematics: Calculus BC",
+            "Earned_Units": 10
+        }
+    ],
+    "Courses_Taken": [
+        {"Course_ID": "CME 100", "Title": "VECTOR CALCULUS FOR ENGINEERS", "Earned_Units": 5, "Grade": "B"},
+        {"Course_ID": "CS 106A", "Title": "PROGRAMMING METHODOLOGY", "Earned_Units": 5, "Grade": "B+"},
+        {"Course_ID": "IHUM 51", "Title": "TRANSFORMATIONS: THE INTERSECTION OF HIGH ART AND CONTEMPORARY CULTURE", "Earned_Units": 4, "Grade": "A-"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "CR"},
+        
+        {"Course_ID": "CME 102", "Title": "ORDINARY DIFFERENTIAL EQUATIONS FOR ENGINEERS", "Earned_Units": 5, "Grade": "A-"},
+        {"Course_ID": "IHUM 10A", "Title": "PHILOSOPHICAL PERSPECTIVES ON SCIENCE", "Earned_Units": 4, "Grade": "B+"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "W"},
+        {"Course_ID": "PHYSICS 41", "Title": "MECHANICS", "Earned_Units": 4, "Grade": "A"},
+        
+        {"Course_ID": "CME 104", "Title": "LINEAR ALGEBRA AND PARTIAL DIFFERENTIAL EQUATIONS FOR ENGINEERS", "Earned_Units": 5, "Grade": "A-"},
+        {"Course_ID": "IHUM 10B", "Title": "PHILOSOPHICAL PERSPECTIVES ON SCIENCE", "Earned_Units": 4, "Grade": "B+"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        {"Course_ID": "PHYSICS 43", "Title": "ELECTRICITY AND MAGNETISM", "Earned_Units": 4, "Grade": "B+"},
+        {"Course_ID": "PWR 1CR", "Title": "WRITING & RHETORIC 1: WRITING NATURE: DISCOURSES IN ECOLOGY, CULTURE, AND TECHNOLOGY", "Earned_Units": 4, "Grade": "A-"},
+        
+        {"Course_ID": "CS 106B", "Title": "PROGRAMMING ABSTRACTIONS", "Earned_Units": 5, "Grade": "B"},
+        {"Course_ID": "EE 100", "Title": "THE ELECTRICAL ENGINEERING PROFESSION", "Earned_Units": 1, "Grade": "S"},
+        {"Course_ID": "ENGR 40", "Title": "INTRODUCTORY ELECTRONICS", "Earned_Units": 5, "Grade": "B+"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        {"Course_ID": "PHYSICS 45", "Title": "LIGHT AND HEAT", "Earned_Units": 4, "Grade": "B-"},
+        {"Course_ID": "PHYSICS 46", "Title": "LIGHT AND HEAT LABORATORY", "Earned_Units": 1, "Grade": "S"},
+        {"Course_ID": "PHYSICS 70", "Title": "FOUNDATIONS OF MODERN PHYSICS", "Earned_Units": 4, "Grade": "A"},
+        
+        {"Course_ID": "ANTHRO 101", "Title": "THE AZTECS AND THEIR ANCESTORS: INTRODUCTION TO MESOAMERICAN ARCHAEOLOGY", "Earned_Units": 3, "Grade": "A-"},
+        {"Course_ID": "CME 106", "Title": "INTRODUCTION TO PROBABILITY AND STATISTICS FOR ENGINEERS", "Earned_Units": 4, "Grade": "B+"},
+        {"Course_ID": "EE 101A", "Title": "CIRCUITS I", "Earned_Units": 4, "Grade": "B+"},
+        {"Course_ID": "EE 102A", "Title": "SIGNAL PROCESSING AND LINEAR SYSTEMS I", "Earned_Units": 4, "Grade": "B"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        {"Course_ID": "PHYSICS 42", "Title": "CLASSICAL MECHANICS LABORATORY", "Earned_Units": 1, "Grade": "S"},
+        
+        {"Course_ID": "EE 43", "Title": "INTRODUCTORY ELECTRONICS", "Earned_Units": 2, "Grade": "A-"},
+        {"Course_ID": "EE 101B", "Title": "CIRCUITS II", "Earned_Units": 4, "Grade": "A-"},
+        {"Course_ID": "EE 116", "Title": "SEMICONDUCTOR DEVICE PHYSICS", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "ENGR 50", "Title": "INTRODUCTION TO MATERIALS SCIENCE, NANOTECHNOLOGY EMPHASIS", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A+"},
+        {"Course_ID": "PHYSICS 44", "Title": "ELECTRICITY AND MAGNETISM LAB", "Earned_Units": 1, "Grade": "S"},
+        {"Course_ID": "PWR 2RT", "Title": "WRITING & RHETORIC 2: STEPPING OUT OF THE SHADOWS: MUSIC, BASS GUITAR, AND THE RHETORIC OF REVOLUTION", "Earned_Units": 4, "Grade": "B+"},
+        
+        {"Course_ID": "EE 191", "Title": "SPECIAL STUDIES AND REPORTS IN ELECTRICAL ENGINEERING", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "EE 212", "Title": "INTEGRATED CIRCUIT FABRICATION PROCESSES", "Earned_Units": 3, "Grade": "B+"},
+        {"Course_ID": "MATSCI 164", "Title": "ELECTRONIC AND PHOTONIC MATERIALS AND DEVICES LABORATORY", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "MS&E 193", "Title": "TECHNOLOGY AND NATIONAL SECURITY", "Earned_Units": 3, "Grade": "A-"},
+        {"Course_ID": "MUSIC 11N", "Title": "A VIEW FROM THE PODIUM: THE ART OF CONDUCTING", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        
+        {"Course_ID": "EE 41", "Title": "PHYSICS OF ELECTRICAL ENGINEERING", "Earned_Units": 5, "Grade": "A"},
+        {"Course_ID": "EE 108A", "Title": "DIGITAL SYSTEMS I", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "EE 141", "Title": "ENGINEERING ELECTROMAGNETICS", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "EE 191", "Title": "SPECIAL STUDIES AND REPORTS IN ELECTRICAL ENGINEERING", "Earned_Units": 6, "Grade": "A"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        
+        {"Course_ID": "ATHLETIC 139", "Title": "TABLE TENNIS: BEGINNING", "Earned_Units": 1, "Grade": "S"},
+        {"Course_ID": "EE 134", "Title": "INTRODUCTION TO PHOTONICS", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "EE 136", "Title": "INTRODUCTION TO NANOPHOTONICS AND NANOSTRUCTURES", "Earned_Units": 3, "Grade": "A+"},
+        {"Course_ID": "MATSCI 160", "Title": "NANOMATERIALS LABORATORY", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "ME 191", "Title": "ENGINEERING PROBLEMS AND EXPERIMENTAL INVESTIGATION", "Earned_Units": 2, "Grade": "S"},
+        {"Course_ID": "MUSIC 171", "Title": "CHAMBER MUSIC", "Earned_Units": 1, "Grade": "A"},
+        {"Course_ID": "URBANST 110", "Title": "UTOPIA AND REALITY: INTRODUCTION TO URBAN STUDIES", "Earned_Units": 4, "Grade": "A"},
+        {"Course_ID": "EE 292I", "Title": "INSANELY GREAT PRODUCTS: HOW DO THEY GET BUILT?", "Earned_Units": 1, "Grade": "S"},
+        
+        {"Course_ID": "PE 138", "Title": "TABLE TENNIS: INTERMEDIATE/ADVANCED", "Earned_Units": 1, "Grade": "S"},
+        {"Course_ID": "WELLNESS 201", "Title": "FLOURISHING", "Earned_Units": 2, "Grade": "S"},
+        {"Course_ID": "EE 216", "Title": "PRINCIPLES AND MODELS OF SEMICONDUCTOR DEVICES", "Earned_Units": 3, "Grade": "CR"},
+        {"Course_ID": "EE 222", "Title": "APPLIED QUANTUM MECHANICS I", "Earned_Units": 3, "Grade": "B+"},
+        {"Course_ID": "EE 234", "Title": "PHOTONICS LABORATORY", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "EE 292L", "Title": "NANOMANUFACTURING", "Earned_Units": 3, "Grade": "A-"},
+        
+        {"Course_ID": "EE 316", "Title": "ADVANCED VLSI DEVICES", "Earned_Units": 3, "Grade": "A-"},
+        {"Course_ID": "EE 331", "Title": "BIOPHOTONICS: LIGHT IN MEDICINE AND BIOLOGY", "Earned_Units": 3, "Grade": "A"},
+        {"Course_ID": "MUSIC 154B", "Title": "AESTHETICS OF EXPERIMENTAL ELECTRONIC MUSIC, 1980 TO TODAY", "Earned_Units": 3, "Grade": "CR"},
+        
+        {"Course_ID": "APPPHYS 232", "Title": "ADVANCED IMAGING LAB IN BIOPHYSICS", "Earned_Units": 4, "Grade": "0"}, 
+        {"Course_ID": "EE 236C", "Title": "LASERS", "Earned_Units": 3, "Grade": "0"}, 
+        {"Course_ID": "EE 340", "Title": "OPTICAL MICRO- AND NANO-CAVITIES", "Earned_Units": 3, "Grade": "0"} 
+    ],
+    "Deviations": [
+        {
+            "Deviated_Course_ID": "None",
+            "Approved": "False",
+            "Approved_By": "None"
+        }
+    ],
+    "Approval": [
+        {
+            "Approved": "False",
+            "Approved_By": "None",
+            "Approved_Course_ID": "None"
+        }
+    ],
+    "Cumulative_GPA": {
+        "Undergrad": 3.649,
+        "Graduate": 3.740
+    }
+}

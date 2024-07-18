@@ -209,6 +209,7 @@ def check_stanford_master_breadth_requirements(course_choices):
     for course, (taken, unit, grade) in course_choices.items():
         if course in courses:
             solver.assertFormula(solver.mkTerm(Kind.EQUAL, courses[course], solver.mkBoolean(taken)))
+            solver.mkTerm(Kind.EQUAL, courses[course], solver.mkBoolean(taken))
             solver.assertFormula(solver.mkTerm(Kind.EQUAL, units[course], solver.mkInteger(unit)))
             check_letter_grade(grade)
 

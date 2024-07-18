@@ -1,0 +1,83 @@
+### Analysis of Jeremy Lee Bregman's Unofficial Transcript
+
+#### Background Information:
+
+- **Institution**: Leland Stanford Jr. University, Stanford, CA 94305
+- **Transcript Print Date**: 04/17/2015
+- **Degree Awarded**: Bachelor of Science in Electrical Engineering
+- **Student ID**: 05713381
+- **Active Graduate Program**: Electrical Engineering (MS)
+- **Conferral Date for BS**: 01/08/2015
+
+### Academic Performance:
+
+#### Undergraduate GPA:
+- **Overall Cum GPA**: 3.649
+- **Total Units Completed**: 162.00
+
+#### Graduate GPA:
+- **Overall Cum GPA**: 3.740
+- **Total Units Completed**: 22.00 (for MS program)
+
+### Course Analysis:
+
+Below is an analysis based on the provided transcript to evaluate how the courses align with the foundational and specialized requirements of the Department of Computer Science MSCS Program specializing in Artificial Intelligence (2022-23).
+
+#### Foundations Requirement:
+- **Logic, Automata & Complexity**: Not listed or identified in the transcript.
+- **Probability**: 
+  - **CME 106**: Introduction to Probability and Statistics for Engineers (B+)
+- **Algorithmic Analysis**: Not listed or identified in the transcript.
+- **Computer Organization & Systems**:
+  - **CS 107**: Not listed or identified in the transcript.
+- **Principles of Computer Systems**:
+  - **CS 110**: Not listed or identified in the transcript.
+
+#### Significant Implementation Requirement:
+No identified courses that directly satisfy this requirement from the transcript.
+
+#### Breadth Requirement:
+Each course needs to be from a different area and taken for a letter grade (minimum 3 units).
+
+- **Area A. Mathematical and Theoretical Foundations**:
+  - No direct matches found.
+- **Area B. Computer Systems**:
+  - **EE 108A**: Digital Systems I (A)
+- **Area C. Applications**:
+  - No direct matches found.
+- **Area D. Computing and Society**:
+  - No direct matches found.
+
+#### Artificial Intelligence Depth:
+Courses need to be taken for a letter grade for 3 or more units. Notable courses found:
+
+- **CS 221**: Not listed
+- **EE 222**: Applied Quantum Mechanics I (B+)
+- **EE 234**: Photonics Laboratory (A-)
+
+#### Electives:
+Courses numbered above 111 and must be related to the degree program.
+
+- **EE 236C**: Lasers (not completed)
+- **EE 340**: Optical Micro- and Nano-Cavities (not completed)
+- **MUSIC 154B**: Aesthetics of Experimental Electronic Music (CR)
+
+### Conclusion:
+
+**Jeremy Lee Bregman's transcript indicates a strong performance in Electrical Engineering with cum GPA of 3.649 for undergraduate courses and 3.740 for graduate courses.** However, based on the provided transcript, Jeremy does not meet all the foundational requirements for the MSCS program specialization in Artificial Intelligence, particularly in the areas of Algorithmic Analysis, Logic, Automata & Complexity, and Principles of Computer Systems.
+
+**Foundational Requirements Met:**
+- Probability (CME 106)
+
+**Foundational Requirements Not Met:**
+- Logic, Automata & Complexity
+- Algorithmic Analysis
+- Computer Organization & Systems
+- Principles of Computer Systems
+
+**Courses Satisfying Depth, Electives, and Breadth:**
+- Depth: Some courses already taken; others may need to be chosen based on requirements.
+- Breadth: At least one course in Area B.
+- Electives: Various courses in the graduate program.
+
+**Recommendation:** Jeremy needs to take specific courses from the foundations requirement, as well as fulfill all significant implementation and breadth requirements, ensuring courses are taken for a letter grade wherever mandated. Additional depth courses must be chosen based on the AI specialization requirements to ensure compliance with the 45-unit MSCS requirement.
