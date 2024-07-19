@@ -16,17 +16,18 @@ def solver_init():
 
 def result_checker(solver, variables):
 	result = solver.checkSat()
+	trace = ""
 	print("Satisfiability:", result)
 	if result.isSat():
 		print("SAT")
 		if variables: 
 			for variable in variables: 
-				model = solver.getValue(variable)
-				print(f"Model for {variable}:", model)
+				trace = solver.getValue(variable)
+				print(f"Model for {variable}:", trace)
 	else: 
-		core = solver.getUnsatCore()
-		print("Unsat requirement core is: ", core)
-	return result
+		trace = solver.getUnsatCore()
+		print("Unsat requirement core is: ", trace)
+	return result, trace
 
 def check_breadth(transcript_path):
 	solver = solver_init()
@@ -102,8 +103,8 @@ def check_breadth(transcript_path):
 	)
 
 	solver.assertFormula(formula)
-    
-	return result_checker(solver, [course_a, course_b, course_c])
+	result, trace = result_checker(solver, [course_a, course_b, course_c])
+	return result, trace
     
 def check_significant_implementation(transcript_path):
 	with open(transcript_path, 'r') as file:
@@ -138,8 +139,8 @@ def check_significant_implementation(transcript_path):
 	# Check the transcript for the constraints
 	transcript_constraints = []
 	for course in transcript.get("Courses_Taken", []):
-		course_constraints = [solver.mkTerm(Kind.EQUAL, course_variable, solver.mkString(course["Course_ID"]))]
-		course_constraints.append(solver.mkTerm(Kind.EQUAL, grade_variable, solver.mkString(course["Grade"])))
+		course_constraints = [solver.mkTerm(Kind.EQUAL, course_variable, solver.mkString(str(course["Course_ID"])))]
+		course_constraints.append(solver.mkTerm(Kind.EQUAL, grade_variable, solver.mkString(str(course["Grade"]))))
 		course_constraints.append(solver.mkTerm(Kind.EQUAL, stanford_variable, solver.mkBoolean(course.get("Taken_At_Stanford", False))))
 
 		transcript_constraints.append(solver.mkTerm(Kind.AND, *course_constraints))
@@ -169,9 +170,9 @@ def check_significant_implementation(transcript_path):
 		final_constraint = solver.mkTerm(Kind.OR, final_constraint, deviation_constraint)
 
 	solver.assertFormula(final_constraint)
-
+	result, trace = result_checker(solver, [course_variable, grade_variable, stanford_variable])
 	# Check satisfiability
-	return result_checker(solver, [course_variable, grade_variable, stanford_variable])
+	return result, trace
 
 
 def check_foundations(transcript_path):
@@ -253,7 +254,8 @@ def check_foundations(transcript_path):
 	solver.assertFormula(final_constraint)
 
 	# Check satisfiability and return the result
-	return result_checker(solver, list(course_vars.values()))
+	result, trace = result_checker(solver, list(course_vars.values()))
+	return result, trace
 
 def check_artificial_depth(transcript_path):
 	with open(transcript_path, 'r') as file:
@@ -390,8 +392,8 @@ def check_artificial_depth(transcript_path):
 	final_formula = solver.mkTerm(Kind.AND, *final_constraints)
 	# Assert the final formula
 	solver.assertFormula(final_formula)
-	result = result_checker(solver, variables)
-	return result
+	result, trace = result_checker(solver, variables)
+	return result, trace
 
 def check_electives(transcript_path):
 	with open(transcript_path, 'r') as file:
@@ -507,18 +509,18 @@ def check_electives(transcript_path):
 	add_constraints(solver, transcript)
 	
 	# Check the satisfiability and print the result
-	result = result_checker(solver, variables)
-	return result
+	result, trace = result_checker(solver, variables)
+	return result, trace
 		
 if __name__ == "__main__":
 	schema_path = "../schema_results/stanford_transcript1.json"
-	with open(schema_path, 'r') as file:
-		transcript = json.load(file)
+	#with open(schema_path, "r") as file: 
+	#	transcript = json.load(file)
 	
  
 	#result = check_foundations(transcript)
 	#result = check_electives(transcript)
 	#result = check_significant_implementation(transcript)
-	result = check_breadth(transcript)
-	print(result)
+	#result, trace = check_breadth(schema_path)
+	#print(result)
 	#check_artificial_depth(transcript_depth_test)
