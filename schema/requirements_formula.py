@@ -182,7 +182,7 @@ def check_foundations(transcript_path):
 	# Helper Function to Assert Course Constraints
 	def course_constraint(course_title, valid_titles):
 		course_var = solver.mkConst(solver.getStringSort(), course_title)
-		constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(course["Title"])) for course in transcript.get("Courses_Taken", [])]
+		constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(str(course["Course_ID"]))) for course in transcript.get("Courses_Taken", [])]
 		if len(constraints) == 0:
 			return solver.mkFalse(), course_var
 		elif len(constraints) == 1:
@@ -511,6 +511,69 @@ def check_electives(transcript_path):
 	# Check the satisfiability and print the result
 	result, trace = result_checker(solver, variables)
 	return result, trace
+
+def check_additional(transcript_path):
+	with open(transcript_path, 'r') as file:
+		transcript = json.load(file)
+	solver = solver_init()
+	vars = []
+	# Requirement 
+	course_ids = [
+		solver.mkConst(solver.getIntegerSort(), f"course_id_{i}")
+		for i, course in enumerate(transcript.get("Courses_Taken", []))
+	]
+	vars.append(course_ids)
+	constraints_set = [
+		solver.mkTerm(Kind.GEQ, course_id, solver.mkInteger(100))
+		for course_id in course_ids
+	]
+	requirement_1 = solver.mkTerm(Kind.AND, *constraints_set)
+	foundations_courses =["CS103", "CS109", "Stat116", "CME106", "MS&E220", "EE178",\
+		"CS161", "CS107", "CS107E", "CS110", "CS111"]
+	# Requirement 2: At most 10 units of Foundations requirement courses.
+	foundations_units = 0
+	for course in transcript.get("Courses_Taken", []):
+		if course["Course_ID"].strip() in foundations_courses: 
+			foundations_units += course["Earned_Units"]
+          
+	requirement_2 = solver.mkTerm(Kind.LEQ, solver.mkInteger(foundations_units), solver.mkInteger(10))
+
+	# Requirement 3: At most 3 units of 1-2 unit seminars.
+	seminar_units = sum(
+		course["Earned_Units"] for course in transcript.get("Courses_Taken", [])
+		if 1 <= course["Earned_Units"] <= 2
+	)
+	requirement_3 = solver.mkTerm(Kind.LEQ, solver.mkInteger(seminar_units), solver.mkInteger(3))
+
+	# Requirement 4: At least 36 units for a letter grade.
+	courses_letter_grade = [
+		course for course in transcript.get("Courses_Taken", []) if course["Grade"] not in ["CR", "S"]
+	]
+	# Add courses satisfying the exception for Spring 19-20 through Summer 20-21
+	courses_cr_s_in_exception = []
+	for course in transcript.get("Courses_Taken", []):
+		if course["Grade"] in ["CR", "S"] and "2019-2020 Spring" in course.get("Term") or "2020-2021 Summer" in course.get("Term"):
+			courses_cr_s_in_exception.append(course)
+	letter_grade_units = sum(
+         course["Earned_Units"] for course in courses_letter_grade + courses_cr_s_in_exception
+	)
+	requirement_4 = solver.mkTerm(Kind.GEQ, solver.mkInteger(letter_grade_units), solver.mkInteger(36))
+
+	# Requirement 5: Average grade must be at least 3.0.
+	requirement_5 = solver.mkTerm(Kind.GEQ, solver.mkReal(transcript.get("Cumulatives").get("Graduate_GPA")), solver.mkReal(3.0))
+
+	# Requirement 6: Units applied toward BS may not count toward MSCS.
+	#TODO: maybe asking for user input instead
+
+	# Requirement 7: At least 45 graduate units at Stanford.
+	requirement_6 = solver.mkTerm(Kind.GEQ, solver.mkReal(transcript.get("Cumulatives").get("Graduate_Total_Units")), solver.mkReal(45))
+
+	# Combine all requirements
+	final_formula = solver.mkTerm(Kind.AND, requirement_1, requirement_2, requirement_3, requirement_4, requirement_5, requirement_6)
+	solver.assertFormula(final_formula)
+	result, trace = result_checker(solver, vars)
+
+	return result, trace
 		
 if __name__ == "__main__":
 	schema_path = "../schema_results/stanford_transcript1.json"
@@ -519,7 +582,7 @@ if __name__ == "__main__":
 	
  
 	#result = check_foundations(transcript)
-	#result = check_electives(transcript)
+	result, _ = check_additional(schema_path)
 	#result = check_significant_implementation(transcript)
 	#result, trace = check_breadth(schema_path)
 	#print(result)

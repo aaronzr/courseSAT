@@ -7,7 +7,7 @@ from bs4 import BeautifulSoup
 from PyPDF2 import PdfReader
 from openai import OpenAI
 
-RESULTS_DIR = "../schema_results"
+RESULTS_DIR = "schema_results"
 
 def gpt_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -21,6 +21,57 @@ def gpt_infer(prompt):
 			model="gpt-4o",
 	)
 	return chat_completion.choices[0].message.content
+
+def agent_prompt(name, req, transcript_path, trace):
+        with open(transcript_path, 'r') as file:
+                transcript = json.load(file)
+        prompt = f"""
+        Your are a semantic parser for transcripts and requirements. Your task is to write a 
+        satisfiability script based on a given transcript schema, a given requirement, and a smt unSAT core from checking
+        formally experssed requirements. Take the following example output as an example:
+        ```
+        FoundationCoursesTaken(
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        taken_probability = True,
+        probablity_course = "CS 109",
+        probability_course_units_taken = 3,
+        taken_algorithmic_analysis: bool, algorithmic_analysis_course: Enum["CS 161"], algorithmic_analysis_course_units_taken: int, taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int, taken_principles_of_computer_systems: bool, principles_of_computer_system: Enum["CS110", "CS111"], principles_of_computer_system_course_units_taken: int, confirm_requirements: bool)
+        ```
+        Suppose a trancript contains some courses satisfying the Foundations Requirement but not all of them. Your task is 
+        to fill in whether a sub-constraint of a requirement, e.g. taken_logic_automata_complexity and taken_probability of foundations requirement, is satified with a boolean value, relevant satifying course taken, 
+        and course_units_taken. In case sub-constraint such as taken_logic_automata_complexity is satisfied, your output should use the format below:
+        ```
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        ```
+        In case a sub-constraint is not satisfied, use Enum[...] to specify possible courses that can be taken to satisfy the constriant. Using our example output above for unsatisfying sub-constraint, your output should look like the following: 
+        ```
+        taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int
+        ```
+        Putting it together, your output should trictly follow the format below:
+        ```
+        FoundationCoursesTaken(
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        taken_probability = True,
+        probablity_course = "CS 109",
+        probability_course_units_taken = 3,
+        taken_algorithmic_analysis: bool, algorithmic_analysis_course: Enum["CS 161"], algorithmic_analysis_course_units_taken: int, taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int, taken_principles_of_computer_systems: bool, principles_of_computer_system: Enum["CS110", "CS111"], principles_of_computer_system_course_units_taken: int, confirm_requirements: bool)
+        ```
+        Given requirement: {req}, transcript: {transcript}, and smt unSAT core: {trace},  please generate a satisfiability python script and fill in the following 
+        list similar to the FoundationCoursesTaken(...) format above and output the filled-in list below only:
+        ```
+        {name.lower()}CourseTaken(
+                
+        )       
+        ```
+        """
+        output = gpt_infer(prompt)
+        return output
 
 def pdf_to_text(doc):
 	reader = PdfReader(doc)
@@ -65,8 +116,8 @@ def process_individual_transcript(results_dir, transcript_path):
                 }}
         ]
         "Courses_Taken": [
-                {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}},
-                {{"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}}, 
+                {{"Term": String, "Course_ID": String, "Title": String, "Earned_Units": Integer, "Grade": String}},
+                {{"Term": String, "Course_ID": String, "Title": String, "Earned_Units": Integer, "Grade": String}}, 
                 ...
         ]
         "Deviations": [
@@ -95,9 +146,11 @@ def process_individual_transcript(results_dir, transcript_path):
         }},
         ]
         
-        "Cumulative_GPA": {{
-                "Undergrad": Real,
-                "Graduate": Real,
+        "Cumulatives": {{
+                "Undergrad_GPA": Real,
+                "Undergrad_Total_Units": Real,
+                "Graduate_GPA": Real,
+                "Graduate_Total_Units": Real,
         }},
         }}
         ```
@@ -115,13 +168,13 @@ def process_individual_transcript(results_dir, transcript_path):
                 schema_fix = read_code.split(start)[1].split(end)[0]
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
-        print(schema_fix)
-        print("=======================================\n") 
         if not os.path.exists(results_dir):
                 os.makedirs(results_dir)
         file = open(f"{results_dir}/{transcript_name}.json", "w+")
         file.write(schema_fix)  
         file.close()
+        print(schema_fix)
+        print("=======================================\n") 
         path = f"{results_dir}/{transcript_name}.json"
         return path
 
@@ -176,6 +229,8 @@ if __name__ == "__main__":
         transcript_path = "/home/sallyjunsongwang/courseSAT/transcripts/stanford_transcript1.pdf"
         requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
         schema_path = "../schema_results/stanford_transcript1.json"
+        process_individual_transcript(RESULTS_DIR, transcript_path)
+        automated_code_fixer(schema_path, 10)
 
 
 
