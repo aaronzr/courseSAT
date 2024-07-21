@@ -128,6 +128,8 @@ def run_agent(name, req, transcript_path, trace):
 		fixed_policy = policy.split(start)[1].split(end)[0]
 	if start2 in policy: 
 		fixed_policy = policy.split(start2)[1].split(end)[0]
+	else:
+         fixed_policy = policy
 	return fixed_policy
 			
 def translate_to_smt(requirement_text, requirement): 
@@ -401,16 +403,16 @@ async def main():
 			await cl.Message(
 				content=f"`{text_file_1.name}` uploaded from {text_file_1.path}, it contains {len(text_1)} characters!"
 			).send()
-			res = await cl.AskActionMessage(
-				content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
-	    				button to see the final analysis report and skip the middle steps",
-				actions=[
-					cl.Action(name="Click Me!", value="Python", label="✅ Python"),
-					cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
-					cl.Action(name="Click Me!", value="Final", label="✅ Final Report"),
-					cl.Action(name="cancel Me!", value="Cancel", label="❌ Cancel"),
-				],
-			).send()
+		res = await cl.AskActionMessage(
+			content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
+	    			button to see the final analysis report and skip the middle steps",
+			actions=[
+				cl.Action(name="Click Me!", value="Python", label="✅ Python"),
+				cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
+				cl.Action(name="Click Me!", value="Final", label="✅ Final Report"),
+				cl.Action(name="cancel Me!", value="Cancel", label="❌ Cancel"),
+			],
+		).send()
 		prior_response.append(res.get("value"))
 		if res and res.get("value") == "Python":
 				await cl.Message(
