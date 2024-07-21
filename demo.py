@@ -4,6 +4,7 @@ import subprocess
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
+from langchain.document_loaders import PyPDFLoader, TextLoader
 from schema.requirements_formula import (
 	check_breadth,
 	check_foundations,
@@ -18,7 +19,7 @@ requirement_path = "temp1.txt"
 transcript_path = "temp2.txt"
 TEMP_FILE = "temp_test.py"
 
-def process_file(file: AskFileResponse):
+def process_file(file):
     if file.type == "text/plain":
         Loader = TextLoader
     elif file.type == "application/pdf":
