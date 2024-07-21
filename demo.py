@@ -638,8 +638,8 @@ async def main():
 	
 @cl.on_message
 async def run_translator(message: cl.Message):
-	print(prior_response[-1])
 	if prior_response[-1] == "Python":
+		prior_response.clear()
 		await cl.Message(
 			content=f"analyzing the document and generating python cvc5 formulas now. This might take a while, because we want to ensure correct translation...",
 		).send()
@@ -651,8 +651,8 @@ async def run_translator(message: cl.Message):
 		response = await cl.make_async(automated_formula_fixer)(30)
 		await cl.Message(author="ME", content=response).send()
 
-	print(prior_response[-1])
 	if prior_response[-1] == "SMT":
+		prior_response.clear()
 		await cl.Message(
 			content="analyzing the document and generating smt cvc5 formulas now...",
 		).send()
@@ -660,6 +660,7 @@ async def run_translator(message: cl.Message):
 		await cl.Message(author="ME", content=response).send()
 
 	if prior_response[-1] == "Final":
+		prior_responses.clear()
 		await cl.Message(
 			content="analyzing the document and the transcript now...",
 		).send()
