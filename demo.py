@@ -475,16 +475,11 @@ async def main():
 	transcript = await cl.AskFileMessage(
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
-	text_0 = ""
-	text_1 = ""
-	for i in range(len(requirement)):
-		print(len(requirement))
-		text_0 +=  textract.process(requirement[i].path)
+
+	text_0 = textract.process(requirement[0].path)
 	requirement_temp = open(requirement_path, "w+")
 	requirement_temp.write(text_0)
-	for i in range(len(transcript)):
-		print(len(transcript))
-		text_1 +=  textract.process(transcript[i].path)
+	text_1 = textract.process(transcript[0].path)
 	transcript_temp = open(transcript_path, "w+")
 	transcript_temp.write(text_1)
 		

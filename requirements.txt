@@ -1,6 +1,7 @@
 bs4
 cvc5
 chainlit
+textract
 openai
 requests
 PyPDF2
