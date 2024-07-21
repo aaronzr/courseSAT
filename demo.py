@@ -495,15 +495,18 @@ async def main():
 
 	text_0 = process_file(requirement[0])
 	print(text_0)
+	content1 = ""
 	requirement_temp = open(requirement_path, "w+")
 	for i in range(len(text_0)):
-		requirement_temp.write(text_0[i].page_content)
-	text_1 = textract.process_file(transcript[0])
+		content1 += text_0[i].page_content
+	requirement_temp.write(content1)
 	print("===============bckend_debug=================\n")
 	print(text_1)
+	content2 = ""
 	transcript_temp = open(transcript_path, "w+")
 	for i in range(len(text_1)):
-		transcript_temp.write(text_1[i].page_content)
+		content2 += text_1[i].page_content
+	transcript_temp.write(content2)
 		
 	# Let the user know that the system is ready
 	await cl.Message(
