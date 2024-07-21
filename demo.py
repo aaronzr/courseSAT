@@ -477,11 +477,12 @@ async def main():
 	).send()
 
 	text_0 = textract.process(requirement[0].path)
+	print(text_0)
 	requirement_temp = open(requirement_path, "w+")
-	requirement_temp.write(text_0)
+	requirement_temp.write(text_0.decode("utf-8"))
 	text_1 = textract.process(transcript[0].path)
 	transcript_temp = open(transcript_path, "w+")
-	transcript_temp.write(text_1)
+	transcript_temp.write(text_1.decode("utf-8"))
 		
 	# Let the user know that the system is ready
 	await cl.Message(
