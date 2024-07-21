@@ -309,7 +309,7 @@ def get_requirement(text_file, requirement):
 		Please extract relevant {requirement} from {text.read()}. Please output 
 		extracted requirement of {requirement} in the document only.
 		"""
-		individual_requirement = gpt4o_infer(requirement)
+		individual_requirement = gpt4_infer(requirement)
 		print(individual_requirement)
 		return  individual_requirement
 
