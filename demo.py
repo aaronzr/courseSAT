@@ -1,6 +1,7 @@
 import os
 import openai
 import subprocess
+import time
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
