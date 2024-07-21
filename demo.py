@@ -24,12 +24,11 @@ TEMP_FILE = "temp_test.py"
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
 def agent_prompt(name, req, transcript_path, trace):
-        with open(transcript_path, 'r') as file:
-                transcript = json.load(file)
+        transcript = json.load(transcript_path)
         prompt = f"""
         Your are a semantic parser for transcripts and requirements. Your task is to write a 
         satisfiability script based on a given transcript schema, a given requirement, and a smt unSAT core from checking
-        formally experssed requirements. Take the following example output as an example:
+        formally experssed requirements. Take the following output as an example (you should ADAPT the constraints and values based on given requirements, transcript, and smt cores):
         ```
         FoundationCoursesTaken(
         taken_logic_automata_complexity = True,
