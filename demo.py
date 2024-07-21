@@ -14,7 +14,7 @@ from schema.requirements_formula import (
 	check_artificial_depth,
 	check_electives, 
 	check_additional)
-from schema.process import process,pdf_to_text, agent_prompt, RESULTS_DIR
+from schema.process import process, agent_prompt, RESULTS_DIR
 
 prior_response = []
 requirement_path = "temp1.txt"
@@ -40,6 +40,7 @@ def process_file(file: AskFileResponse):
 #Otherwise, it will fill in false
 def process_individual_transcript(results_dir, transcript_path):
         transcript = transcript_path
+        print("transcript: \n", transcript)
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
         prompt = f"""
@@ -50,7 +51,7 @@ def process_individual_transcript(results_dir, transcript_path):
         Approval (whether an advior has approved a taken course for degree requirements. This is typically false or unknown from the transcript unless
         otherwise specified), and Cumulative GPA (cumulative GPA for undnergraduate and graduate degrees) 
         from a given transcript. It's vitally IMPORTANT that you double check and fill in correct information from the given transcript.
-        Here is the transcript: {transcript}. Please output a filled transcript json schema in the following format only. Your output MUST strictly follow the format.
+        Here is the transcript: {transcript.read()}. Please output a filled transcript json schema in the following format only. Your output MUST strictly follow the format.
         ```
         {{
         "Student": {{
