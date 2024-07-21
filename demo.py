@@ -660,7 +660,7 @@ async def run_translator(message: cl.Message):
 		await cl.Message(author="ME", content=response).send()
 
 	if prior_response[-1] == "Final":
-		prior_responses.clear()
+		prior_response.clear()
 		await cl.Message(
 			content="analyzing the document and the transcript now...",
 		).send()
