@@ -1,7 +1,6 @@
 import os
 import openai
 import subprocess
-import time
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
@@ -262,7 +261,6 @@ def get_requirement(text_file, requirement):
 
 
 def run_agent(name, req, transcript_path, trace):
-	time.sleep(180) #prevent token length limit issue
 	if len(trace)>500:
 		short_trace = trace[0:500]
 	else:
