@@ -52,7 +52,7 @@ def agent_prompt(name, req, transcript_path, trace):
         ```
         taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int
         ```
-        Putting it together, your output should trictly follow the format below:
+        Putting it together, your output should use follow the format below while adapting information from given requirement and transcript:
         ```
         FoundationCoursesTaken(
         taken_logic_automata_complexity = True,
@@ -693,6 +693,6 @@ async def run_translator(message: cl.Message):
 				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript.read(), unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
 			'''
-		res = await cl.Message(author="ME", content=f"enter `s` to restart").send()
-		if res == 's' or  res == 'S': 
+		res2 = await cl.Message(author="ME", content=f"enter `s` to restart").send()
+		if res2 == 's' or  res == 'S': 
 				cl.make_async(main)()
