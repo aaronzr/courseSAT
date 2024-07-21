@@ -1,0 +1,10 @@
+```
+breadthCourseTaken(
+    course_a = "CME 100",
+    course_a_units_taken = 5,
+    course_b = "CME 102",
+    course_b_units_taken = 5,
+    course_c = "CS 106B",
+    course_c_units_taken = 5
+)       
+```

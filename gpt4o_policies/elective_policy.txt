@@ -1,0 +1,39 @@
+
+def electiveCourseTaken(
+    taken_course_CME100: bool, 
+    course_CME100: Enum["CME 100"], 
+    CME100_units_taken: int, 
+    taken_course_CME102 = True,
+    course_CME102 = "CME 102",
+    CME102_units_taken = 5,
+    taken_course_CME104 = True,
+    course_CME104 = "CME 104",
+    CME104_units_taken = 5,
+    taken_course_CS106B: bool,
+    course_CS106B: Enum["CS 106B"],
+    CS106B_units_taken: int,
+    taken_course_CME106 = True,
+    course_CME106 = "CME 106",
+    CME106_units_taken = 4,
+    confirm_requirements: bool
+):
+    pass
+
+electiveCourseTaken(
+    taken_course_CME100 = False, 
+    course_CME100 = Enum["CME 100"], 
+    CME100_units_taken = 0, 
+    taken_course_CME102 = True,
+    course_CME102 = "CME 102",
+    CME102_units_taken = 5,
+    taken_course_CME104 = True,
+    course_CME104 = "CME 104",
+    CME104_units_taken = 5,
+    taken_course_CS106B = False,
+    course_CS106B = Enum["CS 106B"],
+    CS106B_units_taken = 0,
+    taken_course_CME106 = True,
+    course_CME106 = "CME 106",
+    CME106_units_taken = 4,
+    confirm_requirements = True
+)

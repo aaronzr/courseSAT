@@ -1,0 +1,20 @@
+```
+foundationsCourseTaken(
+    taken_logic_automata_complexity = False,
+    logic_course = Enum["CME 100", "CME 102", "CME 104", "CS 106B", "CME 106"],
+    logic_course_units_taken = 0,
+    taken_probability = True,
+    probablity_course = "CME 106",
+    probability_course_units_taken = 4,
+    taken_algorithmic_analysis: bool, 
+    algorithmic_analysis_course: Enum["CME 100", "CME 102", "CME 104", "CS 106B", "CME 106"],
+    algorithmic_analysis_course_units_taken: int, 
+    taken_computer_organisation: bool, 
+    computer_organisation: Enum["CME 100", "CME 102", "CME 104", "CS 106B", "CME 106"],
+    computer_organisation_course_units_taken: int, 
+    taken_principles_of_computer_systems: bool, 
+    principles_of_computer_system: Enum["CME 100", "CME 102", "CME 104", "CS 106B", "CME 106"],
+    principles_of_computer_system_course_units_taken: int, 
+    confirm_requirements: bool
+)       
+```

@@ -1,0 +1,8 @@
+        additionalCourseTaken(
+        at_most_10_units_foundations_required = True,
+        at_most_3_units_seminars = True,
+        at_least_36_units_letter_grade = True,
+        average_grade_at_least_B = True,
+        complete_at_least_45_units = True,
+        )       
+       

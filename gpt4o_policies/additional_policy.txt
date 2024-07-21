@@ -1,0 +1,16 @@
+
+additionalCourseTaken(
+    all_courses_numbered_100_or_greater = True,
+
+    at_most_10_units_foundation_courses_counted = True,
+
+    at_most_3_units_1_2_unit_seminars_counted = True,
+
+    at_least_36_units_for_letter_grade = False,  # Unsatisfied as only 24 units are for letter grade (from SMT unSAT core)
+
+    average_grade_at_least_B = True,
+
+    units_previously_applied_to_BS_not_counted = True,  # Assuming this based on lack of specified violations
+
+    at_least_45_graduate_units_completed_at_Stanford = False  # Unsatisfied as only 22 graduate units completed (from transcript)
+)
