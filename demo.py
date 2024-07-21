@@ -14,13 +14,64 @@ from schema.requirements_formula import (
 	check_artificial_depth,
 	check_electives, 
 	check_additional)
-from schema.process import process, agent_prompt, RESULTS_DIR
+from schema.process import process, RESULTS_DIR
 
 prior_response = []
 requirement_path = "temp1.txt"
 transcript_path = "temp2.txt"
 TEMP_FILE = "temp_test.py"
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
+
+def agent_prompt(name, req, transcript_path, trace):
+        with open(transcript_path, 'r') as file:
+                transcript = json.load(file)
+        prompt = f"""
+        Your are a semantic parser for transcripts and requirements. Your task is to write a 
+        satisfiability script based on a given transcript schema, a given requirement, and a smt unSAT core from checking
+        formally experssed requirements. Take the following example output as an example:
+        ```
+        FoundationCoursesTaken(
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        taken_probability = True,
+        probablity_course = "CS 109",
+        probability_course_units_taken = 3,
+        taken_algorithmic_analysis: bool, algorithmic_analysis_course: Enum["CS 161"], algorithmic_analysis_course_units_taken: int, taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int, taken_principles_of_computer_systems: bool, principles_of_computer_system: Enum["CS110", "CS111"], principles_of_computer_system_course_units_taken: int, confirm_requirements: bool)
+        ```
+        Suppose a trancript contains some courses satisfying the Foundations Requirement but not all of them. Your task is 
+        to fill in whether a sub-constraint of a requirement, e.g. taken_logic_automata_complexity and taken_probability of foundations requirement, is satified with a boolean value, relevant satifying course taken, 
+        and course_units_taken. In case sub-constraint such as taken_logic_automata_complexity is satisfied, your output should use the format below:
+        ```
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        ```
+        In case a sub-constraint is not satisfied, use Enum[...] to specify possible courses that can be taken to satisfy the constriant. Using our example output above for unsatisfying sub-constraint, your output should look like the following: 
+        ```
+        taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int
+        ```
+        Putting it together, your output should trictly follow the format below:
+        ```
+        FoundationCoursesTaken(
+        taken_logic_automata_complexity = True,
+        logic_course = "CS 103",
+        logic_course_units_taken = 4,
+        taken_probability = True,
+        probablity_course = "CS 109",
+        probability_course_units_taken = 3,
+        taken_algorithmic_analysis: bool, algorithmic_analysis_course: Enum["CS 161"], algorithmic_analysis_course_units_taken: int, taken_computer_organisation: bool, computer_organisation: Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken: int, taken_principles_of_computer_systems: bool, principles_of_computer_system: Enum["CS110", "CS111"], principles_of_computer_system_course_units_taken: int, confirm_requirements: bool)
+        ```
+        Given requirement: {req}, transcript: {transcript}, and smt unSAT core: {trace},  please generate a satisfiability python script and fill in the following 
+        list similar to the FoundationCoursesTaken(...) format above and output the filled-in list below only:
+        ```
+        {name.lower()}CourseTaken(
+                
+        )       
+        ```
+        """
+        output = gpt4_infer(prompt)
+        return output
 
 def process_file(file: AskFileResponse):
     if file.type == "text/plain":
@@ -621,10 +672,10 @@ async def run_translator(message: cl.Message):
 		await cl.Message(author="ME", content=f"Now we are going to generate agent policies for unsatisfied requirements...").send()
 		for i in unsat_results: 
 			if i=="foundations":
-				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], transcript.read(), unsat_dict["foundations"])
+				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], schema_path, unsat_dict["foundations"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {f_policy}").send()
 			if i=="breadth":
-				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["BREADTH REQUIREMENT"], transcript.read(), unsat_dict["breadth"])
+				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["BREADTH REQUIREMENT"], schema_path, unsat_dict["breadth"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {b_policy}").send()
 			'''
 			if i=="significant_implementation":
