@@ -1,6 +1,7 @@
 import os
 import openai
 import subprocess
+import textract
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
@@ -444,7 +445,7 @@ def run_analysis(transcript_path, requirement_doc):
 	breadth_result, breadth_trace = check_breadth(transcript)
 	if breadth_result.isSat()==False:
 		unsat_results.append("breadth")
-		unsat_trace.append(readth_trace)
+		unsat_trace.append(breadth_trace)
 	significant_implementation_result, significant_implementation_trace = check_significant_implementation(transcript)
 	if significant_implementation_result.isSat()==False:
 		unsat_results.append("significant_implementation")
@@ -478,12 +479,12 @@ async def main():
 	text_1 = ""
 	for i in range(len(requirement)):
 		print(len(requirement))
-		text_0 += pdf_to_text(requirement[i].path)
+		text_0 +=  textract.process(requirement[i].path)
 	requirement_temp = open(requirement_path, "w+")
 	requirement_temp.write(text_0)
 	for i in range(len(transcript)):
 		print(len(transcript))
-		text_1 += pdf_to_text(transcript[i].path)
+		text_1 +=  textract.process(transcript[i].path)
 	transcript_temp = open(transcript_path, "w+")
 	transcript_temp.write(text_1)
 		
