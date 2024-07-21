@@ -1,9 +1,10 @@
 bs4
 cvc5
 chainlit
-textract
+langchain-community
 openai
 requests
+pypdf
 PyPDF2
 pysmt
 fastapi

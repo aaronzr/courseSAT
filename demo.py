@@ -5,6 +5,7 @@ import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
+from langchain.text_splitter import split_documents
 from chainlit.types import AskFileResponse
 from schema.requirements_formula import (
 	check_breadth,

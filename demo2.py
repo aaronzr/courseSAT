@@ -21,5 +21,3 @@ async def start():
         content=f"`{text_file.name}` uploaded, it contains {len(text)} characters!"
     ).send()
 
-
-
