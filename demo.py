@@ -114,7 +114,7 @@ def process_individual_transcript(results_dir, transcript_path):
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
         if start2 in schema: 
-                schema_fix = read_code.split(start)[1].split(end)[0]
+                schema_fix = schema.split(start)[1].split(end)[0]
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
         else:
@@ -124,6 +124,7 @@ def process_individual_transcript(results_dir, transcript_path):
         file = open(f"{results_dir}/{transcript_name}.json", "w+")
         file.write(schema_fix)  
         file.close()
+        print("=================raw model output ======================\n") 
         print(schema_fix)
         print("=======================================\n") 
         path = f"{results_dir}/{transcript_name}.json"
@@ -296,7 +297,7 @@ def translate_to_smt(requirement_text, requirement):
 		```
 		Your task is to generate a parameterized formula reflecting the correct logic of {requirement_out}.
 		"""
-		formula_out = gpt_infer(formula_prompt)
+		formula_out = gpt3_infer(formula_prompt)
 		start = "```smt"
 		end = "```"
 		reformatted_formula = formula_out.split(start)[1].split(end)[0]
@@ -476,7 +477,6 @@ def run_analysis(transcript_path, requirement_doc):
 		unsat_results.append("elective")
 		unsat_trace.append(electives_trace)
 	additional_result, additional_trace = check_additional(transcript)
-	print(additional_result)
 	if additional_result.isSat()==False:
 		unsat_results.append("additional")
 		unsat_trace.append(additional_trace)
