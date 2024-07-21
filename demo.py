@@ -621,10 +621,10 @@ async def run_translator(message: cl.Message):
 		await cl.Message(author="ME", content=f"Now we are going to generate agent policies for unsatisfied requirements...").send()
 		for i in unsat_results: 
 			if i=="foundations":
-				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["foundations"], transcript.read(), unsat_dict["foundations"])
+				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], transcript.read(), unsat_dict["foundations"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {f_policy}").send()
 			if i=="breadth":
-				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["breadth"], transcript.read(), unsat_dict["breadth"])
+				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["BREADTH REQUIREMENT"], transcript.read(), unsat_dict["breadth"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {b_policy}").send()
 			'''
 			if i=="significant_implementation":
