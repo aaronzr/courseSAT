@@ -147,8 +147,10 @@ def automated_code_fixer(path, iterations):
                         code = open(path, "r")
                         print("We are going to prompt for transcript json schema fix...\n")
                         prompt = f"""
+                        You are a bug fixer. Your task is to fix a json file giive error messages. You should ONLY make minimal changes to fix the bugs.
+                        Please do NOT make the whole file an empty json or modifies the contennt of value fileds.
                         Given the error message {err.decode("utf-8")}, please fix the following json file {code.read()} while
-                        preserving the original substance.
+                        preserving the original substance. 
                         """
                         fixed_code =gpt4_infer(prompt)
                         print(f"===============error message=======================\n")
