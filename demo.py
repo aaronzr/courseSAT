@@ -11,7 +11,7 @@ from schema.requirements_formula import (
 	check_artificial_depth,
 	check_electives, 
 	check_additional)
-from schema.process import process, agent_prompt, RESULTS_DIR
+from schema.process import process,pdf_to_text, agent_prompt, RESULTS_DIR
 
 prior_response = []
 requirement_path = "temp1.txt"
