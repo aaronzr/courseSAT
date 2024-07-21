@@ -9,7 +9,20 @@ from openai import OpenAI
 
 RESULTS_DIR = "schema_results"
 
-def gpt_infer(prompt):
+def gpt3_infer(prompt):
+	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+	chat_completion = client.chat.completions.create(
+			messages=[
+					{
+					"role": "user",
+					"content": f"{prompt}",
+					}
+			],
+			model="gpt-3.5-turbo",
+	)
+	return chat_completion.choices[0].message.content
+
+def gpt4_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 	chat_completion = client.chat.completions.create(
 			messages=[
@@ -70,7 +83,7 @@ def agent_prompt(name, req, transcript_path, trace):
         )       
         ```
         """
-        output = gpt_infer(prompt)
+        output = gpt4_infer(prompt)
         return output
 
 def pdf_to_text(doc):
@@ -156,7 +169,7 @@ def process_individual_transcript(results_dir, transcript_path):
         ```
         Remember, your json schema output should strictly follow the given format above and your json schema output will be read as a ```file``` directly by json.load(file). 
         """
-        schema = gpt_infer(prompt)
+        schema = gpt4_infer(prompt)
         start = "```json"
         start2 = "```python"
         end = "```"
@@ -168,6 +181,8 @@ def process_individual_transcript(results_dir, transcript_path):
                 schema_fix = read_code.split(start)[1].split(end)[0]
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
+        else:
+                schema_fix = schema
         if not os.path.exists(results_dir):
                 os.makedirs(results_dir)
         file = open(f"{results_dir}/{transcript_name}.json", "w+")
@@ -198,7 +213,7 @@ def automated_code_fixer(path, iterations):
                         Given the error message {err.decode("utf-8")}, please fix the following json file {code.read()} while
                         preserving the original substance.
                         """
-                        fixed_code =gpt_infer(prompt)
+                        fixed_code =gpt4_infer(prompt)
                         print(f"===============error message=======================\n")
                         print(err.decode("utf-8"))
                         print(f"==============={i} iteration of fixing code=======================\n")

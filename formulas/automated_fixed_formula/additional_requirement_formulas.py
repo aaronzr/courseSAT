@@ -26,10 +26,10 @@ def result_checker(solver, variables):
         print("Unsat requirement core is: ", core)
     return result
 
-def check_transcript_requirements(transcript):
+def check_additional(transcript):
     solver = solver_init()
 
-    # Requirement 1
+    # Requirement 
     course_ids = [
         solver.mkConst(solver.getIntegerSort(), f"course_id_{i}")
         for i, course in enumerate(transcript["Courses_Taken"])
@@ -39,18 +39,17 @@ def check_transcript_requirements(transcript):
         for course_id in course_ids
     ]
     requirement_1 = solver.mkTerm(Kind.AND, *constraints_set)
-
+    foundations_courses =["CS103", "CS109", "Stat116", "CME106", "MS&E220", "EE178",\
+        "CS161", "CS107", "CS107E", "CS110", "CS111"]
     # Requirement 2: At most 10 units of Foundations requirement courses.
-    foundations_courses = [
-        course for course in transcript["Courses_Taken"]
-        if "Foundations" in course["Title"]
-    ]
-    foundations_units = sum(course["Earned_Units"] for course in foundations_courses)
+    for course in transcript.get["Courses_Taken"]:
+        if course["Course_ID"].strip() in foundations_courses: 
+            foundations_units += course["Earned_Units"]
     requirement_2 = solver.mkTerm(Kind.LEQ, solver.mkInteger(foundations_units), solver.mkInteger(10))
 
     # Requirement 3: At most 3 units of 1-2 unit seminars.
     seminar_units = sum(
-        course["Earned_Units"] for course in transcript["Courses_Taken"]
+        course["Earned_Units"] for course in transcript.get["Courses_Taken"]
         if 1 <= course["Earned_Units"] <= 2
     )
     requirement_3 = solver.mkTerm(Kind.LEQ, solver.mkInteger(seminar_units), solver.mkInteger(3))
@@ -89,7 +88,7 @@ def check_transcript_requirements(transcript):
     requirement_6 = solver.mkTerm(Kind.GT, solver.mkInteger(mscs_units), solver.mkInteger(bs_units))
 
     # Requirement 7: At least 45 graduate units at Stanford.
-    requirement_7 = solver.mkTerm(Kind.GEQ, solver.mkInteger(mscs_units), solver.mkInteger(45))
+    requirement_7 = solver.mkTerm(Kind.GEQ, solver.mkInteger(transcript.get("Cumulatives").get("Graduate_Total_Units")), solver.mkInteger(45))
 
     # Combine all requirements
     final_formula = solver.mkTerm(Kind.AND, requirement_1, requirement_2, requirement_3, requirement_4, requirement_5, requirement_6, requirement_7)

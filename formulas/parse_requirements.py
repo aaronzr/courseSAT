@@ -14,7 +14,21 @@ STANFORD_SENIOR_PROJECT_WEBLINK = "https://www.cs.stanford.edu/bs-requirements-s
 STANFORD_SOE_SCIENCE_WEBLINK = "https://ughb.stanford.edu/courses/approved-courses/science-courses-2023-24"
 STANFORD_SEMINAR_WEBLINK = "https://exploreintrosems.stanford.edu/seminars-school-engineering"
 
-def gpt_infer(prompt):
+
+def gpt3_infer(prompt):
+	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+	chat_completion = client.chat.completions.create(
+			messages=[
+					{
+					"role": "user",
+					"content": f"{prompt}",
+					}
+			],
+			model="gpt-3.5-turbo",
+	)
+	return chat_completion.choices[0].message.content
+
+def gpt4_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
 	chat_completion = client.chat.completions.create(
 			messages=[
@@ -26,6 +40,7 @@ def gpt_infer(prompt):
 			model="gpt-4o",
 	)
 	return chat_completion.choices[0].message.content
+
 
 def pdf_to_text(doc):
 	reader = PdfReader(doc)
@@ -60,7 +75,7 @@ def automated_code_fixer(inferred_formulas_file, iterations):
                         Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
                         preserving correct logic.
                         """
-                        fixed_code =gpt_infer(prompt)
+                        fixed_code =gpt3_infer(prompt)
                         print(f"===============error message=======================\n")
                         print(err)
                         print(f"==============={i} iteration of fixing code=======================\n")
@@ -89,7 +104,7 @@ def extract_requirements(requirement_path):
         {text}. Please do not ignore advisor approval or deviation contraints. Please output a list of {requirement}
         from {text}. 
         """
-        requirement_out = gpt_infer(requirement_prompt)
+        requirement_out = gpt3_infer(requirement_prompt)
         file = open(f"./{requirement_name}.txt", "w+")
         file.write( requirement_out)
         print(requirement_out)
@@ -117,7 +132,7 @@ def get_requirement(doc, requirement):
         Please extract relevant {requirement} from {text}. Please output 
         extracted requirement of {requirement} in the document only.
         """
-        individual_requirement = gpt_infer(requirement)
+        individual_requirement = gpt3_infer(requirement)
         print(individual_requirement)
         return  individual_requirement
         
@@ -226,7 +241,7 @@ def translate_to_smt(dir, requirement_path, requirement):
 		```
 		Your task is to generate a parameterized formula reflecting the correct logic of {requirement_out}.
 		"""
-        formula_out = gpt_infer(formula_prompt)
+        formula_out = gpt3_infer(formula_prompt)
         output_filename = requirement.replace(" ", "_")
         file = open(f"{dir}/{output_filename.lower()}_formulas", "w+")
         file.write("=======================prompt===========================\n")
@@ -341,7 +356,7 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
         parameterized formulas with respect to the requirements only. 
         """
-        formula_out = gpt_infer(formula_prompt)
+        formula_out = gpt3_infer(formula_prompt)
         output_filename = requirement.replace(" ", "_")
         file = open(f"{RESULTS_DIR}/{output_filename.lower()}_formulas", "w+")
         file.write("=======================prompt===========================\n")
@@ -389,7 +404,7 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         ``` Please be sure to convert all code and relevnt comments in {formula_out} to the format above and write a transcript schema to
         test code correctness. 
         """
-        formula_compile = gpt_infer(compile_prompt)    
+        formula_compile = gpt3_infer(compile_prompt)    
         python_file = open(f"{output_filename.lower()}_formulas.py", "w+")
         start = "```python"
         end = "```"
