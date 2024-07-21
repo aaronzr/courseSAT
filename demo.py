@@ -24,7 +24,8 @@ TEMP_FILE = "temp_test.py"
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
 def agent_prompt(name, req, transcript_path, trace):
-        transcript = json.load(transcript_path)
+        file = open(transcript_path, "r")
+        transcript = json.load(file)
         prompt = f"""
         Your are a semantic parser for transcripts and requirements. Your task is to write a 
         satisfiability script based on a given transcript schema, a given requirement, and a smt unSAT core from checking
