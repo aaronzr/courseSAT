@@ -5,7 +5,7 @@ import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
 from langchain_community.document_loaders import PyPDFLoader, TextLoader
-from langchain.text_splitter import split_documents
+from langchain.text_splitter import RecursiveCharacterTextSplitter
 from chainlit.types import AskFileResponse
 from schema.requirements_formula import (
 	check_breadth,
@@ -20,6 +20,7 @@ prior_response = []
 requirement_path = "temp1.txt"
 transcript_path = "temp2.txt"
 TEMP_FILE = "temp_test.py"
+text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=100)
 
 def process_file(file: AskFileResponse):
     if file.type == "text/plain":
