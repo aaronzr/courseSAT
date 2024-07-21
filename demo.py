@@ -39,7 +39,7 @@ def process_file(file: AskFileResponse):
 #we need to explicitly tell LLM to fill in none or unknown for Apprval fields.
 #Otherwise, it will fill in false
 def process_individual_transcript(results_dir, transcript_path):
-        transcript = transcript_path
+        transcript = open(transcript_path, "r")
         print("transcript: \n", transcript)
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
