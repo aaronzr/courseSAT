@@ -94,7 +94,7 @@ def process_individual_transcript(results_dir, transcript_path):
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
         prompt = f"""
-        Please fill out a json schema template containing Student (student information from the given transcript),
+        You are a highly accurate json parser. Please fill out a json schema template containing Student (student information from the given transcript),
         AP_Credits (Advanced Placement title and Earned Units from the given transcript),
         Courses_Taken (a list of taken courses with relevant course information from the given transcript), 
         Deviations (a list of taken courses deviated from major or specializaion requirements, but can be approved by an advisor to meet a requirement),
