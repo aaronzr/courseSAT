@@ -694,5 +694,5 @@ async def run_translator(message: cl.Message):
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
 			'''
 		res2 = await cl.Message(author="ME", content=f"enter `s` to restart").send()
-		if res2 == 's' or  res == 'S': 
+		if res2 == 's' or  res2 == 'S': 
 				cl.make_async(main)()
