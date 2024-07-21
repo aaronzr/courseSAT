@@ -484,20 +484,20 @@ async def main():
 	transcript = await cl.AskFileMessage(
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
-	text_0 = pdf_to_text(requirement.path)
+	text_0 = pdf_to_text(requirement[0].path)
 	requirement_temp = open(requirement_path, "w+")
 	requirement_temp.write(text_0)
-	text_1 = pdf_to_text(transcript.path)
+	text_1 = pdf_to_text(transcript[0].path)
 	transcript_temp = open(transcript_path, "w+")
 	transcript_temp.write(text_1)
 		
 	# Let the user know that the system is ready
 	await cl.Message(
-		content=f"`{requirement.name}` uploaded from {requirement.path}, it contains {len(text_0)} characters!"
+		content=f"`{requirement[0].name}` uploaded from {requirement[0].path}, it contains {len(text_0)} characters!"
 	).send()
 				# Let the user know that the system is ready
 	await cl.Message(
-		content=f"`{transcript.name}` uploaded from {transcript.path}, it contains {len(text_1)} characters!"
+		content=f"`{transcript[0].name}` uploaded from {transcript[0].path}, it contains {len(text_1)} characters!"
 	).send()
 	res = await cl.AskActionMessage(
 		content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
