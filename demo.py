@@ -4,7 +4,8 @@ import subprocess
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
-from langchain.document_loaders import PyPDFLoader, TextLoader
+from langchain_community.document_loaders import PyPDFLoader, TextLoader
+from chainlit.types import AskFileResponse
 from schema.requirements_formula import (
 	check_breadth,
 	check_foundations,
@@ -19,7 +20,7 @@ requirement_path = "temp1.txt"
 transcript_path = "temp2.txt"
 TEMP_FILE = "temp_test.py"
 
-def process_file(file):
+def process_file(file: AskFileResponse):
     if file.type == "text/plain":
         Loader = TextLoader
     elif file.type == "application/pdf":
@@ -490,11 +491,11 @@ async def main():
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
 
-	text_0 = process_file(requirement)
+	text_0 = process_file(requirement[0])
 	print(text_0)
 	requirement_temp = open(requirement_path, "w+")
 	requirement_temp.write(text_0)
-	text_1 = textract.process_file(transcript)
+	text_1 = textract.process_file(transcript[0])
 	transcript_temp = open(transcript_path, "w+")
 	transcript_temp.write(text_1)
 		
