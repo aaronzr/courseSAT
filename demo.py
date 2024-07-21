@@ -40,7 +40,6 @@ def process_file(file: AskFileResponse):
 #Otherwise, it will fill in false
 def process_individual_transcript(results_dir, transcript_path):
         transcript = open(transcript_path, "r")
-        print("transcript: \n", transcript)
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
         prompt = f"""
@@ -49,7 +48,7 @@ def process_individual_transcript(results_dir, transcript_path):
         Courses_Taken (a list of taken courses with relevant course information from the given transcript), 
         Deviations (a list of taken courses deviated from major or specializaion requirements, but can be approved by an advisor to meet a requirement),
         Approval (whether an advior has approved a taken course for degree requirements. This is typically false or unknown from the transcript unless
-        otherwise specified), and Cumulative GPA (cumulative GPA for undnergraduate and graduate degrees) 
+        otherwise specified), and Cumulativess (cumulative GPA and total units for undnergraduate and graduate degrees) 
         from a given transcript. It's vitally IMPORTANT that you double check and fill in correct information from the given transcript.
         Here is the transcript: {transcript.read()}. Please output a filled transcript json schema in the following format only. Your output MUST strictly follow the format.
         ```
@@ -578,24 +577,25 @@ async def run_translator(message: cl.Message):
 			content="analyzing the document and the transcript now...",
 		).send()
 		unsat_results, requirement_dict, unsat_dict = await cl.make_async(run_analysis)(transcript_path, requirement_path)
+		transcript = open(transcript_path, "r")
 		await cl.Message(author="ME", content=f"Here is a list of unsatisfied requirements: {unsat_results}").send()
 		await cl.Message(author="ME", content=f"Now we are going to generate agent policies for unsatisfied requirements...").send()
 		for i in unsat_results: 
 			if i=="foundations":
-				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], transcript, unsat_dict["foundations"])
+				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], transcript.read(), unsat_dict["foundations"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {f_policy}").send()
 			if i=="breadth":
-				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["BREADTH REQUIREMENT"], transcript, unsat_dict["breadth"])
+				b_policy = await cl.make_async(run_agent)("breadth", requirement_dict["BREADTH REQUIREMENT"], transcript.read(), unsat_dict["breadth"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {b_policy}").send()
 			if i=="significant_implementation":
 				s_policy = await cl.make_async(run_agent)("significant_implementation", requirement_dict["SIGNIFICANT IMPLEMENTATION REQUIREMENT"], transcript, unsat_dict["significant_implementation"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {s_policy}").send()
 			if i=="depth":
-				d_policy = await cl.make_async(run_agent)("depth", requirement_dict["ARTIFICIAL INTELLEGIENCE DEPTH"], transcript, unsat_dict["depth"])
+				d_policy = await cl.make_async(run_agent)("depth", requirement_dict["ARTIFICIAL INTELLEGIENCE DEPTH"], transcript.read(), unsat_dict["depth"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {d_policy}").send()
 			if i=="elective":
-				e_policy = await cl.make_async(run_agent)("elective", requirement_dict["ELECTIVES"], transcript, unsat_dict["elective"])
+				e_policy = await cl.make_async(run_agent)("elective", requirement_dict["ELECTIVES"], transcript.read(), unsat_dict["elective"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {e_policy}").send()
 			if i=="additional":
-				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript, unsat_dict["additional"])
+				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript.read(), unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
