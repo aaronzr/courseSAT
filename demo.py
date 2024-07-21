@@ -261,8 +261,8 @@ def ms_to_smt(requirement_path):
 	reqs = ["ELECTIVES", "BREADTH REQUIREMENT", "ARTIFICIAL INTELLEGIENCE DEPTH", "FOUNDATIONS REQUIERMENT",\
 		"SIGNIFICANT IMPLEMENTATION REQUIREMENT", "ADDITIONAL REQUIREMENT"]
 	req_out = []
-	text = open(requirement_path, "r")
 	for requirement in reqs: 
+		text = open(requirement_path, "r")
 		requirement =f"""
 			Please extract relevant {requirement} from {text.read()}. Please output 
 			extracted requirement of {requirement} in the document only.
