@@ -374,63 +374,62 @@ def run_analysis(transcript_path, requirement_doc):
 @cl.on_chat_start
 async def main():
 	files = []
-	# Wait for the user to upload a file
-	while len(files) < 2:
-		requirement = await cl.AskFileMessage(
-			content="Please upload a requirement document to begin!", accept=["pdf"]
-		).send()
+	requirement = await cl.AskFileMessage(
+		content="Please upload a requirement document to begin!", accept=["pdf"]
+	).send()
 
-		transcript = await cl.AskFileMessage(
-			content="Please also upload a transcript to begin!", accept=["pdf"]
-		).send()
-		files.append(requirement)
-		files.append(transcript)
-		if files == 2: 
-			text_file_0 = files[0][0]
-			text_0 = pdf_to_text(text_file_0.path)
-			requirement_temp = open(requirement_path, "w+")
-			requirement_temp.write(text_0)
-			text_file_1 = files[1][0]
-			text_1 = pdf_to_text(text_file_1.path)
-			transcript_temp = open(transcript_path, "w+")
-			transcript_temp.write(text_1)
+	transcript = await cl.AskFileMessage(
+		content="Please also upload a transcript to begin!", accept=["pdf"]
+	).send()
+	files.append(requirement)
+	files.append(transcript)
+	text_file_0 = files[0][0]
+	text_0 = pdf_to_text(text_file_0.path)
+	requirement_temp = open(requirement_path, "w+")
+	requirement_temp.write(text_0)
+	text_file_1 = files[1][0]
+	text_1 = pdf_to_text(text_file_1.path)
+	transcript_temp = open(transcript_path, "w+")
+	transcript_temp.write(text_1)
 		
-			# Let the user know that the system is ready
-			await cl.Message(
-				content=f"`{text_file_0.name}` uploaded from {text_file_0.path}, it contains {len(text_0)} characters!"
-			).send()
+	# Let the user know that the system is ready
+	await cl.Message(
+		content=f"`{text_file_0.name}` uploaded from {text_file_0.path}, it contains {len(text_0)} characters!"
+	).send()
 				# Let the user know that the system is ready
+	await cl.Message(
+		content=f"`{text_file_1.name}` uploaded from {text_file_1.path}, it contains {len(text_1)} characters!"
+	).send()
+	res = await cl.AskActionMessage(
+		content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
+	    		button to see the final analysis report and skip the middle steps",
+		actions=[
+			cl.Action(name="Click Me!", value="Python", label="✅ Python"),
+			cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
+			cl.Action(name="Click Me!", value="Final", label="✅ Final Report"),
+			cl.Action(name="cancel Me!", value="Cancel", label="❌ Cancel"),
+		],
+	).send()
+	prior_response.append(res.get("value"))
+	if res and res.get("value") == "Python":
 			await cl.Message(
-				content=f"`{text_file_1.name}` uploaded from {text_file_1.path}, it contains {len(text_1)} characters!"
+				content="We are going to generate pythonic CVC5 formulas for your document. Please specify\
+				a specific requirement you'd like to translate.",
 			).send()
-		res = await cl.AskActionMessage(
-			content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
-	    			button to see the final analysis report and skip the middle steps",
-			actions=[
-				cl.Action(name="Click Me!", value="Python", label="✅ Python"),
-				cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
-				cl.Action(name="Click Me!", value="Final", label="✅ Final Report"),
-				cl.Action(name="cancel Me!", value="Cancel", label="❌ Cancel"),
-			],
-		).send()
-		prior_response.append(res.get("value"))
-		if res and res.get("value") == "Python":
-				await cl.Message(
-					content="We are going to generate pythonic CVC5 formulas for your document. Please specify\
-					a specific requirement you'd like to translate.",
+	if res and res.get("value") == "SMT":
+			await cl.Message(
+				content="We are going to generate SMT CVC5 formulas for your document. Please specify\
+		 		a specific requirement you'd like to translate.",
 				).send()
-		if res and res.get("value") == "SMT":
-				await cl.Message(
-					content="We are going to generate SMT CVC5 formulas for your document. Please specify\
-					a specific requirement you'd like to translate.",
-				).send()
-		if res and res.get("value") == "Final Report":
-				await cl.Message(
-					content="We are going to generate a final report by running all checks and analysis from the backend...",
-				).send()
-		if res and res.get("value") == "Cancel":
-				files = None
-		print(prior_response)
+	if res and res.get("value") == "Final Report":
+		await cl.Message(
+				content="We are going to generate a final report by running all checks and analysis from the backend...",
+			).send()
+	if res and res.get("value") == "Cancel":
+         		await cl.Message(
+				content="restarting...",
+			).send()			
+	print(prior_response)
 		
 	
 @cl.on_message
