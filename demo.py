@@ -457,29 +457,29 @@ def run_analysis(transcript_path, requirement_doc):
 	path = f"{RESULTS_DIR}/{transcript_name}.json"
 	transcript = process(transcript_path)
 	foundations_result, foundations_trace = check_foundations(transcript)
+	breadth_result, breadth_trace = check_breadth(transcript)
+	significant_implementation_result, significant_implementation_trace = check_significant_implementation(transcript)
+	depth_result, depth_trace = check_artificial_depth(transcript)
+	electives_result, electives_trace = check_electives(transcript)
+	additional_result, additional_trace = check_additional(transcript)
 	if foundations_result.isSat()==False:
 		unsat_results.append("foundations")
 		unsat_trace.append(foundations_trace)
-	breadth_result, breadth_trace = check_breadth(transcript)
 	if breadth_result.isSat()==False:
 		unsat_results.append("breadth")
 		unsat_trace.append(breadth_trace)
-	significant_implementation_result, significant_implementation_trace = check_significant_implementation(transcript)
-	if significant_implementation_result.isSat()==False:
-		unsat_results.append("significant_implementation")
-		unsat_trace.append(significant_implementation_trace)
-	depth_result, depth_trace = check_artificial_depth(transcript)
 	if depth_result.isSat()==False:
 		unsat_results.append("depth")
 		unsat_trace.append(depth_trace)
-	electives_result, electives_trace = check_electives(transcript)
-	if electives_result.isSat()==False:
-		unsat_results.append("elective")
-		unsat_trace.append(electives_trace)
-	additional_result, additional_trace = check_additional(transcript)
+	if significant_implementation_result.isSat()==False:
+		unsat_results.append("significant_implementation")
+		unsat_trace.append(significant_implementation_trace)
 	if additional_result.isSat()==False:
 		unsat_results.append("additional")
 		unsat_trace.append(additional_trace)
+	if electives_result.isSat()==False:
+		unsat_results.append("elective")
+		unsat_trace.append(electives_trace)
 	unsat_dict = dict(zip(unsat_results, unsat_trace))
 	return unsat_results, requirement_dict, unsat_dict
 

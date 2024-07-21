@@ -178,7 +178,7 @@ def process_individual_transcript(results_dir, transcript_path):
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
         if start2 in schema: 
-                schema_fix = read_code.split(start)[1].split(end)[0]
+                schema_fix = schema.split(start)[1].split(end)[0]
                 if "transcript = " in schema_fix: 
                         schema_fix = schema_fix.replace("transcript =","").strip()
         else:
