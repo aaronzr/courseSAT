@@ -208,40 +208,7 @@ def pdf_to_text(doc):
 		text += page.extract_text()
 	return text
 
-def automated_code_fixer(iterations):
-		for i in range(iterations):
-				cmd = ["python", TEMP_FILE]
-				process = subprocess.Popen(cmd, 
-						   stdout=subprocess.PIPE, 
-						   stderr=subprocess.PIPE)
-
-				# wait for the process to terminate
-				out, err = process.communicate()
-				print(f"out:\n {out}")
-				print(f"err:\n {err}")
-				errcode = process.returncode
-				if "Error" in err.decode("utf-8"):
-						code = open(TEMP_FILE, "r")
-						print("We are going to prompt for code fix...\n")
-						prompt = f"""
-						Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
-						preserving correct logic.
-						"""
-						fixed_code =gpt_infer(prompt)
-						print(f"===============error message=======================\n")
-						print(err)
-						print(f"==============={i} iteration of fixing code=======================\n")
-						start = "```python"
-						end = "```"
-						temp = open(TEMP_FILE, "w+")
-						reformatted_fixed_code = fixed_code.split(start)[1].split(end)[0]
-						temp.write(reformatted_fixed_code)
-				else:
-						break
-		return reformatted_fixed_code
-						
-   
-		
+							
 def get_requirement(text_file, requirement):
 		text = open(text_file, "r")
 		requirement =f"""
