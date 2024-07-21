@@ -694,4 +694,4 @@ async def run_translator(message: cl.Message):
 			'''
 		res = await cl.Message(author="ME", content=f"enter `s` to restart").send()
 		if res == 's' or  res == 'S': 
-				cl.make_async(main)
+				cl.make_async(main)()
