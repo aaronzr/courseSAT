@@ -477,7 +477,6 @@ def run_analysis(transcript_path, requirement_doc):
 
 @cl.on_chat_start
 async def main():
-	files = []
 	requirement = await cl.AskFileMessage(
 		content="Please upload a requirement document to begin!", accept=["pdf"]
 	).send()
@@ -485,16 +484,11 @@ async def main():
 	transcript = await cl.AskFileMessage(
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
-	files.append(requirement)
-	files.append(transcript)
-	text_file_0 = files[0][0]
-	text_0 = pdf_to_text(text_file_0.path)
 	requirement_temp = open(requirement_path, "w+")
-	requirement_temp.write(text_0)
-	text_file_1 = files[1][0]
-	text_1 = pdf_to_text(text_file_1.path)
+	requirement_temp.write(pdf_to_text(requirement.path))
+	text_1 = pdf_to_text(transcript.path)
 	transcript_temp = open(transcript_path, "w+")
-	transcript_temp.write(text_1)
+	transcript_temp.write(pdf_to_text(transcript.path))
 		
 	# Let the user know that the system is ready
 	await cl.Message(
