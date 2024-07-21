@@ -1,7 +1,6 @@
 import os
 import openai
 import subprocess
-import textract
 import chainlit as cl
 from PyPDF2 import PdfReader
 from openai import OpenAI
@@ -18,6 +17,20 @@ prior_response = []
 requirement_path = "temp1.txt"
 transcript_path = "temp2.txt"
 TEMP_FILE = "temp_test.py"
+
+def process_file(file: AskFileResponse):
+    if file.type == "text/plain":
+        Loader = TextLoader
+    elif file.type == "application/pdf":
+        Loader = PyPDFLoader
+
+        loader = Loader(file.path)
+        documents = loader.load()
+        docs = text_splitter.split_documents(documents)
+        for i, doc in enumerate(docs):
+            doc.metadata["source"] = f"source_{i}"
+        return docs
+
 
 #we need to explicitly tell LLM to fill in none or unknown for Apprval fields.
 #Otherwise, it will fill in false
@@ -476,13 +489,13 @@ async def main():
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
 
-	text_0 = textract.process(requirement[0].path)
+	text_0 = process_file(requirement)
 	print(text_0)
 	requirement_temp = open(requirement_path, "w+")
-	requirement_temp.write(text_0.decode("utf-8"))
-	text_1 = textract.process(transcript[0].path)
+	requirement_temp.write(text_0)
+	text_1 = textract.process_file(transcript)
 	transcript_temp = open(transcript_path, "w+")
-	transcript_temp.write(text_1.decode("utf-8"))
+	transcript_temp.write(text_1)
 		
 	# Let the user know that the system is ready
 	await cl.Message(
@@ -493,8 +506,7 @@ async def main():
 		content=f"`{transcript[0].name}` uploaded from {transcript[0].path}, it contains {len(text_1)} characters!"
 	).send()
 	res = await cl.AskActionMessage(
-		content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
-	    		button to see the final analysis report and skip the middle steps",
+		content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report' button to see the final analysis report and skip the middle steps",
 		actions=[
 			cl.Action(name="Click Me!", value="Python", label="✅ Python"),
 			cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
