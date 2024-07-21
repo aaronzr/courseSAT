@@ -595,7 +595,7 @@ async def run_translator(message: cl.Message):
 
 	if prior_response[-1] == "Final":
 		await cl.Message(
-			content="analyzing the document and the transcript now...",
+			content="analyzing the document and the transcript now...Please type any message to kick off the analysis!",
 		).send()
 		unsat_results, requirement_dict, unsat_dict = await cl.make_async(run_analysis)(transcript_path, requirement_path)
 		await cl.Message(author="ME", content=f"Here is a list of unsatisfied requirements: {unsat_results}").send()
