@@ -643,7 +643,7 @@ async def run_translator(message: cl.Message):
 		await cl.Message(
 			content=f"analyzing the document and generating python cvc5 formulas now. This might take a while, because we want to ensure correct translation...",
 		).send()
-		out = await cl.make_async(translate_to_python)(file_path, message.content)
+		out = await cl.make_async(translate_to_python)(requirement_path, message.content)
 		await cl.Message(author="ME", content=f"python solver formulas are: {out}").send()
 		await cl.Message(
 			content="automatically fixing generated python formula code in 30 iterations...",
