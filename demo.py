@@ -21,7 +21,7 @@ TEMP_FILE = "temp_test.py"
 #we need to explicitly tell LLM to fill in none or unknown for Apprval fields.
 #Otherwise, it will fill in false
 def process_individual_transcript(results_dir, transcript_path):
-        transcript = transcript_path
+        transcript = pdf_to_text(transcript_path)
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
         prompt = f"""
@@ -484,19 +484,20 @@ async def main():
 	transcript = await cl.AskFileMessage(
 		content="Please also upload a transcript to begin!", accept=["pdf"]
 	).send()
+	text_0 = pdf_to_text(requirement.path)
 	requirement_temp = open(requirement_path, "w+")
-	requirement_temp.write(pdf_to_text(requirement.path))
+	requirement_temp.write(text_0)
 	text_1 = pdf_to_text(transcript.path)
 	transcript_temp = open(transcript_path, "w+")
-	transcript_temp.write(pdf_to_text(transcript.path))
+	transcript_temp.write(text_1)
 		
 	# Let the user know that the system is ready
 	await cl.Message(
-		content=f"`{text_file_0.name}` uploaded from {text_file_0.path}, it contains {len(text_0)} characters!"
+		content=f"`{requirement.name}` uploaded from {requirement.path}, it contains {len(text_0)} characters!"
 	).send()
 				# Let the user know that the system is ready
 	await cl.Message(
-		content=f"`{text_file_1.name}` uploaded from {text_file_1.path}, it contains {len(text_1)} characters!"
+		content=f"`{transcript.name}` uploaded from {transcript.path}, it contains {len(text_1)} characters!"
 	).send()
 	res = await cl.AskActionMessage(
 		content="Please select the language if you would like to see CVC5 SMT formulas in a certain language or select 'Final Report'\
