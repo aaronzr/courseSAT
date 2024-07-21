@@ -613,7 +613,6 @@ async def run_translator(message: cl.Message):
 		transcript = open(transcript_path, "r")
 		for i in range(len(unsat_results)): 
 			await cl.Message(author="ME", content=f"Here is a list of unsatisfied requirements: {unsat_results[i]}").send()
-			await cl.Message(author="ME", content=f"Here is a list of unsatisfied requirements: {requirement_dict[i]}").send()
 		await cl.Message(author="ME", content=f"Now we are going to generate agent policies for unsatisfied requirements...").send()
 		for i in unsat_results: 
 			if i=="foundations":
