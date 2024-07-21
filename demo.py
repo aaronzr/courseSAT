@@ -501,6 +501,7 @@ async def main():
 		content1 += text_0[i].page_content
 	requirement_temp.write(content1)
 	print("===============bckend_debug=================\n")
+	text_1 = process_file(transcript[0])
 	print(text_1)
 	content2 = ""
 	transcript_temp = open(transcript_path, "w+")
