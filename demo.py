@@ -599,6 +599,3 @@ async def run_translator(message: cl.Message):
 			if i=="additional":
 				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript, unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
-
-
-	cl.run_sync(main())
