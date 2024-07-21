@@ -236,7 +236,7 @@ def automated_formula_fixer(iterations):
 						Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
 						preserving correct logic.
 						"""
-						fixed_code =gpt_infer(prompt)
+						fixed_code =gpt4_infer(prompt)
 						print(f"===============error message=======================\n")
 						print(err)
 						print(f"==============={i} iteration of fixing code=======================\n")
