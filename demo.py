@@ -21,7 +21,7 @@ TEMP_FILE = "temp_test.py"
 #we need to explicitly tell LLM to fill in none or unknown for Apprval fields.
 #Otherwise, it will fill in false
 def process_individual_transcript(results_dir, transcript_path):
-        transcript = pdf_to_text(transcript_path)
+        transcript = transcript_path
         name = os.path.basename(transcript_path)
         transcript_name, _ = name.split(".")
         prompt = f"""
@@ -197,16 +197,6 @@ def ms_to_smt(requirement_path):
 		individual_requirement = gpt3_infer(requirement)
 		req_out.append(individual_requirement)
 	return reqs, req_out
-
-def pdf_to_text(doc):
-	print(doc)
-	reader = PdfReader(doc)
-	number_of_pages = len(reader.pages)
-	text = ""
-	for i in range(0, number_of_pages):
-		page = reader.pages[i]
-		text += page.extract_text()
-	return text
 
 							
 def get_requirement(text_file, requirement):
