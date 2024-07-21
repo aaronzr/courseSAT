@@ -628,17 +628,18 @@ async def run_translator(message: cl.Message):
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {b_policy}").send()
 			'''
 			if i=="significant_implementation":
-				await cl.Message(author="ME", content=f"Here is SMT solver core proof for unsatisifed formulas/requirements: {unsat_dict['significant_implementation']}").send()
+				e_policy = await cl.make_async(run_agent)("significant_implementation", requirement_dict["SIGNIFICANT IMPLEMENTATION REQUIREMENT"], transcript.read(), unsat_dict['significant_implementation'])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {s_policy}").send()
 			if i=="depth":
-				await cl.Message(author="ME", content=f"Here is SMT solver core proof for unsatisifed formulas/requirements: {unsat_dict['depth']}").send()	
+				e_policy = await cl.make_async(run_agent)("depth", requirement_dict["ARTIFICIAL INTELLEGIENCE DEPTH"], transcript.read(), unsat_dict["elective"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {d_policy}").send()
 			if i=="elective":
 				e_policy = await cl.make_async(run_agent)("elective", requirement_dict["ELECTIVES"], transcript.read(), unsat_dict["elective"])
-				await cl.Message(author="ME", content=f"Here is SMT solver core proof for unsatisifed formulas/requirements: {unsat_dict['"elective']}").send()	
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {e_policy}").send()
 			if i=="additional":
 				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript.read(), unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
 			'''
-	cl.make_async(main)
+		res = await cl.Message(author="ME", content=f"enter `s` to restart").send()
+		if res == 's' or  res == 'S': 
+				cl.make_async(main)
