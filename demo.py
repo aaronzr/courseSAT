@@ -536,6 +536,9 @@ def run_analysis(transcript_path, requirement_doc):
 	print("Let's first translate the uploaded document into SMT fomulas...\n") 
 	reqs, req_out = ms_to_smt(requirement_doc)
 	requirement_dict = dict(zip(reqs, req_out))
+	print('================in the middle of analysis==========\n')
+	print(req_out)
+	print(requirement_dict)
 	name = os.path.basename(transcript_path)
 	transcript_name, _ = name.split(".")
 	path = f"{RESULTS_DIR}/{transcript_name}.json"
@@ -674,6 +677,8 @@ async def run_translator(message: cl.Message):
 		await cl.Message(author="ME", content=f"Now we are going to generate agent policies for unsatisfied requirements...").send()
 		for i in unsat_results: 
 			if i=="foundations":
+				print("requrement_dict?????\n")
+				print(requirement_dict["FOUNDATIONS REQUIERMENT"])
 				f_policy = await cl.make_async(run_agent)("foundations", requirement_dict["FOUNDATIONS REQUIERMENT"], schema_path, unsat_dict["foundations"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {f_policy}").send()
 			if i=="breadth":
@@ -693,6 +698,13 @@ async def run_translator(message: cl.Message):
 				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript.read(), unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
 			'''
-		res2 = await cl.Message(author="ME", content=f"enter `s` to restart").send()
-		if res2 == 's' or  res2 == 'S': 
+		res2 = await cl.Message(author="ME", content=f"click button to restart",
+                        actions=[
+			cl.Action(name="Click Me!", value="Python", label="✅ Python"),
+			cl.Action(name="Click Me!", value="SMT", label="✅ SMT Core"),
+			cl.Action(name="Click Me!", value="Final", label="✅ Final Report"),
+			cl.Action(name="cancel Me!", value="Cancel", label="❌ Cancel"),
+		],).send()
+		prior_response.append(res2.get("value"))
+		if len(prior_response)>=1:
 				cl.make_async(main)()
