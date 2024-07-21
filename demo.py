@@ -218,6 +218,37 @@ def ms_to_smt(requirement_path):
 		req_out.append(individual_requirement)
 	return reqs, req_out
 
+def automated_formula_fixer(iterations):
+		for i in range(iterations):
+				cmd = ["python", TEMP_FILE]
+				process = subprocess.Popen(cmd, 
+						   stdout=subprocess.PIPE, 
+						   stderr=subprocess.PIPE)
+
+				# wait for the process to terminate
+				out, err = process.communicate()
+				print(f"out:\n {out}")
+				print(f"err:\n {err}")
+				errcode = process.returncode
+				if "Error" in err.decode("utf-8"):
+						code = open(TEMP_FILE, "r")
+						print("We are going to prompt for code fix...\n")
+						prompt = f"""
+						Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
+						preserving correct logic.
+						"""
+						fixed_code =gpt_infer(prompt)
+						print(f"===============error message=======================\n")
+						print(err)
+						print(f"==============={i} iteration of fixing code=======================\n")
+						start = "```python"
+						end = "```"
+						temp = open(TEMP_FILE, "w+")
+						reformatted_fixed_code = fixed_code.split(start)[1].split(end)[0]
+						temp.write(reformatted_fixed_code)
+				else:
+						break
+		return reformatted_fixed_code
 							
 def get_requirement(text_file, requirement):
 		text = open(text_file, "r")
@@ -399,7 +430,7 @@ def translate_to_python(requirement_text, requirement):
 		solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
 		parameterized formulas with respect to the requirements only. 
 		"""
-		formula_out = gpt_infer(formula_prompt)
+		formula_out = gpt3_infer(formula_prompt)
 
 		compile_prompt = f"""
 		Your task is to convert every lines of python code and relevant comments into
@@ -441,7 +472,7 @@ def translate_to_python(requirement_text, requirement):
 		``` Please be sure to convert all code and relevnt comments in {formula_out} to the format above and write a transcript schema to
 		test code correctness. 
 		"""
-		formula_compile = gpt_infer(compile_prompt)    
+		formula_compile = gpt4_infer(compile_prompt)    
 		start = "```python"
 		end = "```"
 		reformatted_formula_compile = formula_compile.split(start)[1].split(end)[0]
@@ -558,13 +589,12 @@ async def run_translator(message: cl.Message):
 		).send()
 		out = await cl.make_async(translate_to_python)(file_path, message.content)
 		await cl.Message(author="ME", content=f"python solver formulas are: {out}").send()
-		'''
 		await cl.Message(
 			content="automatically fixing generated python formula code in 30 iterations...",
 		).send()
-		response = await cl.make_async(automated_code_fixer)(30)
+		response = await cl.make_async(automated_formula_fixer)(30)
 		await cl.Message(author="ME", content=response).send()
-		'''
+
 	print(prior_response[-1])
 	if prior_response[-1] == "SMT":
 		await cl.Message(
@@ -600,3 +630,4 @@ async def run_translator(message: cl.Message):
 			if i=="additional":
 				a_policy = await cl.make_async(run_agent)("additional", requirement_dict["ADDITIONAL REQUIREMENT"], transcript.read(), unsat_dict["additional"])
 				await cl.Message(author="ME", content=f"Agent policy for unsatified {i} requirement is: {a_policy}").send()
+	cl.make_async(main)
