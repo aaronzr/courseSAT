@@ -1,10 +1,15 @@
 import os
+import openai
 import re
 import sys
 import cvc5
 import json
 from cvc5 import Kind
+from openai import OpenAI
 from test import *
+
+TEST_RESULT = "../eval/direct_verbalize"
+LETTER_GRADES = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"]
 
 def solver_init(): 
 	solver = cvc5.Solver()
@@ -29,15 +34,35 @@ def result_checker(solver, variables):
 		print("Unsat requirement core is: ", trace)
 	return result, trace
 
+def gpt4_infer(prompt):
+	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+	chat_completion = client.chat.completions.create(
+			messages=[
+					{
+					"role": "user",
+					"content": f"{prompt}",
+					}
+			],
+			model="gpt-4o",
+	)
+	return chat_completion.choices[0].message.content
+
+
 def check_breadth(transcript_path):
 	solver = solver_init()
 	with open(transcript_path, 'r') as file:
 		transcript = json.load(file)
-    
+
 	# Create course variables for the three breadth requirements
 	course_a = solver.mkConst(solver.getStringSort(), "course_a")
 	course_b = solver.mkConst(solver.getStringSort(), "course_b")
 	course_c = solver.mkConst(solver.getStringSort(), "course_c")
+	grade = solver.mkConst(solver.getStringSort(), "grade")
+	course_a_units = solver.mkConst(solver.getIntegerSort(), "course_a_units")
+	course_b_units = solver.mkConst(solver.getIntegerSort(), "course_b_units")
+	course_c_units = solver.mkConst(solver.getIntegerSort(), "course_c_units")
+	vars = [course_a, course_b, course_c, grade, course_a_units, course_b_units, course_c_units]
+	
 
 	# Check that the courses are unique and from different areas
 	constraints_set1 = []
@@ -45,45 +70,58 @@ def check_breadth(transcript_path):
 	constraints_set3 = []
 
 	for course in transcript.get("Courses_Taken", []):
-		constraints_set1.append(solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course.get("Course_ID")))))
-		constraints_set2.append(solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(str(course.get("Course_ID")))))
-		constraints_set3.append(solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(str(course.get("Course_ID")))))
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.GEQ, solver.mkInteger(int(course.get("Earned_Units"))), course_a_units),
+		solver.mkTerm(Kind.EQUAL, solver.mkString(str(course.get("Grade"))), grade)))
+		constraints_set2.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.GEQ, solver.mkInteger(int(course.get("Earned_Units"))), course_b_units),
+		solver.mkTerm(Kind.EQUAL, solver.mkString(str(course.get("Grade"))), grade)))
+		constraints_set3.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.GEQ, solver.mkInteger(int(course.get("Earned_Units"))), course_c_units),
+		solver.mkTerm(Kind.EQUAL, solver.mkString(str(course.get("Grade"))), grade)))
+
 
 	constraint1 = solver.mkTerm(Kind.OR, *constraints_set1)
 	constraint2 = solver.mkTerm(Kind.OR, *constraints_set2)
 	constraint3 = solver.mkTerm(Kind.OR, *constraints_set3)
 
-	# Constraint for at least 3 units per course
-	units_constraints = []
-	for course in transcript.get("Courses_Taken", []):
-		if course["Earned_Units"] >= 3:
-			units_constraints.append(solver.mkTrue())
-		else:
-			units_constraints.append(solver.mkFalse())
-    
-	units_constraints_combined = solver.mkTerm(Kind.AND, *units_constraints)
 
 	# Constraint for letter grade
 	grade_constraints = []
-	letters = ["A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F"]
-	for course in transcript.get("Courses_Taken", []):
-		if course["Grade"] in letters:
-			grade_constraints.append(solver.mkTrue())
-		else:
-			grade_constraints.append(solver.mkFalse())
+	for letter in LETTER_GRADES: 
+		grade_constraints.append(solver.mkTerm(Kind.EQUAL, solver.mkString(letter), grade))
+        
 
-	grade_constraints_combined = solver.mkTerm(Kind.AND, *grade_constraints)
+	grade_constraints_combined = solver.mkTerm(Kind.OR, *grade_constraints)
 
 	# Constraints for courses from different areas
 	area_a_courses = ["CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251"]
 	area_b_courses = ["CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E"]
 	area_c_courses = ["CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373"]
 	area_d_courses = ["CS 152", "CS 181", "CS 182", "CS 256", "CS 281", "CS 329T", "CS 384", "AMSTUD 133", "AMSTUD 145", "ANTHRO 132D", "COMM 118S", "COMM 120W", "COMM 124", "COMM 130D", "COMM 145", "COMM 154", "COMM 166", "COMM 186W", "COMM 230A", "COMM 230B", "COMM 230C", "DESINST 215", "DESINST 240", "EARTHSYS 213", "ENGLISH 184D", "ENGR 248", "HISTORY 244F", "INTLPOL 268", "LAW 4039", "ME 177", "MS&E 193", "MS&E 231", "MS&E 234", "MS&E 254", "POLISCI 150A", "PSYCH 215", "PUBLPOL 103F", "PUBLPOL 353B"]
-
-	constraints_set_a = [solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(course)) for course in area_a_courses]
-	constraints_set_b = [solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(course)) for course in area_b_courses]
-	constraints_set_c = [solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(course)) for course in area_c_courses]
-
+	# Constraints for course areas
+	constraints_set_a = [
+		solver.mkTerm(Kind.AND, 
+		solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(course)),
+		solver.mkTerm(Kind.GEQ, course_a_units, solver.mkInteger(3)))
+  		for course in area_a_courses]
+	constraints_set_b = [
+		solver.mkTerm(Kind.AND, 
+		solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(course)),
+		solver.mkTerm(Kind.GEQ, course_b_units, solver.mkInteger(3)))
+		for course in area_b_courses]
+	constraints_set_c = [
+		solver.mkTerm(Kind.AND, 
+        	solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(course)),
+		solver.mkTerm(Kind.GEQ, course_c_units, solver.mkInteger(3)))
+		for course in area_c_courses]
+	# Constraint for at least 3 units per course
 	constraint_area_a = solver.mkTerm(Kind.OR, *constraints_set_a)
 	constraint_area_b = solver.mkTerm(Kind.OR, *constraints_set_b)
 	constraint_area_c = solver.mkTerm(Kind.OR, *constraints_set_c)
@@ -94,7 +132,6 @@ def check_breadth(transcript_path):
 		constraint1,
 		constraint2,
 		constraint3,
-		units_constraints_combined,
 		grade_constraints_combined,
 		solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.EQUAL, course_a, course_b)),  # courses must be different
 		solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.EQUAL, course_a, course_c)),
@@ -103,7 +140,7 @@ def check_breadth(transcript_path):
 	)
 
 	solver.assertFormula(formula)
-	result, trace = result_checker(solver, [course_a, course_b, course_c])
+	result, trace = result_checker(solver,vars)
 	return result, trace
     
 def check_significant_implementation(transcript_path):
@@ -118,6 +155,8 @@ def check_significant_implementation(transcript_path):
 
 	# Define the variables for the solver
 	course_variable = solver.mkConst(solver.getStringSort(), "course")
+	coterm_course_variable_1 = solver.mkConst(solver.getStringSort(), "coterm_course_1")
+	coterm_course_variable_2 = solver.mkConst(solver.getStringSort(), "coterm_course_2")
 	grade_variable = solver.mkConst(solver.getStringSort(), "grade")
 	stanford_variable = solver.mkConst(solver.getBooleanSort(), "stanford")
 
@@ -126,8 +165,7 @@ def check_significant_implementation(transcript_path):
 	constraint_1 = solver.mkTerm(Kind.OR, *constraints_set1)
 
 	# Constraint: course taken for a letter grade ('A', 'B', 'C', 'D', 'F')
-	letter_grades = ['A', 'B', 'C', 'D', 'F']
-	constraints_set2 = [solver.mkTerm(Kind.EQUAL, grade_variable, solver.mkString(grade)) for grade in letter_grades]
+	constraints_set2 = [solver.mkTerm(Kind.EQUAL, grade_variable, solver.mkString(grade)) for grade in LETTER_GRADES]
 	constraint_2 = solver.mkTerm(Kind.OR, *constraints_set2)
 
 	# Constraint: course taken at Stanford
@@ -143,21 +181,30 @@ def check_significant_implementation(transcript_path):
 		course_constraints.append(solver.mkTerm(Kind.EQUAL, grade_variable, solver.mkString(str(course["Grade"]))))
 		course_constraints.append(solver.mkTerm(Kind.EQUAL, stanford_variable, solver.mkBoolean(course.get("Taken_At_Stanford", False))))
 
-		transcript_constraints.append(solver.mkTerm(Kind.AND, *course_constraints))
-
-	significant_course_constraint = solver.mkTerm(Kind.OR, *transcript_constraints)
+	transcript_constraints.append(solver.mkTerm(Kind.AND, *course_constraints))
+	print("debug:\n")
+	print(transcript_constraints)
+	if len(transcript_constraints) > 1: 
+		significant_course_constraint = solver.mkTerm(Kind.OR, *transcript_constraints)
+	else:
+		significant_course_constraint = transcript_constraints[0]
 	final_constraint = solver.mkTerm(Kind.AND, general_constraints, significant_course_constraint)
-
-	# Handling coterm students who took equivalent courses as undergraduates
+	# Handling coterm students who took equivalent courses as undergraduates: two equivalent courses can 
+	# waive the course requirements
 	if transcript["Student"]["Coterm"]:
 		undergrad_credits_constraints = []
-		for course in transcript.get("Courses_Taken", []):
-			if any(sub in course["Title"] for sub in significant_implementation_courses):
-				undergrad_credits_constraints.append(solver.mkTerm(Kind.EQUAL, course_variable, solver.mkString(course["Course_ID"])))
+		undergrad_credits_constraints.append(solver.mkTerm(Kind.AND,
+                solver.mkTerm(Kind.EQUAL, coterm_course_variable_1, *(solver.mkString(course["Course_ID"]) for course in transcript.get("Courses_Taken", []))),
+                solver.mkTerm(Kind.EQUAL, coterm_course_variable_2, *(solver.mkString(course["Course_ID"]) for course in transcript.get("Courses_Taken", [])))))
 
+		undergrad_credits_constraints.append(solver.mkTerm(Kind.EQUAL, coterm_course_variable_1, *(solver.mkString(course) for course in significant_implementation_courses)))
+		undergrad_credits_constraints.append(solver.mkTerm(Kind.EQUAL, coterm_course_variable_2, *(solver.mkString(course) for course in significant_implementation_courses)))
+        
+		undergrad_credits_constraints.append(solver.mkTerm(Kind.NOT,solver.mkTerm(Kind.EQUAL, coterm_course_variable_1, coterm_course_variable_2)))
+		alernative_constraints = solver.mkTerm(Kind.AND, *undergrad_credits_constraints) 
 		#undergrad_credits_constraint = solver.mkTerm(Kind.OR, undergrad_credits_constraints)
-		final_constraint = solver.mkTerm(Kind.OR, *final_constraint, *undergrad_credits_constraints)
-
+	final_constraint = solver.mkTerm(Kind.OR, final_constraint, alernative_constraints)
+	solver.assertFormula(final_constraint)
 	# Handling approved deviations
 	deviation_constraints = []
 	for deviation in transcript.get("Deviations", []):
@@ -167,10 +214,9 @@ def check_significant_implementation(transcript_path):
 
 	if deviation_constraints:
 		deviation_constraint = solver.mkTerm(Kind.AND, *deviation_constraints)
-		final_constraint = solver.mkTerm(Kind.OR, final_constraint, deviation_constraint)
-
+		final_constraint = solver.mkTerm(Kind.OR, final_constraint, alernative_constraints, deviation_constraint)
 	solver.assertFormula(final_constraint)
-	result, trace = result_checker(solver, [course_variable, grade_variable, stanford_variable])
+	result, trace = result_checker(solver, [course_variable, grade_variable, coterm_course_variable_1, coterm_course_variable_2, stanford_variable])
 	# Check satisfiability
 	return result, trace
 
@@ -273,10 +319,10 @@ def check_artificial_depth(transcript_path):
 	grades_taken_vars = [solver.mkConst(solver.getStringSort(), f"grade{i}") for i in range(len(courses_taken))]
 	variables = courses_taken_vars + units_taken_vars + grades_taken_vars
 	# All courses must be taken for a letter grade for 3 or more units
-	letter_grades = ["A", "B", "C", "D", "E", "F"]
+
 	# Create constraints to ensure all courses are taken for a letter grade
 	all_grades_constraints = [
-	solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, grade_var, solver.mkString(grade)) for grade in letter_grades])
+	solver.mkTerm(Kind.OR, *[solver.mkTerm(Kind.EQUAL, grade_var, solver.mkString(grade)) for grade in LETTER_GRADES])
 	for grade_var in grades_taken_vars
 	]
 
@@ -574,15 +620,37 @@ def check_additional(transcript_path):
 	result, trace = result_checker(solver, vars)
 
 	return result, trace
-		
+
+def direct_verbalize(schema_path):
+
+        result0, trace0 = check_breadth(schema_path)
+        result1, trace1 = check_significant_implementation(schema_path)
+        result2, trace2 = check_foundations(schema_path)
+        traces = zip([result0, result1, result2], [trace0, trace1, trace2])
+        count = 0
+        for result, trace in traces: 
+                prompt = f"""
+                You are a seasoned SMT formulas to natural language translator. 
+                Please faithfully translate the following SMT formulas into 
+                natural languages: {trace}
+                """
+                out = gpt4_infer(prompt)
+                print(out)
+                file = open(f"{TEST_RESULT}/{count}.txt", "w+")
+                file.write(prompt)
+                file.write("\n=============================response===========================\n")
+                file.write(out)
+                file.close()
+                count += 1
+        
 if __name__ == "__main__":
 	schema_path = "../schema_results/stanford_transcript1.json"
 	#with open(schema_path, "r") as file: 
 	#	transcript = json.load(file)
 	
- 
+	direct_verbalize(schema_path)
 	#result = check_foundations(transcript)
-	result, _ = check_additional(schema_path)
+	#result, _ = check_additional(schema_path)
 	#result = check_significant_implementation(transcript)
 	#result, trace = check_breadth(schema_path)
 	#print(result)
