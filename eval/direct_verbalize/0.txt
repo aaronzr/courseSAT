@@ -1,0 +1,35 @@
+
+                You are a seasoned SMT formulas to natural language translator. 
+                Please faithfully translate the following SMT formulas into 
+                natural languages: [(let ((_let_1 (>= course_c_units 3))) (let ((_let_2 (>= course_b_units 3))) (let ((_let_3 (>= course_a_units 3))) (let ((_let_4 (= "B" grade))) (let ((_let_5 (= "B+" grade))) (let ((_let_6 (= "A-" grade))) (let ((_let_7 (>= 5 course_c_units))) (let ((_let_8 (>= 5 course_b_units))) (let ((_let_9 (>= 5 course_a_units))) (and (or (and (= course_a "CME 100") _let_9 _let_4) (and (= course_a "CME 102") _let_9 _let_6) (and (= course_a "CME 104") _let_9 _let_6) (and (= course_a "CS 106B") _let_9 _let_4) (and (= course_a "CME 106") (>= 4 course_a_units) _let_5)) (or (and (= course_b "CME 100") _let_8 _let_4) (and (= course_b "CME 102") _let_8 _let_6) (and (= course_b "CME 104") _let_8 _let_6) (and (= course_b "CS 106B") _let_8 _let_4) (and (= course_b "CME 106") (>= 4 course_b_units) _let_5)) (or (and (= course_c "CME 100") _let_7 _let_4) (and (= course_c "CME 102") _let_7 _let_6) (and (= course_c "CME 104") _let_7 _let_6) (and (= course_c "CS 106B") _let_7 _let_4) (and (= course_c "CME 106") (>= 4 course_c_units) _let_5)) (or (= "A+" grade) (= "A" grade) _let_6 _let_5 _let_4 (= "B-" grade) (= "C+" grade) (= "C" grade) (= "C-" grade) (= "D+" grade) (= "D" grade) (= "D-" grade) (= "F" grade)) (not (= course_a course_b)) (not (= course_a course_c)) (not (= course_b course_c)) (or (or (and (= course_a "CS 154") _let_3) (and (= course_a "CS 157") _let_3) (and (= course_a "CS 168") _let_3) (and (= course_a "CS 254") _let_3) (and (= course_a "CS 261") _let_3) (and (= course_a "CS 265") _let_3) (and (= course_a "EE 364A") _let_3) (and (= course_a "EE 364B") _let_3) (and (= course_a "Phil 251") _let_3)) (or (and (= course_b "CS 140") _let_2) (and (= course_b "CS 140E") _let_2) (and (= course_b "CS 143") _let_2) (and (= course_b "CS 144") _let_2) (and (= course_b "CS 149") _let_2) (and (= course_b "CS 212") _let_2) (and (= course_b "CS 242") _let_2) (and (= course_b "CS 243") _let_2) (and (= course_b "CS 244") _let_2) (and (= course_b "CS 244B") _let_2) (and (= course_b "CS 295") _let_2) (and (= course_b "CS 316") _let_2) (and (= course_b "CS 358") _let_2) (and (= course_b "EE 180") _let_2) (and (= course_b "EE 282") _let_2) (and (= course_b "EE 382E") _let_2)) (or (and (= course_c "CS 145") _let_1) (and (= course_c "CS 147") _let_1) (and (= course_c "CS 148") _let_1) (and (= course_c "CS 155") _let_1) (and (= course_c "CS 173") _let_1) (and (= course_c "CS 221") _let_1) (and (= course_c "CS 223A") _let_1) (and (= course_c "CS 224N") _let_1) (and (= course_c "CS 224U") _let_1) (and (= course_c "CS 224W") _let_1) (and (= course_c "CS 227B") _let_1) (and (= course_c "CS 228") _let_1) (and (= course_c "CS 229") _let_1) (and (= course_c "CS 229M") _let_1) (and (= course_c "CS 231A") _let_1) (and (= course_c "CS 231N") _let_1) (and (= course_c "CS 234") _let_1) (and (= course_c "CS 236") _let_1) (and (= course_c "CS 237A") _let_1) (and (= course_c "CS 245") _let_1) (and (= course_c "CS 246") _let_1) (and (= course_c "CS 247") _let_1) (and (= course_c "CS 248") _let_1) (and (= course_c "CS 248A") _let_1) (and (= course_c "CS 251") _let_1) (and (= course_c "CS 255") _let_1) (and (= course_c "CS 273A") _let_1) (and (= course_c "CS 273B") _let_1) (and (= course_c "CS 279") _let_1) (and (= course_c "CS 345") _let_1) (and (= course_c "CS 347") _let_1) (and (= course_c "CS 348A") _let_1) (and (= course_c "CS 348B") _let_1) (and (= course_c "CS 348C") _let_1) (and (= course_c "CS 348E") _let_1) (and (= course_c "CS 348I") _let_1) (and (= course_c "CS 348K") _let_1) (and (= course_c "CS 355") _let_1) (and (= course_c "CS 356") _let_1) (and (= course_c "CS 373") _let_1)))))))))))))]
+                
+=============================response===========================
+The given SMT (Satisfiability Modulo Theories) formula can be translated into the following natural language description:
+
+To satisfy the criteria:
+
+1. You must select three distinct courses, denoted as course_a, course_b, and course_c.
+
+2. For course_a, one of the following conditions must be met:
+   - If course_a is "CME 100" and has at least 5 units, your grade must be "B".
+   - If course_a is "CME 102", "CME 104", or "CS 106B" and has at least 5 units, your grade must be "A-" or higher.
+   - If course_a is "CME 106" and has at least 4 units, your grade must be "B+" or higher.
+   - If course_a belongs to one of the following: "CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251" with at least 3 units, then the course qualifies
+
+3. For course_b, one of the following conditions must be met:
+   - If course_b is "CME 100" and has at least 5 units, your grade must be "B".
+   - If course_b is "CME 102", "CME 104", or "CS 106B" and has at least 5 units, your grade must be "A-" or higher.
+   - If course_b is "CME 106" and has at least 4 units, your grade must be "B+" or higher.
+   - If course_b belongs to one of the following: "CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E" with at least 3 units, then the course qualifies.
+
+4. For course_c, one of the following conditions must be met:
+   - If course_c is "CME 100" and has at least 5 units, your grade must be "B".
+   - If course_c is "CME 102", "CME 104", or "CS 106B" and has at least 5 units, your grade must be "A-" or higher.
+   - If course_c is "CME 106" and has at least 4 units, your grade must be "B+" or higher.
+   - If course_c belongs to one of the following: "CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373" with at least 3 units, then the course qualifies.
+
+5. Additionally, your grade in any selected course must be one of the following: "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F".
+
+6. Each of the three courses (course_a, course_b, and course_c) must be distinct.
+
+In summary, the selection criteria involve picking three distinct courses from specified lists, satisfying specific unit requirements and achieving acceptable grades within the defined ranges.

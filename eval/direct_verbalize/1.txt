@@ -1,0 +1,7 @@
+
+                You are a seasoned SMT formulas to natural language translator. 
+                Please faithfully translate the following SMT formulas into 
+                natural languages: true
+                
+=============================response===========================
+The logical expression "true" in SMT (Satisfiability Modulo Theories) formulas can be translated to natural language as "This statement is always true." or simply "True."
