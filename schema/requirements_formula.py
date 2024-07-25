@@ -182,8 +182,6 @@ def check_significant_implementation(transcript_path):
 		course_constraints.append(solver.mkTerm(Kind.EQUAL, stanford_variable, solver.mkBoolean(course.get("Taken_At_Stanford", False))))
 
 	transcript_constraints.append(solver.mkTerm(Kind.AND, *course_constraints))
-	print("debug:\n")
-	print(transcript_constraints)
 	if len(transcript_constraints) > 1: 
 		significant_course_constraint = solver.mkTerm(Kind.OR, *transcript_constraints)
 	else:
@@ -225,56 +223,79 @@ def check_foundations(transcript_path):
 	with open(transcript_path, 'r') as file:
 		transcript = json.load(file)
 	solver = solver_init()
-	# Helper Function to Assert Course Constraints
-	def course_constraint(course_title, valid_titles):
-		course_var = solver.mkConst(solver.getStringSort(), course_title)
-		constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(str(course["Course_ID"]))) for course in transcript.get("Courses_Taken", [])]
-		if len(constraints) == 0:
-			return solver.mkFalse(), course_var
-		elif len(constraints) == 1:
-			return constraints[0], course_var
-		else:
-			return solver.mkTerm(Kind.OR, *constraints), course_var
 
-	# List the required courses and their equivalent titles
-	required_courses = {
-	"Logic, Automata & Complexity": ["CS103"],
-	"Probability": ["CS109", "Stat116", "CME106", "MS&E220", "EE178"],
-	"Algorithmic Analysis": ["CS161"],
-	"Computer Organ & Sys": ["CS107", "CS107E"],
-	"Principles of Computer Systems": ["CS110", "CS111"],
-	}
 
-	course_vars = {}
-	course_constraints = []
-	for course_title, valid_titles in required_courses.items():
-		constraint, course_var = course_constraint(course_title, valid_titles)
-		course_constraints.append(constraint)
-		course_vars[course_title] = course_var
+	# Create course variables for the five requirements
+	course_a = solver.mkConst(solver.getStringSort(), "course_a")
+	course_b = solver.mkConst(solver.getStringSort(), "course_b")
+	course_c = solver.mkConst(solver.getStringSort(), "course_c")
+	course_d = solver.mkConst(solver.getStringSort(), "course_c")
+	course_e = solver.mkConst(solver.getStringSort(), "course_c")
+	course_a_units = solver.mkConst(solver.getIntegerSort(), "course_a_units")
+	course_b_units = solver.mkConst(solver.getIntegerSort(), "course_b_units")
+	course_c_units = solver.mkConst(solver.getIntegerSort(), "course_c_units")
+	course_d_units = solver.mkConst(solver.getIntegerSort(), "course_d_units")
+	course_e_units = solver.mkConst(solver.getIntegerSort(), "course_e_units")
+	vars = [course_a, course_b, course_c, course_d, course_e, \
+         course_a_units, course_b_units, course_c_units, course_d_units, course_e_units]
+	
 
-	# Combine all course constraints
-	if len(course_constraints) == 1:
-		all_course_constraints = course_constraints[0]
-	else:
-		all_course_constraints = solver.mkTerm(Kind.AND, *course_constraints)
+	# Check that the courses are unique and from different areas
+	constraints_set1 = []
+	constraints_set2 = []
+
+	for course in transcript.get("Courses_Taken", []):
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.EQUAL, solver.mkInteger(int(course.get("Earned_Units"))), course_a_units)))
+	for course in transcript.get("Courses_Taken", []):
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+  		solver.mkTerm(Kind.EQUAL, course_b, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.EQUAL, solver.mkInteger(int(course.get("Earned_Units"))), course_b_units)))
+	for course in transcript.get("Courses_Taken", []):
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_c, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.EQUAL, solver.mkInteger(int(course.get("Earned_Units"))), course_c_units)))
+	for course in transcript.get("Courses_Taken", []):
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_d, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.EQUAL, solver.mkInteger(int(course.get("Earned_Units"))), course_d_units)))
+	for course in transcript.get("Courses_Taken", []):
+		constraints_set1.append(
+		solver.mkTerm(Kind.AND,
+		solver.mkTerm(Kind.EQUAL, course_e, solver.mkString(str(course.get("Course_ID")))),
+		solver.mkTerm(Kind.EQUAL, solver.mkInteger(int(course.get("Earned_Units"))), course_e_units)))
+
+	logic_courses = ["CS 103"]
+	probability_courses = ["CS109", "Stat116", "CME106", "MS&E220", "EE178"]
+	algo_courses = ["CS161"]
+	organ_sys_courses = ["CS107", "CS107E"]
+	principles_courses = ["CS110", "CS111"]
+
+	required_list = ["CS 103","CS109", "Stat116", "CME106", "MS&E220", "EE178", "CS161", "CS107", "CS107E", "CS110", "CS111"]
+	constraints_set2.append(
+        solver.mkTerm(Kind.AND,
+	*[solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course))) for course in logic_courses],
+	*[solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course))) for course in probability_courses],
+	*[solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course))) for course in algo_courses],
+	*[solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course))) for course in organ_sys_courses],
+	*[solver.mkTerm(Kind.EQUAL, course_a, solver.mkString(str(course))) for course in principles_courses],	
+	))
+ 
 
 	# Constraint to check that total units do not exceed 10 units
-	total_units_var = solver.mkConst(solver.getRealSort(), "total_units")
-	all_units = [solver.mkReal(course["Earned_Units"]) for course in transcript.get("Courses_Taken", [])]
-
-	# Sum of units calculation
-	if len(all_units) > 1:
-		overall_units_sum = solver.mkTerm(Kind.ADD, *all_units)
-	elif len(all_units) == 1:
-		overall_units_sum = all_units[0]
-	else:
-		overall_units_sum = solver.mkReal(0)
-
+	total_units_var = solver.mkTerm(Kind.ADD, course_a_units, course_b_units, course_c_units,\
+         course_d_units, course_e_units)
+	vars.append(total_units_var)
 	# Sum of units constraint
-	sum_units_constraint = solver.mkTerm(Kind.LEQ, overall_units_sum, solver.mkReal(10))
+	sum_units_constraint = solver.mkTerm(Kind.LEQ, total_units_var, solver.mkReal(10))
 
 	# Combine all constraints
-	overall_constraint = solver.mkTerm(Kind.AND, all_course_constraints, sum_units_constraint)
+	overall_constraint = solver.mkTerm(Kind.AND, *constraints_set1, *constraints_set2, sum_units_constraint)
 
 	# Check for advisor approval on deviations
 	def advisor_approval_constraint():
@@ -282,7 +303,7 @@ def check_foundations(transcript_path):
 		for approval in transcript.get("Approval", []):
 			is_approved = solver.mkBoolean(approval["Approved"])
 			if is_approved:
-				approval_constraints.append(solver.mkTerm(Kind.EQUAL, solver.mkString(approval["Approved_Course_ID"]), solver.mkString("CS103")))  # Example
+				approval_constraints.append(solver.mkTerm(Kind.EQUAL, solver.mkString(approval["Approved_Course_ID"]), *[solver.mkString(course_id) for course_id in required_list]))  # Example
 		if len(approval_constraints) > 1:
 			return solver.mkTerm(Kind.AND, *approval_constraints)
 		elif len(approval_constraints) == 1:
@@ -300,7 +321,7 @@ def check_foundations(transcript_path):
 	solver.assertFormula(final_constraint)
 
 	# Check satisfiability and return the result
-	result, trace = result_checker(solver, list(course_vars.values()))
+	result, trace = result_checker(solver, vars)
 	return result, trace
 
 def check_artificial_depth(transcript_path):

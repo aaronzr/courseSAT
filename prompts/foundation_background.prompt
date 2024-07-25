@@ -1,0 +1,12 @@
+Below are definitions of variables in the solver formulas: 
+```course_a```: a course in the Logic, Automata & Complexity cateogry is taken 
+```course_b```: a course in the probability category is taken 
+```course_c```: a course in the algorithmic analysis category is taken 
+```course_d```: a course in the computer organ & sys category is taken 
+```course_e```: a course in the principles of computer system is taken 
+```course_a_units```: united earned of taken course in the Logic, Automata & Complexity cateogry
+```course_b_units```: united earned of taken course in the probability category
+```course_c_units```: united earned of taken course in the algorithmic analysis category
+```course_d_units```: united earned of taken course in the computer organ & sys category
+```course_e_units```: united earned of taken course in the principles of computer system
+```total_units_var```: total units earned for foundations requirement

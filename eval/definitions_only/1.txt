@@ -1,0 +1,30 @@
+
+                You are a seasoned SMT formulas to natural language translator. You will be provided 
+                with smt core formulas and definitions of variables used in those formulas, which the
+                smt solver tries to solve for. Given the definitions of variables used in the formula: Below are definitions of variables in the solver formulas: 
+```course_a```: a course in the Logic, Automata & Complexity cateogry is taken 
+```course_b```: a course in the probability category is taken 
+```course_c```: a course in the algorithmic analysis category is taken 
+```course_d```: a course in the computer organ & sys category is taken 
+```course_e```: a course in the principles of computer system is taken 
+```course_a_units```: united earned of taken course in the Logic, Automata & Complexity cateogry
+```course_b_units```: united earned of taken course in the probability category
+```course_c_units```: united earned of taken course in the algorithmic analysis category
+```course_d_units```: united earned of taken course in the computer organ & sys category
+```course_e_units```: united earned of taken course in the principles of computer system
+```total_units_var```: total units earned for foundations requirement
+,
+                please faithfully translate the following SMT formulas into 
+                natural languages: [(let ((_let_1 (= 5 course_e_units))) (let ((_let_2 (= 5 course_d_units))) (let ((_let_3 (= 5 course_c_units))) (let ((_let_4 (= 5 course_b_units))) (let ((_let_5 (= 5 course_a_units))) (and (and (and (= course_a "CME 100") _let_5) (and (= course_a "CME 102") _let_5) (and (= course_a "CME 104") _let_5) (and (= course_a "CS 106B") _let_5) (and (= course_a "CME 106") (= 4 course_a_units)) (and (= course_b "CME 100") _let_4) (and (= course_b "CME 102") _let_4) (and (= course_b "CME 104") _let_4) (and (= course_b "CS 106B") _let_4) (and (= course_b "CME 106") (= 4 course_b_units)) (and (= course_c "CME 100") _let_3) (and (= course_c "CME 102") _let_3) (and (= course_c "CME 104") _let_3) (and (= course_c "CS 106B") _let_3) (and (= course_c "CME 106") (= 4 course_c_units)) (and (= course_c "CME 100") _let_2) (and (= course_c "CME 102") _let_2) (and (= course_c "CME 104") _let_2) (and (= course_c "CS 106B") _let_2) (and (= course_c "CME 106") (= 4 course_d_units)) (and (= course_c "CME 100") _let_1) (and (= course_c "CME 102") _let_1) (and (= course_c "CME 104") _let_1) (and (= course_c "CS 106B") _let_1) (and (= course_c "CME 106") (= 4 course_e_units)) (and (= course_a "CS 103") (= course_a "CS109") (= course_a "Stat116") (= course_a "CME106") (= course_a "MS&E220") (= course_a "EE178") (= course_a "CS161") (= course_a "CS107") (= course_a "CS107E") (= course_a "CS110") (= course_a "CS111")) (<= (+ course_a_units course_b_units course_c_units course_d_units course_e_units) 10.0)) (and (= "None" "CS 103") (= "CS 103" "CS109") (= "CS109" "Stat116") (= "Stat116" "CME106") (= "CME106" "MS&E220") (= "MS&E220" "EE178") (= "EE178" "CS161") (= "CS161" "CS107") (= "CS107" "CS107E") (= "CS107E" "CS110") (= "CS110" "CS111"))))))))]
+                
+======================response below==============================
+The statement specifies conditions and constraints for selecting courses and their unit requirements. Here's the natural language translation of the given SMT formulas:
+
+1. Courses `course_a`, `course_b`, `course_c`, `course_d`, and `course_e` each belong to different categories and have specific unit requirements.
+2. The units for `course_a`, `course_b`, `course_c`, `course_d`, and `course_e` must each be 5 units.
+3. Additionally, `course_a`, `course_b`, `course_c`, `course_d`, and `course_e` are assigned unit values and course names, with specific conditions for which courses can equal 4 units.
+4. The list of possible courses for `course_a`, `course_b`, `course_c`, `course_d`, and `course_e` includes the following: `CME 100`, `CME 102`, `CME 104`, `CS 106B`, and `CME 106`. If any of these courses are `CME 106`, their unit value is 4.
+5. The total units earned from all courses (sum of units from `course_a`, `course_b`, `course_c`, `course_d`, and `course_e`) cannot exceed 10 units.
+6. `course_a` specifically can be any of the following courses: `CS 103`, `CS109`, `Stat116`, `CME106`, `MS&E220`, `EE178`, `CS161`, `CS107`, `CS107E`, `CS110`, `CS111`, and none of these can be `None`.
+ 
+Overall, the conditions prioritize ensuring that certain courses are taken while not exceeding the total unit limit of 10 units for all the courses combined.

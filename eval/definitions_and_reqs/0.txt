@@ -1,0 +1,53 @@
+
+                You are a seasoned SMT formulas to natural language translator. You will be provided 
+                with smt core formulas, definitions of variables used in those formulas, which the
+                smt solver tries to solve for, and relevant natural language requirements. Given the definitions of variables used in the formula: Below are definitions of variables in the solver formulas: 
+```grade```: grade obtained in a required course meets letter grade
+```course_a```: a required course in one of the three required breadth required areas has taken 
+```course_b```: a required course in one of the three required breadth required areas has taken 
+```course_c```: a required course in one of the three required breadth required areas has taken 
+```course_a_units```: a taken course in a required area meets unit requirements
+```course_b_units```: a taken course in a required area meets unit requirements
+```course_c_units```: a taken course in a required area meets unit requirements
+
+ and
+                natural language requirements: BREADTH REQUIREMENT: Three courses, with each course chosen from a different Breadth area A, B, C or D. Breadth courses may not be waived, must be taken for at least 3 units each, and must be completed for a letter grade.* Each of the three Breadth courses must be from different Areas. Note that these courses will also be used to satisfy some other requirement (i.e., Depth or Elective). Letter grade only.*  Course Number: Title:  Grade             Area A. Mathematical and Theoretical Foundations: CS 154, 157, 168, 254, 261, 265; EE 364A, 364B; Phil 251  Area B. Computer Systems: CS 140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358; EE 180, 282, 382E  Area C. Applications: CS 145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247 (any suffix), 248/248A, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373  Area D. Computing and Society: CS 152, 181, 182, 256, 281, 329T, 384; AMSTUD 133, 145; ANTHRO 132D; COMM 118S, 120W, 124, 130D, 145, 154, 166, 186W, 230A, 230B, 230C; DESINST 215, 240; EARTHSYS 213; ENGLISH 184D, ENGR 248; HISTORY 244F; INTLPOL 268; LAW 4039; ME 177; MS&E 193, 231, 234, 254; POLISCI 150A; PSYCH 215; PUBLPOL 103F, 353B,
+                please faithfully translate the following SMT formulas into 
+                natural languages: [(let ((_let_1 (>= course_c_units 3))) (let ((_let_2 (>= course_b_units 3))) (let ((_let_3 (>= course_a_units 3))) (let ((_let_4 (= "B" grade))) (let ((_let_5 (= "B+" grade))) (let ((_let_6 (= "A-" grade))) (let ((_let_7 (>= 5 course_c_units))) (let ((_let_8 (>= 5 course_b_units))) (let ((_let_9 (>= 5 course_a_units))) (and (or (and (= course_a "CME 100") _let_9 _let_4) (and (= course_a "CME 102") _let_9 _let_6) (and (= course_a "CME 104") _let_9 _let_6) (and (= course_a "CS 106B") _let_9 _let_4) (and (= course_a "CME 106") (>= 4 course_a_units) _let_5)) (or (and (= course_b "CME 100") _let_8 _let_4) (and (= course_b "CME 102") _let_8 _let_6) (and (= course_b "CME 104") _let_8 _let_6) (and (= course_b "CS 106B") _let_8 _let_4) (and (= course_b "CME 106") (>= 4 course_b_units) _let_5)) (or (and (= course_c "CME 100") _let_7 _let_4) (and (= course_c "CME 102") _let_7 _let_6) (and (= course_c "CME 104") _let_7 _let_6) (and (= course_c "CS 106B") _let_7 _let_4) (and (= course_c "CME 106") (>= 4 course_c_units) _let_5)) (or (= "A+" grade) (= "A" grade) _let_6 _let_5 _let_4 (= "B-" grade) (= "C+" grade) (= "C" grade) (= "C-" grade) (= "D+" grade) (= "D" grade) (= "D-" grade) (= "F" grade)) (not (= course_a course_b)) (not (= course_a course_c)) (not (= course_b course_c)) (or (or (and (= course_a "CS 154") _let_3) (and (= course_a "CS 157") _let_3) (and (= course_a "CS 168") _let_3) (and (= course_a "CS 254") _let_3) (and (= course_a "CS 261") _let_3) (and (= course_a "CS 265") _let_3) (and (= course_a "EE 364A") _let_3) (and (= course_a "EE 364B") _let_3) (and (= course_a "Phil 251") _let_3)) (or (and (= course_b "CS 140") _let_2) (and (= course_b "CS 140E") _let_2) (and (= course_b "CS 143") _let_2) (and (= course_b "CS 144") _let_2) (and (= course_b "CS 149") _let_2) (and (= course_b "CS 212") _let_2) (and (= course_b "CS 242") _let_2) (and (= course_b "CS 243") _let_2) (and (= course_b "CS 244") _let_2) (and (= course_b "CS 244B") _let_2) (and (= course_b "CS 295") _let_2) (and (= course_b "CS 316") _let_2) (and (= course_b "CS 358") _let_2) (and (= course_b "EE 180") _let_2) (and (= course_b "EE 282") _let_2) (and (= course_b "EE 382E") _let_2)) (or (and (= course_c "CS 145") _let_1) (and (= course_c "CS 147") _let_1) (and (= course_c "CS 148") _let_1) (and (= course_c "CS 155") _let_1) (and (= course_c "CS 173") _let_1) (and (= course_c "CS 221") _let_1) (and (= course_c "CS 223A") _let_1) (and (= course_c "CS 224N") _let_1) (and (= course_c "CS 224U") _let_1) (and (= course_c "CS 224W") _let_1) (and (= course_c "CS 227B") _let_1) (and (= course_c "CS 228") _let_1) (and (= course_c "CS 229") _let_1) (and (= course_c "CS 229M") _let_1) (and (= course_c "CS 231A") _let_1) (and (= course_c "CS 231N") _let_1) (and (= course_c "CS 234") _let_1) (and (= course_c "CS 236") _let_1) (and (= course_c "CS 237A") _let_1) (and (= course_c "CS 245") _let_1) (and (= course_c "CS 246") _let_1) (and (= course_c "CS 247") _let_1) (and (= course_c "CS 248") _let_1) (and (= course_c "CS 248A") _let_1) (and (= course_c "CS 251") _let_1) (and (= course_c "CS 255") _let_1) (and (= course_c "CS 273A") _let_1) (and (= course_c "CS 273B") _let_1) (and (= course_c "CS 279") _let_1) (and (= course_c "CS 345") _let_1) (and (= course_c "CS 347") _let_1) (and (= course_c "CS 348A") _let_1) (and (= course_c "CS 348B") _let_1) (and (= course_c "CS 348C") _let_1) (and (= course_c "CS 348E") _let_1) (and (= course_c "CS 348I") _let_1) (and (= course_c "CS 348K") _let_1) (and (= course_c "CS 355") _let_1) (and (= course_c "CS 356") _let_1) (and (= course_c "CS 373") _let_1)))))))))))))]
+                
+======================response below==============================
+The provided SMT formula can be translated into the following natural language requirements:
+
+1. Three breadth courses must be taken, each from a different area among A, B, and C (or D if specified).
+
+2. Each of these courses must meet the minimum unit requirement of 3 units:
+   - Course from breadth area A must meet this requirement.
+   - Course from breadth area B must meet this requirement.
+   - Course from breadth area C must meet this requirement.
+
+3. For each of these courses, specific grade conditions must be met:
+   - If the course is "CME 100", "CS 106B":
+     - It must have a minimum of 5 units.
+     - It must be completed with a grade of "B" or better.
+   - If the course is "CME 102", "CME 104":
+     - It must have a minimum of 5 units.
+     - It must be completed with a grade of "A-" or better.
+   - If the course is "CME 106":
+     - It must have a minimum of 4 units.
+     - It must be completed with a grade of "B+" or better.
+   - For all other courses mentioned, it must be graded based on a letter grade requirement, with letter grades ranging from "A+" to "F".
+
+4. The available breadth areas and corresponding courses are specified:
+   - Area A (Mathematical and Theoretical Foundations): Courses include "CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251".
+   - Area B (Computer Systems): Courses include "CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E".
+   - Area C (Applications): Courses include "CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373".
+
+5. Each of the three selected courses cannot be the same:
+   - The selected course for area A must be different from the selected courses for areas B and C.
+   - The selected course for area B must be different from the selected courses for areas A and C.
+   - The selected course for area C must be different from the selected courses for areas A and B.
+
+6. Flexibility in grading options is allowed:
+   - Allowable grades include "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", "F".
+
+By combining these conditions, the requirements ensure that the student completes the breadth requirement with the correct distribution of courses, proper unit adherence, and validated letter grades.

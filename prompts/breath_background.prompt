@@ -1,0 +1,9 @@
+Below are definitions of variables in the solver formulas: 
+```grade```: grade obtained in a required course meets letter grade
+```course_a```: a required course in one of the three required breadth required areas has taken 
+```course_b```: a required course in one of the three required breadth required areas has taken 
+```course_c```: a required course in one of the three required breadth required areas has taken 
+```course_a_units```: a taken course in a required area meets unit requirements
+```course_b_units```: a taken course in a required area meets unit requirements
+```course_c_units```: a taken course in a required area meets unit requirements
+

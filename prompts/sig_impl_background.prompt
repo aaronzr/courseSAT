@@ -1,0 +1,6 @@
+Below are definitions of variables in the solver formulas: 
+```course```: a course in the significant implementaion area is taken 
+```grade```: the taken course in  the required area meets grade requirement
+```stanford```: a required course is taken at Stanford
+```coterm_course_1```: an undergraduate course taken by a coterm student is used to waive the requirement
+```coterm_course_2```: a second undergraduate course taken by a coterm student is used to waive the requirement

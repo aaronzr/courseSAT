@@ -1,35 +1,44 @@
 
-                You are a seasoned SMT formulas to natural language translator. 
-                Please faithfully translate the following SMT formulas into 
+                You are a seasoned SMT formulas to natural language translator. You will be provided 
+                with smt core formulas and definitions of variables used in those formulas, which the
+                smt solver tries to solve for. Given the definitions of variables used in the formula: Below are definitions of variables in the solver formulas: 
+```grade```: grade obtained in a required course meets letter grade
+```course_a```: a required course in one of the three required breadth required areas has taken 
+```course_b```: a required course in one of the three required breadth required areas has taken 
+```course_c```: a required course in one of the three required breadth required areas has taken 
+```course_a_units```: a taken course in a required area meets unit requirements
+```course_b_units```: a taken course in a required area meets unit requirements
+```course_c_units```: a taken course in a required area meets unit requirements
+
+,
+                please faithfully translate the following SMT formulas into 
                 natural languages: [(let ((_let_1 (>= course_c_units 3))) (let ((_let_2 (>= course_b_units 3))) (let ((_let_3 (>= course_a_units 3))) (let ((_let_4 (= "B" grade))) (let ((_let_5 (= "B+" grade))) (let ((_let_6 (= "A-" grade))) (let ((_let_7 (>= 5 course_c_units))) (let ((_let_8 (>= 5 course_b_units))) (let ((_let_9 (>= 5 course_a_units))) (and (or (and (= course_a "CME 100") _let_9 _let_4) (and (= course_a "CME 102") _let_9 _let_6) (and (= course_a "CME 104") _let_9 _let_6) (and (= course_a "CS 106B") _let_9 _let_4) (and (= course_a "CME 106") (>= 4 course_a_units) _let_5)) (or (and (= course_b "CME 100") _let_8 _let_4) (and (= course_b "CME 102") _let_8 _let_6) (and (= course_b "CME 104") _let_8 _let_6) (and (= course_b "CS 106B") _let_8 _let_4) (and (= course_b "CME 106") (>= 4 course_b_units) _let_5)) (or (and (= course_c "CME 100") _let_7 _let_4) (and (= course_c "CME 102") _let_7 _let_6) (and (= course_c "CME 104") _let_7 _let_6) (and (= course_c "CS 106B") _let_7 _let_4) (and (= course_c "CME 106") (>= 4 course_c_units) _let_5)) (or (= "A+" grade) (= "A" grade) _let_6 _let_5 _let_4 (= "B-" grade) (= "C+" grade) (= "C" grade) (= "C-" grade) (= "D+" grade) (= "D" grade) (= "D-" grade) (= "F" grade)) (not (= course_a course_b)) (not (= course_a course_c)) (not (= course_b course_c)) (or (or (and (= course_a "CS 154") _let_3) (and (= course_a "CS 157") _let_3) (and (= course_a "CS 168") _let_3) (and (= course_a "CS 254") _let_3) (and (= course_a "CS 261") _let_3) (and (= course_a "CS 265") _let_3) (and (= course_a "EE 364A") _let_3) (and (= course_a "EE 364B") _let_3) (and (= course_a "Phil 251") _let_3)) (or (and (= course_b "CS 140") _let_2) (and (= course_b "CS 140E") _let_2) (and (= course_b "CS 143") _let_2) (and (= course_b "CS 144") _let_2) (and (= course_b "CS 149") _let_2) (and (= course_b "CS 212") _let_2) (and (= course_b "CS 242") _let_2) (and (= course_b "CS 243") _let_2) (and (= course_b "CS 244") _let_2) (and (= course_b "CS 244B") _let_2) (and (= course_b "CS 295") _let_2) (and (= course_b "CS 316") _let_2) (and (= course_b "CS 358") _let_2) (and (= course_b "EE 180") _let_2) (and (= course_b "EE 282") _let_2) (and (= course_b "EE 382E") _let_2)) (or (and (= course_c "CS 145") _let_1) (and (= course_c "CS 147") _let_1) (and (= course_c "CS 148") _let_1) (and (= course_c "CS 155") _let_1) (and (= course_c "CS 173") _let_1) (and (= course_c "CS 221") _let_1) (and (= course_c "CS 223A") _let_1) (and (= course_c "CS 224N") _let_1) (and (= course_c "CS 224U") _let_1) (and (= course_c "CS 224W") _let_1) (and (= course_c "CS 227B") _let_1) (and (= course_c "CS 228") _let_1) (and (= course_c "CS 229") _let_1) (and (= course_c "CS 229M") _let_1) (and (= course_c "CS 231A") _let_1) (and (= course_c "CS 231N") _let_1) (and (= course_c "CS 234") _let_1) (and (= course_c "CS 236") _let_1) (and (= course_c "CS 237A") _let_1) (and (= course_c "CS 245") _let_1) (and (= course_c "CS 246") _let_1) (and (= course_c "CS 247") _let_1) (and (= course_c "CS 248") _let_1) (and (= course_c "CS 248A") _let_1) (and (= course_c "CS 251") _let_1) (and (= course_c "CS 255") _let_1) (and (= course_c "CS 273A") _let_1) (and (= course_c "CS 273B") _let_1) (and (= course_c "CS 279") _let_1) (and (= course_c "CS 345") _let_1) (and (= course_c "CS 347") _let_1) (and (= course_c "CS 348A") _let_1) (and (= course_c "CS 348B") _let_1) (and (= course_c "CS 348C") _let_1) (and (= course_c "CS 348E") _let_1) (and (= course_c "CS 348I") _let_1) (and (= course_c "CS 348K") _let_1) (and (= course_c "CS 355") _let_1) (and (= course_c "CS 356") _let_1) (and (= course_c "CS 373") _let_1)))))))))))))]
                 
-=============================response===========================
-Here's a faithful translation of the given SMT (Satisfiability Modulo Theories) formulas into natural language:
+======================response below==============================
+The provided SMT formula can be translated into the following natural language requirements:
 
-1. You are taking three different courses: course_a, course_b, and course_c. Each course has its own unit count: course_a_units, course_b_units, and course_c_units, respectively.
+1. **Unit Requirements:**
+   - Each of the courses \( course_a \), \( course_b \), and \( course_c \) must have between 3 and 5 units.
+   - Alternatively, if the courses are "CME 106", they must have at least 4 units.
 
 2. **Grade Requirements:**
-   - For course_a, you must have a grade of "B", "B+", "A-", "A", "A+", "B-", "C+", "C", "C-", "D+", "D", "D-", or "F".
-   - For course_b, you must have a grade of "B", "B+", "A-", "A", "A+", "B-", "C+", "C", "C-", "D+", "D", "D-", or "F".
-   - For course_c, you must have a grade of "B", "B+", "A-", "A", "A+", "B-", "C+", "C", "C-", "D+", "D", "D-", or "F".
+   - Acceptable grades for the courses include "A+", "A", "A-", "B+", "B", "B-", "C+", "C", "C-", "D+", "D", "D-", and "F".
+   - Specific grade requirements apply for certain courses:
+     - "CME 100" and "CS 106B" require at least a "B".
+     - "CME 102" and "CME 104" require at least an "A-".
+     - "CME 106" requires at least a "B+".
 
-3. **Specific Course and Grade Combinations:**
-   - For **course_a** if it is "CME 100," "CS 106B," your units must be at least 5, and grade must be "B."
-   - If **course_a** is "CME 102," "CME 104," it needs at least 5 units, and grade must be "A-".
-   - For **course_a** as "CME 106," it must have at least 4 units, and grade must be "B+".
-   - For **course_a**, if it is one of "CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", or "Phil 251," you need at least 3 units.
-   
-   - For **course_b**, if it is "CME 100," "CS 106B," your units must be at least 5, and grade must be "B."
-   - If **course_b** is "CME 102," "CME 104," it needs at least 5 units, and grade must be "A-".
-   - For **course_b** as "CME 106," it must have at least 4 units, and grade must be "B+".
-   - For **course_b**, if it is one of "CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E," you need at least 3 units.
+3. **Course Combination Constraints:**
+   - The three courses \( course_a \), \( course_b \), and \( course_c \) must be unique (i.e., no two courses can be the same).
 
-   - For **course_c**, if it is "CME 100," "CS 106B," your units must be at least 5, and grade must be "B."
-   - If **course_c** is "CME 102," "CME 104," it needs at least 5 units, and grade must be "A-".
-   - For **course_c** as "CME 106," it must have at least 4 units, and grade must be "B+".
-   - For **course_c**, if it is one of "CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373," you need at least 3 units.
+4. **Breadth Area Course Requirements:**
+   - For \( course_a \), it must be one of the following courses: "CME 100", "CME 102", "CME 104", "CS 106B", or "CME 106". It must also be one of: "CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", or "Phil 251".
+   - For \( course_b \), it must be one of the following courses: "CME 100", "CME 102", "CME 104", "CS 106B", or "CME 106". It must also be one of: "CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E".
+   - For \( course_c \), it must be one of the following courses: "CME 100", "CME 102", "CME 104", "CS 106B", or "CME 106". It must also be one of: "CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373".
 
-4. **Distinct Courses:**
-   - course_a, course_b, and course_c must be different from each other.
-
-Reviewed together, these rules define specific combinations of courses, units, and grades in a clear and detailed manner.
+#### Summary:
+To meet the requirements:
+- Three distinct courses must be chosen.
+- Each course must have between 3 and 5 units or at least 4 units if it's "CME 106".
+- Grades for the courses must meet specified thresholds.
+- Courses must be from prescribed sets of options for \( course_a \), \( course_b \), and \( course_c \).

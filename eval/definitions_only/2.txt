@@ -1,0 +1,27 @@
+
+                You are a seasoned SMT formulas to natural language translator. You will be provided 
+                with smt core formulas and definitions of variables used in those formulas, which the
+                smt solver tries to solve for. Given the definitions of variables used in the formula: Below are definitions of variables in the solver formulas: 
+```course```: a course in the significant implementaion area is taken 
+```grade```: the taken course in  the required area meets grade requirement
+```stanford```: a required course is taken at Stanford
+```coterm_course_1```: an undergraduate course taken by a coterm student is used to waive the requirement
+```coterm_course_2```: a second undergraduate course taken by a coterm student is used to waive the requirement,
+                please faithfully translate the following SMT formulas into 
+                natural languages: [(let ((_let_1 (= "CS 248 / 248A" "CS 341"))) (let ((_let_2 (= "CS 243" "CS 248 / 248A"))) (let ((_let_3 (= "CS 231N" "CS 243"))) (let ((_let_4 (= "CS 227B" "CS 231N"))) (let ((_let_5 (= "CS 221" "CS 227B"))) (let ((_let_6 (= "CS 212" "CS 221"))) (let ((_let_7 (= "CS 210B" "CS 212"))) (let ((_let_8 (= "CS 190" "CS 210B"))) (let ((_let_9 (= "CS 151" "CS 190"))) (let ((_let_10 (= "CS 148" "CS 151"))) (let ((_let_11 (= "CS 145" "CS 148"))) (let ((_let_12 (= "CS 144" "CS 145"))) (let ((_let_13 (= "CS 143" "CS 144"))) (let ((_let_14 (= "CS 140E" "CS 143"))) (let ((_let_15 (= "CS 140" "CS 140E"))) (let ((_let_16 (= "CS 106B" "CME 106"))) (let ((_let_17 (= "CME 104" "CS 106B"))) (let ((_let_18 (= "CME 102" "CME 104"))) (let ((_let_19 (= "CME 100" "CME 102"))) (let ((_let_20 (= grade "B+"))) (or (and (and (or (= course "CS 140") (= course "CS 140E") (= course "CS 143") (= course "CS 144") (= course "CS 145") (= course "CS 148") (= course "CS 151") (= course "CS 190") (= course "CS 210B") (= course "CS 212") (= course "CS 221") (= course "CS 227B") (= course "CS 231N") (= course "CS 243") (= course "CS 248 / 248A") (= course "CS 341")) (or (= grade "A+") (= grade "A") (= grade "A-") _let_20 (= grade "B") (= grade "B-") (= grade "C+") (= grade "C") (= grade "C-") (= grade "D+") (= grade "D") (= grade "D-") (= grade "F")) (= stanford true)) (and (= course "CME 106") _let_20 (= stanford false))) (and (and (and (= coterm_course_1 "CME 100") _let_19 _let_18 _let_17 _let_16) (and (= coterm_course_2 "CME 100") _let_19 _let_18 _let_17 _let_16)) (and (= coterm_course_1 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (and (= coterm_course_2 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (not (= coterm_course_1 coterm_course_2))))))))))))))))))))))))]
+                
+======================response below==============================
+The given SMT formula can be translated into the following natural language description:
+
+1. A student can fulfill the requirements by either:
+    - Taking and passing any of the following courses at Stanford with a grade from A+ to D-:
+        - CS 140, CS 140E, CS 143, CS 144, CS 145, CS 148, CS 151, CS 190, CS 210B, CS 212, CS 221, CS 227B, CS 231N, CS 243, CS 248 / 248A, or CS 341. 
+        or
+        - Taking the course CME 106 with a grade of B+ while not enrolled at Stanford.
+    - Alternatively, a coterminal student can waive the requirement by:
+        - Using the undergraduate course CME 100 to satisfy this requirement under the condition that CME 100, CME 102, CME 104, and CS 106B have been taken in sequence.
+        or
+        - Using the undergraduate course CS 140 to satisfy this requirement under the condition that the courses CS 140E, CS 143, CS 144, CS 145, CS 148, CS 151, CS 190, CS 210B, CS 212, CS 221, CS 227B, CS 231N, CS 243, CS 248 / 248A, and CS 341 have been taken in sequence. 
+        - It is important to note that the same coterminal course cannot be used twice to fulfill the requirement.
+
+In summary, a student can either complete specific courses with particular grades or use a sequence of coterminal undergraduate courses to waive the requirements. Additionally, a condition applies that the same coterminal course cannot be reused to waive the requirement.
