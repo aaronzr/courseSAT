@@ -1,0 +1,86 @@
+
+                You are a seasoned SMT formulas to natural language translator. You will be provided 
+                with smt core formulas, definitions of variables used in those formulas, which the
+                smt solver tries to solve for, and relevant natural language requirements. Given the definitions of variables used in the formula: Below are definitions of variables in the solver formulas: 
+```course```: a course in the significant implementaion area is taken 
+```grade```: the taken course in  the required area meets grade requirement
+```stanford```: a required course is taken at Stanford
+```coterm_course_1```: an undergraduate course taken by a coterm student is used to waive the requirement
+```coterm_course_2```: a second undergraduate course taken by a coterm student is used to waive the requirement and
+                natural language requirements: SIGNIFICANT IMPLEMENTATION REQUIREMENT: At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement. Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective). Must be taken for a letter grade,* must be taken at Stanford. Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement. Deviations must be approved by the faculty director of the MS program, Cynthia Lee. Course Number: Title: Grade Courses that may be used to satisfy the significant implementation requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.,
+                please faithfully translate the following SMT formulas into 
+                natural languages: [(let ((_let_1 (= "CS 248 / 248A" "CS 341"))) (let ((_let_2 (= "CS 243" "CS 248 / 248A"))) (let ((_let_3 (= "CS 231N" "CS 243"))) (let ((_let_4 (= "CS 227B" "CS 231N"))) (let ((_let_5 (= "CS 221" "CS 227B"))) (let ((_let_6 (= "CS 212" "CS 221"))) (let ((_let_7 (= "CS 210B" "CS 212"))) (let ((_let_8 (= "CS 190" "CS 210B"))) (let ((_let_9 (= "CS 151" "CS 190"))) (let ((_let_10 (= "CS 148" "CS 151"))) (let ((_let_11 (= "CS 145" "CS 148"))) (let ((_let_12 (= "CS 144" "CS 145"))) (let ((_let_13 (= "CS 143" "CS 144"))) (let ((_let_14 (= "CS 140E" "CS 143"))) (let ((_let_15 (= "CS 140" "CS 140E"))) (let ((_let_16 (= "CS 106B" "CME 106"))) (let ((_let_17 (= "CME 104" "CS 106B"))) (let ((_let_18 (= "CME 102" "CME 104"))) (let ((_let_19 (= "CME 100" "CME 102"))) (let ((_let_20 (= grade "B+"))) (or (and (and (or (= course "CS 140") (= course "CS 140E") (= course "CS 143") (= course "CS 144") (= course "CS 145") (= course "CS 148") (= course "CS 151") (= course "CS 190") (= course "CS 210B") (= course "CS 212") (= course "CS 221") (= course "CS 227B") (= course "CS 231N") (= course "CS 243") (= course "CS 248 / 248A") (= course "CS 341")) (or (= grade "A+") (= grade "A") (= grade "A-") _let_20 (= grade "B") (= grade "B-") (= grade "C+") (= grade "C") (= grade "C-") (= grade "D+") (= grade "D") (= grade "D-") (= grade "F")) (= stanford true)) (and (= course "CME 106") _let_20 (= stanford false))) (and (and (and (= coterm_course_1 "CME 100") _let_19 _let_18 _let_17 _let_16) (and (= coterm_course_2 "CME 100") _let_19 _let_18 _let_17 _let_16)) (and (= coterm_course_1 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (and (= coterm_course_2 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (not (= coterm_course_1 coterm_course_2))))))))))))))))))))))))].
+                
+======================response below==============================
+To identify any unfilled requirement, we need to evaluate if the courses, grades, and other criteria specified in the requirements match with the given SMT formulas' conditions. 
+
+### Natural Language Requirements:
+1. **At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement.**
+2. **This course must be taken for a letter grade**.
+3. **The course must be taken at Stanford.**
+4. **Coterm students who took two qualifying courses at Stanford as undergraduates may waive this requirement**.
+5. **Deviations must be approved by the faculty director of the MS program, Cynthia Lee.**
+
+### Allowed Courses:
+- CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+
+### Required Grade Conditions:
+- The grade must be one of the following: A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, F.
+
+### SMT Formulas:
+The provided SMT formula is simplified as:
+
+```plaintext
+(let ((_let_20 (= grade "B+")))
+```
+
+The core conditions for a valid course are:
+- The course must be one of the significant implementation requirement courses.
+- The grade must be one of the allowed grades.
+- The course must be taken at Stanford (`= stanford true`).
+  
+For coterm students:
+- Coterm students must have taken two such courses at Stanford as undergraduates (courses named `coterm_course_1` and `coterm_course_2`).
+- Both courses must have a valid grade and be distinct.
+
+### Analysis of Provided SMT Conditions:
+The SMT formula evaluates if any of the listed courses with specified grades meet the given criteria, emphasizing the need for at least one course from the allowed list to have been taken at Stanford with an acceptable grade.
+
+#### Let's break it down by the main conditions one by one:
+
+1. **Course taken in the Significant Implementation Area (Valid Course List):**
+   - The `or` clause checks if `course` is one of the allowed courses (CS 140, 140E, etc.).
+
+2. **Required Grade for Courses:**
+   - The formula allows grades A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, F.
+
+3. **Course Taken at Stanford:**
+   - The formula ensures `= stanford true` for a valid course.
+
+4. **Coterm Student Waiver Option:**
+   - For coterm students, verification involves examining if two undergraduate courses (identified by `coterm_course_1` and `coterm_course_2`) each meet the significant implementation requirement, have valid grades, and are distinct.
+
+### Identifying Unfilled Requirements:
+
+1. **At least one course requirement:**
+   - Ensure at least one course (`course`) is from the list of significant implementation courses.
+   - If `course` is not one of the predefined courses, this requirement is unsatisfied.
+
+2. **Grade Requirement:**
+   - If the `grade` is not from the list of acceptable grades (A+, A, ..., F), this requirement is unmet.
+
+3. **Stanford Course Requirement:**
+   - If `= stanford false`, the requirement is not fulfilled.
+
+4. **Coterm Waiver Option:**
+   - Ensure two `coterm_course_1` and `coterm_course_2` match criteria and are distinct.
+   - If either `coterm_course_1` or `coterm_course_2` does not meet the significant implementation requirement, or if they are the same course, this requirement is unsatisfied.
+
+### Conclusion:
+An unsatisfied requirement will be any failure to match the above conditions in the SMT formula. Specifically, you should verify the following:
+- If the `course` is not in the predefined list.
+- If the `grade` is not within the allowed grade values.
+- If the course is not taken at Stanford (`= stanford true`).
+- If you are using the coterm waiver, ensure both coterm courses are distinct and meet the criteria.
+
+Given no specific values for these variables are provided, identifying precise unfilled requirements would necessitate providing actual values of `course`, `grade`, and `stanford` in context of the formula. If the course isn't valid, grade isn't in range, or not Stanford-taken, those would be unsatisfied requirements.

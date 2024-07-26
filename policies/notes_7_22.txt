@@ -1,0 +1,49 @@
+Fixed transcript: 
+TODO: verbalize
+    
+        verbalize the unsat constraints in naatural language
+
+        re-define the varables to be meaningful
+
+        or give the definitions of the variables to GPT 
+
+        Just given the terminologies and defined formulas; 
+
+        Ask GPT to articulate the formulas
+
+Do not ask GPT to compute which natural language requirement is unsat 
+
+What not do do: 
+        pick up the exampels that look easy but fail using GPT 
+        at the last step, when we use GPT to think 
+
+Maybe TODO:
+        are they disjoint constraints? - are they all AND/OR constraints? 
+
+HW:
+        in  the case of unsat, partitioning set of requirements/constraints
+        I need to satisfy "implementaton requiirements with 4 units"
+        if you take 3, it doesn't satisfy...
+
+        some courses you can take for both 3 or 4 units. 
+
+Second_part (proposal transcript)
+
+If you change the value of variable i.e. v1, the rest should be re-evuated 
+concretizing sub-constraints 
+
+        unsat(v1): if you set v1 to a concrete value, does it know if v1 
+        is related to a specific constraint? 
+
+        sum(v1, v2, v3, v4...)
+        fixed variables v. choice variables 
+
+        the concept of fixed variables, assigned unknowns, the cause, and the fixes 
+
+
+Things worth writing about: 
+- Database retreval
+- explaining unsat: just verbalize 
+- seprating fixed v.s. assigned variaables 
+        offering suggestions 
+- revise given varables to satify user preferences (conversations)

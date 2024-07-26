@@ -1,0 +1,16 @@
+
+electiveCourseTaken(
+    non_cs_technical_course_taken = True,
+    non_cs_technical_course = "CME 100",
+    non_cs_technical_course_units_taken = 5,
+    non_cs_technical_course_taken_2 = True,
+    non_cs_technical_course_2 = "CME 102",
+    non_cs_technical_course_units_taken_2 = 5,
+    non_cs_technical_course_taken_3 = True,
+    non_cs_technical_course_3 = "CME 104",
+    non_cs_technical_course_units_taken_3 = 5,
+    non_cs_technical_course_taken_4 = True,
+    non_cs_technical_course_4 = "CME 106",
+    non_cs_technical_course_units_taken_4 = 4,
+    confirm_units_requirement_met = False # Since total is less than 45 units
+)

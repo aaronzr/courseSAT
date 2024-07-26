@@ -1,0 +1,28 @@
+Given the provided requirement, transcript, and SMT unSAT core, below is the filled-in list in the specified format. The list is based on the ADDITIONAL REQUIREMENTS and the information available in the transcript:
+
+```
+additionalCourseTaken(
+taken_courses_numbered_100_or_greater = True,
+courses = [
+    {"course_id": "CME 100", "title": "VECTOR CALCULUS FOR ENGINEERS", "earned_units": 5, "grade": "B"},
+    {"course_id": "CME 102", "title": "ORDINARY DIFFERENTIAL EQUATIONS FOR ENGINEERS", "earned_units": 5, "grade": "A-"},
+    {"course_id": "CME 104", "title": "LINEAR ALGEBRA AND PARTIAL DIFFERENTIAL EQUATIONS FOR ENGINEERS", "earned_units": 5, "grade": "A-"},
+    {"course_id": "CS 106B", "title": "PROGRAMMING ABSTRACTIONS", "earned_units": 5, "grade": "B"},
+    {"course_id": "CME 106", "title": "INTRODUCTION TO PROBABILITY AND STATISTICS FOR ENGINEERS", "earned_units": 4, "grade": "B+"}
+],
+max_foundation_units_counted = False,
+foundation_units_used = 24,  # This is more than the allowed 10 units for Foundation requirement
+max_seminar_units_counted = True,
+seminar_units_used = 0,  # No seminars are mentioned in the transcript
+letter_grade_units_minimum_required = False,
+total_letter_grade_units = 24,  # Less than 36 units taken for a letter grade
+average_grade_minimum_required = True,
+average_grade = 3.74,  # Satisfies the GPA requirement as it is greater than 3.0
+units_previously_applied_not_counted_toward_mscs = True,
+graduate_units_required_at_stanford = False,
+total_graduate_units = 22,  # Less than the required 45 graduate units
+confirm_requirements = False  # Based on the unsatisfied constraints mentioned above
+)
+```
+
+This output script provides a comprehensive view of how the given transcript aligns with the specified requirements, including both satisfied and unsatisfied sub-constraints.

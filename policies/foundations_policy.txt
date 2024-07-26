@@ -1,11 +1,19 @@
 
 foundationsCourseTaken(
-    taken_logic_automata_complexity=False, logic_course=Enum["CS 103"], logic_course_units_taken=int,
-    taken_probability=True,
-    probability_course="CME 106",
-    probability_course_units_taken=4,
-    taken_algorithmic_analysis=False, algorithmic_analysis_course=Enum["CS 161"], algorithmic_analysis_course_units_taken=int,
-    taken_computer_organisation=False, computer_organisation_course=Enum["CS 107", "CS 107E"], computer_organisation_course_units_taken=int,
-    taken_principles_of_computer_systems=False, principles_of_computer_system=Enum["CS110", "CS111"], principles_of_computer_system_course_units_taken=int,
-    confirm_requirements=False
+	taken_logic_automata_complexity = False,
+	logic_course: Enum["CS 103"],
+	logic_course_units_taken: int,
+	taken_probability = True,
+	probablity_course = "CME 106",
+	probability_course_units_taken = 4,
+	taken_algorithmic_analysis: bool, 
+	algorithmic_analysis_course: Enum["CS 161"], 
+	algorithmic_analysis_course_units_taken: int,
+	taken_computer_organisation: bool, 
+	computer_organisation: Enum["CS 107", "CS 107E"], 
+	computer_organisation_course_units_taken: int,
+	taken_principles_of_computer_systems: bool, 
+	principles_of_computer_system: Enum["CS 110", "CS 111"], 
+	principles_of_computer_system_course_units_taken: int, 
+	confirm_requirements: bool
 )

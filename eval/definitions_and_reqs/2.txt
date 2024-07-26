@@ -7,73 +7,26 @@
 ```stanford```: a required course is taken at Stanford
 ```coterm_course_1```: an undergraduate course taken by a coterm student is used to waive the requirement
 ```coterm_course_2```: a second undergraduate course taken by a coterm student is used to waive the requirement and
-                natural language requirements: SIGNIFICANT IMPLEMENTATION REQUIREMENT: At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement. Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective). Must be taken for a letter grade,* must be taken at Stanford. Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement. Deviations must be approved by the faculty director of the MS program, Cynthia Lee.   Course Number: Title:  Grade     Courses that may be used to satisfy the significant implementation requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.,
+                natural language requirements: SIGNIFICANT IMPLEMENTATION REQUIREMENT: At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement. Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective). Must be taken for a letter grade,* must be taken at Stanford. Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement. Deviations must be approved by the faculty director of the MS program, Cynthia Lee. Course Number: Title: Grade Courses that may be used to satisfy the significant implementation requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.,
                 please faithfully translate the following SMT formulas into 
-                natural languages: [(let ((_let_1 (= "CS 248 / 248A" "CS 341"))) (let ((_let_2 (= "CS 243" "CS 248 / 248A"))) (let ((_let_3 (= "CS 231N" "CS 243"))) (let ((_let_4 (= "CS 227B" "CS 231N"))) (let ((_let_5 (= "CS 221" "CS 227B"))) (let ((_let_6 (= "CS 212" "CS 221"))) (let ((_let_7 (= "CS 210B" "CS 212"))) (let ((_let_8 (= "CS 190" "CS 210B"))) (let ((_let_9 (= "CS 151" "CS 190"))) (let ((_let_10 (= "CS 148" "CS 151"))) (let ((_let_11 (= "CS 145" "CS 148"))) (let ((_let_12 (= "CS 144" "CS 145"))) (let ((_let_13 (= "CS 143" "CS 144"))) (let ((_let_14 (= "CS 140E" "CS 143"))) (let ((_let_15 (= "CS 140" "CS 140E"))) (let ((_let_16 (= "CS 106B" "CME 106"))) (let ((_let_17 (= "CME 104" "CS 106B"))) (let ((_let_18 (= "CME 102" "CME 104"))) (let ((_let_19 (= "CME 100" "CME 102"))) (let ((_let_20 (= grade "B+"))) (or (and (and (or (= course "CS 140") (= course "CS 140E") (= course "CS 143") (= course "CS 144") (= course "CS 145") (= course "CS 148") (= course "CS 151") (= course "CS 190") (= course "CS 210B") (= course "CS 212") (= course "CS 221") (= course "CS 227B") (= course "CS 231N") (= course "CS 243") (= course "CS 248 / 248A") (= course "CS 341")) (or (= grade "A+") (= grade "A") (= grade "A-") _let_20 (= grade "B") (= grade "B-") (= grade "C+") (= grade "C") (= grade "C-") (= grade "D+") (= grade "D") (= grade "D-") (= grade "F")) (= stanford true)) (and (= course "CME 106") _let_20 (= stanford false))) (and (and (and (= coterm_course_1 "CME 100") _let_19 _let_18 _let_17 _let_16) (and (= coterm_course_2 "CME 100") _let_19 _let_18 _let_17 _let_16)) (and (= coterm_course_1 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (and (= coterm_course_2 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (not (= coterm_course_1 coterm_course_2))))))))))))))))))))))))]
+                natural languages: [(let ((_let_1 (= "CS 248 / 248A" "CS 341"))) (let ((_let_2 (= "CS 243" "CS 248 / 248A"))) (let ((_let_3 (= "CS 231N" "CS 243"))) (let ((_let_4 (= "CS 227B" "CS 231N"))) (let ((_let_5 (= "CS 221" "CS 227B"))) (let ((_let_6 (= "CS 212" "CS 221"))) (let ((_let_7 (= "CS 210B" "CS 212"))) (let ((_let_8 (= "CS 190" "CS 210B"))) (let ((_let_9 (= "CS 151" "CS 190"))) (let ((_let_10 (= "CS 148" "CS 151"))) (let ((_let_11 (= "CS 145" "CS 148"))) (let ((_let_12 (= "CS 144" "CS 145"))) (let ((_let_13 (= "CS 143" "CS 144"))) (let ((_let_14 (= "CS 140E" "CS 143"))) (let ((_let_15 (= "CS 140" "CS 140E"))) (let ((_let_16 (= "CS 106B" "CME 106"))) (let ((_let_17 (= "CME 104" "CS 106B"))) (let ((_let_18 (= "CME 102" "CME 104"))) (let ((_let_19 (= "CME 100" "CME 102"))) (let ((_let_20 (= grade "B+"))) (or (and (and (or (= course "CS 140") (= course "CS 140E") (= course "CS 143") (= course "CS 144") (= course "CS 145") (= course "CS 148") (= course "CS 151") (= course "CS 190") (= course "CS 210B") (= course "CS 212") (= course "CS 221") (= course "CS 227B") (= course "CS 231N") (= course "CS 243") (= course "CS 248 / 248A") (= course "CS 341")) (or (= grade "A+") (= grade "A") (= grade "A-") _let_20 (= grade "B") (= grade "B-") (= grade "C+") (= grade "C") (= grade "C-") (= grade "D+") (= grade "D") (= grade "D-") (= grade "F")) (= stanford true)) (and (= course "CME 106") _let_20 (= stanford false))) (and (and (and (= coterm_course_1 "CME 100") _let_19 _let_18 _let_17 _let_16) (and (= coterm_course_2 "CME 100") _let_19 _let_18 _let_17 _let_16)) (and (= coterm_course_1 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (and (= coterm_course_2 "CS 140") _let_15 _let_14 _let_13 _let_12 _let_11 _let_10 _let_9 _let_8 _let_7 _let_6 _let_5 _let_4 _let_3 _let_2 _let_1) (not (= coterm_course_1 coterm_course_2))))))))))))))))))))))))].
                 
 ======================response below==============================
-The SMT formula provided can be translated into natural language as follows:
+The given SMT formula can be translated into the following natural language description:
 
-### Significant Implementation Requirement:
+To satisfy the Significant Implementation Requirement for the MS program, you must meet one of the following sets of conditions:
 
-To satisfy the Significant Implementation Requirement for your MS program:
+1. **Main Course Condition:**
+    - You must take at least one course from the list of approved significant implementation courses at Stanford.
+    - The following courses qualify: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+    - The course you choose must be taken for a letter grade. Acceptable grades include A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, or F.
+    - The course must be taken at Stanford University.
 
-1. **Standard Course Option:**
-   - You must take a course that fulfills the Significant Implementation Requirement. The eligible courses include:
-     - CS 140
-     - CS 140E
-     - CS 143
-     - CS 144
-     - CS 145
-     - CS 148
-     - CS 151
-     - CS 190
-     - CS 210B
-     - CS 212
-     - CS 221
-     - CS 227B
-     - CS 231N
-     - CS 243
-     - CS 248/248A
-     - CS 341
-   - This course must be taken for a letter grade. Acceptable grades are:
-     - A+
-     - A
-     - A-
-     - B+
-     - B
-     - B-
-     - C+
-     - C
-     - C-
-     - D+
-     - D
-     - D-
-     - F
-   - The course must be taken at Stanford.
+2. **Coterm Student Waiver Condition:**
+    - If you are a coterm student, you can waive the significant implementation course requirement if you took two relevant courses during your undergraduate program at Stanford.
+    - These two undergraduate courses must include one of the courses from the CME series (specific sequence: CME 100 -> CME 102 -> CME 104 -> CS 106B -> CME 106),
+    - Alternatively, both can be from the significant implementation courses list (CS 140 and its equivalents as per the dependency chain provided).
 
-2. **Alternative Waiver Option for Coterm Students:**
-   - If you are a coterminal student, you may waive this requirement by having taken two undergraduate courses that fulfill the requirement at Stanford. The eligible courses include:
-     - CS 140
-     - CS 140E
-     - CS 143
-     - CS 144
-     - CS 145
-     - CS 148
-     - CS 151
-     - CS 190
-     - CS 210B
-     - CS 212
-     - CS 221
-     - CS 227B
-     - CS 231N
-     - CS 243
-     - CS 248/248A
-     - CS 341
-     - CME 100 (signifying the sequence through CME 102, CME 104, CS 106B, and CME 106)
-   - Both courses must be different (i.e., coterm_course_1 ≠ coterm_course_2).
+Please refer to the faculty director, Cynthia Lee, for any deviations from these requirements.
 
-3. **Deviations and Exceptions:**
-   - Any deviations from this requirement must be approved by the faculty director of the MS program, Cynthia Lee.
-
-In summary, you need to take at least one designated course at Stanford, complete it with a valid letter grade, and if you are a coterm student, you can potentially waive this requirement by having taken two different eligible courses at Stanford as an undergraduate.
+In summary, the formula succinctly enforces the rules that ensure a student either completes a relevant course at Stanford with an appropriate grade or uses previous undergraduate coursework to fulfill the requirement, subject to specific conditions for coterm students.

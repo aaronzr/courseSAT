@@ -1,6 +1,7 @@
 
 breadthCourseTaken(
-taken_area_A: bool, area_A_course: Enum["CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251"], area_A_course_units_taken: int,
-taken_area_B: bool, area_B_course: Enum["CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E"], area_B_course_units_taken: int,
-taken_area_C: bool, area_C_course: Enum["CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373"], area_C_course_units_taken: int
-)       
+    taken_course_a: bool, course_a: Enum["CS 154", "CS 157", "CS 168", "CS 254", "CS 261", "CS 265", "EE 364A", "EE 364B", "Phil 251"], course_a_units_taken: int,
+    taken_course_b: bool, course_b: Enum["CS 140", "CS 140E", "CS 143", "CS 144", "CS 149", "CS 212", "CS 242", "CS 243", "CS 244", "CS 244B", "CS 295", "CS 316", "CS 358", "EE 180", "EE 282", "EE 382E"], course_b_units_taken: int,
+    taken_course_c: bool, course_c: Enum["CS 145", "CS 147", "CS 148", "CS 155", "CS 173", "CS 221", "CS 223A", "CS 224N", "CS 224U", "CS 224W", "CS 227B", "CS 228", "CS 229", "CS 229M", "CS 231A", "CS 231N", "CS 234", "CS 236", "CS 237A", "CS 245", "CS 246", "CS 247", "CS 248", "CS 248A", "CS 251", "CS 255", "CS 273A", "CS 273B", "CS 279", "CS 345", "CS 347", "CS 348A", "CS 348B", "CS 348C", "CS 348E", "CS 348I", "CS 348K", "CS 355", "CS 356", "CS 373"], course_c_units_taken: int,
+    confirm_requirements: bool
+)

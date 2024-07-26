@@ -1,0 +1,74 @@
+
+                Your task is to identify any unfilled requirement given natural language requirement and verbalized smt formulas, which are previously verbalized by you. 
+                You will be provided with verbalized fomulas and relevant natural language requirements. Given natural language requirements: SIGNIFICANT IMPLEMENTATION REQUIREMENT: At least one course in your MS program should be designated as satisfying the Significant Implementation Requirement. Note that this course will also be used to satisfy some other requirement (i.e., Depth, or Elective). Must be taken for a letter grade,* must be taken at Stanford. Coterm students who took two of these courses at Stanford as undergraduates may waive this requirement. Deviations must be approved by the faculty director of the MS program, Cynthia Lee. Course Number: Title: Grade Courses that may be used to satisfy the significant implementation requirement include: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341. and 
+                verbalized formulas The given SMT formula can be translated into the following natural language description:
+
+To satisfy the Significant Implementation Requirement for the MS program, you must meet one of the following sets of conditions:
+
+1. **Main Course Condition:**
+    - You must take at least one course from the list of approved significant implementation courses at Stanford.
+    - The following courses qualify: CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341.
+    - The course you choose must be taken for a letter grade. Acceptable grades include A+, A, A-, B+, B, B-, C+, C, C-, D+, D, D-, or F.
+    - The course must be taken at Stanford University.
+
+2. **Coterm Student Waiver Condition:**
+    - If you are a coterm student, you can waive the significant implementation course requirement if you took two relevant courses during your undergraduate program at Stanford.
+    - These two undergraduate courses must include one of the courses from the CME series (specific sequence: CME 100 -> CME 102 -> CME 104 -> CS 106B -> CME 106),
+    - Alternatively, both can be from the significant implementation courses list (CS 140 and its equivalents as per the dependency chain provided).
+
+Please refer to the faculty director, Cynthia Lee, for any deviations from these requirements.
+
+In summary, the formula succinctly enforces the rules that ensure a student either completes a relevant course at Stanford with an appropriate grade or uses previous undergraduate coursework to fulfill the requirement, subject to specific conditions for coterm students., please identify specific unsatisfied courses, grades, or units. 
+                
+======================response below==============================
+To identify specific unsatisfied courses, grades, or units based on both the given natural language requirements and the verbalized SMT formulas, we need to break down the requirements and compare them step-by-step.
+
+### Requirements Breakdown:
+
+**Main Course Condition:**
+1. At least one course from the list of approved significant implementation courses must be taken.
+2. The course must be taken for a letter grade (A+ through F).
+3. The course must be taken at Stanford University.
+
+**Coterm Student Waiver Condition:**
+1. If you are a coterm student, you can waive the significant implementation requirement if:
+    - You took two relevant courses during your undergraduate program at Stanford.
+    - These courses must include one course from the CME series or both from the significant implementation courses list.
+
+### Identify Specific Unsatisfied Courses, Grades, or Units:
+
+**Main Course Condition Check:**
+1. **List of Approved Courses**:
+   - Check if at least one from CS 140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248/248A, and 341 is taken.
+   - If no course from this list is found, the requirement is unfulfilled.
+
+2. **Grade Requirement**:
+   - Ensure the course listed is taken for a letter grade (A+ through F).
+   - If the course is taken as pass/fail or any other grading method, it does not fulfill the requirement.
+
+3. **Stanford Course**:
+   - Ensure the course is taken at Stanford University.
+   - Courses taken outside Stanford will not fulfill the requirement.
+
+**Coterm Student Waiver Condition Check:**
+1. **Courses Taken as Undergraduates**:
+   - Verify if you took two relevant courses from the significant implementation courses list during your undergraduate study at Stanford.
+   - If this is not the case, the waiver condition is unfulfilled.
+
+2. **CME Series Inclusion**:
+   - Check if one of the courses includes a specific CME sequence (CME 100 -> CME 102 -> CME 104 -> CS 106B -> CME 106).
+   - Alternatively, you can meet the requirement if both courses are from the significant implementation list.
+
+### Summary Verification:
+To ensure the requirements are filled:
+1. Check the transcript/course list for at least one course that matches the significant implementation courses listed.
+2. Confirm the course is taken for a valid letter grade.
+3. Verify the course location is Stanford.
+4. For coterm students, verify two relevant undergraduate courses were taken following the specified series or from the significant implementation list.
+
+### Actionable Items:
+1. **Unfilled Courses**: Identify if there is at least one course from the specified list on your academic transcript.
+2. **Unfilled Grades**: Verify that the course was taken for a letter grade and not pass/fail.
+3. **Unfilled Units**: Confirm that no deviations need approval and that the course is taken at Stanford.
+
+If any of these specific requirements are unmet, you would need to take additional steps to meet the Significant Implementation Requirement.
