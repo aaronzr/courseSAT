@@ -1,0 +1,105 @@
+Sure, here is the translation of the requirement document into z3py formulas:
+
+1. Foundations Requirement:
+
+```python
+from z3 import *
+
+# Define course variables
+CS103 = Int('CS103')  # Logic, Automata & Complexity
+CS109 = Int('CS109')  # Probability
+CS161 = Int('CS161')  # Algorithmic Analysis
+CS107 = Int('CS107')  # Computer Organ & Sys
+CS110 = Int('CS110')  # Principles of Computer Systems
+
+# Set constraints on course numbers
+s = Solver()
+s.add(CS103 >= 100, CS109 >= 100, CS161 >= 100, CS107 >= 100, CS110 >= 100)
+s.add(CS103 < 1000, CS109 < 1000, CS161 < 1000, CS107 < 1000, CS110 < 1000)
+
+# Set total units constraint
+total_units = CS103 + CS109 + CS161 + CS107 + CS110
+s.add(total_units <= 10)
+
+# Solve the constraints
+if s.check() == sat:
+    print(s.model())
+```
+
+2. Significant Implementation Requirement:
+
+```python
+from z3 import *
+
+# Define course variables
+significant_course = Int('significant_course')
+
+# Set constraints on course numbers
+s = Solver()
+s.add(significant_course >= 140, significant_course < 400)
+
+# Courses that satisfy the significant implementation requirement
+significant_courses = [140, 140E, 143, 144, 145, 148, 151, 190, 210B, 212, 221, 227B, 231N, 243, 248, 341]
+
+# Check if the course chosen satisfies the requirement
+s.add(Or([significant_course == course for course in significant_courses]))
+
+# Solve the constraints
+if s.check() == sat:
+    print(s.model())
+```
+
+3. Breadth Requirement:
+
+```python
+from z3 import *
+
+# Define course variables
+breadth_courses = [Int('breadth_A'), Int('breadth_B'), Int('breadth_C')]
+
+# Constraints on course numbers for breadth areas A, B, C
+s = Solver()
+for course in breadth_courses:
+    s.add(course >= 100, course < 400)
+
+# Breadth areas and courses
+areas = {
+    'A': [154, 157, 168, 254, 261, 265, 364, 364B, 251],
+    'B': [140, 140E, 143, 144, 149, 212, 242, 243, 244, 244B, 295, 316, 358],
+    'C': [145, 147, 148, 155, 173, 221, 223A, 224N, 224U, 224W, 227B, 228, 229, 229M, 231A, 231N, 234, 236, 237A, 245, 246, 247, 248, 251, 255, 273A, 273B, 279, 345, 347, 348A, 348B, 348C, 348E, 348I, 348K, 355, 356, 373],
+}
+
+# Check if courses chosen satisfy the requirements
+for area, courses in areas.items():
+    s.add(Or([course == course_num for course_num in courses for course in breadth_courses]))
+
+# Solve the constraints
+if s.check() == sat:
+    print(s.model())
+```
+
+4. Artificial Intelligence Depth:
+
+```python
+from z3 import *
+
+# Define course variables
+depth_courses = [Int('AI_depth_1'), Int('AI_depth_2'), Int('AI_depth_3')]
+
+# Constraints on course numbers for depth courses
+s = Solver()
+for course in depth_courses:
+    s.add(course >= 100, course < 400)
+
+# Courses that satisfy the AI depth requirement
+AI_depth_courses = [221, 223A, 224N, 224S, 224U, 224V, 224W, 228, 229, 231A, 231N, 234, 237A, 237B, 238, 205L, 224R, 225A, 227B, 229M, 230, 233, 235, 236, 239, 246, 257, 270, 271, 273A, 273B, 274, 275, 279, 281, 322, 324, 325B, 326, 327A, 329, 330, 331B, 332, 333, 345, 348N, 361, 368, 371, 375, 377, 379, 398, 399, 428A, 428B, 432, 263, 276, 278, 364A, 364B, 377, 378B, 205, 209A, 226, 252, 209, 202, 315A, 315B]
+
+# Check if courses chosen satisfy the AI depth requirements
+s.add(Or([course == course_num for course_num in AI_depth_courses for course in depth_courses]))
+
+# Solve the constraints
+if s.check() == sat:
+    print(s.model())
+```
+
+This translation captures some of the key requirements from the document in the form of z3py formulas. Let me know if you require further clarification or additional translations.
