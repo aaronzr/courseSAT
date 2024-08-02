@@ -1,11 +1,28 @@
 import os 
 import sys 
+import jsonlines
 from openai import OpenAI
 from PyPDF2 import PdfReader
 
 
 RESULTS_DIR = "./SatLM_Baseline"
+EVAL_DATA = "./eval/data"
 requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
+
+
+
+def gpt4_infer(prompt):
+	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
+	chat_completion = client.chat.completions.create(
+			messages=[
+					{
+					"role": "user",
+					"content": f"{prompt}",
+					}
+			],
+			model="gpt-4o",
+	)
+	return chat_completion.choices[0].message.content
 
 def gpt3_infer(prompt):
 	client = OpenAI(api_key=os.environ.get("OPENAI_API_KEY"))
@@ -29,6 +46,13 @@ def pdf_to_text(doc):
 		page = reader.pages[i]
 		text += page.extract_text()
 	return text
+
+def get_datasets(dataFolder):
+	for filename in os.listdir(dataFolder):
+         	f = os.path.join(dataFolder, filename)
+		data = json.load(f)
+        
+        
 
 def compare_satLM():
         requirement = pdf_to_text(requirement_path)
