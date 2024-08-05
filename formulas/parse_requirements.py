@@ -75,7 +75,7 @@ def automated_code_fixer(inferred_formulas_file, iterations):
                         Given the error message {err.decode("utf-8")}, please fix the following code {code.read()} while
                         preserving correct logic.
                         """
-                        fixed_code =gpt3_infer(prompt)
+                        fixed_code =gpt4_infer(prompt)
                         print(f"===============error message=======================\n")
                         print(err)
                         print(f"==============={i} iteration of fixing code=======================\n")
@@ -129,8 +129,8 @@ def get_requirement(doc, requirement):
                 os.makedirs(RESULTS_DIR)
         text = pdf_to_text(doc)
         requirement =f"""
-        Please extract relevant {requirement} from {text}. Please output 
-        extracted requirement of {requirement} in the document only.
+        Please extract relevant {requirement} from {text} and consult NOTES for relevant
+        requiirements too if there is a NOTES section. Please output extracted requirement of {requirement} and NOTES in the document only.
         """
         individual_requirement = gpt3_infer(requirement)
         print(individual_requirement)
@@ -353,7 +353,7 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         solver.assertFormula(formula)
         ```
         When generating parameterized cvc5 solver formulas, please instantiate new variables to check the transcript schema against each constraint in the {requirement_out}. You should also include
-        solver formulas for advisor approval and deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
+        solver formulas for advisor approval, deviation constraints if there is one. Please note that your formulas should check taken courses in the transcript against each contraint and requirement. Please generate
         parameterized formulas with respect to the requirements only. 
         """
         formula_out = gpt3_infer(formula_prompt)
@@ -404,18 +404,74 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         ``` Please be sure to convert all code and relevnt comments in {formula_out} to the format above and write a transcript schema to
         test code correctness. 
         """
-        formula_compile = gpt3_infer(compile_prompt)    
+        formula_compile = gpt4_infer(compile_prompt)    
         python_file = open(f"{output_filename.lower()}_formulas.py", "w+")
         start = "```python"
+        start2 = "```"
         end = "```"
-        reformatted_formula_compile = formula_compile.split(start)[1].split(end)[0]
+        if start in formula_compile: 
+                reformatted_formula_compile = formula_compile.split(start)[1].split(end)[0]
+        if start2 in formula_compile: 
+                reformatted_formula_compile = formula_compile.split(start2)[1].split(end)[0]
+        else: 
+                reformatted_formula_compile = formula_compile
         print(reformatted_formula_compile)
         python_file.write(reformatted_formula_compile)
         python_file_name = f"{output_filename.lower()}_formulas.py"
         return python_file_name
 
+def auto_formulas_gen(field):
+        requirement_path = f"../program_sheets/CS_{field}_2324PS.pdf"
+        reqs = ["Mathematics and Science", "Technology in Society", \
+                "Engineering Fundamentals", f"{field} Track Core, Depth and Senior Project"]
+        final_dir = f"backend_{field}_formulas"
+        if not os.path.exists(final_dir):
+                os.makedirs(final_dir)
+        for req in reqs:
+                print(f"fixing {req}...\n")
+                python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
+                return_value = automated_code_fixer(python_file_name, 30)
+                if return_value == True: 
+                        print("code fix is completed\n") 
+                cmd = ["mv", python_file_name, final_dir]
+                process = subprocess.Popen(cmd, 
+                                stdout=subprocess.PIPE, 
+                                stderr=subprocess.PIPE)
+
+                # wait for the process to terminate
+                out, err = process.communicate()
+                print(f"moving formula file out:\n {out}")
+                print(f"moving formula file err:\n {err}")
+        
+def backend_auto_formulas_gen(field):
+        requirement_path = f"./program_sheets/CS_{field}_2324PS.pdf"
+        reqs = ["Mathematics and Science", "Technology in Society", \
+                "Engineering Fundamentals", f"{field} Track Core, Depth and Senior Project"]
+        final_dir = f"./formulas/fixed_{field}_formulas"
+        if not os.path.exists(final_dir):
+                os.makedirs(final_dir)
+        for req in reqs:
+                print(f"fixing {req}...\n")
+                python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
+                return_value = automated_code_fixer(python_file_name, 30)
+                if return_value == True: 
+                        print("code fix is completed\n") 
+                cmd = ["mv", python_file_name, final_dir]
+                process = subprocess.Popen(cmd, 
+                                stdout=subprocess.PIPE, 
+                                stderr=subprocess.PIPE)
+
+                # wait for the process to terminate
+                out, err = process.communicate()
+                print(f"moving formula file out:\n {out}")
+                print(f"moving formula file err:\n {err}")  
 
 def main():
+        sheets = ["Theory", "Info", "CompBio", "CompEng", "Indiv",\
+                "Unspec", "VisComp"]
+        for sheet in sheets: 
+                auto_formulas_gen(sheet)
+        '''
         requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
         reqs = ["ELECTIVES", "BREADTH REQUIREMENT", "ARTIFICIAL INTELLEGIENCE DEPTH", "FOUNDATIONS REQUIERMENT",\
                 "SIGNIFICANT IMPLEMENTATION REQUIREMENT", "ADDITIONAL REQUIREMENT"]
@@ -426,7 +482,18 @@ def main():
                 return_value = automated_code_fixer(python_file_name, 30)
                 if return_value == True: 
                         print("code fix is completed\n")
-        '''
+                requirement_path = "../program_sheets/Stanford_AI_MS.pdf"
+        requirement_path = "../program_sheets/CS_Systems_2324PS.pdf"
+        reqs = ["Mathematics and Science", "Technology in Society", \
+                "Engineering Fundamentals", "Systems Track Core, Depth and Senior Project"]
+        
+        for req in reqs:
+                print(f"fixing {req}...\n")
+                python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
+                return_value = automated_code_fixer(python_file_name, 30)
+                if return_value == True: 
+                        print("code fix is completed\n")
+      
         python_file_name = translate_requirements_to_formal_statements(requirement_path, req)
         return_value = automated_code_fixer(python_file_name, 30)
         if return_value == True: 
