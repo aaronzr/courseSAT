@@ -1,0 +1,182 @@
+=======================prompt===========================
+
+        Your task is to generate cvc5 smt solver formulas for a list of required courses: Math19
+      
+Math20
+      
+Math21
+      
+ CS103
+      
+ CS109 and 
+        related constraints MATH 19/20/21 or equivalent (10 units AP BC, or transfer, with placement into MATH 51/CME 100) is acceptable. If 6-8 units AP or IB credit are used, must take .
+        Your formulas should include every constraint, including the ones related to advisor approval and deviations.
+        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                ```json
+        transcript = {
+        "Student": {
+                "Name": String,
+                "Program": String, 
+                "StudentID": Integer,
+                "Coterm": Boolean
+        },
+        "AP_Credits": [
+                {"Advanced_Placement": String,
+                  "Earned_Units": Integer                   
+                }
+        ]
+        "Courses_Taken": [
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                ...
+        ]
+        "Deviations": [
+                {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+          {
+                "Deviated_Course_ID": String or "None" when "Approved"==false
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+        },
+        ]
+        "Approval": [
+                {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+          {
+                "Approved": Boolean,
+                "Approved_By": String or "None" when "Approved"==false,
+                "Approved_Course_ID": String or "None" when "Approved"==false
+        },
+        ]    
+        "Cumulative_GPA": {
+                "Undergrad": Real,
+                "Graduate": Real,
+        },
+        }
+        ```
+        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for required courses and relevant constraint. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+                ```
+		(set-logic ALL)
+
+		(declare-const course1 String)
+		(declare-const course2 String)
+
+		;; Course1 is \in transcript[*].course
+		;; Course2 is \in transcript[*].course
+        (and (= course1 course) for course in Transcript.get("Courses_Taken")
+        (= course1 course) for course in Transcript.get("Courses_Taken"))
+
+
+		;; Course1 is in one of (100,101,102)
+		;; Course2 is in one of (101, 102, 103)
+	
+		(and (or(= course1 "CS 100")
+		(= course1 "CS 101")
+		(= course1 "CS 102"))
+		(or(= course2 "CS 101")
+		(= course2 "CS 102")
+		(= course2 "CS 103")))
+
+
+		;; The same course cannot be used to satisfy two different requirements:
+		 (not (= course1 course2))
+		
+
+		;; final formula:
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+		(check-sat)
+		```
+		Remember, it's very important that you generate smt formulas that PARAMETRIZE
+		course variables to check variables in a given transcript against requirements. Please only generate a
+  		giant prameterized formula like the following:  
+		```smt
+		(set-logic ALL)
+
+		(declare-const course1 String)
+		(declare-const course2 String)
+		assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+		(check-sat)
+		```
+		Your task is to generate a parameterized formula reflecting the correct logic of a list of required courses: Math19
+      
+Math20
+      
+Math21
+      
+ CS103
+      
+ CS109 and 
+        related constraints MATH 19/20/21 or equivalent (10 units AP BC, or transfer, with placement into MATH 51/CME 100) is acceptable. If 6-8 units AP or IB credit are used, must take ..
+		=======================formula ouput===========================
+Here is the cvc5 SMT formula for the given requirement:
+
+1. The student must take the following courses: Math19, Math20, Math21, CS103, and CS109.
+2. Alternatively, equivalent AP/IB or transfer credits can be used:
+   - 10 units of AP BC credit or transfer credit with placement into MATH 51/CME 100 is acceptable instead of Math19, Math20, and Math21.
+   - If only 6-8 units of AP or IB credit are used, the student must take additional relevant courses to meet the criteria.
+3. Any deviations must be approved by an advisor.
+
+This formula aims to check the satisfiability of these constraints against a given transcript schema by parametrizing the necessary logic.
+
+```smt
+(set-logic ALL)
+
+(declare-fun Course_Title ((Record Int)) String)
+(declare-fun Earned_Units ((Record Int)) Int)
+(declare-fun AP_Credits_Units ((Record String)) Int)
+(declare-fun AP_Credits_Title ((Record String)) String)
+(declare-fun Approved ((Record Bool)) Bool)
+(declare-fun Deviated_Course_ID ((Record String)) String)
+(declare-fun Approved_By ((Record String)) String)
+
+(assert 
+  (let (
+    (courses (map Course_Title Transcript.Courses_Taken))
+
+    ;; Check if the required courses are taken
+    (math19 (exists ((c Record)) (and (= (Course_Title c) "Math19"))))
+    (math20 (exists ((c Record)) (and (= (Course_Title c) "Math20"))))
+    (math21 (exists ((c Record)) (and (= (Course_Title c) "Math21"))))
+    (cs103 (exists ((c Record)) (and (= (Course_Title c) "CS103"))))
+    (cs109 (exists ((c Record)) (and (= (Course_Title c) "CS109"))))
+
+    ;; Check AP Credits for Math Equivalent
+    (ap_credits (map AP_Credits_Title Transcript.AP_Credits))
+    (ap_units (bvadd 
+      (map AP_Credits_Units (select-ranges Transcript.AP_Credits (range 0 1)))
+      (map AP_Credits_Units (select-ranges Transcript.AP_Credits (range 1 (bvadd 1 Transcript.AP_Credits)))))
+    )
+    (ap_math (exists ((ap Record)) (and 
+      (or (= (AP_Credits_Title ap) "AP BC")) 
+      (or (and (>= (AP_Credits_Units ap) 10) (exists ((coursedeviation Record)) (and (= (Approved coursedeviation) false)))))
+    )))
+    
+    (placement_cond ((ap_credits_units) <= 8, and (exists(course_id courses)), exists ((coursedeviation Record)) (and (= (Approved course_deviation) true))))
+
+    ;; Deviations handling
+    (deviations_approved (forall ((d Record)) (=> (exists ((Course_Title)) d) (and (= (Approved d) true) (not (= (Approved_By d) "None")))))))
+  )
+  ;; Check courses and AP credits
+  (and (or math19 ap_math) 
+    (or math20 ap_math) 
+    (or math21 ap_math) 
+    cs103 
+    cs109 
+    deviations_approved
+  )
+)
+(check-sat)
+```
+
+This SMT formula:
+1. Declares courses, AP credits, and other related records.
+2. Sets definitions for course completion, AP credit check, and deviation approval logic.
+3. Asserts the combined constraints for course requirements and allowed deviations.
+4. Checks if the given transcript satisfies these constraints.

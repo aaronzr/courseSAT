@@ -128,6 +128,9 @@ def get_requirement(doc, requirement):
         if not os.path.exists(RESULTS_DIR):
                 os.makedirs(RESULTS_DIR)
         text = pdf_to_text(doc)
+        print(text)
+        newFile = open("pdf.txt", "w+")
+        newFile.write(text)
         requirement =f"""
         Please extract relevant {requirement} from {text} and consult NOTES for relevant
         requiirements too if there is a NOTES section. Please output extracted requirement of {requirement} and NOTES in the document only.
@@ -266,6 +269,8 @@ def translate_requirements_to_formal_statements(requirement_path, requirement):
         name = os.path.basename(requirement_path)
         requirement_name, _ = name.split(".")
         requirement_out = get_requirement(requirement_path, requirement)
+        file = open("./nl_requirements.txt", "w+")
+        file.write(requirement_out)
         formula_prompt =f"""
         Your task is to generate cvc5 python solver formulas for the constraints in each requirement {requirement_out} you have identified.
         Your formulas should include every constraint, including the ones related to advisor approval and deviations.

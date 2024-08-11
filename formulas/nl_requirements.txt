@@ -1,0 +1,23 @@
+Mathematics Requirement:
+- MATH 19 (Calculus)
+- MATH 20
+- MATH 21
+- CS103 Mathematical Foundations of Computing
+- CS109 Introduction to Probability for Computer Scientists
+- Two electives from a specified list
+
+Science Requirement:
+- PHYS 41 Mechanics (or PHYS 21 or PHYS 61)
+- PHYS 43 Electricity and Magnetism (or PHYS 23 or PHYS 81/63)
+- One elective from a specified list
+
+Notes:
+- AP or equivalent credits for MATH 19/20/21 are acceptable
+- Math electives include various Math and CS courses
+- Science elective can be chosen from the SoE Science List, PSYCH 30, or AP Chemistry
+- Minimum GPA requirement for all courses in Engineering Fundamentals and CS Core, Depth, and Senior Project is 2.0
+- Transfer and AP credits for Math, Science, Fundamentals, and TIS must be approved by the SoE Dean's Office
+- Courses must be taken for the specified number of units on the Program Sheet
+- CS103, 106B, 107, 109, 111, and 161 must be taken for 5 units each
+
+Please refer to the extracted Mathematics and Science requirements and Notes for further details and specifications.
