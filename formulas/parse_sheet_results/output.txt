@@ -1,0 +1,139 @@
+=======================prompt===========================
+Your task is to generate cvc5 smt solver formulas for                         Math and Science Electives requirements. You will be given a set of constraints related to 
+                        Math and Science Electives and you should generate cvc5 smt solver formulas reflecting the correct logic of each given constraint.
+                        The formulas will check satisfiability of a given transcript schema template as input in the following format: 
+                        ```json
+                        transcript = {
+                        "Student": {
+                                "Name": String,
+                                "Program": String, 
+                                "StudentID": Integer,
+                                "Coterm": Boolean
+                        },
+                        "AP_Credits": [
+                                {"Advanced_Placement": String,
+                                "Earned_Units": Integer                   
+                                }
+                        ]
+                        "Courses_Taken": [
+                                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String},
+                                {"Course_ID": Integer, "Title": String, "Earned_Units": Integer, "Grade": String}, 
+                                ...
+                        ]
+                        "Deviations": [
+                                {
+                                "Deviated_Course_ID": String or "None" when "Approved"==false
+                                "Approved": Boolean,
+                                "Approved_By": String or "None" when "Approved"==false,
+                        },
+                        {
+                                "Deviated_Course_ID": String or "None" when "Approved"==false
+                                "Approved": Boolean,
+                                "Approved_By": String or "None" when "Approved"==false,
+                        },
+                        ]
+                        "Approval": [
+                                {
+                                "Approved": Boolean,
+                                "Approved_By": String or "None" when "Approved"==false,
+                                "Approved_Course_ID": String or "None" when "Approved"==false
+                        },
+                        {
+                                "Approved": Boolean,
+                                "Approved_By": String or "None" when "Approved"==false,
+                                "Approved_Course_ID": String or "None" when "Approved"==false
+                        },
+                        ]    
+                        "Cumulative_GPA": {
+                                "Undergrad": Real,
+                                "Graduate": Real,
+                        },
+                        }
+                        ```
+                        Given a transcript schema as input variables, please generate cvc5 smt solver formulas for required courses and relevant constraint. Below is an example formula for a given requiremet: Students must take one of the courses in (CS 100, CS 101, CS 102)
+                        and one of the courses in (CS 101, CS 102, CS 103). The same course cannot be used to satisfy two different requirements.
+                                ```
+                                (set-logic ALL)
+
+                                (declare-const course1 String)
+                                (declare-const course2 String)
+
+                                ;; Course1 is \in transcript[*].course
+                                ;; Course2 is \in transcript[*].course
+                        (and (= course1 course) for course in Transcript.get("Courses_Taken")
+                        (= course1 course) for course in Transcript.get("Courses_Taken"))
+
+
+                        ;; Course1 is in one of (100,101,102)
+                        ;; Course2 is in one of (101, 102, 103)
+                
+                        (and (or(= course1 "CS 100")
+                        (= course1 "CS 101")
+                        (= course1 "CS 102"))
+                        (or(= course2 "CS 101")
+                        (= course2 "CS 102")
+                        (= course2 "CS 103")))
+
+
+                        ;; The same course cannot be used to satisfy two different requirements:
+                        (not (= course1 course2))
+                        
+
+                        ;; final formula:
+                        assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+                        (check-sat)
+                        ```
+                        Remember, it's very important that you generate smt formulas that PARAMETRIZE
+                        course variables to check variables in a given transcript against requirements. Please only generate a
+                        giant prameterized formula like the following:  
+                        ```smt
+                        (set-logic ALL)
+
+                        (declare-const course1 String)
+                        (declare-const course2 String)
+                        assert(and (and (and (and (= course1 course) for course in Transcript.get("Courses_Taken")(= course1 course) for course in Transcript.get("Courses_Taken"))(or(= course1 "CS 100")(= course1 "CS 101")(= course1 "CS 102"))(or(= course2 "CS 101")(= course2 "CS 102")(= course2 "CS 103")) (not (= course1 course2)))))
+                        (check-sat)
+                        ```
+                        The math_elective_1_requirement checks whether a student has taken [Math51, Math52, Math53, Math54, Math104, Math107, Math108, Math109, Math110, Math113, CS 157, CS 205L, PHIL 151, CME 100, CME 102, CME 104, ENGR 108].                         Your task is to generate a parameterized smt solver formula reflecting the correct logic of this constraint: =======================formula ouput===========================
+```smt
+(set-logic ALL)
+
+(declare-const course MathElectiveRequirement)
+
+;; Ensure that the course taken is in the list of approved Math and Science electives.
+(assert 
+  (and 
+    (or
+      (= course "Math51")
+      (= course "Math52")
+      (= course "Math53")
+      (= course "Math54")
+      (= course "Math104")
+      (= course "Math107")
+      (= course "Math108")
+      (= course "Math109")
+      (= course "Math110")
+      (= course "Math113")
+      (= course "CS157")
+      (= course "CS205L")
+      (= course "PHIL151")
+      (= course "CME100")
+      (= course "CME102")
+      (= course "CME104")
+      (= course "ENGR108")
+    )
+  )
+)
+
+(declare-fun Course_Taken () (Array Int String))
+(assert (exists ((i Int)) 
+  (and 
+    (>= i 0) 
+    (< i (array_len Course_Taken))
+    (= course (select Course_Taken i))
+  )
+))
+
+(check-sat)
+(get-model)
+```
