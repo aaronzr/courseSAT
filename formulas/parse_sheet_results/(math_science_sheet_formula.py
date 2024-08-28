@@ -1,75 +1,77 @@
-Here's the detailed code following the provided template to check the course requirements for Math 19, Math 20, Math 21, and CS 103:
+Here's the code to verify if a student has taken courses Math 19, Math 20, Math 21, and CS103:
 
 ```python
-from cvc5.pythonic import *
 import json
+import cvc5
+from cvc5 import Kind
 
-# Helper function for solver initialization
-def solver_init(): 
+def solver_init():
     solver = cvc5.Solver()
     solver.setOption("produce-unsat-cores", "true")
     solver.setOption("produce-models", "true")
     solver.setLogic("ALL")
-    return solver 
+    return solver
 
-# Helper function for checking result and printing relevant outputs
 def result_checker(solver, variables):
     result = solver.checkSat()
     trace = ""
     print("Satisfiability:", result)
     if result.isSat():
         print("SAT")
-        if variables: 
-            for variable in variables: 
+        if variables:
+            for variable in variables:
                 trace = solver.getValue(variable)
                 print(f"Model for {variable}:", trace)
-    else: 
+    else:
         trace = solver.getUnsatCore()
         print("Unsat requirement core is: ", trace)
     return result, trace
 
-# Function for checking requirements given a path to a transcript schema
 def check_requirements(transcript_path):
     solver = solver_init()
     with open(transcript_path, 'r') as file:
         transcript = json.load(file)
 
-    # Parameterized formulas
-    course_variable = solver.mkConst(solver.getStringSort(), "course")
+    # Math 19 requirement check
+    math19_course = solver.mkConst(solver.getStringSort(), "Math19_course")
+    constraints_math19 = [solver.mkTerm(Kind.EQUAL, math19_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
+    constraint_math19 = solver.mkTerm(Kind.OR, *constraints_math19)
+    math19_required = solver.mkTerm(Kind.EQUAL, math19_course, solver.mkString("Math 19"))
 
-    # Helper function to generate constraint sets
-    def get_course_constraint_set(course_id):
-        return [solver.mkTerm(Kind.EQUAL, course_variable, solver.mkString(course.get("Course_ID"))) for course in transcript.get("Courses_Taken", []) if course.get("Course_ID") == course_id]
+    # Math 20 requirement check
+    math20_course = solver.mkConst(solver.getStringSort(), "Math20_course")
+    constraints_math20 = [solver.mkTerm(Kind.EQUAL, math20_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
+    constraint_math20 = solver.mkTerm(Kind.OR, *constraints_math20)
+    math20_required = solver.mkTerm(Kind.EQUAL, math20_course, solver.mkString("Math 20"))
 
-    Math19_requirement = get_course_constraint_set("Math 19")
-    Math20_requirement = get_course_constraint_set("Math 20")
-    Math21_requirement = get_course_constraint_set("Math 21")
-    CS103_requirement = get_course_constraint_set("CS 103")
+    # Math 21 requirement check
+    math21_course = solver.mkConst(solver.getStringSort(), "Math21_course")
+    constraints_math21 = [solver.mkTerm(Kind.EQUAL, math21_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
+    constraint_math21 = solver.mkTerm(Kind.OR, *constraints_math21)
+    math21_required = solver.mkTerm(Kind.EQUAL, math21_course, solver.mkString("Math 21"))
 
-    constraints = [
-        ('Math 19', Math19_requirement),
-        ('Math 20', Math20_requirement),
-        ('Math 21', Math21_requirement),
-        ('CS 103', CS103_requirement)
-    ]
-    
-    for course_name, constraint_set in constraints:
-        constraint = solver.mkTerm(Kind.OR, *constraint_set)
-        solver.assertFormula(constraint)
-        print(f"Checking requirement for {course_name}:")
-        result_checker(solver, [course_variable])
-        
+    # CS103 requirement check
+    cs103_course = solver.mkConst(solver.getStringSort(), "CS103_course")
+    constraints_cs103 = [solver.mkTerm(Kind.EQUAL, cs103_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
+    constraint_cs103 = solver.mkTerm(Kind.OR, *constraints_cs103)
+    cs103_required = solver.mkTerm(Kind.EQUAL, cs103_course, solver.mkString("CS 103"))
+
+    # Combined constraints
+    combined_constraint = solver.mkTerm(Kind.AND, 
+                                        solver.mkTerm(Kind.AND, constraint_math19, math19_required),
+                                        solver.mkTerm(Kind.AND, constraint_math20, math20_required),
+                                        solver.mkTerm(Kind.AND, constraint_math21, math21_required),
+                                        solver.mkTerm(Kind.AND, constraint_cs103, cs103_required)
+                                        )
+
+    solver.assertFormula(combined_constraint)
+    result, trace = result_checker(solver, [math19_course, math20_course, math21_course, cs103_course])
+    return result, trace
+
 # Supply a transcript schema to check whether requirements are satisfied 
 if __name__ == "__main__":
     schema_path = "../schema_results/stanford_transcript1.json"
     check_requirements(schema_path)
 ```
 
-Explanation:
-1. **Solver Initialization and Checker Functions**: `solver_init()` and `result_checker(solver, variables)` are defined to initialize the solver and check the result, including printing satisfiability results.
-2. **Check Requirements Function**: `check_requirements(transcript_path)` opens the transcript file and prepares the solver.
-3. **Helper Function for Constraints**: `get_course_constraint_set(course_id)` generates a list of constraints to check if a course with `course_id` is in the transcript.
-4. **Formulated Requirements**: Checks if the student has taken Math 19, Math 20, Math 21, or CS 103 by asserting constraints for each requirement.
-5. **Satisfaction Check**: The results of the satisfaction check are printed for each requirement.
-
-You need to adjust the path to the schema file as per your local setup. This code evaluates each course requirement and prints the result accordingly.
+This script checks whether the student has taken courses "Math 19", "Math 20", "Math 21", and "CS 103". The script initializes the solver, loads the transcript, and asserts conditions to verify these requirements. Each course check is done by looking for the relevant course title in the "Courses_Taken" list within the transcript. If the constraints are met, the results will show "SAT"; otherwise, they will show the unsatisfied core constraints.

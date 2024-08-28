@@ -1,108 +1,97 @@
-Sure, here's the specific code to check the Math and Science Electives requirements according to the constraints provided:
+Certainly! I'll follow the instructions and provide the parameterized SMT Python solver formulas for the given constraints.
 
 ```python
-import cvc5
 import json
+import cvc5
+from cvc5 import Kind
 
-#helper function for solver initialization
-def solver_init(): 
+# Helper function for solver initialization
+def solver_init():
     solver = cvc5.Solver()
     solver.setOption("produce-unsat-cores", "true")
     solver.setOption("produce-models", "true")
     solver.setLogic("ALL")
-    return solver 
+    return solver
 
-#helper function for solver initialization
+# Helper function to check results
 def result_checker(solver, variables):
     result = solver.checkSat()
     trace = ""
     print("Satisfiability:", result)
     if result.isSat():
         print("SAT")
-        if variables: 
-            for variable in variables: 
+        if variables:
+            for variable in variables:
                 trace = solver.getValue(variable)
                 print(f"Model for {variable}:", trace)
-    else: 
+    else:
         trace = solver.getUnsatCore()
-        print("Unsat requirement core is: ", trace)
+        print("Unsat requirement core is:", trace)
     return result, trace
 
-#function for checking requirements given a path to a transcript schema
+# Function for checking requirements given a path to a transcript schema
 def check_requirements(transcript_path):
     solver = solver_init()
     with open(transcript_path, 'r') as file:
         transcript = json.load(file)
-    # generated formulas below:
+    
+    # List of Math and Science elective courses
+    elective_courses = ['Math 51', 'Math 52', 'Math 53', 'Math 54', 'Math 104', 'Math 107', 'Math 108', 'Math 109', 'Math 110', 'Math 113',
+                        'CS 157', 'CS 205L', 'PHIL 151', 'CME 100', 'CME 102', 'CME 104', 'ENGR 108']
 
     # Course variables
-    math_elective_course = solver.mkConst(solver.getStringSort(), "math_elective_course")
-    cs_phil_course = solver.mkConst(solver.getStringSort(), "cs_phil_course")
-    math_51 = solver.mkConst(solver.getStringSort(), "math_51")
-    math_52 = solver.mkConst(solver.getStringSort(), "math_52")
-    cme_100 = solver.mkConst(solver.getStringSort(), "cme_100")
-
-    # Math & Science Electives
-    elective_courses = ['Math51', 'Math52', 'Math53', 'Math54', 'Math104', 'Math107', 'Math108', 'Math109', 'Math110', 'Math113', 'CS 157', 'CS 205L', 'PHIL 151', 'CME 100', 'CME 102', 'CME 104', 'ENGR 108']
+    courses_taken = {course["Course_ID"]: course["Title"] for course in transcript.get("Courses_Taken", [])}
     
-    # Constraints for checking if elective courses are taken
-    elective_constraints = [solver.mkTerm(cvc5.Kind.EQUAL, math_elective_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
-    elective_constraint = solver.mkTerm(cvc5.Kind.OR, *elective_constraints)
-    
-    elective_course_valid = [solver.mkTerm(cvc5.Kind.EQUAL, math_elective_course, solver.mkString(course)) for course in elective_courses]
-    elective_course_valid_constraint = solver.mkTerm(cvc5.Kind.OR, *elective_course_valid)
+    math51 = solver.mkConst(solver.getStringSort(), "Math51")
+    math52 = solver.mkConst(solver.getStringSort(), "Math52")
+    math100 = solver.mkConst(solver.getStringSort(), "CME100")
+    cs157 = solver.mkConst(solver.getStringSort(), "CS157")
+    phil151 = solver.mkConst(solver.getStringSort(), "Phil151")
 
-    # Constraints for CS 157 & Phil 151
-    cs_phil_constraints = [solver.mkTerm(cvc5.Kind.EQUAL, cs_phil_course, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
-    cs_phil_constraint = solver.mkTerm(cvc5.Kind.OR, *cs_phil_constraints)
-    
-    cs_phil_course_valid = [solver.mkTerm(cvc5.Kind.EQUAL, cs_phil_course, solver.mkString(course)) for course in ["CS 157", "PHIL 151"]]
-    cs_phil_course_valid_constraint = solver.mkTerm(cvc5.Kind.OR, *cs_phil_course_valid)
+    # Helper function to create constraints for courses taken
+    def create_constraints(course_var, course_title):
+        constraints = [solver.mkTerm(Kind.EQUAL, course_var, solver.mkString(courses_taken.get(course_id))) 
+                       for course_id, title in courses_taken.items() if title == course_title]
+        return solver.mkTerm(Kind.OR, *constraints) if constraints else solver.mkFalse()
 
-    # Constraints for Math 51 and Math 52
-    math_51_constraints = [solver.mkTerm(cvc5.Kind.EQUAL, math_51, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
-    math_51_constraint = solver.mkTerm(cvc5.Kind.OR, *math_51_constraints)
+    # Constraints for individual courses
+    constraint_math51 = create_constraints(math51, "Math 51")
+    constraint_math52 = create_constraints(math52, "Math 52")
+    constraint_math100 = create_constraints(math100, "CME 100")
+    constraint_cs157 = create_constraints(cs157, "CS 157")
+    constraint_phil151 = create_constraints(phil151, "PHIL 151")
     
-    math_51_valid = solver.mkTerm(cvc5.Kind.EQUAL, math_51, solver.mkString("Math 51"))
-
-    math_52_constraints = [solver.mkTerm(cvc5.Kind.EQUAL, math_52, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
-    math_52_constraint = solver.mkTerm(cvc5.Kind.OR, *math_52_constraints)
+    # Combined constraints for electives with specific exclusion rules:
+    # CS 157 + Phil 151 may not be combined
+    exclusion_cs157_phil151 = solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.AND, constraint_cs157, constraint_phil151))
     
-    math_52_valid = solver.mkTerm(cvc5.Kind.EQUAL, math_52, solver.mkString("Math 52"))
-
-    # Constraints for CME 100
-    cme_100_constraints = [solver.mkTerm(cvc5.Kind.EQUAL, cme_100, solver.mkString(course.get("Title"))) for course in transcript.get("Courses_Taken", [])]
-    cme_100_constraint = solver.mkTerm(cvc5.Kind.OR, *cme_100_constraints)
+    # Students taking both Math 51 & 52 may not count CME 100 as an elective
+    exclusion_math51_52_cme100 = solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.AND, constraint_math51, constraint_math52, constraint_math100))
     
-    cme_100_valid = solver.mkTerm(cvc5.Kind.EQUAL, cme_100, solver.mkString("CME 100"))
+    # Students who take both Math 51 & CME 100 will receive only 8 units credit in the major
+    unit_violations = solver.mkTerm(Kind.NOT, solver.mkTerm(Kind.AND, constraint_math51, constraint_math100))  # Assume "units credit in major" is handled separately
 
-    # Combination Constraints
-    not_combined_constraint = solver.mkTerm(cvc5.Kind.NOT, solver.mkTerm(cvc5.Kind.AND, cs_phil_course_valid_constraint, math_elective_course_valid_constraint))
-    not_combined_math_51_52 = solver.mkTerm(cvc5.Kind.NOT, solver.mkTerm(cvc5.Kind.AND, math_51_valid, math_52_valid, cme_100_valid))
+    # Ensure at least one of the elective courses is taken, following the exclusion rules
+    electives_constraints = [create_constraints(solver.mkConst(solver.getStringSort(), f"elective_{i}"), course) for i, course in enumerate(elective_courses)]
+    at_least_one_elective = solver.mkTerm(Kind.OR, *electives_constraints) if electives_constraints else solver.mkFalse()
 
-    # Overall constraint
-    constraint_1 = solver.mkTerm(cvc5.Kind.AND, elective_constraint, elective_course_valid_constraint)
-    constraint_2 = solver.mkTerm(cvc5.Kind.AND, cs_phil_constraint, cs_phil_course_valid_constraint)
-    constraint_3 = solver.mkTerm(cvc5.Kind.NOT, solver.mkTerm(cvc5.Kind.AND, cs_phil_course_valid_constraint, solver.mkTerm(cvc5.Kind.OR, [solver.mkTerm(cvc5.Kind.EQUAL, cs_phil_course, math_elective_course)])))
-    constraint_4 = solver.mkTerm(cvc5.Kind.NOT, solver.mkTerm(cvc5.Kind.AND, math_51_constraint, math_52_constraint, cme_100_constraint))
-    constraint_5 = solver.mkTerm(cvc5.Kind.NOT, solver.mkTerm(cvc5.Kind.AND, math_51_constraint, cme_100_constraint))
-    
-    formula = solver.mkTerm(cvc5.Kind.AND, constraint_1, constraint_2, constraint_3, constraint_4, constraint_5)
+    # Final formula including all constraints
+    formula = solver.mkTerm(Kind.AND, at_least_one_elective, exclusion_cs157_phil151, exclusion_math51_52_cme100, unit_violations)
     solver.assertFormula(formula)
 
-    result, trace = result_checker(solver, [math_elective_course, cs_phil_course, math_51, math_52, cme_100])
-    return result, trace
+    # Check result and print out the evaluation
+    result_checker(solver, [math51, math52, math100, cs157, phil151])
 
-# supply a transcript schema to check whether requirements are satisfied
+# Supply a transcript schema to check whether requirements are satisfied
 if __name__ == "__main__":
     schema_path = "../schema_results/stanford_transcript1.json"
     check_requirements(schema_path)
 ```
 
-This Python script uses the cvc5 solver to create SMT formulas ensuring that the course requirements for Math and Science Electives are met. Specifically, the constraints ensure that:
-1. A valid math elective course has been taken from the allowed list.
-2. CS 157 and PHIL 151 cannot both be used to satisfy the elective requirement.
-3. If both Math 51 and Math 52 are taken, CME 100 cannot be counted as an elective.
-4. If both Math 51 and CME 100 are taken, only the units of one will be credited due to overlapping material. 
+This code should correctly set up the CVC5 SMT solver to check for the given constraints on Math and Science electives. The constraints include:
+1. Ensuring at least one elective course is taken from the provided list.
+2. Enforcing that CS 157 and Phil 151 cannot both be used to satisfy the requirement.
+3. Ensuring that if a student takes both Math 51 and Math 52, they cannot count CME 100 as an elective.
+4. Addressing credit limitations if both Math 51 and CME 100 are taken (implementation might need specifics on how unit credits are managed).
 
-This should be run within the context of a Python environment with the relevant packages installed and the provided transcript schema file available at the specified path.
+Replace `schema_path` with the actual path to your JSON transcript file to run this check.
