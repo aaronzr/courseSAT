@@ -8,3 +8,5 @@ pypdf
 PyPDF2
 pysmt
 fastapi
+openpyxl
+pandas

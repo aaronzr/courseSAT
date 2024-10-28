@@ -1,0 +1,39 @@
+Mathematics and Science Requirements:
+Mathematics (26 units minimum):
+MATH19 Calculus
+MATH20
+MATH21
+CS103 Mathematical Foundations of Computing
+CS109 Introduction to Probability for Computer Scientists
+Plus two electives
+Mathematics Unit Total (26 units minimum)
+
+Science (11 units minimum):
+PHYS41 Mechanics (or PHYS 21 or 61)
+PHYS43 Electricity and Magnetism (or PHYS 23 or PHYS 81/63)
+Elective
+Science Unit Total (11 units minimum)
+
+Technology in Society Requirement:
+1 course req'd from Approved TiS list at ughb.stanford.edu
+
+Engineering Fundamentals (10 units minimum):
+CS106B Programming Abstractions
+ENGR40
+An Intro to Making: What is EE? -OR- Information Science+
+
+Math Electives (Note 2):
+Math 51, 52, 53, 104, 107, 108, 109, 110, 113; CS 157, 205L; PHIL 151; CME 100, 102, 104; ENGR 108
+
+Science Electives (Note 3):
+Any course of 3 or more units from the SoE Science List, PSYCH 30, or AP Chemistry
+
+Notes:
+- All courses listed on this form must be taken for a letter grade.
+- Students without prior programming experience should first take CS106A.
+- All courses must be taken for the number of units specified on the Program Sheet.
+- Transfer and AP credits must be approved by the SoE Dean's Office.
+- MATH 19/20/21 or equivalent is acceptable for Math requirement.
+- Track Requirement B and C must be fulfilled as per the specified courses.
+- General CS Electives may be used as track electives.
+- The WiM requirement may be met by specific courses such as CS 181W or 182W as TiS, or via Senior Project course.
